@@ -23,6 +23,10 @@
       "pass": true
     },
     {
+      "name": "Save validation rejects inconsistent progress and normalizes settings",
+      "pass": true
+    },
+    {
       "route": "north",
       "seconds": 25.33
     },
@@ -96,6 +100,10 @@
     },
     {
       "name": "All characters and props instantiate and animate without invalid geometry",
+      "pass": true
+    },
+    {
+      "name": "Regional scenery batching preserves geometry and NPC access",
       "pass": true
     },
     {
