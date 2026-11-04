@@ -1,0 +1,52 @@
+{
+  "id": "maren_delivery3",
+  "npc": "Maren",
+  "title": "Kepala Pos Batu Biru",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Maren",
+      "text": "Malam ini badai pasir menggeram di luar gerbang pos. Nara... aku tidak bermaksud menyuruhmu membuka bagian dalam tas itu, tapi ada yang berpendar di sana.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Surat bersegel ini... denyutnya berdetak seirama dengan detak jantung.",
+      "next": "maren_2"
+    },
+    "maren_2": {
+      "speaker": "Maren",
+      "text": "Itu segel murni Simpul Pertama. Sahdan membawanya sebelum Hari Senyap dan tidak pernah sampai. Dia menitipkannya padaku, lalu menghilang ke padang pasir. Aku tidak pernah berani mengantarkannya sendiri.",
+      "next": "nara_2"
+    },
+    "nara_2": {
+      "speaker": "Nara",
+      "text": "Kenapa sekarang? Dan kenapa harus aku?",
+      "next": "maren_3"
+    },
+    "maren_3": {
+      "speaker": "Maren",
+      "text": "Karena tas kurir itu bereaksi padamu. Belum pernah berpendar sejak dia pergi. Simpul Sembilan di balik ngarai timur menunggumu.",
+      "choices": [
+        {
+          "text": "“Aku berangkat sekarang juga.”",
+          "next": "choice_a"
+        },
+        {
+          "text": "“Beri aku waktu bersiap sejenak.”",
+          "next": "choice_b"
+        }
+      ]
+    },
+    "choice_a": {
+      "speaker": "Maren",
+      "text": "Pemberani. Tapi dengarkan: jika sapuan badai melintang terlalu deras, cari tempat berteduh. Jangan memaksakan diri di ruang terbuka.",
+      "action": "ACCEPT_DELIVERY_3"
+    },
+    "choice_b": {
+      "speaker": "Maren",
+      "text": "Badai tidak menunggu siapa pun, Nara. Tapi pintu Pos Batu Biru akan selalu terbuka untukmu.",
+      "action": "ACCEPT_DELIVERY_3"
+    }
+  }
+}

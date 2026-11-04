@@ -1,0 +1,23 @@
+{
+  "id": "pedagang_rumor",
+  "npc": "Pedagang Lembah",
+  "title": "Pengembara Karavan",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Pedagang Lembah",
+      "text": "Kau kurir muda Pos Batu Biru? Dengar-dengar Simpul Sembilan di timur padam bukan karena rusak. Ada pihak yang sengaja memadamkannya.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Siapa yang diuntungkan jika Jalur Gema mati?",
+      "next": "pedagang_2"
+    },
+    "pedagang_2": {
+      "speaker": "Pedagang Lembah",
+      "text": "Itu pertanyaan yang pantang ditanyakan oleh pedagang yang masih ingin barang dagangannya lolos dari gerbang tol.",
+      "action": "RECORD_RUMOR"
+    }
+  }
+}

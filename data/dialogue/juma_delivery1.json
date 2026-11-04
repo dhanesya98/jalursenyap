@@ -1,0 +1,52 @@
+{
+  "id": "juma_delivery1",
+  "npc": "Juma",
+  "title": "Penjaga Menara Batu Senja",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Juma",
+      "text": "Roti ini masih hangat? Bahkan angin bukit pun segan merusaknya. Kamu kurir yang baik, Nara.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Bu Maren bilang Anda akan mengadu ke seluruh pos kalau rotinya sampai dalam keadaan dingin.",
+      "next": "juma_2"
+    },
+    "juma_2": {
+      "speaker": "Juma",
+      "text": "Itu cara kami orang Asharim bilang rindu. (Juma menatap lekat jahitan di tasmu) Tas itu... Aku kenal jahitannya. Sahdan membawa tas yang sama waktu terakhir lewat sini, tepat sebelum Hari Senyap.",
+      "next": "nara_3"
+    },
+    "nara_3": {
+      "speaker": "Nara",
+      "text": "Anda tahu apa yang sebenarnya terjadi padanya?",
+      "next": "juma_3"
+    },
+    "juma_3": {
+      "speaker": "Juma",
+      "text": "Aku tahu dia membawa sesuatu yang tidak mau dia sebutkan. Tanyakan pada Maren di pos hub, tapi pelan-pelan. Dia tidak suka diburu.",
+      "choices": [
+        {
+          "text": "“Aku akan bertanya pelan-pelan.”",
+          "next": "choice_a"
+        },
+        {
+          "text": "“Aku akan tanya sekarang juga.”",
+          "next": "choice_b"
+        }
+      ]
+    },
+    "choice_a": {
+      "speaker": "Juma",
+      "text": "Itu baru kurir sejati. Kebijaksanaan membuka jalan lebih cepat daripada langkah terburu-buru.",
+      "action": "COMPLETE_DELIVERY_1_A"
+    },
+    "choice_b": {
+      "speaker": "Juma",
+      "text": "Anak muda. Semangatmu tinggi, semoga angin sedang berhembus baik padamu.",
+      "action": "COMPLETE_DELIVERY_1_B"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "simpul_sembilan",
+  "npc": "Gema Purba",
+  "title": "Altar Simpul Sembilan",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Nara",
+      "text": "(Nara menempelkan surat bersegel ke celah kristal altar. Kristal mulai bergetar pelan... pendaran cahaya keemasan merambat ke seluruh pilar menara.)",
+      "next": "echo_1"
+    },
+    "echo_1": {
+      "speaker": "Suara dalam Gema (terputus-putus)",
+      "text": "...kalau kamu mendengar ini, berarti suratnya... akhirnya mulai berjalan menembus kebisuan...",
+      "next": "echo_2"
+    },
+    "echo_2": {
+      "speaker": "Suara dalam Gema",
+      "text": "...jangan pernah percaya pada pos yang menyala terlalu terang...",
+      "next": "echo_3"
+    },
+    "echo_3": {
+      "speaker": "Suara dalam Gema",
+      "text": "...Nara. Kamu seharusnya belum sampai di sini.",
+      "action": "TRIGGER_CLIFFHANGER"
+    }
+  }
+}

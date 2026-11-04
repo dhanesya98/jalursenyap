@@ -1,0 +1,10 @@
+/* A playable art review using the actual game world and controller, isolated save. */
+window.addEventListener('DOMContentLoaded',()=>{
+ const g=window.JalurGame;if(!g)return;const memory=new Map();g.state.storage={getItem:k=>memory.get(k)||null,setItem:(k,v)=>memory.set(k,v)};g.state.reset();g.started=true;g.setMode('play');g.setWeather('hangat',true);
+ const panel=document.createElement('aside');panel.className='scene-review';panel.innerHTML='<p>JALUR SENYAP <span>/ STUDI VISUAL 02</span></p><h1>Pos Batu Biru</h1><p class="review-note">Batu menyimpan panas.<br>Surat menunggu langkah.</p><nav aria-label="Sudut pandang pos"></nav><small>WASD bergerak · tarik mouse untuk kamera<br>Spasi melompat · E berbicara · H panduan</small><a href="index.html">Buka perjalanan lengkap ↗</a>';
+ document.body.append(panel);document.body.classList.add('art-review');
+ const point=(x,z,yaw,distance,pitch,face)=>{g.player.setPosition([x,g.world.ground(x,z),z]);g.player.yaw=face??Math.PI;g.cameraFocusHeight=distance<5?1.05:1.35;g.cameraYaw=yaw;g.cameraDistance=distance;g.cameraPitch=pitch;g.cameraFocus.copy(g.player.position).add(new THREE.Vector3(0,1.35,0));g.ruru.position.copy(g.player.position).add(new THREE.Vector3(1,0,1));g.setMode('play');};
+ const views={'Halaman pos':()=>point(2,41,.35,8.2,.13,Math.PI),'Nara':()=>point(1.6,37,.65,4.2,.14,.25),'Di bawah kain':()=>point(1.5,33.8,.6,5.2,.15,Math.PI),'Keluar ke lembah':()=>point(3,43,3.15,7,.16,0)};
+ for(const [label,action]of Object.entries(views)){const b=document.createElement('button');b.textContent=label;b.addEventListener('click',()=>{action();panel.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');});panel.querySelector('nav').append(b);}
+ const hide=document.createElement('button');hide.textContent='Sembunyikan catatan';hide.className='review-hide';hide.onclick=()=>{panel.classList.toggle('minimized');hide.textContent=panel.classList.contains('minimized')?'Tampilkan catatan':'Sembunyikan catatan';};panel.append(hide);views['Halaman pos']();panel.querySelector('button').classList.add('active');
+});

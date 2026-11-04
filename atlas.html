@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3e9d2">
+  <title>Atlas Tanah Lintas — Jalur Senyap</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/compass.svg">
+  <link rel="stylesheet" href="src/atlas.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Langsung ke atlas</a>
+  <header class="atlas-header">
+    <a class="brand" href="index.html"><img src="assets/icons/compass.svg" width="28" height="28" alt=""><span>Jalur Senyap</span><span class="brand-separator">/</span><span class="brand-sub">Catatan visual</span></a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Kembali ke game</a>
+  </header>
+  <main id="main">
+    <section class="atlas-intro" aria-labelledby="atlas-title">
+      <div class="intro-text"><p class="eyebrow">IKATAN PENGANTAR · LEMBAH PASIR</p><h1 id="atlas-title">Atlas<br><em>Tanah Lintas.</em></h1><p class="intro-copy">Wajah yang menunggu. Jalan yang menyambung. Benda-benda kecil yang membuat perjalanan berarti.</p><p class="intro-note">Pustaka visual demo <i>Jalur Senyap</i>, dari potret dalam Buku Jalur hingga model yang menghuni dunianya.</p></div>
+      <figure class="intro-figure"><img src="assets/world/lembah-pasir.png" alt="Nara dan Ruru memandang lembah gurun, caravanserai, dan menara jauh" fetchpriority="high"><figcaption><span>01 / LEMBAH PASIR</span><span>Teduh di jalanmu.</span></figcaption></figure>
+    </section>
+    <nav class="section-nav" aria-label="Bagian atlas"><a href="#model">Model 3D</a><a href="#peta">Peta</a><a href="#tokoh">Tokoh</a><a href="#dunia">Dunia</a><a href="#perlengkapan">Perlengkapan & properti</a><a href="#ikon">Ikon</a><a href="#sumber">Sumber</a></nav>
+
+    <section class="section showroom" id="model" aria-labelledby="model-title">
+      <div class="section-heading"><p class="eyebrow">I. BENTUK & GERAK</p><h2 id="model-title">Kenali dari segala sisi.</h2><p>Putar model yang digunakan game. Siluet jubah, telinga Ruru, dan cahaya lentera menjadi penanda perjalanan.</p></div>
+      <div class="showroom-layout">
+        <aside class="model-catalog" aria-label="Pemilihan model">
+          <div class="catalog-switch" role="group" aria-label="Jenis model"><button type="button" id="show-characters" class="selected" aria-pressed="true">Karakter <span>07</span></button><button type="button" id="show-props" aria-pressed="false">Properti <span>17</span></button></div>
+          <div id="model-options" class="model-options" role="group" aria-label="Daftar model"></div>
+          <div class="model-description" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="model-kind">KARAKTER / 01</p><h3 id="model-name">Nara</h3><p id="model-story">Kurir magang, pemilik Jubah Layar dan tas pengantar peninggalan Sahdan.</p><p class="model-tag" id="model-tag">Model prosedural · rig animasi</p></div>
+        </aside>
+        <div class="viewer-shell">
+          <div class="viewer-topline"><span id="viewer-status">Memuat ruang pratinjau…</span><span>THREE.JS · LOKAL</span></div>
+          <div id="model-viewer" class="model-viewer" tabindex="0" role="region" aria-label="Pratinjau model 3D. Tarik untuk memutar, tombol panah untuk mengubah sudut, plus dan minus untuk zoom."></div>
+          <p id="viewer-error" class="viewer-error" role="status" hidden>Pratinjau 3D memerlukan WebGL. Potret, peta, dan seluruh aset 2D tetap bisa dilihat di bawah.</p>
+          <div class="viewer-toolbar">
+            <div class="viewer-buttons" role="group" aria-label="Kontrol sudut model"><button type="button" id="rotate-left" aria-label="Putar ke kiri" title="Putar ke kiri">↶</button><button type="button" id="rotate-right" aria-label="Putar ke kanan" title="Putar ke kanan">↷</button><button type="button" id="zoom-out" aria-label="Perkecil model" title="Perkecil">−</button><button type="button" id="zoom-in" aria-label="Perbesar model" title="Perbesar">+</button><button type="button" id="reset-view">Atur ulang</button></div>
+            <label class="motion-control"><input type="checkbox" id="animate-model" checked><span>Animasi</span></label>
+          </div>
+          <div class="pose-bar" id="pose-bar" role="group" aria-label="Pose karakter"><span>POSE</span><button type="button" data-pose="idle" aria-pressed="true" class="selected">Diam</button><button type="button" data-pose="walk" aria-pressed="false">Berjalan</button><button type="button" data-pose="glide" aria-pressed="false">Melayang</button></div>
+          <p class="viewer-hint">Tarik untuk memutar · tombol panah saat pratinjau terfokus · skala model diseragamkan untuk katalog.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="peta" aria-labelledby="map-title">
+      <div class="section-heading"><p class="eyebrow">II. JALAN & TUJUAN</p><h2 id="map-title">Satu lembah. Banyak cara melintas.</h2><p>Pos Batu Biru menjadi rumah singgah. Menara Batu Senja, Telaga Sumi, dan Simpul Sembilan menyimpan tiga alasan untuk kembali berjalan.</p></div>
+      <figure class="map-figure"><a href="assets/world/peta-lembah.svg" aria-label="Buka peta Lembah Pasir ukuran penuh"><img src="assets/world/peta-lembah.svg" alt="Peta Lembah Pasir dengan Pos Batu Biru, Menara Batu Senja, Telaga Sumi, Gerbang Dewan Tol, dan jalur menuju Simpul Sembilan" loading="lazy"></a><figcaption><span>PETA WILAYAH DEMO</span><span>Ilustrasi SVG · buka untuk melihat detail</span></figcaption></figure>
+    </section>
+
+    <section class="section" id="tokoh" aria-labelledby="portrait-title">
+      <div class="section-heading"><p class="eyebrow">III. ORANG-ORANG DI JALUR</p><h2 id="portrait-title">Setiap paket punya wajah.</h2><p>Potret 2D untuk percakapan dan Buku Jalur. Palet tenang, tinta sepia, dan satu ciri yang mudah diingat untuk setiap tokoh.</p></div>
+      <div class="portrait-grid">
+        <figure class="portrait"><img src="assets/portraits/nara.png" alt="Nara mengenakan jubah krem, selendang terakota, dan tas pengantar" loading="lazy"><figcaption><span class="asset-number">01</span><div><h3>Nara</h3><p>Kurir magang · tas yang mewarisi rahasia</p></div><button type="button" data-character="nara" aria-label="Lihat model 3D Nara">3D ↗</button></figcaption></figure>
+        <figure class="portrait"><img src="assets/portraits/ruru.png" alt="Ruru, rubah gurun berbulu krem dengan lentera kecil di ekornya" loading="lazy"><figcaption><span class="asset-number">02</span><div><h3>Ruru</h3><p>Pendamping · penunjuk jalan kecil</p></div><button type="button" data-character="ruru" aria-label="Lihat model 3D Ruru">3D ↗</button></figcaption></figure>
+        <figure class="portrait"><img src="assets/portraits/maren.png" alt="Maren dengan selendang biru kelabu dan setumpuk surat" loading="lazy"><figcaption><span class="asset-number">03</span><div><h3>Maren</h3><p>Kepala Pos Batu Biru · hangat dan penuh ingatan</p></div><button type="button" data-character="maren" aria-label="Lihat model 3D Maren">3D ↗</button></figcaption></figure>
+        <figure class="portrait"><img src="assets/portraits/juma.png" alt="Juma mengenakan topi lebar dan membawa teropong kuningan" loading="lazy"><figcaption><span class="asset-number">04</span><div><h3>Juma</h3><p>Penjaga menara · mata yang membaca angin</p></div><button type="button" data-character="juma" aria-label="Lihat model 3D Juma">3D ↗</button></figcaption></figure>
+        <figure class="portrait"><img src="assets/portraits/bulamat.png" alt="Bu Lamat mengenakan kain teal dan memegang Kerang Suara" loading="lazy"><figcaption><span class="asset-number">05</span><div><h3>Bu Lamat</h3><p>Tetua Telaga Sumi · menunggu sebuah lagu</p></div><button type="button" data-character="bulamat" aria-label="Lihat model 3D Bu Lamat">3D ↗</button></figcaption></figure>
+        <figure class="portrait"><img src="assets/portraits/kesa.png" alt="Kesa berjubah ungu tua dengan segel kuningan Dewan Tol" loading="lazy"><figcaption><span class="asset-number">06</span><div><h3>Kesa</h3><p>Petugas tol · di antara perintah dan nurani</p></div><button type="button" data-character="kesa" aria-label="Lihat model 3D Kesa">3D ↗</button></figcaption></figure>
+        <figure class="portrait"><img src="assets/portraits/pedagang.png" alt="Pedagang bertopi anyaman, membawa gulungan kain dan cangkir" loading="lazy"><figcaption><span class="asset-number">07</span><div><h3>Pedagang lembah</h3><p>Pengembara · kabar selalu berjalan dengannya</p></div><button type="button" data-character="pedagang" aria-label="Lihat model 3D Pedagang">3D ↗</button></figcaption></figure>
+        <div class="portrait-note"><img src="assets/icons/letter.svg" width="38" height="38" alt=""><blockquote>“Kamu mengantar<br>lebih dari yang<br>kamu tahu.”</blockquote><p>BU LAMAT / TELAGA SUMI</p></div>
+      </div>
+    </section>
+
+    <section class="section world-section" id="dunia" aria-labelledby="world-title">
+      <div class="section-heading"><p class="eyebrow">IV. SUASANA DUNIA</p><h2 id="world-title">Hangat. Sunyi. Tidak selalu ramah.</h2><p>Tiga ilustrasi suasana mendampingi dunia 3D. Bukan geometri yang bisa dilalui: pemandangan ini hadir sebagai gambar pembuka dan catatan wilayah.</p></div>
+      <figure class="world-figure"><img src="assets/world/lembah-pasir.png" alt="Caravanserai hangat dan bentangan Lembah Pasir di bawah langit turquoise" loading="lazy"><figcaption><div><span class="eyebrow">01 / HARI HANGAT</span><h3>Lembah Pasir</h3></div><p>Caravanserai, roti rempah, dan cahaya yang mengundang pulang.</p></figcaption></figure>
+      <div class="world-pair"><figure class="world-figure"><img src="assets/world/telaga-sumi.png" alt="Oasis Telaga Sumi diselimuti kabut dengan lentera hangat dan pohon palem" loading="lazy"><figcaption><div><span class="eyebrow">02 / HARI BERKABUT</span><h3>Telaga Sumi</h3></div><p>Sebuah lagu menyeberangi lembah yang kehilangan cakrawala.</p></figcaption></figure><figure class="world-figure"><img src="assets/world/simpul-sembilan.png" alt="Monolit relay Simpul Sembilan berdiri di tengah badai pasir" loading="lazy"><figcaption><div><span class="eyebrow">03 / HARI BERAT</span><h3>Simpul Sembilan</h3></div><p>Surat yang belum sampai. Menara yang belum sepenuhnya diam.</p></figcaption></figure></div>
+    </section>
+
+    <section class="section" id="perlengkapan" aria-labelledby="props-title">
+      <div class="section-heading"><p class="eyebrow">V. BENDA-BENDA PERJALANAN</p><h2 id="props-title">Dibawa, dipasang, ditemukan.</h2><p>Perlengkapan kurir, paket cerita, dan unsur dunia. Pilih satu untuk melihat model 3D yang sama dengan aset game.</p></div>
+      <div class="prop-grid" id="prop-grid"></div>
+    </section>
+
+    <section class="section" id="ikon" aria-labelledby="icons-title">
+      <div class="section-heading"><p class="eyebrow">VI. BAHASA TANDA</p><h2 id="icons-title">Satu goresan, satu petunjuk.</h2><p>24 ikon SVG lokal. Garis sepia, sudut membulat, dan aksen kuning lentera. Dibuat untuk tetap terbaca sebagai tanda kecil di layar.</p></div>
+      <div class="icon-grid" id="icon-grid"></div>
+    </section>
+
+    <section class="section provenance" id="sumber" aria-labelledby="source-title"><div><p class="eyebrow">CATATAN PRODUKSI</p><h2 id="source-title">Tentang pustaka ini.</h2></div><div class="provenance-copy"><p><strong>Ilustrasi 2D:</strong> tujuh potret dan tiga pemandangan dibuat dengan ImageGen untuk proyek ini. <strong>Model 3D:</strong> tujuh karakter beranimasi dan 17 properti dibangun dari geometri prosedural dalam <code>src/art.js</code>; bukan hasil konversi otomatis potret menjadi model. <strong>Peta dan ikon:</strong> aset SVG yang dapat diedit.</p><p>Pratinjau menggunakan satu renderer Three.js lokal. Seluruh gambar, model, dan ikon dapat dibuka tanpa layanan eksternal. Skala pratinjau dinormalisasi untuk perbandingan bentuk; ukuran dalam game mengikuti penempatan dunia.</p><div class="source-links"><a href="assets/PORTRAIT-ICON-CREDITS.txt">Kredit potret & ikon ↗</a><a href="assets/portrait-prompts.json">Prompt potret ↗</a><a href="assets/world/prompts.json">Prompt pemandangan ↗</a><a href="assets/models-manifest.json">Manifest model 3D ↗</a></div></div></section>
+  </main>
+  <footer class="atlas-footer"><span>Jalur Senyap <span aria-hidden="true">·</span> Atlas Tanah Lintas</span><a href="index.html">Kembali berjalan →</a><span>Lembah Pasir / Edisi demo</span></footer>
+  <noscript><p class="no-script">JavaScript dinonaktifkan. Galeri ilustrasi dan peta tetap dapat dibaca. Aktifkan JavaScript untuk melihat katalog ikon dan model 3D.</p></noscript>
+  <script src="vendor/three.min.js"></script>
+  <script src="src/art.js"></script><script src="src/nara-art.js"></script><script src="src/atelier.js"></script><script src="src/companions-art.js"></script><script src="src/travelers-art.js"></script>
+  <script src="src/atlas.js"></script>
+</body>
+</html>

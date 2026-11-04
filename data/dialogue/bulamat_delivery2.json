@@ -1,0 +1,47 @@
+{
+  "id": "bulamat_delivery2",
+  "npc": "Bu Lamat",
+  "title": "Tetua Telaga Sumi",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Bu Lamat",
+      "text": "Kerang ini... benar-benar dari Bandar Lada di Pahitan? Dia berjanji mengirim lagu tidur untuk cucu-cucunya sebelum pelayaran besar.",
+      "next": "listen"
+    },
+    "listen": {
+      "speaker": "Bu Lamat",
+      "text": "(Bu Lamat mendekatkan kerang ke telinga; alunan nada laut terdengar lembut) Nadanya sedikit meleset di bagian akhir.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Maafkan saya, mungkin karena kabut tebal tadi selama perjalanan...",
+      "next": "bulamat_2"
+    },
+    "bulamat_2": {
+      "speaker": "Bu Lamat",
+      "text": "Bukan salahmu, Nak. Dia memang selalu meleset di nada itu saat bernyanyi. Terima kasih, Nara. Kamu mengantarkan lebih dari sekadar barang.",
+      "choices": [
+        {
+          "text": "“Boleh aku mendengarnya sekali?”",
+          "next": "choice_a"
+        },
+        {
+          "text": "“Aku harus segera kembali ke pos.”",
+          "next": "choice_b"
+        }
+      ]
+    },
+    "choice_a": {
+      "speaker": "Bu Lamat",
+      "text": "Tentu. Dengarkan desir ombaknya. Semoga menjadi penyejuk di langkahmu kelak. Catatlah di Buku Jalurmu.",
+      "action": "COMPLETE_DELIVERY_2_A"
+    },
+    "choice_b": {
+      "speaker": "Bu Lamat",
+      "text": "Jalan pulang bukan musuh, hanya panjang. Hati-hati dengan petugas Tol Dewan di gerbang timur. Mereka tampak gelisah akhir-akhir ini.",
+      "action": "COMPLETE_DELIVERY_2_B"
+    }
+  }
+}

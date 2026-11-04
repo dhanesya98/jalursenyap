@@ -1,0 +1,33 @@
+{
+  "id": "kesa_tol",
+  "npc": "Kesa",
+  "title": "Petugas Dewan Tol",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Kesa",
+      "text": "Berhenti! Jalur gerbang timur resmi ditutup. Perintah mutlak Dewan Tol. Badai atau cuaca cerah, tak ada yang boleh melintas.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Aku membawa surat bersegel Simpul Pertama. Ini urusan hidup-matinya ikatan antar bangsa!",
+      "next": "kesa_2"
+    },
+    "kesa_2": {
+      "speaker": "Kesa",
+      "text": "(Kesa merendahkan suaranya sambil melirik sekitar) Dengar, anak muda... Aku tidak bermusuhan dengan kurir. Tapi Dewan memerintahkan agar tak seorang pun mencapai Simpul Sembilan.",
+      "next": "nara_2"
+    },
+    "nara_2": {
+      "speaker": "Nara",
+      "text": "Kenapa Dewan begitu takut pada menara relay kuno yang sudah padam puluhan tahun?",
+      "next": "kesa_hint"
+    },
+    "kesa_hint": {
+      "speaker": "Kesa",
+      "text": "Siapa bilang takut? Mereka punya alasan mereka sendiri. (Kesa berbalik pura-pura memeriksa tumpukan peti) Ada celah panjat tebing di tebing utara sana. Jangkar kait Sahdan masih menancap. Ingat... aku tidak pernah melihatmu ke sana.",
+      "action": "REVEAL_SECRET_PATH"
+    }
+  }
+}

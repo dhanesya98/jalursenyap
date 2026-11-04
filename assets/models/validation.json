@@ -1,0 +1,280 @@
+{
+  "format": "glTF 2.0 GLB",
+  "checks": [
+    "binary headers and chunk lengths",
+    "alignment and buffer bounds",
+    "accessor counts and min/max",
+    "all geometry finite",
+    "indices in bounds",
+    "material and node references",
+    "unit quaternions",
+    "acyclic reachable scene hierarchy",
+    "no external references"
+  ],
+  "assets": [
+    {
+      "file": "character-nara.glb",
+      "bytes": 694524,
+      "nodes": 142,
+      "meshes": 129,
+      "accessors": 325,
+      "vertices": 15854,
+      "triangles": 17648,
+      "id": "nara",
+      "category": "character"
+    },
+    {
+      "file": "character-ruru.glb",
+      "bytes": 266892,
+      "nodes": 50,
+      "meshes": 39,
+      "accessors": 126,
+      "vertices": 6008,
+      "triangles": 7378,
+      "id": "ruru",
+      "category": "character"
+    },
+    {
+      "file": "character-maren.glb",
+      "bytes": 243308,
+      "nodes": 65,
+      "meshes": 57,
+      "accessors": 159,
+      "vertices": 4809,
+      "triangles": 6640,
+      "id": "maren",
+      "category": "character"
+    },
+    {
+      "file": "character-juma.glb",
+      "bytes": 574476,
+      "nodes": 110,
+      "meshes": 96,
+      "accessors": 252,
+      "vertices": 12945,
+      "triangles": 15884,
+      "id": "juma",
+      "category": "character"
+    },
+    {
+      "file": "character-bulamat.glb",
+      "bytes": 570584,
+      "nodes": 120,
+      "meshes": 105,
+      "accessors": 253,
+      "vertices": 12484,
+      "triangles": 16712,
+      "id": "bulamat",
+      "category": "character"
+    },
+    {
+      "file": "character-kesa.glb",
+      "bytes": 637560,
+      "nodes": 110,
+      "meshes": 96,
+      "accessors": 247,
+      "vertices": 14734,
+      "triangles": 17108,
+      "id": "kesa",
+      "category": "character"
+    },
+    {
+      "file": "character-pedagang.glb",
+      "bytes": 716668,
+      "nodes": 130,
+      "meshes": 114,
+      "accessors": 276,
+      "vertices": 17273,
+      "triangles": 16524,
+      "id": "pedagang",
+      "category": "character"
+    },
+    {
+      "file": "prop-lantern.glb",
+      "bytes": 42260,
+      "nodes": 12,
+      "meshes": 10,
+      "accessors": 40,
+      "vertices": 828,
+      "triangles": 792,
+      "id": "lantern",
+      "category": "prop"
+    },
+    {
+      "file": "prop-checkpoint.glb",
+      "bytes": 18900,
+      "nodes": 7,
+      "meshes": 6,
+      "accessors": 17,
+      "vertices": 375,
+      "triangles": 352,
+      "id": "checkpoint",
+      "category": "prop"
+    },
+    {
+      "file": "prop-grapple.glb",
+      "bytes": 33316,
+      "nodes": 8,
+      "meshes": 7,
+      "accessors": 25,
+      "vertices": 665,
+      "triangles": 800,
+      "id": "grapple",
+      "category": "prop"
+    },
+    {
+      "file": "prop-ladder.glb",
+      "bytes": 76732,
+      "nodes": 24,
+      "meshes": 23,
+      "accessors": 92,
+      "vertices": 1434,
+      "triangles": 1240,
+      "id": "ladder",
+      "category": "prop"
+    },
+    {
+      "file": "prop-gate.glb",
+      "bytes": 119012,
+      "nodes": 40,
+      "meshes": 37,
+      "accessors": 85,
+      "vertices": 2782,
+      "triangles": 2640,
+      "id": "gate",
+      "category": "prop"
+    },
+    {
+      "file": "prop-tower.glb",
+      "bytes": 89144,
+      "nodes": 43,
+      "meshes": 37,
+      "accessors": 118,
+      "vertices": 1536,
+      "triangles": 1472,
+      "id": "tower",
+      "category": "prop"
+    },
+    {
+      "file": "prop-dome.glb",
+      "bytes": 31524,
+      "nodes": 12,
+      "meshes": 11,
+      "accessors": 20,
+      "vertices": 644,
+      "triangles": 776,
+      "id": "dome",
+      "category": "prop"
+    },
+    {
+      "file": "prop-palm.glb",
+      "bytes": 28636,
+      "nodes": 21,
+      "meshes": 10,
+      "accessors": 40,
+      "vertices": 360,
+      "triangles": 480,
+      "id": "palm",
+      "category": "prop"
+    },
+    {
+      "file": "prop-caravan.glb",
+      "bytes": 113600,
+      "nodes": 47,
+      "meshes": 43,
+      "accessors": 121,
+      "vertices": 2176,
+      "triangles": 1980,
+      "id": "caravan",
+      "category": "prop"
+    },
+    {
+      "file": "prop-altar.glb",
+      "bytes": 44512,
+      "nodes": 17,
+      "meshes": 16,
+      "accessors": 57,
+      "vertices": 790,
+      "triangles": 756,
+      "id": "altar",
+      "category": "prop"
+    },
+    {
+      "file": "prop-ruin.glb",
+      "bytes": 23728,
+      "nodes": 8,
+      "meshes": 7,
+      "accessors": 16,
+      "vertices": 450,
+      "triangles": 604,
+      "id": "ruin",
+      "category": "prop"
+    },
+    {
+      "file": "prop-bread.glb",
+      "bytes": 14788,
+      "nodes": 7,
+      "meshes": 6,
+      "accessors": 15,
+      "vertices": 226,
+      "triangles": 228,
+      "id": "bread",
+      "category": "prop"
+    },
+    {
+      "file": "prop-shell.glb",
+      "bytes": 21620,
+      "nodes": 10,
+      "meshes": 9,
+      "accessors": 15,
+      "vertices": 347,
+      "triangles": 510,
+      "id": "shell",
+      "category": "prop"
+    },
+    {
+      "file": "prop-letter.glb",
+      "bytes": 16940,
+      "nodes": 6,
+      "meshes": 5,
+      "accessors": 14,
+      "vertices": 302,
+      "triangles": 348,
+      "id": "letter",
+      "category": "prop"
+    },
+    {
+      "file": "prop-bag.glb",
+      "bytes": 21100,
+      "nodes": 8,
+      "meshes": 7,
+      "accessors": 25,
+      "vertices": 359,
+      "triangles": 376,
+      "id": "bag",
+      "category": "prop"
+    },
+    {
+      "file": "prop-sign.glb",
+      "bytes": 16728,
+      "nodes": 7,
+      "meshes": 6,
+      "accessors": 15,
+      "vertices": 280,
+      "triangles": 332,
+      "id": "sign",
+      "category": "prop"
+    },
+    {
+      "file": "prop-rock.glb",
+      "bytes": 6552,
+      "nodes": 3,
+      "meshes": 2,
+      "accessors": 4,
+      "vertices": 168,
+      "triangles": 36,
+      "id": "rock",
+      "category": "prop"
+    }
+  ]
+}

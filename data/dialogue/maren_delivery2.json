@@ -1,0 +1,38 @@
+{
+  "id": "maren_delivery2",
+  "npc": "Maren",
+  "title": "Kepala Pos Batu Biru",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Maren",
+      "text": "Kabut mulai turun menyelimuti lembah. Ini pengantaran keduamu: Kerang Suara.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Apa isi kerang kecil ini?",
+      "next": "maren_2"
+    },
+    "maren_2": {
+      "speaker": "Maren",
+      "text": "Di dalamnya ada rekaman lagu pengantar tidur dari seorang pelaut di Pahitan untuk keluarganya di Telaga Sumi. Lagunya bertahan selama kerang tidak dibuka dan tidak dijatuhkan.",
+      "next": "nara_2"
+    },
+    "nara_2": {
+      "speaker": "Nara",
+      "text": "Dan kalau terjatuh?",
+      "next": "maren_3"
+    },
+    "maren_3": {
+      "speaker": "Maren",
+      "text": "Lagunya jadi lain. Kadang lebih sedih, kadang lebih indah, tapi bukan lagi lagu yang dikirimkan. (Maren menyerahkan gulungan tali logam)",
+      "next": "maren_grapple"
+    },
+    "maren_grapple": {
+      "speaker": "Maren",
+      "text": "Ini Kait Tali milik Sahdan. Jembatan barat ke Telaga Sumi sudah patah, tapi tebing di atasnya punya jangkar kait berkilau. Tekan F saat melihat jangkar emas untuk meluncur naik!",
+      "action": "ACCEPT_DELIVERY_2"
+    }
+  }
+}

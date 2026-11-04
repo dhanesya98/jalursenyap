@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-04",
+  "method": "Node VM + bundled Three.js; browser QA separate",
+  "results": [
+    {
+      "name": "Ending rejects missing deliveries and missing package",
+      "pass": true
+    },
+    {
+      "name": "All three deliveries, idempotent rewards and guarded ending",
+      "pass": true
+    },
+    {
+      "name": "Persistent structures, discovery and rumors survive reload",
+      "pass": true
+    },
+    {
+      "name": "Checkpoint updates on revisits",
+      "pass": true
+    },
+    {
+      "name": "Corrupt save is rejected without replacing valid state",
+      "pass": true
+    },
+    {
+      "route": "north",
+      "seconds": 25.33
+    },
+    {
+      "name": "Northern switchback is walkable both ways",
+      "pass": true
+    },
+    {
+      "route": "safe",
+      "seconds": 33.35
+    },
+    {
+      "name": "Safe storm route reaches accessible altar",
+      "pass": true
+    },
+    {
+      "route": "fast",
+      "seconds": 19.23
+    },
+    {
+      "name": "Fast route has traversable ground",
+      "pass": true
+    },
+    {
+      "name": "Western gorge is crossed in both directions using grapple",
+      "pass": true
+    },
+    {
+      "name": "All main grapple landings are outside buildings and above ground",
+      "pass": true
+    },
+    {
+      "name": "Fast grapple chain can be traversed",
+      "pass": true
+    },
+    {
+      "name": "Installed ladders can be climbed both directions",
+      "pass": true
+    },
+    {
+      "name": "Motion remains stable at 30, 60 and 120 FPS",
+      "pass": true
+    },
+    {
+      "name": "Jump and glide have finite budget and reset on landing",
+      "pass": true
+    },
+    {
+      "name": "Surfaces and storm change speed",
+      "pass": true
+    },
+    {
+      "name": "Fast ridge exposes package to storm while lantern route shelters it",
+      "pass": true
+    },
+    {
+      "name": "Marked ledge can be climbed to its landing",
+      "pass": true
+    },
+    {
+      "name": "New courtyard leaves Maren and the supply bag reachable",
+      "pass": true
+    },
+    {
+      "staticDrawObjectsBefore": 829,
+      "staticDrawObjectsAfter": 44
+    },
+    {
+      "name": "Static scenery batching preserves bounds and animated cloth",
+      "pass": true
+    },
+    {
+      "name": "All characters and props instantiate and animate without invalid geometry",
+      "pass": true
+    },
+    {
+      "companion": "maren",
+      "meshes": 34
+    },
+    {
+      "companion": "ruru",
+      "meshes": 30
+    },
+    {
+      "name": "New companion rigs retain stable size and a bounded mesh budget",
+      "pass": true
+    },
+    {
+      "name": "All static HTML/CSS asset references exist",
+      "pass": true
+    }
+  ]
+}

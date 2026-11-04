@@ -1,0 +1,1 @@
+{"name":"jalur-senyap","version":"5.1.0","private":true,"description":"Offline fantasy courier vertical slice","scripts":{"build":"node tools/build.cjs","test":"node tests/test.cjs","dev":"node tools/serve.cjs"}}

@@ -1,0 +1,38 @@
+{
+  "id": "maren_intro",
+  "npc": "Maren",
+  "title": "Kepala Pos Batu Biru",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Maren",
+      "text": "Berhenti di situ. Tas itu... Kamu tahu siapa pemilik sebelumnya?",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Kata orang desa, kurir yang paling banyak mengantar surat sepanjang jalur. Namanya Sahdan.",
+      "next": "maren_2"
+    },
+    "maren_2": {
+      "speaker": "Maren",
+      "text": "Memang Sahdan. Dan dia tidak pernah mengeluh soal bahu pegal. Selamat datang di Pos Batu Biru, Nara. Teduh di jalanmu.",
+      "next": "nara_2"
+    },
+    "nara_2": {
+      "speaker": "Nara",
+      "text": "Air di langkahmu, Bu Maren.",
+      "next": "maren_3"
+    },
+    "maren_3": {
+      "speaker": "Maren",
+      "text": "Kamu paham sopan santun Asharim. Bagus. Tugas pertamamu ringan: roti rempah untuk Juma di Menara Batu Senja di bukit utara. Dia bilang rotiku harus sampai selagi hangat!",
+      "next": "maren_tut"
+    },
+    "maren_tut": {
+      "speaker": "Maren",
+      "text": "Gunakan lari dan lompatanmu. Di tubir bukit yang curam, buka Jubah Layar untuk melayang santai. Ikuti Ruru kalau bingung — dia tidak pernah tersesat.",
+      "action": "ACCEPT_DELIVERY_1"
+    }
+  }
+}

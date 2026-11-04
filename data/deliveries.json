@@ -1,0 +1,56 @@
+[
+  {
+    "id": "delivery_1",
+    "title": "Roti Rempah untuk Menara Batu Senja",
+    "stage": 1,
+    "sender": "Maren",
+    "recipient": "Juma",
+    "item": "Roti Rempah",
+    "itemIcon": "🍞",
+    "location": "Menara Batu Senja",
+    "targetPosition": [
+      0,
+      18,
+      -125
+    ],
+    "day_condition": "hangat",
+    "summary": "Antar roti rempah hangat dari Pos Batu Biru ke Juma di Menara Batu Senja sebelum dingin.",
+    "hint": "Ikuti jalan batu berkelok ke utara. Sprint di pijakan yang aman, lompat dan coba Jubah Layar saat kembali turun."
+  },
+  {
+    "id": "delivery_2",
+    "title": "Lagu untuk Telaga Sumi",
+    "stage": 2,
+    "sender": "Maren",
+    "recipient": "Bu Lamat",
+    "item": "Kerang Suara",
+    "itemIcon": "🐚",
+    "location": "Telaga Sumi (Oasis)",
+    "targetPosition": [
+      -135,
+      2,
+      65
+    ],
+    "day_condition": "kabut",
+    "summary": "Bawa Kerang Suara berisi rekaman lagu pengantar tidur dari Pahitan ke Bu Lamat di Telaga Sumi. Jangan dijatuhkan!",
+    "hint": "Menuju barat. Gunakan F pada cincin emas untuk menyeberangi ngarai. Q meminta Ruru membaca medan; L memasang tangga di penandanya."
+  },
+  {
+    "id": "delivery_3",
+    "title": "Surat Bersegel dari Simpul Pertama",
+    "stage": 3,
+    "sender": "Sahdan (Peninggalan)",
+    "recipient": "Altar Simpul Sembilan",
+    "item": "Surat Bersegel",
+    "itemIcon": "📜",
+    "location": "Simpul Sembilan",
+    "targetPosition": [
+      125,
+      26,
+      -85
+    ],
+    "day_condition": "berat",
+    "summary": "Surat kuno yang berdenyut misterius di dalam tas kurir. Antarkan ke menara relay Simpul Sembilan yang padam di balik kawah badai.",
+    "hint": "Pilih di Buku Jalur: Jalur Lentera yang aman di timur, atau rantai kait di Tebing Utara yang lebih cepat. Badai melemahkan glide dan mengikis paket di pasir terbuka."
+  }
+]

@@ -1,0 +1,33 @@
+JALUR SENYAP — PORTRAIT & ICON ASSET PACK
+Created 2026-11-04 for this project, using the supplied Game Design & Build Brief.
+
+PORTRAITS
+portraits/nara.png — young courier Nara, cream sail-cape and leather mail bag.
+portraits/maren.png — elder head of Pos Batu Biru, letters and slate-blue shawl.
+portraits/juma.png — watchtower keeper, olive robe, broad hat and brass telescope.
+portraits/bulamat.png — elder of Telaga Sumi, teal wrap and Kerang Suara.
+portraits/kesa.png — toll officer, aubergine cloak and guild seal.
+portraits/pedagang.png — wandering merchant, woven hat, rug and ceramic cup.
+portraits/ruru.png — fennec companion, cream fur and glowing tail lantern.
+
+These seven PNG illustrations were generated with the OpenAI built-in ImageGen
+tool for this project. No web-downloaded stock portraits are included. Prompt
+text is preserved in portrait-prompts.json. Ruru received one corrective edit
+to remove an unintended human figure; only the final creature image is shipped.
+Generated output is not described as CC0 or exclusive. Usage remains subject
+to applicable service terms. All characters are original to the provided brief.
+
+ICONS
+24 editable SVG icons are newly authored for this project, without an external
+icon library. Names: bag, bread, shell, letter, grapple, ladder, cape, compass,
+map, journal, checkpoint, sun, fog, storm, ruru, rock, sand, cliff, seal, close,
+pause, volume, moon, save. Each uses a 24 x 24 viewBox, 1.5-unit rounded sepia
+strokes, and restrained lantern-yellow accents. sprite.svg provides matching
+symbols with currentColor strokes for optional inline use.
+
+VERIFICATION
+Portraits visually checked for identity, composition, consistent style and no
+text. Dimensions and SHA-256 hashes are recorded in portrait-icon-manifest.json.
+The asset-library.html page previews the exact local files.
+
+These credits cover only this portrait/icon pack, not other game assets.

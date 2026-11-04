@@ -1,0 +1,46 @@
+{
+  "name":"Lembah Pasir", "bounds":220,
+  "hub":[0,0,35],
+  "landmarks":[
+    {"id":"hub","name":"Pos Batu Biru","position":[0,0,35],"icon":"checkpoint","description":"Rumah bagi surat yang belum sampai. Di bawah kanopi Maren, setiap perjalanan dimulai kembali."},
+    {"id":"tower","name":"Menara Batu Senja","position":[0,18,-125],"icon":"compass","description":"Juma menunggu angin dari utara dan roti dari selatan. Bel menara ini sudah lebih tua daripada jalan di bawahnya."},
+    {"id":"oasis","name":"Telaga Sumi","position":[-135,2,65],"icon":"shell","description":"Air menyimpan gema yang dilupakan pasir. Di sini lagu dari Pahitan akhirnya menemukan pendengarnya."},
+    {"id":"toll","name":"Gerbang Dewan Tol","position":[70,3,-10],"icon":"seal","description":"Dewan mengaku menjaga jalur. Tetapi siapa yang diuntungkan ketika semua orang berhenti berjalan?"},
+    {"id":"relay","name":"Simpul Sembilan","position":[125,26,-85],"icon":"lantern","description":"Salah satu dari seratus Simpul Warjian. Retaknya menyimpan nama yang belum pernah diucapkan di sini."},
+    {"id":"view","name":"Punggung Angin","position":[150,16,5],"icon":"map","description":"Dari sini, lentera Pos Batu Biru tampak seperti satu bintang yang memilih tinggal di bumi."}
+  ],
+  "npcs":[
+    {"id":"maren","name":"Maren","title":"Kepala Pos Batu Biru","position":[0,0,31]},
+    {"id":"juma","name":"Juma","title":"Penjaga Menara Batu Senja","position":[0,18,-125]},
+    {"id":"bulamat","name":"Bu Lamat","title":"Tetua Telaga Sumi","position":[-135,2,65]},
+    {"id":"kesa","name":"Kesa","title":"Petugas Dewan Tol","position":[65,3,-9]},
+    {"id":"pedagang","name":"Pedagang Lembah","title":"Pembawa kabar dari barat","position":[-40,1,60]}
+  ],
+  "routes":{
+    "north":{"name":"Jalan Menara","surface":"rock","width":5,"points":[[0,0,35],[0,0,-2],[-23,2,-32],[23,6,-58],[-20,11,-85],[8,16,-110],[0,18,-125]]},
+    "west":{"name":"Jalan Telaga","surface":"sand","width":5,"points":[[0,0,35],[-28,0,49],[-46,1,54],[-56,3,43],[-88,5,43],[-108,3,57],[-135,2,65]]},
+    "safe":{"name":"Jalur Lentera","surface":"rock","width":5,"points":[[0,0,35],[35,0,40],[65,2,65],[105,4,60],[140,9,30],[170,14,-5],[165,18,-45],[150,23,-65],[125,26,-85]]},
+    "fast":{"name":"Tebing Utara","surface":"rock","width":3.5,"points":[[0,0,35],[35,0,5],[57,3,-23],[75,8,-40],[96,16,-62],[116,23,-78],[125,26,-85]]},
+    "direct":{"name":"Jalur Tol","surface":"sand","width":5,"points":[[35,0,5],[70,3,-10],[102,15,-45],[125,26,-85]]}
+  },
+  "anchors":[
+    {"id":"practice","name":"Cincin latihan","position":[-10,0,48],"practice":true},
+    {"id":"west1","name":"Tebing seberang telaga","position":[-90,5,43]},
+    {"id":"west2","name":"Tebing pulang","position":[-54,3,43]},
+    {"id":"east1","name":"Ambang angin","position":[75,8,-40]},
+    {"id":"east2","name":"Punggung batu","position":[96,16,-62]},
+    {"id":"east3","name":"Pintu Simpul","position":[120,25,-82]}
+  ],
+  "ladders":[
+    {"id":"ladder-west","name":"Tangga Ngarai","bottom":[-49,0,62],"top":[-55,3,47],"description":"Jalan pulang dari dasar ngarai. Sekali dipasang, menjadi milik semua kurir."},
+    {"id":"ladder-east","name":"Tangga Tebing Utara","bottom":[91,12,-48],"top":[107,20,-68],"description":"Memotong punggung tebing. Menghindari paparan angin di sisi timur."}
+  ],
+  "ledges":[
+    {"id":"ledge-north","name":"Tepian bertanda lentera","bottom":[18,4,-48],"top":[24,6,-58]}
+  ],
+  "discoveries":[
+    {"id":"oldpost","name":"Pos yang Dilupakan","position":[-29,5,-80],"text":"Cap Ikatan Pengantar masih tampak di batu. Jalur ini pernah menghubungkan orang yang tak saling mengenal."},
+    {"id":"view","name":"Punggung Angin","position":[150,16,5],"text":"Tiga lentera di kejauhan: pos, telaga, dan menara. Dunia terasa sedikit lebih dekat."},
+    {"id":"warjian","name":"Jejak Warjian","position":[117,24,-94],"text":"Gurat di batu menyerupai simpul tali. Bagi Warjian, pesan adalah ikatan, bukan barang."}
+  ]
+}

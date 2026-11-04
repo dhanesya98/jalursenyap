@@ -1,0 +1,209 @@
+{
+  "title": "Jalur Senyap — procedural 3D asset pack",
+  "version": 3,
+  "source": "src/art.js + src/nara-art.js + src/companions-art.js",
+  "engine": "Three.js r128",
+  "provenance": "Original code-native geometry and rigging created for this project; no downloaded models or textures.",
+  "style": "Muted gouache toon materials, fine sepia silhouette details, Asharim domes and woven fabric, Warjian moss and aged bronze.",
+  "coordinates": "Y up, character front +Z, feet/base at 0. Visual models do not define gameplay collision.",
+  "characters": [
+    "nara",
+    "ruru",
+    "maren",
+    "juma",
+    "bulamat",
+    "kesa",
+    "pedagang"
+  ],
+  "props": [
+    "lantern",
+    "checkpoint",
+    "grapple",
+    "ladder",
+    "gate",
+    "tower",
+    "dome",
+    "palm",
+    "caravan",
+    "altar",
+    "ruin",
+    "bread",
+    "shell",
+    "letter",
+    "bag",
+    "sign",
+    "rock"
+  ],
+  "api": {
+    "JSArt.character(id)": "Returns an articulated THREE.Group. userData.animate(timeSeconds, speed, gliding) updates the pose.",
+    "JSArt.prop(kind, options)": "Returns a visual THREE.Group. Optional dimensions: length/width for ladder, height/radius for tower and dome, width/height/depth for caravan, height for palm/ruin/lantern, radius/color for rock.",
+    "userData.setActive(boolean)": "Available on checkpoint and altar to update light-emitting material.",
+    "userData.animate(timeSeconds)": "Available on lantern, checkpoint, grapple, and altar."
+  },
+  "dimensions": {
+    "human": "~1.95 units tall",
+    "ruru": "~0.9 units including ears",
+    "tower": "radius 3, shaft 14, dome above",
+    "caravan": "6 x 6 body, canopy extends +Z, body height 4 plus dome",
+    "gate": "pillars at x ±4, central open span approximately 6, height 8",
+    "ladder": "width 1.15, vertical y=0..length, default length 6",
+    "altar": "radius 1.55, crystal center y=1.85"
+  },
+  "exports": {
+    "directory": "assets/models",
+    "format": "glTF 2.0 GLB",
+    "generator": "tools/export-models.cjs",
+    "count": 24,
+    "geometry": "Visible meshes and ink line primitives; node hierarchy and local transforms retained.",
+    "materials": "Rough PBR approximation of toon colors; unlit ink lines. No toon ramp texture.",
+    "animations": false,
+    "skins": false,
+    "notes": "Static reusable models. Runtime JS animations, cloth waves, light activation, collision, and gameplay are not exported.",
+    "files": [
+      {
+        "id": "nara",
+        "category": "character",
+        "file": "assets/models/character-nara.glb",
+        "bytes": 694524
+      },
+      {
+        "id": "ruru",
+        "category": "character",
+        "file": "assets/models/character-ruru.glb",
+        "bytes": 266892
+      },
+      {
+        "id": "maren",
+        "category": "character",
+        "file": "assets/models/character-maren.glb",
+        "bytes": 243308
+      },
+      {
+        "id": "juma",
+        "category": "character",
+        "file": "assets/models/character-juma.glb",
+        "bytes": 574476
+      },
+      {
+        "id": "bulamat",
+        "category": "character",
+        "file": "assets/models/character-bulamat.glb",
+        "bytes": 570584
+      },
+      {
+        "id": "kesa",
+        "category": "character",
+        "file": "assets/models/character-kesa.glb",
+        "bytes": 637560
+      },
+      {
+        "id": "pedagang",
+        "category": "character",
+        "file": "assets/models/character-pedagang.glb",
+        "bytes": 716668
+      },
+      {
+        "id": "lantern",
+        "category": "prop",
+        "file": "assets/models/prop-lantern.glb",
+        "bytes": 42260
+      },
+      {
+        "id": "checkpoint",
+        "category": "prop",
+        "file": "assets/models/prop-checkpoint.glb",
+        "bytes": 18900
+      },
+      {
+        "id": "grapple",
+        "category": "prop",
+        "file": "assets/models/prop-grapple.glb",
+        "bytes": 33316
+      },
+      {
+        "id": "ladder",
+        "category": "prop",
+        "file": "assets/models/prop-ladder.glb",
+        "bytes": 76732
+      },
+      {
+        "id": "gate",
+        "category": "prop",
+        "file": "assets/models/prop-gate.glb",
+        "bytes": 119012
+      },
+      {
+        "id": "tower",
+        "category": "prop",
+        "file": "assets/models/prop-tower.glb",
+        "bytes": 89144
+      },
+      {
+        "id": "dome",
+        "category": "prop",
+        "file": "assets/models/prop-dome.glb",
+        "bytes": 31524
+      },
+      {
+        "id": "palm",
+        "category": "prop",
+        "file": "assets/models/prop-palm.glb",
+        "bytes": 28636
+      },
+      {
+        "id": "caravan",
+        "category": "prop",
+        "file": "assets/models/prop-caravan.glb",
+        "bytes": 113600
+      },
+      {
+        "id": "altar",
+        "category": "prop",
+        "file": "assets/models/prop-altar.glb",
+        "bytes": 44512
+      },
+      {
+        "id": "ruin",
+        "category": "prop",
+        "file": "assets/models/prop-ruin.glb",
+        "bytes": 23728
+      },
+      {
+        "id": "bread",
+        "category": "prop",
+        "file": "assets/models/prop-bread.glb",
+        "bytes": 14788
+      },
+      {
+        "id": "shell",
+        "category": "prop",
+        "file": "assets/models/prop-shell.glb",
+        "bytes": 21620
+      },
+      {
+        "id": "letter",
+        "category": "prop",
+        "file": "assets/models/prop-letter.glb",
+        "bytes": 16940
+      },
+      {
+        "id": "bag",
+        "category": "prop",
+        "file": "assets/models/prop-bag.glb",
+        "bytes": 21100
+      },
+      {
+        "id": "sign",
+        "category": "prop",
+        "file": "assets/models/prop-sign.glb",
+        "bytes": 16728
+      },
+      {
+        "id": "rock",
+        "category": "prop",
+        "file": "assets/models/prop-rock.glb",
+        "bytes": 6552
+      }
+    ]
+  }
+}
