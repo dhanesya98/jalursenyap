@@ -14,45 +14,108 @@
     this.isPaused=false;
     this.inDialogue=false;
     this.onAudioUpdate=null;
+    this._fadeTimer=null;
   }
+
+  getBgmTargetVolume(){
+    if(!this.bgmAudio) return 0;
+    // Saat dialog dengan NPC atau ada VO, kecilkan BGM menjadi ambience latar (~18% dari normal)
+    if(this.inDialogue || this.currentVoice){
+      return Math.min(1, Math.max(0, this.volume * .04));
+    }
+    return Math.min(1, Math.max(0, this.volume * .22));
+  }
+
+  fadeBgm(targetVol, ms=450){
+    if(!this.bgmAudio) return;
+    const raf = typeof window !== 'undefined' && window.requestAnimationFrame ? window.requestAnimationFrame : ((cb) => setTimeout(cb, 16));
+    const caf = typeof window !== 'undefined' && window.cancelAnimationFrame ? window.cancelAnimationFrame : clearTimeout;
+    if(this._fadeTimer) caf(this._fadeTimer);
+    const startVol = this.bgmAudio.volume;
+    const startTime = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+    const step = () => {
+      const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+      const progress = Math.min(1, (now - startTime) / ms);
+      if(this.bgmAudio){
+        this.bgmAudio.volume = Math.max(0, Math.min(1, startVol + (targetVol - startVol) * progress));
+      }
+      if(progress < 1){
+        this._fadeTimer = raf(step);
+      }else{
+        this._fadeTimer = null;
+      }
+    };
+    this._fadeTimer = raf(step);
+  }
+
+  applyBgmVolume(fade=true){
+    if(!this.bgmAudio) return;
+    const target = this.getBgmTargetVolume();
+    if(fade){
+      this.fadeBgm(target, 450);
+    } else {
+      this.bgmAudio.volume = target;
+    }
+  }
+
   duckWind(duck){
     if(!this.ctx||!this.wind)return;
     const base=this.weather==='berat'?.32:this.weather==='kabut'?.035:.08;
     this.wind.gain.setTargetAtTime(duck?base*.15:base,this.ctx.currentTime,.4);
   }
+
   setDialogue(inDiag){
     this.inDialogue=!!inDiag;
     if(this.inDialogue){
-      if(this.bgmAudio&&!this.bgmAudio.paused)this.bgmAudio.pause();
+      // BGM tetap berputar tapi diredam lembut menjadi suara latar/ambience
       this.duckWind(true);
+      if(this.bgmAudio){
+        if(this.bgmAudio.paused && !this.isPaused && (!this.shellAudio || this.shellAudio.paused)){
+          this.bgmAudio.play().catch(()=>{});
+        }
+        this.applyBgmVolume(true);
+      }
     }else{
       this.stopVoice();
       this.duckWind(false);
-      if(!this.isPaused&&this.bgmAudio&&this.bgmAudio.paused&&(!this.shellAudio||this.shellAudio.paused)){
-        this.bgmAudio.play().catch(()=>{});
+      if(this.bgmAudio){
+        if(this.bgmAudio.paused && !this.isPaused && (!this.shellAudio || this.shellAudio.paused)){
+          this.bgmAudio.play().catch(()=>{});
+        }
+        this.applyBgmVolume(true);
       }
     }
   }
+
   stopVoice(){
     if(this.currentVoice){
       try{this.currentVoice.pause();this.currentVoice.currentTime=0;}catch(_){}
       this.currentVoice=null;
     }
   }
+
   playVoice(key){
     this.stopVoice();
-    if(this.bgmAudio&&!this.bgmAudio.paused)this.bgmAudio.pause();
+    // BGM tetap jalan pelan di latar belakang
+    this.applyBgmVolume(true);
     this.duckWind(true);
     if(!key)return;
     const playSrc=(ext,next)=>{
       const a=new window.Audio(`assets/audio/vo/${key}.${ext}`);
       a.volume=Math.min(1,this.volume*1.3);
-      a.onended=()=>{if(this.currentVoice===a)this.currentVoice=null;};
+      a.onended=()=>{
+        if(this.currentVoice===a)this.currentVoice=null;
+        if(!this.inDialogue){
+          this.duckWind(false);
+          this.applyBgmVolume(true);
+        }
+      };
       this.currentVoice=a;
       a.play().catch(next);
     };
     playSrc('wav',()=>playSrc('mp3',()=>this.playChime()));
   }
+
   playShell(){
     try{
       this.stopVoice();
@@ -61,7 +124,14 @@
         const a=new window.Audio('assets/audio/sfx/seashell_lullaby.mp3');
         this.shellAudio=a;
         a.addEventListener('timeupdate',()=>{this.onAudioUpdate?.('time',a.currentTime,a.duration);});
-        a.addEventListener('ended',()=>{this.duckWind(false);this.onAudioUpdate?.('ended');});
+        a.addEventListener('ended',()=>{
+          this.duckWind(false);
+          this.onAudioUpdate?.('ended');
+          if(!this.isPaused && this.bgmAudio && this.bgmAudio.paused){
+            this.bgmAudio.play().catch(()=>{});
+            this.applyBgmVolume(true);
+          }
+        });
         a.addEventListener('pause',()=>{this.onAudioUpdate?.('pause');});
         a.addEventListener('play',()=>{this.onAudioUpdate?.('play');});
       }
@@ -73,13 +143,19 @@
       [440,493.88,587.33,493.88,440,369.99,392].forEach((f,i)=>this.note(f,.85,.08,i*.45));
     }
   }
+
   pauseShell(){
     if(this.shellAudio&&!this.shellAudio.paused){
       this.shellAudio.pause();
       this.duckWind(false);
       this.onAudioUpdate?.('pause');
+      if(!this.isPaused&&this.bgmAudio&&this.bgmAudio.paused){
+        this.bgmAudio.play().catch(()=>{});
+        this.applyBgmVolume(true);
+      }
     }
   }
+
   resumeShell(){
     if(this.shellAudio&&this.shellAudio.paused){
       if(this.bgmAudio&&!this.bgmAudio.paused)this.bgmAudio.pause();
@@ -88,21 +164,25 @@
       this.playShell();
     }
   }
+
   stopShell(){
     if(this.shellAudio){
       try{this.shellAudio.pause();this.shellAudio.currentTime=0;}catch(_){}
       this.duckWind(false);
       this.onAudioUpdate?.('stop');
-      if(!this.inDialogue&&!this.isPaused&&this.bgmAudio&&this.bgmAudio.paused){
+      if(!this.isPaused&&this.bgmAudio&&this.bgmAudio.paused){
         this.bgmAudio.play().catch(()=>{});
+        this.applyBgmVolume(true);
       }
     }
   }
+
   playBgm(track){
-    if(this.isPaused||this.inDialogue||!track)return;
+    if(this.isPaused||!track)return;
     if(this.shellAudio&&!this.shellAudio.paused)return;
     if(this.bgmTrack===track&&this.bgmAudio){
       if(this.bgmAudio.paused)this.bgmAudio.play().catch(()=>{});
+      this.applyBgmVolume(false);
       return;
     }
     if(this.bgmAudio){
@@ -112,10 +192,11 @@
     this.bgmTrack=track;
     const a=new window.Audio(`assets/audio/sfx/${track}`);
     a.loop=true;
-    a.volume=Math.min(1,this.volume*.22);
+    a.volume=this.getBgmTargetVolume();
     this.bgmAudio=a;
     a.play().catch(()=>{});
   }
+
   init(){
     if(this.ctx){this.ctx.resume().catch(()=>{});return;}
     try{
@@ -132,13 +213,15 @@
       noise.start();this.setWeather(this.weather);
     }catch(e){console.warn('Audio tidak tersedia',e);this.ctx=null;}
   }
+
   setVolume(v){
     this.volume=v;
     if(this.master)this.master.gain.setTargetAtTime(v*.5,this.ctx?this.ctx.currentTime:0,.15);
     if(this.currentVoice)this.currentVoice.volume=Math.min(1,v*1.3);
     if(this.shellAudio)this.shellAudio.volume=Math.min(1,v*.9);
-    if(this.bgmAudio)this.bgmAudio.volume=Math.min(1,v*.22);
+    this.applyBgmVolume(false);
   }
+
   pause(on){
     this.isPaused=!!on;
     if(this.master)this.master.gain.setTargetAtTime(this.volume*(on?.12:.5),this.ctx?this.ctx.currentTime:0,.25);
@@ -146,16 +229,19 @@
       if(this.bgmAudio&&!this.bgmAudio.paused)this.bgmAudio.pause();
       if(this.currentVoice&&!this.currentVoice.paused)this.currentVoice.pause();
     }else{
-      if(!this.inDialogue&&this.bgmAudio&&this.bgmAudio.paused&&(!this.shellAudio||this.shellAudio.paused)){
+      if(this.bgmAudio&&this.bgmAudio.paused&&(!this.shellAudio||this.shellAudio.paused)){
         this.bgmAudio.play().catch(()=>{});
+        this.applyBgmVolume(false);
       }
     }
   }
+
   setWeather(w){
     this.weather=w;if(!this.ctx)return;
     this.wind.gain.setTargetAtTime(w==='berat'?.32:w==='kabut'?.035:.08,this.ctx.currentTime,1.2);
     this.filter.frequency.setTargetAtTime(w==='berat'?1000:w==='kabut'?210:380,this.ctx.currentTime,1.2);
   }
+
   note(freq,duration=.3,gain=.1,delay=0,type='sine'){
     if(!this.ctx||this.ctx.state!=='running')return;
     const now=this.ctx.currentTime+delay,o=this.ctx.createOscillator(),g=this.ctx.createGain();
@@ -167,14 +253,16 @@
     o.start(now);o.stop(now+duration+.03);
     o.onended=()=>{o.disconnect();g.disconnect();};
   }
+
   playChime(){this.note(587.33,.22,.025);}
   playJump(){this.note(210,.15,.075,0,'triangle');}
   playFootstep(surface){this.note(surface==='rock'?130:78,.075,.06,0,'triangle');}
   playGrapple(){[392,587,784].forEach((f,i)=>this.note(f,.22,.07,i*.05,'triangle'));}
   playCheckpoint(){[293.66,369.99,440].forEach((f,i)=>this.note(f,.7,.06,i*.16));}
   playSimpulEcho(){[146.83,220,293.66,329.63,440,392,293.66].forEach((f,i)=>this.note(f,2,.1,i*.55));}
+
   update(time,sheltered){
-    if(this.isPaused||this.inDialogue)return;
+    if(this.isPaused)return;
     if(this.shellAudio&&!this.shellAudio.paused){
       if(this.bgmAudio&&!this.bgmAudio.paused)this.bgmAudio.pause();
       return;
