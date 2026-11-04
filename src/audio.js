@@ -1,9 +1,14 @@
 /* Original synthesized soundscape. No remote audio or copyrighted recordings. */
 (function(root){
  class Audio {
-  constructor(){this.ctx=null;this.master=null;this.volume=.6;this.weather='hangat';this.lastMusic=-50;this.currentVoice=null;this.shellAudio=null;}
-  stopVoice(){if(this.currentVoice){try{this.currentVoice.pause();}catch(_){}this.currentVoice=null;}if(this.shellAudio){try{this.shellAudio.pause();}catch(_){}this.shellAudio=null;}}
-  playVoice(key){this.stopVoice();if(!key)return;const playSrc=(ext,next)=>{const a=new window.Audio(`assets/audio/vo/${key}.${ext}`);a.volume=Math.min(1,this.volume*1.2);a.play().then(()=>{this.currentVoice=a;}).catch(next);};playSrc('wav',()=>playSrc('mp3',()=>this.playChime()));}
+  constructor(){this.ctx=null;this.master=null;this.volume=.6;this.weather='hangat';this.lastMusic=-50;this.currentVoice=null;this.shellAudio=null;this.onAudioUpdate=null;}
+  duckWind(duck){if(!this.ctx||!this.wind)return;const base=this.weather==='berat'?.32:this.weather==='kabut'?.035:.08;this.wind.gain.setTargetAtTime(duck?base*.15:base,this.ctx.currentTime,.5);}
+  stopVoice(){if(this.currentVoice){try{this.currentVoice.pause();}catch(_){}this.currentVoice=null;this.duckWind(false);}}
+  playVoice(key){this.stopVoice();if(!key)return;const playSrc=(ext,next)=>{const a=new window.Audio(`assets/audio/vo/${key}.${ext}`);a.volume=Math.min(1,this.volume*1.2);a.onended=()=>{this.duckWind(false);};a.play().then(()=>{this.currentVoice=a;this.duckWind(true);}).catch(next);};playSrc('wav',()=>playSrc('mp3',()=>this.playChime()));}
+  playShell(){try{if(!this.shellAudio){const a=new window.Audio('assets/audio/sfx/seashell_lullaby.mp3');this.shellAudio=a;a.addEventListener('timeupdate',()=>{this.onAudioUpdate?.('time',a.currentTime,a.duration);});a.addEventListener('ended',()=>{this.duckWind(false);this.onAudioUpdate?.('ended');});a.addEventListener('pause',()=>{this.duckWind(false);this.onAudioUpdate?.('pause');});a.addEventListener('play',()=>{this.duckWind(true);this.onAudioUpdate?.('play');});}this.shellAudio.volume=Math.min(1,this.volume*1.2);this.shellAudio.play().then(()=>{this.duckWind(true);this.onAudioUpdate?.('play');}).catch(()=>{[440,493.88,587.33,493.88,440,369.99,392].forEach((f,i)=>this.note(f,.85,.08,i*.45));});}catch(_){[440,493.88,587.33,493.88,440,369.99,392].forEach((f,i)=>this.note(f,.85,.08,i*.45));}}
+  pauseShell(){if(this.shellAudio&&!this.shellAudio.paused){this.shellAudio.pause();this.duckWind(false);this.onAudioUpdate?.('pause');}}
+  resumeShell(){if(this.shellAudio&&this.shellAudio.paused){this.shellAudio.play().then(()=>{this.duckWind(true);this.onAudioUpdate?.('play');}).catch(()=>{});}else if(!this.shellAudio){this.playShell();}}
+  stopShell(){if(this.shellAudio){try{this.shellAudio.pause();this.shellAudio.currentTime=0;}catch(_){}this.duckWind(false);this.onAudioUpdate?.('stop');}}
   init(){if(this.ctx){this.ctx.resume().catch(()=>{});return;}try{this.ctx=new (window.AudioContext||window.webkitAudioContext)();this.master=this.ctx.createGain();this.master.gain.value=this.volume*.5;this.master.connect(this.ctx.destination);const buffer=this.ctx.createBuffer(1,this.ctx.sampleRate*3,this.ctx.sampleRate),out=buffer.getChannelData(0);let last=0;for(let i=0;i<out.length;i++){last=(last+.02*(Math.random()*2-1))/1.02;out[i]=last*3;}const noise=this.ctx.createBufferSource();noise.buffer=buffer;noise.loop=true;this.filter=this.ctx.createBiquadFilter();this.filter.type='lowpass';this.filter.frequency.value=360;this.wind=this.ctx.createGain();this.wind.gain.value=.08;noise.connect(this.filter);this.filter.connect(this.wind);this.wind.connect(this.master);noise.start();this.setWeather(this.weather);}catch(e){console.warn('Audio tidak tersedia',e);this.ctx=null;}}
   setVolume(v){this.volume=v;if(this.master)this.master.gain.setTargetAtTime(v*.5,this.ctx.currentTime,.15);if(this.currentVoice)this.currentVoice.volume=Math.min(1,v*1.2);if(this.shellAudio)this.shellAudio.volume=Math.min(1,v*1.2);}
   pause(on){if(this.master)this.master.gain.setTargetAtTime(this.volume*(on?.12:.5),this.ctx.currentTime,.25);}
@@ -15,7 +20,6 @@
   playGrapple(){[392,587,784].forEach((f,i)=>this.note(f,.22,.07,i*.05,'triangle'));}
   playCheckpoint(){[293.66,369.99,440].forEach((f,i)=>this.note(f,.7,.06,i*.16));}
   playSimpulEcho(){[146.83,220,293.66,329.63,440,392,293.66].forEach((f,i)=>this.note(f,2,.1,i*.55));}
-  playShell(){try{if(this.shellAudio){this.shellAudio.pause();this.shellAudio=null;}const a=new window.Audio('assets/audio/sfx/seashell_lullaby.mp3');a.volume=Math.min(1,this.volume*1.2);a.play().then(()=>{this.shellAudio=a;}).catch(()=>{[440,493.88,587.33,493.88,440,369.99,392].forEach((f,i)=>this.note(f,.85,.08,i*.45));});}catch(_){[440,493.88,587.33,493.88,440,369.99,392].forEach((f,i)=>this.note(f,.85,.08,i*.45));}}
   update(time,sheltered){if(time-this.lastMusic>65&&sheltered&&this.weather!=='berat'){this.lastMusic=time;[293.66,440,392,329.63,293.66].forEach((f,i)=>this.note(f,2.5,.025,i*1.1));}}
  }
  root.JSAudio=Audio;
