@@ -1,162 +1,101 @@
 # Jalur Senyap
 
-> “Supaya tidak ada orang yang menunggu sendirian.”
+![Ilustrasi konsep Lembah Pasir: Nara dan Ruru memandang jalur panjang menuju cakrawala](assets/world/lembah-pasir.png)
 
-![Nara dan Ruru memandang Pos Batu Biru, gurun luas, dan menara Simpul di cakrawala](assets/world/lembah-pasir.png)
+*Ilustrasi konsep Lembah Pasir di Tanah Sada.*
 
-**Sebuah petualangan third-person tentang perjalanan, kabar, dan orang-orang yang menunggu.** Jadilah kurir muda di Tanah Lintas: baca medan, jaga titipan, dan temukan kisah di setiap persinggahan.
+**Jalur Senyap** adalah game petualangan *third-person* tentang seorang kurir muda yang mengantar surat, janji, lagu, dan paket antarbangsa di dunia fantasi **Tanah Sada**. Tanpa combat, tanpa crafting, tanpa grinding. Yang ada hanyalah perjalanan, membaca kontur medan dan cuaca, serta kehangatan cerita di setiap pengantaran.
 
-**[Mainkan demo](https://dhanesya98.github.io/jalursenyap/)** · **[Jelajahi Atlas Tanah Lintas](https://dhanesya98.github.io/jalursenyap/atlas.html)**
+---
 
-Demo untuk browser desktop dengan **keyboard, mouse, dan WebGL**. Dapat juga dimainkan secara lokal tanpa koneksi internet.
+## 🎮 Coba Mainkan
 
-## Satu surat yang belum sampai
+Buka versi web interaktif langsung di browser: **[dhanesya98.github.io/jalursenyap](https://dhanesya98.github.io/jalursenyap/)**.  
+Tidak perlu mengunduh aplikasi atau membuat akun. Cukup gunakan browser desktop modern dengan dukungan WebGL, keyboard, dan mouse (lihat [Kontrol](#kontrol)).
 
-Dahulu, seratus menara bernama **Simpul** mengalirkan **Gema**: bunyi dan ingatan yang menempuh jarak jauh melalui batu resonansi. Lima bangsa bertukar kabar dalam sekejap. Namun Gema meneruskan apa yang diucapkan tanpa mengetahui apakah sebuah pesan benar atau bohong.
+---
 
-Lalu datang **Hari Senyap**. Seratus Simpul padam serentak. Kabar terputus, keluarga terpisah, dan setiap bangsa mewariskan penjelasannya sendiri tentang apa yang terjadi. Jalur Gema menjadi **Jalur Senyap**.
+## 📜 Premis Cerita (Tahun ke-100 Telan)
 
-Cerita berlangsung pada **tahun ke-100 Telan**. Kamu adalah **Nara**, kurir magang berusia tujuh belas tahun dari **Dusun Sela**, yang tumbuh bersama Nenek Ima. Ayahnya, **Tarun**, berlayar lima tahun lalu, dan kabarnya terputus. Nara tahu bagaimana rasanya menunggu di gerbang untuk satu kabar kecil. Itulah alasan ia memilih menjadi kurir.
+Dahulu, seratus menara relay bernama **Simpul** mengalirkan **Gema** — fenomena resonansi langka yang menyimpan dan meneruskan getaran suara, ingatan, serta kabar antarbangsa di **Tanah Sada**. Jalur peradaban itu dikenal sebagai **Jalur Gema**.
 
-Di **Pos Batu Biru**, pengantaran roti dan lagu mempertemukan Nara dengan kehidupan orang-orang di sepanjang jalur. Saat badai datang, **Maren** menyerahkan **Surat Penyalaan**: titipan Sahdan dari Simpul Pertama, yang telah dijaga empat generasi. Tas tua Sahdan melindungi surat itu; segelnya hanya terbuka penuh setelah mendapat **Cap Saksi dari tiga bangsa**.
+Namun Gema tidak pernah menguji kebenaran pesan. Kabar dusta dan perang propaganda memecah bangsa-bangsa hingga memicu Kabar Tujuh Musim dan gelombang resonansi liar yang mengancam menghancurkan akal manusia. Pada **Tahun 0 (Tahun Telan / Hari Senyap / Malam Hening)**, para penyetel Lulanai mengambil keputusan tragis: mereka memutus jaringan Simpul secara serentak dengan menelan gelombang kejut ke tubuh mereka sendiri. Sisa gelombang dialirkan lewat Garis Surut ke Katup di Simpul Keseratus dan ditahan di balik **Bendungan**. Kurir legendaris **Sahdan** menjadi jangkar penstabil di Simpul Pertama dan menyatu dengan batu.
 
-Bersama **Ruru**, pendamping kecil yang peka pada jejak Gema, Nara memulai perjalanan untuk mencari tahu mengapa dunia dibungkam—dan siapa yang layak dipercaya ketika suara-suara lama kembali terdengar.
+Seratus tahun telah berlalu (**Tahun ke-100 Telan**). Peradaban belajar hidup dalam keheningan, bertumpu pada kaki para kurir independen di Pos Singgah. Di sisi lain, **Dewan Tol** memonopoli jalur dengan *Ajaran Tata* dan menjual kabar tersaring lewat tujuh Simpul Terang. Tanpa disadari dunia, Bendungan seratus tahun itu kini mulai melemah dan tanda tekanan muncul di berbagai penjuru.
 
-## Perjalanan adalah gameplay
+Kamu adalah **Nara** (17 tahun), kurir magang asal Dusun Sela yang melangkah agar *tidak ada lagi orang yang menunggu kabar sendirian*. Di Pos Batu Biru, Maren menyerahkan **Surat Penyalaan** peninggalan Sahdan — titipan rahasia empat generasi (*Sarai → Bahar → Ilun → Maren*) yang ditulis di atas kertas serat berinsulasi dengan seratus tanda penyetel. Segel surat hanya terbuka penuh bila memuat **Cap Saksi** dari setidaknya tiga bangsa.
 
-Tidak ada pertarungan, crafting, atau grinding. Tantangannya datang dari medan, cuaca, keputusan di jalan, dan tanggung jawab atas titipan yang kamu bawa.
+Didampingi **Ruru**, penunjuk jalan berbulu yang peka pada jejak resonansi, tugas Nara bukan menjadi penakluk adidaya, melainkan menyambungkan kembali tali kepercayaan yang putus.
 
-1. **Baca medan.** Kenali pijakan batu, pasir lunak, ngarai, dan tebing curam. Amati landmark atau minta Ruru memindai jalur di sekitar.
-2. **Rencanakan perjalanan.** Buka **Buku Jalur**, lihat tujuan dan pilihan rute, lalu pilih bekal alat di Pos Batu Biru.
-3. **Temukan jalanmu.** Berlari, melompat, membuka **Jubah Layar** untuk melayang singkat, menarik diri dengan **Kait Tali**, atau memasang **Tangga Tali**.
-4. **Jaga pesan.** Roti bisa dingin dan kerang bisa retak. Pengantaran tetap dapat diselesaikan; kondisi paket memengaruhi percakapan dengan penerima.
-5. **Tinggalkan sesuatu bagi jalur.** Tangga yang dipasang tetap tersimpan. Pilihan dan pengantaran membangun **Nama Baik**, membuka kabar tambahan, serta mengisi catatan perjalanan.
+---
 
-### Cuaca mengubah perjalanan
+## 🧭 Inspirasi & Kompendium Lima Bangsa
 
-| Kondisi | Yang kamu hadapi |
-| --- | --- |
-| **Cerah** | Cahaya hangat dan kesempatan mengenal jalan sebelum cuaca memburuk. |
-| **Berkabut** | Cakrawala memendek. Landmark, peta, dan bantuan Ruru menjadi lebih berarti. |
-| **Badai** | Jalur tol tertutup, pasir memperlambat langkah, dan Jubah Layar lebih cepat kehilangan daya angkat. Paket berisiko rusak di tempat terbuka. |
+Dunia **Tanah Sada** terinspirasi dari prinsip jalur dagang kuno (*Silk Road*) dan sistem pos estafet (*caravanserai*):
 
-Menuju Simpul Sembilan, pilih **Jalur Lentera** yang lebih panjang dan terlindung, atau **Tebing Utara** yang lebih cepat tetapi terbuka terhadap angin.
+- **Kepercayaan sebagai mata uang:** Reputasi per bangsa (**Nama Baik**) menentukan akses ke pos, pengawalan karavan, dan izin melintas. Cap Saksi adalah wujud fisik kepercayaan tersebut.
+- **Barang membawa jiwa:** Yang dibawa kurir bukan sekadar muatan fisik, melainkan roti hangat tanda rindu, Kerang Suara berisi rekaman lagu keluarga, hingga janji lisan antarpanji.
+- **Lima Bangsa di Tanah Sada:**
+  1. **Asharim (Lembah Pasir):** Penjaga persinggahan dan penguasa mata air gurun di bawah *Pakta Sumur Terbuka (Hukum Air)*. Sapaan: *"Teduh di jalanmu" / "Air di langkahmu"*. Terbelah antara Kubu Pos Tua (adat suaka netral) dan Kubu Pos Dagang (rekanan Dewan Tol).
+  2. **Tseren (Pegunungan Kabut Lirih):** Penjaga catatan, pembuat kertas serat tahan air, dan notaris hukum di bawah *Kanon Aksara*. Sapaan: *"Tinta tenang" / "Kata terjaga"*. Terbelah antara Aliran Murni dan Aliran Rapi.
+  3. **Cirusia (Padang Salkara):** Penjaga janji dan pengawal karavan sabana di bawah *Sumpah Api Tujuh Panji*. Sapaan: *"Angin searah" / "Janji sampai"*. Dipimpin sidang 7 klan dalam kebuntuan politik 3–3–1 (3 Panji Tua, 3 Panji Muda, 1 Panji Penengah/Suara Penentu).
+  4. **Bahtari (Kepulauan Lada Biru):** Penjaga laut dan lagu di bawah *Hukum Sauh & Lagu*. Memonopoli lada biru (pengawet pangan utama). Sapaan: *"Pasang baik!" / "Layar penuh!"*. Terbelah antara oligarki Rumah Dagang dan serikat Rumah Layar.
+  5. **Lulanai (Reruntuhan Hening):** Penyetel yang tersisa dan perancang jaringan Simpul di bawah *Ikatan Penyetel*. Sapaan: *"Hening menyertai"*. Terpencar dalam tiga faksi: Kaum Pantang, Kaum Terbuka, dan Kaum Sesal.
 
-## Lima bangsa, lima cara menjaga kabar
+*Inspirasi mekanik & estetika:* **Death Stranding** (traversal, membaca rute, struktur persisten), **Moebius & Studio Ghibli** (garis tinta, palet pastel hangat), serta **Outer Wilds** (eksplorasi rasa ingin tahu tanpa kekerasan).
 
-Tanah Lintas terhubung oleh persinggahan, karavan, arsip, dan jalur laut. Tiap bangsa punya adat, kepentingan, serta ingatan sejarah yang berbeda. Tidak semua orang dalam satu bangsa sepakat tentang masa lalu.
+---
 
-*Gambar berikut adalah ilustrasi konsep lingkungan dan kehidupan bangsa. Dunia yang dimainkan menggunakan model 3D; ilustrasi ini bukan tangkapan layar gameplay.*
-
-### Asharim · Penjaga persinggahan
-
-![Asharim: halaman pos berkubah biru, roti rempah, dan air yang disambut seorang kurir](assets/world/nations/asharim-concept-v1.png)
-
-**Lembah Pasir** — Pos Batu Biru, Telaga Sumi, dan Dusun Sela. Air disediakan bagi pengembara dan pos menjadi tempat kabar bertemu wajah. **Hukum Air** menyatakan bahwa tak seorang pun boleh ditolak air.
-
-> “Teduh di jalanmu.” — “Air di langkahmu.”
-
-### Cirusia · Penjaga janji
-
-![Cirusia: perkemahan Tujuh Panji di padang berangin dan janji lisan di hadapan tiga saksi](assets/world/nations/cirusia-concept-v1.png)
-
-**Padang Salkara** — Perkemahan Tujuh Panji dan Tepi Salkara. Para pengawal karavan menjaga janji lisan di hadapan saksi. Di antara panji yang berkibar, dendam lama dan keinginan berdamai sama-sama mencari tempat.
-
-> “Angin searah.” — “Janji sampai.”
-
-### Tseren · Penjaga catatan
-
-![Tseren: bengkel kertas, arsip di tebing, dan jembatan tali menembus kabut](assets/world/nations/tseren-concept-v1.png)
-
-**Pegunungan Kabut Lirih** — Desa Kertas Awan dan Gudang Naskah. Kertas, tinta, dan tenunan menghidupi masyarakat yang percaya bahwa kata harus dijaga. Sebuah tanggal yang keliru bisa membuat seluruh catatan layak dipertanyakan.
-
-> “Tinta tenang.” — “Kata terjaga.”
-
-### Lulanai · Penyetel yang tersisa
-
-![Lulanai: penyetel berpenutup telinga perunggu merawat batu di tengah reruntuhan menara Simpul](assets/world/nations/lulanai-concept-v1.png)
-
-**Reruntuhan Hening** — Menara relay lama dan Simpul Pertama. Para penyetel dan keturunannya menjaga jejak yang tidak selalu utuh. Kaum Pantang, Terbuka, dan Sesal berbeda pendapat tentang apa yang seharusnya dilakukan terhadap Gema.
-
-> “Hening menyertai.” — Dijawab dengan anggukan.
-
-### Bahtari · Penjaga laut dan lagu
-
-![Bahtari: pelabuhan rempah, rumah panggung, kapal layar, dan Kerang Suara yang dibawa pulang](assets/world/nations/bahtari-concept-v1.png)
-
-**Kepulauan Lada Biru** — Bandar Lada dan Simpul Keseratus. Pelaut membawa rempah, lagu, dan janji untuk pulang. Keluarga menitipkan suara pada kerang; biaya kabar dan izin sandar membuat jarak terasa semakin jauh.
-
-> “Pasang baik!” — “Layar penuh!”
-
-Kelima bangsa dapat dikenali lewat **Atlas** dan tab **Lima Bangsa** di Buku Jalur. Wilayah yang bisa dijelajahi dalam demo saat ini adalah **Lembah Pasir, milik Asharim**.
-
-## Yang bisa dimainkan sekarang
-
-Demo mencakup **Babak 1: Menyalakan kembali**, dengan tiga pengantaran:
-
-| Pengantaran | Perjalanan |
-| --- | --- |
-| **Roti Rempah untuk Menara Batu Senja** | Belajar membaca jalan dan membawa roti hangat kepada Juma. |
-| **Lagu untuk Telaga Sumi** | Menyeberangi ngarai untuk mengantar jejak lagu Dorin kepada Bu Lamat. |
-| **Surat Penyalaan dari Simpul Pertama** | Membawa surat Maren yang masih bersegel menuju Simpul Sembilan di tengah badai. |
-
-Tersedia percakapan bercabang, rumor dan penemuan, reputasi, pemilihan alat, peta, checkpoint, serta penyimpanan lokal. Musik, efek suara, dan lagu Kerang Suara aktif; **VO percakapan dinonaktifkan**.
-
-Perjalanan lintas lima wilayah dan tiga pilihan akhir merupakan arah cerita penuh. **Empat wilayah di luar Lembah Pasir, pilihan akhir, Malam Tenang, bivak, multiplayer, dan pilihan gender Nara belum dapat dimainkan.** Target durasi demo 15–20 menit masih perlu divalidasi lewat playtest.
-
-<details>
-<summary><strong>Kontrol keyboard dan mouse</strong></summary>
+## 🕹️ Kontrol Permainan
 
 | Tombol | Aksi |
 | --- | --- |
-| WASD / panah | Bergerak |
-| Shift | Berlari |
-| Spasi | Lompat; tahan saat turun untuk membuka Jubah Layar |
-| Mouse | Mengatur kamera; klik dunia untuk mengunci pointer |
-| E | Bicara, memeriksa, memanjat tangga atau tepian bertanda |
-| F | Menarik diri menuju cincin Kait Tali dalam pandangan |
-| L | Memasang Tangga Tali di penanda |
-| Q | Meminta Ruru memindai medan; jeda 12 detik |
-| J | Membuka Buku Jalur |
-| H | Panduan kontrol |
-| Esc | Melepas pointer atau membuka jeda / menutup menu |
+| **W, A, S, D** / Panah | Berjalan / Berlari |
+| **Shift** | Lari cepat (*Sprint*) |
+| **Spasi** | Melompat; tahan saat jatuh untuk membuka **Jubah Layar** (*Glide*) |
+| **Mouse** | Mengarahkan kamera; klik layar untuk mengunci kursor, `Esc` untuk melepas |
+| **E** | Berbicara dengan NPC, memeriksa pos, memanjat tangga / tepian bertanda |
+| **F** | Menembakkan **Kait Tali** ke cincin jangkar emas |
+| **L** | Memasang **Tangga Tali** permanen di penanda tebing |
+| **Q** | Pindai kontur medan dan arah tujuan bersama Ruru (*cooldown* 12 detik) |
+| **J** | Membuka **Buku Jalur** (Peta, Pengantaran, Catatan & Nama Baik, Lima Bangsa, Perlengkapan) |
+| **H** / **Esc** | Panduan bantuan / Menu jeda (*Pause*) |
 
-Kait Tali dan Tangga Tali terbuka pada tugas kedua. Bekal dapat diubah di Pos Batu Biru. Jatuh ke jurang mengembalikan Nara ke pos terakhir; paket yang tergores tetap bisa diantar.
+### Tips Perjalanan:
+- Permukaan batu memberi cengkeraman lebih cepat daripada pasir hisap.
+- Badai pasir gurun menguras daya apung Jubah Layar lebih cepat dan mengikis paket yang tidak terlindung.
+- Musik latar (BGM) mengalun dinamis dan meredam menjadi *ambience* syahdu saat berbicara dengan NPC.
 
-</details>
+---
 
-## Mainkan secara lokal
+## 📖 Atlas & Buku Jurnal
 
-1. Unduh repositori melalui **Code → Download ZIP**, lalu ekstrak seluruh isinya.
-2. Buka **`index.html`** di browser desktop dengan WebGL. Di Windows, **`Mainkan.bat`** membuka halaman yang sama.
-3. Klik **Mulai perjalanan**, temui Maren, lalu ikuti petunjuk di Buku Jalur.
+- **Atlas Tanah Sada (`atlas.html`):** Katalog visual interaktif yang memuat model 3D karakter dan properti dengan pemeriksa sudut putar, galeri ilustrasi suasana, peta wilayah beresolusi tinggi, serta kompendium lengkap Lima Bangsa (fondasi Pra-Simpul, geopolitik Tujuh Panji, adat, dan tanda tekanan bendungan).
+- **Buku Jalur (tekan `J` dalam game):** Jurnal lapangan kurir yang menyajikan peta elevasi kontur riil, status pengantaran, rumor & penemuan, reputasi Cap Saksi, serta kompendium bangsa.
 
-Semua aset tersedia lokal. Jika browser membatasi penyimpanan dari berkas lokal, jalankan server dengan Node.js:
+---
+
+## 🛠️ Pengembangan & Pengujian Lokal
+
+Proyek ini dibangun menggunakan JavaScript murni (vanilla), Three.js lokal, HTML5/CSS3, dan Node.js untuk script build:
 
 ```sh
-npm run dev
+# Rebuild bundle data offline, link dialog, dan peta SVG
+node tools/build.cjs
+
+# Menjalankan 24 unit test inti + 7 pemeriksaan kanon
+node tests/test.cjs
+node tests/canon.cjs
+
+# Menjalankan server lokal (opsional)
+node tools/serve.cjs
+# Buka http://127.0.0.1:4173
 ```
 
-Lalu buka **http://127.0.0.1:4173**. Untuk membangun ulang data dan menjalankan pemeriksaan:
+---
 
-```sh
-npm run build
-npm test
-```
+## 📁 Berkas Dokumentasi & Kanon
 
-## Arah visual dan inspirasi
-
-Garis tinta sepia, bidang warna gouache, tekstur kertas, dan cahaya kuning lentera mengikat kelima bangsa dalam satu dunia. Ilustrasi 2D dibuat dengan ImageGen; karakter dan lingkungan yang dimainkan dibangun sebagai model 3D prosedural.
-
-Jalur dagangnya mengambil inspirasi dari **prinsip Jalur Sutra**: pertukaran, persinggahan, dan kepercayaan. Bangsa, sejarah, serta tokohnya adalah fiksi. **Death Stranding** menginspirasi keputusan dalam perjalanan, **Outer Wilds** rasa ingin tahu, serta **Moebius** dan **Studio Ghibli** bahasa visual dan kehangatan keseharian.
-
-<details>
-<summary><strong>Dokumentasi dan sumber aset — sebagian memuat spoiler cerita</strong></summary>
-
-- [Story Bible Gabungan](docs/STORY-BIBLE.md): acuan kanon terbaru, sejarah, tokoh, dan kelanjutan cerita.
-- [Catatan implementasi](docs/IMPLEMENTASI.md): fitur yang tersedia dan batas demo.
-- [Brief desain historis](docs/BRIEF.md): jejak rancangan awal; kanon terbaru mengikuti Story Bible.
-- [Atlas Tanah Lintas](https://dhanesya98.github.io/jalursenyap/atlas.html): ilustrasi, peta, ikon, dan model 3D yang dapat diputar.
-- [Kredit aset](assets/CREDITS.md) dan [prompt ilustrasi lima bangsa](assets/world/nations/prompts-dan-sumber.json).
-
-</details>
+- [`docs/STORY-BIBLE.md`](docs/STORY-BIBLE.md): Dokumen acuan kanon lengkap 100 tahun Tanah Sada, Kunci Lore, Kompendium Lima Bangsa, dan percabangan tiga akhir cerita.
+- [`docs/IMPLEMENTASI.md`](docs/IMPLEMENTASI.md): Catatan teknis implementasi vertical slice.
+- `pos-batu-biru.html`: Halaman studi visual Pos Batu Biru.

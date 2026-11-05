@@ -16,6 +16,10 @@
 .nation-fact{border-top:1px solid var(--nation-line);padding-top:12px;min-width:0}
 .nation-fact dt{font:600 12px/1.5 'Segoe UI',sans-serif;margin:0 0 5px}
 .nation-fact dd{font:13px/1.8 'Segoe UI',sans-serif;margin:0;color:var(--nation-muted)}
+.nation-tujuh-panji{grid-column:1/-1}
+.panji-list{margin:6px 0 0;padding-left:18px;font-size:12px;line-height:1.6;color:var(--nation-muted)}
+.panji-list li{margin-bottom:6px}
+.panji-list strong{color:var(--nation-ink)}
 #journal-nations .nation-info h3{font-size:30px}
 #journal-nations .nation-art img{max-height:380px}
 #journal-nations .nation-description{font-size:13px}
