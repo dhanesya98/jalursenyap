@@ -6,27 +6,27 @@
   "nodes": {
     "start": {
       "speaker": "Kesa",
-      "text": "Berhenti! Jalur gerbang timur resmi ditutup. Perintah mutlak Dewan Tol. Badai atau cuaca cerah, tak ada yang boleh melintas.",
+      "text": "Berhenti dulu. Jalur gerbang ditutup karena Gangguan saat badai. Dewan meminta semua perjalanan ke Simpul Sembilan dicatat.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Aku membawa surat bersegel Simpul Pertama. Ini urusan hidup-matinya ikatan antar bangsa!",
+      "text": "Maren mengutusku membawa surat. Kalau gerbang ditutup, bagaimana keluarga di seberang mendapat kabar?",
       "next": "kesa_2"
     },
     "kesa_2": {
       "speaker": "Kesa",
-      "text": "(Kesa merendahkan suaranya sambil melirik sekitar) Dengar, anak muda... Aku tidak bermusuhan dengan kurir. Tapi Dewan memerintahkan agar tak seorang pun mencapai Simpul Sembilan.",
+      "text": "Aku tahu akibatnya. Surat keluargaku sendiri pernah tertahan di meja pencatatan. Tetapi aku juga melihat jalur runtuh saat peringatan diabaikan.",
       "next": "nara_2"
     },
     "nara_2": {
       "speaker": "Nara",
-      "text": "Kenapa Dewan begitu takut pada menara relay kuno yang sudah padam puluhan tahun?",
+      "text": "Apa yang mereka khawatirkan dari menara yang sudah seratus tahun padam?",
       "next": "kesa_hint"
     },
     "kesa_hint": {
       "speaker": "Kesa",
-      "text": "Siapa bilang takut? Mereka punya alasan mereka sendiri. (Kesa berbalik pura-pura memeriksa tumpukan peti) Ada celah panjat tebing di tebing utara sana. Jangkar kait Sahdan masih menancap. Ingat... aku tidak pernah melihatmu ke sana.",
+      "text": "Aku hanya menerima laporan Gangguan, bukan penjelasannya. (Kesa menoleh ke pos pemeriksaan.) Jangkar di tebing utara masih bisa dipakai. Baca anginnya sebelum melangkah. Aku tidak mencatat jalan mana yang kamu pilih.",
       "action": "REVEAL_SECRET_PATH"
     }
   }

@@ -1,0 +1,137 @@
+{
+  "year": 100,
+  "source": "docs/STORY-BIBLE.md",
+  "nara": {
+    "age": 17,
+    "birth": 83,
+    "home": "Dusun Sela",
+    "grandmother": "Nenek Ima",
+    "father": "Tarun",
+    "fatherDeparture": 95,
+    "motivation": "Supaya tidak ada orang yang menunggu sendirian."
+  },
+  "nations": [
+    {
+      "id": "asharim",
+      "name": "Asharim",
+      "region": "Lembah Pasir",
+      "place": "Pos Batu Biru · Telaga Sumi · Dusun Sela",
+      "role": "Penjaga persinggahan",
+      "greeting": "Teduh di jalanmu. / Air di langkahmu.",
+      "description": "Pos Singgah memberi air, perbekalan, dan tempat bertukar kabar. Kehadiran seorang tamu lebih berharga daripada suara dari jauh.",
+      "custom": "Hukum Air: tak seorang pun boleh ditolak air. Tiga Cawan: air, garam, dan kabar.",
+      "trust": "Menjaga adat tamu, membalas pertolongan, dan mengantar di cuaca buruk.",
+      "history": "Kisah yang diwariskan: Gema padam karena keserakahan dan manusia melupakan kehadiran.",
+      "tension": "Pos Tua mempertahankan adat; sebagian Pos Dagang bekerja sama dengan Dewan demi keringanan tol.",
+      "phenomenon": "Sumur tua memantulkan suara dari waktu dan tempat yang jauh.",
+      "palette": [
+        "#3D6E8F",
+        "#C86A3C"
+      ],
+      "alt": "Halaman pos Asharim dengan kubah biru, tuan rumah menawarkan air kepada seorang kurir.",
+      "image": "assets/world/nations/asharim-concept-v1.png"
+    },
+    {
+      "id": "tseren",
+      "name": "Tseren",
+      "region": "Pegunungan Kabut Lirih",
+      "place": "Desa Kertas Awan · Gudang Naskah",
+      "role": "Penjaga catatan",
+      "greeting": "Tinta tenang. / Kata terjaga.",
+      "description": "Pembuat kertas, penenun, dan penjaga arsip yang menjadikan asal-usul dokumen sebagai dasar kepercayaan.",
+      "custom": "Dua Pembacaan: penerima membaca surat, kurir menyatakan kondisi fisiknya. Nama bayi disimpan dalam Tinta Kelahiran.",
+      "trust": "Menjaga kata dan berani menyebut keraguan tentang keaslian dokumen.",
+      "history": "Kisah yang diwariskan: penyalahgunaan kata dan kegagalan teknis membuat Gema runtuh.",
+      "tension": "Aliran Murni menjaga tiap huruf; Aliran Rapi menyunting catatan demi ketertiban.",
+      "phenomenon": "Tinta khusus kadang menampakkan tulisan yang pernah dihapus.",
+      "palette": [
+        "#EDE6D3",
+        "#8FA68A"
+      ],
+      "alt": "Bengkel kertas dan arsip Tseren di pegunungan berkabut dengan jembatan tali.",
+      "image": "assets/world/nations/tseren-concept-v1.png"
+    },
+    {
+      "id": "cirusia",
+      "name": "Cirusia",
+      "region": "Padang Salkara",
+      "place": "Perkemahan Tujuh Panji · Tepi Salkara",
+      "role": "Penjaga janji",
+      "greeting": "Angin searah. / Janji sampai.",
+      "description": "Keluarga pengawal karavan hidup mengikuti musim. Janji lisan di hadapan saksi menjadi pegangan perjalanan.",
+      "custom": "Janji di Api: janji penting diucapkan di depan api dan tiga saksi. Nama pengelana yang gugur dijaga di batu jalan.",
+      "trust": "Menepati janji tanpa catatan dan berani bersaksi di depan banyak orang.",
+      "history": "Kisah yang diwariskan: Bahtari mengkhianati karavan leluhur dalam Kabar Tujuh Musim.",
+      "tension": "Panji Tua menjaga dendam; Panji Muda ingin membuka jalan damai bersama Bahtari.",
+      "phenomenon": "Batu penanda mengulang potongan nama pengelana masa lalu.",
+      "palette": [
+        "#A8452F",
+        "#D9B45A"
+      ],
+      "alt": "Perkemahan Tujuh Panji di padang rumput Cirusia, dengan janji lisan di hadapan tiga saksi.",
+      "image": "assets/world/nations/cirusia-concept-v1.png"
+    },
+    {
+      "id": "bahtari",
+      "name": "Bahtari",
+      "region": "Kepulauan Lada Biru",
+      "place": "Bandar Lada · Simpul Keseratus",
+      "role": "Penjaga laut dan lagu",
+      "greeting": "Pasang baik! / Layar penuh!",
+      "description": "Pelaut dan pedagang rempah menghubungkan pulau-pulau. Lagu keluarga menyeberangi laut bersama orang yang dipercaya.",
+      "custom": "Lagu Titip dijaga apa adanya. Kerang Suara menyimpan potongan lagu dan pesan.",
+      "trust": "Membawa pulang pesan apa adanya, termasuk lagu yang tidak sempurna.",
+      "history": "Kisah yang diwariskan: Dewan mengambil untung dari Hari Senyap dan menguasai jalur kabar.",
+      "tension": "Rumah Layar menolak tol; sebagian Rumah Dagang bekerja sama demi izin sandar. Utang Kabar membebani keluarga.",
+      "phenomenon": "Kerang tua kadang menyanyi sendiri dengan lagu dari kapal masa silam.",
+      "palette": [
+        "#2E8B8B",
+        "#E07B39"
+      ],
+      "alt": "Pelabuhan rempah Bahtari, rumah panggung, kapal layar, dan keluarga menerima Kerang Suara.",
+      "image": "assets/world/nations/bahtari-concept-v1.png"
+    },
+    {
+      "id": "lulanai",
+      "name": "Lulanai",
+      "region": "Reruntuhan Hening",
+      "place": "Menara relay lama · Simpul Pertama",
+      "role": "Penyetel yang tersisa",
+      "greeting": "Hening menyertai. / Dijawab dengan anggukan.",
+      "description": "Para penyetel dan keturunannya tersebar, sebagian hidup tersamar di antara bangsa lain. Segelintir penjaga merawat reruntuhan.",
+      "custom": "Tiga Napas Hening sebelum berbicara. Penderita Bising memakai penutup telinga perunggu; pesan ditinggalkan sebagai Jejak.",
+      "trust": "Mendengar sebelum menilai dan telah dipercaya bangsa lain. Lulanai tidak memiliki Cap Saksi sendiri.",
+      "history": "Dalam ingatan Lulanai, Malam Hening adalah tindakan yang disengaja. Dunia luar mewariskan kisah yang berbeda.",
+      "tension": "Kaum Pantang, Terbuka, dan Sesal berbeda pendapat tentang Gema serta pengorbanan leluhur.",
+      "phenomenon": "Batu menara berdengung tanpa disentuh; jejak lama tidak selalu utuh.",
+      "palette": [
+        "#6F7A68",
+        "#A6805A"
+      ],
+      "alt": "Penyetel Lulanai memperbaiki batu di antara reruntuhan Simpul dan cincin perunggu tua.",
+      "image": "assets/world/nations/lulanai-concept-v1.png"
+    }
+  ],
+  "letter": {
+    "name": "Surat Penyalaan",
+    "requiredNations": 3,
+    "custody": [
+      "Sarai",
+      "Bahar",
+      "Ilun",
+      "Maren"
+    ],
+    "stamps": [
+      "asharim",
+      "tseren",
+      "cirusia",
+      "bahtari"
+    ]
+  },
+  "demo": {
+    "chapter": 1,
+    "region": "Lembah Pasir",
+    "nextRegion": "Padang Salkara",
+    "fullNetworkReleased": false
+  }
+}

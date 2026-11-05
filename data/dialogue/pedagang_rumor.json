@@ -6,17 +6,17 @@
   "nodes": {
     "start": {
       "speaker": "Pedagang Lembah",
-      "text": "Kau kurir muda Pos Batu Biru? Dengar-dengar Simpul Sembilan di timur padam bukan karena rusak. Ada pihak yang sengaja memadamkannya.",
+      "text": "Ada kabar bahwa Simpul Sembilan dulu dipadamkan dengan sengaja. Ini cerita dari jalan, bukan sesuatu yang kusaksikan sendiri.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Siapa yang diuntungkan jika Jalur Gema mati?",
+      "text": "Dewan mengatakan semua itu kerusakan. Apa buktinya berbeda?",
       "next": "pedagang_2"
     },
     "pedagang_2": {
       "speaker": "Pedagang Lembah",
-      "text": "Itu pertanyaan yang pantang ditanyakan oleh pedagang yang masih ingin barang dagangannya lolos dari gerbang tol.",
+      "text": "Aku belum punya bukti. Tujuh Simpul Terang mereka memang membuat kabar cepat sampai, kalau kita sanggup membayarnya. Tapi sumur tua belakangan ikut bersuara, dan laporan itu jarang boleh dibaca orang biasa.",
       "action": "RECORD_RUMOR"
     }
   }

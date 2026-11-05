@@ -16,17 +16,17 @@
     },
     "juma_2": {
       "speaker": "Juma",
-      "text": "Itu cara kami orang Asharim bilang rindu. (Juma menatap lekat jahitan di tasmu) Tas itu... Aku kenal jahitannya. Sahdan membawa tas yang sama waktu terakhir lewat sini, tepat sebelum Hari Senyap.",
+      "text": "Itu cara kami orang Asharim bilang rindu. (Juma memperhatikan jahitan tas.) Kakekku menggambar tas seperti itu di buku hariannya. Ia melihat Sahdan lewat sebelum Hari Senyap.",
       "next": "nara_3"
     },
     "nara_3": {
       "speaker": "Nara",
-      "text": "Anda tahu apa yang sebenarnya terjadi padanya?",
+      "text": "Jadi yang Anda tahu berasal dari catatan kakek?",
       "next": "juma_3"
     },
     "juma_3": {
       "speaker": "Juma",
-      "text": "Aku tahu dia membawa sesuatu yang tidak mau dia sebutkan. Tanyakan pada Maren di pos hub, tapi pelan-pelan. Dia tidak suka diburu.",
+      "text": "Ya. Aku belum lahir waktu itu. Kakek menulis bahwa Sahdan membawa sesuatu yang tidak mau disebutnya. Ada bagian kisah itu yang berbeda dari pelajaran sekolah. Tanyakan pada Maren, pelan-pelan.",
       "choices": [
         {
           "text": "“Aku akan bertanya pelan-pelan.”",

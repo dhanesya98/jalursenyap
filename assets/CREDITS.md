@@ -25,3 +25,7 @@ Nara baru: src/nara-art.js. Pos, tekstur Canvas, dan bayangan: src/atelier.js. K
 ## Studi visual 02
 Maren dan Ruru dibuat ulang sebagai geometri dan rig asli di src/companions-art.js. Tekstur kain memakai Canvas lokal. Tidak ada model, gambar atau audio pihak ketiga tambahan.
 
+
+## Ilustrasi lima bangsa · 2026-11-05
+
+Lima gambar `assets/world/nations/*-concept-v1.png` dibuat dengan built-in ImageGen. Referensi gaya: ilustrasi Lembah Pasir dan potret Nara milik proyek. Detail prompt ada pada `assets/world/nations/prompts-dan-sumber.json`. Gambar adalah konsep lingkungan, bukan tangkapan layar atau model 3D.

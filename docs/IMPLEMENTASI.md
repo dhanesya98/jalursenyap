@@ -34,3 +34,9 @@ Alur pengantaran dan altar dijaga state agar ending tidak dapat dipicu sebelum s
 `tests/results.json`: 19 tes lulus. `assets/models/validation.json`: 24 GLB lulus pemeriksaan struktur. Browser Chrome desktop: judul, HUD, dialog, jurnal, oasis, badai, ending, model viewer dan galeri diperiksa; tidak ada error/warning tercatat dalam pemeriksaan terakhir.
 
 Skenario `tests/visual.html` memakai penyimpanan memori agar QA tidak menimpa perjalanan pemain. Tidak dilakukan playtest penuh dari awal sampai akhir oleh pemain manusia, benchmark perangkat rendah, atau validasi kontrol sentuh/gamepad.
+
+## Pembaruan kanon · 2026-11-05
+
+Story Bible Gabungan disalin utuh ke `docs/STORY-BIBLE.md`. Babak 1: usia dan asal Nara, Tarun, kesaksian warisan Juma, rantai penjagaan surat, Dorin/Bu Lamat, Ajaran Tata, dan alasan Maren menyerahkan surat telah diperbarui. Cap Asharim dicatat saat pengantaran lagu selesai, lalu dibubuhkan saat Maren menyerahkan surat. Surat tetap dibawa setelah Simpul Sembilan menyala.
+
+Data lima bangsa dibaca dari `data/canon.json`; galeri yang sama dipakai Atlas dan Buku Jalur. Simpanan versi 4 dipetakan ke versi 5; nama bangsa lama dan penemuan lama dimigrasikan. VO dinonaktifkan atas permintaan pemilik proyek. Game tidak memuat rekaman percakapan; musik latar, efek, dan lagu Kerang Suara tetap aktif. Berkas VO lama dibiarkan untuk dihapus manual. Tidak ada perubahan model 3D dalam pembaruan ini. Bagian 12.3 serta usulan audit tidak diubah menjadi ketetapan baru.

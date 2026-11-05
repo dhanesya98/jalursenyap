@@ -6,7 +6,7 @@
   "nodes": {
     "start": {
       "speaker": "Bu Lamat",
-      "text": "Kerang ini... benar-benar dari Bandar Lada di Pahitan? Dia berjanji mengirim lagu tidur untuk cucu-cucunya sebelum pelayaran besar.",
+      "text": "Dari Dorin, suamiku, di Bandar Lada? (Bu Lamat menerima kerang dengan kedua tangan.) Sudah lama rumah ini menunggu lagunya.",
       "next": "listen"
     },
     "listen": {
@@ -16,12 +16,12 @@
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Maafkan saya, mungkin karena kabut tebal tadi selama perjalanan...",
+      "text": "Bagian akhirnya terdengar berbeda. Apa jejaknya rusak di jalan?",
       "next": "bulamat_2"
     },
     "bulamat_2": {
       "speaker": "Bu Lamat",
-      "text": "Bukan salahmu, Nak. Dia memang selalu meleset di nada itu saat bernyanyi. Terima kasih, Nara. Kamu mengantarkan lebih dari sekadar barang.",
+      "text": "Nada itu memang selalu meleset saat Dorin bernyanyi. Aku mengenalinya. Terima kasih sudah membawa pulang suaranya, Nara.",
       "choices": [
         {
           "text": "“Boleh aku mendengarnya sekali?”",
@@ -35,12 +35,12 @@
     },
     "choice_a": {
       "speaker": "Bu Lamat",
-      "text": "Tentu. Dengarkan desir ombaknya. Semoga menjadi penyejuk di langkahmu kelak. Catatlah di Buku Jalurmu.",
+      "text": "Dengarkanlah. Sesudah ini akan kukirim kesaksianku kepada Maren: kamu menjaga titipan keluarga kami. Kepercayaan perlu nama dan wajah.",
       "action": "COMPLETE_DELIVERY_2_A"
     },
     "choice_b": {
       "speaker": "Bu Lamat",
-      "text": "Jalan pulang bukan musuh, hanya panjang. Hati-hati dengan petugas Tol Dewan di gerbang timur. Mereka tampak gelisah akhir-akhir ini.",
+      "text": "Akan kukirim kesaksianku kepada Maren: titipan ini sampai. Hati-hati di gerbang timur. Petugas Dewan belakangan sering mencatat menara dan sumur yang berdengung.",
       "action": "COMPLETE_DELIVERY_2_B"
     }
   }

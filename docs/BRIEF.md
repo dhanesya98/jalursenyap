@@ -1,3 +1,5 @@
+> Dokumen desain historis. Untuk nama, sejarah, tokoh, dan aturan dunia terbaru, gunakan [Story Bible Gabungan](STORY-BIBLE.md). Jika bertentangan, Story Bible berlaku.
+
 # Jalur Senyap — Game Design & Build Brief (Demo)
 
 *Judul kerja. Dokumen ini punya dua fungsi: pegangan kreatif untuk dunia dan ceritanya, serta brief teknis yang bisa ditempel ke Codex atau Antigravity untuk membangun demo.*

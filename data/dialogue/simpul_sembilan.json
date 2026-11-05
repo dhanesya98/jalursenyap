@@ -6,22 +6,27 @@
   "nodes": {
     "start": {
       "speaker": "Nara",
-      "text": "(Nara menempelkan surat bersegel ke celah kristal altar. Kristal mulai bergetar pelan... pendaran cahaya keemasan merambat ke seluruh pilar menara.)",
+      "text": "(Badai membuat Batu Resonansi berdengung. Nara mendekatkan surat yang masih bersegel ke Cincin Penyetel. Lentera kuning menyala; surat tetap berada di tangan Nara.)",
       "next": "echo_1"
     },
     "echo_1": {
       "speaker": "Suara dalam Gema (terputus-putus)",
-      "text": "...kalau kamu mendengar ini, berarti suratnya... akhirnya mulai berjalan menembus kebisuan...",
+      "text": "…surat itu… akhirnya bergerak lagi…",
       "next": "echo_2"
     },
     "echo_2": {
-      "speaker": "Suara dalam Gema",
-      "text": "...jangan pernah percaya pada pos yang menyala terlalu terang...",
+      "speaker": "Jejak suara lain",
+      "text": "…jangan percaya pada pos yang menyala terlalu terang…",
       "next": "echo_3"
     },
     "echo_3": {
       "speaker": "Suara dalam Gema",
-      "text": "...Nara. Kamu seharusnya belum sampai di sini.",
+      "text": "…Nara. Kamu seharusnya belum sampai di sini.",
+      "next": "nara_cap"
+    },
+    "nara_cap": {
+      "speaker": "Nara",
+      "text": "Namaku… tertulis di Cap Saksi. (Nara merapatkan tas. Segel surat masih tertutup; suara itu datang dari batu Simpul.)",
       "action": "TRIGGER_CLIFFHANGER"
     }
   }

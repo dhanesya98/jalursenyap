@@ -2,21 +2,21 @@
   'use strict';
   const $ = id => document.getElementById(id);
   const characters = [
-    {id:'nara',name:'Nara',story:'Kurir magang yang mewarisi tas Sahdan. Jubah Layar, selendang terakota, dan tas pengantar membentuk siluetnya.',icon:'bag'},
+    {id:'nara',name:'Nara',story:'Nara, tujuh belas tahun, dari Dusun Sela. Menjadi kurir supaya tidak ada orang yang menunggu sendirian, setelah kabar ayahnya terputus pada tahun 95.',icon:'bag'},
     {id:'ruru',name:'Ruru',story:'Pendamping kecil bertelinga besar. Lentera di ekornya membantu menjaga kehangatan dan arah di hari berkabut.',icon:'ruru'},
     {id:'maren',name:'Maren',story:'Kepala Pos Batu Biru. Jubah terakota dan selendang biru batu membawa kehangatan pos singgah ke dalam siluetnya.',icon:'letter'},
     {id:'juma',name:'Juma',story:'Penjaga Menara Batu Senja. Topi lebar dan teropong kuningan menjadi ciri yang terbaca dari kejauhan.',icon:'compass'},
-    {id:'bulamat',name:'Bu Lamat',story:'Tetua Telaga Sumi. Kain teal dan jingga mengingatkan pada kabar dari kepulauan Pahitan.',icon:'shell'},
+    {id:'bulamat',name:'Bu Lamat',story:'Tetua Telaga Sumi. Kain teal dan jingga mengingatkan pada kabar dari kepulauan Bahtari.',icon:'shell'},
     {id:'kesa',name:'Kesa',story:'Petugas Dewan Tol. Jubah gelap dan tanda jabatan menyiratkan ketertiban; ia tetap seseorang di balik perintah.',icon:'seal'},
     {id:'pedagang',name:'Pedagang lembah',story:'Pengembara yang membawa kain, cangkir, dan rumor. Topi anyaman memisahkannya dari para penjaga pos.',icon:'journal'}
   ];
   const props = [
-    {id:'bag',name:'Tas Pengantar',story:'Tas kulit dengan segel kuningan. Ikon pekerjaan Nara sekaligus tempat sebuah surat lama bersembunyi.',icon:'bag',category:'PERLENGKAPAN'},
+    {id:'bag',name:'Tas Pengantar',story:'Tas kulit dengan segel kuningan. Ikon pekerjaan Nara sekaligus wadah berinsulasi resonansi untuk menjaga Surat Penyalaan.',icon:'bag',category:'PERLENGKAPAN'},
     {id:'grapple',name:'Kait Tali',story:'Titik kait berpendar menandai tujuan tarikan. Cincin dan aksen lentera membuat jalur terbaca dalam kabut.',icon:'grapple',category:'TRAVERSAL'},
     {id:'ladder',name:'Tangga Tali',story:'Dua tali dan pijakan kayu yang menyambung ketinggian. Struktur sederhana yang dapat menetap di perjalanan.',icon:'ladder',category:'TRAVERSAL'},
     {id:'bread',name:'Roti Rempah',story:'Paket pertama untuk Juma. Sebuah keseharian kecil mengawali perjalanan menuju misteri yang lebih besar.',icon:'bread',category:'PAKET CERITA'},
-    {id:'shell',name:'Kerang Suara',story:'Wadah lagu dari Pahitan. Benda kecil yang perlu dijaga agar ingatan di dalamnya tiba dengan selamat.',icon:'shell',category:'PAKET CERITA'},
-    {id:'letter',name:'Surat Bersegel',story:'Peninggalan Sahdan dengan segel Simpul Pertama. Pendarannya menautkan Nara dengan menara relay yang padam.',icon:'letter',category:'PAKET CERITA'},
+    {id:'shell',name:'Kerang Suara',story:'Wadah lagu dari Bahtari. Benda kecil yang perlu dijaga agar ingatan di dalamnya tiba dengan selamat.',icon:'shell',category:'PAKET CERITA'},
+    {id:'letter',name:'Surat Bersegel',story:'Kunci Jejak dengan seratus tanda penyetel. Dijaga Sarai, Bahar, Ilun, lalu Maren; segel memerlukan Cap Saksi tiga bangsa.',icon:'letter',category:'PAKET CERITA'},
     {id:'lantern',name:'Lentera jalur',story:'Cahaya kuning hangat menjadi bahasa petunjuk yang sama di pos, tebing, dan reruntuhan.',icon:'checkpoint',category:'PENANDA DUNIA'},
     {id:'checkpoint',name:'Pos Singgah',story:'Penanda peristirahatan dan perjalanan yang telah dicapai. Bentuk batu dan cahaya mengikat fungsi dengan dunia.',icon:'checkpoint',category:'PENANDA DUNIA'},
     {id:'sign',name:'Penunjuk jalan',story:'Papan sederhana bagi para kurir. Membantu membaca persimpangan tanpa mengisi cakrawala dengan antarmuka.',icon:'compass',category:'PENANDA DUNIA'},
@@ -24,8 +24,8 @@
     {id:'tower',name:'Menara penjaga',story:'Landmark tinggi dengan mahkota kubah. Titik tujuan yang dapat dikenali sebelum wajah penjaganya terlihat.',icon:'checkpoint',category:'ARSITEKTUR'},
     {id:'dome',name:'Kubah biru batu',story:'Profil kubah dan warna turquoise merangkai bahasa arsitektur Asharim pada skala besar maupun kecil.',icon:'sun',category:'ARSITEKTUR'},
     {id:'caravan',name:'Paviliun pos',story:'Bangunan singgah dengan kanopi kain. Bentuk sederhana menjadi tempat surat, makanan, dan kabar bertemu.',icon:'bag',category:'ARSITEKTUR'},
-    {id:'altar',name:'Altar Gema',story:'Kristal dan perunggu tua pada pusat sebuah Simpul. Cahaya mengisyaratkan sesuatu yang masih bisa disambung.',icon:'seal',category:'RERUNTUHAN WARJIAN'},
-    {id:'ruin',name:'Reruntuhan Warjian',story:'Batu retak dan bentuk menara lama menyiratkan jalur yang lebih tua daripada orang-orang yang kini melintasinya.',icon:'cliff',category:'RERUNTUHAN WARJIAN'},
+    {id:'altar',name:'Altar Gema',story:'Kristal dan perunggu tua pada pusat sebuah Simpul. Cahaya mengisyaratkan sesuatu yang masih bisa disambung.',icon:'seal',category:'RERUNTUHAN LULANAI'},
+    {id:'ruin',name:'Reruntuhan Lulanai',story:'Batu retak dan bentuk menara lama menyiratkan jalur yang lebih tua daripada orang-orang yang kini melintasinya.',icon:'cliff',category:'RERUNTUHAN LULANAI'},
     {id:'palm',name:'Palem oasis',story:'Batang melengkung dan daun yang terbuka menjadi janji air di antara bentangan pasir.',icon:'sand',category:'ALAM'},
     {id:'rock',name:'Batuan lembah',story:'Bidang batu besar dengan palet pudar. Detailnya cukup untuk dibaca, tanpa menghilangkan keheningan lanskap.',icon:'rock',category:'ALAM'}
   ];
@@ -112,6 +112,7 @@
   viewer.addEventListener('pointerup',()=>{drag=null;});viewer.addEventListener('pointercancel',()=>{drag=null;});viewer.addEventListener('lostpointercapture',()=>{drag=null;});
   viewer.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){rotate(-.15);}else if(e.key==='ArrowRight'){rotate(.15);}else if(e.key==='ArrowUp'){elevation=Math.min(1.05,elevation+.08);updateCamera();}else if(e.key==='ArrowDown'){elevation=Math.max(-.03,elevation-.08);updateCamera();}else if(e.key==='+'||e.key==='='){zoom(-.4);}else if(e.key==='-'){zoom(.4);}else if(e.key==='Home'){azimuth=.38;elevation=.28;distance=5.8;updateCamera();}else{return;}e.preventDefault();});
   window.addEventListener('blur',()=>{drag=null;});
+  JSNations.mount($('atlas-nations'),GAME_DATA.canon.nations);
   initViewer();selectModel('character','nara');
   window.addEventListener('pagehide',event=>{if(!event.persisted){cancelAnimationFrame(frame);if(renderer)renderer.dispose();}});
 })();

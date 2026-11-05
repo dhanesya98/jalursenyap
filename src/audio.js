@@ -94,26 +94,9 @@
     }
   }
 
-  playVoice(key){
+  // VO is disabled; existing recordings may be removed manually.
+  playVoice(){
     this.stopVoice();
-    // BGM tetap jalan pelan di latar belakang
-    this.applyBgmVolume(true);
-    this.duckWind(true);
-    if(!key)return;
-    const playSrc=(ext,next)=>{
-      const a=new window.Audio(`assets/audio/vo/${key}.${ext}`);
-      a.volume=Math.min(1,this.volume*1.3);
-      a.onended=()=>{
-        if(this.currentVoice===a)this.currentVoice=null;
-        if(!this.inDialogue){
-          this.duckWind(false);
-          this.applyBgmVolume(true);
-        }
-      };
-      this.currentVoice=a;
-      a.play().catch(next);
-    };
-    playSrc('wav',()=>playSrc('mp3',()=>this.playChime()));
   }
 
   playShell(){

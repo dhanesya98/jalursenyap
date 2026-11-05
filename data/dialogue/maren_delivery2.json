@@ -16,7 +16,7 @@
     },
     "maren_2": {
       "speaker": "Maren",
-      "text": "Di dalamnya ada rekaman lagu pengantar tidur dari seorang pelaut di Pahitan untuk keluarganya di Telaga Sumi. Lagunya bertahan selama kerang tidak dibuka dan tidak dijatuhkan.",
+      "text": "Lagu dari Dorin, pelaut Bahtari di Bandar Lada, untuk istrinya, Bu Lamat. Kerang tua ini menyimpan jejak suaranya. Jaga agar tidak retak.",
       "next": "nara_2"
     },
     "nara_2": {
@@ -26,7 +26,7 @@
     },
     "maren_3": {
       "speaker": "Maren",
-      "text": "Lagunya jadi lain. Kadang lebih sedih, kadang lebih indah, tapi bukan lagi lagu yang dikirimkan. (Maren menyerahkan gulungan tali logam)",
+      "text": "Jejak bunyinya bisa terputus atau memudar. Kalau ada kerusakan, katakan dengan jujur saat menyerahkan. Kita menjaga pesan, bukan memperindah isinya.",
       "next": "maren_grapple"
     },
     "maren_grapple": {

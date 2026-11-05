@@ -171,8 +171,8 @@ function wedge(g,inner,outer,spring,a,b,depth,color){
  return mesh(g,new T.ExtrudeGeometry(sh,{depth,bevelEnabled:false,curveSegments:5}),color,0,0,-depth/2,'stone',true);
 }
 function relay(world){
- const region=group(world.scene,'Simpul Sembilan — Warjian masonry');
- building(world,region,'Broken Warjian relay arch',126,-100,13,g=>{
+ const region=group(world.scene,'Simpul Sembilan — Lulanai masonry');
+ building(world,region,'Broken Lulanai relay arch',126,-100,13,g=>{
   box(g,4.7,.5,3.9,C.slate,0,.25,0,'stone',true);
   // Steps end inside the building collider; surrounding ground stays continuous.
   box(g,2.3,.14,.55,C.edge,0,.07,2.43,'stone',true);box(g,2.1,.28,.55,C.stone,0,.14,1.93,'stone',true);
@@ -197,7 +197,7 @@ function relay(world){
   }
   strokes(g,[[[-2.24,4.7,.92],[-1.88,4.53,.93],[-1.65,4.18,.93]],[[1.44,2.7,.93],[1.91,2.53,.93],[2.22,2.7,.93]],[[.6,1.7,.43],[.27,1.46,.43],[.36,1.12,.43]]],C.ink,.7);
  });
- for(const [x,z,s,a]of [[120,-102,.9,.2],[132,-98,.7,-.32],[131,-106,1.1,.45],[120.5,-107,.6,.5]])grounded(world,region,'Fallen Warjian masonry',x,z,s,g=>{
+ for(const [x,z,s,a]of [[120,-102,.9,.2],[132,-98,.7,-.32],[131,-106,1.1,.45],[120.5,-107,.6,.5]])grounded(world,region,'Fallen Lulanai masonry',x,z,s,g=>{
   const m=box(g,s*1.15,s*.8,s*.95,C.slate,0,s*.36,0,'stone',true);m.rotation.y=a;m.rotation.z=.12;
   box(g,s*.64,.04,.035,C.bronze,0,s*.56,s*.48,'tiles');
  });

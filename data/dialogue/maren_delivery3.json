@@ -6,37 +6,28 @@
   "nodes": {
     "start": {
       "speaker": "Maren",
-      "text": "Malam ini badai pasir menggeram di luar gerbang pos. Nara... aku tidak bermaksud menyuruhmu membuka bagian dalam tas itu, tapi ada yang berpendar di sana.",
+      "text": "Badai membuat Simpul Sembilan berpendar lagi. Patroli Dewan juga mulai memeriksa pos. (Maren mengeluarkan surat dari tempat simpanannya.) Aku sudah terlalu lama menyembunyikan ini.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Surat bersegel ini... denyutnya berdetak seirama dengan detak jantung.",
+      "text": "Segelnya bergetar ketika didekatkan ke tas Sahdan.",
       "next": "maren_2"
     },
     "maren_2": {
       "speaker": "Maren",
-      "text": "Itu segel murni Simpul Pertama. Sahdan membawanya sebelum Hari Senyap dan tidak pernah sampai. Dia menitipkannya padaku, lalu menghilang ke padang pasir. Aku tidak pernah berani mengantarkannya sendiri.",
+      "text": "Surat Penyalaan, dari Simpul Pertama. Sahdan menitipkannya kepada Sarai seratus tahun lalu. Sarai menjaganya, lalu Bahar, Ilun, dan akhirnya aku. Aku hanya mewarisi sebagian petunjuk mereka.",
       "next": "nara_2"
     },
     "nara_2": {
       "speaker": "Nara",
-      "text": "Kenapa sekarang? Dan kenapa harus aku?",
+      "text": "Mengapa menyerahkannya kepadaku sekarang?",
       "next": "maren_3"
     },
     "maren_3": {
       "speaker": "Maren",
-      "text": "Karena tas kurir itu bereaksi padamu. Belum pernah berpendar sejak dia pergi. Simpul Sembilan di balik ngarai timur menunggumu.",
-      "choices": [
-        {
-          "text": "“Aku berangkat sekarang juga.”",
-          "next": "choice_a"
-        },
-        {
-          "text": "“Beri aku waktu bersiap sejenak.”",
-          "next": "choice_b"
-        }
-      ]
+      "text": "Karena aku melihatmu menjaga dua titipan dengan jujur. Surat dan tas itu beresonansi, menara berubah, dan pos tak lagi aman untuk menyimpannya. Aku mempercayakan langkah berikutnya kepadamu: bawa ke Simpul Sembilan. Jangan buka segelnya.",
+      "next": "cap_saksi"
     },
     "choice_a": {
       "speaker": "Maren",
@@ -47,6 +38,20 @@
       "speaker": "Maren",
       "text": "Badai tidak menunggu siapa pun, Nara. Tapi pintu Pos Batu Biru akan selalu terbuka untukmu.",
       "action": "ACCEPT_DELIVERY_3"
+    },
+    "cap_saksi": {
+      "speaker": "Maren",
+      "text": "Kesaksian dari Telaga Sumi sudah sampai. (Maren membubuhkan Cap Saksi Asharim di punggung surat, dengan nama Nara.) Satu bangsa telah bersaksi. Segelnya baru terbuka penuh setelah tiga bangsa. Sekarang bawalah tetap tertutup.",
+      "choices": [
+        {
+          "text": "“Aku berangkat sekarang juga.”",
+          "next": "choice_a"
+        },
+        {
+          "text": "“Beri aku waktu bersiap sejenak.”",
+          "next": "choice_b"
+        }
+      ]
     }
   }
 }

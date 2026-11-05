@@ -1,0 +1,24 @@
+.nation-explorer{--nation-ink:#393b35;--nation-muted:#67695d;--nation-line:#c6baa0;--nation-teal:#52777b;color:var(--nation-ink);margin-top:22px}
+.nation-picker{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.nation-picker button{font:inherit;font-size:13px;padding:10px 18px;border:1px solid var(--nation-line);background:transparent;color:var(--nation-ink);cursor:pointer;border-radius:2px}
+.nation-picker button:hover{background:#ded6bd}
+.nation-picker button.selected{background:var(--nation-ink);color:#f3e9d2;border-color:var(--nation-ink)}
+.nation-picker button:focus-visible{outline:3px solid var(--nation-teal);outline-offset:3px}
+.nation-art{margin:0;min-width:0}
+.nation-art img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#e5dcc5}
+.nation-art figcaption{font:11px/1.6 'Segoe UI',sans-serif;color:var(--nation-muted);padding:10px 0;border-bottom:1px solid var(--nation-line)}
+.nation-info{padding-top:24px}
+.nation-eyebrow{font:11px/1.6 'Segoe UI',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--nation-muted);margin:0 0 8px}
+.nation-info h3{font:38px/1.2 Georgia,serif;margin:0 0 12px}
+.nation-description{max-width:750px;font:15px/1.8 'Segoe UI',sans-serif;margin:0}
+.nation-greeting{font:italic 21px/1.5 Georgia,serif;color:var(--nation-teal);margin:18px 0}
+.nation-facts{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;margin:24px 0 0}
+.nation-fact{border-top:1px solid var(--nation-line);padding-top:12px;min-width:0}
+.nation-fact dt{font:600 12px/1.5 'Segoe UI',sans-serif;margin:0 0 5px}
+.nation-fact dd{font:13px/1.8 'Segoe UI',sans-serif;margin:0;color:var(--nation-muted)}
+#journal-nations .nation-info h3{font-size:30px}
+#journal-nations .nation-art img{max-height:380px}
+#journal-nations .nation-description{font-size:13px}
+.book-tabs{flex-wrap:wrap}
+@media(min-width:1080px){#atlas-nations .nation-detail{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:34px;align-items:start}#atlas-nations .nation-info{padding-top:0}#atlas-nations .nation-facts{grid-template-columns:1fr;gap:14px}}
+@media(max-width:640px){.nation-picker{gap:6px}.nation-picker button{flex:1 1 auto;padding:11px 12px}.nation-info h3{font-size:30px}.nation-facts{grid-template-columns:1fr}.nation-description{font-size:14px}.nation-greeting{font-size:19px}}
