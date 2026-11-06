@@ -1,17 +1,19 @@
 {
   "coldBread": "Rotinya mulai dingin, tetapi kamu sampai. Angin tak bisa menjaga semua yang hangat. Duduklah sebentar, Nara.",
-  "damagedShellListen": "(Bu Lamat mendekatkan kerang ke telinga.) Ada retak kecil di lagunya… tetapi aku masih mengenal suaranya.",
-  "damagedShellReply": "Jalan meninggalkan bekas pada setiap barang, Nak. Kamu tetap membawanya pulang. Terima kasih.",
+  "damagedShellListen": "(Bu Lamat mendekatkan kerang ke telinga.) Ada retak kecil di cangkangnya… tetapi aku masih mengenal suaranya.",
+  "damagedShellReply": "Jalan meninggalkan bekas pada setiap barang, Nak. Kamu tetap membawanya pulang apa adanya. Terima kasih.",
   "marenTrustRumor": "Maren mempercayaimu: Jalur Lentera memutari tol lewat sisi timur. Lebih jauh, tetapi pijakan batunya melindungi paket saat badai.",
   "marenTrust": "“Jalan lentera di timur masih dijaga kawan lama. Kepercayaan juga sebuah peta, Nara.”",
   "marenIdle": "“Jalan itu panjang, Nara. Tapi tiap surat yang sampai membuatnya sedikit lebih pendek.”",
   "jumaIdle": "“Bukit itu menyimpan banyak jalan. Hanya sebagian yang tergambar di peta.”",
   "bulamatIdle": "“Ada air untuk siapa pun yang masih berjalan.”",
   "kesaIdle": "“Surat keluarga juga pernah tertahan di meja kami. Aku masih memikirkan alasannya.”",
-  "merchantRumor": "Rumor pedagang: Simpul Sembilan mungkin sengaja dipadamkan. Belum ada bukti siapa pelakunya.",
-  "secretRoute": "Kesa mengisyaratkan tebing utara: lebih cepat dengan Kait Tali. Jalur Lentera di timur lebih panjang, tetapi lebih aman.",
-  "songMemory": "Lagu Dorin dari Bahtari: nada akhirnya meleset, tetapi Bu Lamat mengenali suara suaminya.",
-  "capWitness": "Kesaksian Asharim dicatat setelah lagu Dorin sampai. Maren akan membubuhkan cap pada Surat Penyalaan.",
-  "capAttached": "Cap Saksi Asharim · pembawa: Nara. Satu dari tiga bangsa yang diperlukan; segel tetap tertutup.",
-  "demoComplete": "Simpul Sembilan menyala, tetapi Surat Penyalaan belum sampai ke Katup. Jalan berikutnya menuju Padang Salkara."
+  "merchantRumor": "Rumor pedagang: Simpul Sembilan mungkin sengaja dipadamkan, dan sebagian Pos Dagang diam-diam menyerahkan catatan Buku Tamu Batu kepada Dewan.",
+  "secretRoute": "Kesa yang meragukan penahanan kabar membuka jalur Tebing Utara: lebih pendek, tetapi terpapar angin badai.",
+  "songMemory": "Lagu Dorin dari Bahtari: nada akhirnya meleset sedikit karena ketidaksempurnaan manusia, justru itulah tanda keaslian yang dikenali Bu Lamat.",
+  "partialFailure": "Tugas ketiga ke gerbang timur gagal sebagian: kiriman pos saudara tertahan pemeriksaan Dewan dan tepi bungkusnya tergores angin, lalu Nara melaporkannya dengan jujur.",
+  "capWitness": "Kesaksian Telaga Sumi dan laporan jujur atas tugas yang gagal sebagian menguatkan keputusan Maren di tengah tekanan Pos Tua dan Pos Dagang.",
+  "capAttached": "Cap Saksi Asharim · pembawa: Nara, penyaksi: Maren. Diucapkan pada bantalan tinta resonansi. Satu dari tiga serah-terima lintas bangsa; segel tetap tertutup.",
+  "hestaClue": "Jejak Hesta (tahun 58) pada batu bangunan uji dekat 009: peringatan tentang nyala berlebih tujuh cabang Dewan dan penyetelan peredam yang tidak lengkap.",
+  "demoComplete": "Pantulan Garis Surut di 009 membaca nama Nara dari tinta cap, dan bangunan uji di dekatnya memperdengarkan peringatan lama Hesta. Surat Penyalaan tetap dibawa menuju Dusun Sela dan Padang Salkara."
 }

@@ -23,7 +23,7 @@ Namun Gema tidak pernah menguji kebenaran pesan. Kabar dusta dan perang propagan
 
 Seratus tahun telah berlalu (**Tahun ke-100 Telan**). Peradaban belajar hidup dalam keheningan, bertumpu pada kaki para kurir independen di Pos Singgah. Di sisi lain, **Dewan Tol** memonopoli jalur dengan *Ajaran Tata* dan menjual kabar tersaring lewat tujuh Simpul Terang. Tanpa disadari dunia, Bendungan seratus tahun itu kini mulai melemah dan tanda tekanan muncul di berbagai penjuru.
 
-Kamu adalah **Nara** (17 tahun), kurir magang asal Dusun Sela yang melangkah agar *tidak ada lagi orang yang menunggu kabar sendirian*. Di Pos Batu Biru, Maren menyerahkan **Surat Penyalaan** peninggalan Sahdan — titipan rahasia empat generasi (*Sarai → Bahar → Ilun → Maren*) yang ditulis di atas kertas serat berinsulasi dengan seratus tanda penyetel. Segel surat hanya terbuka penuh bila memuat **Cap Saksi** dari setidaknya tiga bangsa.
+Kamu adalah **Nara** (17 tahun), kurir magang asal Dusun Sela yang melangkah agar *tidak ada lagi orang yang menunggu kabar sendirian*. Dalam **Bab 0 — Pos Batu Biru**, Maren meminjamkan tas kulit berinsulasi peninggalan Sahdan sebelum tugas pertama. Setelah roti hangat untuk Juma, Kerang Suara untuk Bu Lamat, dan laporan jujur atas tugas ketiga yang tertahan patroli Dewan ditambah lengkapnya tanda bahaya 009, Maren menyerahkan **Surat Penyalaan** — titipan rahasia empat generasi (*Sarai → Bahar → Ilun → Maren*) dengan seratus tanda penyetel. Maren membubuhkan **Cap Saksi Asharim** di atas bantalan tinta resonansi yang merekam suara nama Maren dan nama Nara. Segel surat hanya terbuka penuh bila memuat Cap Saksi dari setidaknya tiga bangsa.
 
 Didampingi **Ruru**, penunjuk jalan berbulu yang peka pada jejak resonansi, tugas Nara bukan menjadi penakluk adidaya, melainkan menyambungkan kembali tali kepercayaan yang putus.
 
@@ -55,7 +55,7 @@ Dunia **Tanah Sada** terinspirasi dari prinsip jalur dagang kuno (*Silk Road*) d
 | **Spasi** | Melompat; tahan saat jatuh untuk membuka **Jubah Layar** (*Glide*) |
 | **Mouse** | Mengarahkan kamera; klik layar untuk mengunci kursor, `Esc` untuk melepas |
 | **E** | Berbicara dengan NPC, memeriksa pos, memanjat tangga / tepian bertanda |
-| **F** | Menembakkan **Kait Tali** ke cincin jangkar emas |
+| **F** | Menyeberangi **Tali Lintas** pada tambatan tali berlentera |
 | **L** | Memasang **Tangga Tali** permanen di penanda tebing |
 | **Q** | Pindai kontur medan dan arah tujuan bersama Ruru (*cooldown* 12 detik) |
 | **J** | Membuka **Buku Jalur** (Peta, Pengantaran, Catatan & Nama Baik, Lima Bangsa, Perlengkapan) |

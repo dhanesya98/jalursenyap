@@ -6,32 +6,32 @@
   "nodes": {
     "start": {
       "speaker": "Maren",
-      "text": "Kabut mulai turun menyelimuti lembah. Ini pengantaran keduamu: Kerang Suara.",
+      "text": "Kabut mulai turun menyelimuti lembah. Ini pengantaran keduamu: Kerang Suara untuk Telaga Sumi.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Apa isi kerang kecil ini?",
+      "text": "Apa isi kerang kecil ini, Bu?",
       "next": "maren_2"
     },
     "maren_2": {
       "speaker": "Maren",
-      "text": "Lagu dari Dorin, pelaut Bahtari di Bandar Lada, untuk istrinya, Bu Lamat. Kerang tua ini menyimpan jejak suaranya. Jaga agar tidak retak.",
+      "text": "Lagu keluarga dari Dorin, pelaut Rumah Layar Bahtari di Bandar Lada, untuk istrinya, Bu Lamat. Kerang tua ini menyimpan jejak suaranya. Jaga agar tidak retak.",
       "next": "nara_2"
     },
     "nara_2": {
       "speaker": "Nara",
-      "text": "Dan kalau terjatuh?",
+      "text": "Dan kalau terjatuh di jalan?",
       "next": "maren_3"
     },
     "maren_3": {
       "speaker": "Maren",
-      "text": "Jejak bunyinya bisa terputus atau memudar. Kalau ada kerusakan, katakan dengan jujur saat menyerahkan. Kita menjaga pesan, bukan memperindah isinya.",
+      "text": "Jejak bunyinya bisa terputus atau memudar. Kalau ada kerusakan atau gangguan di perjalanan, sampaikan kondisinya dengan jujur saat serah-terima. Kita menjaga pesan, bukan memperindah isinya.",
       "next": "maren_grapple"
     },
     "maren_grapple": {
       "speaker": "Maren",
-      "text": "Ini Kait Tali milik Sahdan. Jembatan barat ke Telaga Sumi sudah patah, tapi tebing di atasnya punya jangkar kait berkilau. Tekan F saat melihat jangkar emas untuk meluncur naik!",
+      "text": "Bawalah juga gulungan Tali Lintas dan Tangga Tali dari persediaan pos. Jembatan kayu ke barat sudah patah, tetapi tambatan tali di bibir ngarai masih kokoh untuk menyeberang.",
       "action": "ACCEPT_DELIVERY_2"
     }
   }

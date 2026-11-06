@@ -5,53 +5,63 @@
   "node": "start",
   "nodes": {
     "start": {
+      "speaker": "Nara",
+      "text": "Bu Maren, lagu Dorin sudah sampai ke Bu Lamat. Tetapi untuk tugas ketiga mengantar kantong perbekalan dan salinan daftar tamu ke pos saudara di timur… aku gagal sebagian. Patroli Dewan menutup lintasan, menahan separuh muatan, dan tepi bungkusnya robek terkena angin.",
+      "next": "maren_honest"
+    },
+    "maren_honest": {
       "speaker": "Maren",
-      "text": "Badai membuat Simpul Sembilan berpendar lagi. Patroli Dewan juga mulai memeriksa pos. (Maren mengeluarkan surat dari tempat simpanannya.) Aku sudah terlalu lama menyembunyikan ini.",
+      "text": "Kamu tidak mengarang alasan, tidak menyembunyikan bagian yang rusak, dan tetap membawa pulang sisanya. Di tengah desakan Kubu Pos Dagang agar kita tunduk pada Dewan, kejujuran seperti itulah yang sedang kucari, Nara.",
+      "next": "maren_1"
+    },
+    "maren_1": {
+      "speaker": "Maren",
+      "text": "Dua puluh tahun lalu, pada tahun 80, aku sendiri hampir menyerah dan nyaris menyerahkan rahasia pos ini kepada Dewan karena takut. Tetapi malam ini tanda bahayanya sudah lengkap: lentera Simpul Sembilan berdenyut tiga kali tanpa disetel, cincin penandanya retak, sumur Telaga Sumi makin keras bergema, dan patroli makin menekan.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Segelnya bergetar ketika didekatkan ke tas Sahdan.",
+      "text": "Apa yang selama ini Ibu sembunyikan di dinding dapur batu?",
       "next": "maren_2"
     },
     "maren_2": {
       "speaker": "Maren",
-      "text": "Surat Penyalaan, dari Simpul Pertama. Sahdan menitipkannya kepada Sarai seratus tahun lalu. Sarai menjaganya, lalu Bahar, Ilun, dan akhirnya aku. Aku hanya mewarisi sebagian petunjuk mereka.",
+      "text": "(Maren mengeluarkan sepucuk surat kertas Tseren berlapis tinta resonansi.) Surat Penyalaan dari Simpul Pertama. Sahdan menitipkan surat dan tas ini kepada Sarai sebelum pemutusan Malam Hening. Sarai menulis Buku Sarai, lalu Bahar menjaganya, Ilun menyembunyikan bagian teknisnya saat pemeriksaan Dewan, dan aku menjaganya hampir tiga puluh tahun.",
       "next": "nara_2"
     },
     "nara_2": {
       "speaker": "Nara",
-      "text": "Mengapa menyerahkannya kepadaku sekarang?",
+      "text": "Apakah ada petunjuk kapan surat ini harus dibawa pergi?",
       "next": "maren_3"
     },
     "maren_3": {
       "speaker": "Maren",
-      "text": "Karena aku melihatmu menjaga dua titipan dengan jujur. Surat dan tas itu beresonansi, menara berubah, dan pos tak lagi aman untuk menyimpannya. Aku mempercayakan langkah berikutnya kepadamu: bawa ke Simpul Sembilan. Jangan buka segelnya.",
+      "text": "Instruksi luar surat ini bisa dibaca tanpa membuka segelnya: simpan kunci jauh dari pusat selama jalur penahan stabil; periksa cincin uji 009; bila tiga denyut tanpa penyetelan disertai retak cincin muncul, bawa surat melalui saksi lintas bangsa ke Rumah Jejak pusat. Pengantaran tidak boleh ditunda lagi.",
       "next": "cap_saksi"
+    },
+    "cap_saksi": {
+      "speaker": "Maren",
+      "text": "Mari ucapkan nama kita pada bantalan tinta resonansi. (Maren dan Nara mengucapkan nama Maren dan nama Nara saat membubuhkan Cap Saksi Asharim di punggung surat.) Lapisan tinta ini menyimpan bunyi identitas pembawa dan penyaksi. Tempelkan punggung surat pada lempeng pemeriksaan 009 untuk pemeriksaan terakhir, lalu teruskan perjalananmu. Aku akan menghubungi pos saudara untuk mendukungmu.",
+      "choices": [
+        {
+          "text": "“Aku berangkat ke Simpul Sembilan sekarang.”",
+          "next": "choice_a"
+        },
+        {
+          "text": "“Beri aku waktu memeriksa bekal sejenak.”",
+          "next": "choice_b"
+        }
+      ]
     },
     "choice_a": {
       "speaker": "Maren",
-      "text": "Pemberani. Tapi dengarkan: jika sapuan badai melintang terlalu deras, cari tempat berteduh. Jangan memaksakan diri di ruang terbuka.",
+      "text": "Ingat instruksi luarnya: jangan pernah mencoba membuka Katup hanya karena nyala satu lentera, dan jangan buka segel surat sebelum tiga serah-terima lintas bangsa. Hati-hati menembus badai.",
       "action": "ACCEPT_DELIVERY_3"
     },
     "choice_b": {
       "speaker": "Maren",
-      "text": "Badai tidak menunggu siapa pun, Nara. Tapi pintu Pos Batu Biru akan selalu terbuka untukmu.",
+      "text": "Siapkan dirimu, Nara. Setelah pemeriksaan di 009 selesai, temuilah Nenek Ima di Dusun Sela sebelum kamu melangkah ke Padang Salkara.",
       "action": "ACCEPT_DELIVERY_3"
-    },
-    "cap_saksi": {
-      "speaker": "Maren",
-      "text": "Kesaksian dari Telaga Sumi sudah sampai. (Maren membubuhkan Cap Saksi Asharim di punggung surat, dengan nama Nara.) Satu bangsa telah bersaksi. Segelnya baru terbuka penuh setelah tiga bangsa. Sekarang bawalah tetap tertutup.",
-      "choices": [
-        {
-          "text": "“Aku berangkat sekarang juga.”",
-          "next": "choice_a"
-        },
-        {
-          "text": "“Beri aku waktu bersiap sejenak.”",
-          "next": "choice_b"
-        }
-      ]
     }
   }
 }

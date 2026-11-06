@@ -3,7 +3,7 @@
     "id": "delivery_1",
     "title": "Roti Rempah untuk Menara Batu Senja",
     "stage": 1,
-    "sender": "Maren",
+    "sender": "Maren (Pos Batu Biru)",
     "recipient": "Juma",
     "item": "Roti Rempah",
     "itemIcon": "🍞",
@@ -14,43 +14,43 @@
       -125
     ],
     "day_condition": "hangat",
-    "summary": "Antar roti rempah hangat dari Pos Batu Biru ke Juma di Menara Batu Senja sebelum dingin.",
-    "hint": "Ikuti jalan batu berkelok ke utara. Sprint di pijakan yang aman, lompat dan coba Jubah Layar saat kembali turun."
+    "summary": "Tas insulasi tua dipinjamkan Maren sebelum tugas pertama. Antar roti rempah hangat ke Juma di Menara Batu Senja dan dengarkan cerita buku harian kakeknya.",
+    "hint": "Ikuti jalan batu berkelok ke utara. Sprint di pijakan yang aman, lompat dan buka Jubah Layar saat turun. E memanjat tepian bertanda lentera."
   },
   {
     "id": "delivery_2",
     "title": "Lagu untuk Telaga Sumi",
     "stage": 2,
-    "sender": "Dorin, melalui Pos Batu Biru",
+    "sender": "Dorin (Rumah Layar Bahtari), melalui Pos Batu Biru",
     "recipient": "Bu Lamat",
     "item": "Kerang Suara",
     "itemIcon": "🐚",
-    "location": "Telaga Sumi (Oasis)",
+    "location": "Telaga Sumi (Balai Cawan)",
     "targetPosition": [
       -135,
       2,
       65
     ],
     "day_condition": "kabut",
-    "summary": "Bawa jejak lagu Dorin, pelaut Bahtari, kepada istrinya Bu Lamat di Telaga Sumi. Sampaikan dengan jujur jika kerangnya rusak.",
-    "hint": "Menuju barat. Gunakan F pada cincin emas untuk menyeberangi ngarai. Q meminta Ruru membaca medan; L memasang tangga di penandanya."
+    "summary": "Bawa lagu keluarga dari Dorin kepada istrinya Bu Lamat di Telaga Sumi tanpa mengubah atau menyembunyikan kondisinya. Lagu yang meleset menyimpan kehadiran manusia.",
+    "hint": "Menuju barat melintasi ngarai. Gunakan E pada titik tambat Tali Lintas untuk menyeberang, Q agar Ruru membaca medan, dan L untuk memasang Tangga Tali."
   },
   {
     "id": "delivery_3",
-    "title": "Surat Penyalaan dari Simpul Pertama",
+    "title": "Surat Penyalaan & Pemeriksaan Cincin 009",
     "stage": 3,
-    "sender": "Titipan Sahdan, melalui Maren",
-    "recipient": "Simpul Sembilan · surat tetap dibawa",
+    "sender": "Titipan Sahdan (Sarai → Bahar → Ilun → Maren)",
+    "recipient": "Lempeng Pemeriksaan Simpul Sembilan · surat tetap dibawa",
     "item": "Surat Penyalaan",
     "itemIcon": "📜",
-    "location": "Simpul Sembilan",
+    "location": "Simpul Sembilan (009)",
     "targetPosition": [
       125,
       26,
       -85
     ],
     "day_condition": "berat",
-    "summary": "Maren menyerahkan surat yang dijaga empat generasi. Bawa dalam tas Sahdan menuju Simpul Sembilan tanpa membuka segelnya. Cap Saksi Asharim mencatat nama Nara.",
-    "hint": "Pilih di Buku Jalur: Jalur Lentera yang aman di timur, atau rantai kait di Tebing Utara yang lebih cepat. Badai melemahkan glide dan mengikis paket di pasir terbuka."
+    "summary": "Setelah kamu melapor jujur atas kiriman pos saudara yang gagal sebagian dan tanda uji 009 (tiga denyut tanpa penyetelan serta retak cincin) lengkap, Maren membubuhkan Cap Asharim dan menyerahkan Surat Penyalaan. Tempelkan punggung surat pada lempeng pemeriksaan 009 tanpa membuka segel.",
+    "hint": "Kesa membuka jalur Tebing Utara yang lebih pendek namun terpapar angin badai, atau pilih Jalur Lentera yang terlindung di timur melalui Buku Jalur."
   }
 ]

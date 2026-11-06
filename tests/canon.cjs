@@ -7,10 +7,11 @@ const entries=new Map(),storage={getItem:k=>entries.get(k)||null,setItem:(k,v)=>
 const state=()=>new C.State(data,new C.EventBus(),storage);
 let count=0;function test(name,fn){fn();count++;console.log('PASS',name);}
 test('Canonical nation ids, images, and no Lulanai stamp',()=>{
- assert.equal(data.canon.year,100);assert.equal(data.canon.nara.age,17);assert.equal(data.canon.nara.birth,83);
+ assert.equal(data.canon.year,100);assert.equal(data.canon.demo.chapter,0);assert.equal(data.canon.nara.age,17);assert.equal(data.canon.nara.birth,83);
  assert.equal(data.canon.nations.map(n=>n.id).join(','),'asharim,tseren,cirusia,bahtari,lulanai');
  assert(!data.canon.letter.stamps.includes('lulanai'));assert.equal(data.canon.letter.requiredNations,3);
  for(const n of data.canon.nations){assert(fs.existsSync(path.join(root,n.image)),n.id);assert(fs.statSync(path.join(root,n.image)).size>100000);}
+ assert(fs.existsSync(path.join(root,'assets/world/peta-100-simpul.png')));
 });
 test('Both song choices yield one witness; stamp attaches only with Maren letter handoff',()=>{
  for(const choice of ['A','B']){const s=state();s.accept(0);s.complete(0);s.accept(1);s.complete(1,choice);assert.equal(s.value.witnesses.join(','),'asharim');assert.equal(s.value.capSaksi.length,0);assert(!s.value.letterReceived);assert(s.validate(s.value));s.accept(2);assert.equal(s.value.capSaksi.join(','),'asharim');assert(s.value.letterReceived);assert(s.validate(s.value));s.complete(2);assert.equal(s.value.capSaksi.length,1);assert.equal(s.value.reputation.lulanai,0);assert(s.value.letterReceived);assert(s.condition().includes('Tetap dibawa'));assert(s.validate(s.value));}
@@ -27,6 +28,11 @@ test('Dialogue links, all action ids and critical lore clues stay valid',()=>{
  const actions=new Set(['ACCEPT_DELIVERY_1','ACCEPT_DELIVERY_2','ACCEPT_DELIVERY_3','COMPLETE_DELIVERY_1_A','COMPLETE_DELIVERY_1_B','COMPLETE_DELIVERY_2_A','COMPLETE_DELIVERY_2_B','RECORD_RUMOR','REVEAL_SECRET_PATH','TRIGGER_CLIFFHANGER']);
  for(const d of Object.values(data.dialogues))for(const n of Object.values(d.nodes)){for(const next of [n.next,...(n.choices||[]).map(c=>c.next)].filter(Boolean))assert(d.nodes[next]);for(const a of [n.action,...(n.choices||[]).map(c=>c.action)].filter(Boolean))assert(actions.has(a),a);assert(!/Pahitan|Warjian/.test(n.text));}
  assert(data.dialogues.juma_delivery1.nodes.juma_2.text.includes('Kakekku'));assert(data.dialogues.maren_delivery3.nodes.maren_2.text.includes('Sarai'));assert(data.dialogues.maren_delivery3.nodes.cap_saksi.text.includes('nama Nara'));assert(data.dialogues.simpul_sembilan.nodes.nara_cap.text.includes('Segel surat masih tertutup'));
+ assert(data.dialogues.maren_intro.nodes.maren_2.text.includes('Aku meminjamkannya kepadamu'));
+ assert(data.dialogues.maren_delivery3.nodes.start.text.includes('gagal sebagian'));
+ assert(data.dialogues.simpul_sembilan.nodes.echo_1.speaker.includes('Sahdan'));
+ assert(data.dialogues.simpul_sembilan.nodes.hesta_1.speaker.includes('Hesta'));
+ assert.notEqual(data.dialogues.simpul_sembilan.nodes.echo_1.speaker,data.dialogues.simpul_sembilan.nodes.hesta_1.speaker);
 });
 test('Disabled voice never requests a recording and stops an existing voice',()=>{
  let requests=0,paused=false;

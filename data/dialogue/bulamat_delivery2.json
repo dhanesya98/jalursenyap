@@ -6,22 +6,22 @@
   "nodes": {
     "start": {
       "speaker": "Bu Lamat",
-      "text": "Dari Dorin, suamiku, di Bandar Lada? (Bu Lamat menerima kerang dengan kedua tangan.) Sudah lama rumah ini menunggu lagunya.",
+      "text": "Dari Dorin, suamiku, di Bandar Lada? (Bu Lamat menerima kerang dengan kedua tangan di tepi undakan Telaga Sumi.) Sudah lama rumah ini menunggu lagunya.",
       "next": "listen"
     },
     "listen": {
       "speaker": "Bu Lamat",
-      "text": "(Bu Lamat mendekatkan kerang ke telinga; alunan nada laut terdengar lembut) Nadanya sedikit meleset di bagian akhir.",
+      "text": "(Bu Lamat mendekatkan kerang ke telinga; alunan nada laut terdengar lembut.) Nadanya sedikit meleset di bagian akhir.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Bagian akhirnya terdengar berbeda. Apa jejaknya rusak di jalan?",
+      "text": "Bagian akhirnya terdengar goyah. Apa jejaknya rusak karena kabut di jalan?",
       "next": "bulamat_2"
     },
     "bulamat_2": {
       "speaker": "Bu Lamat",
-      "text": "Nada itu memang selalu meleset saat Dorin bernyanyi. Aku mengenalinya. Terima kasih sudah membawa pulang suaranya, Nara.",
+      "text": "Bukan rusak, Nak. Nada itu memang selalu meleset saat Dorin bernyanyi karena menahan rindu. Ketidaksempurnaan manusia itulah yang membuatku tahu ini benar suaranya, bukan salinan. Terima kasih sudah membawanya pulang apa adanya.",
       "choices": [
         {
           "text": "“Boleh aku mendengarnya sekali?”",
@@ -35,12 +35,12 @@
     },
     "choice_a": {
       "speaker": "Bu Lamat",
-      "text": "Dengarkanlah. Sesudah ini akan kukirim kesaksianku kepada Maren: kamu menjaga titipan keluarga kami. Kepercayaan perlu nama dan wajah.",
+      "text": "Dengarkanlah. Sumur Induk di Telaga Sumi belakangan memantulkan suara lama makin keras, dan Pos Dagang mulai menyerahkan catatan Buku Tamu Batu ke Dewan. Saat kembali ke Maren, sampaikan juga bagaimana kiriman perbekalan pos saudara di gerbang timur tertahan tadi.",
       "action": "COMPLETE_DELIVERY_2_A"
     },
     "choice_b": {
       "speaker": "Bu Lamat",
-      "text": "Akan kukirim kesaksianku kepada Maren: titipan ini sampai. Hati-hati di gerbang timur. Petugas Dewan belakangan sering mencatat menara dan sumur yang berdengung.",
+      "text": "Hati-hati di jalan pulang, Nara. Sumur-sumur tua di sini makin nyaring memantulkan gema lama, dan petugas Dewan di gerbang timur menahan kiriman pos saudara. Laporkan apa adanya kepada Maren.",
       "action": "COMPLETE_DELIVERY_2_B"
     }
   }

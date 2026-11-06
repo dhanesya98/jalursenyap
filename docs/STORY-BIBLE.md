@@ -1,544 +1,844 @@
-# Jalur Senyap — Story Bible
+# Jalur Senyap - Story Bible
 
-*Acuan kanon dunia dan cerita Jalur Senyap di Tanah Sada, mencakup timeline 100 tahun (Master Audit), Kunci Lore V1, serta kompendium lengkap asal-usul, politik, dan budaya lima bangsa beserta Tujuh Panji Cirusia. Cerita berlangsung pada **tahun ke-100 Telan**.*
+**Edisi ilustrasi | Tanah Sada | Revisi 6 November 2026**
 
-**Status: KANON.** Seluruh usulan di luar bagian **12.3 Yang masih terbuka** telah ditetapkan sebagai kanon, termasuk perubahan nama dunia menjadi **Tanah Sada**, fondasi asal-usul dan geopolitik lima bangsa, serta rincian Tujuh Panji Cirusia. Semua pertanyaan dan usulan pada bagian 12.3 tetap terbuka untuk dibahas dan belum menjadi ketetapan kanon.
+![Panorama Tanah Sada](assets/lembah-pasir.png)
 
----
+
+
+Acuan kanon dunia dan cerita Jalur Senyap di Tanah Sada, mencakup timeline 100 tahun (Master Audit), Kunci Lore V1, serta kompendium lengkap asal-usul, politik, dan budaya lima bangsa beserta Tujuh Panji Cirusia. Cerita berlangsung pada tahun ke-100 Telan.
+
+*Ilustrasi menjadi acuan suasana; ketetapan cerita dan teknik mengikuti teks. Simpan folder assets bersama file Markdown.*
+
+Status: KANON REVISI TERPADU, 6 November 2026. Dokumen lengkap ini menggantikan aturan dan alur lama yang bertentangan. Bagian 12.3 adalah rincian produksi yang masih terbuka, bukan penundaan jawaban atas mekanisme utama. Peta memuat rancangan 100 Simpul; hanya titik penting cerita yang dikunci.
 
 ## 1. Inti cerita
 
-**Satu kalimat:** Seratus tahun setelah dunia dibungkam oleh pengorbanan yang disalahpahami, seorang kurir muda membawa surat yang tak pernah sampai, dan menemukan bahwa kabar hanya bisa diselamatkan oleh kepercayaan sebelum bendungan keheningan itu pecah.
+Satu kalimat: Seratus tahun setelah dunia dibungkam oleh pengorbanan yang disalahpahami, seorang kurir muda membawa surat yang tak pernah sampai, dan menemukan bahwa kabar hanya bisa diselamatkan oleh kepercayaan sebelum bendungan keheningan itu pecah.
 
-**Pertanyaan dramatis:** Siapa yang memadamkan Gema, dan apakah dunia yang sudah seabad hidup tanpa Gema siap mendengar kebenarannya?
+Pertanyaan dramatis: Siapa yang memadamkan Gema, dan apakah dunia yang sudah seabad hidup tanpa Gema siap mendengar kebenarannya?
 
-**Tema:** kepercayaan dan kabar, ingatan dan pewarisan cerita, wajah melawan suara (kehadiran melawan kabar dari jauh), keheningan yang bukan kehampaan, dan tanggung jawab orang yang menyampaikan informasi.
+Tema: kepercayaan dan kabar, ingatan dan pewarisan cerita, wajah melawan suara (kehadiran melawan kabar dari jauh), keheningan yang bukan kehampaan, dan tanggung jawab orang yang menyampaikan informasi.
 
-> *Jalur Senyap bukan sekadar cerita tentang bagaimana dunia kembali bisa berbicara, melainkan tentang bagaimana manusia belajar saling percaya di tengah sejarah yang terbelah sebelum mereka kembali berbicara.*
+Jalur Senyap bukan sekadar cerita tentang bagaimana dunia kembali bisa berbicara, melainkan tentang bagaimana manusia belajar saling percaya di tengah sejarah yang terbelah sebelum mereka kembali berbicara.
 
-**Tema historis:** kebohongan yang paling kuat bukan selalu yang dirancang satu orang, melainkan cerita yang diwariskan begitu lama hingga tidak lagi dianggap perlu dipertanyakan.
+Tema historis: kebohongan yang paling kuat bukan selalu yang dirancang satu orang, melainkan cerita yang diwariskan begitu lama hingga tidak lagi dianggap perlu dipertanyakan.
 
-**Nada:** hangat di pos singgah, berat di jalan, sunyi di reruntuhan.
+Nada: hangat di pos singgah, berat di jalan, sunyi di reruntuhan.
 
-**Genre:** grounded fantasy dengan unsur mystical fantasy. Dunia punya sejarah, ekonomi, politik, dan batas fisik yang terasa nyata. Gema hadir sebagai fenomena yang langka dan bermakna, bukan jalan pintas penyelesaian masalah.
+Genre: grounded fantasy dengan unsur mystical fantasy. Dunia punya sejarah, ekonomi, politik, dan batas fisik yang terasa nyata. Gema hadir sebagai fenomena yang langka dan bermakna, bukan jalan pintas penyelesaian masalah.
 
 ### Sepuluh prinsip kreatif
 
-1. Perjalanan tetap menjadi gameplay utama.
-2. Pengantaran tetap menjadi cara utama mengenal dunia dan karakter.
-3. Gema menjadi pusat sistem fantasi. Tidak ada sistem sihir lain tanpa kebutuhan kuat.
-4. Dunia tetap berjalan dan punya persoalan sendiri meski Nara tidak ada di sana.
-5. Dewan Tol bukan antagonis satu dimensi.
-6. Lulanai bukan bangsa sempurna yang selalu benar.
-7. Tidak semua misteri harus berhubungan dengan Nara.
-8. Tidak semua keanehan harus dijelaskan tuntas.
-9. Keajaiban tidak menyelesaikan masalah secara otomatis.
-10. Kurir tetap penting bahkan ketika Gema kembali aktif.
+- 1. Perjalanan tetap menjadi gameplay utama.
 
-**Cerita lengkap (satu paragraf).** Dahulu, bangsa Lulanai menemukan bahwa batu dapat menyimpan bunyi dan ingatan, lalu membagikannya ke seluruh Tanah Sada lewat seratus menara bernama Simpul, sehingga lima bangsa yang terpisah bisa bertukar kabar dalam sekejap dan jalur dagang tumbuh menjadi peradaban. Tetapi Gema hanya meneruskan apa yang diucapkan tanpa pernah memeriksa kebenarannya. Seiring waktu kabar diperdagangkan, dipalsukan, dan dipakai sebagai senjata, hingga sebuah kabar yang terdistorsi memecah Cirusia dan Bahtari dalam perang tujuh musim dan membuat seluruh jaringan beresonansi liar. Untuk menghentikannya, para penyetel Lulanai memutus jaringan dalam satu malam dengan menelan gelombangnya ke dalam tubuh mereka dan mengalirkan sisanya ke sebuah bendungan di Simpul Keseratus, pengorbanan yang oleh dunia disebut Tahun Telan dan disalahpahami sebagai bencana. Seratus tahun berlalu: kurir menjadi tulang punggung peradaban, Dewan Tol menguasai jalur dan menjual kabar tersaring lewat tujuh Simpul Terang, dan tiap bangsa mewariskan versi sejarahnya sendiri, sementara bendungan itu perlahan melemah tanpa ada yang menyadari. Di dunia itulah Nara, kurir magang berusia tujuh belas tahun, mewarisi Surat Penyalaan, kunci untuk melepas Gema yang tertahan. Fungsinya bukan sebagai pahlawan yang menaklukkan kekuatan, melainkan sebagai kurir yang menyambungkan kembali apa yang putus: ia mengantar surat itu melintasi lima bangsa di Tanah Sada sambil memulihkan kepercayaan mereka satu per satu (surat hanya terbuka penuh bila memuat cap saksi dari tiga bangsa), mengungkap kebenaran di balik Tahun Telan, dan pada akhirnya memutuskan bagaimana Gema dilepas: sekaligus tanpa penjagaan, dikuasai segelintir pihak, atau bertahap di bawah kesaksian kurir, dengan harga yang harus ia bayar sendiri. Pilihan itulah inti ceritanya: dunia bisa bersuara lagi, tetapi hanya bila kabar kembali memiliki wajah yang bertanggung jawab atasnya.
+- 2. Pengantaran tetap menjadi cara utama mengenal dunia dan karakter.
 
----
+- 3. Gema menjadi pusat sistem fantasi. Tidak ada sistem sihir lain tanpa kebutuhan kuat.
+
+- 4. Dunia tetap berjalan dan punya persoalan sendiri meski Nara tidak ada di sana.
+
+- 5. Dewan Tol bukan antagonis satu dimensi.
+
+- 6. Lulanai bukan bangsa sempurna yang selalu benar.
+
+- 7. Tidak semua misteri harus berhubungan dengan Nara.
+
+- 8. Tidak semua keanehan harus dijelaskan tuntas.
+
+- 9. Keajaiban tidak menyelesaikan masalah secara otomatis.
+
+- 10. Kurir tetap penting bahkan ketika Gema kembali aktif.
+
+Cerita lengkap (satu paragraf). Dahulu, bangsa Lulanai menemukan bahwa batu dapat menyimpan bunyi dan ingatan, lalu membagikannya ke seluruh Tanah Sada lewat seratus menara bernama Simpul, sehingga lima bangsa yang terpisah bisa bertukar kabar dalam sekejap dan jalur dagang tumbuh menjadi peradaban. Tetapi Gema hanya meneruskan apa yang diucapkan tanpa pernah memeriksa kebenarannya. Seiring waktu kabar diperdagangkan, dipalsukan, dan dipakai sebagai senjata, hingga sebuah kabar yang terdistorsi memecah Cirusia dan Bahtari dalam perang tujuh musim dan membuat seluruh jaringan beresonansi liar. Untuk menghentikannya, para penyetel Lulanai memutus jaringan dalam satu malam dengan menelan gelombangnya ke dalam tubuh mereka dan mengalirkan sisanya ke sebuah bendungan di Simpul Keseratus, pengorbanan yang oleh dunia disebut Tahun Telan dan disalahpahami sebagai bencana. Seratus tahun berlalu: kurir menjadi tulang punggung peradaban, Dewan Tol menguasai jalur dan menjual kabar tersaring lewat tujuh Simpul Terang, dan tiap bangsa mewariskan versi sejarahnya sendiri, sementara bendungan itu melemah dan laporan tandanya ditutup Dewan. Di dunia itulah Nara, kurir magang berusia tujuh belas tahun, mewarisi Surat Penyalaan, kunci untuk melepas Gema yang tertahan. Fungsinya bukan sebagai pahlawan yang menaklukkan kekuatan, melainkan sebagai kurir yang menyambungkan kembali apa yang putus: ia mengantar surat itu melintasi lima bangsa di Tanah Sada sambil memulihkan kepercayaan mereka satu per satu (surat terbuka setelah tiga serah-terima lintas bangsa, tetapi pelepasan tetap memerlukan pemahaman teknik serta persiapan), mengungkap kebenaran di balik Tahun Telan, dan pada akhirnya memutuskan bagaimana Gema dilepas: sekaligus tanpa penjagaan, dikuasai segelintir pihak, atau bertahap di bawah kesaksian kurir, dengan harga yang harus ia bayar sendiri. Pilihan itulah inti ceritanya: dunia bisa bersuara lagi, tetapi hanya bila kabar kembali memiliki wajah yang bertanggung jawab atasnya.
 
 ## 2. Sejarah dunia
 
-**Tahun 0 disebut Tahun Telan**, tahun ketika seratus lentera Simpul padam dan Tanah Sada seolah ditelan keheningan. Malam kejadiannya disebut **Hari Senyap**. Tahun sesudahnya dihitung *tahun ke-1 Telan* dan seterusnya, tahun sebelumnya *Pra-Telan*. Cerita game berlangsung pada **tahun ke-100 Telan**. Angka sebelum tahun 0 adalah kerangka kerja.
+Tahun 0 disebut Tahun Telan, tahun ketika seratus lentera Simpul padam dan Tanah Sada seolah ditelan keheningan. Malam kejadiannya disebut Hari Senyap. Tahun sesudahnya dihitung tahun ke-1 Telan dan seterusnya, tahun sebelumnya Pra-Telan. Cerita game berlangsung pada tahun ke-100 Telan. Angka sebelum tahun 0 adalah kerangka kerja.
 
-### 2.1 Tiga lapisan sejarah
+## 2.1 Tiga lapisan sejarah
 
-Sejarah dunia hidup dalam tiga lapisan sekaligus, dan pemain menemukan perbedaannya lewat lingkungan, benda, dan kontradiksi antarwilayah, bukan lewat penjelasan panjang.
+Pemain menemukan perbedaan melalui lingkungan, benda, dan kesaksian, bukan penjelasan panjang.
 
 | Lapisan | Definisi | Contoh |
 | --- | --- | --- |
-| **Sejarah kejadian** | Apa yang benar-benar terjadi | Lulanai sengaja memutus jaringan demi menyelamatkan Tanah Sada dari resonansi liar |
-| **Sejarah yang diwariskan** | Apa yang dipercaya lewat cerita keluarga, lagu, dan trauma lokal | Gema mati karena kutukan, pengkhianatan bangsa lain, atau kerusakan |
-| **Sejarah yang dikendalikan** | Versi yang dipilih dan diajarkan pihak berkuasa demi stabilitas | Ajaran Tata Dewan Tol |
+| Kejadian | Peristiwa yang benar-benar terjadi | Lulanai memutus jaringan untuk menghentikan resonansi liar |
+| Warisan | Cerita keluarga, lagu, dan trauma lokal | Bahtari dituduh memadamkan Gema |
+| Kendali | Versi yang dipilih penguasa demi stabilitas | Ajaran Tata menyebut kerusakan alami |
 
-### 2.2 Sebelum Telan
+## 2.2 Sebelum Telan
 
-Tseren menghitung dengan *Tahun Simpul* (TS), dihitung dari menyalanya Simpul Pertama. TS 1 sama dengan 400 Pra-Telan, dan Tahun Telan sama dengan TS 401. Sebutan *Pra-Telan* baru ada setelah Telan, jadi dokumen yang memakainya tetapi mengaku ditulis sebelum Telan pasti ditulis ulang. Inilah alat investigasi pemain.
+Tseren memakai Tahun Simpul (TS). TS 1 = 400 Pra-Telan; Tahun Telan = TS 401. Sebutan Pra-Telan baru muncul setelah Telan. Sebutan itu pada dokumen yang mengaku asli sebelum Telan membuktikan adanya pelabelan atau penyalinan kemudian, belum otomatis pemalsuan isi. Pemain harus membandingkan medium, catatan penyalinan, dan isi naskah sumber.
 
 | Tahun | Peristiwa |
 | --- | --- |
-| **Pra-Simpul (>400 Pra-Telan)** | Lima bangsa di Tanah Sada terbentuk dari kontrak bertahan hidup menghadapi geografi ekstrem masing-masing: Pakta Sumur Terbuka (Asharim), Kanon Aksara (Tseren), Sumpah Api Tujuh Panji (Cirusia), Hukum Sauh & Lagu (Bahtari), serta Ikatan Penyetel (Lulanai) |
-| **400 Pra-Telan** | Lulanai menyalakan Simpul Pertama. Bangsa-bangsa yang semula hidup terpisah mulai terhubung |
-| **400 sampai 251** | 98 Simpul dibangun di seluruh Tanah Sada. Asharim memperluas jaringan Pos Singgah, Tseren menyediakan kertas dan tinta, Cirusia mengawal karavan, Bahtari membuka jalur laut. Ikatan Pengantar lahir sebagai penjaga kepercayaan yang dibawa tangan |
-| **250** | Simpul Keseratus menyala dan Zaman Gema dimulai |
-| **120** | Dewan Tol dibentuk untuk mengurus biaya perawatan Simpul |
-| **40** | Kabar Dusta merajalela: Gema dipakai untuk menjual, memalsukan, dan memperkuat kabar |
-| **3** | Kabar Tujuh Musim pecah (TS 398) |
-| **1** | Jaringan beresonansi liar. Para tetua Lulanai berdebat |
-| **0** | Hari Senyap. Lulanai menyebutnya Malam Hening |
+| Sebelum 400 Pra-Telan | Lima masyarakat terbentuk melalui Pakta Sumur Terbuka, Kanon Aksara, Sumpah Api Tujuh Panji, Hukum Sauh dan Lagu, serta Ikatan Penyetel |
+| 400 Pra-Telan | Simpul Pertama menyala |
+| 400-251 Pra-Telan | 98 Simpul tambahan dibangun; jaringan pos, arsip, karavan, dan pelayaran berkembang; Ikatan Pengantar lahir |
+| 250 Pra-Telan | Simpul Keseratus menyala; jaringan lengkap 100 Simpul |
+| 120 Pra-Telan | Dewan Tol dibentuk untuk mengelola iuran perawatan |
+| 40 Pra-Telan | Perdagangan dan pemalsuan kabar meningkat |
+| 3 Pra-Telan / TS 398 | Kabar Tujuh Musim dimulai |
+| Sekitar 1 Pra-Telan | Resonansi liar memburuk; tetua Lulanai berdebat |
+| Tahun 0 / TS 401 | Hari Senyap, disebut Malam Hening oleh Lulanai |
 
-### 2.3 Setelah Telan (tahun 1 sampai 100)
+## 2.3 Setelah Telan
 
-| Periode | Ciri | Distorsi sejarah |
+| Periode | Keadaan dan perubahan |
+| --- | --- |
+| 1-15, Masa Terputus | Komunikasi umum lewat jaringan berhenti; kurir menjadi kebutuhan darurat; banyak kesaksian hilang |
+| 16-35, Masa Jalan Baru | Pos dan rute dibangun kembali; prosedur serah-terima berkembang |
+| 36-55, Masa Penguasaan Jalur | Dewan menguasai akses, pencatatan, dan keamanan; Hesta menjual catatan pada tahun 52 |
+| 56-75, Masa Tujuh Lentera | Tujuh Simpul Terang diaktifkan; Hesta meninggalkan peringatan pemeriksaan pada tahun 58 |
+| 76-90, Masa Sejarah Terbelah | Versi sejarah mengeras; Maren nyaris menyerahkan surat pada tahun 80 |
+| 91-100, Masa Kabar Tertahan | Tekanan makin terlihat; Tarun berangkat tahun 95; tanda peringatan lengkap muncul pada tahun 100 |
+
+Nara lahir tahun 83; berusia 12 saat Tarun berangkat dan 17 saat cerita dimulai. Hesta adalah generasi pasca-Telan, bukan saksi hidup Kabar Tujuh Musim. Kesalahan leluhur dan manipulasi Dewan masa kini harus dibedakan.
+
+## 2.4 Satu tahun, banyak nama
+
+| Pihak | Sebutan tahun 0 | Makna |
 | --- | --- | --- |
-| **1 sampai 15: Masa Terputus** | Jaringan berhenti total. Kurir muncul sebagai kebutuhan darurat tanpa prosedur seragam | Saksi langsung masih hidup dan berharap Gema kembali. Banyak pengalaman tidak sempat dicatat |
-| **16 sampai 35: Masa Jalan Baru** | Rute fisik dibangun kembali, Pos Singgah saling terhubung, kurir menjadi profesi dengan tanda pengenal dan serah-terima | Saksi pertama menua. Satu keluarga mengingat kapal yang hilang, keluarga lain karavan yang diserang |
-| **36 sampai 55: Masa Penguasaan Jalur** | Dewan Tol menguasai pencatatan, pengamanan rute, dan akses jalur | Siapa yang menguasai jalur menentukan siapa yang sanggup membayar kabar |
-| **56 sampai 75: Masa Tujuh Lentera** | Dewan mengaktifkan tujuh Simpul Terang. Kurir independen tetap vital | Arsip dan penguasa lokal memilih versi sejarah yang dianggap menjaga stabilitas |
-| **76 sampai 90: Masa Sejarah Terbelah** | Versi sejarah mengeras menjadi identitas bangsa, diajarkan di sekolah dan ditulis di monumen | Mengoreksi sejarah menjadi tindakan politis yang berbahaya |
-| **91 sampai 100: Masa Kabar Tertahan** | Dunia terbiasa hidup tanpa Gema bebas. Tanda tekanan bendungan mulai muncul | Surat Penyalaan bereaksi pada Nara, Simpul Sembilan menyala |
-
-### 2.4 Satu tahun, banyak nama
-
-Tiap pihak menyebut tahun 0 menurut apa yang mereka percaya tentang Hari Senyap, dan sebutan itu sendiri mengungkap keyakinan mereka.
-
-| Pihak | Sebutan untuk tahun 0 | Alasannya |
-| --- | --- | --- |
-| **Ikatan Pengantar dan Asharim** | **Tahun Telan** | Penanggalan umum, dipakai karena kurir harus dipercaya semua pihak. Orang biasa mengartikannya dunia ditelan keheningan. Makna ganda: para penyetel Lulanai benar-benar menelan Gema ke dalam diri mereka |
-| **Lulanai** | **Malam Hening** | Pengorbanan yang disengaja, diingat dengan hormat |
-| **Dewan Tol** | **Tahun Kerusakan** | Sejalan dengan klaim resmi bahwa itu kerusakan alami |
-| **Cirusia** | **Tahun Tuduhan** | Mereka menyalahkan Bahtari |
-| **Bahtari** | **Tahun Terputus** | Tahun keluarga terpisah |
-| **Tseren** | **Tahun Tinta Kering** | Kata dan catatan berhenti mengalir |
-
----
+| Ikatan Pengantar dan Asharim | Tahun Telan | Sebutan umum; dunia ditelan keheningan, penyetel benar-benar menelan gelombang |
+| Lulanai | Malam Hening | Pengorbanan yang disengaja |
+| Dewan Tol | Tahun Kerusakan | Klaim resmi tentang kerusakan alami |
+| Cirusia | Tahun Tuduhan | Warisan tuduhan terhadap Bahtari |
+| Bahtari | Tahun Terputus | Keluarga dan jalur kabar terpisah |
+| Tseren | Tahun Tinta Kering | Kata dan catatan berhenti mengalir |
 
 ## 3. Cara kerja Gema dan Simpul
 
-### 3.1 Dasar
+## 3.1 Dasar
 
-Empat lapisan: **jejak** (bunyi meninggalkan bekas pada batu resonansi), **resonansi** (Simpul membaca dan meneruskan jejak), **penyetelan** (Lulanai menyelaraskan medium, bunyi, dan resonansi), dan **gangguan** (Gema bisa kabur, bertumpuk, atau liar).
+Empat lapisan: jejak (bunyi meninggalkan bekas pada batu resonansi), resonansi (Simpul membaca dan meneruskan jejak), penyetelan (Lulanai menyelaraskan medium, bunyi, dan resonansi), dan gangguan (Gema bisa kabur, bertumpuk, atau liar).
 
-**Sembilan hukum Gema:**
-1. Gema tidak bisa mengetahui apakah pesan benar atau bohong.
-2. Gema membutuhkan medium fisik.
-3. Jejak bunyi bisa memudar.
-4. Simpul harus disetel berkala agar stabil.
-5. Gema tidak bisa memindahkan benda atau manusia. Kurir selalu diperlukan.
-6. Resonansi bisa terganggu alam, kerusakan struktur, atau tindakan manusia.
-7. Mengaktifkan dan menjaga Gema punya biaya, batas, dan risiko.
-8. Gema selalu meninggalkan sisa pada medium. Inilah dasar semua petunjuk lingkungan.
-9. Gema yang terkunci hanya bisa dilepas di Katup (Simpul Keseratus) dengan Kunci Jejak (Surat Penyalaan).
+### Sembilan hukum Gema
 
-Kelangkaan fenomena: *umum* (batu berdengung saat disentuh, gema suara di lembah), *langka* (kerang tua yang menyimpan potongan lagu, tinta yang menampakkan tulisan terhapus), *kuno* (Simpul Pertama, jejak pengorbanan Lulanai, Surat Penyalaan).
+- 1. Gema tidak bisa mengetahui apakah pesan benar atau bohong.
 
-### 3.2 Anatomi sebuah Simpul
+- 2. Gema membutuhkan medium fisik.
+
+- 3. Jejak bunyi bisa memudar.
+
+- 4. Simpul harus disetel berkala agar stabil.
+
+- 5. Gema tidak bisa memindahkan benda atau manusia. Kurir selalu diperlukan.
+
+- 6. Resonansi bisa terganggu alam, kerusakan struktur, atau tindakan manusia.
+
+- 7. Mengaktifkan dan menjaga Gema punya biaya, batas, dan risiko.
+
+- 8. Gema selalu meninggalkan sisa pada medium. Inilah dasar semua petunjuk lingkungan.
+
+- 9. Gema yang terkunci hanya bisa dilepas di Katup (Simpul Keseratus) dengan Kunci Jejak (Surat Penyalaan).
+
+
+
+Kelangkaan fenomena: umum (batu berdengung saat disentuh, gema suara di lembah), langka (kerang tua yang menyimpan potongan lagu, tinta yang menampakkan tulisan terhapus), kuno (Simpul Pertama, jejak pengorbanan Lulanai, Surat Penyalaan).
+
+## 3.2 Anatomi sebuah Simpul
 
 | Bagian | Fungsi |
 | --- | --- |
-| **Batu Resonansi** | Medium utama yang menyimpan dan meneruskan jejak bunyi |
-| **Lentera** | Cahaya kuning yang menandakan Simpul aktif dan stabil |
-| **Cincin Penyetel** | Tempat penyetel menyelaraskan resonansi |
-| **Akar Jalur** | Garis resonansi bawah tanah yang menghubungkan Simpul |
+| Batu Resonansi | Medium penyimpan dan penerus jejak bunyi |
+| Lentera | Cahaya kuning penanda keadaan simpul |
+| Cincin Penyetel | Pengaturan keselarasan dan laju resonansi |
+| Akar Jalur | Sambungan resonansi bawah tanah |
 
-### 3.3 Garis Surut dan Bendungan
+## 3.3 Garis Surut dan Bendungan
 
-Seratus Simpul di Tanah Sada adalah satu jaringan resonansi. Setelah Kabar Tujuh Musim, jaringan itu beresonansi liar: pesan saling memantul, berlipat ganda, dan kembali dengan isi yang berubah. Memadamkan satu Simpul hanya memindahkan tekanannya ke tetangganya dan meretakkannya, jadi jaringan harus diputus serentak dari pusat, yaitu Simpul Pertama.
+Seratus Simpul merupakan satu jaringan. Resonansi liar tidak dapat dihentikan dengan memadamkan simpul satu per satu karena gelombang berpindah ke tetangganya. Pada Malam Hening jaringan komunikasi umum diputus serentak; seorang penyetel di masing-masing dari 100 Simpul menahan gelombang kejut. Kelebihannya dialirkan lewat Garis Surut menuju ruang penahan di bawah pulau Simpul Keseratus. Lingkungan laut membantu peredaman, tetapi tidak menghabiskan gelombang terkunci dengan sendirinya.
 
-Di tiap Simpul, seorang penyetel menahan gelombang kejut dengan tubuhnya sendiri, menyerapnya, lalu mengalirkannya ke Akar Jalur. Inilah arti harfiah *menelan Gema*. Gelombang yang berlebih dialirkan lewat **Garis Surut**, akar jalur terpanjang, menuju Simpul Keseratus di tepi laut, yang sejak awal dibangun sebagai peredam karena air laut menyerap resonansi. Di sana gelombang itu ditahan di balik **Bendungan**. Garis Surut melintasi Lembah Pasir lewat Simpul Sembilan, sehingga Simpul Sembilan yang pertama menunjukkan tanda.
+Garis Surut adalah jalur keselamatan yang tetap terhubung dengan jangkar dan ruang penahan; bukan jaringan pesan umum yang masih berfungsi diam-diam. Jalur ini melewati Simpul Sembilan. Pada tekanan tinggi ia membawa pantulan singkat antara titik 001, 009, dan 100. Pantulan tidak dapat diarahkan menjadi percakapan antarkota, tidak menyampaikan benda, dan tidak menerima perintah pelepasan.
 
-### 3.4 Simpul Keseratus (Simpul Pulang): Katup
+Di Bab 0, Nara menempelkan punggung surat pada lempeng pemeriksaan 009 mengikuti instruksi Maren. Saat membubuhkan cap, pembawa dan penyaksi mengucapkan nama pada bantalan tinta resonansi; lapisan itu menyimpan bunyi identitas, bukan membaca pikiran atau mengubah tulisan menjadi pengetahuan. Tinta cap beresonan membawa jejak nama pembawa, sehingga Sahdan dapat membacanya melalui satu pantulan jalur jangkar. Responsnya singkat dan mengikis ingatan. Tanpa surat, kontak medium, dan lonjakan tekanan, peristiwa ini tidak dapat diulang sesuka hati. Sahdan tidak melihat semua kejadian atau mengetahui masa depan.
 
-Simpul Keseratus penting karena fungsinya, bukan karena angkanya: ia **Katup Pelepas** jaringan, tempat Gema yang dikunci bisa dilepas, diatur ulang, atau dialirkan bertahap.
+## 3.4 Katup dan operasi Simpul Terang
 
-- **Mengapa tahun 100:** Bendungan dirancang bertahan sekitar seratus tahun, waktu yang diyakini cukup bagi Tanah Sada untuk belajar saling percaya lagi. Pada tahun ke-100 Telan, Bendungan melemah. Tekanan yang tak dilepas dengan sengaja akan pecah sendiri dan menjalar ke seluruh jaringan: Hari Senyap yang kedua. Cerita dimulai ketika waktunya hampir habis.
-- **Ironi Dewan Tol:** Tujuh Simpul Terang yang dinyalakan dengan penyetelan tidak utuh menambah resonansi pada jaringan yang sama, sehingga Dewan tanpa sadar ikut mempercepat tekanan.
+Bendungan adalah ruang batu penahan resonansi di bawah pulau Simpul Keseratus. Katup berada di menara di atasnya; ruang ini bukan bendungan air berbentuk tembok di teluk. Surat adalah kunci fisik pelepasan. Cincin Katup menyediakan tiga pengaturan yang merupakan bagian teknik lama: pelepasan penuh, aliran tetap terbatas, dan pelepasan bertahap dengan penyesuaian langsung.
 
-### 3.5 Tanda tekanan Bendungan
+Tujuh Simpul Terang menyedot sisa gelombang Akar Jalur melalui cabang yang disetel sebagian. Mereka hanya saling melayani pada jalur terbatas milik Dewan, bukan membuka semua 100 Simpul. Tanpa penyetelan peredam yang lengkap, sebagian resonansi kembali menekan ruang penahan. Dewan mengambil manfaat nyata dari operasi ini sambil mempercepat kerusakan.
 
-Fenomena lokal tiap bangsa adalah gejala tekanan yang naik, sehingga semuanya punya satu penyebab. Dewan Tol mencatatnya sebagai Gangguan dan menutup datanya.
+Tahun 100 bukan jadwal gaib yang memicu cerita. Usia struktur, operasi parsial puluhan tahun, dan kerusakan jalur akhirnya bertemu. Tanda bahaya membuktikan penahanan mulai gagal. Masih ada waktu perjalanan beberapa hari sampai pekan untuk persiapan, tetapi menunda tanpa tindakan memperburuk keadaan. Tidak ada timer real-time atau angka perkiraan runtuh yang pasti.
 
-| Tempat | Gejala |
+## 3.5 Tanda tekanan dan anomali
+
+| Tempat | Gejala tekanan |
 | --- | --- |
-| **Simpul Sembilan** | Menyala sendiri saat badai |
-| **Oasis Asharim (Telaga Sumi)** | Sumur memantulkan gema lebih keras, dari waktu yang jauh |
-| **Padang Salkara** | Batu penanda mengulang nama pengelana |
-| **Pegunungan Kabut Lirih** | Tinta khusus menampakkan tulisan yang pernah dihapus |
-| **Kepulauan Lada Biru** | Kerang suara tua menyanyi sendiri |
-| **Reruntuhan Hening** | Batu menara berdengung tanpa disentuh |
+| Simpul Sembilan | Tiga denyut lentera saat tidak disetel; retak cincin penanda |
+| Telaga Sumi | Pantulan suara lama pada sumur makin keras |
+| Padang Salkara | Batu penanda mengulang potongan bunyi yang pernah tersimpan |
+| Kabut Lirih | Tinta resonansi memperlihatkan lapisan tulisan terhapus |
+| Lada Biru | Kerang tua menyanyi tanpa disentuh |
+| Reruntuhan Hening | Menara berdengung sendiri |
 
-### 3.6 Harga Gema
+Gejala ini berkaitan dengan tekanan, tetapi tidak semua keanehan dunia harus dijelaskan olehnya. Asal Ruru dan satu lagu tanpa sumber yang diketahui tetap misteri. Catatan Dewan tentang peningkatan Gangguan disembunyikan dari masyarakat.
 
-- **Bising:** penyetel dan penyintas mengalami gema yang tak bisa dimatikan di telinga mereka, termasuk penyetel kontrak Dewan.
-- **Memudar:** jejak lama kehilangan bagian, sehingga tidak ada rekaman yang sempurna.
-- **Biaya operasional:** Simpul Terang butuh penyetel, perawatan medium, dan sumber daya besar.
+## 3.6 Biaya dan batas
 
----
+Bising adalah gangguan gema menetap pada penyetel; tidak memberi pengetahuan sempurna. Jejak memudar, terpotong, dan dapat salah ditafsirkan. Operasi memerlukan perawatan medium, tenaga, dan bahan. Tidak ada fungsi Gema yang mendeteksi dusta atau menentukan kelayakan moral.
+
+Resonansi Arsitek adalah teknik khusus Lulanai, dijelaskan di 5.3.5, bukan hukum kesepuluh atau sistem sihir terpisah. Menyetel batu yang menahan gelombang berisiko memecah struktur dan menyerap tekanan ke tubuh penyetel. Bendungan yang sudah terisi tidak dapat diperbaiki seperti batu bangunan kosong.
+
+## 3.7 Penghentian tujuh Simpul sebelum pelepasan
+
+Ketiga cara pelepasan memerlukan penghentian tujuh cabang aktif agar tidak terjadi lonjakan balik. Penghentian tidak mengosongkan ruang penahan: ia hanya menghentikan tambahan resonansi. Beban lama tetap harus dilepas melalui Katup. Cincin cabang aktif menggunakan penahan mekanis sehingga operator dapat mengurangi aliran bertahap; prosedur ini berbeda dari memutus seluruh jaringan liar saat Malam Hening.
+
+Benteng mengirim perintah fisik bersegel dengan pengantar ke tujuh kepala penyetel. Masing-masing menurunkan aliran, memasang pengunci cincin pada posisi berhenti, lalu mengirim lembar pemeriksaan bernama yang disaksikan penyetel dan pengantar setempat. Tujuh balasan dikumpulkan di pos persiapan Katup. Pengunci bertahan tanpa sambungan aktif sampai dibuka manual; sinyal mati sesaat tidak dianggap bukti kesiapan.
+
+Bab 5 dimulai setelah pengiriman awal sudah berjalan pada akhir Bab 4. Pemain menangani satu balasan terlambat dan memeriksa kesesuaian catatan tujuh titik, bukan menempuh ulang tujuh wilayah. Penyetel menguji tekanan lokal Katup sebelum mulai. Ketidakcocokan harus diperbaiki; kegagalan administrasi tidak memaksa ending yang membunuh dunia. Semua rute ending memiliki prosedur darurat minimum yang sama.
+
+Ketika jaringan dilepas, tujuh cabang tidak dinyalakan ulang memakai setelan lama. Pada akhir Terkendali, Dewan memulai ulang lewat pengaturan terbatas yang sudah diselaraskan; pada dua akhir lain pengaturan ulang menjadi tanggung jawab komunitas dan kurir.
 
 ## 4. Hari Senyap: yang dipercaya dan yang sebenarnya
 
-### 4.1 Versi yang beredar
+## 4.1 Versi yang beredar
 
-| Pihak | Yang mereka percaya atau katakan |
+| Pihak | Yang dipercaya atau dikatakan |
 | --- | --- |
-| **Dewan Tol** | Kerusakan teknologi purba yang rapuh, kini hanya boleh dikelola yang cakap (Ajaran Tata) |
-| **Pedagang di jalan** | Ada yang sengaja memadamkannya |
-| **Cirusia** | Bahtari memadamkan Gema demi menutupi kesalahan mereka |
-| **Bahtari** | Dewan Tol melakukannya untuk menguasai jalur |
-| **Tseren** | Kutukan atas penyalahgunaan kata, atau kegagalan teknis tak disengaja |
-| **Asharim** | Hukuman atas keserakahan pedagang yang terlalu bergantung pada suara |
+| Dewan Tol | Teknologi purba rusak; hanya pihak cakap yang boleh mengelolanya |
+| Pedagang jalan | Ada yang sengaja memadamkan jaringan |
+| Cirusia | Bahtari memadamkan Gema untuk menutupi kesalahan |
+| Bahtari | Dewan mengambil keuntungan dari pemadaman |
+| Tseren | Penyalahgunaan kata mengakibatkan kerusakan atau kutukan |
+| Asharim | Manusia terlalu bergantung pada suara jauh dan melupakan kehadiran |
 
-### 4.2 Kabar Tujuh Musim: apa yang sebenarnya terjadi (spoiler)
+## 4.2 Kabar Tujuh Musim: apa yang sebenarnya terjadi (spoiler)
 
 Tidak ada satu penjahat tunggal. Itulah intinya.
-1. **Kejadian nyata:** Pos Singgah Cirusia di Tepi Salkara terbakar karena kecelakaan (api masak karavan Panji Bara yang tertiup badai), dan pada hari yang sama sebuah kapal Bahtari karam di dekat pantai.
-2. **Distorsi:** Simpul yang resonansinya mulai kabur meneruskan kabar itu menjadi armada Bahtari membakar karavan Cirusia.
-3. **Penegasan manusia:** pedagang dan pemimpin yang tergesa mengulang dan menegaskan kabar itu demi kepentingan masing-masing.
-4. **Perang:** pertempuran berlangsung tujuh musim. Pesan perang dan propaganda membanjiri jaringan.
-5. **Resonansi liar:** banjir pesan memicu pantulan tanpa henti, dan muncul suara yang tak pernah diucapkan siapa pun.
 
-### 4.3 Malam Hening, urutan kejadian (spoiler)
+- 1. Kejadian nyata: Pos Singgah Cirusia di Tepi Salkara terbakar karena kecelakaan (api masak karavan Panji Bara yang tertiup badai), dan pada hari yang sama sebuah kapal Bahtari karam di dekat pantai.
 
-1. Wirna memimpin keputusan di Simpul Pertama. Surat Penyalaan sudah disiapkan pada musim sebelumnya.
-2. Seratus penyetel berada di tiap Simpul. Pusat memutus jaringan dalam satu denyut.
-3. Penyetel menahan gelombang dengan tubuh mereka. Sebagian besar tidak selamat, dan yang selamat mengalami Bising seumur hidup.
-4. Gelombang berlebih mengalir lewat Garis Surut ke Katup di Simpul Keseratus dan terkunci.
-5. Pusat butuh jangkar agar pemutusan stabil. **Sahdan**, yang sedang dalam perjalanan membawa surat, menyadari lentera padam dan kembali ke Simpul Pertama menjadi jangkar itu.
-6. Wirna wafat pada hari ketiga.
+- 2. Distorsi: Simpul yang resonansinya mulai kabur meneruskan kabar itu menjadi armada Bahtari membakar karavan Cirusia.
 
-### 4.4 Surat Penyalaan
+- 3. Penegasan manusia: pedagang dan pemimpin yang tergesa mengulang dan menegaskan kabar itu demi kepentingan masing-masing.
 
-Surat itu adalah kertas Tseren yang diserapi tinta resonansi berlapis dengan seratus tanda penyetel, satu dari tiap Simpul, yang dibubuhkan sebelum Hari Senyap.
-- **Kunci Jejak:** hanya kombinasi seratus tanda itu yang dikenali Bendungan sebagai izin melepas. Tinta resonansi tidak bisa disalin, dan tidak bisa dikirim lewat Gema karena jaringan sedang padam.
-- **Medium dan daftar pelepasan:** menyimpan urutan Simpul yang boleh menyala dan laju pelepasan, sehingga pelepasan bertahap mungkin.
-- **Cap Saksi:** segelnya dirancang hanya terbuka penuh bila punggung surat memuat cap serah-terima dari setidaknya **tiga bangsa**, sebagai bukti pembawanya dipercaya. Inilah wujud fisik Nama Baik, dan cap itu memuat nama pembawanya.
+- 4. Perang: pertempuran berlangsung tujuh musim. Pesan perang dan propaganda membanjiri jaringan.
 
-Surat harus fisik karena Gema tidak bisa mengirimkannya, dan karena para tetua ingin siapa pun yang membuka Katup bertanggung jawab di hadapan saksi.
+- 5. Resonansi liar: banjir pesan memicu pantulan tanpa henti, dan muncul suara yang tak pernah diucapkan siapa pun.
 
-### 4.5 Rantai penjaga Pos Batu Biru
+## 4.3 Malam Hening: urutan kejadian
 
-Sahdan menitipkan surat di Pos Batu Biru sebelum kembali ke Simpul Pertama, karena surat tidak boleh berada di pusat saat pemutusan. Pengetahuan memudar di tiap generasi, persis seperti sejarah memudar di dunia luar.
+1. Wirna memimpin keputusan di Simpul Pertama. Surat dengan 100 tanda sudah disiapkan sebelumnya sebagai rencana pemulihan, bukan dibuat sesudah jaringan padam.
+2. Sahdan membawa surat keluar pusat sebelum pemutusan, menitipkan surat dan tas di Pos Batu Biru, kemudian kembali ketika gelombang awal memperlihatkan pusat memerlukan jangkar. Penitipan terjadi sebelum denyut pemutusan, sehingga tidak bertentangan dengan larangan membawa kunci ke pusat saat pemutusan.
+3. Seratus penyetel, satu di setiap Simpul, melakukan pemutusan dalam satu denyut. Banyak yang gugur; penyintas menderita Bising.
+4. Sahdan secara sadar menjadi jangkar di pusat. Ia wafat sebagai manusia; Jejak pribadinya tertahan dalam fungsi jangkar.
+5. Kelebihan gelombang terkunci di ruang penahan melalui Garis Surut. Wirna wafat pada hari ketiga setelah meninggalkan penjelasan dan Jejak bersyarat. Dahan juga meninggalkan Jejak perdebatan dari masa tersebut.
 
-| Penjaga | Masa | Yang ia ketahui | Yang ia lakukan |
-| --- | --- | --- | --- |
-| **Sarai** | tahun 0 sampai 29 | Segalanya, sebagai penerima langsung | Menyimpan surat, menulis Buku Sarai |
-| **Bahar** | tahun 29 sampai 50 | Isi pesan Sarai, tidak semua teknisnya | Menyembunyikan surat di dinding dapur batu |
-| **Ilun** | tahun 50 sampai 71 | Hanya larangan: jangan serahkan pada Dewan | Menghadapi pemeriksaan Dewan, menghilangkan sebagian Buku Sarai |
-| **Maren** | tahun 71 sampai 100 | Surat dari Simpul Pertama, jangan dibuka, serahkan pada kurir yang dipercaya tiga bangsa | Menjaga surat hampir 30 tahun tanpa berani bertindak |
+## 4.4 Surat Penyalaan, cap, dan pembacaan
 
----
+Surat dibuat dari kertas Tseren berlapis tinta resonansi, dengan satu tanda asli dari setiap penyetel. Salinan gambar tanda tidak membawa jejak fisik yang sama. Gema hanya meneruskan bunyi; ia tidak memindahkan kertas atau lapisan tintanya, bahkan setelah jaringan aktif.
+
+Tiga fungsi surat harus dibedakan: kunci fisik untuk Katup, daftar urutan serta laju pelepasan lama, dan catatan serah-terima. Setelah tiga serah-terima antarbangsa, lapisan segel terbuka dan teks dapat dibaca. Namun, daftar menggunakan kode teknik penamaan lama yang telah berubah; teks terbaca bukan berarti prosedurnya langsung dipahami.
+
+Jejak Wirna menyediakan padanan kode melalui pola contoh yang tersimpan. Nara membawa kode dari surat ke batu dan memeriksa responsnya dengan bantuan penjaga hidup. Jejak ini terbatas pada pengetahuan lama; penjaga dapat mempelajari padanannya sehingga Wirna bukan satu-satunya otoritas abadi. Tujuan ke Lulanai sudah diarahkan oleh judul daftar dan petunjuk cap ketiga sebelum Nara tiba di Bahtari. Modifikasi tujuh Simpul tetap membutuhkan laporan terkini dari Benteng.
+
+Cap mencatat nama pembawa serta penyaksi. Identitas yang tercantum disalin ke permukaan batu penahan ketika Katup menerima kunci, sebagai arsip tanggung jawab. Cap tidak membuktikan bahwa pesan benar atau pembawa bermoral. Dewan dapat mengumpulkan cap sendiri. Kekuasaan magis tidak menolak Dewan; hambatannya adalah belum memiliki kunci, pengetahuan lengkap, dan kesepakatan untuk menjalankan pelepasan aman.
+
+Jalur utama Nara memperoleh cap Asharim dari Maren, Cirusia setelah sidang, dan Tseren setelah perbandingan arsip. Cap merupakan mandat pengantaran atas tindakan tertentu, terpisah dari Nama Baik berkelanjutan. Pembawa dapat berganti lewat serah-terima yang dicatat; surat tidak terikat darah Nara dan dapat diantar orang lain. Menyalin atau mengganti identitas dengan paksa tetap merupakan pemalsuan yang bisa dipersoalkan para saksi.
+
+## 4.5 Rantai penjaga dan alasan baru berangkat sekarang
+
+Instruksi luar surat dapat dibaca tanpa membuka segel: simpan kunci jauh dari pusat selama jalur penahan stabil; periksa cincin uji 009; bila tiga denyut tanpa penyetelan disertai retak cincin, bawa surat melalui saksi lintas bangsa ke Rumah Jejak pusat untuk persiapan pelepasan. Jangan membuka Katup hanya berdasarkan nyala satu lentera. Instruksi mencantumkan gambar tanda uji, bukan ramalan tentang siapa pembawanya.
+
+Menunda pelepasan pada masa awal memberi jaringan dan masyarakat kesempatan pulih dari resonansi liar. Sebelum tanda bahaya lengkap muncul, membuka sistem kembali menambah risiko tanpa kebutuhan darurat. Penjaga wajib meneruskan pemeriksaan dan instruksi, bukan menunggu seorang terpilih. Buku Sarai mencatat perawatan tanda uji; catatan teknis rinci sebagian hilang, tetapi instruksi luar dan gambar tanda tetap utuh.
+
+| Penjaga | Masa | Pengetahuan dan tindakan |
+| --- | --- | --- |
+| Sarai | 0-29 | Menerima langsung surat dan tas; menulis Buku Sarai serta prosedur pemeriksaan |
+| Bahar | 29-50 | Menjaga keduanya di ruang dinding dapur batu; meneruskan pemeriksaan tahunan |
+| Ilun | 50-71 | Menyembunyikan bagian teknis saat pemeriksaan Dewan; mempertahankan instruksi luar dan tanda bahaya |
+| Maren | 71-100 | Menjaga hampir 30 tahun; melanjutkan pemeriksaan; hampir menyerah pada tahun 80 tetapi tidak menyerahkan surat |
+
+Tahun 100: Maren sudah melihat denyut pertama dan retak awal sebelum demo; badai memperlihatkan rangkaian tanda lengkap, disertai peningkatan sumur bergema dan pemeriksaan Dewan. Ini alasan pengantaran tidak boleh ditunda lagi. Nara dipilih karena kejujurannya pada tugas yang gagal sebagian dan karena ia sedang siap berangkat, bukan karena hanya darahnya yang bisa membuka surat. Pada malam badai, Maren memberi cap serta instruksi pemeriksaan terakhir di 009, lalu menghubungi pos saudara untuk dukungan.
+
+## 4.6 Jejak Hesta
+
+Pada tahun 58 Hesta memeriksa aliran balik cabang Dewan di bangunan uji kecil di dekat 009. Pemeriksaan ini tidak menyalakan simpul kedelapan. Ia mengucapkan peringatan pada batu uji tentang nyala berlebih dan penyetelan yang tidak lengkap. Petugas menutup bangunan dan laporan itu tidak diteruskan kepada masyarakat.
+
+Lonjakan tahun 100 membuat sisa suara pada batu setempat terdengar lagi. Nara mendengarnya ketika melewati bangunan uji setelah kejadian 009; sumber dan timbre dibedakan dari Sahdan. Catatan bertanda Hesta di Tseren menanam identitasnya; laporan Benteng mengonfirmasi tahun, lokasi, dan konteks. Jejak tidak menjawab pertanyaan, tidak mengetahui Nara, dan tidak memberi kode Katup. Nasib pribadi Hesta sesudah pemeriksaan tidak diperlukan untuk memecahkan plot.
 
 ## 5. Tanah Sada pada tahun ke-100 Telan
 
 Tanah Sada tidak lagi menunggu Gema kembali. Dunia ini sudah belajar hidup tanpa Gema selama tiga sampai empat generasi, membangun kebiasaan dan kekuasaan baru, lalu mewariskan sejarah yang tidak pernah sepenuhnya benar.
 
-### 5.1 Peradaban kurir
+## 5.1 Peradaban kurir
 
 Bahkan di Zaman Gema kurir tetap mengantar barang. Setelah Hari Senyap, kurir menjadi tulang punggung peradaban. Pos Singgah menjadi tempat bertukar kabar antarkurir, pusat informasi rute dan cuaca, tempat perbaikan dan perbekalan, serta tempat pencatatan keberangkatan dan penyelesaian sengketa pengiriman.
 
-**Etika kurir:**
-1. Kurir tidak membuka surat bersegel tanpa izin.
-2. Kurir menyampaikan kondisi fisik pesan dengan jujur saat serah-terima.
-3. Kurir tidak menjanjikan waktu kedatangan yang tak bisa dipastikan.
-4. Kurir melaporkan kehilangan atau kerusakan pesan.
-5. Kurir tidak mengubah isi pesan.
-6. **Aturan keenam (dilema utama):** kurir boleh memberi tahu penerima bila ada keraguan tentang asal-usul atau keaslian pesan. Apakah kurir hanya pengantar buta, atau ikut bertanggung jawab atas dampak informasi?
+### Etika kurir
 
-**Nama Baik** memengaruhi akses ke Pos Singgah, kepercayaan membawa pesan lintas bangsa, kesediaan karavan mengawal, dan izin melewati wilayah terbatas. Ia bukan ukuran moral mutlak: kurir yang patuh bisa melindungi kebijakan yang tak adil, dan kurir yang melanggar prosedur bisa sedang menyelamatkan nyawa. Wujud fisiknya adalah Cap Saksi di punggung Surat Penyalaan.
+- 1. Kurir tidak membuka surat bersegel tanpa izin.
 
-Kurir juga tidak otomatis suci. Ada yang menjual informasi, menahan surat demi politik, memalsukan tanda serah-terima, atau menjadi mata-mata Dewan Tol. Profesi pendukung yang muncul: **Pembaca Jejak** (mempelajari sisa Gema pada batu tua), **Penyalin Kabar** (membandingkan informasi dari banyak kurir), **Penunjuk Jalan** (menghafal rute lama dan perubahan medan), dan **Pembawa Lagu** (meneruskan pesan keluarga lewat lagu).
+- 2. Kurir menyampaikan kondisi fisik pesan dengan jujur saat serah-terima.
 
-### 5.2 Dewan Tol dan tujuh Simpul Terang
+- 3. Kurir tidak menjanjikan waktu kedatangan yang tak bisa dipastikan.
+
+- 4. Kurir melaporkan kehilangan atau kerusakan pesan.
+
+- 5. Kurir tidak mengubah isi pesan.
+
+- 6. Aturan keenam (dilema utama): kurir boleh memberi tahu penerima bila ada keraguan tentang asal-usul atau keaslian pesan. Apakah kurir hanya pengantar buta, atau ikut bertanggung jawab atas dampak informasi?
+
+Nama Baik memengaruhi akses ke Pos Singgah, kepercayaan membawa pesan lintas bangsa, kesediaan karavan mengawal, dan izin melewati wilayah terbatas. Ia bukan ukuran moral mutlak: kurir yang patuh bisa melindungi kebijakan yang tak adil, dan kurir yang melanggar prosedur bisa sedang menyelamatkan nyawa. Cap Saksi mencatat mandat serah-terima tertentu; Nama Baik tetap merupakan hubungan sosial yang terpisah.
+
+
+Kurir juga tidak otomatis suci. Ada yang menjual informasi, menahan surat demi politik, memalsukan tanda serah-terima, atau menjadi mata-mata Dewan Tol. Profesi pendukung yang muncul: Pembaca Jejak (mempelajari sisa Gema pada batu tua), Penyalin Kabar (membandingkan informasi dari banyak kurir), Penunjuk Jalan (menghafal rute lama dan perubahan medan), dan Pembawa Lagu (meneruskan pesan keluarga lewat lagu).
+
+## 5.2 Dewan Tol dan tujuh Simpul Terang
 
 Dewan Tol tumbuh dari kebutuhan masyarakat akan keteraturan, bukan menjadi jahat tiba-tiba: pengelola biaya perawatan Simpul (sebelum tahun 0), penjaga jalur agar tidak runtuh (tahun 1 sampai 35), penentu akses jalur strategis (36 sampai 55), penguasa teknik Simpul Terang (56 sampai 75), dan institusi paling berpengaruh dalam distribusi informasi resmi (76 sampai 100).
-- **Asal teknik:** pada tahun ke-52, Hesta, penyetel Lulanai dari Kaum Terbuka, membelot dan menjual catatan yang tidak utuh pada Dewan sebagai imbalan perlindungan bagi permukiman penyintas. Catatan itu tidak memuat penyetelan akhir yang meredam resonansi.
-- **Mengapa menyala terlalu terang:** tanpa penyetelan akhir, Simpul Terang membakar terlalu terang dan butuh penyetel kontrak yang menderita Bising.
-- **Mengapa hanya tujuh:** Dewan hanya punya sebagian teknik, tiap Simpul Terang butuh sumber daya besar, terlalu banyak Simpul berisiko memicu resonansi liar, dan tujuh sudah cukup untuk memonopoli jalur strategis.
-- **Cara menyaring:** Gema tidak memeriksa kebenaran, jadi Dewan menyaring lewat manusia: mengatur siapa yang boleh membeli akses, menentukan prioritas pesan, menahan atau menghapus distribusi lewat juru tulis, dan membatasi akses ke arsip teknis.
-- **Ajaran Tata (versi resmi):** kabar bebas melukai, jalur yang tertata menyembuhkan, dan Simpul adalah warisan yang hanya boleh dijaga yang cakap. Motonya *Tata menyelamatkan*. Ajaran ini tidak menyebut pengorbanan Lulanai, hanya bahwa Lulanai gagal menjaga.
-- **Taluk:** tumbuh dalam tatanan Dewan dan mempelajari betapa hancurnya dunia saat Kabar Tujuh Musim. Kebenaran argumennya: sistem Dewan membuat jalur lebih teratur dan mencegah kepanikan akibat kabar palsu. Kesalahannya: sistem itu memusatkan kekuasaan, menciptakan monopoli biaya, menahan kebenaran sejarah, dan tanpa sadar mempercepat tekanan bendungan.
 
-### 5.3 Lima bangsa di Tanah Sada
+- Pusat Dewan Tol (Benteng Tata): Markas besar Dewan Tol berdiri di semenanjung barat daya di antara wilayah Lembah Pasir (Asharim) dan Kepulauan Lada Biru (Bahtari). Posisinya yang agak menjorok ke barat daya mengunci muara sungai kembar Asharim sekaligus pintu masuk barat selat Bahtari, dengan menara Simpul Terang utama yang mengawasi jalur darat dan laut.
 
-Lima bangsa di Tanah Sada bukan sekadar kelompok profesi di jalur logistik, melainkan peradaban utuh yang ditempa oleh ancaman geografi, kelangkaan sumber daya, kontrak sosial untuk bertahan hidup sebelum Simpul Pertama menyala (Pra-Simpul), serta dinamika perebutan kuasa di dalamnya.
+- Asal teknik: pada tahun ke-52, Hesta, penyetel Lulanai dari Kaum Terbuka, membelot dan menjual catatan yang tidak utuh pada Dewan sebagai imbalan perlindungan bagi permukiman penyintas. Catatan itu tidak memuat penyetelan akhir yang meredam resonansi.
 
-**Prinsip bersama [KANON]:**
+- Mengapa menyala terlalu terang: tanpa penyetelan akhir, Simpul Terang membakar terlalu terang dan butuh penyetel kontrak yang menderita Bising.
+
+- Mengapa hanya tujuh: Dewan hanya punya sebagian teknik, tiap Simpul Terang butuh sumber daya besar, terlalu banyak Simpul berisiko memicu resonansi liar, dan tujuh sudah cukup untuk memonopoli jalur strategis.
+
+- Cara menyaring: Gema tidak memeriksa kebenaran, jadi Dewan menyaring lewat manusia: mengatur siapa yang boleh membeli akses, menentukan prioritas pesan, menahan atau menghapus distribusi lewat juru tulis, dan membatasi akses ke arsip teknis.
+
+- Ajaran Tata (versi resmi): kabar bebas melukai, jalur yang tertata menyembuhkan, dan Simpul adalah warisan yang hanya boleh dijaga yang cakap. Motonya Tata menyelamatkan. Ajaran ini tidak menyebut pengorbanan Lulanai, hanya bahwa Lulanai gagal menjaga.
+
+- Taluk: tumbuh dalam tatanan Dewan dan mempelajari betapa hancurnya dunia saat Kabar Tujuh Musim. Kebenaran argumennya: sistem Dewan membuat jalur lebih teratur dan mencegah kepanikan akibat kabar palsu. Kesalahannya: sistem itu memusatkan kekuasaan, menciptakan monopoli biaya, menahan kebenaran sejarah, dan tanpa sadar mempercepat tekanan bendungan.
+
+## 5.3 Peta Dunia & Lima Bangsa di Tanah Sada
+
+Lima bangsa adalah peradaban utuh yang dibentuk geografi, sumber daya, serta kontrak sosial sebelum Simpul Pertama menyala. Mereka memiliki sejarah sendiri dan bekerja sama membangun infrastruktur; Lulanai tidak menciptakan budaya atau pemerintahan bangsa lain. Kajian inspirasi pengembang dipisahkan pada Lampiran A.
+
+### Prinsip bersama [KANON]
+
 - Tiap bangsa adalah masyarakat utuh yang tetap hidup tanpa Nara: punya pangan, air, komoditas, struktur politik, dan perbedaan pendapat internal.
+
 - Tiap bangsa punya versi sejarah yang masuk akal untuk dipercaya, dan juga titik buta yang tidak mereka sadari.
-- Fenomena magis lokal bukan sistem sihir baru. Semuanya adalah gejala tekanan Bendungan (Hukum Gema nomor 8: Gema meninggalkan sisa).
+
+
+- Fenomena lokal yang menjadi petunjuk utama memakai Gema dan sisa medium; banyak yang dipicu tekanan. Sebagian keanehan tetap tidak dijelaskan tuntas.
+
 - Bangsa-bangsa ini terinspirasi dari prinsip peran di jalur dagang kuno, bukan salinan budaya nyata. Hindari meniru adat, busana, atau simbol satu budaya sungguhan secara langsung.
-- Tiap bangsa menilai kurir lewat satu ukuran kepercayaan yang berbeda. Itulah dasar Cap Saksi.
 
-#### Peta Perbandingan Fondasi & Geopolitik Lima Bangsa
+- Tiap bangsa menilai kurir lewat satu ukuran kepercayaan yang berbeda. Itulah dasar Cap Saksi (bagian 5.4).
 
-| Bangsa | Geografi & Kelangkaan Dasar | Kontrak Sosial Pembentuk Bangsa (Pra-Simpul) | Sistem Pemerintahan | Kartu Truf Ekonomi & Politik |
-| --- | --- | --- | --- | --- |
-| **Asharim** *(Lembah Pasir)* | Cekungan gurun kering dengan kantong air bawah tanah yang terpisah jauh | **Pakta Sumur Terbuka (Hukum Air):** monopoli air berarti perang pemusnahan, sehingga mata air wajib menjadi wilayah suaka netral | Konfederasi oligarki otonom di bawah Dewan Sumur dan para Kepala Pos | Mengendalikan titik transit dan pasokan air minum bagi seluruh jalur darat |
-| **Tseren** *(Pegunungan Kabut Lirih)* | Tebing kapur vertikal berkabut tebal; miskin lahan tani tetapi kaya serat pohon tebing dan mineral tinta | **Kanon Aksara:** di wilayah berkabut yang memutus pandang, kesepakatan lisan tak berlaku dan hukum hanya sah bila tertulis | Birokrasi meritokratis dan teokrasi arsip di bawah Rumah Naskah | Memegang rekam jejak kontrak dagang, silsilah, serta keabsahan hukum lintas bangsa |
-| **Cirusia** *(Padang Salkara)* | Sabana berangin keras tanpa batas alam tetap; rawan badai debu dan perebutan padang penggembalaan | **Sumpah Api Tujuh Panji:** penyatuan tujuh klan pengembara lewat hukum janji lisan di depan saksi mata | Federasi militer-kesukuan (Tujuh Panji) yang dipimpin sidang para tetua panji | Menguasai ternak beban, kuda padang, wol tebal, dan keamanan rute terbuka |
-| **Bahtari** *(Kepulauan Lada Biru)* | Gugusan pulau karang berarus ganas; daratan sempit tetapi satu-satunya habitat tanaman lada biru | **Hukum Sauh & Lagu:** ikatan komunal antarpulau untuk menanggung risiko kapal karam dan keluarga yang ditinggal berlayar | Oligarki saudagar dan serikat maritim (Rumah Dagang vs Rumah Layar) | Memonopoli lada biru (pengawet pangan utama Tanah Sada) dan jalur pelayaran selat |
-| **Lulanai** *(Reruntuhan Hening)* | Dataran tinggi batu basalt berongga yang memantulkan getaran akustik alami | **Ikatan Penyetel:** persaudaraan tertutup penjaga batu resonansi yang menolak kepemilikan wilayah luas | Komunitas diaspora terpecah dalam tiga faksi ideologis (Pantang, Terbuka, Sesal) | Satu-satunya pemilik pengetahuan asli pembuatan, penyetelan, dan pemutusan Simpul |
+*Peta kuno Tanah Sada (tampak atas): menampilkan lima wilayah bangsa, semenanjung barat daya Pusat Dewan Tol (Benteng Tata), serta daratan Benua Timur (Belum Ditelusuri) di seberang samudra timur untuk pengembangan dunia ke depan.*
 
-#### Versi Sejarah Hari Senyap yang Dipercaya Tiap Bangsa
+## Geografi, jaringan air, dan status atlas
 
-| Bangsa | Versi sejarah yang mereka percaya | Mengapa dipercaya |
+Peta menunjukkan Asharim di barat, Cirusia di utara, Tseren di timur, Lulanai di pusat, dan Bahtari di selatan. Benteng Tata mengawasi muara barat serta pintu selat. Koridor sungai barat dan timur serta kanal Telaga Sumi memungkinkan perdagangan sungai-laut. Bahtari menjadi pengangkut, penunjuk arus, dan pedagang; mereka tidak otomatis memiliki wilayah tepian bangsa lain. Bagian hulu yang tidak dapat dilayari menggunakan titik alih muatan.
+
+![Peta Tanah Sada: 100 Simpul dan jalur air](assets/peta-100-simpul.png)
+
+Atlas memuat tepat 100 Simpul serta 12 pelabuhan/titik alih muatan yang bukan Simpul tambahan. Jumlah jaringan dan titik penting cerita dikunci; nama, nomor, letak titik tambahan, pembagian per bangsa, dan penempatan tujuh Simpul Terang pada ilustrasi masih rancangan. Simpul Pertama adalah pusat jangkar, Sembilan titik Garis Surut, dan Keseratus Katup. Ruang penahan berada di bawah pulau sehingga tidak terlihat pada peta permukaan. Benua Timur belum ditelusuri.
+
+| Bangsa | Fondasi | Kekuasaan dan ketergantungan |
 | --- | --- | --- |
-| **Asharim** | Dunia ditelan kesunyian karena manusia terlalu bergantung pada suara jauh | Sebagai penjaga persinggahan, mereka melihat langsung dampak terputusnya kabar |
-| **Tseren** | Gema runtuh akibat penyalahgunaan dan kegagalan teknis tak disengaja | Mereka bergantung pada bukti tertulis, padahal arsip 100 tahun sudah diubah |
-| **Cirusia** | Bahtari mengkhianati dan memperparah kehancuran Gema | Karavan leluhur mereka korban langsung Kabar Tujuh Musim |
-| **Bahtari** | Dewan Tol memonopoli jalur demi keuntungan | Banyak keluarga terpisah, ditambah beban tol yang nyata |
-| **Lulanai** | Hari Senyap adalah pengorbanan sengaja untuk menyelamatkan dunia | Mereka mewarisi catatan teknis dan jejak resonansi |
+| Asharim | Pakta Sumur Terbuka | Kepala Pos dan Dewan Sumur; mengatur air dan transit, bergantung pangan serta perdagangan |
+| Tseren | Kanon Aksara | Rumah Naskah dan Penjaga Arsip; bahan tulis serta hukum, bergantung pasokan dari luar |
+| Cirusia | Sumpah Api Tujuh Panji | Sidang panji; ternak, pengawalan, jalur padang; bergantung bahan pengawet dan perdagangan |
+| Bahtari | Hukum Sauh dan Lagu | Rumah Dagang serta Rumah Layar; lada biru dan pelayaran; bergantung jejaring muara dan pangan |
+| Lulanai | Ikatan Penyetel | Diaspora tiga kaum; teknik batu, bergantung pertukaran dengan komunitas lain |
 
----
+## 5.3.1 Asharim, konfederasi suaka air dan penjaga persinggahan
 
-### 5.3.1 Asharim, konfederasi suaka air dan penjaga persinggahan
+![Konsep wilayah dan kehidupan Asharim](assets/asharim.png)
 
-- **Wilayah:** Lembah Pasir (Pos Batu Biru, Telaga Sumi, Menara Batu Senja, Dusun Sela). **Peran:** penguasa mata air gurun, pembangun Pos Singgah, pedagang, penjaga jalur darat.
-- **Asal-usul pembentukan bangsa (Pra-Simpul):** Ribuan tahun sebelum Zaman Pembukaan Jalur, Lembah Pasir mengalami pengeringan panjang yang memaksa suku-suku pengembara berperang memperebutkan kantong air bawah tanah tersisa. Perang pemusnahan itu berakhir ketika klan-klan besar mengikrarkan **Pakta Sumur Terbuka (Hukum Air)**: tidak satu pun klan boleh memagari mata air sebagai milik pribadi, dan setiap mata air wajib dibangun menjadi tempat berlindung netral bagi siapa saja. Dari benteng-benteng mata air inilah tumbuh jaringan Pos Singgah di Zaman Pembukaan Jalur. Saat Hari Senyap terjadi, pos mendadak dipenuhi pengelana terdampar, dan komunitas Asharim paling cepat pulih karena bertumpu pada kehadiran fisik.
-- **Nilai:** Keramahan, air, dan kehadiran. Menolak pengembara adalah aib terbesar. Sapaan: *Teduh di jalanmu* dijawab *Air di langkahmu*. Peribahasa: *Air tidak bertanya nama.*
-- **Titik buta:** Cenderung meremehkan manfaat nyata Gema dan menghakimi bangsa yang menggantungkan hidup pada kabar jauh (terutama Bahtari).
-- **Politik dan faksi:**
-  - *Kubu Pos Tua (Konservatif Adat):* Menuntut Pos Singgah tetap suaka netral, menolak kehadiran petugas Dewan Tol di sekitar sumur, dan melindungi kurir independen meski jatuh miskin.
-  - *Kubu Pos Dagang (Pragmatis):* Bersekongkol dengan Dewan Tol, menyerahkan catatan Batu Nama, dan mengizinkan pemeriksaan di gerbang demi subsidi pangan serta keringanan bea jalur.
-- **Adat:** Tiga Cawan (air, garam, kabar), Air malam di ambang pintu, Batu Nama untuk mencatat tamu.
-- **Arsitektur & visual:** Kubah, gerbang lengkung, ubin geometris. Aksen biru batu (`#3D6E8F`) dan terakota (`#C86A3C`).
-- **Tanda tekanan:** Sumur di Telaga Sumi memantulkan gema suara dari waktu dan tempat yang jauh, lebih keras dari tahun ke tahun.
-- **Ukuran kepercayaan:** Menjaga adat tamu: tidak mengambil tanpa membalas, tidak menolak yang meminta tumpangan, dan mengantar di bawah cuaca buruk.
 
----
 
-### 5.3.2 Tseren, birokrasi arsip dan penjaga catatan
+Wilayah: Lembah Pasir dan Sabuk Sungai Kembar, mencakup Telaga Sumi, Pos Batu Biru, Menara Batu Senja, dan Dusun Sela.
 
-- **Wilayah:** Pegunungan Kabut Lirih (Desa Kertas Awan, jembatan tali, Gudang Naskah). **Peran:** notaris lintas bangsa, penenun, pembuat kertas dan tinta mineral, penjaga arsip hukum.
-- **Asal-usul pembentukan bangsa (Pra-Simpul):** Hidup di lereng kapur curam yang dipisahkan jurang terjal dan kabut abadi. Sengketa lisan memicu lahirnya **Kanon Aksara** dan institusi **Rumah Naskah**: perjanjian di atas kertas serat tahan lembap sah secara hukum mengikat. Tseren menjadi pemegang rekam jejak kontrak dagang dan perbatasan seluruh dunia.
-- **Nilai:** Kata harus dijaga. Mengubah satu kata adalah pelanggaran berat. Sapaan: *Tinta tenang* dijawab *Kata terjaga*.
-- **Titik buta:** Bergantung mutlak pada naskah tertulis, tidak menyadari bahwa salinan arsip selama seratus tahun telah disunting.
-- **Politik dan faksi:**
-  - *Aliran Murni:* Menolak mengubah satu huruf pun pada naskah yang telah dimeteraikan.
-  - *Aliran Rapi:* Menyetujui penyuntingan arsip Kabar Tujuh Musim demi ketertiban atas tekanan Dewan Tol, namun menyembunyikan naskah asli di ruang tertutup karena terikat sumpah leluhur.
-- **Adat:** Dua Pembacaan (penerima membaca, kurir menyatakan kondisi fisik), Tinta Kelahiran (nama bayi disimpan di arsip desa).
-- **Penanggalan:** Menggunakan Tahun Simpul (TS). Sebutan *Pra-Telan* pada dokumen lama membuktikan pemalsuan/penyalinan ulang.
-- **Arsitektur & visual:** Atap bertingkat tipis, garis vertikal, lembaran kertas bergantung, jembatan tali. Aksen kertas (`#EDE6D3`) dan hijau kabut (`#8FA68A`).
-- **Tanda tekanan:** Tinta khusus menampakkan tulisan yang pernah dihapus atau jejak resonansi tipis pada kertas.
-- **Ukuran kepercayaan:** Menyerahkan surat tanpa mengubah satu kata pun, dan berani bersuara ketika sebuah dokumen terasa palsu.
+Asal-usul dan kejayaan. Pengeringan panjang mendorong leluhur Asharim membuat Pakta Sumur Terbuka: mata air adalah suaka netral, bukan milik satu klan. Bersama Lulanai mereka membangun Urat Sumi, jaringan terowongan air bawah tanah, serta Sabuk Naya-Dara yang terdiri atas Sungai Naya dan Sungai Dara. Telaga Sumi berundak mengitari Sumur Induk; kanal mengikuti undakan, dengan pusat kegiatan Balai Cawan.
 
----
+Adat Tiga Cawan menjadikan pos perpustakaan lisan: tamu berbagi air, garam, dan kabar atau pengetahuan. Zaman Gema memperluas peran diplomasi dan perdagangan mereka. Setelah Telan, bea dan monopoli jalur melemahkan pos perbatasan. Pos Batu Biru dahulu ramai rombongan, kini tercekik biaya dan penurunan arus dagang.
 
-### 5.3.3 Cirusia, konfederasi Tujuh Panji dan penjaga janji
+Nilai. Keramahan, air, dan kehadiran. Menolak pengembara adalah aib terbesar. Sapaan: Teduh di jalanmu dijawab Air di langkahmu.
 
-- **Wilayah:** Padang Salkara (Perkemahan Tujuh Panji, Tepi Salkara). **Peran:** peternak kuda dan hewan beban, pengawal karavan, penguasa rute sabana terbuka.
-- **Asal-usul pembentukan bangsa (Pra-Simpul):** Di padang sabana datar tanpa benteng pelindung, tujuh klan penggembala mengakhiri perang memperebutkan rumput dengan mengikrarkan **Sumpah Api Tujuh Panji**. Bangsa terbentuk dari kesaksian lisan di depan api unggun dan langit terbuka.
-- **Nilai:** Janji lisan di hadapan saksi mata. Kata yang diucapkan lebih berat daripada yang ditulis. Sapaan: *Angin searah* dijawab *Janji sampai*.
-- **Titik buta:** Menyalahkan Bahtari secara membabi-buta demi menutupi rasa bersalah leluhur atas kecelakaan api karavan di Tepi Salkara.
-- **Kompendium Tujuh Panji (Kebuntuan Politik 3-3-1):**
+Versi sejarah dan titik butanya. Dunia ditelan kesunyian karena manusia terlalu bergantung pada suara jauh dan melupakan kehadiran. Mereka melihat langsung penderitaan akibat terputusnya kabar, dan itu menguatkan keyakinan mereka. Titik buta: mereka cenderung meremehkan manfaat nyata Gema dan menghakimi bangsa yang menggantungkan hidup pada kabar jauh, terutama Bahtari.
 
-| Panji & Nama Klan | Simbol Panji | Fungsi Utama di Konfederasi | Kelebihan & Keahlian Khas | Posisi Politik (Tahun 100) |
-| --- | --- | --- | --- | --- |
-| **1. Panji Bara** *(Klan Kaldera)* | Spiral api merah tanah di atas kain hitam | Pemimpin sidang api unggun dan pengatur jadwal keberangkatan karavan besar | Penjaga api abadi yang tak padam diterpa angin padang; perunding adat tertinggi | **Pemimpin Panji Tua** (menyimpan rahasia bahwa api masak leluhur merekalah yang membakar Pos Tepi Salkara) |
-| **2. Panji Tanduk Besi** *(Klan Salka)* | Sepasang tanduk melengkung warna perunggu | Pengawal bersenjata lapis depan dan penangkal perampok maupun pemangsa padang | Penunggang kuda tempur berat dan pembuat perisai kulit berlapis kempa tahan panah | **Panji Tua** (kehilangan paling banyak pengawal saat perang Kabar Tujuh Musim) |
-| **3. Panji Angin Debu** *(Klan Pelacak Utara)* | Tiga garis gelombang pasir warna kuning rumput | Pengintai badai, pembaca cuaca, dan pembuka jalur baru sebelum karavan bergerak | Mampu membaca arah badai pasir berhari-hari sebelumnya dari getaran rumput dan bau angin | **Panji Tua** (curiga pada pihak luar dan menolak membuka rute ke pesisir Bahtari) |
-| **4. Panji Tali Panjang** *(Klan Pengikat — Klan Orsa)* | Simpul tambang melingkar warna terakota | Pengawal kargo lintas batas, penjinak kuda liar, dan penghubung dengan kurir luar | Ahli tali-temali, jembatan darurat, dan formasi kereta beban di medan terjal | **Pemimpin Panji Muda** (klan asal Orsa; paling sering berinteraksi dengan kurir dan melihat dampak buruk monopoli Dewan) |
-| **5. Panji Roda Kempa** *(Klan Perajin Kemah)* | Lingkaran roda dengan sulaman benang putih | Pembuat tenda bundar, pengolah wol, kulit, daging kering, dan logistik perkemahan | Mampu membongkar-pasang seluruh perkemahan dalam hitungan jam dan mengawetkan bekal | **Panji Muda** (sangat membutuhkan pasokan lada biru dan garam laut Bahtari untuk mengawetkan daging) |
-| **6. Panji Bintang Rendah** *(Klan Penuntun Malam)* | Titik bintang putih di atas kain biru gelap | Pemandu karavan malam hari dan penjaga rute perbatasan menuju Kabut Lirih & Lembah Pasir | Navigasi langit malam tanpa kompas dan kemampuan bergerak senyap di padang terbuka | **Panji Muda** (ingin membuka kembali perdagangan bebas karena jalur malam mereka terus dipajaki Dewan) |
-| **7. Panji Batu Nama** *(Klan Saksi)* | Pahatan monolit tegak warna abu-abu batu | Penjaga monumen Batu Nama, penghafal silsilah yang gugur, dan pengesah Janji di Api | Memiliki ingatan lisan turun-temurun yang menghafal ribuan nama pengelana dan isi sumpah | **Panji Penengah (Suara Penentu)** (tidak memihak sebelum ada kesaksian yang sah di depan api) |
+Sistem politik dan konflik faksi internal. Asharim tidak memiliki raja tunggal; tiap pos besar adalah kota- negara kecil otonom yang dipimpin seorang Kepala Pos bersama Dewan Sumur (para tetua pemegang hak distribusi air). Ketika Dewan Tol memonopoli jalur dan membebankan biaya tinggi pada pedagang, ekonomi pos merosot dan membelah politik Asharim menjadi dua kubu:
 
-- **Adat:** Janji di Api, Nama di Batu, Memanggil Angin.
-- **Arsitektur & visual:** Tenda bulat kempa, panji tinggi, dinding penahan angin. Aksen merah tanah (`#A8452F`) dan rumput kering (`#D9B45A`).
-- **Tanda tekanan:** Batu penanda di padang mengulang nama atau potongan suara pengelana masa lalu.
-- **Ukuran kepercayaan:** Menepati janji lisan tanpa catatan dan berani bersaksi di hadapan Tujuh Panji.
+- Kubu Pos Tua (Konservatif Adat): Menuntut agar Pos Singgah tetap menjadi suaka netral, menolak kehadiran petugas Dewan Tol di sekitar sumur, dan melindungi kurir independen meski pos mereka jatuh miskin.
 
----
+- Kubu Pos Dagang (Pragmatis): Bersekongkol dengan Dewan Tol, menyerahkan catatan Buku Tamu Batu, dan mengizinkan pemeriksaan di gerbang pos demi mendapat subsidi pangan serta keringanan bea jalur.
 
-### 5.3.4 Bahtari, talasokrasi selat dan penjaga lagu
+Ekonomi dan komoditas. Garam, rempah gurun, kain tenun, air yang disimpan, perbekalan kurir (kendi, tali, kain pelindung pasir), dan roti rempah.
 
-- **Wilayah:** Kepulauan Lada Biru (Bandar Lada, Simpul Keseratus di tepi laut). **Peran:** pelaut, pemanen lada biru, pedagang maritim.
-- **Asal-usul pembentukan bangsa (Pra-Simpul):** Komunitas nelayan pulau karang yang menyatu lewat **Hukum Sauh & Lagu** karena kebutuhan monopoli budidaya lada biru (pengawet makanan pokok daratan) dan saling menanggung risiko pelaut karam.
-- **Nilai:** Pulang, lagu, dan janji untuk kembali. Sapaan: *Pasang baik!* dijawab *Layar penuh!*
-- **Titik buta:** Lupa bahwa rumah dagang mereka sendiri dulu meraup untung besar dari spekulasi kabar di Zaman Kabar Dusta.
-- **Politik dan faksi:**
-  - *Rumah Dagang (Oligarki Saudagar Bandar):* Pemilik gudang, dermaga, dan armada dagang; bersekutu dengan Dewan Tol dan menjerat pelaut lewat Utang Kabar.
-  - *Rumah Layar (Serikat Nakhoda & Keluarga Pelaut):* Serikat nakhoda, penyelam, dan Pembawa Lagu (jaringan Dorin dan Tarun) yang menentang monopoli tol dan kemunafikan saudagar.
-- **Adat:** Lagu Titip (lagu keluarga yang tak boleh diubah), Kerang Suara, Pembawa Lagu.
-- **Arsitektur & visual:** Rumah panggung, atap layar, tiang miring. Aksen teal (`#2E8B8B`) dan jingga rempah (`#E07B39`).
-- **Tanda tekanan:** Kerang suara tua menyanyi sendiri dengan alunan lagu kapal masa silam.
-- **Ukuran kepercayaan:** Membawa pulang pesan apa adanya, termasuk lagu yang tidak sempurna.
+### Adat Pos Singgah
 
----
+- Tiga Cawan: air, garam, dan kabar. Tamu menceritakan satu kabar sebelum tidur, sehingga tiap pos adalah arsip lisan kecil.
 
-### 5.3.5 Lulanai, diaspora penyetel yang tersisa
+- Air malam: air disediakan di ambang pintu untuk kurir yang tiba larut.
 
-- **Wilayah:** Reruntuhan Hening (menara relay lama, Simpul Pertama). **Peran:** perancang awal jaringan Simpul, penyetel batu resonansi, penjaga jalur lama.
-- **Asal-usul pembentukan bangsa (Pra-Simpul):** Masyarakat dataran tinggi basalt berongga yang mengembangkan seni akustik dan meditasi keheningan. Menyalakan Simpul Pertama pada 400 Pra-Telan dan bertransformasi menjadi **Ikatan Penyetel**. Pada Malam Hening, sebagian besar gugur menelan Gema; sisanya terpencar menyamar di bangsa lain (termasuk garis keluarga Nenek Ima di Dusun Sela).
-- **Nilai:** Keheningan dan tanggung jawab. Sapaan: *Hening menyertai* (tidak dibalas, hanya mengangguk).
-- **Titik buta:** Merancang jaringan tanpa pengaman sosial dan enggan mengakui elitisme keputusan sepihak leluhur.
-- **Politik dan tiga kaum:**
-  - *Kaum Pantang:* Menolak Gema dinyalakan kembali selamanya; menjaga reruntuhan.
-  - *Kaum Terbuka:* Menuntut kebenaran dibuka; dunia berhak atas Gema (Hesta berasal dari kubu ini).
-  - *Kaum Sesal:* Menyesali pemutusan sepihak dan menuntut masa depan Gema diputuskan oleh kesaksian bangsa-bangsa luar.
-- **Adat:** Tiga Napas Hening sebelum berbicara, Penutup Telinga Perunggu untuk penderita Bising, Jejak bersyarat pada batu.
-- **Arsitektur & visual:** Menara retak, monolit berlumut, simbol Gema pudar. Aksen lumut (`#6F7A68`) dan perunggu pudar (`#A6805A`).
-- **Tanda tekanan:** Batu menara berdengung sendiri tanpa disentuh.
-- **Ukuran kepercayaan:** Mau mendengar sebelum menilai, dan telah dipercaya bangsa-bangsa lain. Lulanai tidak memiliki Cap Saksi sendiri; Jejak Wirna terbangun jika merespons Cap Saksi dari bangsa lain.
+- Buku Tamu Batu: tamu menulis nama di batu pos. Daftarnya menjadi catatan perjalanan para kurir.
 
----
+Arsitektur dan rasa visual. Kubah, lengkung gerbang, ubin geometris, kain yang bergantung. Aksen biru batu (#3D6E8F) dan terakota (#C86A3C). Halaman berlubang cahaya dan menara kecil bertanda lentera sebagai penunjuk arah.
 
-### 5.4 Ukuran kepercayaan tiap bangsa dan Cap Saksi
+Kehidupan sehari-hari. Bubur gandum berempah, teh daun gurun, busana berlapis dan selendang pelindung pasir. Peribahasa: Air tidak bertanya nama.
 
-Surat Penyalaan hanya terbuka penuh bila punggungnya memuat cap dari **setidaknya tiga bangsa**. Tiap bangsa menilai kurir dengan ukuran yang berbeda:
+Tanda tekanan. Sumur di Telaga Sumi memantulkan gema suara dari waktu dan tempat yang jauh, lebih keras dari tahun ke tahun.
 
-| Bangsa | Yang mereka nilai | Contoh tindakan yang membangun kepercayaan |
+Rahasia, kontradiksi, dan dampak ke storyline Nara. Sebagian Pos Dagang diam-diam melaporkan kurir yang singgah pada Dewan demi keringanan tol, padahal itu melanggar Hukum Air. Rantai penjaga Surat Penyalaan di Pos Batu Biru adalah rahasia yang dijaga empat generasi; ketakutan Maren pada tahun 80 dan keberaniannya di Bab 0 mencerminkan terjepitnya Asharim antara kesucian Hukum Air dan tekanan ekonomi Dewan.
+
+Ukuran kepercayaan. Apakah kurir menjaga adat tamu: tidak mengambil tanpa membalas, tidak menolak yang meminta tumpangan, dan mengantar di bawah cuaca buruk.
+
+Contoh pengantaran. Lagu untuk Telaga Sumi (demo). Air untuk pos yang kehabisan di tengah badai. Daftar tamu Buku Tamu Batu yang harus dibawa ke pos saudara agar tetap lengkap.
+
+## 5.3.2 Tseren, birokrasi arsip dan penjaga catatan
+
+![Konsep wilayah dan kehidupan Tseren](assets/tseren.png)
+
+
+
+Wilayah: Pegunungan Kabut Lirih, termasuk Desa Kertas Awan, Paviliun Tebing, jembatan tali, dan Gudang Naskah. Tseren adalah pengesah lintas bangsa dan pembuat bahan tulis.
+
+Asal-usul dan kejayaan. Jurang dan kabut memisahkan permukiman. Sengketa antarlembah melahirkan Kanon Aksara serta Rumah Naskah. Kaum Juru Naskah mengembangkan kertas serat tahan lembap, benang insulasi untuk tas, dan tinta berlapis. Tidak semua kertas umum tahan air; surat biasa tetap dapat rusak.
+
+Para Penguasa Arsip menyimpan salinan kontrak dagang dan perbatasan. Menjaga naskah sumber adalah dasar wewenang Pengesah Agung. Aliran Rapi mengganti salinan resmi demi ketertiban, tetapi mengunci naskah asli karena pemusnahan kata tetap tabu. Ketidaksetujuan internal memungkinkan pemain mengakses pembanding melalui Aliran Murni.
+
+Nilai. Kata harus dijaga. Mengubah satu kata adalah pelanggaran berat. Sapaan: Tinta tenang dijawab Kata terjaga.
+
+Versi sejarah dan titik butanya. Gema runtuh akibat penyalahgunaan pengetahuan dan kegagalan teknis tak disengaja. Mereka bergantung pada bukti tertulis. Titik buta: salinan selama seratus tahun sudah tidak murni, dan mereka percaya pada arsip yang sebagian sudah dipalsukan. Asal-usul dokumen dan rantai kepemilikan menjadi sumber kekuasaan, dan satu kata berbeda bisa memicu sengketa.
+
+Sistem politik dan konflik faksi internal. Tseren diperintah oleh birokrasi meritokratis di bawah majelis kepala Rumah Naskah dan para Penjaga Arsip. Status warga dan jabatan publik ditentukan oleh ketelitian menyalin serta tingkat akses ke Gudang Naskah. Tekanan Dewan Tol di Masa Penguasaan Jalur melahirkan skisma politik yang tajam:
+
+- Aliran Murni: Menolak mengubah satu huruf pun pada naskah yang telah dimeteraikan, karena bagi mereka pemalsuan sejarah akan menghancurkan legitimasi Tseren sebagai penjaga bukti di Tanah Sada.
+
+- Aliran Rapi: Berargumen bahwa arsip harus melayani ketertiban dan stabilitas politik. Mereka bekerja sama dengan Dewan Tol untuk menyunting arsip Kabar Tujuh Musim, namun karena terikat sumpah leluhur yang mengharamkan pemusnahan kata, mereka menyembunyikan naskah asli di ruang tertutup.
+
+Ekonomi dan komoditas. Kertas serat tahan air, tinta mineral, kain tenun, serat, dan benang berinsulasi resonansi (benang inilah yang pernah ditenun untuk tas Sahdan dan kertas Surat Penyalaan).
+
+### Adat Pos Singgah
+
+- Dua Pembacaan: penerima membaca surat; kurir membacakan catatan serah-terima dan menyatakan kondisi fisiknya tanpa membuka surat bersegel sebelum izin penerima.
+
+- Tinta Kelahiran: nama bayi ditulis pada hari lahirnya dan disimpan di arsip desa.
+
+Penanggalan. Tseren memakai Tahun Simpul. Sebutan Pra-Telan menunjukkan lapisan penulisan pasca-Telan; pemalsuan isi harus dibuktikan melalui pembandingan naskah sumber dan catatan penyalinan.
+
+Arsitektur dan rasa visual. Atap bertingkat tipis, garis vertikal, lembaran kertas bergantung, jembatan tali. Aksen kertas (#EDE6D3) dan hijau kabut (#8FA68A). Kabut selalu mengaburkan lantai bawah.
+
+Kehidupan sehari-hari. Teh hangat, kain wol, ucapan yang singkat. Orang berbicara pelan dan jarang menyela.
+
+Tanda tekanan. Tinta khusus menampakkan tulisan yang pernah dihapus atau jejak resonansi tipis pada kertas.
+
+Rahasia, kontradiksi, dan dampak ke storyline Nara. Aliran Rapi menyimpan arsip asli di ruang tertutup, bukan memusnahkannya. Ketika Nara di Bab 2 membandingkan penanggalan, isi, dan rantai penyalinan dengan naskah sumber, temuannya memicu sengketa wewenang di dalam Rumah Naskah yang menggerakkan Aliran Murni untuk memberikan Cap Saksi ketiga.
+
+Ukuran kepercayaan. Apakah kurir menyerahkan surat tanpa mengubah satu kata pun, dan berani menyebut ketika sebuah dokumen terasa palsu.
+
+Contoh pengantaran. Naskah yang hilang dari arsip. Dua surat dengan isi yang sama tetapi tanggal berbeda. Tinta yang harus diuji sebelum diserahkan.
+
+
+## 5.3.3 Cirusia, konfederasi Tujuh Panji dan penjaga janji
+
+![Konsep wilayah dan kehidupan Cirusia](assets/cirusia.png)
+
+
+
+Wilayah: Padang Salkara, Perkemahan Tujuh Panji, Jalur Padang, dan Tepi Salkara. Cirusia mengelola logistik karavan, ternak, serta pengawalan lintas wilayah.
+
+Asal-usul dan kejayaan. Tujuh klan penggembala menghentikan perang padang melalui Sumpah Api Tujuh Panji. Pembagian keahlian membuat mereka saling membutuhkan. Hukum Janji Api mengutamakan ucapan di depan tiga saksi; Panji Batu Nama menjaga ingatan sumpah dan nama pengelana. Adat Muka Api membuat pengakuan kesalahan pemimpin sangat berat.
+
+Kertas dianggap mudah diubah, tetapi larangan menulis berlaku pada janji yang disahkan menurut adat tersebut, bukan seluruh kegiatan hidup. Pada masa perang, pemimpin lama membuat pengecualian rahasia: salinan kesaksian mereka dititipkan kepada Tseren sebagai catatan untuk pihak luar. Kesaksian menyalahkan Bahtari dan menyembunyikan kelalaian api masak. Generasi sesudahnya mewarisi tuduhan; Aliran Rapi serta Dewan kemudian memanfaatkannya, bukan merancang kecelakaan lama.
+
+Nilai. Janji lisan di hadapan saksi mata. Kata yang diucapkan lebih berat daripada yang ditulis. Sapaan: Angin searah dijawab Janji sampai.
+
+Versi sejarah dan titik butanya. Bahtari mengkhianati dan memperparah kehancuran Gema. Cerita pengkhianatan lebih mudah diwariskan keluarga pengawal daripada penjelasan teknis. Titik buta: mereka membenci Bahtari sebagian untuk menutupi rasa bersalah leluhur mereka sendiri atas kebakaran di Tepi Salkara.
+
+Sistem politik dan Kompendium Tujuh Panji. Cirusia adalah federasi militer-kesukuan yang diperintah lewat sidang terbuka ketujuh pemimpin panji di Perkemahan Tujuh Panji. Tidak ada satupun klan yang sanggup melintasi Padang Salkara sendirian; ketujuh panji memiliki pembagian fungsi ekologis, keahlian khas, dan posisi politik yang saling mengunci dalam kebuntuan 3 lawan 3 dengan 1 suara penentu:
+
+| Panji / klan | Lambang dan fungsi | Keahlian dan posisi |
 | --- | --- | --- |
-| **Asharim** | Menjaga adat tamu | Mengantar di cuaca buruk dan membalas air yang diterima |
-| **Tseren** | Menjaga kata | Menyerahkan surat tanpa diubah dan berani menyebut pemalsuan |
-| **Cirusia** | Menepati janji lisan | Bersaksi di depan Tujuh Panji dan menepati janji tanpa catatan |
-| **Bahtari** | Membawa pulang apa adanya | Menyerahkan lagu atau pesan tanpa mengubahnya |
-| **Lulanai** | Mau mendengar | Tidak memihak dalam perselisihan tiga kaum |
+| Bara / Kaldera | Spiral merah pada hitam; sidang api dan jadwal karavan | Penjaga api dan perunding; pemimpin Panji Tua; mewarisi rahasia kecelakaan |
+| Tanduk Besi / Salka | Sepasang tanduk perunggu; pengawalan depan | Penunggang dan perisai kempa; Panji Tua, mewarisi trauma kehilangan pengawal |
+| Angin Debu / Pelacak Utara | Tiga gelombang kuning; pengintaian dan pembukaan jalur | Membaca angin serta rumput; Panji Tua yang curiga pihak luar |
+| Tali Panjang / Pengikat | Simpul tali terakota; kargo lintas batas dan penghubung kurir | Tali, jembatan darurat, kereta; Panji Muda, asal Orsa |
+| Roda Kempa / Perajin Kemah | Roda bersulam putih; tenda dan logistik | Bongkar-pasang kemah, wol, pengawetan; Panji Muda, membutuhkan pasokan Bahtari |
+| Bintang Rendah / Penuntun Malam | Bintang putih pada biru gelap; rute malam dan perbatasan | Navigasi langit; Panji Muda, menolak bea yang menutup perdagangan |
+| Batu Nama / Saksi | Monolit abu-abu; nama gugur dan pengesahan sumpah | Ingatan lisan berantai; penengah dan suara penentu |
 
-*Khusus Lulanai:* Mereka tidak memiliki Cap Saksi fisik. Jejak Wirna merespons cap bangsa lain yang dibawa Nara.
+Ekonomi dan komoditas. Hewan padang, kuda beban, kain wol dan kempa, kulit, daging kering, tali panjang, dan jasa pengawalan.
 
-### 5.5 Kehidupan sehari-hari
+### Adat Pos Singgah
+
+- Janji di Api: janji penting diucapkan di depan api dan tiga saksi mata, dan tidak boleh ditulis.
+
+- Nama di Batu: pengelana yang gugur di jalur dicatat pada batu penanda oleh Panji Batu Nama.
+
+- Memanggil Angin: upacara pelepasan karavan yang berangkat.
+
+Arsitektur dan rasa visual. Tenda bulat dari kempa, panji-panji tinggi, dinding penahan angin, ornamen spiral. Aksen merah tanah (#A8452F) dan rumput kering (#D9B45A). Segala sesuatunya mudah dibongkar-pasang.
+
+Kehidupan sehari-hari. Hidup berpindah mengikuti musim, ucapan lugas, lagu perjalanan yang dinyanyikan sambil berkuda.
+
+Tanda tekanan. Batu penanda di padang mengulang nama atau potongan suara para pengelana masa lalu.
+
+Rahasia, kontradiksi, dan dampak ke perjalanan Nara. Pemimpin Bara masa kini mewarisi pengakuan lisan tertutup dari pendahulunya; ia bukan saksi hidup perang. Batu Tepi Salkara mengulang nyanyian masak dan arah teriakan, tetapi bunyi itu hanya petunjuk keberadaan. Nara bersama Orsa membandingkannya dengan denah lama letak dapur, kesaksian lisan berantai dari klan lain tentang arah badai, dan arsip waktu keberangkatan kapal. Gabungan bukti menggoyahkan tuduhan; pemimpin Bara akhirnya mengakui warisan yang ia sembunyikan. Panji Batu Nama tidak memilih hanya karena mendengar suara gaib. Cap Cirusia diberikan setelah kesaksian terbuka; pengakuan di depan Bahtari menyusul pada Bab 3.
+
+Ukuran kepercayaan. Apakah kurir menepati janji lisan tanpa catatan dan berani bersaksi di depan Tujuh Panji.
+
+
+Contoh pengantaran. Janji lisan yang tak boleh ditulis antarpanji. Nama pengelana yang harus dicatat pada monumen Panji Batu Nama. Pesan damai dari Panji Muda yang tak boleh bocor ke Panji Tua sebelum sidang api dimulai.
+
+## 5.3.4 Bahtari, bangsa bandar dan penjaga lagu
+
+![Konsep wilayah dan kehidupan Bahtari](assets/bahtari.png)
+
+
+
+Wilayah: Kepulauan Lada Biru, Bandar Lada, Simpul Keseratus, dan jejaring sungai-laut. Bahtari adalah pelaut, pedagang, pembawa lagu, dan pengangkut muara.
+
+Asal-usul dan kejayaan. Hukum Sauh dan Lagu menghubungkan pulau berarus keras melalui kewajiban menanggung risiko pelayaran serta keluarga yang ditinggalkan. Lada biru tumbuh pada tebing pulau berangin asin dan memperpanjang ketahanan bekal bersama garam serta pengeringan; ia penting tetapi bukan satu-satunya cara mengawetkan pangan. Ini menjelaskan perdagangan gelap dan kebutuhan Cirusia tanpa membuat penutupan rute berarti semua ternak pasti membusuk.
+
+Rumah Dagang menyediakan modal melalui Kontrak Sauh. Setelah Telan, biaya pencarian dan verifikasi keluarga dibayar dengan utang; setelah Simpul Terang aktif, layanan itu juga memakai cabang Dewan. Rumah Dagang menggunakan bunga dan penguasaan dokumen untuk mengikat tenaga pelaut. Rumah Layar menanggung risiko dan berusaha melindungi keluarga dari penyitaan.
+
+Nilai. Pulang, lagu, dan janji untuk kembali. Sapaan: Pasang baik! dijawab Layar penuh!
+
+Versi sejarah dan titik butanya. Dewan Tol mengambil untung dari Hari Senyap dan sengaja memonopoli jalur. Titik buta: mereka lupa bahwa rumah-rumah dagang besar mereka sendiri pernah menjual kabar cepat dan memperkaya diri dari spekulasi informasi di Zaman Kabar Dusta.
+
+Sistem politik dan konflik faksi internal. Politik Bahtari dibentuk oleh pertentangan pemilik modal pelabuhan dan perhimpunan pekerja laut:
+
+- Rumah Dagang (Saudagar Bandar): Keluarga-keluarga pemilik gudang lada biru, dermaga, dan modal pelayaran. Di Zaman Gema mereka meraup untung dari penjualan kabar cepat. Setelah Hari Senyap, sebagian Rumah Dagang bekerja sama dengan Dewan Tol demi izin sandar eksklusif dan menciptakan skema kredit Utang Kabar yang menjerat para pelaut mandiri.
+
+- Rumah Layar (Serikat Nakhoda & Keluarga Pelaut): Perhimpunan pelaut, penyelam karang, dan Pembawa Lagu (termasuk jaringan Dorin dan Tarun) yang menanggung risiko nyawa di laut. Mereka menolak tol Dewan sekaligus menentang kemunafikan Rumah Dagang yang memeras sesama warga Bahtari.
+
+Ekonomi dan komoditas. Lada biru, garam laut, ikan asin, kain celup biru, tali, kayu kapal. Utang Kabar: biaya verifikasi mengirim kabar lewat Simpul Terang yang dibiayai dengan berutang pada Rumah Dagang dan pos Dewan.
+
+### Adat Pos Singgah
+
+- Lagu Titip: tiap keluarga punya lagu yang dititipkan pada pelaut. Lagu itu tidak boleh diubah.
+
+- Kerang Suara: menyimpan lagu atau pesan di dalam kerang tua.
+
+- Pembawa Lagu: pelaut yang bertugas meneruskan pesan keluarga lewat lagu.
+
+Arsitektur dan rasa visual. Rumah panggung, tiang miring, atap layar, motif gelombang. Aksen teal (#2E8B8B) dan jingga rempah (#E07B39). Pasar ramai saat air pasang pagi.
+
+Kehidupan sehari-hari. Ikan berempah, suara ramai dan bernada, musik di mana-mana, ucapan berirama.
+
+
+Tanda tekanan. Kerang suara tua menyanyi sendiri dengan potongan lagu dari kapal-kapal masa silam.
+
+Rahasia, kontradiksi, dan dampak ke storyline Nara. Rumah-rumah dagang yang paling lantang menentang Dewan di depan umum adalah pihak yang dulu menjual kabar cepat dan kini ikut memungut bunga dari Utang Kabar. Di Bab 3, pencarian Nara atas ayahnya (Tarun) menyingkap bagaimana Tarun tertahan di Bandar Lada bukan semata-mata karena Dewan Tol, melainkan juga karena jeratan Utang Kabar di pelabuhan.
+
+Ukuran kepercayaan. Apakah kurir membawa pesan pulang apa adanya, termasuk lagu yang tidak sempurna.
+
+Contoh pengantaran. Lagu pelaut yang belum pulang. Kerang Suara yang harus diserahkan tanpa dibuka. Surat penebus Utang Kabar.
+
+## 5.3.5 Lulanai, bangsa orisinal para arsitek dan pembangun negara
+
+![Konsep wilayah dan kehidupan Lulanai](assets/lulanai.png)
+
+
+
+Wilayah: Reruntuhan Hening (dataran tinggi basalt tengah, menara relay lama, Simpul Pertama). Peran: bangsa fiksi para arsitek dan penyetel yang dirancang khusus untuk cerita. Mereka adalah bangsa para arsitek, pembangun negara, dan perancang jaringan Simpul di Tanah Sada.
+
+Asal-usul pembentukan bangsa & peran pembangun negara. Lulanai adalah masyarakat dataran tinggi batu basalt berongga di jantung Tanah Sada yang memandang dunia dari keseimbangan ruang, kepadatan batu, dan harmoni getaran. Jauh sebelum dan selama Zaman Pembukaan Jalur, Lulanai bukan sekadar membuat menara komunikasi; mereka bekerja bersama masyarakat setempat merancang infrastruktur keempat bangsa lain: mereka merancang saluran air bawah tanah dan cincin kanal Telaga Sumi bersama Asharim, memahat bilik arsip tebing kedap lembap di Kabut Lirih bersama Tseren, mendirikan monolit penuntun Jalur Padang dan Batu Nama bersama Cirusia, serta membangun fondasi pemecah ombak Bandar Lada dan bendungan Simpul Keseratus bersama Bahtari. Pada Malam Hening, sebagian besar arsitek- penyetel Lulanai gugur menahan gelombang kejut; sisanya dikucilkan dan bersembunyi di antara bangsa- bangsa yang dulu mereka bangun.
+
+Resonansi Arsitek. Penyetel terlatih dapat membentuk, menyatukan, atau meretakkan batu resonansi melalui alat perunggu dan nada kunci. Teknik dibatasi bahan dan susunan yang dipahami, bukan kendali atas semua batu. Pemakaian meninggalkan Bising; alat utuh dan penyetel berpengalaman langka.
+
+Batu yang sedang menahan gelombang tidak aman disetel: perubahan bentuk dapat melepas beban ke tubuh dan struktur. Bendungan tidak dapat diperbaiki sambil tetap penuh. Menambah orang tidak menghapus batas ini. Fondasi bangunan biasa juga tidak bisa diruntuhkan dari jauh: penyetel memerlukan kontak, alat, pengetahuan anatomi setempat, dan waktu. Di Bab 4 teknik dipakai pada lorong tanpa beban resonansi untuk memutus pengejaran, bukan untuk merobohkan Benteng atau menyelesaikan krisis.
+
+Nilai. Keheningan dan tanggung jawab. Sapaan: Hening menyertai (tidak dibalas, hanya mengangguk).
+
+Versi sejarah dan titik butanya. Hari Senyap adalah pengorbanan sengaja untuk menyelamatkan dunia, versi paling dekat dengan fakta. Titik buta: mereka bukan bangsa sempurna. Mereka pernah membangun jaringan tanpa pengaman sosial yang akhirnya membahayakan dunia, dan sebagian menolak mengakui elitisme keputusan mereka sendiri.
+
+Sistem politik dan perpecahan tiga kaum. Pasca-Malam Hening, Lulanai tidak lagi memiliki pemerintahan terpusat dan terbelah menjadi tiga faksi ideologis yang saling mengunci:
+
+| Kaum | Pandangan |
+| --- | --- |
+| Pantang | Menolak penyalaan ulang; menganggap kesiapan sosial belum ada |
+| Terbuka | Menuntut pengetahuan dan Gema dibagikan; Hesta berasal dari kaum ini |
+| Sesal | Menolak keputusan sepihak Lulanai; menuntut keterlibatan bangsa lain |
+
+Penjaga Reruntuhan hanyalah sebagian kecil. Yang lain tersebar dan menyamarkan diri di antara bangsa lain (termasuk garis keluarga Nenek Ima di Dusun Sela).
+
+Ekonomi dan komoditas. Hampir tidak ada perdagangan terbuka. Mereka membuat alat penyetel, memperbaiki batu resonansi, dan menukar pengetahuan lewat jalur tertutup.
+
+### Adat
+
+- Tiga Napas Hening: sebelum berbicara pada orang asing, mereka diam selama tiga napas.
+
+- Penutup Telinga Perunggu: dikenakan penderita Bising untuk meredam gema di telinga.
+
+- Jejak: pesan ditinggalkan pada batu sebagai jejak bersyarat, bukan diucapkan.
+
+Arsitektur dan rasa visual. Menara retak, batu berlumut, monolit, simbol Gema yang pudar. Aksen lumut (#6F7A68) dan perunggu pudar (#A6805A). Reruntuhan dipakai ulang, bukan dibangun baru.
+
+Tanda tekanan. Batu menara berdengung sendiri tanpa disentuh.
+
+Rahasia, kontradiksi, dan dampak ke storyline Nara. Jejak Wirna dan perdebatannya dengan Tetua Dahan masih tersimpan di batu. Pembelotan Hesta pada tahun ke-52 menjadi aib bagi Kaum Pantang sekaligus keputusasaan Kaum Terbuka. Lulanai tidak punya Cap Saksi sendiri; di Bab 4, perdebatan tiga kaum hanya bisa ditembus karena Jejak Wirna merespons pola kunci surat yang telah dibuka melalui tiga serah-terima; respons itu adalah syarat teknis yang dirancang sebelumnya, bukan penilaian moral Jejak.
+
+Ukuran kepercayaan. Apakah pembawa surat mau mendengar dulu sebelum menilai, dan sudah dipercaya oleh bangsa lain.
+
+Contoh pengantaran. Pesan terakhir untuk tetua. Alat penyetel yang harus diperbaiki. Jejak yang harus disampaikan pada kaum lain tanpa memihak.
+
+## 5.4 Ukuran kepercayaan, Cap Saksi, dan Nama Baik
+
+| Bangsa | Ukuran kepercayaan | Bentuk dalam alur |
+| --- | --- | --- |
+| Asharim | Menjaga adat tamu dan kejujuran | Cap pertama dari Maren setelah tugas gagal sebagian dilaporkan jujur |
+| Cirusia | Menepati janji di depan saksi | Cap kedua setelah sidang dan pengakuan |
+| Tseren | Menjaga kata dan menyebut kejanggalan | Cap ketiga setelah pembandingan sumber |
+| Bahtari | Membawa pulang pesan apa adanya | Nama Baik melalui lagu, Utang Kabar, dan rekonsiliasi |
+| Lulanai | Mendengar sebelum menilai | Kepercayaan penjaga, tanpa cap fisik |
+
+Nama Baik dicatat per bangsa dan dapat berubah sesudah cap diperoleh. Pemain dapat mendapatkan mandat pengantaran walau hubungan umumnya sedang tegang. Cap wajib tidak otomatis memenuhi syarat akhir Terverifikasi. Kepercayaan tinggi berarti komunitas bersedia menugaskan saksi dan menanggung biaya pemeriksaan setelah jaringan menyala; indikatornya dinyatakan melalui dialog serta kesiapan delegasi, bukan angka moral tersembunyi.
+
+Pada masing-masing empat bangsa, pemain mendapat kesempatan memperbaiki kegagalan melalui pengantaran pemulihan sebelum berangkat ke Katup. Pelanggaran tetap punya akibat, tetapi satu pilihan dialog tanpa konteks tidak diam-diam menutup ending. Lulanai tidak dihitung sebagai cap atau bangsa kelima dalam ambang Nama Baik.
+
+## 5.5 Kehidupan sehari-hari
 
 | Bidang | Konsekuensi |
 | --- | --- |
-| **Pendidikan** | Anak mempelajari sejarah Gema lewat versi lokal yang berbeda di tiap wilayah |
-| **Perdagangan** | Harga dipengaruhi jarak, risiko perjalanan, dan biaya tol |
-| **Keluarga** | Keluarga yang terpisah membangun tradisi surat berkala, lagu titipan, atau tanda khusus |
-| **Bahasa** | Istilah pengiriman, segel, rute, dan reputasi kurir masuk ungkapan sehari-hari |
-| **Hukum dan politik** | Sengketa keaslian surat menjadi persoalan hukum. Menguasai persimpangan jalur sepenting menguasai benteng |
+| Pendidikan | Anak mempelajari sejarah Gema menurut versi lokal |
+| Perdagangan | Harga ditentukan jarak, risiko, perbekalan, dan tol |
+| Keluarga | Surat berkala, lagu titipan, dan tanda khusus menjaga hubungan |
+| Politik | Penguasaan akses dan arsip menentukan kabar yang dianggap sah |
+| Pengantaran | Kondisi barang, kesaksian serah-terima, serta jalur aman selalu relevan |
 
-### 5.6 Hubungan geopolitik antarbangsa di Tanah Sada
+## 5.6 Hubungan geopolitik antarbangsa di Tanah Sada
 
-- **Saling ketergantungan ekonomi:** Cirusia membutuhkan lada biru serta garam dari Bahtari untuk mengawetkan daging di padang dan kertas kontrak dari Tseren; Bahtari membutuhkan daging kering, kulit, dan wol Cirusia serta titik air Asharim; Asharim menjadi pasar transit netral tempat semua komoditas bertemu.
-- **Cirusia dan Bahtari:** ketegangan paling tajam, dengan akar berupa rasa bersalah Panji Bara yang dipindahkan menjadi dendam seratus tahun. Cirusia menyimpan nama di batu, Bahtari menyimpan lagu di kerang.
-- **Asharim:** tuan rumah semua jalur darat. Mereka paling banyak bertemu pihak lain dan paling terbelah antara mempertahankan Hukum Air (Pos Tua) atau tunduk pada tekanan bea Dewan Tol (Pos Dagang).
-- **Tseren:** notaris dan penjaga bukti Tanah Sada. Bangsa lain mempercayai arsip mereka sebagai dasar hukum, padahal sebagian naskah sejarah telah disunting oleh Aliran Rapi.
-- **Lulanai:** nyaris tak terlihat. Semua bangsa punya cerita atau tuduhan tentang mereka, namun jarang yang pernah bertemu langsung.
-- **Dewan Tol:** hadir di semua bangsa dan memanfaatkan dendam lama Cirusia–Bahtari serta sensor arsip Tseren untuk membenarkan monopoli tujuh Simpul Terang.
+- Saling ketergantungan ekonomi: Cirusia membutuhkan lada biru serta garam dari Bahtari untuk mengawetkan daging di padang dan kertas kontrak dari Tseren; Bahtari membutuhkan daging kering, kulit, dan wol Cirusia serta titik air Asharim; Asharim menjadi pasar transit netral tempat semua komoditas bertemu.
 
----
+- Cirusia dan Bahtari: ketegangan paling tajam, dengan akar berupa rasa bersalah Panji Bara yang dipindahkan menjadi dendam seratus tahun. Cirusia menyimpan nama di batu, Bahtari menyimpan lagu di kerang.
 
-## 6. Nara: asal-usul dan alasan menjadi kurir
+- Asharim: tuan rumah semua jalur darat. Mereka paling banyak bertemu pihak lain dan paling terbelah antara mempertahankan Hukum Air (Pos Tua) atau tunduk pada tekanan bea Dewan Tol (Pos Dagang).
 
-- **Usia dan latar:** Nara lahir pada tahun ke-83 Telan dan berusia tujuh belas tahun pada tahun 100. Ia tidak punya ingatan tentang Zaman Gema. Ia tumbuh di Dusun Sela, dusun kecil di tepi Lembah Pasir, bersama Nenek Ima dan ayahnya, Tarun, seorang pelaut. Tarun berlayar ke Bandar Lada pada tahun ke-95 (saat Nara berusia dua belas tahun) dan kabarnya terputus.
-- **Mengapa menjadi kurir:** Dusun Sela hanya mendengar kabar lewat kurir yang sesekali singgah. Nara kecil menunggu di gerbang tiap musim. Suatu hari seorang kurir membawa kabar singkat bahwa kapal Tarun pernah terlihat, dan kabar sekecil itu cukup membuat keluarga bertahan satu tahun lagi. Nara memutuskan menjadi kurir supaya tidak ada orang yang menunggu sendirian. Ia magang di Pos Batu Biru pada usia tujuh belas tahun. Nara bukan tokoh yang ingin mengembalikan dunia yang pernah ia kenal, karena ia tidak pernah mengenal dunia itu.
-- **Kepribadian:** Rendah hati, penasaran, keras kepala.
-- **Lengkungan perubahan:** Dari yang percaya bahwa tugas kurir hanya *mengantar kabar*, menjadi yang menyadari bahwa tugas kurir adalah *menjaga kebenaran yang diantar*, dan bahwa sebagian hal tidak bisa diantar, hanya bisa dilalui bersama.
-- **Menghindari jebakan Chosen One:**
-  1. *Darah Lulanai (dari Nenek Ima):* hanya memberi kepekaan mengenali dan mendengar jejak Gema, bukan kemampuan magis mengendalikannya.
-  2. *Tas Sahdan:* wadah berinsulasi resonansi yang menjaga surat tetap aman, bukan benda ajaib penentu takdir.
-  3. *Nama Baik dan tindakan:* alasan utama Nara dipercaya membawa surat hingga akhir adalah rekam jejak, pilihan moral, dan hubungan yang ia bangun selama mengantar paket.
+- Tseren: pengesah dan penjaga bukti Tanah Sada. Bangsa lain mempercayai arsip mereka sebagai dasar hukum, padahal sebagian naskah sejarah telah disunting oleh Aliran Rapi.
 
----
+- Lulanai: nyaris tak terlihat. Semua bangsa punya cerita atau tuduhan tentang mereka, namun jarang yang pernah bertemu langsung.
 
-## 7. Tokoh
+- Dewan Tol: hadir di semua bangsa dan memanfaatkan dendam lama Cirusia-Bahtari serta sensor arsip Tseren untuk membenarkan monopoli tujuh Simpul Terang.
 
-| Tokoh | Latar | Keinginan | Rahasia atau ketakutan |
+## 6. Nara: keluarga, motivasi, dan kepekaan
+
+![Nara, kurir magang Tanah Sada](assets/nara.png)
+
+
+
+Nara lahir tahun 83 dan berusia 17 pada tahun 100. Ia tumbuh di Dusun Sela bersama Ima, nenek dari pihak ibu, dan Tarun, ayah dari Bahtari. Ibu Nara telah wafat; garis keturunan Lulanai berasal dari keluarga ibu. Tarun berangkat tahun 95 ketika Nara berusia 12. Nara tidak memiliki ingatan tentang Zaman Gema.
+
+Nara menjadi kurir karena kabar kecil tentang kapal ayahnya pernah membuat keluarga bertahan satu tahun lagi. Ia ingin orang lain tidak menunggu sendirian. Sifatnya rendah hati, penasaran, dan keras kepala. Perubahannya bergerak dari sekadar menyerahkan kabar menuju kesediaan memeriksa asal-usul dan menanggung akibat penyampaiannya.
+
+Kepekaan Gema memungkinkannya mendengar sisa suara pada medium tertentu. Fungsinya tidak memberi penglihatan masa lalu lengkap, tidak memeriksa dusta, dan tidak mengendalikan Katup. Kepekaan dapat juga dimiliki atau dipelajari orang lain; garis keluarga menjelaskan kesiapan Nara, bukan hak eksklusif. Pemain memakainya pada 009, batu Tepi Salkara, lapisan tinta, kerang, serta batu Lulanai. Setiap petunjuk memerlukan pembanding non-Gema. Tidak mendengar satu jejak tidak otomatis membatalkan penyelidikan.
+
+Tas adalah wadah insulasi; surat adalah kunci; kepekaan adalah keterampilan; kelayakan Nara adalah tindakan dan hubungan. Maren memilihnya karena kejujuran yang terbukti pada pengantaran gagal sebagian. Setelah Tarun ditemukan, Nara memilih meneruskan pengantaran karena telah memahami akibat bagi keluarga-keluarga lain.
+
+## 7. Tokoh dan batas pengetahuan
+
+| Nara | Maren | Juma | Kesa |
 | --- | --- | --- | --- |
-| **Maren** | Kepala Pos Batu Biru sejak tahun 71, mantan kurir senior Asharim, berusia sekitar enam puluh | Melihat Jalur hidup lagi tanpa menanggung bebannya sendiri | Dua puluh tahun lalu ia nyaris menyerahkan surat pada Dewan demi melindungi pos. Rasa bersalahnya: terlalu takut mengambil risiko selama puluhan tahun |
-| **Sahdan** | Kurir legendaris, pemilik tas, wafat sebagai manusia pada malam Telan | Menjaga hening sampai dunia siap | Kini jangkar yang menyatu dengan batu Simpul Pertama. Tiap kalimat mengikis ingatannya, dan ia mengira baru sebentar waktu berlalu |
-| **Juma** | Penjaga Menara Batu Senja, cucu dari penjaga menara yang melihat Sahdan lewat | Menjaga kenangan tentang jalur yang dulu | Menyimpan catatan harian kakeknya yang berbeda dari versi resmi. Pengetahuannya tentang Sahdan hanya cerita keluarga |
-| **Bu Lamat** | Asharim di Telaga Sumi | Mendengar suara keluarga di seberang laut | Suaminya, Dorin, pelaut Bahtari yang mengirim lagu |
-| **Dorin** | Pelaut Bahtari dari Rumah Layar, pengirim lagu | Menjaga janji pada keluarganya | Satu jaringan pelaut dengan Tarun. Nasibnya masih terbuka |
-| **Tarun** | Ayah Nara, berlayar tahun 95 | Pulang | Hidup, tertahan oleh Utang Kabar di Bandar Lada. Malu pulang dengan tangan kosong |
-| **Kesa** | Petugas Dewan Tol, tumbuh dalam institusi | Menjalankan perintah dengan baik | Pesan keluarganya sendiri pernah ditahan. Keraguannya tumbuh bertahap, bukan karena satu percakapan |
-| **Taluk** | Ketua Dewan Tol | Mencegah perang berikutnya dengan menata kabar | Tidak jahat sepenuhnya. Menyembunyikan laporan Gangguan yang meningkat dan catatan Hesta yang tak utuh |
-| **Wirna** | Tetua Lulanai yang memimpin Malam Hening, wafat hari ketiga | Melihat Gema dinyalakan dengan benar | Hadir lewat Jejak Wirna, jejak Gema bersyarat di Reruntuhan Hening, termasuk Dua Jejak yang Berdebat dengan Tetua Dahan |
-| **Hesta** | Penyetel Lulanai pembelot (tahun 52), Kaum Terbuka | Dunia berhak atas Gema | Menjual catatan tak utuh pada Dewan. Hadir lewat catatannya |
-| **Orsa** | Pengawal karavan Cirusia dari Panji Tali Panjang (pemimpin kubu Panji Muda) | Membuktikan Cirusia tidak dendam dan membuka kembali jalur dagang bebas | Menjadi pemandu dan sahabat Nara di Padang Salkara di tengah tekanan tiga Panji Tua |
-| **Ruru** | Pendamping Nara, pemindai medan | Menemani Nara | Asal-usulnya sengaja belum dijelaskan. Ia peka pada jejak Gema |
+| ![Nara](assets/nara.png) | ![Maren](assets/maren.png) | ![Juma](assets/juma.png) | ![Kesa](assets/kesa.png) |
 
----
+| Bu Lamat | Pedagang | Ruru |
+| --- | --- | --- |
+| ![Bu Lamat](assets/bulamat.png) | ![Pedagang](assets/pedagang.png) | ![Ruru](assets/ruru.png) |
 
-## 8. Struktur cerita
+*Potret aset yang tersedia; tokoh lain dijelaskan dalam tabel.*
 
-Urutan wilayah mengikuti perjalanan surat melintasi Tanah Sada: **Lembah Pasir → Padang Salkara → Pegunungan Kabut Lirih → Reruntuhan Hening → Kepulauan Lada Biru**.
 
-### Babak 1: Menyalakan kembali (demo)
-1. Nara tiba di Pos Batu Biru dan bertemu Maren di tengah tekanan ekonomi antara Pos Tua dan Pos Dagang.
-2. Tugas pertama: roti rempah untuk Juma. Juma mengenali tas dari kisah kakeknya.
-3. Tugas kedua: lagu untuk Bu Lamat. Kait Tali terbuka. Rumor beredar bahwa Simpul Sembilan padam sengaja. Cap Saksi pertama (Asharim) dibubuhkan.
-4. Malam badai. Maren menyerahkan surat karena beberapa hal bertemu: Simpul Sembilan mulai menunjukkan anomali saat badai, segel surat beresonansi dengan tas, patroli Dewan (Kesa) mulai memeriksa pos, dan Nara sudah membuktikan integritasnya lewat dua pengantaran.
-5. Pos tol: Kesa memperingatkan. Keraguannya bertahap: ia sudah melihat dampak penahanan kabar pada warga biasa, lalu diam-diam membukakan jalan tebing utara.
-6. Simpul Sembilan menyala. Serpihan suara Sahdan menyebut nama Nara, yang ia baca dari Cap Saksi.
 
-### Babak 2: Menyusuri jalur
-1. **Padang Salkara:** Orsa (dari Panji Tali Panjang) menjadi pemandu di tengah kebuntuan politik 3 lawan 3 antara Panji Tua (Bara, Tanduk Besi, Angin Debu) dan Panji Muda (Tali Panjang, Roda Kempa, Bintang Rendah). Nara mengantar janji lisan yang tidak boleh ditulis, mengungkap rahasia bahwa kebakaran Tepi Salkara berawal dari api masak karavan Panji Bara sendiri, dan menggerakkan Panji Batu Nama untuk menjatuhkan suara penentu. Nara belajar bahwa Cirusia bukan musuh, hanya terluka. Cap Saksi kedua (Cirusia) dibubuhkan.
-2. **Pegunungan Kabut Lirih:** Di tengah pertarungan pengaruh antara Aliran Murni dan Aliran Rapi, Nara menemukan dua arsip yang bertentangan. Salah satunya bertanggal Pra-Telan padahal mengaku ditulis sebelum Telan, bukti bahwa arsip diubah oleh Aliran Rapi atas tekanan Dewan, sementara naskah aslinya disembunyikan di ruang tertutup. Cap Saksi ketiga (Tseren) dibubuhkan.
-3. **Simpul Terang pertama:** Simpul menyala terlalu terang. Ruru gelisah. Kabar di sana terasa terlalu rapi, dan penyetel kontraknya menderita Bising.
-4. **Reruntuhan Hening:** Titik tengah cerita. Jejak Wirna terbangun merespons tiga Cap Saksi yang Nara bawa. Kaum Pantang, Terbuka, dan Sesal berselisih tentang masa depan Gema. Nara mengetahui darah Lulanai dari Nenek Ima.
-5. **Simpul Pertama:** Nara bertemu Sahdan yang menyatu dengan batu. Ia tahu penjaga hening tidak bisa dibebaskan tanpa menyalakan kembali Gema, dan tiap kalimat Sahdan mengikis ingatannya.
-6. **Pengejaran:** Dewan Tol di bawah Taluk mengejar surat.
+| Tokoh | Peran dan keinginan | Batas / perkembangan |
+| --- | --- | --- |
+| Maren | Kepala Pos sejak 71; ingin jalur hidup | Hampir menyerahkan surat tahun 80; akhirnya bertindak tahun 100; mempertahankan dukungan pos selama Nara pergi |
+| Sahdan | Jejak kurir yang menjalankan jangkar | Wafat sebagai manusia saat Malam Hening; hanya tahu zamannya dan rangsangan jalur jangkar; kalimat mengikis ingatan |
+| Juma | Penjaga menara, cucu saksi perjalanan Sahdan | Pengetahuannya diwarisi melalui cerita dan buku kakek, bukan pengalaman langsung |
+| Bu Lamat | Penerima lagu keluarga dari Dorin | Lagu memiliki ketidaksempurnaan manusia; tidak membuka pengait atau benda |
+| Dorin | Pelaut Rumah Layar; suami Bu Lamat | Satu jaringan dengan Tarun; hidup; membantu pertemuan, saksi pelabuhan, dan perjalanan |
+| Tarun | Ayah Nara yang ingin pulang | Tertahan utang dan dokumen pelayaran; ikut membawa saksi serta konfirmasi akhir, bukan penonton setelah ditemukan |
+| Ima | Nenek pihak ibu, keturunan Lulanai | Menyembunyikan asal-usul karena stigma; petunjuk awal Bab 1, pengakuan keluarga dikonfirmasi Bab 4 |
+| Kesa | Petugas Dewan yang ingin menjaga warga | Keraguan dibangun sejak demo; menjamin jalur perundingan dan memilih menjaga kesepakatan di Benteng |
+| Taluk | Ketua Dewan; takut perang kabar berulang | Menutupi laporan; memerlukan stabilitas, tenaga penyetel, dan kerja sama pelabuhan, bukan kekuasaan tanpa batas |
+| Wirna | Jejak pemimpin keputusan Malam Hening | Wafat hari ketiga; menjelaskan jaringan lama lewat respons bersyarat, tidak mengetahui modifikasi Dewan |
+| Dahan | Jejak tetua masa lalu | Pandangan tandingan pada keputusan Wirna; bukan tetua hidup selama seratus tahun |
+| Hesta | Penyetel pasca-Telan, membelot tahun 52 | Peringatan lokal tahun 58 dan catatan; bukan saksi perang sebelum kelahirannya |
+| Orsa | Pengawal Panji Tali Panjang, Klan Pengikat | Membantu sidang serta membawa pengakuan ke Bahtari; dukungan akhir merupakan akibat hubungan |
+| Ruru | Pendamping sejak demo | Peka pada jejak; asal-usul tetap misteri, tidak menjadi kunci penyelesaian |
 
-### Babak 3: Surat sampai
-1. Di Kepulauan Lada Biru, di tengah ketimpangan antara Rumah Dagang dan Rumah Layar, Nara bertemu Dorin dan menemukan Tarun yang tertahan oleh jeratan Utang Kabar di Bandar Lada.
-2. Taluk menawarkan kesepakatan: serahkan surat, Tanah Sada tersambung rapi tanpa kekacauan.
-3. Di Simpul Keseratus, Nara memilih bagaimana Katup dibuka. Pilihan itu menentukan akhir.
+Tiga wakil kaum hidup serta pemimpin Bara dan Batu Nama memiliki fungsi jelas tetapi dapat memakai gelar sampai nama produksi ditetapkan. Mereka bukan pengganti identitas Wirna atau Dahan.
 
----
+## 8. Struktur cerita Bab 0-5
 
-## 9. Daftar petunjuk misteri
+Target: Bab 0 sekitar 1 jam; Bab 1-5 sekitar 8-10 jam. Perjalanan adalah gameplay utama, tanpa pertarungan. Perpindahan wilayah mempunyai pengantaran, akses rute, dan alasan praktis. Peta memungkinkan rute sungai serta laut; lama perjalanan tidak disamakan dengan durasi bermain.
 
-| Petunjuk | Di mana | Maknanya | Terungkap di |
-| --- | --- | --- | --- |
-| Simpul Sembilan padam sengaja | Rumor pedagang (demo) | Memang disengaja, tetapi oleh Lulanai, bukan Dewan | Reruntuhan Hening |
-| Dewan takut pada menara padam | Dialog Kesa (demo) | Mereka khawatir Simpul menyala di luar kendali dan laporan Gangguan meningkat | Babak 3 |
-| Sahdan membawa sesuatu yang tak mau disebutnya | Dialog Juma, dari cerita kakeknya (demo) | Surat Penyalaan | Babak 1, dipertegas Babak 2 |
-| Lagu yang selalu meleset di bagian akhir | Bu Lamat (demo) | Gema yang jujur harus membawa ketidaksempurnaan | Pilihan akhir |
-| Jangan percaya pos yang menyala terlalu terang | Suara dalam Gema (demo) | Simpul Terang milik Dewan, penyetelan tidak utuh | Babak 2 |
-| Kamu seharusnya belum sampai di sini | Suara dalam Gema (demo) | Sahdan mengira baru sebentar waktu berlalu, jadi kedatangan pembawa surat berarti Bendungan runtuh lebih awal | Simpul Pertama |
-| Suara itu tahu nama Nara | Suara dalam Gema (demo) | Cap Saksi memuat nama pembawa surat | Babak 2 |
-| Tas dan surat bereaksi pada Nara | Maren (demo) | Kepekaan darah Lulanai dan Cap Saksi, bukan takdir | Reruntuhan Hening |
-| Arsip bertanggal Pra-Telan yang mengaku sebelum Telan | Tseren | Catatan Kabar Tujuh Musim ditulis ulang oleh Aliran Rapi dan Dewan | Babak 2 |
-| Sumur, batu, tinta, dan kerang yang bereaksi aneh | Tiap wilayah | Tekanan Bendungan yang naik | Simpul Keseratus |
+Tiap pengantaran utama mengubah hubungan, akses, pengetahuan, sikap komunitas, atau kondisi pos. Pengantaran biasa tetap ada agar dunia tidak seluruhnya berkisar pada surat. Tekanan meningkat per bab lewat gejala, bukan timer real-time. Pengejaran merupakan hambatan rute dan negosiasi, bukan adegan tempur.
 
----
+### Bab 0 - Pos Batu Biru
 
-## 10. Akhir cerita
+![Simpul Sembilan](assets/simpul-sembilan.png)
 
-Katup di Simpul Keseratus bisa dibuka dengan tiga cara, dan tidak ada yang tanpa harga.
 
-| Akhir | Apa yang terjadi | Manfaat | Harga |
-| --- | --- | --- | --- |
-| **Terbuka** | Katup dibuka penuh. Semua Simpul menyala tanpa saringan. Sahdan dibebaskan | Tanah Sada terhubung penuh, kabar mengalir bebas tanpa monopoli biaya. Utang Kabar Tarun terhapus | Kabar bohong dan konflik sejarah seratus tahun meledak tanpa penengah. Risiko terulangnya Kabar Tujuh Musim |
-| **Terkendali** | Surat diserahkan pada Dewan Tol. Pelepasan diatur Dewan | Stabilitas terjaga, konflik antarbangsa diredam, Tarun dibebaskan sebagai jasa | Monopoli informasi menjadi mutlak, kebenaran pengorbanan Lulanai tetap dikubur, dan Nara ikut ternoda |
-| **Terverifikasi** | Pelepasan bertahap lewat saluran yang disaksikan kurir. Ikatan Pengantar menjaga kepercayaan. Gema mengabarkan, kurir mengesahkan | Keseimbangan suara dan kehadiran manusia. Tarun menjadi saksi pertama sistem baru | Nara kehilangan kepekaannya pada Gema, Sahdan lenyap setelah kalimat terakhirnya, dan Ikatan Pengantar menanggung beban baru: sistem lambat, mahal, menguras tenaga kurir, dan memunculkan kurir yang menjual kesaksian |
 
-*Epilog (semua akhir):* Nara mengantar satu surat terakhir ke Dusun Sela, ke gerbang yang dulu ia tunggui.
+Nara magang di tengah tekanan Pos Tua dan Pos Dagang. Ruru sudah hadir. Tas dipinjamkan sebelum tugas pertama. Roti untuk Juma membuka cerita kakek; lagu untuk Bu Lamat membangun hubungan tanpa mekanisme Kait Tali. Tugas ketiga gagal sebagian dan Nara melapor jujur.
 
----
+Maren melihat lengkap tanda uji 009, peningkatan Gangguan, dan tekanan patroli. Saat badai ia menyerahkan surat, membubuhkan Cap Asharim, dan menerangkan instruksi luar. Kesa yang sudah meragukan penahanan kabar membuka jalur tebing utara. Di 009, kontak surat dengan batu memicu pantulan Sahdan yang menyebut nama Nara. Di bangunan uji dekatnya terdengar potongan Hesta. Kedua suara tidak digabung menjadi satu pembicara.
+
+### Bab 1 - Asharim dan separuh Padang Salkara
+
+![Konsep Telaga Sumi](assets/telaga-sumi.png)
+
+
+
+Nara menemui Ima di Dusun Sela, mengantar ke Menara Batu Senja, lalu membawa Buku Tamu Batu melalui Telaga Sumi dan Balai Cawan. Kanal, Urat Sumi, adat Tiga Cawan, serta penyerahan catatan tamu kepada Dewan memperlihatkan ketergantungan ekonomi. Sumur memantulkan suara lebih keras.
+
+Orsa menjadi penghubung ke karavan. Lada biru dan tuduhan terhadap Bahtari muncul melalui kebutuhan bekal. Sidang Tujuh Panji berakhir buntu 3-3-1; Nara belum langsung menyelesaikan konflik. Tugas membawa janji membuatnya berhak kembali dengan bukti.
+
+### Bab 2 - Cirusia dan Tseren
+
+Batu Tepi Salkara memulai penyelidikan. Denah pos, arah angin dalam kesaksian warisan, catatan kapal, dan pengakuan tertutup yang akhirnya dibuka pemimpin Bara melengkapi bukti. Panji Batu Nama menentukan sikap setelah kesaksian sah; Cap Cirusia diberikan. Rekonsiliasi dengan Bahtari masih menunggu pengakuan langsung.
+
+Perjanjian leluhur mengarahkan Nara ke arsip Tseren. Sebutan Pra-Telan mengungkap salinan kemudian; perbedaan isi dan catatan pemindahan sumber membuktikan penyuntingan. Aliran Murni memberi akses, bukan membuka semua arsip hanya karena darah Nara. Cap Tseren membuka lapisan teks surat. Judul kode menunjuk Rumah Jejak di Lulanai. Nama Hesta pada daftar pemeriksaan menanam konteks peringatan dan modifikasi.
+
+Jalur naik langsung menuju pusat Lulanai ditutup akibat kerusakan serta pemeriksaan Dewan. Jalur aman masuk dari sisi selatan; pelayaran dan penghubung Rumah Layar diperlukan. Karena itu Nara turun ke Bahtari sekaligus menindaklanjuti kabar Tarun, bukan menunda kunjungan ke Wirna tanpa alasan. Rute memutar diisyaratkan sejak peta jalan dan pengantaran Bab 1.
+
+### Bab 3 - Lereng dan Bahtari
+
+Reruntuhan terlihat dari lereng. Di Bandar Lada, Dorin mempertemukan Nara dan Tarun. Utang berasal dari pencarian keluarga awak kapal yang hilang: Tarun berutang untuk verifikasi dan menanggung bagian awaknya. Bunga serta biaya sandar meningkat, surat keberangkatan ditahan, dan pembayaran lewat kerja membuatnya tidak dapat mengambil kapal sendiri. Ia pernah mengirim kabar melalui pos dagang yang ditahan kreditur. Bukti ini menjelaskan lima tahun tanpa kabar dan harus ditemukan sebelum reuni selesai.
+
+Rumah Layar menanggung jaminan kerja serta menyediakan tempat aman bagi Tarun selama sengketa diperiksa; ini bukan penghapusan otomatis utang. Tarun membantu menelusuri catatan kapal dan memberi pilihan untuk tetap menemani Nara. Kerang lama menambah sudut pandang karam, tanpa membuktikan semua hal sendirian. Orsa dan utusan membawa pengakuan Panji Bara kepada Bahtari. Pilihan pengantaran menentukan kesiapan saksi Bahtari.
+
+Taluk menawarkan jalur resmi dan pengawasan. Nara tetap memerlukan Wirna untuk memahami kode, lalu laporan terkini untuk modifikasi. Tarun bersama Dorin mengurus kapal dan jalur selatan ke Lulanai. Menemukan ayah menutup tujuan awal, lalu Nara memutuskan melanjutkan tanggung jawab bagi orang lain.
+
+### Bab 4A - Lulanai
+
+Penjaga hidup memperdebatkan sikap Pantang, Terbuka, dan Sesal. Pemain mendengar alasan masing-masing sebelum meminta akses. Tiga cap membuka kunci respons Jejak Wirna; kode surat dicocokkan dengan contoh dan struktur menara. Jejak Dahan memperlihatkan keberatan historis. Riwayat keluarga Ima terkonfirmasi tanpa menjadikan Nara pewaris kekuasaan.
+
+Di Simpul Pertama, Sahdan menjelaskan fungsi jangkar melalui ingatan terbatas. Nara melihat bahwa semua bentuk pelepasan mengakhiri penahanan lama; pengaturan bertahap membutuhkan pendengar penyetel untuk satu kalibrasi awal. Peran ini bukan hak turun-temurun. Penjaga menjelaskan biaya sebelum pemain mengikat pilihan. Satu penyintas meruntuhkan lorong kosong beban resonansi untuk memutus pengejaran; ia menanggung Bising sesudahnya.
+
+Wirna tidak mengetahui cabang Dewan. Catatan lapangan menunjukkan pelepasan sambil cabang berjalan berbahaya, sehingga Nara memerlukan laporan operasi dan penghentian di Benteng Tata. Konflik teknik lama dan laporan baru telah ditanam sejak Bab 2.
+
+### Bab 4B - Benteng Tata: perundingan dan jaminan
+
+Kesa mengajukan perundingan darurat berstatus pengantaran resmi, bukan menyelundupkan buronan lalu berharap lolos. Nama utusan, surat jalan pulang, dan tujuan Katup diumumkan di pos luar sebelum masuk. Sejak laporan Pos Dagang dan pemeriksaan batu uji menghubungkan kurir bercap Maren dengan anomali 009, Dewan menyadari Nara membawa kunci lama. Mereka mengejar untuk menyitanya sebelum memahami harga pengaktifan. Kabar peningkatan Gangguan serta undangan disalin kepada pos Asharim, utusan Cirusia, dan Rumah Layar. Penangkapan tidak lagi dapat ditutup sebagai hilangnya satu kurir.
+
+Saksi datang berdasarkan hubungan pemain. Jika Nama Baik rendah, lembaga tetap mengirim pengamat demi keselamatan jalur, tetapi menolak mandat pengawasan jangka panjang; ini menjaga semua ending dapat dicapai tanpa memberi kepercayaan tinggi gratis. Orsa atau Dorin dapat mewakili hubungan dekat; dukungan lembaga tidak memerlukan setiap tokoh hadir.
+
+Pertemuan dilakukan di pelataran serah-terima yang ditetapkan dalam surat jalan, dengan pengawal dua pihak. Nara membawa surat dalam tas dan tidak menyerahkannya sebagai syarat masuk. Wakil penyetel Dewan memeriksa pola kunci melalui bidang pemeriksaan tanpa mengambilnya. Surat dapat dirampas secara fisik, tetapi pemeriksaan paksa berisiko merusak tinta; Taluk memilih kerja sama karena tujuan utamanya pelepasan stabil, bukan sekadar memiliki kertas.
+
+Taluk memberi akses catatan Hesta dan tujuh laporan operasi setelah melihat temuan tekanan serta pola surat. Ia memerlukan penyetel, kapal, dan penerimaan lintas wilayah untuk mengelola jaringan sesudah krisis. Penyitaan di depan saksi akan menghilangkan kerja sama tersebut dan membuat para kepala penyetel enggan mengikuti rencana yang tidak disepakati. Alasan ini adalah kepentingan politik praktis, bukan kekebalan magis Nara.
+
+Kesepakatan tertulis mengikat langkah darurat saja: tujuh cabang dihentikan; saksi serta penyetel mendapat akses Katup; rombongan berangkat dan kembali di bawah surat jalan. Dewan mengirim penyetel serta pengawal, Rumah Layar menyediakan kapal dan awak, sedangkan pengantar membawa konfirmasi. Kesa memegang salinan mandat yang dapat diperlihatkan kepada pos-pos jalur. Semua pihak membawa sumber daya yang masih dibutuhkan pihak lain; tidak ada satu pihak memperoleh seluruh alat pelepasan hanya dengan menangkap Nara di gerbang.
+
+Taluk tetap menawar agar tata kelola akhir berada pada Dewan. Menyetujui penghentian bukan persetujuan akhir Terkendali. Ia membiarkan rombongan keluar karena perjanjian dan pembagian kerja memperbesar peluang keselamatan serta legitimasi. Bila pemain menolak monopoli di Katup, Taluk mempertahankan protes dan pengaruh politik, tetapi tidak memerintahkan penyalaan ulang yang akan mengancam jaringan dan rakyat yang ia ingin lindungi.
+
+### Bab 5 - Simpul Keseratus
+
+Sekitar 45-75 menit. Perintah penghentian sudah dikirim ketika rombongan meninggalkan Benteng. Waktu tunggu konfirmasi digunakan untuk pengantaran terakhir, penyiapan saksi, dan percakapan keluarga. Tarun mengemudikan kapal penghubung serta membawa balasan terakhir melalui rute pelaut yang telah diperkenalkan; Dorin dan awak dapat mengambil alih bila ia tetap di pos aman. Nara tetap menyelesaikan tugas pengantaran lokal dan mencocokkan tujuh catatan.
+
+Penyetel menguji keadaan Katup. Pemain melihat siapa yang bersedia mendampingi dan siapa yang hanya hadir sebagai pengamat. Pilihan akhir dibicarakan dengan harga yang telah diketahui. Tidak ada pengorbanan atau hukum baru yang diumumkan mendadak. Pelaksanaan pilihan berbeda dalam pengaturan, saksi, dan akibat, bukan hanya tiga tombol berwarna.
+
+Semua rute mengakhiri keadaan darurat dan mengubah tata kelola. Sesudahnya pemain melihat kabar pertama, keadaan pelabuhan, serta keluarga. Nara mengantar surat terakhir ke Dusun Sela. Keheningan saat menyentuh batu pada akhir Terverifikasi memperlihatkan kehilangan yang telah dimainkan sebelumnya.
+
+## 9. Daftar petunjuk dan pembicara
+
+| Petunjuk / sumber | Penemuan | Makna dan batas |
+| --- | --- | --- |
+| Instruksi luar / penyetel lama | Maren, Bab 0 | Tanda uji menjelaskan waktu pengantaran; bukan ramalan orang terpilih |
+| Nama Nara / Sahdan | Kontak surat di 009 | Pantulan jalur jangkar membaca cap; tidak membuka jaringan umum |
+| Peringatan nyala / Hesta | Batu uji dekat 009 | Jejak lokal tahun 58; konteks pada catatan Tseren dan laporan Benteng |
+| Tas lama / Juma | Pengantaran roti | Cerita serta catatan kakek, bukan ingatan saksi seratus tahun |
+| Lagu meleset / Bu Lamat | Pengantaran lagu | Ketidaksempurnaan manusia; tidak membuka mekanisme |
+| Nyanyian masak / Jejak tak lengkap | Tepi Salkara | Kehadiran Panji Bara, perlu denah, kesaksian, catatan, dan pengakuan |
+| Label Pra-Telan / penyalin | Arsip Tseren | Bukti penulisan kemudian; pemalsuan isi memerlukan sumber pembanding |
+| Karam / kerang lama | Bahtari | Sudut pandang kapal, tidak mengetahui kejadian di dapur pos |
+| Urutan pelepasan / Wirna | Lulanai | Pengetahuan lama dan contoh kode; tidak mengetahui cabang Dewan |
+| Modifikasi / Hesta dan kepala penyetel | Benteng | Menentukan prosedur penghentian terkini |
+| Biaya pendengar / penjaga dan uji alat | Bab 2 lalu Bab 4 | Menanam mekanisme kehilangan kepekaan sebelum pilihan akhir |
+
+## 10. Akhir cerita dan mekanisme harga
+
+Ketiga akhir sah. Tidak ada ending yang otomatis dipilih hanya oleh skor. Pemain harus menyatakan persetujuan setelah manfaat, risiko, dan harga diterangkan. Penghentian tujuh cabang serta kunci fisik berlaku untuk semua rute; perbedaannya adalah cara membuka dan siapa mengelola jaringan setelahnya.
+
+### 10.1 Terbuka
+
+Nara memilih pelepasan penuh melalui jalur keluar yang telah dirancang. Beban terkunci habis dialirkan; pengembalian layanan semua 100 titik tetap memerlukan pemeriksaan dan penyetelan lokal, bukan semua menara rusak mendadak pulih. Tidak ada saringan tunggal. Risiko kabar bohong dan konflik sejarah tinggi, sehingga kurir tetap diperlukan. Jejak jangkar Sahdan selesai dan lenyap; pembebasan tidak berarti ia hidup kembali sebagai manusia. Kepekaan Nara tetap ada.
+
+### 10.2 Terkendali
+
+Nara secara sadar menyerahkan pengelolaan kunci dan laju tetap kepada Dewan. Setelan terbatas melepas beban lama lewat saluran yang dapat dipantau dengan alat, lalu Dewan menyalakan layanan bertahap sesuai izin mereka. Proses ini lebih lambat dan mempertahankan monopoli. Sahdan tidak menjadi tahanan baru: fungsi jangkar berakhir setelah penahanan lama kosong. Dewan dapat menunda pengakuan sejarah dan mengatur siapa memperoleh layanan. Taluk menawarkan penebusan Utang Kabar Tarun secara tertulis sebagai bagian perjanjian, bukan hadiah gaib dari Katup.
+
+### 10.3 Terverifikasi
+
+Syaratnya Nama Baik tinggi di Asharim, Cirusia, Tseren, dan Bahtari: masing-masing bersedia memberi saksi, tenaga, dan pembiayaan pemeriksaan. Lulanai membantu teknik berdasarkan kepercayaan mendengar, tanpa cap kelima. Nara harus menyetujui kalibrasi awal beserta harganya.
+
+Pilihan ini memakai pengaturan bertahap yang menyesuaikan pantulan nyata dari cabang, bukan setelan tetap yang lebih lambat atau pelepasan penuh. Saat jangkar lama dilepas, seorang pendengar terlatih harus menyelaraskan cincin Katup dengan pantulan perubahan aliran selama satu kalibrasi awal. Paparan langsung menumpulkan kepekaan khusus terhadap Gema secara permanen. Pendengaran biasa, ingatan, dan kemampuan menjadi kurir tetap ada. Setelah pengaturan baru stabil, alat dan pemeriksaan penyetel mengambil alih; tidak diperlukan pengorbanan orang baru setiap pengiriman.
+
+Harga ini berasal dari teknik resonansi dan risiko paparan yang sama dengan Bising, bukan pembayaran moral yang diminta surat. Uji kecil di Tseren menunjukkan kepekaan dapat melemah setelah paparan; penjelasan penuh serta pilihan menolak diberikan di Lulanai. Penyetel yang sudah mengalami Bising tidak mampu membedakan pantulan halus dengan aman; kepala penyetel Dewan dapat menjalankan setelan tetap tetapi tidak memenuhi kalibrasi pendengar saat ini.
+
+Nara bukan satu-satunya manusia yang secara prinsip bisa melakukan tugas ini. Ia adalah pendengar yang sudah dilatih melalui perjalanan dan pemeriksaan di Lulanai, bersedia hadir pada saat krisis. Kandidat pengganti memerlukan latihan dan pengujian yang belum tersedia; memaksa penyintas bukan jalan tanpa biaya. Bila Nara menolak harga, dua cara aman lainnya tetap tersedia. Selama pelaksanaan, ia kehilangan kepekaan dan Sahdan selesai setelah kalimat terakhir.
+
+Kata Terverifikasi berarti asal pesan, kondisi penyerahan, dan saksi dapat ditelusuri. Kurir tidak memperoleh kemampuan membuktikan semua isi kabar. Sistem tetap lambat, mahal, dan rentan kesaksian yang dijual. Tarun menjadi salah satu saksi pertama, bukan satu-satunya orang yang mengesahkan dunia.
+
+### 10.4 Tarun, utang, dan epilog
+
+Pelepasan Gema tidak otomatis membatalkan kontrak utang. Bukti biaya palsu serta surat yang ditahan diproses melalui sengketa pelabuhan. Rumah Layar memberi jaminan sementara; akhir Terbuka atau Terverifikasi membuat peninjauan terbuka dimungkinkan, sementara kewajiban sah tetap dinegosiasikan. Pada Terkendali, penebusan Taluk mengikat Tarun dan Nara pada jasa Dewan. Karena dokumen keberangkatan dipulihkan melalui proses ini, Tarun dapat pulang tanpa menunggu utangnya hilang secara ajaib.
+
+Epilog seluruh akhir membawa Nara ke gerbang Dusun Sela untuk mengantar surat terakhir. Hubungan keluarga, cara kabar tiba, dan respons batu tua memperlihatkan perbedaan akibat. Kemenangan tidak menghapus biaya sosial, pengetahuan yang hilang, atau kebutuhan merawat jalur.
 
 ## 11. Motif dan tema berulang
 
-- **Lentera:** harapan dan penanda jalan, selalu kuning.
-- **Lagu yang meleset:** kebenaran tidak harus sempurna untuk bisa dipercaya.
-- **Tali:** hubungan antar manusia, dan alat yang menyambungkan jalur.
-- **Tas:** beban sekaligus warisan, dan ikon siluet Nara.
-- **Cap Saksi:** kepercayaan yang menempel secara fisik pada benda.
-- **Tekanan yang naik:** dunia yang tampak tenang menyimpan sesuatu yang tertahan seratus tahun.
-- **Cuaca Hari sebagai suasana batin:** Cerah berarti percaya, Berkabut berarti ragu, Badai berarti konflik, Malam Tenang berarti pengakuan.
+- Lentera: harapan dan penanda jalan, selalu kuning.
 
----
+- Lagu yang meleset: kebenaran tidak harus sempurna untuk bisa dipercaya.
 
-## 12. Keputusan, checklist, dan yang masih terbuka
+- Tali: hubungan antar manusia, dan alat yang menyambungkan jalur.
 
-### 12.1 Keputusan yang sudah diterapkan
+- Tas: beban sekaligus warisan, dan ikon siluet Nara.
 
-| Pertanyaan | Keputusan |
+- Cap Saksi: kepercayaan yang menempel secara fisik pada benda.
+
+- Tekanan yang naik: dunia yang tampak tenang menyimpan sesuatu yang tertahan seratus tahun.
+
+- Cuaca Hari sebagai suasana batin: Cerah berarti percaya, Berkabut berarti ragu, Badai berarti konflik, Malam Tenang berarti pengakuan.
+
+
+## 12. Keputusan dan pemeriksaan konsistensi
+
+## 12.1 Ketetapan utama
+
+Nama dunia Tanah Sada. Jumlah Simpul 100, tujuh dioperasikan Dewan secara parsial. Simpul Pertama adalah jangkar, Sembilan lintasan Garis Surut, dan Keseratus Katup dengan ruang penahan di bawah pulau. Titik tambahan atlas tetap rancangan. Jalur sungai-laut serta pelabuhan mendukung kehidupan Bahtari.
+
+Cerita menggunakan Bab 0-5, demo sekitar satu jam dan kelanjutan 8-10 jam. Tanpa pertarungan dan tanpa timer real-time. Bab 3 adalah titik balik emosional bersama Tarun; Bab 4 menyelesaikan pengetahuan dan perundingan; Bab 5 melaksanakan pilihan.
+
+Keluarga: Ima nenek dari pihak ibu, ibu wafat, Tarun ayah Bahtari. Kait Tali dihapus. Dahan adalah Jejak tokoh masa lalu. Hesta hadir lewat catatan dan Jejak setempat tahun 58. Asal Ruru tetap misteri. Dorin hidup dan satu jaringan Rumah Layar dengan Tarun.
+
+Cap mencatat pembawa dan penyaksi, terpisah dari Nama Baik. Tidak ada penilaian moral atau verifikasi dusta oleh Gema. Tiga cap membuka teks; contoh kode Wirna menjelaskan jaringan lama; laporan Benteng menjelaskan modifikasi; ketiganya memiliki fungsi berbeda. Surat dapat berpindah pembawa secara sah.
+
+Resonansi Arsitek bukan hukum kesepuluh. Harga Terverifikasi adalah hilangnya kepekaan Gema setelah kalibrasi, bukan kehilangan pendengaran biasa. Semua akhir mengakhiri fungsi jangkar; Sahdan tidak hidup kembali. Utang Tarun diselesaikan lewat tindakan hukum dan politik, bukan nyala menara.
+
+## 12.2 Checklist audit yang sudah diterapkan
+
+- Usia, tahun, serta saksi langsung dibedakan dari cerita warisan dan Jejak.
+- Surat dan tas memiliki satu rantai penjaga lengkap. Instruksi uji menjelaskan penundaan dan pemicu keberangkatan.
+- Sahdan hanya berbicara pada jalur dan keadaan yang ditetapkan. Peringatan Simpul Terang berasal dari Hesta, bukan pengetahuan masa depan Sahdan.
+- Kepekaan Nara menghasilkan petunjuk terbatas; bukti pembanding serta pengakuan tetap diperlukan.
+- Pelabelan Pra-Telan tidak sendirian membuktikan pemalsuan isi.
+- Cap wajib tidak otomatis menghasilkan Nama Baik tinggi. Dukungan darurat minimum tidak sama dengan mandat jangka panjang.
+- Benteng memiliki laporan dan pengendalian yang diperlukan. Jaminan, sumber daya, kepentingan Taluk, dan surat jalan menjelaskan masuk serta keluar rombongan.
+- Penghentian tujuh cabang memiliki cara konfirmasi fisik dan tidak menghapus beban terkunci. Semua ending menjalankan persiapan aman yang sama.
+- Tarun tetap bertindak setelah ditemukan. Lima tahun kabar terputus mempunyai sebab serta bukti yang dapat ditemukan.
+- Mekanisme pengorbanan ditanam sebelum akhir; Nara bukan kunci darah eksklusif.
+- Tidak ada pengetahuan atau kemampuan baru yang muncul mendadak untuk menyelesaikan klimaks.
+
+## 12.3 Rincian produksi yang masih terbuka
+
+Nama pribadi pemimpin Bara dan Batu Nama serta tiga wakil kaum Lulanai; nama ibu Nara dan riwayat wafatnya; fauna, flora, dan variasi dialek; jumlah Simpul tambahan yang benar-benar dikunjungi; bentuk antarmuka Nama Baik; rincian level, puzzle, serta lama tiap pengantaran. Fungsi tokoh dapat ditulis memakai gelar sehingga tidak menunda alur.
+
+Bagian ini tidak membuka kembali mekanisme utama yang telah ditetapkan. Temuan audit berikutnya tetap boleh merevisi ketetapan secara eksplisit; dokumen ini tidak mengklaim kebal dari seluruh plot hole.
+
+## Lampiran A. Inspirasi pengembang - di luar teks dunia
+
+Referensi dipakai sebagai kajian fungsi infrastruktur dan ekonomi, bukan izin menyalin adat, simbol, atau busana secara langsung. Istilah berikut tidak digunakan oleh tokoh Tanah Sada.
+
+| Bagian | Rujukan kerja dan unsur yang dipelajari |
 | --- | --- |
-| Nama dunia utama | **Tanah Sada** (menggantikan sebutan lama Tanah Lintas) |
-| Fondasi asal-usul & politik lima bangsa | Lima bangsa ditempa oleh geografi ekstrem dan kontrak sosial pra-Simpul: Pakta Sumur Terbuka (Asharim), Kanon Aksara (Tseren), Sumpah Api Tujuh Panji (Cirusia), Hukum Sauh & Lagu (Bahtari), dan Ikatan Penyetel (Lulanai) |
-| Struktur Tujuh Panji Cirusia | Tujuh klan dengan kebuntuan politik 3–3–1: 3 Panji Tua (Bara, Tanduk Besi, Angin Debu), 3 Panji Muda (Tali Panjang [klan Orsa], Roda Kempa, Bintang Rendah), dan 1 Panji Penengah/Suara Penentu (Panji Batu Nama) |
-| Penanggalan sebelum tahun 0 | Tseren memakai Tahun Simpul. Pra-Telan baru ada setelah Telan |
-| Kapan Kabar Tujuh Musim | 3 Pra-Telan, berlangsung tujuh musim. Jaringan liar sekitar 1 Pra-Telan |
-| Versi resmi Dewan | Ajaran Tata |
-| Sumber teknik Simpul Terang | Pembelot Lulanai Hesta, tahun ke-52, catatan tak utuh |
-| Sahdan dan Wirna | Sahdan jangkar batu Simpul Pertama. Wirna wafat, meninggalkan Jejak Wirna |
-| Tarun | Hidup, tertahan oleh Utang Kabar di Bandar Lada |
-| Surat Penyalaan | Kunci Jejak dengan seratus tanda penyetel dan Cap Saksi tiga bangsa |
-| Harga Terverifikasi | Nara kehilangan kepekaan pada Gema, Sahdan lenyap, Ikatan Pengantar menanggung beban baru |
-| Gender Nara | Teks sengaja netral. Pilihan pemain bisa ditambahkan tanpa mengubah cerita |
-| Nama wilayah padang | Padang Salkara dan Tepi Salkara |
-| Nama bangsa pelaut | Bahtari |
-| Nama bangsa penyetel | Lulanai |
+| Asharim | Baghdad Abbasiyah, Samarkand, qanat Persia, dan jejaring Jalur Sutra: pengelolaan air, persinggahan, dan pertukaran pengetahuan |
+| Tseren | Sentra kertas Huizhou pada masa Song serta bangunan tebing Shanxi: bahan tulis, perlindungan arsip, dan kuasa administrasi |
+| Cirusia | Jejaring Sogdiana, konfederasi Kipchak, serta kajian Pashtunwali dan Xeer: logistik bergerak dan kesaksian lisan; tidak disamakan satu budaya |
+| Bahtari | Kepulauan rempah Nusantara dan kontrak pelayaran Venesia: ketergantungan komoditas, risiko laut, serta modal pelayaran |
+| Dewan Tol | Badan monopoli dagang dan administrasi sensor pos: pergeseran pengelolaan layanan menjadi penguasaan akses |
+| Lulanai | Perancangan fiksi khusus melalui ruang, batu, resonansi, dan tanggung jawab teknik; tidak dimodelkan pada satu bangsa nyata |
 
-### 12.2 Checklist konsistensi dunia
+## Lampiran B. Dasar penyuntingan
 
-- **Timeline 100 tahun:** Usia tiap karakter sesuai tahun 100 (Nara tujuh belas tahun, lahir tahun 83). Tidak ada tokoh biasa yang mengaku menyaksikan langsung peristiwa sebelum kelahirannya.
-- **Gema dan Lulanai:** Gema selalu butuh medium fisik dan tidak bisa menilai kebenaran pesan. Gema tidak memindahkan benda fisik, sehingga kurir tetap relevan.
-- **Sejarah, bangsa, dan Dewan:** Tiap bangsa punya alasan ekologis, historis, dan politis yang masuk akal untuk versinya. Masyarakat mendapat manfaat nyata dari keteraturan Dewan Tol.
+Revisi disusun dari Story Bible lengkap awal, audit Claude, garis besar Bab 0-4, keputusan pengguna tentang sepuluh pilihan, penambahan Bab 5, dan penutupan celah lanjutan. Kompendium bangsa, adat, ekonomi, motif, serta prinsip kreatif tetap dipertahankan dan diselaraskan. Atlas adalah rancangan permukaan, bukan penguncian seluruh lokasi.
 
-### 12.3 Yang masih terbuka
-
-1. Berapa Simpul yang dikunjungi di game penuh? (Usulan: satu atau dua di tiap wilayah, bukan seratus).
-2. Asal Ruru (Usulan: tetap misteri, dengan petunjuk bahwa ia peka pada Gema).
-3. Nasib Dorin dan hubungannya dengan Tarun (Usulan: satu jaringan pelaut di bawah Rumah Layar).
-4. Bentuk fisik dan lokasi tepat Bendungan di Simpul Keseratus.
-5. Apakah tenggat tekanan Bendungan dirasakan sebagai mekanik atau hanya lewat cerita.
-6. Apakah Hesta muncul sebagai karakter atau hanya lewat catatannya.
-7. Mana akhir yang kanon (Usulan: tidak ada. Ketiganya sah, dan Terverifikasi adalah yang paling menantang).
-8. Nama tokoh pemimpin spesifik di tiap bangsa.
-9. Rincian fauna dan flora khas tiap wilayah di Tanah Sada.
-10. Bahasa dan variasi dialek.
-11. Bagaimana Kaum Pantang, Terbuka, dan Sesal muncul sebagai tokoh individu di Reruntuhan Hening.

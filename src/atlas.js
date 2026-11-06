@@ -2,21 +2,21 @@
   'use strict';
   const $ = id => document.getElementById(id);
   const characters = [
-    {id:'nara',name:'Nara',story:'Nara, tujuh belas tahun, dari Dusun Sela. Menjadi kurir supaya tidak ada orang yang menunggu sendirian, setelah kabar ayahnya terputus pada tahun 95.',icon:'bag'},
-    {id:'ruru',name:'Ruru',story:'Pendamping kecil bertelinga besar. Lentera di ekornya membantu menjaga kehangatan dan arah di hari berkabut.',icon:'ruru'},
-    {id:'maren',name:'Maren',story:'Kepala Pos Batu Biru. Jubah terakota dan selendang biru batu membawa kehangatan pos singgah ke dalam siluetnya.',icon:'letter'},
-    {id:'juma',name:'Juma',story:'Penjaga Menara Batu Senja. Topi lebar dan teropong kuningan menjadi ciri yang terbaca dari kejauhan.',icon:'compass'},
-    {id:'bulamat',name:'Bu Lamat',story:'Tetua Telaga Sumi. Kain teal dan jingga mengingatkan pada kabar dari kepulauan Bahtari.',icon:'shell'},
-    {id:'kesa',name:'Kesa',story:'Petugas Dewan Tol. Jubah gelap dan tanda jabatan menyiratkan ketertiban; ia tetap seseorang di balik perintah.',icon:'seal'},
-    {id:'pedagang',name:'Pedagang lembah',story:'Pengembara yang membawa kain, cangkir, dan rumor. Topi anyaman memisahkannya dari para penjaga pos.',icon:'journal'}
+    {id:'nara',name:'Nara',story:'Nara, tujuh belas tahun, dari Dusun Sela. Menjadi kurir supaya tidak ada orang yang menunggu sendirian setelah ayahnya, Tarun (kurir darat asal Bahtari), hilang di sekitar Sabuk Dalam pada tahun 95.',icon:'bag'},
+    {id:'ruru',name:'Ruru',story:'Pendamping kecil bertelinga besar yang sudah menemani Nara sejak Pos Batu Biru. Lentera di ekornya membantu membaca jejak resonansi dan arah di hari berkabut.',icon:'ruru'},
+    {id:'maren',name:'Maren',story:'Kepala Pos Batu Biru dan penjaga keempat Surat Penyalaan serta tas berinsulasi titipan Sahdan (Sarai → Bahar → Ilun → Maren).',icon:'letter'},
+    {id:'juma',name:'Juma',story:'Penjaga Menara Batu Senja yang menyimpan buku harian kakeknya tentang kedatangan Sahdan di Pos Batu Biru malam sebelum pemutusan.',icon:'compass'},
+    {id:'bulamat',name:'Bu Lamat',story:'Tetua Telaga Sumi asal Bahtari. Menjaga sumur beresonansi Urat Sumi dan menunggu Kerang Suara kiriman keponakannya, Dorin.',icon:'shell'},
+    {id:'kesa',name:'Kesa',story:'Petugas muda Gerbang Dewan Tol yang ragu melihat surat warga dan laporan bahaya Simpul Terang ditahan atas nama kuota.',icon:'seal'},
+    {id:'pedagang',name:'Pedagang lembah',story:'Pengembara yang membawa kabar pergesekan Kubu Pos Tua (Buku Tamu Batu) melawan Kubu Pos Dagang serta dengung bangunan uji 009.',icon:'journal'}
   ];
   const props = [
-    {id:'bag',name:'Tas Pengantar',story:'Tas kulit dengan segel kuningan. Ikon pekerjaan Nara sekaligus wadah berinsulasi resonansi untuk menjaga Surat Penyalaan.',icon:'bag',category:'PERLENGKAPAN'},
-    {id:'grapple',name:'Kait Tali',story:'Titik kait berpendar menandai tujuan tarikan. Cincin dan aksen lentera membuat jalur terbaca dalam kabut.',icon:'grapple',category:'TRAVERSAL'},
+    {id:'bag',name:'Tas Pengantar',story:'Tas kulit berinsulasi resonansi yang ditinggalkan Sahdan bersama surat di Pos Batu Biru, lalu dipinjamkan Maren kepada Nara sebelum tugas pertama.',icon:'bag',category:'PERLENGKAPAN'},
+    {id:'grapple',name:'Tali Lintas',story:'Tambatan tali berlentera untuk menyeberangi ngarai dan tebing curam di Lembah Pasir.',icon:'grapple',category:'TRAVERSAL'},
     {id:'ladder',name:'Tangga Tali',story:'Dua tali dan pijakan kayu yang menyambung ketinggian. Struktur sederhana yang dapat menetap di perjalanan.',icon:'ladder',category:'TRAVERSAL'},
-    {id:'bread',name:'Roti Rempah',story:'Paket pertama untuk Juma. Sebuah keseharian kecil mengawali perjalanan menuju misteri yang lebih besar.',icon:'bread',category:'PAKET CERITA'},
-    {id:'shell',name:'Kerang Suara',story:'Wadah lagu dari Bahtari. Benda kecil yang perlu dijaga agar ingatan di dalamnya tiba dengan selamat.',icon:'shell',category:'PAKET CERITA'},
-    {id:'letter',name:'Surat Bersegel',story:'Kunci Jejak dengan seratus tanda penyetel. Dijaga Sarai, Bahar, Ilun, lalu Maren; segel memerlukan Cap Saksi tiga bangsa.',icon:'letter',category:'PAKET CERITA'},
+    {id:'bread',name:'Roti Rempah',story:'Paket pertama untuk Juma di Menara Batu Senja. Kehangatannya membuka cerita buku harian kakek Juma tentang Sahdan.',icon:'bread',category:'PAKET CERITA'},
+    {id:'shell',name:'Kerang Suara',story:'Wadah lagu dari Dorin (Rumah Layar) untuk Bu Lamat. Nada sumbang di ujungnya membuktikan keaslian suara manusia.',icon:'shell',category:'PAKET CERITA'},
+    {id:'letter',name:'Surat Penyalaan',story:'Kunci Jejak dengan seratus tanda penyetel. Dijaga Sarai, Bahar, Ilun, lalu Maren; segel memerlukan Cap Saksi tiga bangsa dan memuat instruksi luar untuk diuji di 009.',icon:'letter',category:'PAKET CERITA'},
     {id:'lantern',name:'Lentera jalur',story:'Cahaya kuning hangat menjadi bahasa petunjuk yang sama di pos, tebing, dan reruntuhan.',icon:'checkpoint',category:'PENANDA DUNIA'},
     {id:'checkpoint',name:'Pos Singgah',story:'Penanda peristirahatan dan perjalanan yang telah dicapai. Bentuk batu dan cahaya mengikat fungsi dengan dunia.',icon:'checkpoint',category:'PENANDA DUNIA'},
     {id:'sign',name:'Penunjuk jalan',story:'Papan sederhana bagi para kurir. Membantu membaca persimpangan tanpa mengisi cakrawala dengan antarmuka.',icon:'compass',category:'PENANDA DUNIA'},
@@ -29,7 +29,7 @@
     {id:'palm',name:'Palem oasis',story:'Batang melengkung dan daun yang terbuka menjadi janji air di antara bentangan pasir.',icon:'sand',category:'ALAM'},
     {id:'rock',name:'Batuan lembah',story:'Bidang batu besar dengan palet pudar. Detailnya cukup untuk dibaca, tanpa menghilangkan keheningan lanskap.',icon:'rock',category:'ALAM'}
   ];
-  const icons = [['bag','Tas pengantar'],['bread','Roti rempah'],['shell','Kerang suara'],['letter','Surat bersegel'],['grapple','Kait tali'],['ladder','Tangga tali'],['cape','Jubah layar'],['compass','Arah tujuan'],['map','Peta jalur'],['journal','Buku Jalur'],['checkpoint','Pos singgah'],['sun','Hari hangat'],['fog','Hari berkabut'],['storm','Badai pasir'],['ruru','Ruru'],['rock','Batu'],['sand','Pasir lunak'],['cliff','Tebing curam'],['seal','Nama Baik'],['close','Tutup'],['pause','Jeda'],['volume','Suara'],['moon','Malam tenang'],['save','Simpan perjalanan']];
+  const icons = [['bag','Tas pengantar'],['bread','Roti rempah'],['shell','Kerang suara'],['letter','Surat Penyalaan'],['grapple','Tali lintas'],['ladder','Tangga tali'],['cape','Jubah layar'],['compass','Arah tujuan'],['map','Peta jalur'],['journal','Buku Jalur'],['checkpoint','Pos singgah'],['sun','Hari hangat'],['fog','Hari berkabut'],['storm','Badai pasir'],['ruru','Ruru'],['rock','Batu'],['sand','Pasir lunak'],['cliff','Tebing curam'],['seal','Nama Baik'],['close','Tutup'],['pause','Jeda'],['volume','Suara'],['moon','Malam tenang'],['save','Simpan perjalanan']];
   let kind='character', selected='nara', pose='idle', renderer=null, scene, camera, stage, model=null;
   let azimuth=.38, elevation=.28, distance=5.8, elapsed=0, last=0, drag=null, frame=0, inView=true;
   const correctedMaterials=new WeakSet();

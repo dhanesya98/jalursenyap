@@ -6,32 +6,32 @@
   "nodes": {
     "start": {
       "speaker": "Maren",
-      "text": "Berhenti di situ. Tas itu... Kamu tahu siapa pemilik sebelumnya?",
+      "text": "Teduh di jalanmu, Nara. Ruru sudah sejak pagi mengendus di dekat meja surat. Sebelum kamu mulai magang di tengah desakan Pos Dagang dan patroli Dewan ini, pakailah tas pengantar tua itu.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Tas ini diwariskan di Dusun Sela. Nenek Ima bilang pemilik pertamanya seorang kurir bernama Sahdan.",
+      "text": "Air di langkahmu, Bu Maren. Benang bagian dalamnya terasa berbeda dari tas biasa di Dusun Sela. Siapa pemilik sebelumnya?",
       "next": "maren_2"
     },
     "maren_2": {
       "speaker": "Maren",
-      "text": "Sahdan. Jahitannya masih bertahan setelah seratus tahun. Selamat datang di Pos Batu Biru, Nara. Teduh di jalanmu.",
+      "text": "Seorang kurir bernama Sahdan, seratus tahun lalu, sebelum Tahun Telan. Nenek Sarai menyimpannya di pos ini, lalu Bahar, Ilun, dan kini aku. Aku meminjamkannya kepadamu untuk tugas pertamamu.",
       "next": "nara_2"
     },
     "nara_2": {
       "speaker": "Nara",
-      "text": "Air di langkahmu, Bu Maren. Aku ingin belajar mengantar kabar. Ayahku berlayar lima tahun lalu. Kami masih menunggu suratnya.",
+      "text": "Aku akan menjaganya, Bu. Ayahku, Tarun, kurir darat asal Bahtari, hilang dalam tugas di sekitar Sabuk Dalam lima tahun lalu pada tahun 95. Aku menjadi kurir supaya tidak ada lagi keluarga yang menunggu sendirian.",
       "next": "maren_3"
     },
     "maren_3": {
       "speaker": "Maren",
-      "text": "Di sini kamu akan bertemu banyak orang yang menunggu. Mulailah dengan roti rempah untuk Juma di Menara Batu Senja, bukit utara. Dia berharap rotinya sampai selagi hangat.",
+      "text": "Di Pos Batu Biru ini kita menjaga Hukum Air meski bea jalur mencekik. Mulailah dengan mengantar roti rempah untuk Juma di Menara Batu Senja, bukit utara. Dia berharap rotinya sampai selagi hangat.",
       "next": "maren_tut"
     },
     "maren_tut": {
       "speaker": "Maren",
-      "text": "Jaga paket dan pijakanmu. Spasi untuk melompat; tahan saat turun untuk membuka Jubah Layar. Ruru bisa membantu membaca medan dengan Q, tetapi keputusan jalan tetap milikmu.",
+      "text": "Jaga paket dan pijakanmu. Spasi untuk melompat; tahan saat turun untuk membuka Jubah Layar. Ruru sudah siap mendampingimu membaca medan dengan Q.",
       "action": "ACCEPT_DELIVERY_1"
     }
   }
