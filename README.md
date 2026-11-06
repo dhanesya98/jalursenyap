@@ -54,11 +54,11 @@ Dunia **Tanah Sada** terinspirasi dari prinsip jalur dagang kuno (*Silk Road*) d
 | **Shift** | Lari cepat (*Sprint*) |
 | **Spasi** | Melompat; tahan saat jatuh untuk membuka **Jubah Layar** (*Glide*) |
 | **Mouse** | Mengarahkan kamera; klik layar untuk mengunci kursor, `Esc` untuk melepas |
-| **E** | Berbicara dengan NPC, memeriksa pos, memanjat tangga / tepian bertanda |
-| **F** | Menyeberangi **Tali Lintas** pada tambatan tali berlentera |
-| **L** | Memasang **Tangga Tali** permanen di penanda tebing |
+| **E** | Interaksi kontekstual: bicara dengan NPC, periksa pos/altar, panjat & pasang Tangga Tali |
+| **F** / **Klik Kanan** | Menyeberangi **Tali Lintas** pada tambatan tali berlentera |
 | **Q** | Pindai kontur medan dan arah tujuan bersama Ruru (*cooldown* 12 detik) |
-| **J** | Membuka **Buku Jalur** (Peta, Pengantaran, Catatan & Nama Baik, Lima Bangsa, Perlengkapan) |
+| **Tab** / **J** | Membuka **Buku Jalur** (Kompendium in-game: Tugas/Quests, Cerita/Lore, Lima Bangsa, Perlengkapan/Gear) |
+| **M** | Membuka **Peta Wilayah** (Kartografi ekspedisi Lembah Pasir, elevasi kontur & rute) |
 | **H** / **Esc** | Panduan bantuan / Menu jeda (*Pause*) |
 
 ### Tips Perjalanan:
