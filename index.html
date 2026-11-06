@@ -12,6 +12,17 @@
 </section>
 <div id="hud" class="hidden">
  <div class="hud-left"><button id="journal-button" class="icon-button" aria-label="Buka Buku Jalur (Tab)"><img src="assets/icons/journal.svg" alt=""><span>Buku Jalur <kbd>Tab</kbd></span></button><button id="map-button" class="icon-button" aria-label="Buka Peta Wilayah (M)"><img src="assets/icons/map.svg" alt=""><span>Peta <kbd>M</kbd></span></button><span id="save-status" role="status">Tersimpan</span></div>
+ <aside id="quest-tracker" class="quest-tracker" aria-label="Pelacak Tugas">
+  <div class="quest-tracker-badge-row">
+   <span id="quest-stage-tag" class="quest-stage-tag">BAB 0 · POS BATU BIRU</span>
+   <span id="quest-distance-pill" class="quest-distance-pill"><i class="compass-mini">🧭</i> <span id="quest-distance-val">-- m</span></span>
+  </div>
+  <h2 id="quest-tracker-title" class="quest-tracker-title">Temui Maren di paviliun</h2>
+  <p id="quest-tracker-hint" class="quest-tracker-hint">Ruru menunggu di halaman. Dekati Maren dan tekan E.</p>
+  <div id="quest-tracker-footer" class="quest-tracker-footer">
+   <span id="quest-tracker-prompt" class="quest-tracker-prompt"><kbd>E</kbd> <span id="quest-tracker-prompt-text">Bicara dengan Maren</span></span>
+  </div>
+ </aside>
  <div class="hud-center"><div id="weather"><img id="weather-icon" src="assets/icons/sun.svg" alt=""><span id="weather-text">Hari Hangat</span></div><p id="objective">Temui Maren</p><div class="compass"><span>B</span><div class="compass-rule"><span id="direction-tick">◆</span></div><span>T</span><small id="distance"></small></div></div>
  <button id="pause-button" class="icon-button hud-right" aria-label="Jeda permainan"><img src="assets/icons/pause.svg" alt=""><kbd>Esc</kbd></button>
  <div id="reticle" aria-hidden="true">·</div><div id="grapple-marker" class="hidden" aria-hidden="true"><span>◎</span><small id="grapple-label"></small><kbd>F</kbd></div>

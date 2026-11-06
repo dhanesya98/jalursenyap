@@ -4,14 +4,14 @@
  class Player {
   constructor(world,state,bus){this.world=world;this.state=state;this.bus=bus;this.position=new THREE.Vector3(0,0,46);this.velocity=new THREE.Vector3();this.yaw=Math.PI;this.grounded=true;this.gliding=false;this.glideLeft=4.5;this.airPeak=0;this.flight=null;this.keys={};this.surface='sand';this.lastStep=0;}
   resetInput(){this.keys={};}
-  setPosition(p){this.position.fromArray(p);this.position.y=Math.max(this.position.y,this.world.terrain.height(p[0],p[2]));this.velocity.set(0,0,0);this.grounded=true;this.flight=null;this.airPeak=this.position.y;this.resetInput();}
+  setPosition(p){this.position.fromArray(p);this.position.y=Math.max(this.position.y,this.world.terrain.height(p[0],p[2],p[1]!==undefined?p[1]:Infinity));this.velocity.set(0,0,0);this.grounded=true;this.flight=null;this.airPeak=this.position.y;this.resetInput();}
   jump(){if(this.flight)return;if(this.grounded){this.velocity.y=9.8;this.grounded=false;this.airPeak=this.position.y;this.bus.emit('jump');}}
   travelTo(target,type='grapple'){
-   if(this.flight)return false;const start=this.position.clone(),end=target.clone();end.y=this.world.terrain.height(end.x,end.z)+.08;const d=start.distanceTo(end);if(d>58)return false;
+   if(this.flight)return false;const start=this.position.clone(),end=target.clone();end.y=this.world.terrain.height(end.x,end.z,end.y)+.08;const d=start.distanceTo(end);if(d>58)return false;
    let rise=type==='grapple'?7:.5;
-   for(let i=1;i<40;i++){const t=i/40,x=THREE.MathUtils.lerp(start.x,end.x,t),z=THREE.MathUtils.lerp(start.z,end.z,t),base=THREE.MathUtils.lerp(start.y,end.y,t),den=4*t*(1-t);rise=Math.max(rise,(this.world.terrain.height(x,z)+.4-base)/den);}
+   for(let i=1;i<40;i++){const t=i/40,x=THREE.MathUtils.lerp(start.x,end.x,t),z=THREE.MathUtils.lerp(start.z,end.z,t),base=THREE.MathUtils.lerp(start.y,end.y,t),den=4*t*(1-t);rise=Math.max(rise,(this.world.terrain.height(x,z,base)+.4-base)/den);}
    rise=Math.min(rise,35);
-   for(let i=1;i<60;i++){const t=i/60,p=start.clone().lerp(end,t);p.y+=4*rise*t*(1-t);if(this.world.isBlocked(p,.38)||p.y<this.world.terrain.height(p.x,p.z)-.05)return false;}
+   for(let i=1;i<60;i++){const t=i/60,p=start.clone().lerp(end,t);p.y+=4*rise*t*(1-t);if(this.world.isBlocked(p,.38)||p.y<this.world.terrain.height(p.x,p.z,p.y)-.05)return false;}
    this.flight={start,end,rise,t:0,duration:Math.max(.65,d/(type==='grapple'?25:5)),type};this.grounded=false;this.gliding=false;this.velocity.set(0,0,0);this.bus.emit(type);return true;
   }
   update(dt,camYaw,elapsed){
@@ -29,11 +29,11 @@
    const alpha=1-Math.exp(-15*dt);this.velocity.x=THREE.MathUtils.lerp(this.velocity.x,x*speed,alpha);this.velocity.z=THREE.MathUtils.lerp(this.velocity.z,z*speed,alpha);
    const next=p.clone();next.x+=this.velocity.x*dt;next.z+=this.velocity.z*dt;
    if(weather==='berat'&&!this.world.isSheltered(p)){const wind=(Math.sin(elapsed*.8)*.5+.7);next.x+=wind*dt*(this.gliding?2.8:.32);}
-   if(this.grounded){const slope=this.world.terrain.slope(p.x,p.z),rise=this.world.terrain.height(next.x,next.z)-this.world.terrain.height(p.x,p.z);if(slope.magnitude>.9&&rise>.015){next.x=p.x;next.z=p.z;this.velocity.x*=.6;this.velocity.z*=.6;}}
+   if(this.grounded){const slope=this.world.terrain.slope(p.x,p.z),rise=this.world.terrain.height(next.x,next.z,p.y)-this.world.terrain.height(p.x,p.z,p.y);if(slope.magnitude>.9&&rise>.015){next.x=p.x;next.z=p.z;this.velocity.x*=.6;this.velocity.z*=.6;}}
    this.world.resolveCollision(next,.4);p.x=clamp(next.x,-211,211);p.z=clamp(next.z,-211,211);p.y+=this.velocity.y*dt;
-   this.airPeak=Math.max(this.airPeak,p.y);const ground=this.world.terrain.height(p.x,p.z);
+   this.airPeak=Math.max(this.airPeak,p.y);const ground=this.world.terrain.height(p.x,p.z,p.y);
    if(p.y<=ground+.01&&this.velocity.y<=0){if(!this.grounded&&this.airPeak-ground>6){this.state.damage((this.airPeak-ground-6)*6);this.bus.emit('land',this.airPeak-ground);}p.y=ground;this.velocity.y=0;this.grounded=true;this.gliding=false;this.glideLeft=4.5;this.airPeak=p.y;}else if(this.grounded&&p.y-ground<.35){p.y=ground;this.velocity.y=0;this.airPeak=p.y;}else this.grounded=false;
-   if(p.y<-10.5){this.bus.emit('respawn');}
+   if(p.y<-18){this.bus.emit('respawn');}
    if(norm&&this.grounded){this.lastStep+=dt;if(this.lastStep>(sprint?.27:.4)){this.lastStep=0;this.bus.emit('step',this.surface);}}
   }
  }
