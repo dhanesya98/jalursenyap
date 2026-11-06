@@ -1,0 +1,57 @@
+{
+  "id": "kesa_detention",
+  "npc": "Kesa",
+  "title": "Pemeriksaan gerbang timur",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Kesa",
+      "text": "Berhenti dulu. Dua ikat perbekalan untuk pos saudara? Surat jalannya terbit sebelum perintah penutupan yang baru.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Mereka menampung pengembara. Perbekalan ini diperlukan hari ini. Apakah ada petugas yang bisa meneruskannya?",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Kesa",
+      "text": "Aku sudah meminta izin. Belum ada jawaban. Satu ikat harus tetap di sini untuk pemeriksaan; satu bisa kaubawa kembali. Aku tidak bisa menyatakan keduanya telah sampai.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Jadi yang menunggu di pos saudara juga belum boleh tahu kapan barangnya datang?",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Kesa",
+      "text": "Itulah yang sedang kupersoalkan. Perintahnya jelas tentang apa yang harus ditahan, sangat sedikit tentang orang yang menunggu.",
+      "next": "n5"
+    },
+    "choice_0": {
+      "speaker": "Kesa",
+      "text": "Baik. Satu ikat ditahan, satu dikembalikan, tujuan belum tercapai. Ini salinan dengan tandaku. Pembungkus sisanya tergores angin; periksa sebelum membawanya.",
+      "action": "DETAIN_RECEIPT"
+    },
+    "choice_1": {
+      "speaker": "Kesa",
+      "text": "Gunakan kain cadanganmu. Aku akan menaruh tanda pemeriksaan di bawah pengikatnya: satu ditahan, satu dikembalikan. Datanglah ke meja saat sudah aman.",
+      "action": "DETAIN_PROTECT"
+    },
+    "n5": {
+      "speaker": "Kesa",
+      "text": "(Angin mengangkat tepi pembungkus di meja. Kesa menahan surat jalan dengan telapak tangan.) Cepat, pilih dulu yang perlu kauamankan. Aku akan mencatat penahanan ini.",
+      "choices": [
+        {
+          "text": "“Tuliskan jumlah dan alasan penahanannya dahulu.”",
+          "next": "choice_0"
+        },
+        {
+          "text": "“Aku lindungi ikat yang dikembalikan lebih dulu.”",
+          "next": "choice_1"
+        }
+      ]
+    }
+  }
+}

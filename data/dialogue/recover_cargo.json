@@ -1,0 +1,28 @@
+{
+  "id": "recover_cargo",
+  "npc": "Nara",
+  "title": "Sisa barang di meja pemeriksaan",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Hanya satu ikat yang boleh kuambil kembali. Ikat lain dipindahkan ke sisi petugas. Aku mencocokkan jumlah dengan tanda pemeriksaan Kesa.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku memeriksa bungkus yang dikembalikan, merapikan pengikat, dan menyimpan tanda pemeriksaan di bagian kering tas. Tujuan di pos saudara belum tercapai.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Kesa",
+      "text": "Bawalah kabar ini kepada Maren. Jangan bilang kirimannya hilang. Kami menahannya, dan aku akan menjawab jika ia meminta penjelasan.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Aku akan menyampaikan itu. Ayo, Ruru. Kita pulang dengan yang masih bisa kita jaga.",
+      "action": "RECOVER_CARGO"
+    }
+  }
+}

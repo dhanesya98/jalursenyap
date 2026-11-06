@@ -1,0 +1,23 @@
+{
+  "id": "storm_shelter",
+  "npc": "Nara",
+  "title": "Sejenak dalam badai",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Aku berhenti di balik penanda batu. Ruru merapat ke sisi tas. Angin lewat dalam gelombang; di sela-selanya bunyi lentera terdengar lagi.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Pengikat tas masih rapat. Punggung surat memuat cap, bagian depan masih tersegel. Aku merapikan lapisan pelindung sebelum melanjutkan.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Dari sini lentera 009 tampak di atas bukit. Jubah akan kehilangan daya angkat lebih cepat dalam badai. Aku memilih pijakan yang bisa dicapai, lalu bergerak saat pandangan cukup jelas.",
+      "action": "SHELTER_LETTER"
+    }
+  }
+}

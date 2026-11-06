@@ -1,0 +1,28 @@
+{
+  "id": "guestbook",
+  "npc": "Nara",
+  "title": "Buku Tamu Batu",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Nama-nama memenuhi batu biru ini. Ada yang digores dalam, ada yang hampir habis tersapu ibu jari orang yang mencarinya.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "(Nara menulis: Nara, Dusun Sela. Tujuan pertama: Menara Batu Senja.)",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Maren",
+      "text": "Buku itu membantu keluarga mencari jejak perjalanan. Di pos ini, nama tamu bukan barang dagangan.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Namaku sekarang ada di antara mereka. Ruru menunggu sampai goresan terakhir, lalu berlari ke meja bekal.",
+      "action": "REGISTER_NAME"
+    }
+  }
+}

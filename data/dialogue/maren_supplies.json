@@ -1,0 +1,48 @@
+{
+  "id": "maren_supplies",
+  "npc": "Maren",
+  "title": "Kiriman untuk pos saudara",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Bu Lamat menerima lagu Dorin. Aku juga memeriksa sumur: ada potongan bunyi lama yang berulang. Bu Lamat bilang belakangan makin keras.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Maren",
+      "text": "Terima kasih sudah membedakan yang kaudengar sendiri dari yang diceritakan kepadamu. Catatan itu akan kusandingkan dengan pemeriksaanku.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Maren",
+      "text": "Masih ada satu pengantaran hari ini. Pos saudara di timur membutuhkan dua ikat perbekalan: roti kering, garam, dan kain pembungkus. Mereka menampung pengembara sejak jalan pesisir ditutup.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Apakah gerbang timur masih bisa dilewati?",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Maren",
+      "text": "Pemberitahuan terakhir mengizinkan kiriman antarpos dengan surat jalan. Tetapi pemeriksaan makin ketat. Baca papan terbaru dan bicara kepada petugas sebelum melintas.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Maren",
+      "text": "Jika jalurnya ditutup, jangan menjanjikan waktu tiba. Bawa pulang sisa barang dan catatan apa yang terjadi. Kita harus tahu siapa yang masih menunggu.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Nara",
+      "text": "Aku akan menghitung perbekalan di meja, lalu berangkat ke gerbang.",
+      "next": "n7"
+    },
+    "n7": {
+      "speaker": "Maren",
+      "text": "Tujuannya adalah pos saudara, bukan meja pemeriksaan. Kalau barang tertahan di sana, pengantaran kita belum selesai.",
+      "action": "ACCEPT_SUPPLIES"
+    }
+  }
+}

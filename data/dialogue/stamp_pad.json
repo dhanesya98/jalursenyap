@@ -1,0 +1,38 @@
+{
+  "id": "stamp_pad",
+  "npc": "Maren",
+  "title": "Cap Saksi Asharim",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Maren",
+      "text": "Letakkan punggung surat di dekat bantalan. Tinta ini menyimpan bunyi nama yang kita ucapkan saat serah-terima. Katakan namamu dengan jelas.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Nara. Pembawa surat.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Maren",
+      "text": "Maren. Penyaksi serah-terima di Pos Batu Biru.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Maren",
+      "text": "(Cap Asharim dibubuhkan pada punggung surat. Tinta menggelap sebentar, lalu tenang. Segel di bagian depan tetap utuh.)",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Satu kesaksian. Dua lagi dari bangsa yang berbeda sebelum lapisan segelnya bisa terbuka.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Maren",
+      "text": "Benar. Cap ini mencatat tanggung jawab kita. Di lempeng 009, gunakan sisi bercap ini. Jangan membuka bagian depannya.",
+      "action": "STAMP_LETTER"
+    }
+  }
+}

@@ -15,7 +15,8 @@
     ],
     "day_condition": "hangat",
     "summary": "Tas insulasi tua dipinjamkan Maren sebelum tugas pertama. Antar roti rempah hangat ke Juma di Menara Batu Senja dan dengarkan cerita buku harian kakeknya.",
-    "hint": "Ikuti jalan batu berkelok ke utara. Sprint di pijakan yang aman, lompat dan buka Jubah Layar saat turun. E memanjat tepian bertanda lentera."
+    "hint": "Ikuti jalan batu berkelok ke utara. Sprint di pijakan yang aman, lompat dan buka Jubah Layar saat turun. E memanjat tepian bertanda lentera.",
+    "icon": "bread"
   },
   {
     "id": "delivery_2",
@@ -33,24 +34,45 @@
     ],
     "day_condition": "kabut",
     "summary": "Bawa lagu keluarga dari Dorin kepada istrinya Bu Lamat di Telaga Sumi tanpa mengubah atau menyembunyikan kondisinya. Lagu yang meleset menyimpan kehadiran manusia.",
-    "hint": "Menuju barat melintasi ngarai. Gunakan E pada titik tambat Tali Lintas untuk menyeberang, Q agar Ruru membaca medan, dan L untuk memasang Tangga Tali."
+    "hint": "Ikuti lentera ke barat dan berjalan melintasi titian. Q meminta bantuan Ruru; E memeriksa atau memasang tangga.",
+    "icon": "shell"
   },
   {
     "id": "delivery_3",
-    "title": "Surat Penyalaan & Pemeriksaan Cincin 009",
+    "title": "Perbekalan untuk Pos Saudara",
     "stage": 3,
-    "sender": "Titipan Sahdan (Sarai → Bahar → Ilun → Maren)",
-    "recipient": "Lempeng Pemeriksaan Simpul Sembilan · surat tetap dibawa",
+    "sender": "Maren",
+    "recipient": "Pos saudara di timur",
+    "item": "Dua ikat perbekalan",
+    "icon": "bag",
+    "itemIcon": "🎒",
+    "location": "Gerbang timur",
+    "targetPosition": [
+      65,
+      3,
+      -9
+    ],
+    "day_condition": "kabut",
+    "summary": "Catat dua ikat perbekalan dan surat jalan, lalu periksa akses ke pos saudara. Laporkan keadaan kiriman apa adanya.",
+    "hint": "Baca pemberitahuan gerbang dan temui Kesa."
+  },
+  {
+    "id": "letter_mission",
+    "title": "Mandat Surat Penyalaan",
+    "stage": 4,
+    "sender": "Maren, penjaga titipan empat generasi",
+    "recipient": "Pemeriksaan 009 · surat tetap dibawa",
     "item": "Surat Penyalaan",
+    "icon": "letter",
     "itemIcon": "📜",
-    "location": "Simpul Sembilan (009)",
+    "location": "Simpul Sembilan",
     "targetPosition": [
       125,
       26,
       -85
     ],
     "day_condition": "berat",
-    "summary": "Setelah kamu melapor jujur atas kiriman pos saudara yang gagal sebagian dan tanda uji 009 (tiga denyut tanpa penyetelan serta retak cincin) lengkap, Maren membubuhkan Cap Asharim dan menyerahkan Surat Penyalaan. Tempelkan punggung surat pada lempeng pemeriksaan 009 tanpa membuka segel.",
-    "hint": "Kesa membuka jalur Tebing Utara yang lebih pendek namun terpapar angin badai, atau pilih Jalur Lentera yang terlindung di timur melalui Buku Jalur."
+    "summary": "Periksa dua tanda uji dan tempelkan punggung surat bercap pada lempeng. Segel tetap tertutup.",
+    "hint": "Konfirmasi petunjuk kepada Maren dan temui Kesa sebelum melintasi badai."
   }
 ]

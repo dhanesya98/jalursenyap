@@ -1,2 +1,2 @@
 @echo off
-start "" "%~dp0pos-batu-biru.html"
+start "" "%~dp0index.html"

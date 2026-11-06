@@ -1,0 +1,52 @@
+{
+  "id": "maren_report",
+  "npc": "Maren",
+  "title": "Laporan yang sulit disampaikan",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Maren",
+      "text": "Kau kembali lebih cepat dari perkiraan. Letakkan barang di meja. Aku akan mendengarkan sebelum kita menghitung.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku membawa satu ikat kembali. Satu lagi ditahan di gerbang. Ada tanda pemeriksaan dari Kesa.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Maren",
+      "text": "Dan orang di pos saudara?",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Aku belum sampai kepada mereka. Aku tidak bisa memastikan kapan jalurnya dibuka.",
+      "next": "n4"
+    },
+    "choice_0": {
+      "speaker": "Maren",
+      "text": "Kita catat jumlah, kondisi, dan siapa yang menahan. Kau membawa pulang kabar yang bisa kami tindak lanjuti. Aku mempercayai laporanmu, Nara.",
+      "action": "REPORT_DIRECT"
+    },
+    "choice_1": {
+      "speaker": "Maren",
+      "text": "Takut itu boleh. Menyembunyikan keadaan barang akan membuat orang lain menanggung akibat tanpa tahu sebabnya. Terima kasih sudah mengatakannya. Sekarang kita catat bersama.",
+      "action": "REPORT_HESITANT"
+    },
+    "n4": {
+      "speaker": "Maren",
+      "text": "Baik. Ceritakan juga keadaan pembungkusnya. Tidak ada gunanya catatan yang hanya menyimpan bagian perjalanan yang menyenangkan.",
+      "choices": [
+        {
+          "text": "“Ini kondisi barangnya. Pengantaranku gagal sebagian.”",
+          "next": "choice_0"
+        },
+        {
+          "text": "“Aku takut Ibu kecewa. Tetapi aku harus menceritakan semuanya.”",
+          "next": "choice_1"
+        }
+      ]
+    }
+  }
+}

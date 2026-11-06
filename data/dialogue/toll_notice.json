@@ -1,0 +1,23 @@
+{
+  "id": "toll_notice",
+  "npc": "Nara",
+  "title": "Pemberitahuan Dewan",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Di atas pemberitahuan lama tertempel lembar baru: lintasan ke timur ditutup sementara karena peningkatan Gangguan. Semua kiriman harus dicatat di gerbang.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Bagian tentang pengecualian antarpos dicoret. Tidak ada waktu pembukaan kembali. Di bawahnya tertulis: “Tata menyelamatkan.”",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Seorang pengembara menunggu di balik palang. Kesa memindahkan kendi air ke sisinya sebelum kembali ke meja. Aku akan menunjukkan surat jalan.",
+      "action": "READ_TOLL_NOTICE"
+    }
+  }
+}

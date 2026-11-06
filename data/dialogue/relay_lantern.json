@@ -1,0 +1,23 @@
+{
+  "id": "relay_lantern",
+  "npc": "Nara",
+  "title": "Tanda pertama",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "(Lentera meredup, lalu berdenyut. Satu. Dua. Tiga. Tidak ada tangan yang menyentuh cincin penyetel.)",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Pola yang sama ada dalam gambar Maren. Aku mencatat tiga denyut tanpa penyetelan.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Masih ada tanda kedua yang harus diperiksa: retak pada cincin penanda. Nyala ini sendiri bukan alasan untuk membuka apa pun.",
+      "action": "OBSERVE_PULSES"
+    }
+  }
+}

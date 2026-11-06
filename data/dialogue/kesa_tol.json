@@ -1,33 +1,43 @@
 {
   "id": "kesa_tol",
   "npc": "Kesa",
-  "title": "Petugas Dewan Tol",
-  "node": "start",
+  "title": "Pengunci Tebing Utara",
+  "node": "n0",
   "nodes": {
-    "start": {
+    "n0": {
       "speaker": "Kesa",
-      "text": "Berhenti dulu, Nara. Gerbang utama ditutup karena laporan Gangguan yang melonjak saat badai. Dewan memerintahkan semua akses menuju Simpul Sembilan ditahan dan dicatat.",
-      "next": "nara_1"
+      "text": "Maren mengutusmu kembali? Aku sudah menerima pesannya tentang tanda uji. Ia juga meminta catatan penahanan perbekalanmu. Aku sedang menyiapkan salinannya.",
+      "next": "n1"
     },
-    "nara_1": {
+    "n1": {
       "speaker": "Nara",
-      "text": "Tadi kiriman pos saudara juga tertahan di sini. Kalau jalur terus ditutup dan kabar ditahan, bagaimana warga tahu apa yang sebenarnya sedang menekan dari bawah tanah?",
-      "next": "kesa_2"
+      "text": "Aku harus memeriksa 009. Jika semua laporan ditahan, bagaimana warga bisa menilai bahayanya?",
+      "next": "n2"
     },
-    "kesa_2": {
+    "n2": {
       "speaker": "Kesa",
-      "text": "Aku juga terus memikirkannya. Surat keluargaku sendiri pernah ditahan di meja pencatatan demi Ajaran Tata. Aku masuk Dewan untuk menjaga warga, bukan membungkam peringatan bahaya.",
-      "next": "nara_2"
+      "text": "Surat keluargaku pernah berhenti di meja seperti ini. Aku masuk Dewan untuk menjaga orang yang berjalan. Belakangan aku lebih sering diminta menjaga agar kabarnya tidak berjalan.",
+      "next": "n3"
     },
-    "nara_2": {
+    "n3": {
+      "speaker": "Kesa",
+      "text": "Gerbang resmi tetap ditutup. Tetapi pengunci Tebing Utara ada padaku. Aku akan membukanya untuk pemeriksaanmu.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Kesa",
+      "text": "(Kesa menarik pengunci jalur samping.) Tebing lebih pendek dan lebih terbuka pada angin. Jalur Lentera memutar ke timur dengan pijakan terlindung. Tentukan pilihanmu di peta.",
+      "next": "n5"
+    },
+    "n5": {
       "speaker": "Nara",
-      "text": "Maren mengutusku memeriksa cincin uji di Simpul Sembilan malam ini juga.",
-      "next": "kesa_hint"
+      "text": "Aku akan membawa kembali catatan yang bisa diperiksa.",
+      "next": "n6"
     },
-    "kesa_hint": {
+    "n6": {
       "speaker": "Kesa",
-      "text": "Aku tidak bisa membuka palang gerbang resmi tanpa memicu patroli. (Kesa melirik ke arah punggung bukit.) Tetapi aku membuka pengunci jalur Tebing Utara untukmu. Jalurnya lebih pendek meski terpapar angin, atau kamu bisa memutar lewat Jalur Lentera di timur. Aku tidak mencatat kepergianmu.",
-      "action": "REVEAL_SECRET_PATH"
+      "text": "Itu lebih berguna daripada janji bahwa semuanya baik-baik saja.",
+      "action": "OPEN_NORTH_PATH"
     }
   }
 }

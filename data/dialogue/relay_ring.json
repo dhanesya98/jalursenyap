@@ -1,0 +1,23 @@
+{
+  "id": "relay_ring",
+  "npc": "Nara",
+  "title": "Tanda kedua",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Retak memotong tanda di cincin luar. Bentuknya cocok dengan gambar uji; serpihan kecil terkumpul di bawahnya.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku membandingkan gambar, batu, lalu lentera sekali lagi. Dua tanda ada di sini. Ruru mengendus lempeng di tengah, kemudian mundur.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Pemeriksaan berikutnya memakai punggung surat. Aku akan menempelkan sisi cap pada lempeng tanpa memutar cincin atau membuka segel.",
+      "action": "INSPECT_RING"
+    }
+  }
+}

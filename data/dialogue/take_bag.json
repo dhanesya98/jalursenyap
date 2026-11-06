@@ -1,0 +1,33 @@
+{
+  "id": "take_bag",
+  "npc": "Nara",
+  "title": "Tas pinjaman dan roti",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Jahitan bagian dalam terasa rapat dan dingin. Di luar, kulitnya penuh bekas perjalanan. Aku memeriksa pengikatnya satu per satu.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Maren",
+      "text": "Tas itu peninggalan Sahdan. Sarai menyimpannya di sini, lalu Bahar, Ilun, dan akhirnya aku. Hari ini ia ikut bekerja lagi.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Satu bungkus roti rempah. Hangat, kertas utuh, alamat Juma. Aku menaruhnya di bagian dalam agar tidak terjepit.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Maren",
+      "text": "Jalan batu naik ke utara. Jangan memaksa lereng yang terlalu curam. Periksa penanda pertama; dari sana menara akan terlihat.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Baik. Aku berangkat, Bu. Ayo, Ruru.",
+      "action": "ACCEPT_BREAD"
+    }
+  }
+}

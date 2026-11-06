@@ -1,0 +1,33 @@
+{
+  "id": "well",
+  "npc": "Nara",
+  "title": "Bunyi di Sumur Induk",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Airnya tenang. Ketika kendi diangkat, terdengar sisa bunyi dari batu dinding: potongan suku kata yang tidak diucapkan siapa pun di dekatku.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku menunggu, lalu mencoba memanggil. Yang kembali bukan jawaban, hanya potongan yang sama. Ruru menegakkan telinga pada batu yang basah.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Di bibir sumur ada guratan batas air dan catatan pemeriksaan warga. Tidak ada tanda seseorang baru memasang alat di sini.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Bu Lamat",
+      "text": "Dulu hampir tak terdengar. Sekarang orang berhenti mengobrol kalau bunyinya muncul. Ada yang bilang suara keluarga, ada yang bilang peringatan.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Aku akan mencatat bunyi yang kudengar dan perubahan yang Ibu ceritakan secara terpisah. Kita belum tahu dari mana asalnya.",
+      "action": "INSPECT_WELL"
+    }
+  }
+}

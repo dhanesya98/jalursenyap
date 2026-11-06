@@ -1,48 +1,11 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
-const root=path.resolve(__dirname,'..');
-const context=vm.createContext({console});context.window=context;
-for(const rel of ['data/game-data.js','src/core.js'])vm.runInContext(fs.readFileSync(path.join(root,rel),'utf8'),context,{filename:rel});
-const {GAME_DATA:data,JSCore:C}=context;
-const entries=new Map(),storage={getItem:k=>entries.get(k)||null,setItem:(k,v)=>entries.set(k,v)};
-const state=()=>new C.State(data,new C.EventBus(),storage);
-let count=0;function test(name,fn){fn();count++;console.log('PASS',name);}
-test('Canonical nation ids, images, and no Lulanai stamp',()=>{
- assert.equal(data.canon.year,100);assert.equal(data.canon.demo.chapter,0);assert.equal(data.canon.nara.age,17);assert.equal(data.canon.nara.birth,83);
- assert.equal(data.canon.nations.map(n=>n.id).join(','),'asharim,tseren,cirusia,bahtari,lulanai');
- assert(!data.canon.letter.stamps.includes('lulanai'));assert.equal(data.canon.letter.requiredNations,3);
- for(const n of data.canon.nations){assert(fs.existsSync(path.join(root,n.image)),n.id);assert(fs.statSync(path.join(root,n.image)).size>100000);}
- assert(fs.existsSync(path.join(root,'assets/world/peta-100-simpul.png')));
-});
-test('Both song choices yield one witness; stamp attaches only with Maren letter handoff',()=>{
- for(const choice of ['A','B']){const s=state();s.accept(0);s.complete(0);s.accept(1);s.complete(1,choice);assert.equal(s.value.witnesses.join(','),'asharim');assert.equal(s.value.capSaksi.length,0);assert(!s.value.letterReceived);assert(s.validate(s.value));s.accept(2);assert.equal(s.value.capSaksi.join(','),'asharim');assert(s.value.letterReceived);assert(s.validate(s.value));s.complete(2);assert.equal(s.value.capSaksi.length,1);assert.equal(s.value.reputation.lulanai,0);assert(s.value.letterReceived);assert(s.condition().includes('Tetap dibawa'));assert(s.validate(s.value));}
-});
-test('Version 4 saves migrate at every valid checkpoint',()=>{
- const s=state();const snapshots=[];const snapshot=()=>snapshots.push(JSON.parse(JSON.stringify(s.value)));
- snapshot();s.accept(0);snapshot();s.complete(0);snapshot();s.accept(1);snapshot();s.complete(1);snapshot();s.accept(2);snapshot();s.complete(2);snapshot();
- for(const saved of snapshots){saved.version=4;delete saved.witnesses;delete saved.capSaksi;delete saved.letterReceived;saved.reputation.pahitan=saved.reputation.bahtari;saved.reputation.warjian=20;delete saved.reputation.bahtari;delete saved.reputation.lulanai;saved.discoveries=['warjian'];saved.rumors=['Lagu Pahitan; jejak Warjian.'];storage.setItem(C.SAVE_KEY,JSON.stringify(saved));const next=state();assert(next.load(),next.error);assert.equal(next.value.completed.join(','),saved.completed.join(','));assert.equal(next.value.discoveries.join(','),'lulanai');assert(!('pahitan'in next.value.reputation));assert.equal(next.value.reputation.lulanai,0);assert.equal(next.value.version,5);assert(!next.value.rumors[0].includes('Pahitan'));next.save();const again=state();assert(again.load());}
-});
-test('Corrupt or invented stamps are rejected',()=>{
- const s=state();assert(!s.validate(null));assert(!s.validate({version:5}));s.value.capSaksi=['lulanai'];assert(!s.validate(s.value));s.value.capSaksi=[];s.value.witnesses=['asharim'];assert(!s.validate(s.value));
-});
-test('Dialogue links, all action ids and critical lore clues stay valid',()=>{
- const actions=new Set(['ACCEPT_DELIVERY_1','ACCEPT_DELIVERY_2','ACCEPT_DELIVERY_3','COMPLETE_DELIVERY_1_A','COMPLETE_DELIVERY_1_B','COMPLETE_DELIVERY_2_A','COMPLETE_DELIVERY_2_B','RECORD_RUMOR','REVEAL_SECRET_PATH','TRIGGER_CLIFFHANGER']);
- for(const d of Object.values(data.dialogues))for(const n of Object.values(d.nodes)){for(const next of [n.next,...(n.choices||[]).map(c=>c.next)].filter(Boolean))assert(d.nodes[next]);for(const a of [n.action,...(n.choices||[]).map(c=>c.action)].filter(Boolean))assert(actions.has(a),a);assert(!/Pahitan|Warjian/.test(n.text));}
- assert(data.dialogues.juma_delivery1.nodes.juma_2.text.includes('Kakekku'));assert(data.dialogues.maren_delivery3.nodes.maren_2.text.includes('Sarai'));assert(data.dialogues.maren_delivery3.nodes.cap_saksi.text.includes('nama Nara'));assert(data.dialogues.simpul_sembilan.nodes.nara_cap.text.includes('Segel surat masih tertutup'));
- assert(data.dialogues.maren_intro.nodes.maren_2.text.includes('Aku meminjamkannya kepadamu'));
- assert(data.dialogues.maren_delivery3.nodes.start.text.includes('gagal sebagian'));
- assert(data.dialogues.simpul_sembilan.nodes.echo_1.speaker.includes('Sahdan'));
- assert(data.dialogues.simpul_sembilan.nodes.hesta_1.speaker.includes('Hesta'));
- assert.notEqual(data.dialogues.simpul_sembilan.nodes.echo_1.speaker,data.dialogues.simpul_sembilan.nodes.hesta_1.speaker);
-});
-test('Disabled voice never requests a recording and stops an existing voice',()=>{
- let requests=0,paused=false;
- context.Audio=function(){requests++;throw Error('VO must not load');};
- vm.runInContext(fs.readFileSync(path.join(root,'src/audio.js'),'utf8'),context);
- const audio=new context.JSAudio();audio.playVoice('maren_intro_start','Any line');assert.equal(requests,0);
- audio.currentVoice={pause(){paused=true},currentTime:5};audio.playVoice('missing_voice','Other line');assert(paused);assert.equal(audio.currentVoice,null);assert.equal(requests,0);
-});
-test('Game and atlas load the shared nation UI with all image paths bundled',()=>{
- for(const rel of ['index.html','atlas.html','pos-batu-biru.html']){const html=fs.readFileSync(path.join(root,rel),'utf8');assert(html.includes('src/nations.js'));assert(html.includes('src/nations.css'));assert(html.includes('data/game-data.js'));assert(!/Pahitan|Warjian/.test(html));}
- const compiled=fs.readFileSync(path.join(root,'data/game-data.js'),'utf8');assert(!/Pahitan|Warjian/.test(compiled));assert(!fs.readFileSync(path.join(root,'pos-batu-biru.html'),'utf8').includes('<title>Jalur Senyap — Tahun 100 Telan</title>'));
-});
-console.log(`${count} canonical integration checks passed.`);
+const root=path.resolve(__dirname,'..'),ctx=vm.createContext({console});ctx.window=ctx;
+vm.runInContext(fs.readFileSync(path.join(root,'data/game-data.js'),'utf8'),ctx);const d=ctx.GAME_DATA;let count=0;
+function test(name,fn){fn();count++;console.log('PASS',name);}
+test('Canonical nation ids, year and witness rules remain intact',()=>{assert.equal(d.canon.year,100);assert.equal(d.canon.nara.age,17);assert.equal(d.canon.nations.map(n=>n.id).join(','),'asharim,tseren,cirusia,bahtari,lulanai');assert.equal(d.canon.letter.requiredNations,3);assert(!d.canon.letter.stamps.includes('lulanai'));for(const n of d.canon.nations)assert(fs.existsSync(path.join(root,n.image)));});
+test('Three ordinary deliveries and one sealed-letter mandate',()=>{assert.equal(d.deliveries.length,4);assert.equal(d.deliveries[2].id,'delivery_3');assert.equal(d.deliveries[3].id,'letter_mission');assert(d.deliveries[3].summary.includes('Segel tetap tertutup'));});
+test('All quest dialogue actions, targets and links resolve',()=>{const ids=new Set([...d.quests.objects,...d.world.npcs].map(x=>x.id).concat(['supply','altar','storm_shelter']));const unique=new Set();for(const q of d.quests.steps){assert(!unique.has(q.id));unique.add(q.id);assert(ids.has(q.target),q.target);const story=d.dialogues[q.dialogue];assert(story);const reached=new Set(),visit=id=>{if(reached.has(id))return;reached.add(id);const n=story.nodes[id];assert(n,id);if(n.action)assert(q.actions.includes(n.action));for(const next of [n.next,...(n.choices||[]).map(c=>c.next)].filter(Boolean))visit(next);};visit(story.node);assert.equal(reached.size,Object.keys(story.nodes).length);}});
+test('Two physical trace locations with no premature Hesta identity disclosure',()=>{assert.notEqual(d.quests.steps.find(q=>q.id==='relay_contact').target,d.quests.steps.find(q=>q.id==='test_echo').target);assert(!JSON.stringify(d.dialogues.test_stone).includes('Hesta'));assert(!JSON.stringify(d.dialogues.simpul_sembilan).includes('tahun lima puluh'));assert(JSON.stringify(d.dialogues.test_stone).includes('lima puluh delapan'));});
+test('New story retains custody, honesty, cap names and closed seal',()=>{const text=Object.values(d.dialogues).map(v=>JSON.stringify(v)).join('\n');for(const word of ['Sarai','Bahar','Ilun','Maren','Nara. Pembawa surat.','gagal sebagian','tiga denyut'])assert(text.includes(word),word);assert(!/Kait Tali|tas itu memilihmu|Pahitan|Warjian/.test(text));});
+test('Voice remains disabled and never requests a recording',()=>{let requests=0;ctx.Audio=function(){requests++;throw Error('Unexpected VO')};vm.runInContext(fs.readFileSync(path.join(root,'src/audio.js'),'utf8'),ctx);const audio=new ctx.JSAudio();audio.playVoice('maren_intro_n0','test');assert.equal(requests,0);});
+console.log(`${count} canonical checks passed.`);

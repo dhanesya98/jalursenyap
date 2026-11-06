@@ -1,3 +1,5 @@
+> Catatan v4/v5 di bawah bersifat historis. Untuk questline aktif v6, lihat [BAB0-QUESTLINE.md](BAB0-QUESTLINE.md).
+
 # Implementasi brief pada demo v4
 
 | Bagian brief | Hasil dalam build |

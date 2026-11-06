@@ -1,0 +1,38 @@
+{
+  "id": "test_stone",
+  "npc": "Nara",
+  "title": "Jejak lokal pada batu uji",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Jejak pada batu uji",
+      "text": "“Pemeriksaan cabang… tahun lima puluh delapan…”",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Jejak pada batu uji",
+      "text": "“…tujuh cabang menyala berlebih… penyetelan peredam akhir belum lengkap…”",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Jejak pada batu uji",
+      "text": "“…aliran balik… terus menekan ruang penahan…”",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Siapa yang memeriksa? Kapan keadaan ini mulai berubah?",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "(Batu mengulang awal kalimat yang sama. Tidak ada jawaban. Ruru duduk di sampingnya, mengikuti ritme pengulangan.)",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Ini sisa pemeriksaan lama pada batu setempat. Ia tidak menyebut namaku. Aku perlu mencari catatan di ruangan ini sebelum menarik kesimpulan.",
+      "action": "HEAR_TEST_TRACE"
+    }
+  }
+}

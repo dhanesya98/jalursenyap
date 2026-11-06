@@ -1,0 +1,28 @@
+{
+  "id": "ridge_sign",
+  "npc": "Nara",
+  "title": "Membaca medan",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Anak panah yang pudar menunjuk jalan berkelok. Jejak kaki di pasir memotong tanjakan, tetapi batunya lebih mantap di sisi luar.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Ruru berhenti di pijakan rendah dan menoleh. Aku bisa berjalan mengikuti tikungan atau memanjat tepian bertanda lentera dengan E.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Jubah Layar bisa membantu saat turun: lompat, lalu tahan Spasi ketika jatuh. Untuk tanjakan ini, aku perlu mencari pijakan berikutnya.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Menara Batu Senja sudah kelihatan. Aku akan menjaga roti sambil belajar mengenali jalan pulang.",
+      "action": "READ_RIDGE"
+    }
+  }
+}

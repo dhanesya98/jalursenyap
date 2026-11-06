@@ -1,38 +1,43 @@
 {
   "id": "maren_intro",
   "npc": "Maren",
-  "title": "Kepala Pos Batu Biru",
-  "node": "start",
+  "title": "Pagi di Pos Batu Biru",
+  "node": "n0",
   "nodes": {
-    "start": {
+    "n0": {
       "speaker": "Maren",
-      "text": "Teduh di jalanmu, Nara. Ruru sudah sejak pagi mengendus di dekat meja surat. Sebelum kamu mulai magang di tengah desakan Pos Dagang dan patroli Dewan ini, pakailah tas pengantar tua itu.",
-      "next": "nara_1"
+      "text": "Teduh di jalanmu, Nara. Ruru sudah memeriksa meja bekal dua kali. Rupanya dia lebih siap berangkat daripada kita.",
+      "next": "n1"
     },
-    "nara_1": {
+    "n1": {
       "speaker": "Nara",
-      "text": "Air di langkahmu, Bu Maren. Benang bagian dalamnya terasa berbeda dari tas biasa di Dusun Sela. Siapa pemilik sebelumnya?",
-      "next": "maren_2"
+      "text": "Air di langkahmu, Bu. Kalau yang diperiksanya roti, mungkin aku harus meminta maaf dulu kepada penerimanya.",
+      "next": "n2"
     },
-    "maren_2": {
+    "n2": {
       "speaker": "Maren",
-      "text": "Seorang kurir bernama Sahdan, seratus tahun lalu, sebelum Tahun Telan. Nenek Sarai menyimpannya di pos ini, lalu Bahar, Ilun, dan kini aku. Aku meminjamkannya kepadamu untuk tugas pertamamu.",
-      "next": "nara_2"
+      "text": "Rotinya untuk Juma. Tas di sebelahnya boleh kaupinjam. Jahitannya sudah tua, tetapi lapisan dalamnya masih menjaga barang dari gangguan resonansi.",
+      "next": "n3"
     },
-    "nara_2": {
+    "n3": {
       "speaker": "Nara",
-      "text": "Aku akan menjaganya, Bu. Ayahku, Tarun, kurir darat asal Bahtari, hilang dalam tugas di sekitar Sabuk Dalam lima tahun lalu pada tahun 95. Aku menjadi kurir supaya tidak ada lagi keluarga yang menunggu sendirian.",
-      "next": "maren_3"
+      "text": "Aku akan menjaganya. Hari ini aku benar-benar boleh mengantar sendiri?",
+      "next": "n4"
     },
-    "maren_3": {
+    "n4": {
       "speaker": "Maren",
-      "text": "Di Pos Batu Biru ini kita menjaga Hukum Air meski bea jalur mencekik. Mulailah dengan mengantar roti rempah untuk Juma di Menara Batu Senja, bukit utara. Dia berharap rotinya sampai selagi hangat.",
-      "next": "maren_tut"
+      "text": "Kau yang membawa, kau pula yang mencatat. Kalau barang terluka di jalan, penerimanya harus tahu. Kalau tidak sampai, pulanglah dengan kabar yang jujur.",
+      "next": "n5"
     },
-    "maren_tut": {
+    "n5": {
+      "speaker": "Nara",
+      "text": "Dulu satu kabar tentang kapal Ayah membuat rumah kami bertahan menunggu setahun lagi. Aku ingin bisa membawa kabar seperti itu untuk orang lain.",
+      "next": "n6"
+    },
+    "n6": {
       "speaker": "Maren",
-      "text": "Jaga paket dan pijakanmu. Spasi untuk melompat; tahan saat turun untuk membuka Jubah Layar. Ruru sudah siap mendampingimu membaca medan dengan Q.",
-      "action": "ACCEPT_DELIVERY_1"
+      "text": "Mulai dari satu roti dulu. Catat namamu di Buku Tamu Batu, lalu periksa tas dan bekal. Jalan panjang dimulai dengan tahu apa yang sedang kita bawa.",
+      "action": "MEET_MAREN"
     }
   }
 }

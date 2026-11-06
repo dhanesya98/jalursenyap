@@ -1,0 +1,23 @@
+{
+  "id": "test_door",
+  "npc": "Nara",
+  "title": "Bangunan uji yang ditutup",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Di pintu kecil ada sisa segel penutupan. Tulisannya aus, tetapi tahun 58 masih terbaca. Daun pintu terlepas dari salah satu engsel.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Bunyi yang terdengar dari sini berbeda dengan pantulan di lempeng. Ia pendek dan berulang pada sela yang sama.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Aku menyusuri celah pintu tanpa menyentuhkan surat. Batu di dalam ruangan menjadi sumber bunyinya.",
+      "action": "INSPECT_TEST_DOOR"
+    }
+  }
+}

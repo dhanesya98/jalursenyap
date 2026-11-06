@@ -1,11 +1,11 @@
 {
   "name": "jalur-senyap",
-  "version": "5.2.0",
+  "version": "6.0.0",
   "private": true,
   "description": "Offline fantasy courier vertical slice",
   "scripts": {
     "build": "node tools/build.cjs",
-    "test": "node tests/test.cjs && node tests/canon.cjs",
+    "test": "node tests/quest.cjs && node tests/test.cjs && node tests/canon.cjs && node tests/quest-navigation.cjs",
     "dev": "node tools/serve.cjs"
   }
 }

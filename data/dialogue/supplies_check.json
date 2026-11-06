@@ -1,0 +1,23 @@
+{
+  "id": "supplies_check",
+  "npc": "Nara",
+  "title": "Mencatat kondisi awal",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Dua ikat perbekalan, masing-masing bertanda Pos Batu Biru. Satu surat jalan untuk pos saudara. Pembungkus kering, simpul rapat, jumlah cocok.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku menyalin jumlahnya ke Buku Jalur. Surat jalan menyebut isi dan tujuan kiriman; tidak membawa salinan nama tamu pos.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Kain cadangan kutaruh di bagian atas tas agar mudah diambil jika angin menguat. Ruru mengendus garam, bersin, lalu memilih menunggu di pintu.",
+      "action": "PACK_SUPPLIES"
+    }
+  }
+}

@@ -72,6 +72,28 @@
       ],
       "icon": "map",
       "description": "Dari sini, lentera Pos Batu Biru tampak seperti satu bintang yang memilih tinggal di bumi."
+    },
+    {
+      "id": "testhouse",
+      "name": "Bangunan Uji",
+      "position": [
+        110,
+        26,
+        -106
+      ],
+      "icon": "checkpoint",
+      "description": "Bangunan pemeriksaan lama di belakang 009."
+    },
+    {
+      "id": "departure",
+      "name": "Jalan Dusun Sela",
+      "position": [
+        143,
+        26,
+        -111
+      ],
+      "icon": "compass",
+      "description": "Ambang perjalanan berikutnya."
     }
   ],
   "npcs": [
@@ -331,6 +353,33 @@
           -85
         ]
       ]
+    },
+    "toll": {
+      "name": "Jalan gerbang timur",
+      "surface": "rock",
+      "width": 5,
+      "points": [
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          35,
+          0,
+          5
+        ],
+        [
+          56,
+          3,
+          -9
+        ],
+        [
+          65,
+          3,
+          -9
+        ]
+      ]
     }
   },
   "anchors": [
@@ -461,13 +510,14 @@
     },
     {
       "id": "lulanai",
-      "name": "Bangunan Uji 009 (Jejak Hesta)",
+      "name": "Bangunan uji tahun 58",
       "position": [
         117,
         24,
         -94
       ],
-      "text": "Bangunan uji kecil di dekat Simpul Sembilan yang ditutup petugas pada tahun 58. Lonjakan tekanan tahun 100 membuat sisa suara Hesta tentang nyala berlebih dan penyetelan tak lengkap kembali terdengar pada batu uji."
+      "text": "Jejak pada batu uji menyebut pemeriksaan tahun 58. Pelat setempat menguatkan tahunnya; identitas penyetel belum diketahui.",
+      "manual": true
     },
     {
       "id": "batu-nama",
@@ -490,5 +540,21 @@
       "text": "“Tata menyelamatkan.” Klaim resmi Dewan Tol menyebut Tahun Kerusakan dan menyatakan Simpul hanya boleh dikelola yang cakap; pengorbanan penyetel Lulanai sama sekali tidak disebut."
     }
   ],
-  "year": 100
+  "year": 100,
+  "bridges": [
+    {
+      "id": "west-bridge",
+      "from": [
+        -56,
+        3,
+        43
+      ],
+      "to": [
+        -88,
+        5,
+        43
+      ],
+      "width": 3
+    }
+  ]
 }

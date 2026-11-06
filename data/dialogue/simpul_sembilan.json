@@ -1,38 +1,48 @@
 {
   "id": "simpul_sembilan",
-  "npc": "Simpul Sembilan (009)",
-  "title": "Lempeng Pemeriksaan & Bangunan Uji",
-  "node": "start",
+  "npc": "Nara",
+  "title": "Pantulan pada lempeng 009",
+  "node": "n0",
   "nodes": {
-    "start": {
+    "n0": {
       "speaker": "Nara",
-      "text": "(Di puncak 009, lentera kuning berdenyut tiga kali tanpa penyetelan dan cincin penandanya tampak retak. Mengikuti instruksi Maren, Nara menempelkan punggung Surat Penyalaan yang memuat Cap Asharim pada lempeng pemeriksaan batu. Surat tetap di tangan Nara.)",
-      "next": "echo_1"
+      "text": "(Nara menempelkan punggung surat pada lempeng. Tinta cap berpendar singkat. Sebuah bunyi jauh bergetar melalui batu.)",
+      "next": "n1"
     },
-    "echo_1": {
-      "speaker": "Jejak Sahdan (Pantulan Garis Surut)",
-      "text": "…tinta cap pada jalur jangkar… kunci itu akhirnya bergerak…",
-      "next": "echo_2"
+    "n1": {
+      "speaker": "Pantulan jauh",
+      "text": "…kunci… akhirnya bergerak…",
+      "next": "n2"
     },
-    "echo_2": {
-      "speaker": "Jejak Sahdan (Pantulan Garis Surut)",
-      "text": "…Nara… namamu terbaca di cap serah-terima… jangan bawa ke pusat sebelum saksinya genap… (Pantulan singkat itu meredup, mengikis sisa ingatan pembicaranya.)",
-      "next": "nara_1"
+    "n2": {
+      "speaker": "Pantulan jauh",
+      "text": "…Nara…",
+      "next": "n3"
     },
-    "nara_1": {
+    "n3": {
       "speaker": "Nara",
-      "text": "Suara itu membaca namaku dari bunyi yang tersimpan pada tinta Cap Asharim! Dan dari bangunan uji kecil yang tertutup di sebelah menara ini… ada sisa suara lain yang berbeda warna dan asalnya.",
-      "next": "hesta_1"
+      "text": "Nama yang tadi kuucapkan bersama Maren. Aku menoleh; tidak ada orang di belakangku.",
+      "next": "n4"
     },
-    "hesta_1": {
-      "speaker": "Jejak Hesta (Batu Bangunan Uji, Tahun 58)",
-      "text": "“Pemeriksaan cabang tahun lima puluh delapan… tujuh Simpul Terang menyala berlebih tanpa penyetelan peredam akhir… aliran baliknya terus menekan ruang penahan di bawah pulau…”",
-      "next": "nara_cap"
+    "n4": {
+      "speaker": "Pantulan jauh",
+      "text": "…jangan ke pusat… sebelum saksinya genap…",
+      "next": "n5"
     },
-    "nara_cap": {
+    "n5": {
       "speaker": "Nara",
-      "text": "Dua jejak yang berbeda: pantulan Sahdan dari jangkar pusat yang membaca capku, dan peringatan lama seorang penyetel pada batu bangunan uji tentang operasi Dewan. Segel surat masih tertutup. Aku harus menemui Nenek Ima di Dusun Sela lalu menuju Padang Salkara.",
-      "action": "TRIGGER_CLIFFHANGER"
+      "text": "(Bunyi itu menipis, seperti kalimat yang kehilangan ujungnya. Lempeng kembali tenang. Nara melepaskan surat; segelnya masih utuh.)",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Nara",
+      "text": "Nama itu tersimpan pada tinta cap. Apa yang tersambung ke lempeng ini sampai bisa mendengarnya?",
+      "next": "n7"
+    },
+    "n7": {
+      "speaker": "Nara",
+      "text": "Ruru menoleh ke bangunan kecil di belakang menara. Dari sana ada ketukan bunyi lain, lebih dekat. Aku akan memeriksa sumbernya.",
+      "action": "CONTACT_LETTER"
     }
   }
 }

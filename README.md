@@ -10,8 +10,9 @@
 
 ## 🎮 Coba Mainkan
 
-Buka versi web interaktif langsung di browser: **[dhanesya98.github.io/jalursenyap](https://dhanesya98.github.io/jalursenyap/)**.  
-Tidak perlu mengunduh aplikasi atau membuat akun. Cukup gunakan browser desktop modern dengan dukungan WebGL, keyboard, dan mouse (lihat [Kontrol](#kontrol)).
+Buka **`Mainkan.bat`** atau **[index.html](index.html)** untuk memainkan questline BAB 0 v6 dari folder ini. Aset sudah tersedia lokal; gunakan browser desktop modern dengan dukungan WebGL, keyboard, dan mouse (lihat [Kontrol](#kontrol)).
+
+Versi publik di [dhanesya98.github.io/jalursenyap](https://dhanesya98.github.io/jalursenyap/) belum diperbarui melalui pekerjaan ini. Rincian alur dan hasil pengujian ada di [BAB0-QUESTLINE.md](docs/BAB0-QUESTLINE.md). Target durasi 40–60 menit masih memerlukan playtest manusia.
 
 ---
 
@@ -55,7 +56,6 @@ Dunia **Tanah Sada** terinspirasi dari prinsip jalur dagang kuno (*Silk Road*) d
 | **Spasi** | Melompat; tahan saat jatuh untuk membuka **Jubah Layar** (*Glide*) |
 | **Mouse** | Mengarahkan kamera; klik layar untuk mengunci kursor, `Esc` untuk melepas |
 | **E** | Interaksi kontekstual: bicara dengan NPC, periksa pos/altar, panjat & pasang Tangga Tali |
-| **F** / **Klik Kanan** | Menyeberangi **Tali Lintas** pada tambatan tali berlentera |
 | **Q** | Pindai kontur medan dan arah tujuan bersama Ruru (*cooldown* 12 detik) |
 | **Tab** / **J** | Membuka **Buku Jalur** (Kompendium in-game: Tugas/Quests, Cerita/Lore, Lima Bangsa, Perlengkapan/Gear) |
 | **M** | Membuka **Peta Wilayah** (Kartografi ekspedisi Lembah Pasir, elevasi kontur & rute) |
@@ -83,9 +83,8 @@ Proyek ini dibangun menggunakan JavaScript murni (vanilla), Three.js lokal, HTML
 # Rebuild bundle data offline, link dialog, dan peta SVG
 node tools/build.cjs
 
-# Menjalankan 24 unit test inti + 7 pemeriksaan kanon
-node tests/test.cjs
-node tests/canon.cjs
+# Menguji questline, simpanan, kanon, dan keterjangkauan semua tujuan
+npm test
 
 # Menjalankan server lokal (opsional)
 node tools/serve.cjs
@@ -99,3 +98,14 @@ node tools/serve.cjs
 - [`docs/STORY-BIBLE.md`](docs/STORY-BIBLE.md): Dokumen acuan kanon lengkap 100 tahun Tanah Sada, Kunci Lore, Kompendium Lima Bangsa, dan percabangan tiga akhir cerita.
 - [`docs/IMPLEMENTASI.md`](docs/IMPLEMENTASI.md): Catatan teknis implementasi vertical slice.
 - `pos-batu-biru.html`: Halaman studi visual Pos Batu Biru.
+
+
+## BAB 0 — Questline v6
+
+Tiga tugas kurir kini dimainkan lengkap: roti untuk Juma, Kerang Suara untuk Bu Lamat, dan perbekalan pos saudara yang tertahan di gerbang. Laporan jujur, pemeriksaan buku Maren, penerimaan surat, dan Cap Saksi adalah interaksi terpisah. Kesa membuka pengunci tebing secara fisik. Pemeriksaan lentera, retakan, pantulan 009, bangunan uji, dan epilog membentuk mandat penutup.
+
+29 langkah tercatat di `data/quests.json`. Buku Jalur menampilkan tujuan aktif, tugas yang telah diketahui, serta catatan pengamatan/dokumen/pertanyaan. Titian tetap menggantikan tarikan Kait Tali; gunakan E untuk interaksi. Peta M dan Buku Jalur Tab/J tetap terpisah.
+
+Simpanan v4/v5 dicadangkan sebelum migrasi. Pemain lama yang sudah melewati Telaga Sumi melanjutkan dari laporan Telaga Sumi agar tugas ketiga yang baru benar-benar dialami. Surat akan diterima kembali melalui laporan dan serah-terima baru. Simpanan v6 menyimpan langkah misi, pilihan, kondisi barang, serta posisi terakhir dialog.
+
+Target desain tetap 40–60 menit; durasi pemain baru belum divalidasi. Uji otomatis mempercepat pembacaan dialog dan tidak mengukur pengalaman manusia. Rincian implementasi dan skenario playtest ada di [BAB0-QUESTLINE.md](docs/BAB0-QUESTLINE.md).

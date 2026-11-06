@@ -1,0 +1,23 @@
+{
+  "id": "bridge_sign",
+  "npc": "Nara",
+  "title": "Titian dalam kabut",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Titian kayu menyambung bibir ngarai. Tanda di tiangnya menyebut pemeriksaan terakhir oleh pengantar Batu Biru. Tali pegangan masih terikat.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kabut menutup sisi seberang, tetapi lentera berikutnya terlihat. Ruru menunggu di awal papan, bukan melompat ke dalam kabut.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Aku akan menyeberang dengan berjalan. Kerang berada di bagian dalam tas. Jika tersesat, Q meminta Ruru menunjukkan arah pijakan berikutnya.",
+      "action": "CHECK_CROSSING"
+    }
+  }
+}

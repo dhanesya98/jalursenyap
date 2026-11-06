@@ -1,0 +1,33 @@
+{
+  "id": "inspection_book",
+  "npc": "Nara",
+  "title": "Catatan pemeriksaan 009",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Buku Maren terbuka pada gambar lentera dan cincin penanda. Catatan sebelumnya menyebut satu denyut dan retak awal. Pemeriksaan terakhir menandai tiga denyut tanpa penyetelan serta retak yang melebar.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Maren",
+      "text": "Aku kembali dari pemeriksaan sebelum badai menutup bukit. Malam ini rangkaian tandanya lengkap. Kabar sumur yang kaubawa memperkuat kekhawatiranku.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Di sisi gambar ada instruksi lama: simpan kunci jauh dari pusat selama jalur penahan stabil. Jika kedua tanda muncul, teruskan melalui saksi lintas bangsa ke Rumah Jejak pusat.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Maren",
+      "text": "Lihat bagian terakhir. “Jangan membuka Katup hanya berdasarkan nyala satu lentera.” Yang kita lakukan malam ini adalah pemeriksaan, bukan pelepasan.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Aku menyalin gambar tiga denyut dan retak cincin ke Buku Jalur. Di 009 nanti, aku harus membandingkannya sendiri.",
+      "action": "CHECK_WARNINGS"
+    }
+  }
+}

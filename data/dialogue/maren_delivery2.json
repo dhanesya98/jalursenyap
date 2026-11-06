@@ -1,38 +1,48 @@
 {
   "id": "maren_delivery2",
   "npc": "Maren",
-  "title": "Kepala Pos Batu Biru",
-  "node": "start",
+  "title": "Lagu untuk Telaga Sumi",
+  "node": "n0",
   "nodes": {
-    "start": {
-      "speaker": "Maren",
-      "text": "Kabut mulai turun menyelimuti lembah. Ini pengantaran keduamu: Kerang Suara untuk Telaga Sumi.",
-      "next": "nara_1"
-    },
-    "nara_1": {
+    "n0": {
       "speaker": "Nara",
-      "text": "Apa isi kerang kecil ini, Bu?",
-      "next": "maren_2"
+      "text": "Roti sudah sampai. Juma memperlihatkan gambar tas Sahdan dalam buku kakeknya. Ada kalimat tentang kembali ke pusat untuk menahan sesuatu.",
+      "next": "n1"
     },
-    "maren_2": {
+    "n1": {
       "speaker": "Maren",
-      "text": "Lagu keluarga dari Dorin, pelaut Rumah Layar Bahtari di Bandar Lada, untuk istrinya, Bu Lamat. Kerang tua ini menyimpan jejak suaranya. Jaga agar tidak retak.",
-      "next": "nara_2"
+      "text": "Aku pernah melihat halaman itu. Simpan pertanyaannya. Barang-barang lama kadang bertahan lebih lama daripada penjelasannya.",
+      "next": "n2"
     },
-    "nara_2": {
+    "n2": {
+      "speaker": "Maren",
+      "text": "Sekarang ada kiriman dari Dorin, pelaut Rumah Layar di Bandar Lada. Kerang Suara ini untuk istrinya, Bu Lamat, di Telaga Sumi.",
+      "next": "n3"
+    },
+    "n3": {
       "speaker": "Nara",
-      "text": "Dan kalau terjatuh di jalan?",
-      "next": "maren_3"
+      "text": "Seperti lagu yang disimpan dalam batu?",
+      "next": "n4"
     },
-    "maren_3": {
+    "n4": {
       "speaker": "Maren",
-      "text": "Jejak bunyinya bisa terputus atau memudar. Kalau ada kerusakan atau gangguan di perjalanan, sampaikan kondisinya dengan jujur saat serah-terima. Kita menjaga pesan, bukan memperindah isinya.",
-      "next": "maren_grapple"
+      "text": "Ada jejak suara pada cangkangnya. Jangan membukanya tanpa izin dan jaga agar tidak retak. Jika rusak, katakan tepat seperti yang kaulihat.",
+      "next": "n5"
     },
-    "maren_grapple": {
+    "n5": {
       "speaker": "Maren",
-      "text": "Bawalah juga gulungan Tali Lintas dan Tangga Tali dari persediaan pos. Jembatan kayu ke barat sudah patah, tetapi tambatan tali di bibir ngarai masih kokoh untuk menyeberang.",
-      "action": "ACCEPT_DELIVERY_2"
+      "text": "Kabut mulai turun. Gunakan titian tetap di ngarai barat. Tangga Tali boleh kaubawa untuk membuka jalan pulang dari tepian; tidak perlu melompat jauh melewati jurang.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Nara",
+      "text": "Satu kerang, cangkang utuh. Untuk Bu Lamat. Aku akan memakai lentera sebagai penanda.",
+      "next": "n7"
+    },
+    "n7": {
+      "speaker": "Maren",
+      "text": "Ada air untukmu di ambang saat kembali. Teduh di jalanmu.",
+      "action": "ACCEPT_SHELL"
     }
   }
 }

@@ -3,15 +3,7 @@
   "method": "Node VM + bundled Three.js; browser QA separate",
   "results": [
     {
-      "name": "Ending rejects missing deliveries and missing package",
-      "pass": true
-    },
-    {
-      "name": "All three deliveries, idempotent rewards and guarded ending",
-      "pass": true
-    },
-    {
-      "name": "Persistent structures, discovery and rumors survive reload",
+      "name": "Persistent structures, discoveries and rumors survive reload",
       "pass": true
     },
     {
@@ -19,11 +11,11 @@
       "pass": true
     },
     {
-      "name": "Corrupt save is rejected without replacing valid state",
+      "name": "Corrupt save never replaces valid state",
       "pass": true
     },
     {
-      "name": "Save validation rejects inconsistent progress and normalizes settings",
+      "name": "Invalid settings normalize without changing quest progress",
       "pass": true
     },
     {
@@ -51,15 +43,11 @@
       "pass": true
     },
     {
-      "name": "Western gorge is crossed in both directions using grapple",
+      "name": "Fixed western bridge is walkable both ways without grapple",
       "pass": true
     },
     {
-      "name": "All main grapple landings are outside buildings and above ground",
-      "pass": true
-    },
-    {
-      "name": "Fast grapple chain can be traversed",
+      "name": "Kesa physically unlocks the northern gate",
       "pass": true
     },
     {

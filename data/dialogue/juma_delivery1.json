@@ -1,52 +1,57 @@
 {
   "id": "juma_delivery1",
   "npc": "Juma",
-  "title": "Penjaga Menara Batu Senja",
-  "node": "start",
+  "title": "Roti untuk Menara Batu Senja",
+  "node": "n0",
   "nodes": {
-    "start": {
+    "n0": {
       "speaker": "Juma",
-      "text": "Roti ini masih hangat? Bahkan angin bukit pun segan merusaknya. Kamu kurir yang baik, Nara.",
-      "next": "nara_1"
+      "text": "Roti Maren? Aku sudah mencium rempahnya sebelum melihatmu. Duduklah sebentar; bukit ini suka membuat orang merasa harus selalu bergegas.",
+      "next": "n1"
     },
-    "nara_1": {
+    "n1": {
       "speaker": "Nara",
-      "text": "Bu Maren bilang Anda akan mengadu ke seluruh pos kalau rotinya sampai dalam keadaan dingin.",
-      "next": "juma_2"
+      "text": "Satu roti rempah untuk Juma. Begini kondisinya setelah perjalanan. Bu Maren bilang Anda akan mengadu ke seluruh pos kalau terlambat.",
+      "next": "n2"
     },
-    "juma_2": {
+    "n2": {
       "speaker": "Juma",
-      "text": "Itu cara kami orang Asharim bilang rindu. (Juma memperhatikan jahitan benang berinsulasi pada tas yang dipinjamkan Maren.) Kakekku menggambar tas persis seperti itu di buku hariannya. Ia melihat Sahdan lewat tepat sebelum Hari Senyap.",
-      "next": "nara_3"
+      "text": "Itu cara kami bilang rindu. Kemarin aku mengirim kabar bahwa sendi lututku sudah membaik. Kurasa dia membaca bagian \"lutut\" dan mengabaikan \"membaik\".",
+      "next": "n3"
     },
-    "nara_3": {
+    "n3": {
+      "speaker": "Juma",
+      "text": "(Juma memperhatikan tas.) Boleh kulihat jahitannya? Kakekku menggambar pola seperti itu. Tas seorang kurir bernama Sahdan.",
+      "next": "n4"
+    },
+    "n4": {
       "speaker": "Nara",
-      "text": "Jadi yang Anda tahu berasal dari catatan dan cerita kakek, bukan pengalaman langsung?",
-      "next": "juma_3"
+      "text": "Maren menyebut nama yang sama. Apakah kakek Anda mengenalnya?",
+      "next": "n5"
     },
-    "juma_3": {
+    "choice_0": {
       "speaker": "Juma",
-      "text": "Ya. Aku belum lahir waktu itu. Kakek menulis bahwa Sahdan menitipkan tas dan sesuatu yang tersegel di Pos Batu Biru sebelum kembali ke pusat. Kisah di buku kakek berbeda dari Ajaran Tata. Tanyakan pada Maren, pelan-pelan.",
+      "text": "Bacalah perlahan. Tinta yang tua tidak selalu punya jawaban lengkap.",
+      "action": "DELIVER_BREAD_A"
+    },
+    "choice_1": {
+      "speaker": "Juma",
+      "text": "Katanya Sahdan selalu menanyakan orang yang belum mendapat kabar. Sekarang lihat bukunya; jangan hanya percaya ingatanku.",
+      "action": "DELIVER_BREAD_B"
+    },
+    "n5": {
+      "speaker": "Juma",
+      "text": "Ia menulis tentang pertemuan singkat sebelum Hari Senyap. Aku hanya punya ceritanya dan buku yang ditinggalkan. Lihatlah sendiri buku di bangku itu.",
       "choices": [
         {
-          "text": "“Aku akan bertanya pelan-pelan.”",
-          "next": "choice_a"
+          "text": "“Terima kasih. Aku akan membaca catatannya.”",
+          "next": "choice_0"
         },
         {
-          "text": "“Aku akan tanya sekarang juga.”",
-          "next": "choice_b"
+          "text": "“Apa yang paling Anda ingat dari cerita kakek?”",
+          "next": "choice_1"
         }
       ]
-    },
-    "choice_a": {
-      "speaker": "Juma",
-      "text": "Itu baru kurir sejati. Kebijaksanaan membuka jalan lebih cepat daripada langkah terburu-buru.",
-      "action": "COMPLETE_DELIVERY_1_A"
-    },
-    "choice_b": {
-      "speaker": "Juma",
-      "text": "Anak muda. Semangatmu tinggi, semoga angin sedang berhembus baik padamu.",
-      "action": "COMPLETE_DELIVERY_1_B"
     }
   }
 }

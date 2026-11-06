@@ -1,0 +1,43 @@
+{
+  "id": "maren_farewell",
+  "npc": "Maren",
+  "title": "Sebelum meninggalkan pos",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Aku memeriksa tiga denyut dan retak cincin, lalu menempelkan punggung surat pada lempeng. Segelnya tetap tertutup.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Maren",
+      "text": "Setelah itu teruskan ke Dusun Sela. Temui Ima sebelum melangkah menuju Padang Salkara. Surat ini akan menempuh serah-terima lintas bangsa; kau tidak harus memahami seluruh perjalanan malam ini.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Bagaimana dengan perbekalan yang ditahan?",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Maren",
+      "text": "Aku akan meminta pertanggungjawaban gerbang dan menghubungi pos saudara. Tugas itu tetap ada di catatan kami. Kau tidak meninggalkan mereka tanpa kabar.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Maren",
+      "text": "Temui Kesa. Ia sudah mengenal kirimanmu dan alasan pemeriksaan ini. Jalur Lentera masih bisa dipakai memutar, tetapi akses tebing memerlukan penguncinya.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Teduh di jalan Ibu juga.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Maren",
+      "text": "Air di langkahmu, Nara. Ada cawan untukmu kapan pun kembali.",
+      "action": "DEPART"
+    }
+  }
+}

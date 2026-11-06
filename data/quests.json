@@ -1,0 +1,698 @@
+{
+  "chapter": 0,
+  "targetMinutes": [
+    40,
+    60
+  ],
+  "steps": [
+    {
+      "id": "welcome",
+      "stage": 0,
+      "status": "ready",
+      "weather": "hangat",
+      "target": "maren",
+      "name": "Temui Maren di paviliun",
+      "hint": "Ruru menunggu di halaman. Dekati Maren dan tekan E.",
+      "dialogue": "maren_intro",
+      "actions": [
+        "MEET_MAREN"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "register",
+      "stage": 0,
+      "status": "ready",
+      "weather": "hangat",
+      "target": "guestbook",
+      "name": "Tuliskan namamu di Buku Tamu Batu",
+      "hint": "Batu biru di sisi halaman menyimpan nama para pengantar.",
+      "dialogue": "guestbook",
+      "actions": [
+        "REGISTER_NAME"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "take_bag",
+      "stage": 0,
+      "status": "ready",
+      "weather": "hangat",
+      "target": "supply",
+      "name": "Ambil tas pinjaman dan roti",
+      "hint": "Periksa jahitan tas serta bungkusan di meja bekal sebelum berangkat.",
+      "dialogue": "take_bag",
+      "actions": [
+        "ACCEPT_BREAD"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "bread_route",
+      "stage": 0,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "ridge_sign",
+      "name": "Baca penanda jalan menuju menara",
+      "hint": "Ikuti jalan batu ke utara. Peta wilayah dibuka dengan M.",
+      "dialogue": "ridge_sign",
+      "actions": [
+        "READ_RIDGE"
+      ],
+      "route": "north",
+      "reverse": false
+    },
+    {
+      "id": "bread_handoff",
+      "stage": 0,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "juma",
+      "name": "Antarkan roti kepada Juma",
+      "hint": "Pilih pijakan batu di tanjakan. Juma menunggu di kaki menara.",
+      "dialogue": "juma_delivery1",
+      "actions": [
+        "DELIVER_BREAD_A",
+        "DELIVER_BREAD_B"
+      ],
+      "route": "north",
+      "reverse": false
+    },
+    {
+      "id": "juma_ledger",
+      "stage": 1,
+      "status": "return",
+      "weather": "hangat",
+      "target": "juma_book",
+      "name": "Lihat gambar tas di buku kakek Juma",
+      "hint": "Buku terbuka di bangku dekat Juma. Periksa sumber ceritanya.",
+      "dialogue": "juma_book",
+      "actions": [
+        "READ_LEDGER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "return_bread",
+      "stage": 1,
+      "status": "return",
+      "weather": "hangat",
+      "target": "maren",
+      "name": "Kembali dan ceritakan pertemuan dengan Juma",
+      "hint": "Kembali ke pos. Jubah Layar membantu saat turun ke pijakan yang lebih rendah.",
+      "dialogue": "maren_delivery2",
+      "actions": [
+        "ACCEPT_SHELL"
+      ],
+      "route": "north",
+      "reverse": true
+    },
+    {
+      "id": "shell_crossing",
+      "stage": 1,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "bridge_sign",
+      "name": "Periksa titian di bibir ngarai",
+      "hint": "Ikuti lentera ke barat. Titian tetap menyambung kedua sisi ngarai.",
+      "dialogue": "bridge_sign",
+      "actions": [
+        "CHECK_CROSSING"
+      ],
+      "route": "west",
+      "reverse": false
+    },
+    {
+      "id": "shell_handoff",
+      "stage": 1,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "bulamat",
+      "name": "Bawa Kerang Suara kepada Bu Lamat",
+      "hint": "Lintasi titian dengan berjalan. Sampaikan kondisi cangkang saat serah-terima.",
+      "dialogue": "bulamat_delivery2",
+      "actions": [
+        "DELIVER_SHELL_A",
+        "DELIVER_SHELL_B"
+      ],
+      "route": "west",
+      "reverse": false
+    },
+    {
+      "id": "well",
+      "stage": 2,
+      "status": "return",
+      "weather": "kabut",
+      "target": "well",
+      "name": "Dengarkan dan periksa Sumur Induk",
+      "hint": "Bu Lamat memintamu mencatat perubahan bunyi di sumur dekat balai.",
+      "dialogue": "well",
+      "actions": [
+        "INSPECT_WELL"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "return_shell",
+      "stage": 2,
+      "status": "return",
+      "weather": "kabut",
+      "target": "maren",
+      "name": "Laporkan keadaan Telaga Sumi",
+      "hint": "Bawa kabar tentang lagu dan sumur kepada Maren.",
+      "dialogue": "maren_supplies",
+      "actions": [
+        "ACCEPT_SUPPLIES"
+      ],
+      "route": "west",
+      "reverse": true
+    },
+    {
+      "id": "supplies_check",
+      "stage": 2,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "supply",
+      "name": "Hitung dan bungkus perbekalan pos saudara",
+      "hint": "Dua ikat perbekalan, satu surat jalan. Catat kondisi awal di meja bekal.",
+      "dialogue": "supplies_check",
+      "actions": [
+        "PACK_SUPPLIES"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "toll_notice",
+      "stage": 2,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "toll_notice",
+      "name": "Baca pemberitahuan pemeriksaan gerbang timur",
+      "hint": "Ikuti jalan timur. Periksa alasan penutupan sebelum berbicara dengan petugas.",
+      "dialogue": "toll_notice",
+      "actions": [
+        "READ_TOLL_NOTICE"
+      ],
+      "route": "toll",
+      "reverse": false
+    },
+    {
+      "id": "detention",
+      "stage": 2,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "kesa",
+      "name": "Minta izin melanjutkan pengantaran",
+      "hint": "Tunjukkan surat jalan kepada Kesa. Tujuan kiriman berada di balik gerbang.",
+      "dialogue": "kesa_detention",
+      "actions": [
+        "DETAIN_RECEIPT",
+        "DETAIN_PROTECT"
+      ],
+      "route": "toll",
+      "reverse": false
+    },
+    {
+      "id": "recover_cargo",
+      "stage": 2,
+      "status": "return",
+      "weather": "berat",
+      "target": "cargo",
+      "name": "Ambil kembali sisa kiriman dan bukti pemeriksaan",
+      "hint": "Meja pemeriksaan berada di sisi gerbang. Periksa apa yang masih bisa dibawa pulang.",
+      "dialogue": "recover_cargo",
+      "actions": [
+        "RECOVER_CARGO"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "report",
+      "stage": 2,
+      "status": "return",
+      "weather": "berat",
+      "target": "maren",
+      "name": "Laporkan kiriman yang gagal sebagian kepada Maren",
+      "hint": "Bawa sisa perbekalan dan bukti penahanan kembali ke pos.",
+      "dialogue": "maren_report",
+      "actions": [
+        "REPORT_DIRECT",
+        "REPORT_HESITANT"
+      ],
+      "route": "toll",
+      "reverse": true
+    },
+    {
+      "id": "warnings",
+      "stage": 3,
+      "status": "return",
+      "weather": "berat",
+      "target": "inspection_book",
+      "name": "Bandingkan tanda bahaya dalam buku pemeriksaan",
+      "hint": "Maren meletakkan catatan pemeriksaan 009 di meja dapur. Cocokkan dengan kabar sumur.",
+      "dialogue": "inspection_book",
+      "actions": [
+        "CHECK_WARNINGS"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "letter",
+      "stage": 3,
+      "status": "return",
+      "weather": "berat",
+      "target": "maren",
+      "name": "Dengarkan mandat Maren dan terima surat",
+      "hint": "Tanda uji lengkap. Maren siap meneruskan titipan empat generasi.",
+      "dialogue": "maren_delivery3",
+      "actions": [
+        "RECEIVE_LETTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "stamp",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "stamp_pad",
+      "name": "Catat nama pembawa dan penyaksi pada cap",
+      "hint": "Di meja cap, ucapkan nama bersama Maren. Segel surat tetap tertutup.",
+      "dialogue": "stamp_pad",
+      "actions": [
+        "STAMP_LETTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "farewell",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "maren",
+      "name": "Pastikan petunjuk pemeriksaan sebelum berangkat",
+      "hint": "Konfirmasi cara memakai lempeng 009 dan tujuan setelah pemeriksaan.",
+      "dialogue": "maren_farewell",
+      "actions": [
+        "DEPART"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "kesa_open",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "kesa",
+      "name": "Temui Kesa di gerbang yang ditutup",
+      "hint": "Kesa telah melihat apa yang terjadi pada kirimanmu. Sampaikan mandat pemeriksaan.",
+      "dialogue": "kesa_tol",
+      "actions": [
+        "OPEN_NORTH_PATH"
+      ],
+      "route": "toll",
+      "reverse": false
+    },
+    {
+      "id": "storm_shelter",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "storm_shelter",
+      "name": "Periksa bekal di persinggahan jalur badai",
+      "hint": "Pilih Jalur Lentera atau Tebing Utara di peta. Berhenti di penanda perlindungan pada jalurmu.",
+      "dialogue": "storm_shelter",
+      "actions": [
+        "SHELTER_LETTER"
+      ],
+      "route": "chosen",
+      "reverse": false
+    },
+    {
+      "id": "relay_pulses",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "relay_lantern",
+      "name": "Amati denyut lentera 009",
+      "hint": "Di kaki menara, periksa lentera tanpa menyentuh cincin penyetel.",
+      "dialogue": "relay_lantern",
+      "actions": [
+        "OBSERVE_PULSES"
+      ],
+      "route": "chosen",
+      "reverse": false
+    },
+    {
+      "id": "relay_ring",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "relay_ring",
+      "name": "Cocokkan retakan cincin dengan gambar uji",
+      "hint": "Periksa cincin penanda di sisi lempeng. Kedua tanda diperlukan.",
+      "dialogue": "relay_ring",
+      "actions": [
+        "INSPECT_RING"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "relay_contact",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "altar",
+      "name": "Tempelkan punggung surat pada lempeng 009",
+      "hint": "Biarkan segel tertutup. Gunakan sisi yang memuat Cap Asharim.",
+      "dialogue": "simpul_sembilan",
+      "actions": [
+        "CONTACT_LETTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "test_entry",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "test_door",
+      "name": "Ikuti Ruru ke bangunan uji di belakang menara",
+      "hint": "Ada bunyi berbeda dari bangunan kecil. Periksa penutup pintunya.",
+      "dialogue": "test_door",
+      "actions": [
+        "INSPECT_TEST_DOOR"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "test_echo",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "test_stone",
+      "name": "Dengarkan sisa bunyi pada batu uji",
+      "hint": "Sumber bunyi berada di dalam bangunan, terpisah dari lempeng 009.",
+      "dialogue": "test_stone",
+      "actions": [
+        "HEAR_TEST_TRACE"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "test_record",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "test_record",
+      "name": "Cocokkan jejak dengan catatan pemeriksaan",
+      "hint": "Periksa pelat di sebelah batu. Bedakan yang terbukti dari yang belum diketahui.",
+      "dialogue": "test_record",
+      "actions": [
+        "COMPARE_RECORD"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "epilogue",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "departure",
+      "name": "Ambil jalan menuju Dusun Sela bersama Ruru",
+      "hint": "Berhenti di penanda keberangkatan. Pos Batu Biru masih terlihat dari sini.",
+      "dialogue": "epilogue",
+      "actions": [
+        "FINISH_CHAPTER"
+      ],
+      "route": null,
+      "reverse": false
+    }
+  ],
+  "objects": [
+    {
+      "id": "guestbook",
+      "name": "Buku Tamu Batu",
+      "position": [
+        -8,
+        0,
+        39
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "ridge_sign",
+      "name": "Penanda Jalan Menara",
+      "position": [
+        -21,
+        0,
+        -32
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "juma_book",
+      "name": "Buku kakek Juma",
+      "position": [
+        7,
+        0,
+        -119
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "bridge_sign",
+      "name": "Penanda titian",
+      "position": [
+        -54,
+        0,
+        43
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "well",
+      "name": "Sumur Induk",
+      "position": [
+        -145,
+        0,
+        61
+      ],
+      "kind": "well"
+    },
+    {
+      "id": "toll_notice",
+      "name": "Pemberitahuan pemeriksaan",
+      "position": [
+        56,
+        0,
+        -9
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "cargo",
+      "name": "Meja barang pemeriksaan",
+      "position": [
+        63,
+        0,
+        -16
+      ],
+      "kind": "cargo"
+    },
+    {
+      "id": "inspection_book",
+      "name": "Buku pemeriksaan Maren",
+      "position": [
+        7,
+        0,
+        34
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "stamp_pad",
+      "name": "Bantalan tinta resonansi",
+      "position": [
+        7,
+        0,
+        28
+      ],
+      "kind": "stamp"
+    },
+    {
+      "id": "storm_safe",
+      "name": "Persinggahan Jalur Lentera",
+      "position": [
+        140,
+        0,
+        30
+      ],
+      "kind": "shelter"
+    },
+    {
+      "id": "storm_fast",
+      "name": "Ceruk Tebing Utara",
+      "position": [
+        80,
+        0,
+        -39
+      ],
+      "kind": "shelter"
+    },
+    {
+      "id": "relay_lantern",
+      "name": "Lentera uji 009",
+      "position": [
+        119,
+        0,
+        -76
+      ],
+      "kind": "lantern"
+    },
+    {
+      "id": "relay_ring",
+      "name": "Cincin penanda retak",
+      "position": [
+        131,
+        0,
+        -82
+      ],
+      "kind": "ring"
+    },
+    {
+      "id": "test_door",
+      "name": "Pintu bangunan uji",
+      "position": [
+        110,
+        0,
+        -99
+      ],
+      "kind": "door"
+    },
+    {
+      "id": "test_stone",
+      "name": "Batu uji",
+      "position": [
+        110,
+        0,
+        -106
+      ],
+      "kind": "stone"
+    },
+    {
+      "id": "test_record",
+      "name": "Pelat pemeriksaan lama",
+      "position": [
+        114,
+        0,
+        -106
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "departure",
+      "name": "Penanda menuju Dusun Sela",
+      "position": [
+        143,
+        0,
+        -111
+      ],
+      "kind": "sign"
+    }
+  ],
+  "notes": {
+    "READ_LEDGER": {
+      "kind": "Kesaksian",
+      "text": "Gambar tas di buku kakek Juma cocok dengan jahitan tas pinjaman. Kisah Sahdan diwariskan melalui catatan; Juma bukan saksi Hari Senyap."
+    },
+    "DELIVER_SHELL_A": {
+      "kind": "Disaksikan",
+      "text": "Bu Lamat mengenali lagu Dorin, termasuk nada akhir yang meleset. Aku tinggal mendengarkannya bersama Bu Lamat."
+    },
+    "DELIVER_SHELL_B": {
+      "kind": "Disaksikan",
+      "text": "Lagu Dorin sampai kepada Bu Lamat. Aku meminta petunjuk ke sumur setelah serah-terima."
+    },
+    "INSPECT_WELL": {
+      "kind": "Disaksikan",
+      "text": "Sumur Induk mengulang potongan bunyi lama. Bu Lamat mengatakan bunyinya makin keras. Sumber dan penyebabnya belum diketahui."
+    },
+    "READ_TOLL_NOTICE": {
+      "kind": "Dokumen",
+      "text": "Pemberitahuan Dewan menutup lintasan timur karena Gangguan. Perintah pemeriksaan juga menahan kiriman antarpos."
+    },
+    "DETAIN_RECEIPT": {
+      "kind": "Disaksikan",
+      "text": "Satu dari dua ikat perbekalan ditahan. Aku meminta Kesa mencatat jumlah dan alasan penahanan sebelum menyelamatkan sisanya."
+    },
+    "DETAIN_PROTECT": {
+      "kind": "Disaksikan",
+      "text": "Satu dari dua ikat perbekalan ditahan. Aku mendahulukan perlindungan ikat yang dikembalikan; Kesa menyertakan tanda pemeriksaan."
+    },
+    "RECOVER_CARGO": {
+      "kind": "Dokumen",
+      "text": "Sisa satu ikat perbekalan dan tanda pemeriksaan dibawa pulang. Tujuan di pos saudara belum tercapai."
+    },
+    "REPORT_DIRECT": {
+      "kind": "Serah-terima",
+      "text": "Aku melaporkan penahanan dan kondisi sisa kiriman secara langsung. Maren mencatat tugas gagal sebagian dan menerima sisa perbekalan."
+    },
+    "REPORT_HESITANT": {
+      "kind": "Serah-terima",
+      "text": "Aku mengakui takut mengecewakan Maren, lalu menjelaskan penahanan dan kerusakan apa adanya. Maren menerima laporan serta sisa perbekalan."
+    },
+    "CHECK_WARNINGS": {
+      "kind": "Dokumen",
+      "text": "Catatan pemeriksaan Maren memuat tiga denyut tanpa penyetelan dan retak cincin 009. Kabar Sumur Induk memperkuat alasan meneruskan pemeriksaan."
+    },
+    "STAMP_LETTER": {
+      "kind": "Serah-terima",
+      "text": "Cap Saksi Asharim mencatat pembawa Nara dan penyaksi Maren. Nama diucapkan pada bantalan tinta resonansi. Segel masih tertutup."
+    },
+    "OPEN_NORTH_PATH": {
+      "kind": "Disaksikan",
+      "text": "Kesa membuka pengunci Tebing Utara. Gerbang resmi tetap ditutup. Jalur Lentera menyediakan jalan memutar yang lebih terlindung."
+    },
+    "OBSERVE_PULSES": {
+      "kind": "Disaksikan",
+      "text": "Lentera 009 berdenyut tiga kali tanpa ada yang menyetel cincinnya."
+    },
+    "INSPECT_RING": {
+      "kind": "Disaksikan",
+      "text": "Retak cincin penanda cocok dengan gambar instruksi luar. Dua tanda bahaya 009 telah diperiksa langsung."
+    },
+    "CONTACT_LETTER": {
+      "kind": "Disaksikan",
+      "text": "Kontak punggung surat dengan lempeng memicu pantulan singkat yang menyebut Nara. Bunyi nama tersimpan pada tinta cap. Segel tetap tertutup; jaringan umum tidak menyala."
+    },
+    "HEAR_TEST_TRACE": {
+      "kind": "Disaksikan",
+      "text": "Batu dalam bangunan uji mengulang peringatan tentang tujuh cabang dan penyetelan yang belum lengkap. Jejak ini tidak menanggapi pertanyaan atau menyebut namaku."
+    },
+    "COMPARE_RECORD": {
+      "kind": "Belum terjawab",
+      "text": "Pelat tahun 58 cocok dengan tahun yang terdengar pada batu uji. Identitas penyetel dan keadaan cabang Dewan sekarang belum diketahui."
+    },
+    "FINISH_CHAPTER": {
+      "kind": "Mandat",
+      "text": "Pemeriksaan BAB 0 selesai. Surat bersegel tetap kubawa. Tujuan berikutnya: menemui Nenek Ima di Dusun Sela sebelum Padang Salkara."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "epilogue",
+  "npc": "Nara",
+  "title": "Ambang keberangkatan",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Dari penanda jalan ini, lentera Pos Batu Biru masih terlihat. Pagi tadi aku hanya ingin memastikan roti Juma tetap hangat.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Sekarang lagu Dorin sudah sampai. Perbekalan yang tertahan ada dalam catatan Maren. Surat ini masih harus berjalan jauh.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "(Ruru menyentuh ujung tas dengan hidungnya. Nara duduk sebentar, lalu menutup Buku Jalur.)",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Aku tidak harus mempunyai semua jawaban sebelum melangkah. Tetapi aku harus tahu mana yang kulihat, mana yang kudengar, dan kepada siapa aku berjanji.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Dusun Sela lebih dulu. Aku akan menemui Nenek Ima, lalu mencari jalan menuju Padang Salkara.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Ayo, Ruru. Supaya tidak ada orang yang menunggu sendirian.",
+      "action": "FINISH_CHAPTER"
+    }
+  }
+}

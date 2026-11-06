@@ -1,0 +1,28 @@
+{
+  "id": "test_record",
+  "npc": "Nara",
+  "title": "Memeriksa pembanding",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Pelat di dekat batu bertuliskan “Pemeriksaan cabang — 58”. Ada tujuh tanda cabang dan bekas catatan penutupan yang sama dengan di pintu.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Tahun pada pelat cocok dengan yang terdengar. Nama pemeriksanya aus. Tidak ada laporan tentang keadaan cabang hari ini.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Aku mencatat dua sumber terpisah: pantulan jauh saat surat menyentuh 009, dan sisa pemeriksaan lama pada batu bangunan ini.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Peringatannya perlu dibawa, tetapi aku belum tahu seluruh penyebabnya. Di tempat lain mungkin masih ada salinan laporan. Surat kusimpan kembali.",
+      "action": "COMPARE_RECORD"
+    }
+  }
+}
