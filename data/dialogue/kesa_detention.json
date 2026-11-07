@@ -6,12 +6,12 @@
   "nodes": {
     "n0": {
       "speaker": "Kesa",
-      "text": "Berhenti di garis pemeriksaan. Dua ikat perbekalan dari Pos Batu Biru? Serahkan surat jalannya. (Kesa memeriksa cap pos, lalu memejamkan mata sebentar.) Surat jalan ini sah, tertanggal kemarin. Tapi... instruksi pembekuan jalur timur baru saja turun dari Benteng subuh tadi.",
+      "text": "Berhenti di garis pemeriksaan. Dua ikat perbekalan dari Pos Nilasar? Serahkan surat jalannya. (Kesa memeriksa cap pos, lalu memejamkan mata sebentar.) Surat jalan ini sah, tertanggal kemarin. Tapi... instruksi pembekuan jalur timur baru saja turun dari Benteng subuh tadi.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Loh—kok dibekukan mendadak, Kak Kesa? Ini isinya cuma roti kering, garam, sama kain buat orang-orang yang ketahan di pos saudara! Bukan barang dagangan, apalagi alat penyetel.",
+      "text": "Loh—kok dibekukan mendadak, Kak Kesa? Ini isinya cuma roti kering, garam, sama kain buat orang-orang yang ketahan di pos saudara! Bukan barang dagangan, apalagi alat arsitek.",
       "next": "n2"
     },
     "n2": {
@@ -31,7 +31,7 @@
     },
     "choice_0": {
       "speaker": "Kesa",
-      "text": "Ini berita acara resminya: satu ikat ditahan untuk pemeriksaan Dewan, satu ikat dikembalikan ke Pos Batu Biru. Aku membubuhkan nama dan nomor petugas jaga milikku sendiri di bawahnya.",
+      "text": "Ini berita acara resminya: satu ikat ditahan untuk pemeriksaan TTA, satu ikat dikembalikan ke Pos Nilasar. Aku membubuhkan nama dan nomor petugas jaga milikku sendiri di bawahnya.",
       "action": "DETAIN_RECEIPT"
     },
     "choice_1": {

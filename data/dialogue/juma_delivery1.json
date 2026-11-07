@@ -1,22 +1,22 @@
 {
   "id": "juma_delivery1",
   "npc": "Juma",
-  "title": "Roti untuk Menara Batu Senja",
+  "title": "Roti untuk Menara Senja",
   "node": "n0",
   "nodes": {
     "n0": {
       "speaker": "Juma",
-      "text": "Tinta tenang. Pukul dua kurang sepuluh menit. Angin dari lembah naik tiga simpul, dan bau kayu manisnya sampai lebih dulu daripada langkahmu.",
+      "text": "Pukul dua kurang sepuluh menit. Angin dari lembah naik tiga simpul, dan bau kayu manisnya sampai lebih dulu daripada langkahmu.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Kata terjaga, Pak Juma! Ini roti rempahnya, titipan Bu Maren. Nggak penyok kok, Pak. Cuma, ya... tadi kena angin dikit pas nanjak di punggung bukit, tapi aku udah bungkus rapat di sekat tengah. Dua lapis daun. Tiga, sih, sama kainnya.",
+      "text": "Siang, Pak Juma! Ini roti rempahnya, titipan Bu Marsiyah dari Batu Biru. Nggak penyok kok, Pak. Cuma, ya... tadi kena angin dikit pas nanjak di punggung bukit, tapi aku udah bungkus rapat di sekat tengah. Dua lapis daun. Tiga, sih, sama kainnya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Juma",
-      "text": "(Menerima bungkusan, memeriksa simpul talinya.) Ikatan rapi. Masih hangat. Maren tidak mengirim ini karena aku lupa makan. Pekan lalu kutulis lutut kananku sudah membaik; ia membaca kata \"lutut\", lalu mengabaikan sisanya.",
+      "text": "(Menerima bungkusan, memeriksa simpul talinya.) Ikatan rapi. Masih hangat. Marsiyah tidak mengirim ini karena aku lupa makan. Pekan lalu kutulis lutut kananku sudah membaik; ia membaca kata \"lutut\", lalu mengabaikan sisanya.",
       "next": "n3"
     },
     "n3": {
@@ -26,12 +26,12 @@
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Hah? Serius, Pak? Bu Maren tadi cuma bilang ini tas pinjaman peninggalan kurir lama... namanya Sahdan, kalau nggak salah. Kakek Bapak pernah ketemu dia langsung?",
+      "text": "Hah? Serius, Pak? Bu Marsiyah tadi cuma bilang ini tas pinjaman peninggalan kurir lama... namanya Sahdan, kalau nggak salah. Kakek Bapak pernah ketemu dia langsung?",
       "next": "n5"
     },
     "choice_0": {
       "speaker": "Juma",
-      "text": "Bacalah. Jangan menyimpulkan lebih banyak daripada yang tertulis di halamannya. Tinta tua tidak suka ditebak-tebak.",
+      "text": "Bacalah. Jangan menyimpulkan lebih banyak daripada yang tertulis di halamannya. Kata orang gunung, tinta tak pernah lupa—tapi manusia sering menambahi.",
       "action": "DELIVER_BREAD_A"
     },
     "choice_1": {

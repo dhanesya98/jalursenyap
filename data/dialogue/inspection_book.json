@@ -6,11 +6,11 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Buku catatan Bu Maren terbuka pada sketsa lentera dan cincin batu Simpul Sembilan. Di halaman lama ada tulisan tinta merah: satu denyut dan retak halus. Tapi di lembar pemeriksaan tadi pagi... dicatat ada tiga denyut tanpa disentuh dan retakannya makin melebar.",
+      "text": "Buku catatan Bu Marsiyah terbuka pada sketsa lentera dan cincin batu Simpul Sembilan. Di halaman lama ada tulisan tinta merah: satu denyut dan retak halus. Tapi di lembar pemeriksaan tadi pagi... dicatat ada tiga denyut tanpa disentuh dan retakannya makin melebar.",
       "next": "n1"
     },
     "n1": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Aku baru kembali dari menara 009 sebelum badai pasir menyapu lereng bukit. Malam ini semua tanda bahayanya lengkap. Dan kabar dengungan sumur di Telaga Sumi yang kaubawa tadi semakin membuktikan firasatku: penahanan gelombang di bawah tanah mulai goyah.",
       "next": "n2"
     },
@@ -20,8 +20,8 @@
       "next": "n3"
     },
     "n3": {
-      "speaker": "Maren",
-      "text": "Baca baris terakhirnya baik-baik, Nara: \"Jangan pernah membuka Katup hanya karena melihat nyala satu lentera.\" Yang akan kita lakukan malam ini adalah pemeriksaan kebenaran, bukan pelepasan gelombang secara sembrono.",
+      "speaker": "Marsiyah",
+      "text": "Baca baris terakhirnya baik-baik, Nara: \"Jangan pernah membuka Gerbang Surut hanya karena melihat nyala satu lentera.\" Yang akan kita lakukan malam ini adalah pemeriksaan kebenaran, bukan pelepasan gelombang secara sembrono.",
       "next": "n4"
     },
     "n4": {

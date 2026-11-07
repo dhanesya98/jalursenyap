@@ -11,12 +11,12 @@
     },
     "n1": {
       "speaker": "Nara",
-      "text": "(Mengambil jarum gores, lalu mengukir pelan: Nara, Dusun Sela. Tugas pertama—eh, maksudku, pengantaran pertama: roti rempah ke Menara Batu Senja.)",
+      "text": "(Mengambil jarum gores, lalu mengukir pelan: Nara, Dusun Sela. Tugas pertama—eh, maksudku, pengantaran pertama: roti rempah ke Menara Senja.)",
       "next": "n2"
     },
     "n2": {
-      "speaker": "Maren",
-      "text": "Batu itu adalah saksi bagi keluarga yang menunggu di rumah, Nara. Di pos tua ini, daftar nama pelintas dijaga sebagai amanah tamu, bukan disetorkan ke meja Dewan demi kuota gandum.",
+      "speaker": "Marsiyah",
+      "text": "Batu itu adalah saksi bagi keluarga yang menunggu di rumah, Nara. Di pos tua ini, daftar nama pelintas dijaga sebagai amanah tamu, bukan disetorkan ke meja TTA demi kuota gandum.",
       "next": "n3"
     },
     "n3": {

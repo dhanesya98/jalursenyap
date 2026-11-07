@@ -6,12 +6,12 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Lentera kuno di puncak pilar ini meredup pelan... lalu mendadak berdenyut terang. Satu. Dua. Tiga denyut berturut-turut! Nggak ada siapa pun di dekat sini yang menyentuh cincin penyetel.",
+      "text": "Lentera kuno di puncak pilar ini meredup pelan... lalu mendadak berdenyut terang. Satu. Dua. Tiga denyut berturut-turut! Nggak ada siapa pun di dekat sini yang menyentuh cincin arsitek.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Pola denyutnya persis seperti yang digambar Bu Maren di buku catatan pos: tiga denyut tanpa penyetelan. Getaran di bawah lantai batu ini terasa sampai ke telapak kakiku.",
+      "text": "Pola denyutnya persis seperti yang digambar Bu Marsiyah di buku catatan pos: tiga denyut tanpa penyetelan. Getaran di bawah lantai batu ini terasa sampai ke telapak kakiku.",
       "next": "n2"
     },
     "n2": {

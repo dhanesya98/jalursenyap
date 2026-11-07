@@ -2,7 +2,7 @@
   "year": 100,
   "worldName": "Tanah Sada",
   "source": "docs/STORY-BIBLE.md",
-  "revision": "2026-11-06",
+  "revision": "2026-11-07",
   "nara": {
     "age": 17,
     "birth": 83,
@@ -20,19 +20,19 @@
       "id": "asharim",
       "name": "Asharim",
       "region": "Lembah Pasir & Sabuk Sungai Kembar",
-      "place": "Telaga Sumi · Pos Batu Biru · Menara Batu Senja · Dusun Sela",
+      "place": "Telaga Sumi · Pos Nilasar (Batu Biru) · Menara Senja · Dusun Sela",
       "role": "Konfederasi suaka air & penjaga persinggahan",
       "contract": "Pakta Sumur Terbuka (Hukum Air): mata air adalah suaka netral, bukan milik satu klan. Bersama Lulanai membangun Urat Sumi dan Sabuk Naya-Dara.",
-      "politics": "Tiap pos besar adalah kota-negara otonom di bawah Kepala Pos dan Dewan Sumur. Terbelah antara Kubu Pos Tua (konservatif adat penjaga suaka netral) dan Kubu Pos Dagang (pragmatis rekanan Dewan Tol yang menyerahkan catatan Buku Tamu Batu demi subsidi pangan & keringanan bea).",
+      "politics": "Tiap pos besar adalah kota-negara otonom di bawah Kepala Pos dan Dewan Sumur. Terbelah antara Kubu Pos Tua (konservatif adat penjaga suaka netral) dan Kubu Pos Dagang (pragmatis rekanan Takhta Timbang Agung / TTA yang menyerahkan catatan Buku Tamu Batu demi subsidi pangan & keringanan iuran timbang).",
       "economy": "Garam, rempah gurun, kain tenun, air simpanan, perbekalan kurir (kendi, tali, kain pelindung pasir), dan roti rempah; pasar transit netral darat-sungai.",
-      "greeting": "Teduh di jalanmu. / Air di langkahmu.",
-      "description": "Penguasa mata air gurun dan penjaga persinggahan di sekitar Urat Sumi serta Balai Cawan. Kehadiran fisik seorang tamu lebih berharga daripada suara dari jauh. Peribahasa: Air tidak bertanya nama.",
+      "greeting": "Semboyan: Air tidak bertanya nama.",
+      "description": "Penguasa mata air gurun dan penjaga persinggahan di sekitar Urat Sumi serta Balai Cawan. Kehadiran fisik seorang tamu lebih berharga daripada suara dari jauh. Semboyan bangsa: Air tidak bertanya nama.",
       "custom": "Tiga Cawan (air, garam, kabar), Air malam di ambang pintu bagi kurir yang tiba larut, dan Buku Tamu Batu tempat pengelana menulis nama di batu pos.",
       "trust": "Menjaga adat tamu: tidak mengambil tanpa membalas, tidak menolak yang meminta tumpangan, dan mengantar di bawah cuaca buruk serta melapor dengan jujur.",
       "history": "Kisah yang diwariskan (Tahun Telan): dunia ditelan kesunyian karena manusia terlalu bergantung pada suara jauh dan melupakan kehadiran.",
       "blindspot": "Cenderung meremehkan manfaat nyata Gema dan menghakimi bangsa yang menggantungkan hidup pada kabar jauh, terutama Bahtari.",
-      "tension": "Kubu Pos Tua menolak petugas Dewan Tol di sekitar sumur; Kubu Pos Dagang diam-diam melaporkan kurir dan menyerahkan catatan Buku Tamu Batu demi keringanan tol.",
-      "phenomenon": "Sumur di Telaga Sumi memantulkan gema suara lama dari waktu dan tempat yang jauh, semakin keras dari tahun ke tahun.",
+      "tension": "Kubu Pos Tua menolak petugas TTA di sekitar sumur; Kubu Pos Dagang diam-diam melaporkan kurir dan menyerahkan catatan Buku Tamu Batu demi keringanan iuran timbang.",
+      "phenomenon": "Sumur di Telaga Sumi memantulkan gaung suara lama dari waktu dan tempat yang jauh, semakin keras dari tahun ke tahun.",
       "palette": [
         "#3D6E8F",
         "#C86A3C"
@@ -43,20 +43,20 @@
     {
       "id": "tseren",
       "name": "Tseren",
-      "region": "Pegunungan Kabut Lirih",
+      "region": "Pegunungan Silin (Kabut Lirih)",
       "place": "Desa Kertas Awan · Paviliun Tebing · Gudang Naskah",
       "role": "Birokrasi arsip & penjaga catatan",
       "contract": "Kanon Aksara: sengketa antarlembah berkabut melahirkan Rumah Naskah; kesepakatan disahkan lewat bukti tertulis dan pemeliharaan naskah sumber.",
-      "politics": "Birokrasi meritokratis di bawah majelis kepala Rumah Naskah dan Penjaga Arsip. Terbelah antara Aliran Murni (anti-penyuntingan) dan Aliran Rapi (menyunting salinan resmi demi ketertiban atas tekanan Dewan, namun mengunci naskah asli di ruang tertutup karena pemusnahan kata tetap tabu).",
-      "economy": "Kertas serat tahan air/lembap, tinta mineral berlapis, kain tenun, dan benang berinsulasi resonansi (bahan tas Sahdan dan kertas Surat Penyalaan). Tidak semua kertas umum tahan air.",
-      "greeting": "Tinta tenang. / Kata terjaga.",
-      "description": "Pengesah lintas bangsa dan pembuat bahan tulis. Memakai penanggalan Tahun Simpul (TS 1 = 400 Pra-Telan; Tahun Telan = TS 401). Sebutan Pra-Telan pada naskah lama menunjukkan penyalinan pasca-Telan, namun pemalsuan isi harus dibuktikan lewat pembandingan naskah sumber.",
+      "politics": "Birokrasi meritokratis di bawah majelis kepala Rumah Naskah dan Penjaga Arsip. Terbelah antara Aliran Murni (anti-penyuntingan) dan Aliran Selaras (menyunting salinan resmi demi ketertiban atas tekanan TTA, namun mengunci naskah asli di ruang tertutup karena pemusnahan kata tetap tabu).",
+      "economy": "Kertas serat tahan air/lembap, tinta mineral berlapis, kain tenun, dan benang berlapis peredam gaung (bahan tas Sahdan dan kertas Surat Penyalaan). Tidak semua kertas umum tahan air.",
+      "greeting": "Semboyan: Tinta tak pernah lupa.",
+      "description": "Pengesah lintas bangsa dan pembuat bahan tulis di Pegunungan Silin. Memakai penanggalan Tahun Simpul (TS 1 = 400 Pra-Telan; Tahun Telan = TS 401). Sebutan Pra-Telan pada naskah lama menunjukkan penyalinan pasca-Telan, namun pemalsuan isi harus dibuktikan lewat pembandingan naskah sumber.",
       "custom": "Dua Pembacaan: penerima membaca surat; kurir membacakan catatan serah-terima dan menyatakan kondisi fisiknya tanpa membuka segel. Tinta Kelahiran di arsip desa.",
       "trust": "Menyerahkan surat tanpa mengubah satu kata pun, dan berani menyebut ketika sebuah dokumen terasa palsu atau janggal.",
       "history": "Kisah yang diwariskan (Tahun Tinta Kering): Gema runtuh akibat penyalahgunaan kata dan kegagalan teknis tak disengaja.",
-      "blindspot": "Bergantung pada bukti tertulis padahal salinan seratus tahun sudah tidak murni dan sebagian telah disunting Aliran Rapi.",
-      "tension": "Aliran Murni mempertahankan keaslian naskah sumber; Aliran Rapi mengganti salinan resmi demi stabilitas politik namun tidak berani memusnahkan naskah asli.",
-      "phenomenon": "Tinta resonansi khusus memperlihatkan lapisan tulisan yang pernah dihapus pada lembaran tua.",
+      "blindspot": "Bergantung pada bukti tertulis padahal salinan seratus tahun sudah tidak murni dan sebagian telah disunting Aliran Selaras.",
+      "tension": "Aliran Murni mempertahankan keaslian naskah sumber; Aliran Selaras mengganti salinan resmi demi stabilitas politik namun tidak berani memusnahkan naskah asli.",
+      "phenomenon": "Tinta gaung khusus memperlihatkan lapisan tulisan yang pernah dihapus pada lembaran tua.",
       "palette": [
         "#EDE6D3",
         "#8FA68A"
@@ -71,24 +71,66 @@
       "place": "Perkemahan Tujuh Panji · Jalur Padang · Tepi Salkara",
       "role": "Konfederasi Tujuh Panji & penjaga janji",
       "contract": "Sumpah Api Tujuh Panji: tujuh klan penggembala menghentikan perang padang melalui pembagian keahlian dan Hukum Janji Api di depan tiga saksi mata.",
-      "politics": "Federasi militer-kesukuan yang diperintah lewat sidang terbuka ketujuh pemimpin panji. Terkunci dalam kebuntuan 3 lawan 3 dengan 1 suara penentu (3 Panji Tua vs 3 Panji Muda vs Panji Batu Nama).",
+      "politics": "Federasi militer-kesukuan yang diperintah lewat sidang terbuka ketujuh pemimpin panji. Terkunci dalam kebuntuan 3 lawan 3 dengan 1 suara penentu (3 Panji Tua vs 3 Panji Muda vs Panji Kadum).",
       "economy": "Hewan padang, kuda beban, kain wol dan kempa, kulit, daging kering, tali panjang, dan jasa pengawalan lintas wilayah.",
-      "greeting": "Angin searah. / Janji sampai.",
+      "greeting": "Semboyan: Bohonglah di depan api, kalau berani.",
       "description": "Pengelola logistik karavan dan pengawalan padang. Hukum Janji Api melarang penulisan pada janji adat, namun kegiatan hidup lain tetap mengenal catatan. Pemimpin lama membuat pengecualian rahasia menitipkan kesaksian tertulis ke Tseren yang menyalahkan Bahtari.",
-      "custom": "Janji di Api (diucapkan di depan api & tiga saksi, tidak ditulis), Nama di Batu (dicatat Panji Batu Nama), dan upacara Memanggil Angin saat pelepasan karavan.",
+      "custom": "Janji di Api (diucapkan di depan api & tiga saksi, tidak ditulis), Nama di Batu (dicatat Panji Kadum), dan upacara Memanggil Angin saat pelepasan karavan.",
       "trust": "Menepati janji lisan tanpa catatan dan berani bersaksi secara terbuka di depan sidang Tujuh Panji.",
       "history": "Kisah yang diwariskan (Tahun Tuduhan): Bahtari memadamkan Gema dan membakar karavan Cirusia untuk menutupi kesalahan.",
-      "blindspot": "Membenci Bahtari sebagian untuk menutupi rasa bersalah leluhur Panji Bara atas kecelakaan api masak yang tertiup badai di Pos Tepi Salkara.",
-      "tension": "Tiga Panji Tua menjaga tuduhan warisan dan adat Muka Api; tiga Panji Muda (termasuk Panji Tali Panjang asal Orsa) membutuhkan perdagangan dan pasokan pengawet; Panji Batu Nama menunggu gabungan bukti dan kesaksian sah.",
+      "blindspot": "Membenci Bahtari sebagian untuk menutupi rasa bersalah leluhur Panji Gorkan atas kecelakaan api masak yang tertiup badai di Pos Tepi Salkara.",
+      "tension": "Tiga Panji Tua menjaga tuduhan warisan dan adat Muka Api; tiga Panji Muda (termasuk Panji Belkut asal Orsuk) membutuhkan perdagangan dan pasokan pengawet; Panji Kadum menunggu gabungan bukti dan kesaksian sah.",
       "phenomenon": "Batu penanda di Padang Salkara mengulang potongan bunyi dan nama pengelana yang pernah tersimpan.",
       "tujuhPanji": [
-        {"name": "Panji Bara", "clan": "Klan Kaldera", "symbol": "Spiral merah pada hitam", "role": "Sidang api, jadwal karavan, penjaga api & perunding", "politics": "Pemimpin Panji Tua; mewarisi pengakuan tertutup kecelakaan api masak"},
-        {"name": "Panji Tanduk Besi", "clan": "Klan Salka", "symbol": "Sepasang tanduk perunggu", "role": "Pengawalan depan, penunggang & perisai kempa", "politics": "Panji Tua; mewarisi trauma kehilangan pengawal"},
-        {"name": "Panji Angin Debu", "clan": "Klan Pelacak Utara", "symbol": "Tiga gelombang kuning", "role": "Pengintaian, pembaca angin/rumput & pembuka jalur", "politics": "Panji Tua; curiga pada pihak luar"},
-        {"name": "Panji Tali Panjang", "clan": "Klan Pengikat (Asal Orsa)", "symbol": "Simpul tali terakota", "role": "Kargo lintas batas, tali, jembatan darurat & penghubung kurir", "politics": "Panji Muda; penghubung kurir & karavan"},
-        {"name": "Panji Roda Kempa", "clan": "Klan Perajin Kemah", "symbol": "Roda bersulam putih", "role": "Tenda, bongkar-pasang kemah, wol & pengawetan logistik", "politics": "Panji Muda; membutuhkan pasokan lada biru & garam Bahtari"},
-        {"name": "Panji Bintang Rendah", "clan": "Klan Penuntun Malam", "symbol": "Bintang putih pada biru gelap", "role": "Navigasi langit, rute malam & perbatasan", "politics": "Panji Muda; menolak bea yang menutup perdagangan"},
-        {"name": "Panji Batu Nama", "clan": "Klan Saksi", "symbol": "Monolit abu-abu", "role": "Pencatat nama gugur, ingatan lisan berantai & pengesah sumpah", "politics": "Penengah & suara penentu sidang"}
+        {
+          "name": "Panji Gorkan",
+          "clan": "Pemimpin: Dargun, si Bara (Klan Kaldera)",
+          "symbol": "Spiral merah pada hitam",
+          "role": "Sidang api, jadwal karavan, penjaga api & perunding",
+          "politics": "Pemimpin Panji Tua; mewarisi pengakuan tertutup kecelakaan api masak"
+        },
+        {
+          "name": "Panji Torgan",
+          "clan": "Pemimpin: Mulkar, si Tanduk Besi (Klan Salka)",
+          "symbol": "Sepasang tanduk perunggu",
+          "role": "Pengawalan depan, penunggang & perisai kempa",
+          "politics": "Panji Tua; mewarisi trauma kehilangan pengawal"
+        },
+        {
+          "name": "Panji Sarbuk",
+          "clan": "Pemimpin: Kutlak, si Angin Debu (Klan Pelacak Utara)",
+          "symbol": "Tiga gelombang kuning",
+          "role": "Pengintaian, pembaca angin/rumput & pembuka jalur",
+          "politics": "Panji Tua; curiga pada pihak luar"
+        },
+        {
+          "name": "Panji Belkut",
+          "clan": "Pemimpin: Salgur, si Tali Panjang (Asal Orsuk)",
+          "symbol": "Simpul tali terakota",
+          "role": "Kargo lintas batas, tali, jembatan darurat & penghubung kurir",
+          "politics": "Panji Muda; penghubung kurir & karavan"
+        },
+        {
+          "name": "Panji Tumran",
+          "clan": "Pemimpin: Borlan, si Roda Kempa (Klan Perajin Kemah)",
+          "symbol": "Roda bersulam putih",
+          "role": "Tenda, bongkar-pasang kemah, wol & pengawetan logistik",
+          "politics": "Panji Muda; membutuhkan pasokan lada biru & garam Bahtari"
+        },
+        {
+          "name": "Panji Ulmar",
+          "clan": "Pemimpin: Irgul, si Bintang Rendah (Klan Penuntun Malam)",
+          "symbol": "Bintang putih pada biru gelap",
+          "role": "Navigasi langit, rute malam & perbatasan",
+          "politics": "Panji Muda; menolak iuran timbang yang menutup perdagangan"
+        },
+        {
+          "name": "Panji Kadum",
+          "clan": "Pemimpin: Odgar, si Batu Nama (Klan Saksi)",
+          "symbol": "Monolit abu-abu",
+          "role": "Pencatat nama gugur, ingatan lisan berantai & pengesah sumpah",
+          "politics": "Penengah & suara penentu sidang"
+        }
       ],
       "palette": [
         "#A8452F",
@@ -100,20 +142,20 @@
     {
       "id": "bahtari",
       "name": "Bahtari",
-      "region": "Kepulauan Lada Biru & Jejaring Sungai-Laut",
-      "place": "Bandar Lada · Simpul Keseratus · 12 Titik Alih Muatan",
+      "region": "Kepulauan Lamuna & Jejaring Sungai-Laut",
+      "place": "Bandar Lada · Simpul Keseratus (Gerbang Surut) · 12 Titik Alih Muatan",
       "role": "Bangsa bandar, pelaut & penjaga lagu",
       "contract": "Hukum Sauh dan Lagu: menghubungkan pulau berarus keras melalui kewajiban menanggung risiko pelayaran serta keluarga yang ditinggalkan.",
-      "politics": "Pertentangan antara Rumah Dagang (saudagar pemilik gudang, dermaga & modal Kontrak Sauh yang memungut bunga Utang Kabar) dan Rumah Layar (serikat nakhoda, penyelam karang & Pembawa Lagu seperti Dorin dan Tarun).",
+      "politics": "Pertentangan antara Rumah Dagang (saudagar pemilik gudang, dermaga & modal Kontrak Sauh yang memungut bunga Utang Kabar) dan Rumah Layar (serikat nakhoda, penyelam karang & Pembawa Lagu seperti Dorun dan Tarun).",
       "economy": "Lada biru (memperpanjang ketahanan bekal bersama garam dan pengeringan), garam laut, ikan asin, kain celup biru, tali, kayu kapal, dan pengangkutan sungai-laut.",
-      "greeting": "Pasang baik! / Layar penuh!",
-      "description": "Pelaut, pedagang, pembawa lagu, dan pengangkut muara. Lagu keluarga memiliki ketidaksempurnaan manusia yang menjadi tanda keaslian bagi penerima, bukan kunci mekanis pembuka alat.",
+      "greeting": "Semboyan: Pasang selalu kembali.",
+      "description": "Pelaut, pedagang, pembawa lagu, dan pengangkut muara di Kepulauan Lamuna. Lagu keluarga memiliki ketidaksempurnaan manusia yang menjadi tanda keaslian bagi penerima, bukan kunci mekanis pembuka alat.",
       "custom": "Lagu Titip (lagu keluarga yang pantang diubah), Kerang Suara (penyimpan lagu/pesan di kerang tua), dan Pembawa Lagu.",
       "trust": "Membawa pesan pulang apa adanya, termasuk lagu yang nadanya tidak sempurna.",
-      "history": "Kisah yang diwariskan (Tahun Terputus): Dewan Tol mengambil untung dari pemadaman Gema untuk memonopoli jalur.",
+      "history": "Kisah yang diwariskan (Tahun Terputus): Takhta Timbang Agung (TTA) mengambil untung dari pemadaman Gema untuk memonopoli jalur.",
       "blindspot": "Lupa bahwa rumah-rumah dagang besar mereka sendiri pernah menjual kabar cepat dan memperkaya diri dari spekulasi informasi pada masa Kabar Dusta.",
-      "tension": "Rumah Dagang bekerja sama dengan Dewan Tol demi izin sandar eksklusif dan mengikat pelaut lewat bunga Utang Kabar; Rumah Layar melindungi keluarga pelaut dan menuntut peninjauan kontrak.",
-      "phenomenon": "Kerang tua di Lada Biru menyanyi sendiri tanpa disentuh dengan potongan lagu kapal masa silam.",
+      "tension": "Rumah Dagang bekerja sama dengan TTA demi izin sandar eksklusif dan mengikat pelaut lewat bunga Utang Kabar; Rumah Layar melindungi keluarga pelaut dan menuntut peninjauan kontrak.",
+      "phenomenon": "Kerang tua di Kepulauan Lamuna menyanyi sendiri tanpa disentuh dengan potongan lagu kapal masa silam.",
       "palette": [
         "#2E8B8B",
         "#E07B39"
@@ -124,25 +166,25 @@
     {
       "id": "lulanai",
       "name": "Lulanai",
-      "region": "Reruntuhan Hening (Dataran Tinggi Basalt Tengah)",
-      "place": "Simpul Pertama · Rumah Jejak · Menara Relay Lama",
-      "role": "Bangsa arsitek, pembangun infrastruktur & penyetel",
-      "contract": "Ikatan Penyetel: masyarakat dataran tinggi basalt berongga yang memandang dunia dari keseimbangan ruang, kepadatan batu, dan harmoni getaran.",
-      "politics": "Diaspora tiga kaum tanpa pemerintahan pusat: Kaum Pantang (menolak penyalaan ulang), Kaum Terbuka (menuntut Gema dibagikan; asal Hesta), dan Kaum Sesal (menolak keputusan sepihak Lulanai & menuntut keterlibatan bangsa lain).",
-      "economy": "Hampir tidak ada perdagangan terbuka; membuat alat penyetel perunggu, memperbaiki batu resonansi, dan merancang infrastruktur bersama bangsa lain (Urat Sumi, bilik arsip tebing, monolit padang, serta bendungan bawah pulau Simpul Keseratus).",
-      "greeting": "Hening menyertai. / Dijawab dengan anggukan.",
-      "description": "Perancang jaringan 100 Simpul dan pemilik teknik Resonansi Arsitek (terbatas pada batu resonansi dengan kontak alat perunggu & nada kunci, berisiko Bising, tidak dapat memperbaiki bendungan yang sedang menahan beban). Pada Malam Hening, 100 penyetel memutus jaringan serentak.",
+      "region": "Lulan Tua (Dataran Tinggi Basalt Tengah)",
+      "place": "Simpul Pertama · Rumah Jejak · Menara Sambung Lama",
+      "role": "Bangsa arsitek, pembangun infrastruktur & penyetel Simpul",
+      "contract": "Ikatan Arsitek: masyarakat dataran tinggi basalt berongga yang memandang dunia dari keseimbangan ruang, kepadatan batu, dan harmoni getaran.",
+      "politics": "Diaspora tiga kaum tanpa pemerintahan pusat: Kaum Pantang (menolak penyalaan ulang), Kaum Terbuka (menuntut Gema dibagikan; asal Hiluan), dan Kaum Sesal (menolak keputusan sepihak Lulanai & menuntut keterlibatan bangsa lain).",
+      "economy": "Hampir tidak ada perdagangan terbuka; membuat Cincin Arsitek perunggu, memperbaiki Batu Gaung, dan merancang infrastruktur bersama bangsa lain (Urat Sumi, bilik arsip tebing, monolit padang, serta Bejana Batu bawah pulau Simpul Keseratus).",
+      "greeting": "Semboyan: Dengar dan resapi.",
+      "description": "Perancang jaringan 100 Simpul dan pemilik teknik Gaung Arsitek (terbatas pada Batu Gaung dengan kontak alat perunggu & nada kunci, berisiko Bising, tidak dapat memperbaiki Bejana Batu yang sedang menahan beban). Pada Malam Tiga Napas, 100 arsitek memutus jaringan serentak.",
       "custom": "Tiga Napas Hening sebelum berbicara pada orang asing, Penutup Telinga Perunggu bagi penderita Bising, dan Jejak bersyarat pada batu.",
-      "trust": "Mau mendengar dulu sebelum menilai dan sudah dipercaya bangsa lain. Lulanai tidak punya Cap Saksi fisik; Jejak Wirna merespons pola kunci surat yang telah dibuka melalui tiga serah-terima.",
-      "history": "Kisah yang diwariskan (Malam Hening): pengorbanan sengaja untuk menghentikan resonansi liar dan menyelamatkan dunia.",
+      "trust": "Mau mendengar dulu sebelum menilai dan sudah dipercaya bangsa lain. Lulanai tidak punya Cap Saksi fisik; Roh Wilanu merespons pola kunci surat yang telah dibuka melalui tiga serah-terima.",
+      "history": "Kisah yang diwariskan (Malam Tiga Napas): pengorbanan sengaja untuk menghentikan gaung liar dan menyelamatkan dunia.",
       "blindspot": "Bukan bangsa sempurna: pernah membangun jaringan tanpa pengaman sosial dan sebagian menolak mengakui elitisme keputusan sepihak mereka.",
-      "tension": "Perdebatan tiga kaum serta luka pembelotan Hesta pada tahun 52 yang menjual catatan tak utuh kepada Dewan demi perlindungan penyintas.",
-      "phenomenon": "Menara di Reruntuhan Hening berdengung sendiri tanpa disentuh.",
+      "tension": "Perdebatan tiga kaum serta luka pembelotan Hiluan pada tahun 52 yang menjual catatan tak utuh kepada TTA demi perlindungan penyintas.",
+      "phenomenon": "Menara di Lulan Tua berdengung sendiri tanpa disentuh.",
       "palette": [
         "#6F7A68",
         "#A6805A"
       ],
-      "alt": "Penyetel Lulanai memperbaiki batu di antara reruntuhan Simpul dan cincin perunggu tua.",
+      "alt": "Arsitek Lulanai memperbaiki batu di antara reruntuhan Simpul dan cincin perunggu tua.",
       "image": "assets/world/nations/lulanai-concept-v1.webp"
     }
   ],
@@ -150,10 +192,10 @@
     "name": "Surat Penyalaan",
     "requiredNations": 3,
     "custody": [
-      "Sarai",
+      "Saryel",
       "Bahar",
-      "Ilun",
-      "Maren"
+      "Ilyam",
+      "Marsiyah"
     ],
     "stamps": [
       "asharim",
@@ -165,7 +207,7 @@
   },
   "demo": {
     "chapter": 0,
-    "title": "Bab 0 — Pos Batu Biru",
+    "title": "Bab 0 — Pos Nilasar (Batu Biru)",
     "region": "Lembah Pasir",
     "nextRegion": "Dusun Sela & Padang Salkara",
     "fullNetworkReleased": false

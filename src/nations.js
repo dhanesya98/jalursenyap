@@ -19,7 +19,7 @@
     ['Kisah yang Diwariskan','history'],
     ['Titik Buta Sejarah','blindspot'],
     ['Perbedaan Internal','tension'],
-    ['Tanda Tekanan Bendungan','phenomenon']
+    ['Tanda Tekanan Bejana Batu','phenomenon']
   ];
   function select(nation){
    for(const [id,button]of buttons){button.setAttribute('aria-pressed',String(id===nation.id));button.classList.toggle('selected',id===nation.id);}

@@ -11,7 +11,7 @@
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Tahun pada pelat ini cocok persis sama suara di batu tadi: tahun lima puluh delapan. Nama pemeriksanya sudah aus dikikis karat, nggak terbaca. Di lemari ini sama sekali nggak ada berkas baru soal kondisi cabang Dewan hari ini.",
+      "text": "Tahun pada pelat ini cocok persis sama suara di batu tadi: tahun lima puluh delapan. Nama pemeriksanya sudah aus dikikis karat, nggak terbaca. Di lemari ini sama sekali nggak ada berkas baru soal kondisi cabang TTA hari ini.",
       "next": "n2"
     },
     "n2": {
@@ -21,7 +21,7 @@
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Peringatan bahayanya nyata, tapi aku nggak boleh buru-buru menarik kesimpulan sebelum ada bukti lain. Surat bersegel ini kusimpan lagi ke dalam lapisan terdalam tas. Sekarang saatnya balik ke Pos Batu Biru buat melapor ke Bu Maren.",
+      "text": "Peringatan bahayanya nyata, tapi aku nggak boleh buru-buru menarik kesimpulan sebelum ada bukti lain. Surat bersegel ini kusimpan lagi ke dalam lapisan terdalam tas. Sekarang saatnya balik ke Pos Nilasar buat melapor ke Bu Marsiyah.",
       "action": "COMPARE_RECORD"
     }
   }

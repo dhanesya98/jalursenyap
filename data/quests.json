@@ -11,8 +11,8 @@
       "status": "ready",
       "weather": "hangat",
       "target": "maren",
-      "name": "Temui Maren di paviliun",
-      "hint": "Ruru menunggu di halaman. Dekati Maren dan tekan E.",
+      "name": "Temui Marsiyah di paviliun",
+      "hint": "Ruru menunggu di halaman. Dekati Marsiyah dan tekan E.",
       "dialogue": "maren_intro",
       "actions": [
         "MEET_MAREN"
@@ -132,7 +132,7 @@
       "status": "travel",
       "weather": "kabut",
       "target": "bulamat",
-      "name": "Bawa Kerang Suara kepada Bu Lamat",
+      "name": "Bawa Kerang Suara kepada Bu Lamiyah",
       "hint": "Lintasi titian dengan berjalan. Sampaikan kondisi cangkang saat serah-terima.",
       "dialogue": "bulamat_delivery2",
       "actions": [
@@ -149,7 +149,7 @@
       "weather": "kabut",
       "target": "well",
       "name": "Dengarkan dan periksa Sumur Induk",
-      "hint": "Bu Lamat memintamu mencatat perubahan bunyi di sumur dekat balai.",
+      "hint": "Bu Lamiyah memintamu mencatat perubahan bunyi di sumur dekat balai.",
       "dialogue": "well",
       "actions": [
         "INSPECT_WELL"
@@ -164,7 +164,7 @@
       "weather": "kabut",
       "target": "maren",
       "name": "Laporkan keadaan Telaga Sumi",
-      "hint": "Bawa kabar tentang lagu dan sumur kepada Maren.",
+      "hint": "Bawa kabar tentang lagu dan sumur kepada Marsiyah.",
       "dialogue": "maren_supplies",
       "actions": [
         "ACCEPT_SUPPLIES"
@@ -239,7 +239,7 @@
       "status": "return",
       "weather": "berat",
       "target": "maren",
-      "name": "Laporkan kiriman yang gagal sebagian kepada Maren",
+      "name": "Laporkan kiriman yang gagal sebagian kepada Marsiyah",
       "hint": "Bawa sisa perbekalan dan bukti penahanan kembali ke pos.",
       "dialogue": "maren_report",
       "actions": [
@@ -256,7 +256,7 @@
       "weather": "berat",
       "target": "inspection_book",
       "name": "Bandingkan tanda bahaya dalam buku pemeriksaan",
-      "hint": "Maren meletakkan catatan pemeriksaan 009 di meja dapur. Cocokkan dengan kabar sumur.",
+      "hint": "Marsiyah meletakkan catatan pemeriksaan 009 di meja dapur. Cocokkan dengan kabar sumur.",
       "dialogue": "inspection_book",
       "actions": [
         "CHECK_WARNINGS"
@@ -270,8 +270,8 @@
       "status": "return",
       "weather": "berat",
       "target": "maren",
-      "name": "Dengarkan mandat Maren dan terima surat",
-      "hint": "Tanda uji lengkap. Maren siap meneruskan titipan empat generasi.",
+      "name": "Dengarkan mandat Marsiyah dan terima surat",
+      "hint": "Tanda uji lengkap. Marsiyah siap meneruskan titipan empat generasi.",
       "dialogue": "maren_delivery3",
       "actions": [
         "RECEIVE_LETTER"
@@ -286,7 +286,7 @@
       "weather": "berat",
       "target": "stamp_pad",
       "name": "Catat nama pembawa dan penyaksi pada cap",
-      "hint": "Di meja cap, ucapkan nama bersama Maren. Segel surat tetap tertutup.",
+      "hint": "Di meja cap, ucapkan nama bersama Marsiyah. Segel surat tetap tertutup.",
       "dialogue": "stamp_pad",
       "actions": [
         "STAMP_LETTER"
@@ -346,7 +346,7 @@
       "weather": "berat",
       "target": "relay_lantern",
       "name": "Amati denyut lentera 009",
-      "hint": "Di kaki menara, periksa lentera tanpa menyentuh cincin penyetel.",
+      "hint": "Di kaki menara, periksa lentera tanpa menyentuh cincin arsitek.",
       "dialogue": "relay_lantern",
       "actions": [
         "OBSERVE_PULSES"
@@ -436,7 +436,7 @@
       "weather": "berat",
       "target": "departure",
       "name": "Ambil jalan menuju Dusun Sela bersama Ruru",
-      "hint": "Berhenti di penanda keberangkatan. Pos Batu Biru masih terlihat dari sini.",
+      "hint": "Berhenti di penanda keberangkatan. Pos Nilasar masih terlihat dari sini.",
       "dialogue": "epilogue",
       "actions": [
         "FINISH_CHAPTER"
@@ -518,7 +518,7 @@
     },
     {
       "id": "inspection_book",
-      "name": "Buku pemeriksaan Maren",
+      "name": "Buku pemeriksaan Marsiyah",
       "position": [
         7,
         0,
@@ -528,7 +528,7 @@
     },
     {
       "id": "stamp_pad",
-      "name": "Bantalan tinta resonansi",
+      "name": "Bantalan tinta gaung",
       "position": [
         7,
         0,
@@ -624,19 +624,19 @@
     },
     "DELIVER_SHELL_A": {
       "kind": "Disaksikan",
-      "text": "Bu Lamat mengenali lagu Dorin, termasuk nada akhir yang meleset. Aku tinggal mendengarkannya bersama Bu Lamat."
+      "text": "Bu Lamiyah mengenali lagu Dorun, termasuk nada akhir yang meleset. Aku tinggal mendengarkannya bersama Bu Lamiyah."
     },
     "DELIVER_SHELL_B": {
       "kind": "Disaksikan",
-      "text": "Lagu Dorin sampai kepada Bu Lamat. Aku meminta petunjuk ke sumur setelah serah-terima."
+      "text": "Lagu Dorun sampai kepada Bu Lamiyah. Aku meminta petunjuk ke sumur setelah serah-terima."
     },
     "INSPECT_WELL": {
       "kind": "Disaksikan",
-      "text": "Sumur Induk mengulang potongan bunyi lama. Bu Lamat mengatakan bunyinya makin keras. Sumber dan penyebabnya belum diketahui."
+      "text": "Sumur Induk mengulang potongan bunyi lama. Bu Lamiyah mengatakan bunyinya makin keras. Sumber dan penyebabnya belum diketahui."
     },
     "READ_TOLL_NOTICE": {
       "kind": "Dokumen",
-      "text": "Pemberitahuan Dewan menutup lintasan timur karena Gangguan. Perintah pemeriksaan juga menahan kiriman antarpos."
+      "text": "Pemberitahuan TTA menutup lintasan timur karena Gangguan. Perintah pemeriksaan juga menahan kiriman antarpos."
     },
     "DETAIN_RECEIPT": {
       "kind": "Disaksikan",
@@ -652,19 +652,19 @@
     },
     "REPORT_DIRECT": {
       "kind": "Serah-terima",
-      "text": "Aku melaporkan penahanan dan kondisi sisa kiriman secara langsung. Maren mencatat tugas gagal sebagian dan menerima sisa perbekalan."
+      "text": "Aku melaporkan penahanan dan kondisi sisa kiriman secara langsung. Marsiyah mencatat tugas gagal sebagian dan menerima sisa perbekalan."
     },
     "REPORT_HESITANT": {
       "kind": "Serah-terima",
-      "text": "Aku mengakui takut mengecewakan Maren, lalu menjelaskan penahanan dan kerusakan apa adanya. Maren menerima laporan serta sisa perbekalan."
+      "text": "Aku mengakui takut mengecewakan Marsiyah, lalu menjelaskan penahanan dan kerusakan apa adanya. Marsiyah menerima laporan serta sisa perbekalan."
     },
     "CHECK_WARNINGS": {
       "kind": "Dokumen",
-      "text": "Catatan pemeriksaan Maren memuat tiga denyut tanpa penyetelan dan retak cincin 009. Kabar Sumur Induk memperkuat alasan meneruskan pemeriksaan."
+      "text": "Catatan pemeriksaan Marsiyah memuat tiga denyut tanpa penyetelan dan retak cincin 009. Kabar Sumur Induk memperkuat alasan meneruskan pemeriksaan."
     },
     "STAMP_LETTER": {
       "kind": "Serah-terima",
-      "text": "Cap Saksi Asharim mencatat pembawa Nara dan penyaksi Maren. Nama diucapkan pada bantalan tinta resonansi. Segel masih tertutup."
+      "text": "Cap Saksi Asharim mencatat pembawa Nara dan penyaksi Marsiyah. Nama diucapkan pada bantalan tinta gaung. Segel masih tertutup."
     },
     "OPEN_NORTH_PATH": {
       "kind": "Disaksikan",
@@ -688,7 +688,7 @@
     },
     "COMPARE_RECORD": {
       "kind": "Belum terjawab",
-      "text": "Pelat tahun 58 cocok dengan tahun yang terdengar pada batu uji. Identitas penyetel dan keadaan cabang Dewan sekarang belum diketahui."
+      "text": "Pelat tahun 58 cocok dengan tahun yang terdengar pada batu uji. Identitas arsitek dan keadaan cabang TTA sekarang belum diketahui."
     },
     "FINISH_CHAPTER": {
       "kind": "Mandat",

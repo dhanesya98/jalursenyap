@@ -1,32 +1,32 @@
 {
   "id": "maren_delivery3",
-  "npc": "Maren",
+  "npc": "Marsiyah",
   "title": "Titipan empat generasi",
   "node": "n0",
   "nodes": {
     "n0": {
-      "speaker": "Maren",
-      "text": "(Maren mengangkat lempeng batu di balik tungku dapur, lalu mengeluarkan tabung kulit tua dengan surat bersegel lilin pekat.) Tiga puluh tahun benda ini berdiam di balik batu dingin Pos Batu Biru, Nara. Tapi setelah apa yang kita lihat di buku pemeriksaan tadi... waktu diamnya sudah habis.",
+      "speaker": "Marsiyah",
+      "text": "(Marsiyah mengangkat lempeng batu di balik tungku dapur, lalu mengeluarkan tabung kulit tua dengan surat bersegel lilin pekat.) Tiga puluh tahun benda ini berdiam di balik batu dingin Pos Nilasar, Nara. Tapi setelah apa yang kita lihat di buku pemeriksaan tadi... waktu diamnya sudah habis.",
       "next": "n1"
     },
     "n1": {
-      "speaker": "Maren",
-      "text": "Malam sebelum jaringan terputus, Sahdan menitipkan surat ini bersama tas yang kaupakai itu kepada Sarai. Sarai menjaganya, lalu meneruskannya kepada Bahar, dari Bahar kepada Ilun, hingga jatuh ke tanganku. Empat generasi penjaga pos merawatnya tanpa sekali pun berani merusak segelnya.",
+      "speaker": "Marsiyah",
+      "text": "Malam sebelum jaringan terputus, Sahdan menitipkan surat ini bersama tas yang kaupakai itu kepada Saryel. Saryel menjaganya, lalu meneruskannya kepada Bahar, dari Bahar kepada Ilyam, hingga jatuh ke tanganku. Empat generasi penjaga pos merawatnya tanpa sekali pun berani merusak segelnya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Empat generasi? Tunggu... kalau suratnya sepenting itu, kenapa nggak langsung diantar aja dari zaman Bu Sarai dulu, Bu?",
+      "text": "Empat generasi? Tunggu... kalau suratnya sepenting itu, kenapa nggak langsung diantar aja dari zaman Bu Saryel dulu, Bu?",
       "next": "n3"
     },
     "n3": {
-      "speaker": "Maren",
-      "text": "Karena air di balik bendungan tidak boleh dibuka sebelum waktunya, Nara. Petunjuk luarnya tegas: selama penahanan masih stabil, kunci ini harus dijauhkan dari pusat agar tidak diperebutkan. Baru ketika lentera 009 berdenyut tiga kali tanpa disentuh dan cincinnya retak, surat ini wajib bergerak.",
+      "speaker": "Marsiyah",
+      "text": "Karena beban di dalam Bejana Batu tidak boleh dibuka sebelum waktunya, Nara. Petunjuk luarnya tegas: selama penahanan masih stabil, kunci ini harus dijauhkan dari pusat agar tidak diperebutkan. Baru ketika lentera 009 berdenyut tiga kali tanpa disentuh dan cincinnya retak, surat ini wajib bergerak.",
       "next": "n4"
     },
     "n4": {
-      "speaker": "Maren",
-      "text": "Dua puluh tahun silam, waktu patroli Dewan mengancam akan menutup sumur pos ini... tanganku hampir goyah menyerahkan surat ini demi menyelamatkan halaman kita. Aku menahannya, tapi rasa malu karena pernah bimbang itu tidak pernah hilang.",
+      "speaker": "Marsiyah",
+      "text": "Dua puluh tahun silam, waktu patroli TTA mengancam akan menutup sumur pos ini... tanganku hampir goyah menyerahkan surat ini demi menyelamatkan halaman kita. Aku menahannya, tapi rasa malu karena pernah bimbang itu tidak pernah hilang.",
       "next": "n5"
     },
     "n5": {
@@ -35,13 +35,13 @@
       "next": "n6"
     },
     "n6": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Justru karena caramu pulang dari gerbang itu, Nara. Kau tidak berbohong ketika jalanmu tertutup, dan kau tidak melupakan siapa yang masih menunggu. Surat Penyalaan ini tidak mencari orang yang tak pernah terhalang—ia membutuhkan pembawa yang lidahnya jujur di hadapan saksi.",
       "next": "n7"
     },
     "n7": {
-      "speaker": "Maren",
-      "text": "Peganglah Surat Penyalaan ini baik-baik. Segel di bagian mukanya harus tetap tertutup sampai tiga bangsa membubuhkan Cap Saksi. Sekarang, mari kita cap punggungnya di bantalan tinta resonansi pos, lalu ujilah di lempeng Simpul 009.",
+      "speaker": "Marsiyah",
+      "text": "Peganglah Surat Penyalaan ini baik-baik. Segel di bagian mukanya harus tetap tertutup sampai tiga bangsa membubuhkan Cap Saksi. Sekarang, mari kita cap punggungnya di bantalan tinta gaung pos, lalu ujilah di lempeng Simpul 009.",
       "next": "n8"
     },
     "n8": {

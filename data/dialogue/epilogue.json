@@ -6,12 +6,12 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Dari patok jalan ini, lentera kuning Pos Batu Biru masih kelihatan kecil di kejauhan... Padahal tadi pagi aku cuma mikir gimana caranya biar roti rempah Pak Juma nggak penyok di jalan.",
+      "text": "Dari patok jalan ini, lentera kuning Pos Nilasar masih kelihatan kecil di kejauhan... Padahal tadi pagi aku cuma mikir gimana caranya biar roti rempah Pak Juma nggak penyok di jalan.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Sekarang lagu sumbang Pak Dorin udah nyampe ke Bu Lamat. Sisa bekal yang disita di gerbang udah tercatat rapi. Dan di dalam tas ini... ada Surat Penyalaan yang harus kubawa melintasi bangsa-bangsa.",
+      "text": "Sekarang lagu sumbang Pak Dorun udah nyampe ke Bu Lamiyah. Sisa bekal yang disita di gerbang udah tercatat rapi. Dan di dalam tas ini... ada Surat Penyalaan yang harus kubawa melintasi bangsa-bangsa.",
       "next": "n2"
     },
     "n2": {

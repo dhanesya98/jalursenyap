@@ -4,11 +4,11 @@ Implementasi 6 November 2026 mengikuti Story Bible revisi terpadu. Cakupan: urut
 
 ## Alur
 
-1. Maren → Buku Tamu Batu → tas dan roti.
-2. Penanda jalan → serah-terima Juma → buku kakek → kembali ke Maren.
-3. Titian → serah-terima Bu Lamat/lagu → Sumur Induk → kembali ke Maren.
-4. Hitung dua ikat perbekalan → papan perintah gerbang → pemeriksaan Kesa → ambil satu ikat dan bukti → laporan jujur kepada Maren.
-5. Buku pemeriksaan Maren → terima surat → ucapkan nama pembawa/penyaksi dan bubuhkan cap → konfirmasi instruksi.
+1. Marsiyah → Buku Tamu Batu → tas dan roti.
+2. Penanda jalan → serah-terima Juma → buku kakek → kembali ke Marsiyah.
+3. Titian → serah-terima Bu Lamiyah/lagu → Sumur Induk → kembali ke Marsiyah.
+4. Hitung dua ikat perbekalan → papan perintah gerbang → pemeriksaan Kesa → ambil satu ikat dan bukti → laporan jujur kepada Marsiyah.
+5. Buku pemeriksaan Marsiyah → terima surat → ucapkan nama pembawa/penyaksi dan bubuhkan cap → konfirmasi instruksi.
 6. Kesa membuka pengunci tebing → pilih rute → periksa bekal di persinggahan.
 7. Amati tiga denyut → periksa retak cincin → kontak punggung surat pada lempeng 009.
 8. Pintu bangunan uji → batu berjejak → pelat tahun 58 → epilog di penanda Dusun Sela.
@@ -23,7 +23,7 @@ Implementasi 6 November 2026 mengikuti Story Bible revisi terpadu. Cakupan: urut
 - Kait Tali tidak digunakan. Ngarai barat memiliki titian dengan permukaan fisik yang dapat dilalui dua arah. Tangga Tali opsional tetap ada.
 - 009 tidak menyalakan jaringan umum. Lentera hanya memantulkan tekanan; segel tetap tertutup dan surat tetap dibawa hingga sesudah ending.
 - Pantulan di lempeng berasal dari Sahdan dalam kanon. Nama pembicara tidak diumumkan kepada pemain saat identitasnya belum dibuktikan.
-- Jejak lokal bangunan uji berasal dari Hesta tahun 58 dalam kanon. Pemain mengetahui sumber fisik, tahun, dan potongan peringatan; nama penyetel serta laporan terkini tetap belum diketahui.
+- Jejak lokal bangunan uji berasal dari Hiluan tahun 58 dalam kanon. Pemain mengetahui sumber fisik, tahun, dan potongan peringatan; nama penyetel serta laporan terkini tetap belum diketahui.
 - Buku Jalur hanya menampilkan tugas yang sudah diterima. Catatan baru mengikuti kejadian, dengan label Disaksikan, Dokumen, Kesaksian, Serah-terima, atau Belum terjawab.
 - Dialog dapat ditutup dan dilanjutkan dari node tersimpan. Tidak ada hadiah berulang dari interaksi atau pemuatan simpanan.
 - VO tetap nonaktif. Lagu kerang, musik, dan efek yang telah tersedia tetap digunakan.
@@ -33,7 +33,7 @@ Implementasi 6 November 2026 mengikuti Story Bible revisi terpadu. Cakupan: urut
 
 Versi aktif: 6, kunci utama `jalur-senyap-demo1`. Kunci lama dipertahankan agar tombol Lanjutkan menemukan simpanan sebelumnya. Data mentah v4/v5 dicadangkan satu kali di `jalur-senyap-demo1:backup-v4` atau `:backup-v5` sebelum migrasi disimpan. Jika cadangan gagal ditulis, pemuatan dihentikan dan data lama tidak ditimpa.
 
-Simpanan setelah Telaga Sumi pada versi lama dilanjutkan dari `return_shell`. Tugas ketiga baru, laporan, surat, dan penutup harus dialami kembali. Pemeriksaan migrasi tidak menganggap kegagalan ketiga yang dulu diceritakan sebagai kejadian yang telah dimainkan. Catatan terlambat dan cap lama tidak disalin ke progres baru. Posisi dikembalikan dekat Maren untuk transisi ini; reputasi, pengaturan, dan struktur yang valid dipertahankan.
+Simpanan setelah Telaga Sumi pada versi lama dilanjutkan dari `return_shell`. Tugas ketiga baru, laporan, surat, dan penutup harus dialami kembali. Pemeriksaan migrasi tidak menganggap kegagalan ketiga yang dulu diceritakan sebagai kejadian yang telah dimainkan. Catatan terlambat dan cap lama tidak disalin ke progres baru. Posisi dikembalikan dekat Marsiyah untuk transisi ini; reputasi, pengaturan, dan struktur yang valid dipertahankan.
 
 ## Pengujian
 
@@ -52,6 +52,6 @@ Target desain: 40–60 menit. Target ini belum dianggap tercapai. Peta inti masi
 
 Simpanan menyimpan `elapsed` dan `timings` per langkah untuk waktu aktif bermain/dialog. Jeda, peta, jurnal, dan tab tersembunyi tidak dihitung. Metrik berada lokal di browser; tidak dikirim ke layanan mana pun.
 
-Uji 3–5 pemain baru tanpa panduan. Catat waktu per adegan, kebingungan tujuan, bagian yang terlalu verbal, serta pemahaman alasan Maren mempercayai Nara dan bertindak sekarang. Jika durasi masih pendek, tambah keputusan dan kejadian perjalanan yang bermakna pada rute; jangan memperlambat kecepatan atau menambahkan waktu tunggu wajib.
+Uji 3–5 pemain baru tanpa panduan. Catat waktu per adegan, kebingungan tujuan, bagian yang terlalu verbal, serta pemahaman alasan Marsiyah mempercayai Nara dan bertindak sekarang. Jika durasi masih pendek, tambah keputusan dan kejadian perjalanan yang bermakna pada rute; jangan memperlambat kecepatan atau menambahkan waktu tunggu wajib.
 
 Hasil QA browser: cabang A/Jalur Lentera dan B/Tebing Utara mencapai epilog melalui controller dan UI dialog; konsol tanpa error/warning. Simpanan setelah epilog berhasil dimuat kembali. Layout jurnal diperiksa dan diperbaiki. Mainkan.bat membuka index.html (perjalanan lengkap); pos-batu-biru.html tetap halaman studi visual.

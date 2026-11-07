@@ -16,12 +16,12 @@
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Kata Bu Maren, Jubah Layar ini berguna pas turun: loncat dari bibir tebing, terus tahan [Spasi] di udara buat melayang pelan. Tapi kalau nanjak begini, ya tetap harus cari pijakan kaki sendiri.",
+      "text": "Kata Bu Marsiyah, Jubah Layar ini berguna pas turun: loncat dari bibir tebing, terus tahan [Spasi] di udara buat melayang pelan. Tapi kalau nanjak begini, ya tetap harus cari pijakan kaki sendiri.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Nah, kubah biru Menara Batu Senja udah kelihatan di puncak sana! Rotinya masih hangat kuku di tas. Ayo, jangan sampai keburu dingin sebelum sampai ke Pak Juma.",
+      "text": "Nah, kubah biru Menara Senja udah kelihatan di puncak sana! Rotinya masih hangat kuku di tas. Ayo, jangan sampai keburu dingin sebelum sampai ke Pak Juma.",
       "action": "READ_RIDGE"
     }
   }

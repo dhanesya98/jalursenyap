@@ -1,20 +1,20 @@
 [
   {
     "id": "delivery_1",
-    "title": "Roti Rempah untuk Menara Batu Senja",
+    "title": "Roti Rempah untuk Menara Senja",
     "stage": 1,
-    "sender": "Maren (Pos Batu Biru)",
+    "sender": "Marsiyah (Pos Nilasar / Batu Biru)",
     "recipient": "Juma",
     "item": "Roti Rempah",
     "itemIcon": "🍞",
-    "location": "Menara Batu Senja",
+    "location": "Menara Senja",
     "targetPosition": [
       0,
       18,
       -125
     ],
     "day_condition": "hangat",
-    "summary": "Tas insulasi tua dipinjamkan Maren sebelum tugas pertama. Antar roti rempah hangat ke Juma di Menara Batu Senja dan dengarkan cerita buku harian kakeknya.",
+    "summary": "Tas berlapis peredam tua dipinjamkan Marsiyah sebelum tugas pertama. Antar roti rempah hangat ke Juma di Menara Senja dan dengarkan cerita buku harian kakeknya.",
     "hint": "Ikuti jalan batu berkelok ke utara. Sprint di pijakan yang aman, lompat dan buka Jubah Layar saat turun. E memanjat tepian bertanda lentera.",
     "icon": "bread"
   },
@@ -22,8 +22,8 @@
     "id": "delivery_2",
     "title": "Lagu untuk Telaga Sumi",
     "stage": 2,
-    "sender": "Dorin (Rumah Layar Bahtari), melalui Pos Batu Biru",
-    "recipient": "Bu Lamat",
+    "sender": "Dorun (Rumah Layar Bahtari), melalui Pos Nilasar",
+    "recipient": "Bu Lamiyah",
     "item": "Kerang Suara",
     "itemIcon": "🐚",
     "location": "Telaga Sumi (Balai Cawan)",
@@ -33,7 +33,7 @@
       65
     ],
     "day_condition": "kabut",
-    "summary": "Bawa lagu keluarga dari Dorin kepada istrinya Bu Lamat di Telaga Sumi tanpa mengubah atau menyembunyikan kondisinya. Lagu yang meleset menyimpan kehadiran manusia.",
+    "summary": "Bawa lagu keluarga dari Dorun kepada istrinya Bu Lamiyah di Telaga Sumi tanpa mengubah atau menyembunyikan kondisinya. Lagu yang meleset menyimpan kehadiran manusia.",
     "hint": "Ikuti lentera ke barat dan berjalan melintasi titian. Q meminta bantuan Ruru; E memeriksa atau memasang tangga.",
     "icon": "shell"
   },
@@ -41,12 +41,12 @@
     "id": "delivery_3",
     "title": "Perbekalan untuk Pos Saudara",
     "stage": 3,
-    "sender": "Maren",
+    "sender": "Marsiyah",
     "recipient": "Pos saudara di timur",
     "item": "Dua ikat perbekalan",
     "icon": "bag",
     "itemIcon": "🎒",
-    "location": "Gerbang timur",
+    "location": "Gerbang timur TTA",
     "targetPosition": [
       65,
       3,
@@ -54,13 +54,13 @@
     ],
     "day_condition": "kabut",
     "summary": "Catat dua ikat perbekalan dan surat jalan, lalu periksa akses ke pos saudara. Laporkan keadaan kiriman apa adanya.",
-    "hint": "Baca pemberitahuan gerbang dan temui Kesa."
+    "hint": "Baca pemberitahuan gerbang TTA dan temui Kesa."
   },
   {
     "id": "letter_mission",
     "title": "Mandat Surat Penyalaan",
     "stage": 4,
-    "sender": "Maren, penjaga titipan empat generasi",
+    "sender": "Marsiyah, penjaga titipan empat generasi",
     "recipient": "Pemeriksaan 009 · surat tetap dibawa",
     "item": "Surat Penyalaan",
     "icon": "letter",
@@ -73,6 +73,6 @@
     ],
     "day_condition": "berat",
     "summary": "Periksa dua tanda uji dan tempelkan punggung surat bercap pada lempeng. Segel tetap tertutup.",
-    "hint": "Konfirmasi petunjuk kepada Maren dan temui Kesa sebelum melintasi badai."
+    "hint": "Konfirmasi petunjuk kepada Marsiyah dan temui Kesa sebelum melintasi badai."
   }
 ]

@@ -1,22 +1,22 @@
 {
   "id": "bulamat_delivery2",
-  "npc": "Bu Lamat",
+  "npc": "Bu Lamiyah",
   "title": "Lagu yang akhirnya sampai",
   "node": "n0",
   "nodes": {
     "n0": {
-      "speaker": "Bu Lamat",
-      "text": "Pasang baik, kurir muda! Hahaha, langkah kakimu terdengar dari ujung titian. Jangan bilang kau jauh-jauh menembus kabut lembah cuma mau menumpang minum air sumurku?",
+      "speaker": "Bu Lamiyah",
+      "text": "Hahaha! Langkah kakimu sudah kedengaran dari ujung titian, kurir muda! Sini masuk ke bawah atap balai—jangan bilang kau jauh-jauh menembus kabut lembah cuma mau menumpang minum air sumurku?",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Layar penuh, Bu Lamat! Ini, aku bawa Kerang Suara dari Pak Dorin. Nggak retak kok, Bu. Cuma, ya... agak lembap dikit kain pembungkusnya kena kabut ngarai. Tadi udah kubungkus dua lapis. Tiga, sih, sebenarnya.",
+      "text": "Siang, Bu Lamiyah! Ini, aku bawa Kerang Suara dari Pak Dorun. Nggak retak kok, Bu. Cuma, ya... agak lembap dikit kain pembungkusnya kena kabut ngarai. Tadi udah kubungkus dua lapis. Tiga, sih, sebenarnya.",
       "next": "n2"
     },
     "n2": {
-      "speaker": "Bu Lamat",
-      "text": "(Bu Lamat tertawa hangat sambil menerima kerang itu.) Alah, namanya juga barang lewat kabut, Nak! Perahu layar kalau takut basah ya lebih baik dikandangkan di dapur! Sini, biar kudengar. (Ia menempelkan kerang ke telinga. Senandung laut mengalir merdu... lalu di nada tinggi terakhir, suaranya terpeleset sumbang.)",
+      "speaker": "Bu Lamiyah",
+      "text": "(Bu Lamiyah tertawa hangat sambil menerima kerang itu.) Alah, namanya juga barang lewat kabut, Nak! Perahu layar kalau takut basah ya lebih baik dikandangkan di dapur! Sini, biar kudengar. (Ia menempelkan kerang ke telinga. Senandung laut mengalir merdu... lalu di nada tinggi terakhir, suaranya terpeleset sumbang.)",
       "next": "n3"
     },
     "n3": {
@@ -25,13 +25,13 @@
       "next": "n4"
     },
     "n4": {
-      "speaker": "Bu Lamat",
-      "text": "(Tertawa lepas sampai menyeka sudut matanya) Hahaha! Keguncang apanya! Itu memang suara si Dorin! Dari zaman giginya masih ompong, kalau nyanyi bagian bait pasang naik, nadanya pasti tergelincir macam belut lepas dari tangguk! Kalau lagunya mulus tanpa cacat, malah curiga aku jangan-jangan itu suara orang lain.",
+      "speaker": "Bu Lamiyah",
+      "text": "(Tertawa lepas sampai menyeka sudut matanya) Hahaha! Keguncang apanya! Itu memang suara si Dorun! Dari zaman kami baru berumah tangga, kalau nyanyi bagian bait pasang naik, nadanya pasti tergelincir macam belut lepas dari tangguk! Kalau lagunya mulus tanpa cacat, malah curiga aku jangan-jangan itu suara orang lain.",
       "next": "n5"
     },
     "n5": {
-      "speaker": "Bu Lamat",
-      "text": "Orang-orang Dewan di darat suka mengira yang namanya bukti itu harus cap besi dan kertas kaku. Padahal buat kami orang Bahtari... nada sumbang yang cuma keluarga sendiri yang hafal, itulah tanda kalau anak itu masih hidup dan ingat jalan pulang.",
+      "speaker": "Bu Lamiyah",
+      "text": "Orang-orang TTA di darat suka mengira yang namanya bukti itu harus cap besi dan kertas kaku. Padahal buat kami orang Bahtari... nada sumbang yang cuma keluarga sendiri yang hafal, itulah tanda kalau suamiku masih hidup dan ingat jalan pulang.",
       "next": "n6"
     },
     "n6": {
@@ -40,23 +40,23 @@
       "next": "n7"
     },
     "n7": {
-      "speaker": "Bu Lamat",
-      "text": "(Tawanya mereda menjadi senyum lembut, menepuk punggung tangan Nara.) Kau anak si Tarun dari Rumah Layar itu, kan? Dengar, Nak. Ingatan keluarga itu seperti tali sauh di bawah arus: biarpun angin di atas ribut bukan main, talinya tidak putus. Nanti kalau kau ketemu Dorin di Bandar Lada, tagih sendiri cerita ayahmu.",
+      "speaker": "Bu Lamiyah",
+      "text": "(Tawanya mereda menjadi senyum lembut, menepuk punggung tangan Nara.) Kau anak si Tarun dari Rumah Layar itu, kan? Dengar, Nak: pasang selalu kembali. Biarpun angin di atas ribut bukan main, tali sauh keluarga tidak gampang putus. Nanti kalau kau ketemu Dorun di Bandar Lada, tagih sendiri cerita ayahmu.",
       "next": "n8"
     },
     "choice_0": {
-      "speaker": "Bu Lamat",
+      "speaker": "Bu Lamiyah",
       "text": "Sini, duduk di bangku itu. Kita putar sekali lagi senandung sumbangnya biar kabut di luar tahu rumah ini tidak sepi. Habis itu baru kau tengok sumur di sebelah.",
       "action": "DELIVER_SHELL_A"
     },
     "choice_1": {
-      "speaker": "Bu Lamat",
-      "text": "Pergilah periksa, Nak. Pasang telingamu tajam-tajam. Aku di sini saja sambil memangku kerang ini—rasanya seperti baru kedatangan tamu dari kampung halaman.",
+      "speaker": "Bu Lamiyah",
+      "text": "Pergilah periksa, Nak. Pasang telingamu tajam-tajam. Aku di sini saja sambil memangku kerang ini—rasanya seperti baru kedatangan kabar dari kampung halaman.",
       "action": "DELIVER_SHELL_B"
     },
     "n8": {
-      "speaker": "Bu Lamat",
-      "text": "Oh iya, sebelum kau balik ke tempat Maren... tolong tengok Sumur Induk di samping balai itu sebentar. Makin hari dengungannya makin rewel, seperti ada orang berbisik dari bawah batu. Coba kau dengar sendiri.",
+      "speaker": "Bu Lamiyah",
+      "text": "Oh iya, sebelum kau balik ke tempat Marsiyah... tolong tengok Sumur Induk di samping balai itu sebentar. Makin hari dengungannya makin rewel, seperti ada orang berbisik dari bawah batu. Coba kau dengar sendiri.",
       "choices": [
         {
           "text": "“Aku temani Ibu dengar lagunya sekali lagi dulu, boleh?”",

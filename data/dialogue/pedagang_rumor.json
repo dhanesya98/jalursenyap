@@ -6,22 +6,22 @@
   "nodes": {
     "start": {
       "speaker": "Pedagang Lembah",
-      "text": "Teduh di jalanmu, kurir kecil. Sini, merapat sedikit ke bawah tenda—jangan berdiri menantang angin begitu, nanti pasir masuk ke kerongkonganmu. Tuang teh daun mint itu selagi uapnya masih mengepul.",
+      "text": "Sini, merapat sedikit ke bawah tenda, kurir kecil—jangan berdiri menantang angin begitu, nanti pasir masuk ke kerongkonganmu. Tuang teh daun mint itu selagi uapnya masih mengepul.",
       "next": "n0"
     },
     "n0": {
       "speaker": "Pedagang Lembah",
-      "text": "Kau pakai tas kulit tua dari Pos Batu Biru rupanya. Dengar, kalau orang-orang kafilah sedang berkumpul jauh dari telinga petugas Dewan, ceritanya selalu sama: seratus Simpul itu dulu bukan rusak sendiri dimakan karat. Ada yang memutusnya dari dalam. Tentu saja aku belum lahir waktu itu—ini kabar warisan di sepanjang api kemah.",
+      "text": "Kau pakai tas kulit tua dari Pos Nilasar rupanya. Dengar, kalau orang-orang kafilah sedang berkumpul jauh dari telinga petugas TTA, ceritanya selalu sama: seratus Simpul itu dulu bukan rusak sendiri dimakan karat. Ada yang memutusnya dari dalam. Tentu saja aku belum lahir waktu itu—ini kabar warisan di sepanjang api kemah.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Air di langkahmu, Pak. Tapi... kalau Dewan makin sering masang gerbang tol dan nahan barang kayak sekarang, pos-pos Asharim di lembah ini masa diam aja?",
+      "text": "Makasih tehnya, Pak. Tapi... kalau TTA makin sering masang gerbang iuran timbang dan nahan barang kayak sekarang, pos-pos Asharim di lembah ini masa diam aja?",
       "next": "pedagang_2"
     },
     "pedagang_2": {
       "speaker": "Pedagang Lembah",
-      "text": "Air kalau dibendung ya pecah jadi dua aliran, Nak. Kubu Pos Tua seperti Maren lebih memilih makan roti kering daripada membiarkan petugas Dewan menyentuh Buku Tamu Batu. Tapi Kubu Pos Dagang di jalur besar? Mereka mulai menyetorkan salinan nama pelintas demi kuota gandum dan potongan bea. Sementara mereka sibuk berdebat... sumur-sumur tua dan bangunan uji di kaki Simpul Sembilan sana makin sering terdengar mengigau sendiri waktu malam.",
+      "text": "Air kalau dibendung ya pecah jadi dua aliran, Nak. Kubu Pos Tua seperti Marsiyah lebih memilih makan roti kering daripada membiarkan petugas TTA menyentuh Buku Tamu Batu. Tapi Kubu Pos Dagang di jalur besar? Mereka mulai menyetorkan salinan nama pelintas demi kuota gandum dan keringanan iuran timbang. Di plakat gerbang sih tertulis 'Setiap kabar ada bobotnya', tapi orang pasar selalu berbisik balik: semua ditimbang, kecuali yang menimbang.",
       "action": "RECORD_RUMOR"
     }
   }

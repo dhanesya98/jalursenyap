@@ -10,8 +10,8 @@
       "next": "n1"
     },
     "n1": {
-      "speaker": "Maren",
-      "text": "Sahdan meninggalkan tas itu di Pos Batu Biru pada malam jaringan diputus. Sarai menjaganya lebih dulu, lalu mewariskannya kepada Bahar, dari Bahar ke Ilun, dan dari Ilun ke tanganku. Hari ini biarlah ia kembali berjalan bersamamu.",
+      "speaker": "Marsiyah",
+      "text": "Sahdan meninggalkan tas itu di Pos Nilasar pada malam jaringan diputus. Saryel menjaganya lebih dulu, lalu mewariskannya kepada Bahar, dari Bahar ke Ilyam, dan dari Ilyam ke tanganku. Hari ini biarlah ia kembali berjalan bersamamu.",
       "next": "n2"
     },
     "n2": {
@@ -20,7 +20,7 @@
       "next": "n3"
     },
     "n3": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Ikuti jalan batu yang menanjak ke utara. Jangan memotong lereng pasir kalau pijakanmu belum mantap. Begitu sampai di papan penanda punggung bukit, kubah menaranya sudah tampak.",
       "next": "n4"
     },

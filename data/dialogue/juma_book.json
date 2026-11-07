@@ -16,17 +16,17 @@
     },
     "n2": {
       "speaker": "Juma",
-      "text": "Dewan menulis malam itu sebagai kecelakaan alat yang aus karena usia. Kakekku menulis nama orang yang berjalan menembus badai untuk menahan beban. *(diam sejenak)* Aku tidak menambah satu huruf pun pada catatannya.",
+      "text": "TTA menulis malam itu sebagai kecelakaan alat yang aus karena usia. Kakekku menulis nama orang yang berjalan menembus badai untuk menahan beban. *(diam sejenak)* Aku tidak menambah satu huruf pun pada catatannya.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Berarti Sahdan waktu itu sengaja balik ke pusat jaringan... Aku catat tanggal sama isi halaman ini di Buku Jalurku dulu ya, Pak, biar nggak salah cerita waktu lapor ke Bu Maren.",
+      "text": "Berarti Sahdan waktu itu sengaja balik ke pusat jaringan... Aku catat tanggal sama isi halaman ini di Buku Jalurku dulu ya, Pak, biar nggak salah cerita waktu lapor ke Bu Marsiyah.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Juma",
-      "text": "Perhatikan pijakan batumu waktu turun. Kabut sudah merayap masuk ke lembah barat. Sampaikan pada Maren: rotinya sampai utuh, dan lututku tidak butuh dikirimi roti dua kali sepekan.",
+      "text": "Perhatikan pijakan batumu waktu turun. Kabut sudah merayap masuk ke lembah barat. Sampaikan pada Marsiyah: rotinya sampai utuh, dan lututku tidak butuh dikirimi roti dua kali sepekan.",
       "action": "READ_LEDGER"
     }
   }

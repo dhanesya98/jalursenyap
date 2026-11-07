@@ -16,17 +16,17 @@
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Di bibir sumurnya cuma ada ukiran tanda pasang surut air sama guratan pemeriksaan warga lama. Nggak ada alat buatan Dewan atau batu resonansi baru yang ditempel. Berarti bunyinya beneran naik dari urat bumi di bawah sana.",
+      "text": "Di bibir sumurnya cuma ada ukiran tanda pasang surut air sama guratan pemeriksaan warga lama. Nggak ada alat buatan TTA atau Batu Gaung baru yang ditempel. Berarti bunyinya beneran naik dari urat bumi di bawah sana.",
       "next": "n3"
     },
     "n3": {
-      "speaker": "Bu Lamat",
+      "speaker": "Bu Lamiyah",
       "text": "Dulu bunyinya cuma sayup-sayup seperti deru angin di kulit kerang kosong, Nak. Tapi sebulan ini, kalau malam tiba, getarannya sampai bikin cangkir tembaga di meja berdenting. Warga sini mulai takut nimba air sendirian.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Aku bakal catat bunyi yang kudengar ini sama cerita Ibu secara terpisah di Buku Jalur. Kita belum tahu apa yang bikin Urat Sumi bergejolak, tapi Bu Maren harus dengar kabar ini secepatnya.",
+      "text": "Aku bakal catat bunyi yang kudengar ini sama cerita Ibu secara terpisah di Buku Jalur. Kita belum tahu apa yang bikin Urat Sumi bergejolak, tapi Bu Marsiyah harus dengar kabar ini secepatnya.",
       "action": "INSPECT_WELL"
     }
   }

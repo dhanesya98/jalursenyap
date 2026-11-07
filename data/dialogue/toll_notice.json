@@ -1,17 +1,17 @@
 {
   "id": "toll_notice",
   "npc": "Nara",
-  "title": "Pemberitahuan Dewan",
+  "title": "Pemberitahuan TTA",
   "node": "n0",
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Ada lembaran kertas baru ditimpa paku di atas papan kayu tua. Isinya maklumat resmi Dewan Tol: Lintasan timur ditutup sementara karena adanya lonjakan Gangguan. Seluruh kiriman wajib menjalani pemeriksaan di gerbang.",
+      "text": "Ada lembaran kertas baru ditimpa paku di atas papan kayu tua. Isinya maklumat resmi Takhta Timbang Agung (TTA): Lintasan timur ditutup sementara karena adanya lonjakan Gangguan. Seluruh kiriman wajib menjalani pemeriksaan di gerbang.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Bagian kalimat yang mengecualikan kiriman antarpos malah dicoret tinta hitam tebal. Nggak ada tanggal kapan jalan dibuka lagi. Di bagian bawah cuma tertera slogan resmi: \"Tata Menyelamatkan, Tertib Menjaga.\"",
+      "text": "Bagian kalimat yang mengecualikan kiriman antarpos malah dicoret tinta hitam tebal. Nggak ada tanggal kapan jalan dibuka lagi. Di bagian bawah cuma tertera slogan resmi: \"Tata menyelamatkan. Setiap kabar ada bobotnya.\"",
       "next": "n2"
     },
     "n2": {

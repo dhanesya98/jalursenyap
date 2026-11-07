@@ -9,25 +9,25 @@
   "landmarks": [
     {
       "id": "hub",
-      "name": "Pos Batu Biru",
+      "name": "Pos Nilasar",
       "position": [
         0,
         0,
         35
       ],
       "icon": "checkpoint",
-      "description": "Pos suaka air Asharim yang terjepit antara Kubu Pos Tua dan tekanan bea Kubu Pos Dagang. Di bawah kanopi Maren, rantai penjaga empat generasi menyimpan Surat Penyalaan."
+      "description": "Pos suaka air Asharim yang terjepit antara Kubu Pos Tua dan tekanan iuran timbang Kubu Pos Dagang. Di bawah kanopi Marsiyah, rantai penjaga empat generasi menyimpan Surat Penyalaan."
     },
     {
       "id": "tower",
-      "name": "Menara Batu Senja",
+      "name": "Menara Senja",
       "position": [
         0,
         18,
         -125
       ],
       "icon": "compass",
-      "description": "Juma menunggu angin dari utara dan roti dari selatan. Catatan buku harian kakeknya menyimpan kesaksian tentang Sahdan sebelum Malam Hening."
+      "description": "Juma menunggu angin dari utara dan roti dari selatan. Catatan buku harian kakeknya menyimpan kesaksian tentang Sahdan sebelum Malam Tiga Napas."
     },
     {
       "id": "oasis",
@@ -38,18 +38,18 @@
         65
       ],
       "icon": "shell",
-      "description": "Undakan kanal Urat Sumi dan Balai Cawan tempat Bu Lamat menunggu lagu Dorin dari Bandar Lada. Sumur-sumur tua memantulkan suara lama makin keras setiap tahun."
+      "description": "Undakan kanal Urat Sumi dan Balai Cawan tempat Bu Lamiyah menunggu lagu Dorun dari Bandar Lada. Sumur-sumur tua memantulkan suara lama makin keras setiap tahun."
     },
     {
       "id": "toll",
-      "name": "Gerbang Dewan Tol",
+      "name": "Gerbang TTA",
       "position": [
         70,
         3,
         -10
       ],
       "icon": "seal",
-      "description": "Pos pemeriksaan Dewan Tol yang mengawasi jalur timur dan mencatat Gangguan. Di sini Kesa bimbang antara perintah penahanan kabar dan nuraninya."
+      "description": "Pos pemeriksaan Takhta Timbang Agung (TTA) yang mengawasi jalur timur dan mencatat Gangguan. Di sini Kesa bimbang antara perintah penahanan kabar dan nuraninya."
     },
     {
       "id": "relay",
@@ -60,7 +60,7 @@
         -85
       ],
       "icon": "lantern",
-      "description": "Titik 009 pada lintasan Garis Surut. Tiga denyut lentera tanpa penyetelan dan retak cincin penanda membuktikan tekanan bendungan mulai gagal; di dekatnya berdiri bangunan uji tempat Hesta meninggalkan peringatan tahun 58."
+      "description": "Titik 009 pada lintasan Garis Surut. Tiga denyut lentera tanpa penyetelan dan retak cincin penanda membuktikan tekanan Bejana Batu mulai gagal; di dekatnya berdiri bangunan uji tempat Hiluan meninggalkan peringatan tahun 58."
     },
     {
       "id": "view",
@@ -71,7 +71,7 @@
         5
       ],
       "icon": "map",
-      "description": "Dari sini, lentera Pos Batu Biru tampak seperti satu bintang yang memilih tinggal di bumi."
+      "description": "Dari sini, lentera Pos Nilasar tampak seperti satu bintang yang memilih tinggal di bumi."
     },
     {
       "id": "testhouse",
@@ -99,8 +99,8 @@
   "npcs": [
     {
       "id": "maren",
-      "name": "Maren",
-      "title": "Kepala Pos Batu Biru",
+      "name": "Marsiyah",
+      "title": "Kepala Pos Nilasar",
       "position": [
         0,
         0,
@@ -110,7 +110,7 @@
     {
       "id": "juma",
       "name": "Juma",
-      "title": "Penjaga Menara Batu Senja",
+      "title": "Penjaga Menara Senja",
       "position": [
         0,
         18,
@@ -119,7 +119,7 @@
     },
     {
       "id": "bulamat",
-      "name": "Bu Lamat",
+      "name": "Bu Lamiyah",
       "title": "Tetua Telaga Sumi",
       "position": [
         -135,
@@ -130,7 +130,7 @@
     {
       "id": "kesa",
       "name": "Kesa",
-      "title": "Petugas Dewan Tol",
+      "title": "Petugas Gerbang TTA",
       "position": [
         65,
         3,
@@ -328,7 +328,7 @@
       ]
     },
     "direct": {
-      "name": "Jalur Tol",
+      "name": "Jalur TTA",
       "surface": "sand",
       "width": 5,
       "points": [
@@ -516,7 +516,7 @@
         24,
         -94
       ],
-      "text": "Jejak pada batu uji menyebut pemeriksaan tahun 58. Pelat setempat menguatkan tahunnya; identitas penyetel belum diketahui.",
+      "text": "Jejak pada batu uji menyebut pemeriksaan tahun 58. Pelat setempat menguatkan tahunnya; identitas arsitek belum diketahui.",
       "manual": true
     },
     {
@@ -527,7 +527,7 @@
         0,
         39
       ],
-      "text": "Tamu menulis nama di batu pos sebagai catatan perjalanan kurir. Pos Tua menjaga kerahasiaannya, sementara Pos Dagang menyerahkan salinannya kepada Dewan demi keringanan bea."
+      "text": "Tamu menulis nama di batu pos sebagai catatan perjalanan kurir. Pos Tua menjaga kerahasiaannya, sementara Pos Dagang menyerahkan salinannya kepada TTA demi keringanan iuran timbang."
     },
     {
       "id": "ajaran-tata",
@@ -537,7 +537,7 @@
         3,
         -9
       ],
-      "text": "“Tata menyelamatkan.” Klaim resmi Dewan Tol menyebut Tahun Kerusakan dan menyatakan Simpul hanya boleh dikelola yang cakap; pengorbanan penyetel Lulanai sama sekali tidak disebut."
+      "text": "“Tata menyelamatkan.” Klaim resmi Takhta Timbang Agung (TTA) menyebut Tahun Kerusakan dan menyatakan Simpul hanya boleh dikelola yang cakap; pengorbanan arsitek Lulanai sama sekali tidak disebut."
     }
   ],
   "year": 100,

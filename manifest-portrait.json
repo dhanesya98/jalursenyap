@@ -1,0 +1,198 @@
+[
+  {
+    "id": "01-nara",
+    "cat": "Tokoh aktif",
+    "title": "Nara",
+    "description": "Kurir magang, 17 tahun. Ekspresi mendengarkan dengan penasaran.",
+    "file": "assets/portraits/01-nara.webp",
+    "bytes": 212324,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "01-nara.png",
+    "masterBytes": 3075677
+  },
+  {
+    "id": "02-maren",
+    "cat": "Tokoh aktif",
+    "title": "Marsiyah",
+    "description": "Kepala Pos Nilasar (Batu Biru); ramah dengan ketegasan yang tenang.",
+    "file": "assets/portraits/02-maren.webp",
+    "bytes": 217052,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "02-maren.png",
+    "masterBytes": 3153685
+  },
+  {
+    "id": "03-juma",
+    "cat": "Tokoh aktif",
+    "title": "Juma",
+    "description": "Penjaga Menara Senja; tanggap dan bersahaja.",
+    "file": "assets/portraits/03-juma.webp",
+    "bytes": 193090,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "03-juma.png",
+    "masterBytes": 3314722
+  },
+  {
+    "id": "04-kesa",
+    "cat": "Tokoh aktif",
+    "title": "Kesa",
+    "description": "Petugas Gerbang TTA; sopan, serius, dan menyimpan keraguan.",
+    "file": "assets/portraits/04-kesa.webp",
+    "bytes": 174800,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "04-kesa.png",
+    "masterBytes": 3167887
+  },
+  {
+    "id": "05-bu-lamat",
+    "cat": "Tokoh aktif",
+    "title": "Bu Lamiyah",
+    "description": "Tetua Telaga Sumi & penerima lagu keluarga; hangat dan penuh rindu.",
+    "file": "assets/portraits/05-bu-lamat.webp",
+    "bytes": 209920,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "05-bu-lamat.png",
+    "masterBytes": 3042982
+  },
+  {
+    "id": "06-dorin",
+    "cat": "Tokoh aktif",
+    "title": "Dorun",
+    "description": "Pelaut Rumah Layar dan suami Bu Lamiyah; hangat serta berpengalaman.",
+    "file": "assets/portraits/06-dorin.webp",
+    "bytes": 216032,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "06-dorin.png",
+    "masterBytes": 3140811
+  },
+  {
+    "id": "07-tarun",
+    "cat": "Tokoh aktif",
+    "title": "Tarun",
+    "description": "Ayah Nara; letih, lega, dan ingin pulang.",
+    "file": "assets/portraits/07-tarun.webp",
+    "bytes": 188350,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "07-tarun.png",
+    "masterBytes": 3202115
+  },
+  {
+    "id": "08-ima",
+    "cat": "Tokoh aktif",
+    "title": "Ima",
+    "description": "Nenek Nara di Dusun Sela; kasih sayang dengan sikap hati-hati.",
+    "file": "assets/portraits/08-ima.webp",
+    "bytes": 215646,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "08-ima.png",
+    "masterBytes": 3091582
+  },
+  {
+    "id": "09-taluk",
+    "cat": "Tokoh aktif",
+    "title": "Taluk",
+    "description": "Ketua Takhta Timbang Agung (TTA); berwibawa dan mengkhawatirkan ketertiban.",
+    "file": "assets/portraits/09-taluk.webp",
+    "bytes": 214288,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "09-taluk.png",
+    "masterBytes": 3154902
+  },
+  {
+    "id": "10-orsa",
+    "cat": "Tokoh aktif",
+    "title": "Orsuk",
+    "description": "Pengawal Panji Belkut (dipimpin Salgur, si Tali Panjang); lugas dan dapat diandalkan.",
+    "file": "assets/portraits/10-orsa.webp",
+    "bytes": 185844,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "10-orsa.png",
+    "masterBytes": 3110461
+  },
+  {
+    "id": "11-sahdan",
+    "cat": "Roh, Suara & sejarah",
+    "title": "Sahdan (Roh Sahdan)",
+    "description": "Kurir masa lampau di Simpul Pertama; portrait representasi Roh Sahdan.",
+    "file": "assets/portraits/11-sahdan.webp",
+    "bytes": 176574,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "11-sahdan.png",
+    "masterBytes": 3071763
+  },
+  {
+    "id": "12-wirna",
+    "cat": "Roh, Suara & sejarah",
+    "title": "Wilanu (Roh Wilanu)",
+    "description": "Pemimpin arsitek masa lampau; portrait representasi Roh Wilanu.",
+    "file": "assets/portraits/12-wirna.webp",
+    "bytes": 181784,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "12-wirna.png",
+    "masterBytes": 3184738
+  },
+  {
+    "id": "13-dahan",
+    "cat": "Roh, Suara & sejarah",
+    "title": "Dalumi (Roh Dalumi)",
+    "description": "Tetua arsitek masa lampau; portrait representasi Roh Dalumi yang mempertanyakan keputusan.",
+    "file": "assets/portraits/13-dahan.webp",
+    "bytes": 181846,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "13-dahan.png",
+    "masterBytes": 3182430
+  },
+  {
+    "id": "14-hesta",
+    "cat": "Roh, Suara & sejarah",
+    "title": "Hiluan (Suara Hiluan)",
+    "description": "Arsitek pasca-Telan (tahun 58); usulan rupa untuk representasi Suara Hiluan.",
+    "file": "assets/portraits/14-hesta.webp",
+    "bytes": 218434,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "master": "14-hesta.png",
+    "masterBytes": 3112319
+  }
+]

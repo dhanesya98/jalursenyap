@@ -10,10 +10,10 @@
 | Hari hangat, berkabut, badai | Pencahayaan, jarak pandang, partikel, angin, kecepatan pasir, anggaran glide dan paparan paket berubah |
 | Pilihan rute | Tol tertutup saat badai; Jalur Lentera lebih panjang; Tebing Utara lebih pendek dan terpapar angin |
 | Paket | Kerusakan akibat jatuh/paparan badai; tetap bisa diantar; dialog kerang retak dan roti dingin |
-| Nama Baik | Lima bangsa tercatat; pengantaran/pilihan/tangga menaikkan kepercayaan; kabar tambahan dari Maren pada ambang kepercayaan |
+| Nama Baik | Lima bangsa tercatat; pengantaran/pilihan/tangga menaikkan kepercayaan; kabar tambahan dari Marsiyah pada ambang kepercayaan |
 | Buku Jalur | Peta, rute pilihan, tugas, rumor, penemuan, reputasi, dan perlengkapan |
 | Save/checkpoint | Autosave lokal, checkpoint saat masuk pos, kembali ke checkpoint, tangga tetap tersimpan |
-| Cerita | Dialog JSON dari brief, Sahdan, Dewan Tol, surat Simpul Pertama, Gema menyebut Nara |
+| Cerita | Dialog JSON dari brief, Sahdan, Takhta Timbang Agung (TTA), surat Simpul Pertama, Gema menyebut Nara |
 | Visual | Karakter/NPC/properti 3D, 7 potret, 3 ilustrasi wilayah, peta, 24 ikon, UI, katalog interaktif, 24 ekspor GLB |
 | Audio | Angin dan efek sintesis; melodi singkat saat beristirahat; kontrol volume |
 | Build | HTML offline, engine lokal, source dan skrip pengembangan tanpa npm dependencies |
@@ -39,13 +39,13 @@ Skenario `tests/visual.html` memakai penyimpanan memori agar QA tidak menimpa pe
 
 ## Pembaruan kanon · 2026-11-05
 
-Story Bible Gabungan disalin utuh ke `docs/STORY-BIBLE.md`. Babak 1: usia dan asal Nara, Tarun, kesaksian warisan Juma, rantai penjagaan surat, Dorin/Bu Lamat, Ajaran Tata, dan alasan Maren menyerahkan surat telah diperbarui. Cap Asharim dicatat saat pengantaran lagu selesai, lalu dibubuhkan saat Maren menyerahkan surat. Surat tetap dibawa setelah Simpul Sembilan menyala.
+Story Bible Gabungan disalin utuh ke `docs/STORY-BIBLE.md`. Babak 1: usia dan asal Nara, Tarun, kesaksian warisan Juma, rantai penjagaan surat, Dorun/Bu Lamiyah, Ajaran Tata, dan alasan Marsiyah menyerahkan surat telah diperbarui. Cap Asharim dicatat saat pengantaran lagu selesai, lalu dibubuhkan saat Marsiyah menyerahkan surat. Surat tetap dibawa setelah Simpul Sembilan menyala.
 
 Data lima bangsa dibaca dari `data/canon.json`; galeri yang sama dipakai Atlas dan Buku Jalur. Simpanan versi 4 dipetakan ke versi 5; nama bangsa lama dan penemuan lama dimigrasikan. VO dinonaktifkan atas permintaan pemilik proyek. Game tidak memuat rekaman percakapan; musik latar, efek, dan lagu Kerang Suara tetap aktif. Berkas VO lama dibiarkan untuk dihapus manual. Tidak ada perubahan model 3D dalam pembaruan ini. Bagian 12.3 serta usulan audit tidak diubah menjadi ketetapan baru.
 
-## Pembaruan kanon · 2026-11-06 (Bab 0 — Pos Batu Biru)
+## Pembaruan kanon · 2026-11-06 (Bab 0 — Pos Nilasar (Batu Biru))
 
-Story Bible Kanon Revisi Terpadu (6 November 2026) disalin utuh ke `docs/STORY-BIBLE.md` beserta peta `assets/world/peta-100-simpul.webp`. Demo diposisikan secara kanonis sebagai **Bab 0 — Pos Batu Biru** (prolog sebelum perjalanan Bab 1 ke Dusun Sela dan Padang Salkara):
-- **Provenans tas & surat:** Sahdan menitipkan baik `Surat Penyalaan` maupun tas berinsulasi di Pos Batu Biru kepada Sarai (`Sarai → Bahar → Ilun → Maren`). Maren meminjamkan tas kepada Nara sebelum tugas pertama; Ruru sudah bersama Nara sejak awal.
-- **Tiga tugas & laporan jujur:** Roti hangat untuk Juma membuka cerita buku harian kakek Juma; Kerang Suara untuk Bu Lamat membangun ikatan saksi tanpa istilah `Kait Tali` (diganti istilah lintasan `Tali Lintas` / tambatan tali); tugas ketiga yang gagal sebagian dilaporkan secara jujur oleh Nara kepada Maren.
-- **Tanda uji 009 & dua suara terpisah:** Lengkapnya tanda bahaya 009 mendorong Maren menyerahkan `Surat Penyalaan` dan membubuhkan `Cap Saksi Asharim` di atas bantalan tinta resonansi. Saat punggung surat ditempelkan pada lempeng pemeriksaan 009, pantulan `Garis Surut` milik **Sahdan** membaca nama Nara dari tinta cap, sedangkan rekaman lokal **Hesta** tahun 58 terdengar terpisah dari batu bangunan uji di dekatnya.
+Story Bible Kanon Revisi Terpadu (6 November 2026) disalin utuh ke `docs/STORY-BIBLE.md` beserta peta `assets/world/peta-100-simpul.webp`. Demo diposisikan secara kanonis sebagai **Bab 0 — Pos Nilasar (Batu Biru)** (prolog sebelum perjalanan Bab 1 ke Dusun Sela dan Padang Salkara):
+- **Provenans tas & surat:** Sahdan menitipkan baik `Surat Penyalaan` maupun tas berinsulasi di Pos Nilasar (Batu Biru) kepada Saryel (`Saryel → Bahar → Ilyam → Marsiyah`). Marsiyah meminjamkan tas kepada Nara sebelum tugas pertama; Ruru sudah bersama Nara sejak awal.
+- **Tiga tugas & laporan jujur:** Roti hangat untuk Juma membuka cerita buku harian kakek Juma; Kerang Suara untuk Bu Lamiyah membangun ikatan saksi tanpa istilah `Kait Tali` (diganti istilah lintasan `Tali Lintas` / tambatan tali); tugas ketiga yang gagal sebagian dilaporkan secara jujur oleh Nara kepada Marsiyah.
+- **Tanda uji 009 & dua suara terpisah:** Lengkapnya tanda bahaya 009 mendorong Marsiyah menyerahkan `Surat Penyalaan` dan membubuhkan `Cap Saksi Asharim` di atas bantalan tinta gaung. Saat punggung surat ditempelkan pada lempeng pemeriksaan 009, pantulan `Garis Surut` milik **Sahdan** membaca nama Nara dari tinta cap, sedangkan rekaman lokal **Hiluan** tahun 58 terdengar terpisah dari batu bangunan uji di dekatnya.

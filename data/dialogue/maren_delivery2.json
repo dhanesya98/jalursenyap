@@ -1,6 +1,6 @@
 {
   "id": "maren_delivery2",
-  "npc": "Maren",
+  "npc": "Marsiyah",
   "title": "Lagu untuk Telaga Sumi",
   "node": "n0",
   "nodes": {
@@ -10,13 +10,13 @@
       "next": "n1"
     },
     "n1": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Duduk dulu. Habiskan air di cawanmu sebelum kata-katamu saling mendahului. Nah. Catatan Ban Juma itu memang benar adanya, Nara, tapi jangan biarkan teka-teki masa lalu membuat kakimu lupa pada tanah yang kauinjak hari ini. Masih ada orang yang sedang menunggu di seberang lembah.",
       "next": "n2"
     },
     "n2": {
-      "speaker": "Maren",
-      "text": "Lihat kerang bergaris biru di atas kain itu. Kiriman dari Dorin, pelaut Rumah Layar asal Bahtari, untuk bibinya—Bu Lamat—yang menjaga sumur tua di Telaga Sumi.",
+      "speaker": "Marsiyah",
+      "text": "Lihat kerang bergaris biru di atas kain itu. Kiriman dari Dorun, pelaut Rumah Layar asal Bahtari, untuk istrinya—Bu Lamiyah—yang menjaga sumur tua di Telaga Sumi.",
       "next": "n3"
     },
     "n3": {
@@ -25,23 +25,23 @@
       "next": "n4"
     },
     "n4": {
-      "speaker": "Maren",
-      "text": "Rongga kapurnya tipis karena harus menyimpan getaran suara manusia. Jangan dibuka di jalan, dan jangan sampai terbentur batu ngarai. Kalau cangkangnya tergores sedikit saja, katakan jujur pada Bu Lamat sebelum ia menempelkannya ke telinga.",
+      "speaker": "Marsiyah",
+      "text": "Rongga kapurnya tipis karena harus menyimpan getaran suara manusia. Jangan dibuka di jalan, dan jangan sampai terbentur batu ngarai. Kalau cangkangnya tergores sedikit saja, katakan jujur pada Bu Lamiyah sebelum ia menempelkannya ke telinga.",
       "next": "n5"
     },
     "n5": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Kabut putih sudah mulai turun menutup jurang barat. Lewatlah dari titian kayu yang utuh—jangan nekat melompat di tepian licin. Ambil juga Tangga Tali dari persediaan pos kita; pasang di tebing kalau kau butuh jalan memanjat yang aman.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Oke. Satu Kerang Suara, cangkang utuh, belum ada goresan. Buat Bu Lamat di Telaga Sumi. Aku bungkus kain tebal dulu di tas, terus jalan ngikutin lentera kuning.",
+      "text": "Oke. Satu Kerang Suara, cangkang utuh, belum ada goresan. Buat Bu Lamiyah di Telaga Sumi. Aku bungkus kain tebal dulu di tas, terus jalan ngikutin lentera kuning.",
       "next": "n7"
     },
     "n7": {
-      "speaker": "Maren",
-      "text": "Teduh di jalanmu, Nara. Kalau di Telaga Sumi kau mendengar sumur tuanya berbunyi aneh, dengarkan baik-baik, lalu ceritakan padaku saat cawan sore kita siap.",
+      "speaker": "Marsiyah",
+      "text": "Hati-hati di titian barat, Nara. Kalau di Telaga Sumi kau mendengar sumur tuanya berbunyi aneh, dengarkan baik-baik, lalu ceritakan padaku saat cawan sore kita siap.",
       "action": "ACCEPT_SHELL"
     }
   }

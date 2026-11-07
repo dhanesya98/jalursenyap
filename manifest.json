@@ -86,8 +86,8 @@
   {
     "id": "02-maren",
     "cat": "Karakter",
-    "title": "Maren — model & ekspresi",
-    "description": "Kepala Pos Batu Biru; usia dan rupa adalah usulan visual.",
+    "title": "Marsiyah — model & ekspresi",
+    "description": "Kepala Pos Nilasar (Batu Biru); usia dan rupa adalah usulan visual.",
     "file": "assets/webp/02-maren.webp",
     "bytes": 241164,
     "dimensions": [
@@ -115,7 +115,7 @@
     "id": "04-kesa",
     "cat": "Karakter",
     "title": "Kesa — model & ekspresi",
-    "description": "Petugas Dewan dengan ekspresi formal, ragu, dan peduli.",
+    "description": "Petugas TTA dengan ekspresi formal, ragu, dan peduli.",
     "file": "assets/webp/04-kesa.webp",
     "bytes": 235946,
     "dimensions": [
@@ -199,7 +199,7 @@
     "id": "10-perlengkapan-kurir",
     "cat": "Perlengkapan",
     "title": "Perlengkapan kurir",
-    "description": "Tas berinsulasi, Surat Penyalaan, tabung surat, kendi, tali dan alat serah-terima.",
+    "description": "Tas berlapis peredam, Surat Penyalaan, tabung surat, kendi, tali dan alat serah-terima.",
     "file": "assets/webp/10-perlengkapan-kurir.webp",
     "bytes": 299234,
     "dimensions": [
@@ -241,7 +241,7 @@
     "id": "13-penanda-jalur",
     "cat": "Navigasi",
     "title": "Penanda jalur & pos",
-    "description": "Batu Nama, papan pos, penunjuk arah, gerbang tol dan peringatan bahaya.",
+    "description": "Batu Nama, papan pos, penunjuk arah, gerbang TTA dan peringatan bahaya.",
     "file": "assets/webp/13-penanda-jalur.webp",
     "bytes": 280112,
     "dimensions": [
@@ -324,7 +324,7 @@
   {
     "id": "19-pos-batu-biru",
     "cat": "Lokasi",
-    "title": "Pos Batu Biru",
+    "title": "Pos Nilasar (Batu Biru)",
     "description": "Pos pembuka: halaman, tempat serah-terima, air dan jalan menuju menara.",
     "file": "assets/webp/19-pos-batu-biru.webp",
     "bytes": 288722,
@@ -366,7 +366,7 @@
   {
     "id": "22-reruntuhan-hening",
     "cat": "Lokasi",
-    "title": "Reruntuhan Hening — Rumah Jejak",
+    "title": "Lulan Tua — Rumah Jejak",
     "description": "Jalur basalt, bangunan lama yang dihuni dan ruang mendengar jejak.",
     "file": "assets/webp/22-reruntuhan-hening.webp",
     "bytes": 283472,
@@ -394,8 +394,8 @@
   {
     "id": "24-simpul-keseratus",
     "cat": "Lokasi",
-    "title": "Simpul Keseratus — Katup",
-    "description": "Menara Katup dan potongan ruang batu bawah pulau; bukan bendungan air.",
+    "title": "Simpul Keseratus — Gerbang Surut",
+    "description": "Menara Gerbang Surut dan potongan ruang batu bawah pulau; bukan bendungan air.",
     "file": "assets/webp/24-simpul-keseratus.webp",
     "bytes": 259442,
     "dimensions": [

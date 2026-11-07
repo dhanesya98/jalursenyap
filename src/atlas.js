@@ -3,20 +3,20 @@
   const $ = id => document.getElementById(id);
   const characters = [
     {id:'nara',name:'Nara',story:'Nara, tujuh belas tahun, dari Dusun Sela. Menjadi kurir supaya tidak ada orang yang menunggu sendirian setelah ayahnya, Tarun (kurir darat asal Bahtari), hilang di sekitar Sabuk Dalam pada tahun 95.',icon:'bag'},
-    {id:'ruru',name:'Ruru',story:'Pendamping kecil bertelinga besar yang sudah menemani Nara sejak Pos Batu Biru. Lentera di ekornya membantu membaca jejak resonansi dan arah di hari berkabut.',icon:'ruru'},
-    {id:'maren',name:'Maren',story:'Kepala Pos Batu Biru dan penjaga keempat Surat Penyalaan serta tas berinsulasi titipan Sahdan (Sarai → Bahar → Ilun → Maren).',icon:'letter'},
-    {id:'juma',name:'Juma',story:'Penjaga Menara Batu Senja yang menyimpan buku harian kakeknya tentang kedatangan Sahdan di Pos Batu Biru malam sebelum pemutusan.',icon:'compass'},
-    {id:'bulamat',name:'Bu Lamat',story:'Tetua Telaga Sumi asal Bahtari. Menjaga sumur beresonansi Urat Sumi dan menunggu Kerang Suara kiriman keponakannya, Dorin.',icon:'shell'},
-    {id:'kesa',name:'Kesa',story:'Petugas muda Gerbang Dewan Tol yang ragu melihat surat warga dan laporan bahaya Simpul Terang ditahan atas nama kuota.',icon:'seal'},
+    {id:'ruru',name:'Ruru',story:'Pendamping kecil bertelinga besar yang sudah menemani Nara sejak Pos Nilasar (Batu Biru). Lentera di ekornya membantu membaca jejak gaung dan arah di hari berkabut.',icon:'ruru'},
+    {id:'maren',name:'Marsiyah',story:'Kepala Pos Nilasar (Batu Biru) dan penjaga keempat Surat Penyalaan serta tas berlapis peredam titipan Sahdan (Saryel → Bahar → Ilyam → Marsiyah).',icon:'letter'},
+    {id:'juma',name:'Juma',story:'Penjaga Menara Senja yang menyimpan buku harian kakeknya tentang kedatangan Sahdan di Pos Nilasar malam sebelum pemutusan.',icon:'compass'},
+    {id:'bulamat',name:'Bu Lamiyah',story:'Tetua Telaga Sumi asal Bahtari. Menjaga sumur Urat Sumi yang memantulkan gaung dan menunggu Kerang Suara kiriman suaminya, Dorun.',icon:'shell'},
+    {id:'kesa',name:'Kesa',story:'Petugas muda Gerbang Takhta Timbang Agung (TTA) yang ragu melihat surat warga dan laporan bahaya Simpul Terang ditahan atas nama kuota.',icon:'seal'},
     {id:'pedagang',name:'Pedagang lembah',story:'Pengembara yang membawa kabar pergesekan Kubu Pos Tua (Buku Tamu Batu) melawan Kubu Pos Dagang serta dengung bangunan uji 009.',icon:'journal'}
   ];
   const props = [
-    {id:'bag',name:'Tas Pengantar',story:'Tas kulit berinsulasi resonansi yang ditinggalkan Sahdan bersama surat di Pos Batu Biru, lalu dipinjamkan Maren kepada Nara sebelum tugas pertama.',icon:'bag',category:'PERLENGKAPAN'},
+    {id:'bag',name:'Tas Pengantar',story:'Tas kulit berlapis peredam gaung yang ditinggalkan Sahdan bersama surat di Pos Nilasar (Batu Biru), lalu dipinjamkan Marsiyah kepada Nara sebelum tugas pertama.',icon:'bag',category:'PERLENGKAPAN'},
     {id:'grapple',name:'Tali Lintas',story:'Tambatan tali berlentera untuk menyeberangi ngarai dan tebing curam di Lembah Pasir.',icon:'grapple',category:'TRAVERSAL'},
     {id:'ladder',name:'Tangga Tali',story:'Dua tali dan pijakan kayu yang menyambung ketinggian. Struktur sederhana yang dapat menetap di perjalanan.',icon:'ladder',category:'TRAVERSAL'},
-    {id:'bread',name:'Roti Rempah',story:'Paket pertama untuk Juma di Menara Batu Senja. Kehangatannya membuka cerita buku harian kakek Juma tentang Sahdan.',icon:'bread',category:'PAKET CERITA'},
-    {id:'shell',name:'Kerang Suara',story:'Wadah lagu dari Dorin (Rumah Layar) untuk Bu Lamat. Nada sumbang di ujungnya membuktikan keaslian suara manusia.',icon:'shell',category:'PAKET CERITA'},
-    {id:'letter',name:'Surat Penyalaan',story:'Kunci Jejak dengan seratus tanda penyetel. Dijaga Sarai, Bahar, Ilun, lalu Maren; segel memerlukan Cap Saksi tiga bangsa dan memuat instruksi luar untuk diuji di 009.',icon:'letter',category:'PAKET CERITA'},
+    {id:'bread',name:'Roti Rempah',story:'Paket pertama untuk Juma di Menara Senja. Kehangatannya membuka cerita buku harian kakek Juma tentang Sahdan.',icon:'bread',category:'PAKET CERITA'},
+    {id:'shell',name:'Kerang Suara',story:'Wadah lagu dari Dorun (Rumah Layar) untuk Bu Lamiyah. Nada sumbang di ujungnya membuktikan keaslian suara manusia.',icon:'shell',category:'PAKET CERITA'},
+    {id:'letter',name:'Surat Penyalaan',story:'Kunci Jejak dengan seratus tanda arsitek. Dijaga Saryel, Bahar, Ilyam, lalu Marsiyah; segel memerlukan Cap Saksi tiga bangsa dan memuat instruksi luar untuk diuji di 009.',icon:'letter',category:'PAKET CERITA'},
     {id:'lantern',name:'Lentera jalur',story:'Cahaya kuning hangat menjadi bahasa petunjuk yang sama di pos, tebing, dan reruntuhan.',icon:'checkpoint',category:'PENANDA DUNIA'},
     {id:'checkpoint',name:'Pos Singgah',story:'Penanda peristirahatan dan perjalanan yang telah dicapai. Bentuk batu dan cahaya mengikat fungsi dengan dunia.',icon:'checkpoint',category:'PENANDA DUNIA'},
     {id:'sign',name:'Penunjuk jalan',story:'Papan sederhana bagi para kurir. Membantu membaca persimpangan tanpa mengisi cakrawala dengan antarmuka.',icon:'compass',category:'PENANDA DUNIA'},

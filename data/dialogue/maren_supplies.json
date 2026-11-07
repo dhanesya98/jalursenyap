@@ -1,36 +1,36 @@
 {
   "id": "maren_supplies",
-  "npc": "Maren",
+  "npc": "Marsiyah",
   "title": "Kiriman untuk pos saudara",
   "node": "n0",
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Kerangnya udah sampai, Bu! Bu Lamat ketawa-tawa dengar suara sumbangnya Pak Dorin. Cuma... waktu aku nengok Sumur Induk di sebelah balai, beneran ada suara mendengung dari bawah air. Putus-putus gitu, bukan gema suaraku sendiri.",
+      "text": "Kerangnya udah sampai, Bu! Bu Lamiyah ketawa-tawa dengar suara sumbangnya Pak Dorun. Cuma... waktu aku nengok Sumur Induk di sebelah balai, beneran ada suara mendengung dari bawah air. Putus-putus gitu, bukan gema suaraku sendiri.",
       "next": "n1"
     },
     "n1": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Duduk dulu, Nara. Jangan bicara urusan sumur dengan napas terengah-engah begitu; minum air jeruk hangat ini dulu. Nah. Sekarang lihat caramu bercerita: kau memisahkan apa yang kaudengar sendiri dari apa yang diceritakan orang lain. Di jalan ini, kejernihan seperti itu lebih berharga daripada seribu kabar burung.",
       "next": "n2"
     },
     "n2": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Sebelum petang turun, masih ada tugas ketiga. Pos saudara kita di timur lembah sedang menampung para pelintas yang tertahan badai, dan lumbung mereka mulai menipis. Kita harus mengirim dua ikat perbekalan: roti kering, garam, dan kain penutup.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Dua ikat ke arah timur? Tapi, Bu... tadi di jalan aku dengar pedagang ngomongin gerbang Dewan Tol di timur yang makin ketat. Kalau dicegat gimana?",
+      "text": "Dua ikat ke arah timur? Tapi, Bu... tadi di jalan aku dengar pedagang ngomongin gerbang Takhta Timbang Agung (TTA) di timur yang makin ketat. Kalau dicegat gimana?",
       "next": "n4"
     },
     "n4": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Menurut aturan mereka sendiri, kiriman pangan antarpos dengan surat jalan resmi tidak boleh ditahan. Tapi aturan di atas kertas sering berubah saat sampai di meja penjaga. Bacalah dulu papan pengumuman di depan gerbang, lalu bicaralah baik-baik pada Kesa.",
       "next": "n5"
     },
     "n5": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Dan dengarkan aku: kalau palangnya tetap tidak mau dibuka, jangan sekali-kali mengarang janji palsu, dan jangan membuang barang di pasir supaya terlihat selesai. Bawa pulang apa yang tersisa, beserta catatan jujur tentang siapa yang menahannya.",
       "next": "n6"
     },
@@ -40,8 +40,8 @@
       "next": "n7"
     },
     "n7": {
-      "speaker": "Maren",
-      "text": "Ingat, yang kita layani adalah orang-orang yang menunggu di seberang jalan, bukan buku kuota Dewan. Hati-hati di lembah timur, angin mulai membawa pasir kasar.",
+      "speaker": "Marsiyah",
+      "text": "Ingat, yang kita layani adalah orang-orang yang menunggu di seberang jalan, bukan buku kuota TTA. Hati-hati di lembah timur, angin mulai membawa pasir kasar.",
       "action": "ACCEPT_SUPPLIES"
     }
   }

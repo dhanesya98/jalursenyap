@@ -6,7 +6,7 @@
   "nodes": {
     "n0": {
       "speaker": "Kesa",
-      "text": "Nara? Kau balik lagi di tengah angin sekencang ini? Tadi sore lentera pos Maren memberi isyarat ke menara jaga. Dia menuntut salinan arsip penahanan... sekaligus bertanya apakah kami di gerbang ini tuli terhadap dengung dari arah Simpul Sembilan.",
+      "text": "Nara? Kau balik lagi di tengah angin sekencang ini? Tadi sore lentera pos Marsiyah memberi isyarat ke menara jaga. Dia menuntut salinan arsip penahanan... sekaligus bertanya apakah kami di gerbang ini tuli terhadap dengung dari arah Simpul Sembilan.",
       "next": "n1"
     },
     "n1": {
@@ -16,7 +16,7 @@
     },
     "n2": {
       "speaker": "Kesa",
-      "text": "(Kesa menatap buku peraturan yang tertutup pasir di mejanya, lalu menggenggam kunci perunggu di sakunya.) Waktu aku dilantik jadi petugas Dewan, sumpahku adalah menjaga keselamatan lintasan. Bukan menutup mata sambil menunggu tebing runtuh menimpa orang.",
+      "text": "(Kesa menatap buku peraturan yang tertutup pasir di mejanya, lalu menggenggam kunci perunggu di sakunya.) Waktu aku dilantik jadi petugas TTA, sumpahku adalah menjaga keselamatan lintasan. Bukan menutup mata sambil menunggu tebing runtuh menimpa orang.",
       "next": "n3"
     },
     "n3": {

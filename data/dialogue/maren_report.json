@@ -1,11 +1,11 @@
 {
   "id": "maren_report",
-  "npc": "Maren",
+  "npc": "Marsiyah",
   "title": "Laporan yang sulit disampaikan",
   "node": "n0",
   "nodes": {
     "n0": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Masuklah, Nara, tutup tirai pintunya agar pasir tidak ikut menyerbu. Taruh tasmu di meja, basuh mukamu dulu kalau perih. Setelah napasmu tenang, baru ceritakan mengapa satu ikat masih ada di punggungmu.",
       "next": "n1"
     },
@@ -15,7 +15,7 @@
       "next": "n2"
     },
     "n2": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Dan orang-orang kita di pos saudara? Apakah ada pesan yang sempat lewat ke seberang?",
       "next": "n3"
     },
@@ -25,17 +25,17 @@
       "next": "n4"
     },
     "choice_0": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Satu ikat kembali utuh, satu ikat ditahan dengan bukti tertulis. Kau tidak menutup-nutupi kegagalan, dan kau tidak meninggalkan barang tanpa pertanggungjawaban. Di mataku, Nara, kejujuran seperti ini jauh lebih berat nilainya daripada pengantaran yang mudah.",
       "action": "REPORT_DIRECT"
     },
     "choice_1": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Wajar kalau hatimu berat, Nak. Kurir yang tidak sedih saat kirimannya tertahan justru sudah kehilangan pedulinya. Terima kasih karena kau memilih pulang membawa kebenaran, bukan alasan manis.",
       "action": "REPORT_HESITANT"
     },
     "n4": {
-      "speaker": "Maren",
+      "speaker": "Marsiyah",
       "text": "Kemarikan ikatan yang tersisa, biar kita periksa bersama. Di pos ini, kejujuran dicatat persis sebagaimana adanya.",
       "choices": [
         {
