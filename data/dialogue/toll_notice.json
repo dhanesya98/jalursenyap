@@ -6,17 +6,17 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Di atas pemberitahuan lama tertempel lembar baru: lintasan ke timur ditutup sementara karena peningkatan Gangguan. Semua kiriman harus dicatat di gerbang.",
+      "text": "Ada lembaran kertas baru ditimpa paku di atas papan kayu tua. Isinya maklumat resmi Dewan Tol: Lintasan timur ditutup sementara karena adanya lonjakan Gangguan. Seluruh kiriman wajib menjalani pemeriksaan di gerbang.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Bagian tentang pengecualian antarpos dicoret. Tidak ada waktu pembukaan kembali. Di bawahnya tertulis: “Tata menyelamatkan.”",
+      "text": "Bagian kalimat yang mengecualikan kiriman antarpos malah dicoret tinta hitam tebal. Nggak ada tanggal kapan jalan dibuka lagi. Di bagian bawah cuma tertera slogan resmi: \"Tata Menyelamatkan, Tertib Menjaga.\"",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Seorang pengembara menunggu di balik palang. Kesa memindahkan kendi air ke sisinya sebelum kembali ke meja. Aku akan menunjukkan surat jalan.",
+      "text": "Di balik palang gerbang, ada serombongan pengembara cuma bisa duduk ngemper sambil nunggu. Kesa kelihatan geser kendi air ke arah mereka sebelum balik ke meja tugasnya. Aku bakal dekati mejanya dan tunjukin surat jalan ini.",
       "action": "READ_TOLL_NOTICE"
     }
   }

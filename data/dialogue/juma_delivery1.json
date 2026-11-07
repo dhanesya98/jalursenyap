@@ -6,49 +6,49 @@
   "nodes": {
     "n0": {
       "speaker": "Juma",
-      "text": "Roti Maren? Aku sudah mencium rempahnya sebelum melihatmu. Duduklah sebentar; bukit ini suka membuat orang merasa harus selalu bergegas.",
+      "text": "Tinta tenang, kurir muda. Pukul dua siang kurang sepuluh menit. Aroma rempah kayu manisnya sudah sampai ke teras sebelum langkah kakimu terdengar.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Satu roti rempah untuk Juma. Begini kondisinya setelah perjalanan. Bu Maren bilang Anda akan mengadu ke seluruh pos kalau terlambat.",
+      "text": "Kata terjaga, Pak Juma! Ini... roti rempah titipan Bu Maren. Masih hangat kok, suwer. Tadi cuma kena angin tanjakan sebentar di punggung bukit, tapi bungkus daunnya nggak koyak sama sekali.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Juma",
-      "text": "Itu cara kami bilang rindu. Kemarin aku mengirim kabar bahwa sendi lututku sudah membaik. Kurasa dia membaca bagian \"lutut\" dan mengabaikan \"membaik\".",
+      "text": "(Menerima bungkusan, memeriksa ikatan tali dengan saksama.) Tepat waktu. Maren mengirim roti ini bukan karena aku lapar. Kemarin aku menulis bahwa lutut kananku membaik; ia pasti membaca kata \"lutut\" dan mengabaikan kata \"membaik\". Begitulah orang Asharim menyatakan kepedulian.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Juma",
-      "text": "(Juma memperhatikan tas.) Boleh kulihat jahitannya? Kakekku menggambar pola seperti itu. Tas seorang kurir bernama Sahdan.",
+      "text": "(Pandangan Juma terhenti pada tas Nara. Ia diam sejenak.) Dua simpul menyilang di tali sandang. Tiga jahitan perunggu di sudut bawah. Kakekku, Ban Juma, menggambar pola jahitan yang persis seperti itu dalam buku hariannya.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Maren menyebut nama yang sama. Apakah kakek Anda mengenalnya?",
+      "text": "Bu Maren juga bilang tas ini peninggalan kurir lama bernama Sahdan. Kakek Bapak pernah ketemu langsung sama dia?",
       "next": "n5"
     },
     "choice_0": {
       "speaker": "Juma",
-      "text": "Bacalah perlahan. Tinta yang tua tidak selalu punya jawaban lengkap.",
+      "text": "Bacalah dengan cermat. Tinta yang berumur seratus tahun tidak suka dibaca terburu-buru. Ambil waktumu.",
       "action": "DELIVER_BREAD_A"
     },
     "choice_1": {
       "speaker": "Juma",
-      "text": "Katanya Sahdan selalu menanyakan orang yang belum mendapat kabar. Sekarang lihat bukunya; jangan hanya percaya ingatanku.",
+      "text": "Kakek menulis: Sahdan selalu bertanya siapa orang di pos berikutnya yang paling lama tidak menerima kabar. Buka bukunya di bangku sana; periksa sendiri dengan matamu.",
       "action": "DELIVER_BREAD_B"
     },
     "n5": {
       "speaker": "Juma",
-      "text": "Ia menulis tentang pertemuan singkat sebelum Hari Senyap. Aku hanya punya ceritanya dan buku yang ditinggalkan. Lihatlah sendiri buku di bangku itu.",
+      "text": "Tahun Simpul 401. Malam sebelum lentera-lentera padam. Sahdan singgah di kaki menara ini membawa kabar yang tidak dicatat di papan resmi. Aku bukan saksi hidupnya—hanya catatan kakek yang tertinggal. Buku itu terbuka di atas bangku batu di sebelahmu.",
       "choices": [
         {
-          "text": "“Terima kasih. Aku akan membaca catatannya.”",
+          "text": "“Terima kasih, Pak. Aku akan baca catatannya pelan-pelan.”",
           "next": "choice_0"
         },
         {
-          "text": "“Apa yang paling Anda ingat dari cerita kakek?”",
+          "text": "“Apa yang paling sering Bapak ingat dari cerita kakek tentang Sahdan?”",
           "next": "choice_1"
         }
       ]

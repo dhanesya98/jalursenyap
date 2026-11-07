@@ -6,17 +6,17 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Aku berhenti di balik penanda batu. Ruru merapat ke sisi tas. Angin lewat dalam gelombang; di sela-selanya bunyi lentera terdengar lagi.",
+      "text": "Fiuh... aku merapat ke balik ceruk dinding batu. Pasirnya beterbangan tajam banget kena pipi. Ruru nempel erat ke samping tas, bulunya ikutan bergetar kena deru angin badai.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Pengikat tas masih rapat. Punggung surat memuat cap, bagian depan masih tersegel. Aku merapikan lapisan pelindung sebelum melanjutkan.",
+      "text": "Kuperiksa gesper tas: talinya masih kencang dan kulitnya rapat. Punggung surat aman di lapisan terdalam, cap lilinnya nggak lecet sama sekali. Kurapikan kain pembungkusnya biar debu nggak masuk.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Dari sini lentera 009 tampak di atas bukit. Jubah akan kehilangan daya angkat lebih cepat dalam badai. Aku memilih pijakan yang bisa dicapai, lalu bergerak saat pandangan cukup jelas.",
+      "text": "Dari celah batu ini, pilar cahaya lentera Simpul 009 kelihatan menjulang di atas bukit pasir. Anginnya masih kencang, jadi jangan paksakan lompat melayang sembarangan. Kita jalan pas hembusannya agak reda ya, Ruru.",
       "action": "SHELTER_LETTER"
     }
   }

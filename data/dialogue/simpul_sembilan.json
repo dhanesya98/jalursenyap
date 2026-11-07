@@ -6,42 +6,42 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "(Nara menempelkan punggung surat pada lempeng. Tinta cap berpendar singkat. Sebuah bunyi jauh bergetar melalui batu.)",
+      "text": "(Nara menempelkan punggung surat ke lempeng pemeriksaan. Tinta cap menyala keemasan di kegelapan badai. Dari kedalaman batu, sebuah desau bunyi bergetar merayap naik...)",
       "next": "n1"
     },
     "n1": {
       "speaker": "Pantulan jauh",
-      "text": "…kunci… akhirnya bergerak…",
+      "text": "(tiga napas)...kunci... akhirnya kau... bergerak...",
       "next": "n2"
     },
     "n2": {
       "speaker": "Pantulan jauh",
-      "text": "…Nara…",
+      "text": "...Nara...",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Nama yang tadi kuucapkan bersama Maren. Aku menoleh; tidak ada orang di belakangku.",
+      "text": "(Nara tersentak menahan napas) Nama itu... nama yang tadi kuucapkan bersama Bu Maren di atas bantalan cap! Aku menoleh kaget ke belakang, tapi nggak ada siapa-siapa di pelataran ini selain angin.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Pantulan jauh",
-      "text": "…jangan ke pusat… sebelum saksinya genap…",
+      "text": "...jangan bawa kunci ke pusat... sebelum saksinya... genap tiga bangsa...",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "(Bunyi itu menipis, seperti kalimat yang kehilangan ujungnya. Lempeng kembali tenang. Nara melepaskan surat; segelnya masih utuh.)",
+      "text": "(Suara itu perlahan memudar, seperti kalimat yang kehabisan napas di kejauhan lorong batu. Lempeng kembali dingin. Nara buru-buru menarik suratnya; segel lilin di depannya tetap utuh tak tersentuh.)",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Nama itu tersimpan pada tinta cap. Apa yang tersambung ke lempeng ini sampai bisa mendengarnya?",
+      "text": "Getaran suaraku sendiri tersimpan di tinta cap dan dipantulkan oleh batu ini... Tapi suara siapa tadi yang membalas dari seberang Garis Surut?",
       "next": "n7"
     },
     "n7": {
       "speaker": "Nara",
-      "text": "Ruru menoleh ke bangunan kecil di belakang menara. Dari sana ada ketukan bunyi lain, lebih dekat. Aku akan memeriksa sumbernya.",
+      "text": "Ruru tiba-tiba menoleh tajam ke arah bangunan uji kecil di lereng belakang menara. Ada suara ketukan ritmis dari sana. Ayo, kita periksa apa yang ada di dalam bangunan itu.",
       "action": "CONTACT_LETTER"
     }
   }

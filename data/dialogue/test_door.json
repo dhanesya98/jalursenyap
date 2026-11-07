@@ -6,17 +6,17 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Di pintu kecil ada sisa segel penutupan. Tulisannya aus, tetapi tahun 58 masih terbaca. Daun pintu terlepas dari salah satu engsel.",
+      "text": "Pintu kayu kecil ini terganjal batu reruntuhan. Di kusennya masih ada sisa pita segel Dewan yang sobek mengering, bertuliskan angka tahun lima puluh delapan. Salah satu engsel perunggunya jebol keluar.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Bunyi yang terdengar dari sini berbeda dengan pantulan di lempeng. Ia pendek dan berulang pada sela yang sama.",
+      "text": "Bunyi ketukan yang keluar dari celah pintu ini beda sama pantulan di lempeng 009 tadi. Yang ini suaranya kaku, mekanis, dan berulang tiap beberapa detik seperti lonceng rusak.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Aku menyusuri celah pintu tanpa menyentuhkan surat. Batu di dalam ruangan menjadi sumber bunyinya.",
+      "text": "Kuintip celah pintunya tanpa mengeluarkan surat. Di dalam ruangan gelap itu ada sebuah batu uji segi delapan yang menyala redup... dari sanalah sumber bunyinya.",
       "action": "INSPECT_TEST_DOOR"
     }
   }

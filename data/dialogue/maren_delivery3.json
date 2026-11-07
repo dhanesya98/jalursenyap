@@ -6,47 +6,47 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "(Maren membuka ruang kecil di dinding dapur batu dan mengeluarkan surat bersegel.) Aku menjaganya hampir tiga puluh tahun. Malam ini aku harus berhenti hanya menjaganya.",
+      "text": "(Maren menggeser sebongkah batu bata di dinding dapur pos, lalu mengeluarkan sebuah tabung kulit tua bersegel lilin keras.) Tiga puluh tahun aku menyimpannya di balik dinginnya batu ini, Nara. Tapi malam ini... aku harus berhenti hanya sekadar menyimpannya.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Sahdan menitipkan surat dan tas kepada Sarai sebelum Hari Senyap. Sarai meneruskannya kepada Bahar, lalu Ilun, lalu aku. Instruksi dan pemeriksaan itulah yang kami wariskan.",
+      "text": "Malam sebelum Hari Senyap, Sahdan menitipkan surat dan tas ini kepada Sarai. Sarai menjaganya, lalu mewariskannya kepada Bahar, lalu Bahar kepada Ilun, dan akhirnya sampai ke tanganku. Empat generasi penjaga pos menyimpan amanah ini tanpa berani membukanya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Mengapa tidak diantar lebih dulu?",
+      "text": "Tapi kenapa nggak diantar dari dulu, Bu? Kenapa harus nunggu sampai tiga puluh tahun?",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Selama tanda uji belum lengkap, kunci harus tetap jauh dari pusat. Membawanya tanpa alasan yang benar bisa menambah bahaya. Sekarang tandanya sudah lengkap.",
+      "text": "Karena air bah tak boleh dilepas ke lembah yang warganya belum siap, Nara. Selama tanda bahaya belum muncul di Simpul, kunci ini harus tetap disembunyikan jauh dari jangkauan pusat. Membawanya ke ibukota tanpa alasan yang sahih hanya akan mengundang perebutan kuasa. Dan hari ini... tanda-tanda itu akhirnya genap.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Dua puluh tahun lalu aku hampir menyerahkan rahasia ini kepada Dewan karena takut. Aku tetap menyimpannya, tetapi rasa takut tidak membuat keputusan hari ini lebih ringan.",
+      "text": "Dua puluh tahun lalu... aku nyaris menyerahkan rahasia surat ini ke tangan perwira Dewan karena ketakutan pos kita bakal digusur. Aku berhasil menahannya, tapi rasa bersalah itu masih tersisa di hatiku sampai sekarang.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Mengapa Ibu mempercayakannya kepadaku? Pengantaran terakhirku bahkan tidak selesai.",
+      "text": "Terus... kenapa Ibu malah percaya sama aku? Pengantaran perbekalan ke pos timur tadi aja aku gagal sebagian... makanannya disita di gerbang.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Maren",
-      "text": "Karena ketika tidak selesai, kau pulang dan mengatakan siapa yang masih menunggu. Kau tidak membuat kegagalan itu hilang dari catatan. Surat ini memerlukan pengantar seperti itu.",
+      "text": "Justru karena itu, Nara. Saat pengantaranmu terhalang, kau tidak mengarang dusta untuk menyelamatkan mukamu sendiri. Kau pulang dan mengatakan siapa yang masih menunggu di seberang palang tol. Surat ini tidak butuh pahlawan bertangan besi; ia butuh seorang pengantar yang berani menatap mata orang lain dan berkata jujur.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Maren",
-      "text": "Terimalah Surat Penyalaan. Ia punya segel yang belum boleh dibuka. Setelah kita mencatat nama di bantalan cap, bawa ke lempeng pemeriksaan 009. Aku akan meminta pos saudara menyiapkan dukungan.",
+      "text": "Terimalah Surat Penyalaan ini. Segel di depannya belum boleh dibuka. Begitu nama kita selesai dicap di punggungnya, bawa ia ke lempeng pemeriksaan Simpul 009 di puncak bukit.",
       "next": "n8"
     },
     "n8": {
       "speaker": "Nara",
-      "text": "Aku menerimanya. Aku belum tahu sejauh apa jalannya, tetapi aku akan menjaga surat dan kabar yang menyertainya.",
+      "text": "Aku terima surat ini, Bu. Aku belum tahu seberapa jauh jalan di depan sana... tapi kujamin, tas dan surat ini bakal kujaga seperti janjiku.",
       "action": "RECEIVE_LETTER"
     }
   }

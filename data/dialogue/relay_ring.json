@@ -6,17 +6,17 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Retak memotong tanda di cincin luar. Bentuknya cocok dengan gambar uji; serpihan kecil terkumpul di bawahnya.",
+      "text": "Retakan batu membelah ukiran angka di cincin penanda luar. Ada serpihan debu batu halus tercecer di bawahnya... retakannya baru dan makin menganga.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Aku membandingkan gambar, batu, lalu lentera sekali lagi. Dua tanda ada di sini. Ruru mengendus lempeng di tengah, kemudian mundur.",
+      "text": "Kucocokkan gambar di Buku Jalur sama retakan di depan mataku. Dua tanda bahaya beneran ada di Simpul 009 ini! Ruru sempat mengendus lempeng di tengah pilar, terus buru-buru mundur sambil mendengus.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Pemeriksaan berikutnya memakai punggung surat. Aku akan menempelkan sisi cap pada lempeng tanpa memutar cincin atau membuka segel.",
+      "text": "Langkah berikutnya: pemeriksaan resonansi pakai punggung surat. Aku bakal tempelkan sisi bertinta cap ke lempeng batu ini tanpa memutar cincin atau membuka segel depannya.",
       "action": "INSPECT_RING"
     }
   }

@@ -6,22 +6,22 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Pelat di dekat batu bertuliskan “Pemeriksaan cabang — 58”. Ada tujuh tanda cabang dan bekas catatan penutupan yang sama dengan di pintu.",
+      "text": "Di atas meja berdebu ada sebuah pelat perunggu bertuliskan: \"Laporan Inspeksi Cabang Uji — Tahun 58\". Ada diagram tujuh cabang Simpul dan segel pembatalan yang bentuknya mirip dengan segel di daun pintu tadi.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Tahun pada pelat cocok dengan yang terdengar. Nama pemeriksanya aus. Tidak ada laporan tentang keadaan cabang hari ini.",
+      "text": "Tahun pada pelat ini cocok persis sama suara di batu tadi: tahun lima puluh delapan. Nama pemeriksanya sudah aus dikikis karat, nggak terbaca. Di lemari ini sama sekali nggak ada berkas baru soal kondisi cabang Dewan hari ini.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Aku mencatat dua sumber terpisah: pantulan jauh saat surat menyentuh 009, dan sisa pemeriksaan lama pada batu bangunan ini.",
+      "text": "Berarti aku punya dua temuan terpisah yang harus dicatat hati-hati: pertama, pantulan jauh yang menyebut namaku di lempeng 009; kedua, rekaman pemeriksaan lama tahun 58 yang ditinggalkan di bangunan ini.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Peringatannya perlu dibawa, tetapi aku belum tahu seluruh penyebabnya. Di tempat lain mungkin masih ada salinan laporan. Surat kusimpan kembali.",
+      "text": "Peringatan bahayanya nyata, tapi aku nggak boleh buru-buru menarik kesimpulan sebelum ada bukti lain. Surat bersegel ini kusimpan lagi ke dalam lapisan terdalam tas. Sekarang saatnya balik ke Pos Batu Biru buat melapor ke Bu Maren.",
       "action": "COMPARE_RECORD"
     }
   }

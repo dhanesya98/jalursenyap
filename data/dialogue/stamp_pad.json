@@ -6,7 +6,7 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "Letakkan punggung surat di dekat bantalan. Tinta ini menyimpan bunyi nama yang kita ucapkan saat serah-terima. Katakan namamu dengan jelas.",
+      "text": "Dekatkan punggung surat ke bantalan tembaga ini, Nara. Tinta resonansi ini diramu dari serbuk batu penyetel; ia akan mengikat bunyi nama yang kita ucapkan saat serah-terima. Ucapkan namamu dengan tegas ke arah bantalan.",
       "next": "n1"
     },
     "n1": {
@@ -21,17 +21,17 @@
     },
     "n3": {
       "speaker": "Maren",
-      "text": "(Cap Asharim dibubuhkan pada punggung surat. Tinta menggelap sebentar, lalu tenang. Segel di bagian depan tetap utuh.)",
+      "text": "(Maren menekan cap perunggu Asharim ke punggung surat. Tinta berpendar keemasan sebentar, menyerap getaran suara mereka berdua, lalu menggelap tenang. Segel lilin di bagian muka surat tetap utuh dan terkunci rapat.)",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Satu kesaksian. Dua lagi dari bangsa yang berbeda sebelum lapisan segelnya bisa terbuka.",
+      "text": "Satu kesaksian resmi udah terikat di punggung surat. Berarti masih butuh dua saksi lagi dari bangsa yang berbeda sebelum segel depannya bisa terbuka secara sah.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Maren",
-      "text": "Benar. Cap ini mencatat tanggung jawab kita. Di lempeng 009, gunakan sisi bercap ini. Jangan membuka bagian depannya.",
+      "text": "Tepat. Cap ini bukan sekadar tanda administrasi, melainkan janji hidup kita. Di lempeng Simpul 009 nanti, tempelkan sisi yang bercap ini ke batu. Ingat: jangan pernah mencoba mencongkel segel depannya.",
       "action": "STAMP_LETTER"
     }
   }

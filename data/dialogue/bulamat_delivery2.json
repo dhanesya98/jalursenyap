@@ -6,64 +6,64 @@
   "nodes": {
     "n0": {
       "speaker": "Bu Lamat",
-      "text": "Dari Dorin? Tolong, letakkan di telapak tanganku. Sudah lama rumah ini menunggu lagunya.",
+      "text": "Pasang baik, kurir muda! Bau pasir basah begini... jangan bilang kau bawa sesuatu yang asin dari arah pesisir?",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Dorin mengirimnya melalui Pos Batu Biru. Sebelum Ibu mendengarkan, ini kondisi cangkangnya setelah perjalanan.",
+      "text": "Layar penuh, Bu Lamat! Ini... kiriman dari Pak Dorin di Rumah Layar. Cuma, Bu... sebelum ditempel ke telinga, lihat dulu ujung cangkangnya. Tadi pas nyeberang ngarai berkabut, sempat kena gesek batu tebing sedikit.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Bu Lamat",
-      "text": "(Bu Lamat mendekatkan kerang ke telinga. Senandung pelan mengisi sela suara air. Pada ujung lagu, satu nada meleset.)",
+      "text": "(Bu Lamat terkekeh sambil meraba lekuk cangkang kerang.) Alah, jangankan kerang kapur begini, perahu cadik di Bahtari saja pulang melaut pasti ada lecetnya! Sini, taruh di telapak tanganku. (Bu Lamat mendekatkan kerang ke telinga. Senandung pelan terdengar merdu di antara suara riak air sumur... hingga pada nada terakhir, suaranya tergelincir sumbang.)",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Bagian akhirnya goyah. Apakah ada yang terganggu di jalan?",
+      "text": "Aduh... ujungnya sumbang ya, Bu? Apa resonansinya goyah gara-gara kabut lembah tadi?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Bu Lamat",
-      "text": "Dia selalu meleset di situ. Dulu aku ikut menyanyikan nada yang benar; lama-lama aku justru menunggu bagian salahnya.",
+      "text": "(Tertawa lepas sampai matanya menyipit) Hahaha! Goyah apanya! Si Dorin itu dari bujangan kalau disuruh nyanyi pas air surut, nada tingginya memang selalu terpeleset seperti kepiting di atas karang licin! Dulu aku suka geregetan dan mengomeli dia. Tapi bertahun-tahun ditinggal di pondok terpencil ini... nada sumbang itulah yang paling kurindukan, Nak.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Bu Lamat",
-      "text": "Terima kasih. Orang di bandar mungkin menyebut ini kiriman kecil. Di rumah ini, ia mengisi kursi yang lama kosong.",
+      "text": "Terima kasih banyak, ya. Orang-orang di pos Dewan mungkin menganggap ini cuma kerang mainan pengisi waktu luang. Tapi buat rumah panggung ini... lagu sumbang ini bikin kursi kosong di beranda terasa ada orangnya lagi.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Aku tahu bagaimana rasanya menunggu. Ayahku belum pulang. Kadang aku takut tidak akan mengenali suaranya lagi.",
+      "text": "Aku paham rasanya nunggu, Bu. Ayahku juga belum pulang dari pesisir Bahtari. Kadang aku takut... takut kalau nanti ketemu lagi, aku udah lupa sama suaranya.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Bu Lamat",
-      "text": "Mungkin ada kebiasaan kecil yang tetap tinggal. Cara menarik napas, atau tertawa sebelum cerita selesai. Kau boleh duduk sebentar.",
+      "text": "(Sorot matanya melembut, mengusap punggung tangan Nara.) Suara manusia itu seperti arus bawah laut, Nara. Sekalipun ombak di atas berganti rupa, tarikan arusnya tetap sama. Kau anak Tarun, kan? Wajahmu mirip betul waktu dia pertama kali bawa kapal dagang ke Bahtari—matanya selalu awas menatap cakrawala.",
       "next": "n8"
     },
     "choice_0": {
       "speaker": "Bu Lamat",
-      "text": "Duduklah. Untuk sebentar, kita boleh menjadi orang yang menerima kabar. Sesudahnya, Ruru bisa menemanimu ke sumur.",
+      "text": "Duduklah di sampingku. Sebentar saja, kita dengarkan deburan ombak kecil di dalam kerang ini bersama-sama. Habis itu, Ruru bisa menemanimu memeriksa Sumur Induk di samping balai.",
       "action": "DELIVER_SHELL_A"
     },
     "choice_1": {
       "speaker": "Bu Lamat",
-      "text": "Terima kasih, Nak. Lagu ini sudah sampai. Jangan khawatir meninggalkanku sendirian dengan sesuatu yang membahagiakan.",
+      "text": "Terima kasih, anak baik. Lagunya sudah berlabuh di hatiku. Jangan cemas meninggalkanku sendirian; air mata orang tua kalau bahagia itu nggak bikin asin pipi.",
       "action": "DELIVER_SHELL_B"
     },
     "n8": {
       "speaker": "Bu Lamat",
-      "text": "Sebelum pulang, periksa Sumur Induk di sisi balai. Bunyi lama muncul lagi, makin keras. Aku ingin Maren mendengar kabar itu dari orang yang juga memeriksanya.",
+      "text": "Sebelum kau balik ke Batu Biru, tolong tengok Sumur Induk di sebelah balai sana. Sejak kemarin, ada dengungan aneh yang memantul dari dasarnya. Makin hari makin keras. Tolong sampaikan pada Maren apa yang kaudengar dengan telingamu sendiri.",
       "choices": [
         {
-          "text": "“Aku ingin mendengarkan sekali lagi bersama Ibu.”",
+          "text": "“Aku ingin duduk dan mendengarkan sekali lagi bersama Ibu.”",
           "next": "choice_0"
         },
         {
-          "text": "“Aku akan memeriksa sumur dan membawa kabarnya.”",
+          "text": "“Aku akan periksa sumur sekarang dan bawa kabarnya ke Bu Maren.”",
           "next": "choice_1"
         }
       ]

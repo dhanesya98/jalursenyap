@@ -6,17 +6,22 @@
   "nodes": {
     "start": {
       "speaker": "Pedagang Lembah",
-      "text": "Ada kabar di sepanjang jalur bahwa seratus Simpul dulu dipadamkan dengan sengaja, bukan rusak alami seperti kata Dewan. Ini cerita yang diwariskan di jalan, bukan sesuatu yang kusaksikan sendiri.",
+      "text": "Ssst... pelan sedikit bicaranya. Di pasir terbuka begini angin gampang bawa suara sampai ke gerbang pemeriksaan. Duduk, cicip teh ini dulu. Hangat.",
+      "next": "n0"
+    },
+    "n0": {
+      "speaker": "Pedagang Lembah",
+      "text": "Ada kabar di antara kafilah... seratus Simpul itu dulu bukan mati sendiri atau aus termakan usia seperti kata Dewan. Sengaja dipadamkan dari dalam. Ini cerita orang-orang tua di jalur, bukan sesuatu yang pernah kulihat langsung dengan mataku.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Bagaimana sikap pos-pos Asharim melihat pemeriksaan Dewan yang makin ketat?",
+      "text": "Lalu pos-pos Asharim? Mereka diam saja melihat jalan dipasangi gerbang dan diperiksa begitu ketat?",
       "next": "pedagang_2"
     },
     "pedagang_2": {
       "speaker": "Pedagang Lembah",
-      "text": "Terbelah dua. Kubu Pos Tua seperti Maren menolak petugas Dewan di dekat sumur walau posnya jatuh miskin. Tapi Kubu Pos Dagang mulai menyerahkan catatan Buku Tamu Batu demi subsidi pangan dan keringanan bea. Sementara itu, sumur tua dan bangunan uji di dekat Simpul Sembilan makin sering terdengar berdengung.",
+      "text": "Terbelah dua. Kubu Pos Tua seperti Maren memilih hidup pas-pasan dan menolak petugas Dewan di dekat sumur. Tapi Kubu Pos Dagang mulai menyerahkan salinan catatan Buku Tamu Batu demi jatah gandum dan keringanan bea. Sementara itu... kalau kau lewat dekat Simpul Sembilan malam-malam, sumur tua dan bangunan uji di tebing sana makin sering terdengar berdengung sendiri.",
       "action": "RECORD_RUMOR"
     }
   }

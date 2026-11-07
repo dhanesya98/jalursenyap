@@ -6,22 +6,22 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Hanya satu ikat yang boleh kuambil kembali. Ikat lain dipindahkan ke sisi petugas. Aku mencocokkan jumlah dengan tanda pemeriksaan Kesa.",
+      "text": "Cuma satu ikat yang boleh kuambil balik. Ikat satunya lagi dipindahin sama petugas jaga ke dalam gudang pos gerbang. Kucocokkan nomor segelnya sama tanda bukti yang ditulis Kak Kesa.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Aku memeriksa bungkus yang dikembalikan, merapikan pengikat, dan menyimpan tanda pemeriksaan di bagian kering tas. Tujuan di pos saudara belum tercapai.",
+      "text": "Kukencangkan lagi tali pengikatnya, kubungkus rapat pakai kain cadangan, terus kuselipkan lembar bukti penahanan di kantong kering dalam tas. Tugas ke pos saudara memang belum berhasil... tapi kabarnya nggak boleh hilang.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Kesa",
-      "text": "Bawalah kabar ini kepada Maren. Jangan bilang kirimannya hilang. Kami menahannya, dan aku akan menjawab jika ia meminta penjelasan.",
+      "text": "Sampaikan semuanya apa adanya pada Maren, Nara. Jangan bilang barangnya hilang dirampok atau tercecer di pasir. Katakan Dewan yang menahannya, dan aku yang bertanda tangan jika ia menuntut pertanggungjawaban.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aku akan menyampaikan itu. Ayo, Ruru. Kita pulang dengan yang masih bisa kita jaga.",
+      "text": "Pasti kusampaikan, Kak. Ayo, Ruru... kita bawa pulang apa yang masih bisa kita selamatkan.",
       "action": "RECOVER_CARGO"
     }
   }

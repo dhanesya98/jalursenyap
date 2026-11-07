@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Dari penanda jalan ini, lentera Pos Batu Biru masih terlihat. Pagi tadi aku hanya ingin memastikan roti Juma tetap hangat.",
+      "text": "Dari penanda jalan ini, lentera Pos Batu Biru masih kelihatan... Pagi tadi aku cuma mikir gimana caranya biar roti Juma nggak dingin di jalan.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Sekarang lagu Dorin sudah sampai. Perbekalan yang tertahan ada dalam catatan Maren. Surat ini masih harus berjalan jauh.",
+      "text": "Sekarang lagu Dorin sudah sampai di cangkang Bu Lamat. Sisa bekal yang ditahan Dewan sudah kucatat di pos Maren. Dan surat ini... masih harus berjalan jauh.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "(Ruru menyentuh ujung tas dengan hidungnya. Nara duduk sebentar, lalu menutup Buku Jalur.)",
+      "text": "(Ruru menyentuh ujung tas dengan hidungnya. Nara duduk sebentar di atas batu, mengembuskan napas panjang, lalu membetulkan ikatan tali tasnya.)",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aku tidak harus mempunyai semua jawaban sebelum melangkah. Tetapi aku harus tahu mana yang kulihat, mana yang kudengar, dan kepada siapa aku berjanji.",
+      "text": "Aku nggak harus tahu semua rahasia orang-orang tua sebelum melangkah. Tapi aku harus tahu mana yang kulihat sendiri, mana yang kudengar, dan janji apa yang kupegang.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Dusun Sela lebih dulu. Aku akan menemui Nenek Ima, lalu mencari jalan menuju Padang Salkara.",
+      "text": "Dusun Sela dulu. Aku akan menemui Nenek Ima, lalu mencari jalan menuju Padang Salkara.",
       "next": "n5"
     },
     "n5": {

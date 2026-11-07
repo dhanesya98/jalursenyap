@@ -6,22 +6,22 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Anak panah yang pudar menunjuk jalan berkelok. Jejak kaki di pasir memotong tanjakan, tetapi batunya lebih mantap di sisi luar.",
+      "text": "Panah kayunya udah agak lapuk, tapi arahnya jelas: jalan batu meliuk ke atas bukit. Ada jejak kaki orang motong lereng pasir langsung... tapi pasirnya gembur banget, bikin kaki amblas.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Ruru berhenti di pijakan rendah dan menoleh. Aku bisa berjalan mengikuti tikungan atau memanjat tepian bertanda lentera dengan E.",
+      "text": "Ruru udah duluan nangkring di atas batu pipih sambil noleh ke aku. Enaknya jalan santai ngikutin kelokan, atau langsung naik ke tebing batu berpenerangan ya? Dekati tebing terus tekan [E] kalau mau manjat cepat.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Jubah Layar bisa membantu saat turun: lompat, lalu tahan Spasi ketika jatuh. Untuk tanjakan ini, aku perlu mencari pijakan berikutnya.",
+      "text": "Kata Bu Maren, Jubah Layar ini berguna pas turun: loncat dari bibir tebing, terus tahan [Spasi] di udara buat melayang pelan. Tapi kalau nanjak begini, ya tetap harus cari pijakan kaki sendiri.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Menara Batu Senja sudah kelihatan. Aku akan menjaga roti sambil belajar mengenali jalan pulang.",
+      "text": "Nah, kubah biru Menara Batu Senja udah kelihatan di puncak sana! Rotinya masih hangat kuku di tas. Ayo, jangan sampai keburu dingin sebelum sampai ke Pak Juma.",
       "action": "READ_RIDGE"
     }
   }

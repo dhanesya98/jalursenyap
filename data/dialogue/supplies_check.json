@@ -6,17 +6,17 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Dua ikat perbekalan, masing-masing bertanda Pos Batu Biru. Satu surat jalan untuk pos saudara. Pembungkus kering, simpul rapat, jumlah cocok.",
+      "text": "Dua ikat perbekalan udah rapi di atas meja. Kain karungnya tebal bertanda cap Pos Batu Biru. Surat jalannya utuh, ditujukan untuk pos saudara di timur. Pengikat talinya kencang, nggak ada yang kendor.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Aku menyalin jumlahnya ke Buku Jalur. Surat jalan menyebut isi dan tujuan kiriman; tidak membawa salinan nama tamu pos.",
+      "text": "Kucatat jumlahnya di Buku Jalur: dua ikat makanan dan garam. Surat jalan ini cuma nyebut barang dan pos tujuan, sama sekali nggak memuat daftar nama pengembara seperti di Buku Tamu Batu.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Kain cadangan kutaruh di bagian atas tas agar mudah diambil jika angin menguat. Ruru mengendus garam, bersin, lalu memilih menunggu di pintu.",
+      "text": "Kain cadangan kutaruh paling atas di dalam tas biar gampang ditarik kalau nanti kena terpaan pasir badai. Ruru sempat ngendus karung garam, langsung bersin-bersin, terus buru-buru nungguin di ambang pintu.",
       "action": "PACK_SUPPLIES"
     }
   }

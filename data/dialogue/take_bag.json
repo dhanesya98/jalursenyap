@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Jahitan bagian dalam terasa rapat dan dingin. Di luar, kulitnya penuh bekas perjalanan. Aku memeriksa pengikatnya satu per satu.",
+      "text": "Kulit tasnya tebal banget, tapi pas diraba dalamnya halus dan dingin. Ada tiga gesper perunggu di depan. Kupegang talinya... pas banget di bahu.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Tas itu peninggalan Sahdan. Sarai menyimpannya di sini, lalu Bahar, Ilun, dan akhirnya aku. Hari ini ia ikut bekerja lagi.",
+      "text": "Sahdan meninggalkan tas itu di ambang pintu sebelum Hari Senyap. Sarai menjaganya, lalu menyerahkannya kepada Bahar, lalu Ilun, dan akhirnya sampai ke tanganku. Empat puluh tahun ia menunggu di pos ini, dan hari ini kau yang membuatnya melangkah lagi.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Satu bungkus roti rempah. Hangat, kertas utuh, alamat Juma. Aku menaruhnya di bagian dalam agar tidak terjepit.",
+      "text": "Satu bungkusan roti rempah masih hangat. Bungkus daunnya rapat, diikat tali rami cokelat bertuliskan nama Pak Juma. Kutaruh di sekat tengah ya, Bu, biar nggak kegencet batu.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Jalan batu naik ke utara. Jangan memaksa lereng yang terlalu curam. Periksa penanda pertama; dari sana menara akan terlihat.",
+      "text": "Ikuti jalan batu yang naik ke utara, Nara. Jangan tergoda memotong lereng pasir yang curam kalau pijakanmu belum yakin. Dari papan penanda pertama di punggung bukit, menaranya sudah bisa kaulihat.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Baik. Aku berangkat, Bu. Ayo, Ruru.",
+      "text": "Siap, Bu! Aku jalan dulu. Ayo, Ruru, jangan ketinggalan!",
       "action": "ACCEPT_BREAD"
     }
   }

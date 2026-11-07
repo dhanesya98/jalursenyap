@@ -6,42 +6,42 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Roti sudah sampai. Juma memperlihatkan gambar tas Sahdan dalam buku kakeknya. Ada kalimat tentang kembali ke pusat untuk menahan sesuatu.",
+      "text": "Rotinya sampai utuh, Bu! Pak Juma senang banget. Terus... dia nunjukin buku catatan kakeknya. Ada sketsa tas ini, dan ada kalimat kalau Sahdan balik ke pusat buat menahan sesuatu.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Aku pernah melihat halaman itu. Simpan pertanyaannya. Barang-barang lama kadang bertahan lebih lama daripada penjelasannya.",
+      "text": "Minum dulu air dingin di cawanmu, Nara. Jangan biarkan dahaga membuat pikiranmu melompat terlalu jauh. Aku tahu halaman itu; catatan Ban Juma adalah salah satu dari sedikit ingatan jujur yang tersisa dari malam kejatuhan Simpul. Tapi simpan dulu pertanyaanmu—jawaban yang datang sebelum waktunya hanya akan menjadi beban di punggung.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Sekarang ada kiriman dari Dorin, pelaut Rumah Layar di Bandar Lada. Kerang Suara ini untuk istrinya, Bu Lamat, di Telaga Sumi.",
+      "text": "Sekarang ada tugas kedua. Kiriman dari Dorin, pelaut Rumah Layar asal Bahtari. Kerang Suara ini ditujukan untuk istrinya, Bu Lamat, yang merawat sumur di Telaga Sumi.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Seperti lagu yang disimpan dalam batu?",
+      "text": "Kerang Suara? Maksudnya... cangkang laut yang bisa nyimpen suara manusia seperti batu resonansi?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Ada jejak suara pada cangkangnya. Jangan membukanya tanpa izin dan jaga agar tidak retak. Jika rusak, katakan tepat seperti yang kaulihat.",
+      "text": "Orang Bahtari menyanyikan lagu ke dalam rongga kapurnya saat air laut pasang perbani. Cangkang ini rapuh, Nara. Jangan dibuka sembarangan, dan jangan dibiarkan terbentur batu tebing. Kalau ada retak sedikit saja di jalan, akui apa adanya pada Bu Lamat saat serah-terima.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Maren",
-      "text": "Kabut mulai turun. Gunakan titian tetap di ngarai barat. Tangga Tali boleh kaubawa untuk membuka jalan pulang dari tepian; tidak perlu melompat jauh melewati jurang.",
+      "text": "Kabut putih mulai turun menyelimuti lembah barat. Menyeberanglah lewat titian kayu di ngarai—jangan melompat sembrono. Bawa Tangga Tali dari persediaan pos untuk memudahkanmu memanjat tepian kalau jalurnya terputus.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Satu kerang, cangkang utuh. Untuk Bu Lamat. Aku akan memakai lentera sebagai penanda.",
+      "text": "Satu kerang bersuara, cangkang mulus tanpa retak. Buat Bu Lamat di Telaga Sumi. Aku bakal jalan hati-hati ngikutin deretan lentera kuning, Bu.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Maren",
-      "text": "Ada air untukmu di ambang saat kembali. Teduh di jalanmu.",
+      "text": "Teduh di jalanmu, Nara. Kendi air segar menunggumu di ambang pintu saat kau kembali.",
       "action": "ACCEPT_SHELL"
     }
   }

@@ -6,49 +6,49 @@
   "nodes": {
     "n0": {
       "speaker": "Kesa",
-      "text": "Berhenti dulu. Dua ikat perbekalan untuk pos saudara? Surat jalannya terbit sebelum perintah penutupan yang baru.",
+      "text": "Berhenti di garis palang. Dua ikat perbekalan untuk pos saudara? Perlihatkan surat jalannya. (Kesa mencocokkan cap lilin pos dengan lembar prosedur di mejanya, lalu menghela napas panjang.) Surat jalanmu terbit kemarin pagi. Instruksi penutupan total jalur timur baru turun subuh tadi.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Mereka menampung pengembara. Perbekalan ini diperlukan hari ini. Apakah ada petugas yang bisa meneruskannya?",
+      "text": "Tapi pos di seberang sana lagi nampung orang-orang yang kehabisan bekal, Kak Kesa! Masa perbekalan gandum sama garam ditahan cuma gara-gara instruksi yang baru turun subuh?",
       "next": "n2"
     },
     "n2": {
       "speaker": "Kesa",
-      "text": "Aku sudah meminta izin. Belum ada jawaban. Satu ikat harus tetap di sini untuk pemeriksaan; satu bisa kaubawa kembali. Aku tidak bisa menyatakan keduanya telah sampai.",
+      "text": "Peraturan karantina jalur nomor empat belas: semua lalu lintas logistik dibekukan demi kestabilan umum. Aku sudah kirim permohonan dispensasi ke kantor cabang, tapi belum ada balasan. Demi kuota penahanan, satu ikat harus disita di sini untuk pengujian; satu ikat lagi boleh kaubawa pulang. Aku tidak bisa mencatat keduanya telah sampai ke pos tujuan.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Jadi yang menunggu di pos saudara juga belum boleh tahu kapan barangnya datang?",
+      "text": "Terus orang-orang yang nunggu di pos saudara... mereka dibiarin nggak tahu apa-apa soal nasib makanan ini?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Kesa",
-      "text": "Itulah yang sedang kupersoalkan. Perintahnya jelas tentang apa yang harus ditahan, sangat sedikit tentang orang yang menunggu.",
+      "text": "(Suara Kesa merendah, menatap Nara dengan gurat lelah.) Surat keluargaku sendiri pernah tertahan berbulan-bulan di pos pemeriksaan seperti ini, Nara. Peraturan Dewan itu tebal sekali soal apa yang harus ditahan, tapi nyaris tak pernah menyebut sepatah kata pun tentang orang-orang yang menunggu di ujung jalan.",
       "next": "n5"
     },
     "choice_0": {
       "speaker": "Kesa",
-      "text": "Baik. Satu ikat ditahan, satu dikembalikan, tujuan belum tercapai. Ini salinan dengan tandaku. Pembungkus sisanya tergores angin; periksa sebelum membawanya.",
+      "text": "Baik. Kucatat resmi di lembar berita acara: satu ikat disita untuk inspeksi Dewan, satu ikat dikembalikan karena jalur ditutup. Ini salinan bertanda tanganku. Pembungkusnya agak tergores debu tebing; periksa baik-baik sebelum kaubawa pulang.",
       "action": "DETAIN_RECEIPT"
     },
     "choice_1": {
       "speaker": "Kesa",
-      "text": "Gunakan kain cadanganmu. Aku akan menaruh tanda pemeriksaan di bawah pengikatnya: satu ditahan, satu dikembalikan. Datanglah ke meja saat sudah aman.",
+      "text": "Ambil kain pelindungmu dan bungkus rapat-rapat ikat yang tersisa. Aku akan tempelkan tanda segel pemeriksaan di talinya: satu ditahan, satu dikembalikan. Jangan sampai sisa makanan ini rusak kena badai di jalan pulang.",
       "action": "DETAIN_PROTECT"
     },
     "n5": {
       "speaker": "Kesa",
-      "text": "(Angin mengangkat tepi pembungkus di meja. Kesa menahan surat jalan dengan telapak tangan.) Cepat, pilih dulu yang perlu kauamankan. Aku akan mencatat penahanan ini.",
+      "text": "(Angin lembah berhembus kencang, mengangkat tepi taplak meja kerja. Kesa menahan tumpukan berkas dengan telapak tangannya.) Angin badai mulai naik dari timur. Tentukan pilihanmu sekarang: mau kuurus surat bukti penahanannya dulu, atau kauamankan dulu ikatan barangmu?",
       "choices": [
         {
-          "text": "“Tuliskan jumlah dan alasan penahanannya dahulu.”",
+          "text": "“Tuliskan jumlah dan alasan penahanannya dulu secara resmi.”",
           "next": "choice_0"
         },
         {
-          "text": "“Aku lindungi ikat yang dikembalikan lebih dulu.”",
+          "text": "“Aku lindungi sisa ikat perbekalan ini dulu dari terpaan angin.”",
           "next": "choice_1"
         }
       ]

@@ -6,17 +6,17 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "(Lentera meredup, lalu berdenyut. Satu. Dua. Tiga. Tidak ada tangan yang menyentuh cincin penyetel.)",
+      "text": "Lentera kuno di puncak pilar ini meredup pelan... lalu mendadak berdenyut terang. Satu. Dua. Tiga denyut berturut-turut! Nggak ada siapa pun di dekat sini yang menyentuh cincin penyetel.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Pola yang sama ada dalam gambar Maren. Aku mencatat tiga denyut tanpa penyetelan.",
+      "text": "Pola denyutnya persis seperti yang digambar Bu Maren di buku catatan pos: tiga denyut tanpa penyetelan. Getaran di bawah lantai batu ini terasa sampai ke telapak kakiku.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Masih ada tanda kedua yang harus diperiksa: retak pada cincin penanda. Nyala ini sendiri bukan alasan untuk membuka apa pun.",
+      "text": "Sekarang aku harus periksa tanda bahaya kedua di cincin penanda retak. Nyala lentera ini sendiri belum cukup buat menyimpulkan apa pun.",
       "action": "OBSERVE_PULSES"
     }
   }

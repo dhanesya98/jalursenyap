@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Pada halaman yang ditunjukkan Juma ada gambar tas: jahitan menyilang, pengikat samping, bekas perbaikan pada sudut bawah. Cocok dengan tas ini.",
+      "text": "Sketsa tintanya rapi banget. Ada gambar tas kulit dengan detail gesper samping dan jahitan menyilang persis seperti tas yang kupakai sekarang. Di bawahnya tertulis tanggal: Akhir Musim Gugur, TS 401.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "“Ia meninggalkan titipan di Batu Biru, lalu berbalik ke pusat. Ketika kutanya mengapa, ia berkata masih ada yang harus ditahan.” Kalimat sesudahnya rusak terkena air.",
+      "text": "Tulisannya bilang: \"Sahdan menitipkan barang di Batu Biru, lalu berbalik arah ke pusat jaringan. Ketika ditanya mengapa tidak menunggu pagi, ia menjawab singkat: Masih ada getaran yang harus ditahan.\" Setelah kalimat itu... kertasnya luntur kena noda air.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Juma",
-      "text": "Orang di gerbang menyebutnya Tahun Kerusakan. Kakek menulis orang-orang yang pergi pada malam itu. Mungkin keduanya bicara tentang malam yang sama.",
+      "text": "Orang-orang Dewan menyebut tahun itu Tahun Kerusakan, seakan-akan kabel dan batu rusak sendiri karena usia. Kakekku mencatat orang-orang yang melangkah di tengah badai malam itu untuk menahan gelombangnya. Dua versi untuk satu malam yang sama.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Gambar dan catatan ini membuktikan seseorang pernah melihat tasnya. Maksud \"ditahan\" masih belum jelas. Aku akan menceritakan temuanku kepada Maren.",
+      "text": "Berarti Sahdan memang ada... dan tas ini saksi perjalanannya. Kata-katanya soal 'menahan sesuatu' bikin penasaran. Aku harus cerita ke Bu Maren soal catatan ini.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Juma",
-      "text": "Saat turun, pilih pijakan yang bisa kaulihat. Katakan kepada Maren rotinya sampai. Jangan bilang aku meminta dua untuk besok.",
+      "text": "Saat menuruni tebing, langkahkan kakimu pada batu yang kering. Kabut mulai menebal di lembah barat. Bilang pada Maren rotinya sudah kuterima utuh... dan jangan bilang padanya aku minta jatah dua roti untuk minggu depan.",
       "action": "READ_LEDGER"
     }
   }

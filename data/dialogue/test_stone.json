@@ -6,32 +6,32 @@
   "nodes": {
     "n0": {
       "speaker": "Jejak pada batu uji",
-      "text": "“Pemeriksaan cabang… tahun lima puluh delapan…”",
+      "text": "“…pemeriksaan cabang uji… tahun lima puluh delapan…”",
       "next": "n1"
     },
     "n1": {
       "speaker": "Jejak pada batu uji",
-      "text": "“…tujuh cabang menyala berlebih… penyetelan peredam akhir belum lengkap…”",
+      "text": "“…tujuh cabang Simpul Terang menyedot beban di luar rancangan… penyetelan peredam akhir belum lengkap…”",
       "next": "n2"
     },
     "n2": {
       "speaker": "Jejak pada batu uji",
-      "text": "“…aliran balik… terus menekan ruang penahan…”",
+      "text": "“…aliran gelombang balik… terus menekan ruang penahan di pulau Katup…”",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Siapa yang memeriksa? Kapan keadaan ini mulai berubah?",
+      "text": "Siapa yang bicara? Halo? Siapa yang meninggalkan rekaman ini?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "(Batu mengulang awal kalimat yang sama. Tidak ada jawaban. Ruru duduk di sampingnya, mengikuti ritme pengulangan.)",
+      "text": "(Batu itu tidak menjawab. Ia hanya mengulang kembali kalimat pertamanya dengan nada dingin yang persis sama. Ruru duduk di sampingku sambil memiringkan kepala, mendengarkan jeda ritmenya.)",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Ini sisa pemeriksaan lama pada batu setempat. Ia tidak menyebut namaku. Aku perlu mencari catatan di ruangan ini sebelum menarik kesimpulan.",
+      "text": "Ini bukan suara orang yang lagi ngobrol... ini sisa rekaman pemeriksaan puluhan tahun lalu yang tertinggal di kristal batu. Suara ini sama sekali nggak mengenali namaku. Coba kuperiksa lemari arsip di sudut ruangan ini.",
       "action": "HEAR_TEST_TRACE"
     }
   }

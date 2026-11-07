@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Buku Maren terbuka pada gambar lentera dan cincin penanda. Catatan sebelumnya menyebut satu denyut dan retak awal. Pemeriksaan terakhir menandai tiga denyut tanpa penyetelan serta retak yang melebar.",
+      "text": "Buku catatan Bu Maren terbuka pada sketsa lentera dan cincin batu Simpul Sembilan. Di halaman lama ada tulisan tinta merah: satu denyut dan retak halus. Tapi di lembar pemeriksaan tadi pagi... dicatat ada tiga denyut tanpa disentuh dan retakannya makin melebar.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Aku kembali dari pemeriksaan sebelum badai menutup bukit. Malam ini rangkaian tandanya lengkap. Kabar sumur yang kaubawa memperkuat kekhawatiranku.",
+      "text": "Aku baru kembali dari menara 009 sebelum badai pasir menyapu lereng bukit. Malam ini semua tanda bahayanya lengkap. Dan kabar dengungan sumur di Telaga Sumi yang kaubawa tadi semakin membuktikan firasatku: penahanan gelombang di bawah tanah mulai goyah.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Di sisi gambar ada instruksi lama: simpan kunci jauh dari pusat selama jalur penahan stabil. Jika kedua tanda muncul, teruskan melalui saksi lintas bangsa ke Rumah Jejak pusat.",
+      "text": "Di samping gambarnya ada tulisan kuno: \"Kunci harus tetap dijaga jauh dari pusat selama jalur penahan stabil. Jika dua tanda peringatan muncul di Simpul 009, teruskan surat ini lewat kesaksian lintas bangsa menuju Rumah Jejak pusat.\"",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Lihat bagian terakhir. “Jangan membuka Katup hanya berdasarkan nyala satu lentera.” Yang kita lakukan malam ini adalah pemeriksaan, bukan pelepasan.",
+      "text": "Baca baris terakhirnya baik-baik, Nara: \"Jangan pernah membuka Katup hanya karena melihat nyala satu lentera.\" Yang akan kita lakukan malam ini adalah pemeriksaan kebenaran, bukan pelepasan gelombang secara sembrono.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Aku menyalin gambar tiga denyut dan retak cincin ke Buku Jalur. Di 009 nanti, aku harus membandingkannya sendiri.",
+      "text": "Aku salin sketsa tiga denyut sama retakan cincin ini ke Buku Jalurku, Bu. Nanti di Simpul 009, aku bakal cocokkan langsung dengan mataku sendiri.",
       "action": "CHECK_WARNINGS"
     }
   }

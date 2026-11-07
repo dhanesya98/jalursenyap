@@ -6,44 +6,44 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "Kau kembali lebih cepat dari perkiraan. Letakkan barang di meja. Aku akan mendengarkan sebelum kita menghitung.",
+      "text": "Kau kembali lebih lekas dari perkiraanku, Nara. Taruh dulu tasmu di atas meja kayu ini. Duduklah, aku ingin mendengar ceritamu sebelum kita membuka pembungkusnya.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Aku membawa satu ikat kembali. Satu lagi ditahan di gerbang. Ada tanda pemeriksaan dari Kesa.",
+      "text": "Bu... aku cuma bisa bawa pulang satu ikat. Ikat yang satunya disita di pos gerbang timur. Ini surat bukti penahanan resmi dari Kak Kesa.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Dan orang di pos saudara?",
+      "text": "Dan orang-orang yang menunggu di pos saudara?",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aku belum sampai kepada mereka. Aku tidak bisa memastikan kapan jalurnya dibuka.",
+      "text": "Aku nggak bisa tembus sampai ke mereka, Bu. Jalurnya ditutup palang besi, dan Kesa sendiri nggak bisa mastiin kapan perintah penahanan itu dicabut.",
       "next": "n4"
     },
     "choice_0": {
       "speaker": "Maren",
-      "text": "Kita catat jumlah, kondisi, dan siapa yang menahan. Kau membawa pulang kabar yang bisa kami tindak lanjuti. Aku mempercayai laporanmu, Nara.",
+      "text": "Kita catat jumlahnya: satu kembali, satu ditahan Dewan. Kau pulang membawa kabar yang bisa dipertanggungjawabkan, bukan alasan palsu. Laporanmu jujur, dan aku mempercayaimu sepenuhnya, Nara.",
       "action": "REPORT_DIRECT"
     },
     "choice_1": {
       "speaker": "Maren",
-      "text": "Takut itu boleh. Menyembunyikan keadaan barang akan membuat orang lain menanggung akibat tanpa tahu sebabnya. Terima kasih sudah mengatakannya. Sekarang kita catat bersama.",
+      "text": "Takut itu manusiawi, Nara. Tapi menyembunyikan kenyataan hanya akan membuat orang yang lapar menunggu dalam kepalsuan. Terima kasih sudah berani mengatakannya apa adanya. Sekarang kita catat bersama di buku pos.",
       "action": "REPORT_HESITANT"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Baik. Ceritakan juga keadaan pembungkusnya. Tidak ada gunanya catatan yang hanya menyimpan bagian perjalanan yang menyenangkan.",
+      "text": "Tunjukkan padaku kondisi sisa bungkusnya. Di pos ini tidak ada tempat untuk catatan yang hanya mau menyimpan cerita-cerita yang manis.",
       "choices": [
         {
-          "text": "“Ini kondisi barangnya. Pengantaranku gagal sebagian.”",
+          "text": "“Ini kondisi sisa barangnya, Bu. Pengantaranku gagal sebagian.”",
           "next": "choice_0"
         },
         {
-          "text": "“Aku takut Ibu kecewa. Tetapi aku harus menceritakan semuanya.”",
+          "text": "“Aku sempat takut Ibu bakal kecewa berat... tapi aku harus jujur menceritakan semuanya.”",
           "next": "choice_1"
         }
       ]

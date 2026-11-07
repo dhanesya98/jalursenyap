@@ -6,37 +6,37 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Aku memeriksa tiga denyut dan retak cincin, lalu menempelkan punggung surat pada lempeng. Segelnya tetap tertutup.",
+      "text": "Semua tandanya cocok, Bu. Tiga denyut lentera, retakan cincin luar, terus... ada pantulan jauh yang menyebut namaku pas punggung surat menyentuh lempeng. Segel depannya tetap utuh tak kusentuh.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Setelah itu teruskan ke Dusun Sela. Temui Ima sebelum melangkah menuju Padang Salkara. Surat ini akan menempuh serah-terima lintas bangsa; kau tidak harus memahami seluruh perjalanan malam ini.",
+      "text": "Maka tugas pertamamu di pos ini sudah selesai, Nara. Sekarang lanjutkan langkahmu ke Dusun Sela. Temui Nenek Ima sebelum kau menyeberang menuju Padang Salkara yang gersang. Surat ini kelak harus melewati serah-terima tiga bangsa; kau tidak perlu memaksakan diri memahami seluruh ujung perjalanannya malam ini.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Bagaimana dengan perbekalan yang ditahan?",
+      "text": "Terus... gimana nasib perbekalan pos saudara yang masih tertahan di gerbang tol, Bu?",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Aku akan meminta pertanggungjawaban gerbang dan menghubungi pos saudara. Tugas itu tetap ada di catatan kami. Kau tidak meninggalkan mereka tanpa kabar.",
+      "text": "Jangan cemas. Besok pagi aku sendiri yang akan berjalan ke gerbang tol untuk menuntut surat pembebasannya dan menghubungi pos saudara. Catatan itu tetap hidup di buku kita. Kau tidak meninggalkan mereka dalam kegelapan.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Temui Kesa. Ia sudah mengenal kirimanmu dan alasan pemeriksaan ini. Jalur Lentera masih bisa dipakai memutar, tetapi akses tebing memerlukan penguncinya.",
+      "text": "Lewatlah di depan pos gerbang sekali lagi dan sapa Kesa. Dia sudah mencatat surat jalanmu. Kalau jalan tebing terlalu berangin, gunakan Jalur Lentera untuk memutar ke arah Dusun Sela.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Teduh di jalan Ibu juga.",
+      "text": "Terima kasih banyak buat semuanya, Bu Maren. Teduh di jalan Ibu juga.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Maren",
-      "text": "Air di langkahmu, Nara. Ada cawan untukmu kapan pun kembali.",
+      "text": "Air di langkahmu, Nara. Pintu pos ini tidak pernah dikunci, dan selalu ada cawan hangat untukmu kapan pun kau pulang.",
       "action": "DEPART"
     }
   }

@@ -6,42 +6,42 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Bu Lamat menerima lagu Dorin. Aku juga memeriksa sumur: ada potongan bunyi lama yang berulang. Bu Lamat bilang belakangan makin keras.",
+      "text": "Bu Lamat udah terima lagunya, Bu! Beliau sampai nangis senang. Terus... aku sempat meriksa Sumur Induk seperti pesan Ibu. Dinding batunya emang mendengung, ada serpihan suara lama yang berulang. Kata Bu Lamat, dengungannya makin keras beberapa pekan ini.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Terima kasih sudah membedakan yang kaudengar sendiri dari yang diceritakan kepadamu. Catatan itu akan kusandingkan dengan pemeriksaanku.",
+      "text": "Bagus, Nara. Kau memisahkan apa yang kaudengar sendiri dari apa yang diceritakan orang lain kepadamu. Sikap seperti itu lebih berharga daripada seribu asumsi. Catatan sumur ini akan kupadukan dengan pemeriksaan lentera nanti malam.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Masih ada satu pengantaran hari ini. Pos saudara di timur membutuhkan dua ikat perbekalan: roti kering, garam, dan kain pembungkus. Mereka menampung pengembara sejak jalan pesisir ditutup.",
+      "text": "Sekarang ada satu tugas lagi sebelum senja runtuh. Pos saudara kita di ujung timur lembah kehabisan bekal. Mereka butuh dua ikat perbekalan: roti gandum kering, garam, dan kain penutup. Sejak jalur pesisir disekap badai, pos itu menampung banyak pengembara yang kehausan.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Apakah gerbang timur masih bisa dilewati?",
+      "text": "Tapi Bu... kabar burung dari pedagang tadi bilang gerbang timur mulai dijaga ketat sama Dewan Tol. Apa surat jalan kita masih mempan?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Pemberitahuan terakhir mengizinkan kiriman antarpos dengan surat jalan. Tetapi pemeriksaan makin ketat. Baca papan terbaru dan bicara kepada petugas sebelum melintas.",
+      "text": "Pemberitahuan resmi terakhir menyatakan kiriman antarpos kemanusiaan tetap dikecualikan, asal membawa surat jalan bertanda tangan. Tapi petugas di gerbang... mereka sering menafsirkan aturan sesuka timbangan. Bacalah papan maklumat di depan palang tol, dan bicaralah baik-baik dengan petugas jaga.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Maren",
-      "text": "Jika jalurnya ditutup, jangan menjanjikan waktu tiba. Bawa pulang sisa barang dan catatan apa yang terjadi. Kita harus tahu siapa yang masih menunggu.",
+      "text": "Ingat pesan ini: kalau jalurnya dipaksa tutup, jangan pernah menjanjikan waktu tiba palsu pada orang di pos tujuan. Lebih baik bawa pulang sisa barang dan catat apa adanya siapa yang menahan. Kita harus tahu siapa yang masih menunggu di ujung jalan.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Aku akan menghitung perbekalan di meja, lalu berangkat ke gerbang.",
+      "text": "Siap, Bu. Dua ikat perbekalan. Aku hitung dan periksa bungkusnya di meja bekal dulu sebelum berangkat.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Maren",
-      "text": "Tujuannya adalah pos saudara, bukan meja pemeriksaan. Kalau barang tertahan di sana, pengantaran kita belum selesai.",
+      "text": "Tujuanmu adalah pos saudara dan orang-orang yang lapar di sana, bukan meja pemeriksaan Dewan. Kalau barang itu tertahan di meja mereka, tugas kita belum selesai.",
       "action": "ACCEPT_SUPPLIES"
     }
   }

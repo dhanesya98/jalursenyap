@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Airnya tenang. Ketika kendi diangkat, terdengar sisa bunyi dari batu dinding: potongan suku kata yang tidak diucapkan siapa pun di dekatku.",
+      "text": "Air sumurnya tenang banget, bening sampai kelihatan dasar batu. Tapi pas timba ditarik ke atas... ada dengungan aneh dari sela batu dinding. Kayak ada orang berbisik, tapi putus-putus dan terus mengulang suku kata yang sama.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Aku menunggu, lalu mencoba memanggil. Yang kembali bukan jawaban, hanya potongan yang sama. Ruru menegakkan telinga pada batu yang basah.",
+      "text": "Kucoba manggil pelan ke dalam sumur... yang balik bukan gema suaraku, tapi potongan bisikan tadi lagi. Ruru sampai memiringkan kepalanya, telinganya tegak ke arah lubang air yang basah.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Di bibir sumur ada guratan batas air dan catatan pemeriksaan warga. Tidak ada tanda seseorang baru memasang alat di sini.",
+      "text": "Di bibir sumurnya cuma ada ukiran tanda pasang surut air sama guratan pemeriksaan warga lama. Nggak ada alat buatan Dewan atau batu resonansi baru yang ditempel. Berarti bunyinya beneran naik dari urat bumi di bawah sana.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Bu Lamat",
-      "text": "Dulu hampir tak terdengar. Sekarang orang berhenti mengobrol kalau bunyinya muncul. Ada yang bilang suara keluarga, ada yang bilang peringatan.",
+      "text": "Dulu bunyinya cuma sayup-sayup seperti deru angin di kulit kerang kosong, Nak. Tapi sebulan ini, kalau malam tiba, getarannya sampai bikin cangkir tembaga di meja berdenting. Warga sini mulai takut nimba air sendirian.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Aku akan mencatat bunyi yang kudengar dan perubahan yang Ibu ceritakan secara terpisah. Kita belum tahu dari mana asalnya.",
+      "text": "Aku bakal catat bunyi yang kudengar ini sama cerita Ibu secara terpisah di Buku Jalur. Kita belum tahu apa yang bikin Urat Sumi bergejolak, tapi Bu Maren harus dengar kabar ini secepatnya.",
       "action": "INSPECT_WELL"
     }
   }

@@ -6,37 +6,37 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "Teduh di jalanmu, Nara. Ruru sudah memeriksa meja bekal dua kali. Rupanya dia lebih siap berangkat daripada kita.",
+      "text": "Teduh di jalanmu, Nara. Hirup dulu udaranya sebentar, jangan langsung menyampirkan tali tas. Ruru dari tadi sudah dua kali mondar-mandir di dekat meja bekal, mengendus bungkusan daun. Rupanya dia lebih gelisah berangkat daripada kita.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Air di langkahmu, Bu. Kalau yang diperiksanya roti, mungkin aku harus meminta maaf dulu kepada penerimanya.",
+      "text": "Air di langkahmu, Bu! Ruru itu kalau mencium aroma roti rempah memang nggak sabaran... tapi tenang, udah kuperingatkan kok. Jangan sampai remahnya kena hidungnya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Rotinya untuk Juma. Tas di sebelahnya boleh kaupinjam. Jahitannya sudah tua, tetapi lapisan dalamnya masih menjaga barang dari gangguan resonansi.",
+      "text": "Roti itu untuk Juma di kaki Menara Batu Senja. Tas kulit di samping kendi itu... pakailah untuk tugas pertamamu. Jahitannya memang sudah tua dan kusam, tapi kain insulasi di dalamnya masih kedap. Tak ada getaran gema liar yang bisa menembus barang bawaanmu.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aku akan menjaganya. Hari ini aku benar-benar boleh mengantar sendiri?",
+      "text": "Beneran, Bu? Maksudku... hari ini aku jalan sendirian? Nggak cuma ngekor di belakang Ibu sambil bawa daftar catatan pos?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Kau yang membawa, kau pula yang mencatat. Kalau barang terluka di jalan, penerimanya harus tahu. Kalau tidak sampai, pulanglah dengan kabar yang jujur.",
+      "text": "Siapa lagi kalau bukan kau? Tapi dengarkan baik-baik: kau yang melangkah, kau pula yang mencatat. Kalau roti itu dingin di jalan, katakan dingin. Kalau bungkusnya tergores semak tebing, akui tergores. Di pos ini kita tidak menutup luka dengan perumpamaan manis. Pulanglah membawa kabar yang jujur, sekalipun itu kabar yang berat.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Dulu satu kabar tentang kapal Ayah membuat rumah kami bertahan menunggu setahun lagi. Aku ingin bisa membawa kabar seperti itu untuk orang lain.",
+      "text": "Aku paham, Bu. Waktu kabar tentang kapal Ayah sampai ke Dusun Sela... kami bisa bertahan menunggu setahun lagi cuma gara-gara secarik catatan jujur itu. Aku... ya, aku pengin membawa kabar yang seperti itu buat orang lain.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Maren",
-      "text": "Mulai dari satu roti dulu. Catat namamu di Buku Tamu Batu, lalu periksa tas dan bekal. Jalan panjang dimulai dengan tahu apa yang sedang kita bawa.",
+      "text": "Mata air yang jernih selalu mengalir dari tempat yang tenang. Mulai dari yang kecil dulu: goreskan namamu di Buku Tamu Batu di sudut halaman sana, lalu periksa tas dan bekalmu. Jalan panjang di Tanah Sada selalu dimulai dari telapak kakimu sendiri.",
       "action": "MEET_MAREN"
     }
   }
