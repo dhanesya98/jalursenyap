@@ -45,7 +45,7 @@ Data lima bangsa dibaca dari `data/canon.json`; galeri yang sama dipakai Atlas d
 
 ## Pembaruan kanon · 2026-11-06 (Bab 0 — Pos Batu Biru)
 
-Story Bible Kanon Revisi Terpadu (6 November 2026) disalin utuh ke `docs/STORY-BIBLE.md` beserta peta `assets/world/peta-100-simpul.png`. Demo diposisikan secara kanonis sebagai **Bab 0 — Pos Batu Biru** (prolog sebelum perjalanan Bab 1 ke Dusun Sela dan Padang Salkara):
+Story Bible Kanon Revisi Terpadu (6 November 2026) disalin utuh ke `docs/STORY-BIBLE.md` beserta peta `assets/world/peta-100-simpul.webp`. Demo diposisikan secara kanonis sebagai **Bab 0 — Pos Batu Biru** (prolog sebelum perjalanan Bab 1 ke Dusun Sela dan Padang Salkara):
 - **Provenans tas & surat:** Sahdan menitipkan baik `Surat Penyalaan` maupun tas berinsulasi di Pos Batu Biru kepada Sarai (`Sarai → Bahar → Ilun → Maren`). Maren meminjamkan tas kepada Nara sebelum tugas pertama; Ruru sudah bersama Nara sejak awal.
 - **Tiga tugas & laporan jujur:** Roti hangat untuk Juma membuka cerita buku harian kakek Juma; Kerang Suara untuk Bu Lamat membangun ikatan saksi tanpa istilah `Kait Tali` (diganti istilah lintasan `Tali Lintas` / tambatan tali); tugas ketiga yang gagal sebagian dilaporkan secara jujur oleh Nara kepada Maren.
 - **Tanda uji 009 & dua suara terpisah:** Lengkapnya tanda bahaya 009 mendorong Maren menyerahkan `Surat Penyalaan` dan membubuhkan `Cap Saksi Asharim` di atas bantalan tinta resonansi. Saat punggung surat ditempelkan pada lempeng pemeriksaan 009, pantulan `Garis Surut` milik **Sahdan** membaca nama Nara dari tinta cap, sedangkan rekaman lokal **Hesta** tahun 58 terdengar terpisah dari batu bangunan uji di dekatnya.

@@ -1,6 +1,6 @@
 # Jalur Senyap
 
-![Ilustrasi konsep Lembah Pasir: Nara dan Ruru memandang jalur panjang menuju cakrawala](assets/world/lembah-pasir.png)
+![Ilustrasi konsep Lembah Pasir: Nara dan Ruru memandang jalur panjang menuju cakrawala](assets/world/lembah-pasir.webp)
 
 *Ilustrasi konsep Lembah Pasir di Tanah Sada.*
 

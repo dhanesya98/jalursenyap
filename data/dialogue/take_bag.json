@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Kulit tasnya tebal banget, tapi pas diraba dalamnya halus dan dingin. Ada tiga gesper perunggu di depan. Kupegang talinya... pas banget di bahu.",
+      "text": "Wah... kulit luarnya tebal banget, tapi pas kumasukin tangan ke dalam, kain pelapisnya adem dan rapat. Ada tiga paku perunggu di sudut bawahnya. Coba kusampirkan... pas di bahu!",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Sahdan meninggalkan tas itu di ambang pintu sebelum Hari Senyap. Sarai menjaganya, lalu menyerahkannya kepada Bahar, lalu Ilun, dan akhirnya sampai ke tanganku. Empat puluh tahun ia menunggu di pos ini, dan hari ini kau yang membuatnya melangkah lagi.",
+      "text": "Sahdan meninggalkan tas itu di Pos Batu Biru pada malam jaringan diputus. Sarai menjaganya lebih dulu, lalu mewariskannya kepada Bahar, dari Bahar ke Ilun, dan dari Ilun ke tanganku. Hari ini biarlah ia kembali berjalan bersamamu.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Satu bungkusan roti rempah masih hangat. Bungkus daunnya rapat, diikat tali rami cokelat bertuliskan nama Pak Juma. Kutaruh di sekat tengah ya, Bu, biar nggak kegencet batu.",
+      "text": "Roti rempahnya masih hangat banget. Kubungkus dua lapis daun—eh, tiga lapis sama kain tenunnya—terus kutaruh di sekat tengah biar nggak penyok. Namanya tertulis jelas: untuk Pak Juma.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Ikuti jalan batu yang naik ke utara, Nara. Jangan tergoda memotong lereng pasir yang curam kalau pijakanmu belum yakin. Dari papan penanda pertama di punggung bukit, menaranya sudah bisa kaulihat.",
+      "text": "Ikuti jalan batu yang menanjak ke utara. Jangan memotong lereng pasir kalau pijakanmu belum mantap. Begitu sampai di papan penanda punggung bukit, kubah menaranya sudah tampak.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Siap, Bu! Aku jalan dulu. Ayo, Ruru, jangan ketinggalan!",
+      "text": "Siap, Bu! Aku berangkat sekarang sebelum rotinya keburu dingin. Ayo, Ruru!",
       "action": "ACCEPT_BREAD"
     }
   }

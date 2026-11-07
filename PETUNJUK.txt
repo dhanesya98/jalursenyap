@@ -1,0 +1,18 @@
+JALUR SENYAP — PAKET AUDIT VISUAL
+
+Ekstrak ZIP, lalu buka AUDIT.html di browser. Filter kategori, buka gambar, pilih Cocok/Revisi/Tidak cocok dan tulis catatan. Gunakan Ekspor audit untuk menyimpan keputusan sebagai JSON. Catatan lokal bergantung pada browser; ekspor JSON adalah salinan portabel. Impor audit memulihkan file tersebut.
+
+CAKUPAN
+5 ilustrasi bangsa terdahulu dan 24 lembar baru dalam 10 kategori.
+WebP maksimal 300 KB per gambar. PNG master asli disediakan terpisah tanpa konversi ulang dari WebP.
+
+STATUS DESAIN
+Gambar adalah konsep audit, bukan sprite, model 3D, kit modular terpotong atau animasi siap engine. Frame efek adalah storyboard statis. Usia perkiraan, wajah, busana, motif UI dan bentuk bangunan yang belum dikunci dalam teks adalah usulan visual. Tidak ada referensi gambar karakter asli yang tersedia bersama berkas Markdown.
+
+PATOKAN LORE
+Nara berumur 17. Permainan berfokus pada perjalanan tanpa pertarungan. Tas adalah wadah berinsulasi, surat adalah kunci fisik. Gema tidak menguji kebenaran. Lulanai tidak memiliki Cap Saksi. Ruang penahan Simpul Keseratus adalah ruang batu bawah pulau, bukan bendungan air. Bentuk UI Nama Baik masih usulan; tidak ditampilkan sebagai nilai moral tunggal.
+
+AUDIT YANG DISARANKAN
+Periksa siluet, bahan, warna, kecocokan budaya fiksi, fungsi interaksi, keterbacaan pada skala game, konsistensi antarview dan kesesuaian lore. Untuk perubahan, sebutkan ID lembar dan nomor bagian.
+
+PROMPT.txt mencatat prompt final. manifest.json mencatat ukuran dan nama file.

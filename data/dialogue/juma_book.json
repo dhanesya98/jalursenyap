@@ -6,27 +6,27 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Sketsa tintanya rapi banget. Ada gambar tas kulit dengan detail gesper samping dan jahitan menyilang persis seperti tas yang kupakai sekarang. Di bawahnya tertulis tanggal: Akhir Musim Gugur, TS 401.",
+      "text": "Tulisan tangan kakeknya Pak Juma rapi banget. Di pinggir halaman ada sketsa tas kulit dengan tali silang dan tiga paku perunggu—persis tas yang lagi kugendong ini. Tanggalnya: Akhir Musim Gugur, TS 401.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Tulisannya bilang: \"Sahdan menitipkan barang di Batu Biru, lalu berbalik arah ke pusat jaringan. Ketika ditanya mengapa tidak menunggu pagi, ia menjawab singkat: Masih ada getaran yang harus ditahan.\" Setelah kalimat itu... kertasnya luntur kena noda air.",
+      "text": "Di bawah gambarnya tertulis: \"Sahdan menitipkan bungkusan dan tas cadangannya di Batu Biru, lalu berbalik arah menuju pusat. Ketika kutanya mengapa tidak berteduh sampai pagi, ia hanya menjawab: Masih ada getaran yang harus ditahan.\" Habis kalimat itu... tintanya luntur kena air.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Juma",
-      "text": "Orang-orang Dewan menyebut tahun itu Tahun Kerusakan, seakan-akan kabel dan batu rusak sendiri karena usia. Kakekku mencatat orang-orang yang melangkah di tengah badai malam itu untuk menahan gelombangnya. Dua versi untuk satu malam yang sama.",
+      "text": "Dewan menulis malam itu sebagai kecelakaan alat yang aus karena usia. Kakekku menulis nama orang yang berjalan menembus badai untuk menahan beban. *(diam sejenak)* Aku tidak menambah satu huruf pun pada catatannya.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Berarti Sahdan memang ada... dan tas ini saksi perjalanannya. Kata-katanya soal 'menahan sesuatu' bikin penasaran. Aku harus cerita ke Bu Maren soal catatan ini.",
+      "text": "Berarti Sahdan waktu itu sengaja balik ke pusat jaringan... Aku catat tanggal sama isi halaman ini di Buku Jalurku dulu ya, Pak, biar nggak salah cerita waktu lapor ke Bu Maren.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Juma",
-      "text": "Saat menuruni tebing, langkahkan kakimu pada batu yang kering. Kabut mulai menebal di lembah barat. Bilang pada Maren rotinya sudah kuterima utuh... dan jangan bilang padanya aku minta jatah dua roti untuk minggu depan.",
+      "text": "Perhatikan pijakan batumu waktu turun. Kabut sudah merayap masuk ke lembah barat. Sampaikan pada Maren: rotinya sampai utuh, dan lututku tidak butuh dikirimi roti dua kali sepekan.",
       "action": "READ_LEDGER"
     }
   }

@@ -38,7 +38,7 @@
         "#C86A3C"
       ],
       "alt": "Halaman pos Asharim dengan kubah biru, tuan rumah menawarkan air kepada seorang kurir.",
-      "image": "assets/world/nations/asharim-concept-v1.png"
+      "image": "assets/world/nations/asharim-concept-v1.webp"
     },
     {
       "id": "tseren",
@@ -62,7 +62,7 @@
         "#8FA68A"
       ],
       "alt": "Bengkel kertas dan arsip Tseren di pegunungan berkabut dengan jembatan tali.",
-      "image": "assets/world/nations/tseren-concept-v1.png"
+      "image": "assets/world/nations/tseren-concept-v1.webp"
     },
     {
       "id": "cirusia",
@@ -95,7 +95,7 @@
         "#D9B45A"
       ],
       "alt": "Perkemahan Tujuh Panji di padang rumput Cirusia, dengan janji lisan di hadapan tiga saksi.",
-      "image": "assets/world/nations/cirusia-concept-v1.png"
+      "image": "assets/world/nations/cirusia-concept-v1.webp"
     },
     {
       "id": "bahtari",
@@ -119,7 +119,7 @@
         "#E07B39"
       ],
       "alt": "Pelabuhan rempah Bahtari, rumah panggung, kapal layar, dan keluarga menerima Kerang Suara.",
-      "image": "assets/world/nations/bahtari-concept-v1.png"
+      "image": "assets/world/nations/bahtari-concept-v1.webp"
     },
     {
       "id": "lulanai",
@@ -143,7 +143,7 @@
         "#A6805A"
       ],
       "alt": "Penyetel Lulanai memperbaiki batu di antara reruntuhan Simpul dan cincin perunggu tua.",
-      "image": "assets/world/nations/lulanai-concept-v1.png"
+      "image": "assets/world/nations/lulanai-concept-v1.webp"
     }
   ],
   "letter": {

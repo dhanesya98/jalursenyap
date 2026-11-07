@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path');
 const root=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
-if(fs.existsSync(path.join(root,'assets/world/asharim-distance-v5.png')))fs.writeFileSync(path.join(root,'data/atelier-backdrop.js'),'window.ATELIER_BACKDROP="data:image/png;base64,'+fs.readFileSync(path.join(root,'assets/world/asharim-distance-v5.png')).toString('base64')+'";');
+if(fs.existsSync(path.join(root,'assets/world/asharim-distance-v5.webp')))fs.writeFileSync(path.join(root,'data/atelier-backdrop.js'),'window.ATELIER_BACKDROP="data:image/webp;base64,'+fs.readFileSync(path.join(root,'assets/world/asharim-distance-v5.webp')).toString('base64')+'";');
 const data={quests:read('data/quests.json'),deliveries:read('data/deliveries.json'),weather:read('data/weather.json'),world:read('data/world.json'),dialogues:{}};
 for(const file of fs.readdirSync(path.join(root,'data/dialogue')).filter(f=>f.endsWith('.json'))){const d=read('data/dialogue/'+file);data.dialogues[d.id]=d;for(const n of Object.values(d.nodes)){for(const next of [n.next,...(n.choices||[]).map(c=>c.next)].filter(Boolean))if(!d.nodes[next])throw Error('Node dialog hilang: '+file+' '+next);}}
 for(const q of data.quests.steps){

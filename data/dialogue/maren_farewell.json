@@ -6,37 +6,37 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Semua tandanya cocok, Bu. Tiga denyut lentera, retakan cincin luar, terus... ada pantulan jauh yang menyebut namaku pas punggung surat menyentuh lempeng. Segel depannya tetap utuh tak kusentuh.",
+      "text": "Bu Maren... semuanya udah kuperiksa. Lentera 009 beneran berdenyut tiga kali, cincin batunya retak, terus pas punggung surat kutempelin ke lempeng... ada suara lirih yang nyebut namaku. Dan di bangunan uji bawahnya ada rekaman terpisah dari tahun 58.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Maka tugas pertamamu di pos ini sudah selesai, Nara. Sekarang lanjutkan langkahmu ke Dusun Sela. Temui Nenek Ima sebelum kau menyeberang menuju Padang Salkara yang gersang. Surat ini kelak harus melewati serah-terima tiga bangsa; kau tidak perlu memaksakan diri memahami seluruh ujung perjalanannya malam ini.",
+      "text": "Tarik napas dulu, Nara. Kau sudah berjalan menembus badai malam ini, dan kau membawa pulang pengamatan yang jernih—tidak mencampuradukkan pantulan di menara dengan rekaman di bangunan uji. Mulai malam ini, Pos Batu Biru tidak lagi bisa menahan Surat Penyalaan di balik dinding dapur.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Terus... gimana nasib perbekalan pos saudara yang masih tertahan di gerbang tol, Bu?",
+      "text": "Berarti aku harus langsung jalan bawa surat ini ke luar lembah, Bu? Tapi... gimana sama sisa perbekalan pos saudara yang tadi masih disita di gerbang?",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Jangan cemas. Besok pagi aku sendiri yang akan berjalan ke gerbang tol untuk menuntut surat pembebasannya dan menghubungi pos saudara. Catatan itu tetap hidup di buku kita. Kau tidak meninggalkan mereka dalam kegelapan.",
+      "text": "Urusan gerbang timur biar menjadi bagianku besok pagi. Dengan tanda bukti resmi dari Kesa yang kaubawa pulang tadi, para tetua sumur punya dasar untuk menuntut pembebasan bekal itu. Kau sudah menjaga bagianmu dengan jujur.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Lewatlah di depan pos gerbang sekali lagi dan sapa Kesa. Dia sudah mencatat surat jalanmu. Kalau jalan tebing terlalu berangin, gunakan Jalur Lentera untuk memutar ke arah Dusun Sela.",
+      "text": "Sekarang arahkan langkahmu ke Dusun Sela. Singgahlah menemui Nenek Ima sebelum kau menyeberang ke Padang Salkara untuk mencari saksi kedua dan ketiga. Ingat: jangan pernah membuka segelnya sendiri di jalan.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Terima kasih banyak buat semuanya, Bu Maren. Teduh di jalan Ibu juga.",
+      "text": "Iya, Bu. Aku pamit ke Dusun Sela dulu. Makasih udah minjemin tas ini... eh, dan udah sabar ngajarin aku dari pagi. Teduh di jalanmu, Bu Maren.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Maren",
-      "text": "Air di langkahmu, Nara. Pintu pos ini tidak pernah dikunci, dan selalu ada cawan hangat untukmu kapan pun kau pulang.",
+      "text": "Air di langkahmu, Nara. Kapan pun kakimu lelah di negeri orang, ingatlah bahwa di Pos Batu Biru selalu ada cawan air yang menunggu kepulanganmu.",
       "action": "DEPART"
     }
   }

@@ -6,32 +6,32 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Dari penanda jalan ini, lentera Pos Batu Biru masih kelihatan... Pagi tadi aku cuma mikir gimana caranya biar roti Juma nggak dingin di jalan.",
+      "text": "Dari patok jalan ini, lentera kuning Pos Batu Biru masih kelihatan kecil di kejauhan... Padahal tadi pagi aku cuma mikir gimana caranya biar roti rempah Pak Juma nggak penyok di jalan.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Sekarang lagu Dorin sudah sampai di cangkang Bu Lamat. Sisa bekal yang ditahan Dewan sudah kucatat di pos Maren. Dan surat ini... masih harus berjalan jauh.",
+      "text": "Sekarang lagu sumbang Pak Dorin udah nyampe ke Bu Lamat. Sisa bekal yang disita di gerbang udah tercatat rapi. Dan di dalam tas ini... ada Surat Penyalaan yang harus kubawa melintasi bangsa-bangsa.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "(Ruru menyentuh ujung tas dengan hidungnya. Nara duduk sebentar di atas batu, mengembuskan napas panjang, lalu membetulkan ikatan tali tasnya.)",
+      "text": "(Ruru menyundul pelan ujung sepatu Nara. Nara berjongkok mengelus kepala pendamping kecilnya itu, lalu mengencangkan kembali gesper tas kulit di bahunya.)",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aku nggak harus tahu semua rahasia orang-orang tua sebelum melangkah. Tapi aku harus tahu mana yang kulihat sendiri, mana yang kudengar, dan janji apa yang kupegang.",
+      "text": "Aku belum ngerti semua urusan seratus tahun lalu, sih. Tapi nggak apa-apa. Yang penting aku tahu mana yang kulihat sendiri, mana yang kudengar sendiri, dan janji siapa yang lagi kujaga.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Dusun Sela dulu. Aku akan menemui Nenek Ima, lalu mencari jalan menuju Padang Salkara.",
+      "text": "Pertama ke Dusun Sela dulu, nengok Nenek Ima. Habis itu baru kita nyebrang ke Padang Salkara.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Ayo, Ruru. Supaya tidak ada orang yang menunggu sendirian.",
+      "text": "Ayo, Ruru. Jalan pelan-pelan aja... supaya nggak ada lagi orang yang menunggu sendirian.",
       "action": "FINISH_CHAPTER"
     }
   }

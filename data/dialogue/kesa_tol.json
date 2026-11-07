@@ -6,37 +6,37 @@
   "nodes": {
     "n0": {
       "speaker": "Kesa",
-      "text": "Maren mengutusmu balik ke sini, Nara? Aku sudah menerima sinyal lentera posnya tadi sore. Dia minta salinan berita acara penahanan kemarin... dan menanyakan apakah anak buah Dewan punya mata untuk melihat getaran di Simpul Sembilan.",
+      "text": "Nara? Kau balik lagi di tengah angin sekencang ini? Tadi sore lentera pos Maren memberi isyarat ke menara jaga. Dia menuntut salinan arsip penahanan... sekaligus bertanya apakah kami di gerbang ini tuli terhadap dengung dari arah Simpul Sembilan.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Memang ada yang nggak beres di Simpul 009, Kak. Bu Lamat di Telaga Sumi juga dengar sumur tuanya berdengung keras. Kalau Dewan menutup semua jalur dan mengunci semua laporan bahaya di laci meja... gimana orang-orang di lembah bisa tahu kapan harus mengungsi?",
+      "text": "Bukannya nakut-nakutin, Kak Kesa, tapi lentera 009 emang udah berdenyut tiga kali, terus Sumur Induk di Telaga Sumi juga bunyi terus. Kalau aku nggak diizinin naik memeriksa menara malam ini... gimana kita bisa tahu seberapa parah retakannya?",
       "next": "n2"
     },
     "n2": {
       "speaker": "Kesa",
-      "text": "(Kesa mengusap keningnya, menatap kunci perunggu di tangannya dengan lelah.) Dulu aku mendaftar jadi petugas pos jaga Dewan supaya jalur pengantaran ini aman buat orang melintas, Nara. Bukan... bukan buat jadi penjaga gerbang yang membungkam mulut orang.",
+      "text": "(Kesa menatap buku peraturan yang tertutup pasir di mejanya, lalu menggenggam kunci perunggu di sakunya.) Waktu aku dilantik jadi petugas Dewan, sumpahku adalah menjaga keselamatan lintasan. Bukan menutup mata sambil menunggu tebing runtuh menimpa orang.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Kesa",
-      "text": "Gerbang utama tetap kukunci, Nara. Aku tidak bisa melawan perintah resmi komandan di Benteng. Tapi... pasak pengunci Tebing Utara ada padaku. Aku akan membukanya untuk pemeriksaanmu.",
+      "text": "Palang gerbang utama tetap tidak bisa kubuka—pengawas dari pos atas bisa melihatnya langsung. Tapi pengunci pintu lintas Tebing Utara ada di bawah wewenangku.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Kesa",
-      "text": "(Kesa menarik tuas pengunci di dinding tebing. Gerendel besi berderit terbuka.) Ini jalur resmi. Surat inspeksinya aku yang tanda tangani. Kalau nanti ada pemeriksa Dewan tanya kenapa kau bisa lewat... bilang saja kau diundang. (Suaranya berbisik pelan) Dan kalau ada yang tanya aku... bilang saja aku juga penasaran.",
+      "text": "(Kesa memutar pasak pengunci di dinding batu hingga palang samping bergeser membuka.) Ini jalur resmi. Surat jalannya aku yang tanda tangani. Kalau nanti ada yang tanya, bilang saja kau diundang. (Suaranya merendah pelan) Dan kalau ada yang tanya aku, bilang saja aku... juga penasaran.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Terima kasih banyak, Kak Kesa. Aku bakal bawa kembali catatan yang bisa diperiksa sama semua orang.",
+      "text": "Kak Kesa... makasih banyak! Sungguh. Begitu aku turun dari Simpul 009 nanti, kuceritakan apa yang kulihat di atas sana.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Kesa",
-      "text": "Itu jauh lebih berguna daripada pengumuman palsu Dewan yang bilang semuanya baik-baik saja. Berhati-hatilah di Tebing Utara, angin badainya kencang sekali.",
+      "text": "Bawa turun catatan yang nyata, Nara—bukan sekadar desas-desus. Dan awas pijakanmu kalau lewat Tebing Utara; angin badai di sana tidak kenal ampun.",
       "action": "OPEN_NORTH_PATH"
     }
   }

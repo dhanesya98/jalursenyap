@@ -6,32 +6,32 @@
   "nodes": {
     "n0": {
       "speaker": "Jejak pada batu uji",
-      "text": "“…pemeriksaan cabang uji… tahun lima puluh delapan…”",
+      "text": "(tiga napas) ...pemeriksaan cabang uji... tahun lima puluh delapan...",
       "next": "n1"
     },
     "n1": {
       "speaker": "Jejak pada batu uji",
-      "text": "“…tujuh cabang Simpul Terang menyedot beban di luar rancangan… penyetelan peredam akhir belum lengkap…”",
+      "text": "...tujuh cabang Simpul Terang menarik beban... di luar batas rancangan...",
       "next": "n2"
     },
     "n2": {
       "speaker": "Jejak pada batu uji",
-      "text": "“…aliran gelombang balik… terus menekan ruang penahan di pulau Katup…”",
+      "text": "...gelombang balik... terus menekan ruang penahan di bawah pulau Katup...",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Siapa yang bicara? Halo? Siapa yang meninggalkan rekaman ini?",
+      "text": "Halo? Siapa itu? Eh—nggak nyaut. Suaranya cuma ngulang-ngulang dari awal lagi.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "(Batu itu tidak menjawab. Ia hanya mengulang kembali kalimat pertamanya dengan nada dingin yang persis sama. Ruru duduk di sampingku sambil memiringkan kepala, mendengarkan jeda ritmenya.)",
+      "text": "(Batu bersegi itu kembali mengulang potongan kalimat pertamanya dengan jeda yang persis sama. Ruru duduk diam di samping kaki Nara, telinganya bergerak mengikuti irama ketukan batu.)",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Ini bukan suara orang yang lagi ngobrol... ini sisa rekaman pemeriksaan puluhan tahun lalu yang tertinggal di kristal batu. Suara ini sama sekali nggak mengenali namaku. Coba kuperiksa lemari arsip di sudut ruangan ini.",
+      "text": "Beda banget sama suara di lempeng 009 atas tadi. Yang ini nggak nyebut namaku sama sekali—cuma rekaman pemeriksaan lokal dari tahun lima puluh delapan yang tertinggal di batu. Coba kuperiksa meja arsip di pojok ruangan ini, siapa tahu ada catatan pembandingnya.",
       "action": "HEAR_TEST_TRACE"
     }
   }

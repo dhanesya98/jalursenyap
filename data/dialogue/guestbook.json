@@ -6,22 +6,22 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Batu birunya penuh guratan nama. Ada yang diukir rapi pakai pisau baja, ada juga yang hurufnya hampir tipis... pasti sering diusap jempol orang tua yang nyari kabar anaknya.",
+      "text": "Batu birunya penuh banget sama guratan nama. Ada yang dipahat rapi, ada juga yang hurufnya udah tipis... pasti sering diraba jempol keluarga yang nyari kabar.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "(Mengambil jarum gores, lalu menulis pelan: Nara, Dusun Sela. Pengantaran pertama: roti rempah untuk Menara Batu Senja.)",
+      "text": "(Mengambil jarum gores, lalu mengukir pelan: Nara, Dusun Sela. Tugas pertama—eh, maksudku, pengantaran pertama: roti rempah ke Menara Batu Senja.)",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Batu itu saksi bagi orang-orang yang cemas di seberang bukit. Di pos tua ini, nama pengantar bukan barang dagangan yang disetorkan ke meja Dewan demi potongan pajak.",
+      "text": "Batu itu adalah saksi bagi keluarga yang menunggu di rumah, Nara. Di pos tua ini, daftar nama pelintas dijaga sebagai amanah tamu, bukan disetorkan ke meja Dewan demi kuota gandum.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Namaku udah terukir di sini sekarang. Rasanya... beda ya. Ruru sampai ikutan diam ngeliatin, baru sekarang dia ngibrit lagi ke arah meja bekal.",
+      "text": "Oke, namaku udah masuk di batu sekarang. Agak miring dikit sih huruf terakhirnya, tapi terbaca jelas kok. Ayo, Ruru, kita ambil tas di meja bekal!",
       "action": "REGISTER_NAME"
     }
   }

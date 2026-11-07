@@ -6,42 +6,42 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "Bu Lamat udah terima lagunya, Bu! Beliau sampai nangis senang. Terus... aku sempat meriksa Sumur Induk seperti pesan Ibu. Dinding batunya emang mendengung, ada serpihan suara lama yang berulang. Kata Bu Lamat, dengungannya makin keras beberapa pekan ini.",
+      "text": "Kerangnya udah sampai, Bu! Bu Lamat ketawa-tawa dengar suara sumbangnya Pak Dorin. Cuma... waktu aku nengok Sumur Induk di sebelah balai, beneran ada suara mendengung dari bawah air. Putus-putus gitu, bukan gema suaraku sendiri.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Bagus, Nara. Kau memisahkan apa yang kaudengar sendiri dari apa yang diceritakan orang lain kepadamu. Sikap seperti itu lebih berharga daripada seribu asumsi. Catatan sumur ini akan kupadukan dengan pemeriksaan lentera nanti malam.",
+      "text": "Duduk dulu, Nara. Jangan bicara urusan sumur dengan napas terengah-engah begitu; minum air jeruk hangat ini dulu. Nah. Sekarang lihat caramu bercerita: kau memisahkan apa yang kaudengar sendiri dari apa yang diceritakan orang lain. Di jalan ini, kejernihan seperti itu lebih berharga daripada seribu kabar burung.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Sekarang ada satu tugas lagi sebelum senja runtuh. Pos saudara kita di ujung timur lembah kehabisan bekal. Mereka butuh dua ikat perbekalan: roti gandum kering, garam, dan kain penutup. Sejak jalur pesisir disekap badai, pos itu menampung banyak pengembara yang kehausan.",
+      "text": "Sebelum petang turun, masih ada tugas ketiga. Pos saudara kita di timur lembah sedang menampung para pelintas yang tertahan badai, dan lumbung mereka mulai menipis. Kita harus mengirim dua ikat perbekalan: roti kering, garam, dan kain penutup.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Tapi Bu... kabar burung dari pedagang tadi bilang gerbang timur mulai dijaga ketat sama Dewan Tol. Apa surat jalan kita masih mempan?",
+      "text": "Dua ikat ke arah timur? Tapi, Bu... tadi di jalan aku dengar pedagang ngomongin gerbang Dewan Tol di timur yang makin ketat. Kalau dicegat gimana?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Pemberitahuan resmi terakhir menyatakan kiriman antarpos kemanusiaan tetap dikecualikan, asal membawa surat jalan bertanda tangan. Tapi petugas di gerbang... mereka sering menafsirkan aturan sesuka timbangan. Bacalah papan maklumat di depan palang tol, dan bicaralah baik-baik dengan petugas jaga.",
+      "text": "Menurut aturan mereka sendiri, kiriman pangan antarpos dengan surat jalan resmi tidak boleh ditahan. Tapi aturan di atas kertas sering berubah saat sampai di meja penjaga. Bacalah dulu papan pengumuman di depan gerbang, lalu bicaralah baik-baik pada Kesa.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Maren",
-      "text": "Ingat pesan ini: kalau jalurnya dipaksa tutup, jangan pernah menjanjikan waktu tiba palsu pada orang di pos tujuan. Lebih baik bawa pulang sisa barang dan catat apa adanya siapa yang menahan. Kita harus tahu siapa yang masih menunggu di ujung jalan.",
+      "text": "Dan dengarkan aku: kalau palangnya tetap tidak mau dibuka, jangan sekali-kali mengarang janji palsu, dan jangan membuang barang di pasir supaya terlihat selesai. Bawa pulang apa yang tersisa, beserta catatan jujur tentang siapa yang menahannya.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Siap, Bu. Dua ikat perbekalan. Aku hitung dan periksa bungkusnya di meja bekal dulu sebelum berangkat.",
+      "text": "Paham, Bu. Aku periksa dua ikat perbekalannya di meja bekal dulu, kucatat jumlahnya di Buku Jalur, baru berangkat ke gerbang timur.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Maren",
-      "text": "Tujuanmu adalah pos saudara dan orang-orang yang lapar di sana, bukan meja pemeriksaan Dewan. Kalau barang itu tertahan di meja mereka, tugas kita belum selesai.",
+      "text": "Ingat, yang kita layani adalah orang-orang yang menunggu di seberang jalan, bukan buku kuota Dewan. Hati-hati di lembah timur, angin mulai membawa pasir kasar.",
       "action": "ACCEPT_SUPPLIES"
     }
   }

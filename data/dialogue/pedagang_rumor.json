@@ -6,22 +6,22 @@
   "nodes": {
     "start": {
       "speaker": "Pedagang Lembah",
-      "text": "Ssst... pelan sedikit bicaranya. Di pasir terbuka begini angin gampang bawa suara sampai ke gerbang pemeriksaan. Duduk, cicip teh ini dulu. Hangat.",
+      "text": "Teduh di jalanmu, kurir kecil. Sini, merapat sedikit ke bawah tenda—jangan berdiri menantang angin begitu, nanti pasir masuk ke kerongkonganmu. Tuang teh daun mint itu selagi uapnya masih mengepul.",
       "next": "n0"
     },
     "n0": {
       "speaker": "Pedagang Lembah",
-      "text": "Ada kabar di antara kafilah... seratus Simpul itu dulu bukan mati sendiri atau aus termakan usia seperti kata Dewan. Sengaja dipadamkan dari dalam. Ini cerita orang-orang tua di jalur, bukan sesuatu yang pernah kulihat langsung dengan mataku.",
+      "text": "Kau pakai tas kulit tua dari Pos Batu Biru rupanya. Dengar, kalau orang-orang kafilah sedang berkumpul jauh dari telinga petugas Dewan, ceritanya selalu sama: seratus Simpul itu dulu bukan rusak sendiri dimakan karat. Ada yang memutusnya dari dalam. Tentu saja aku belum lahir waktu itu—ini kabar warisan di sepanjang api kemah.",
       "next": "nara_1"
     },
     "nara_1": {
       "speaker": "Nara",
-      "text": "Lalu pos-pos Asharim? Mereka diam saja melihat jalan dipasangi gerbang dan diperiksa begitu ketat?",
+      "text": "Air di langkahmu, Pak. Tapi... kalau Dewan makin sering masang gerbang tol dan nahan barang kayak sekarang, pos-pos Asharim di lembah ini masa diam aja?",
       "next": "pedagang_2"
     },
     "pedagang_2": {
       "speaker": "Pedagang Lembah",
-      "text": "Terbelah dua. Kubu Pos Tua seperti Maren memilih hidup pas-pasan dan menolak petugas Dewan di dekat sumur. Tapi Kubu Pos Dagang mulai menyerahkan salinan catatan Buku Tamu Batu demi jatah gandum dan keringanan bea. Sementara itu... kalau kau lewat dekat Simpul Sembilan malam-malam, sumur tua dan bangunan uji di tebing sana makin sering terdengar berdengung sendiri.",
+      "text": "Air kalau dibendung ya pecah jadi dua aliran, Nak. Kubu Pos Tua seperti Maren lebih memilih makan roti kering daripada membiarkan petugas Dewan menyentuh Buku Tamu Batu. Tapi Kubu Pos Dagang di jalur besar? Mereka mulai menyetorkan salinan nama pelintas demi kuota gandum dan potongan bea. Sementara mereka sibuk berdebat... sumur-sumur tua dan bangunan uji di kaki Simpul Sembilan sana makin sering terdengar mengigau sendiri waktu malam.",
       "action": "RECORD_RUMOR"
     }
   }

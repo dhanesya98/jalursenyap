@@ -1,0 +1,408 @@
+[
+  {
+    "id": "00-asharim",
+    "cat": "Bangsa",
+    "title": "Asharim",
+    "description": "Ilustrasi wilayah dan kehidupan bangsa dari paket awal.",
+    "file": "assets/webp/00-asharim.webp",
+    "bytes": 288034,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "00-asharim.png",
+    "masterBytes": 3702658
+  },
+  {
+    "id": "00-tseren",
+    "cat": "Bangsa",
+    "title": "Tseren",
+    "description": "Ilustrasi wilayah dan kehidupan bangsa dari paket awal.",
+    "file": "assets/webp/00-tseren.webp",
+    "bytes": 256250,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "00-tseren.png",
+    "masterBytes": 3394967
+  },
+  {
+    "id": "00-cirusia",
+    "cat": "Bangsa",
+    "title": "Cirusia",
+    "description": "Ilustrasi wilayah dan kehidupan bangsa dari paket awal.",
+    "file": "assets/webp/00-cirusia.webp",
+    "bytes": 290820,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "00-cirusia.png",
+    "masterBytes": 3586860
+  },
+  {
+    "id": "00-bahtari",
+    "cat": "Bangsa",
+    "title": "Bahtari",
+    "description": "Ilustrasi wilayah dan kehidupan bangsa dari paket awal.",
+    "file": "assets/webp/00-bahtari.webp",
+    "bytes": 292386,
+    "dimensions": [
+      1381,
+      921
+    ],
+    "master": "00-bahtari.png",
+    "masterBytes": 3809520
+  },
+  {
+    "id": "00-lulanai",
+    "cat": "Bangsa",
+    "title": "Lulanai",
+    "description": "Ilustrasi wilayah dan kehidupan bangsa dari paket awal.",
+    "file": "assets/webp/00-lulanai.webp",
+    "bytes": 262994,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "00-lulanai.png",
+    "masterBytes": 3427805
+  },
+  {
+    "id": "01-nara",
+    "cat": "Karakter",
+    "title": "Nara — model & ekspresi",
+    "description": "Tampak depan, samping, belakang serta empat ekspresi. Rancangan wajah dan busana untuk diaudit.",
+    "file": "assets/webp/01-nara.webp",
+    "bytes": 220214,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "01-nara.png",
+    "masterBytes": 2772454
+  },
+  {
+    "id": "02-maren",
+    "cat": "Karakter",
+    "title": "Maren — model & ekspresi",
+    "description": "Kepala Pos Batu Biru; usia dan rupa adalah usulan visual.",
+    "file": "assets/webp/02-maren.webp",
+    "bytes": 241164,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "02-maren.png",
+    "masterBytes": 2804157
+  },
+  {
+    "id": "03-juma",
+    "cat": "Karakter",
+    "title": "Juma — model & ekspresi",
+    "description": "Penjaga menara dengan perlengkapan perawatan mekanis.",
+    "file": "assets/webp/03-juma.webp",
+    "bytes": 217856,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "03-juma.png",
+    "masterBytes": 2644910
+  },
+  {
+    "id": "04-kesa",
+    "cat": "Karakter",
+    "title": "Kesa — model & ekspresi",
+    "description": "Petugas Dewan dengan ekspresi formal, ragu, dan peduli.",
+    "file": "assets/webp/04-kesa.webp",
+    "bytes": 235946,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "04-kesa.png",
+    "masterBytes": 2849364
+  },
+  {
+    "id": "05-kit-asharim",
+    "cat": "Kit bangunan",
+    "title": "Kit bangunan Asharim",
+    "description": "Kubah, lengkung, kanal dan ubin; biru batu serta terakota.",
+    "file": "assets/webp/05-kit-asharim.webp",
+    "bytes": 213172,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "05-kit-asharim.png",
+    "masterBytes": 2674531
+  },
+  {
+    "id": "06-kit-tseren",
+    "cat": "Kit bangunan",
+    "title": "Kit bangunan Tseren",
+    "description": "Atap tipis, arsip tebing, jembatan dan rak pengering.",
+    "file": "assets/webp/06-kit-tseren.webp",
+    "bytes": 285350,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "06-kit-tseren.png",
+    "masterBytes": 2933902
+  },
+  {
+    "id": "07-kit-cirusia",
+    "cat": "Kit bangunan",
+    "title": "Kit bangunan Cirusia",
+    "description": "Tenda kempa dan perlengkapan kemah yang dapat dibongkar.",
+    "file": "assets/webp/07-kit-cirusia.webp",
+    "bytes": 218250,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "07-kit-cirusia.png",
+    "masterBytes": 2458617
+  },
+  {
+    "id": "08-kit-bahtari",
+    "cat": "Kit bangunan",
+    "title": "Kit bangunan Bahtari",
+    "description": "Rumah panggung, tiang miring, atap layar dan dermaga.",
+    "file": "assets/webp/08-kit-bahtari.webp",
+    "bytes": 232740,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "08-kit-bahtari.png",
+    "masterBytes": 2457306
+  },
+  {
+    "id": "09-kit-lulanai",
+    "cat": "Kit bangunan",
+    "title": "Kit bangunan Lulanai",
+    "description": "Reruntuhan basalt yang diperbaiki dan dipakai kembali.",
+    "file": "assets/webp/09-kit-lulanai.webp",
+    "bytes": 258326,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "09-kit-lulanai.png",
+    "masterBytes": 2871171
+  },
+  {
+    "id": "10-perlengkapan-kurir",
+    "cat": "Perlengkapan",
+    "title": "Perlengkapan kurir",
+    "description": "Tas berinsulasi, Surat Penyalaan, tabung surat, kendi, tali dan alat serah-terima.",
+    "file": "assets/webp/10-perlengkapan-kurir.webp",
+    "bytes": 299234,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "10-perlengkapan-kurir.png",
+    "masterBytes": 3027157
+  },
+  {
+    "id": "11-properti-harian",
+    "cat": "Properti",
+    "title": "Kehidupan sehari-hari lima bangsa",
+    "description": "Lima kelompok properti: pos, arsip, kemah, bandar, dan bengkel batu.",
+    "file": "assets/webp/11-properti-harian.webp",
+    "bytes": 275724,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "11-properti-harian.png",
+    "masterBytes": 3183888
+  },
+  {
+    "id": "12-gema-simpul",
+    "cat": "Gema",
+    "title": "Simpul Sembilan & perangkat Gema",
+    "description": "Anatomi menara, lempeng pemeriksaan, cincin retak dan tiga keadaan lentera.",
+    "file": "assets/webp/12-gema-simpul.webp",
+    "bytes": 224858,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "12-gema-simpul.png",
+    "masterBytes": 2783262
+  },
+  {
+    "id": "13-penanda-jalur",
+    "cat": "Navigasi",
+    "title": "Penanda jalur & pos",
+    "description": "Batu Nama, papan pos, penunjuk arah, gerbang tol dan peringatan bahaya.",
+    "file": "assets/webp/13-penanda-jalur.webp",
+    "bytes": 280112,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "13-penanda-jalur.png",
+    "masterBytes": 2810439
+  },
+  {
+    "id": "14-petunjuk-cerita",
+    "cat": "Petunjuk",
+    "title": "Objek bukti & jejak",
+    "description": "Bukti fisik untuk dibandingkan pemain; Gema tidak memberi jawaban otomatis.",
+    "file": "assets/webp/14-petunjuk-cerita.webp",
+    "bytes": 247840,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "14-petunjuk-cerita.png",
+    "masterBytes": 3219075
+  },
+  {
+    "id": "15-ui-jurnal",
+    "cat": "Antarmuka",
+    "title": "UI inventaris, jurnal & serah-terima",
+    "description": "Mockup inventaris, jurnal dan serah-terima. Nama, rute, isi tugas dan potret di UI adalah placeholder nonkanon; bentuk tas juga alternatif yang perlu diselaraskan.",
+    "file": "assets/webp/15-ui-jurnal.webp",
+    "bytes": 258296,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "15-ui-jurnal.png",
+    "masterBytes": 3355483
+  },
+  {
+    "id": "16-ikon-cap",
+    "cat": "Antarmuka",
+    "title": "Ikon inventaris & Cap Saksi",
+    "description": "12 ikon konsep, termasuk empat Cap Saksi. Tas pada ikon adalah alternatif; pilih dan selaraskan dengan model Nara saat produksi.",
+    "file": "assets/webp/16-ikon-cap.webp",
+    "bytes": 201280,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "16-ikon-cap.png",
+    "masterBytes": 2601677
+  },
+  {
+    "id": "17-efek-gema",
+    "cat": "Efek",
+    "title": "Storyboard efek Gema",
+    "description": "Denyut lentera, tinta terhapus dan riak sumur; enam fase per efek.",
+    "file": "assets/webp/17-efek-gema.webp",
+    "bytes": 258990,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "17-efek-gema.png",
+    "masterBytes": 2993080
+  },
+  {
+    "id": "18-efek-lingkungan",
+    "cat": "Efek",
+    "title": "Storyboard angin, air & kabut",
+    "description": "Urutan konsep gerak lingkungan; belum sprite animasi siap engine.",
+    "file": "assets/webp/18-efek-lingkungan.webp",
+    "bytes": 280484,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "18-efek-lingkungan.png",
+    "masterBytes": 3367939
+  },
+  {
+    "id": "19-pos-batu-biru",
+    "cat": "Lokasi",
+    "title": "Pos Batu Biru",
+    "description": "Pos pembuka: halaman, tempat serah-terima, air dan jalan menuju menara.",
+    "file": "assets/webp/19-pos-batu-biru.webp",
+    "bytes": 288722,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "19-pos-batu-biru.png",
+    "masterBytes": 3406345
+  },
+  {
+    "id": "20-telaga-sumi",
+    "cat": "Lokasi",
+    "title": "Telaga Sumi — ruang bermain",
+    "description": "Sumur Induk, kanal berundak dan Balai Cawan dari sudut perjalanan.",
+    "file": "assets/webp/20-telaga-sumi.webp",
+    "bytes": 295074,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "20-telaga-sumi.png",
+    "masterBytes": 3775693
+  },
+  {
+    "id": "21-bandar-lada",
+    "cat": "Lokasi",
+    "title": "Bandar Lada — dermaga & jalur",
+    "description": "Alur dermaga menuju pasar, rumah layar dan gudang lada.",
+    "file": "assets/webp/21-bandar-lada.webp",
+    "bytes": 287482,
+    "dimensions": [
+      1381,
+      921
+    ],
+    "master": "21-bandar-lada.png",
+    "masterBytes": 3860363
+  },
+  {
+    "id": "22-reruntuhan-hening",
+    "cat": "Lokasi",
+    "title": "Reruntuhan Hening — Rumah Jejak",
+    "description": "Jalur basalt, bangunan lama yang dihuni dan ruang mendengar jejak.",
+    "file": "assets/webp/22-reruntuhan-hening.webp",
+    "bytes": 283472,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "22-reruntuhan-hening.png",
+    "masterBytes": 3634116
+  },
+  {
+    "id": "23-benteng-tata",
+    "cat": "Lokasi",
+    "title": "Benteng Tata — pelataran perundingan",
+    "description": "Arsitektur administrasi dan pengawasan muara, tanpa citra antagonis mutlak.",
+    "file": "assets/webp/23-benteng-tata.webp",
+    "bytes": 290336,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "23-benteng-tata.png",
+    "masterBytes": 3613555
+  },
+  {
+    "id": "24-simpul-keseratus",
+    "cat": "Lokasi",
+    "title": "Simpul Keseratus — Katup",
+    "description": "Menara Katup dan potongan ruang batu bawah pulau; bukan bendungan air.",
+    "file": "assets/webp/24-simpul-keseratus.webp",
+    "bytes": 259442,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "master": "24-simpul-keseratus.png",
+    "masterBytes": 3414901
+  }
+]

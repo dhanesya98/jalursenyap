@@ -5,7 +5,7 @@
   "portraits": [
     {
       "id": "nara",
-      "file": "portraits/nara.png",
+      "file": "portraits/nara.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 2964475,
@@ -14,7 +14,7 @@
     },
     {
       "id": "maren",
-      "file": "portraits/maren.png",
+      "file": "portraits/maren.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 3019673,
@@ -23,7 +23,7 @@
     },
     {
       "id": "juma",
-      "file": "portraits/juma.png",
+      "file": "portraits/juma.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 3114205,
@@ -32,7 +32,7 @@
     },
     {
       "id": "bulamat",
-      "file": "portraits/bulamat.png",
+      "file": "portraits/bulamat.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 3151117,
@@ -41,7 +41,7 @@
     },
     {
       "id": "kesa",
-      "file": "portraits/kesa.png",
+      "file": "portraits/kesa.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 3006621,
@@ -50,7 +50,7 @@
     },
     {
       "id": "pedagang",
-      "file": "portraits/pedagang.png",
+      "file": "portraits/pedagang.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 3487323,
@@ -59,7 +59,7 @@
     },
     {
       "id": "ruru",
-      "file": "portraits/ruru.png",
+      "file": "portraits/ruru.webp",
       "width": 1254,
       "height": 1254,
       "bytes": 2614284,

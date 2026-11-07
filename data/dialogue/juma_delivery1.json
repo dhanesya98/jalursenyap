@@ -6,49 +6,49 @@
   "nodes": {
     "n0": {
       "speaker": "Juma",
-      "text": "Tinta tenang, kurir muda. Pukul dua siang kurang sepuluh menit. Aroma rempah kayu manisnya sudah sampai ke teras sebelum langkah kakimu terdengar.",
+      "text": "Tinta tenang. Pukul dua kurang sepuluh menit. Angin dari lembah naik tiga simpul, dan bau kayu manisnya sampai lebih dulu daripada langkahmu.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Kata terjaga, Pak Juma! Ini... roti rempah titipan Bu Maren. Masih hangat kok, suwer. Tadi cuma kena angin tanjakan sebentar di punggung bukit, tapi bungkus daunnya nggak koyak sama sekali.",
+      "text": "Kata terjaga, Pak Juma! Ini roti rempahnya, titipan Bu Maren. Nggak penyok kok, Pak. Cuma, ya... tadi kena angin dikit pas nanjak di punggung bukit, tapi aku udah bungkus rapat di sekat tengah. Dua lapis daun. Tiga, sih, sama kainnya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Juma",
-      "text": "(Menerima bungkusan, memeriksa ikatan tali dengan saksama.) Tepat waktu. Maren mengirim roti ini bukan karena aku lapar. Kemarin aku menulis bahwa lutut kananku membaik; ia pasti membaca kata \"lutut\" dan mengabaikan kata \"membaik\". Begitulah orang Asharim menyatakan kepedulian.",
+      "text": "(Menerima bungkusan, memeriksa simpul talinya.) Ikatan rapi. Masih hangat. Maren tidak mengirim ini karena aku lupa makan. Pekan lalu kutulis lutut kananku sudah membaik; ia membaca kata \"lutut\", lalu mengabaikan sisanya.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Juma",
-      "text": "(Pandangan Juma terhenti pada tas Nara. Ia diam sejenak.) Dua simpul menyilang di tali sandang. Tiga jahitan perunggu di sudut bawah. Kakekku, Ban Juma, menggambar pola jahitan yang persis seperti itu dalam buku hariannya.",
+      "text": "(Pandangan Juma berhenti pada tas di bahu Nara. Ia diam sejenak.) Dua simpul silang pada tali sandang. Tiga paku perunggu di sudut bawah. Kakekku, Ban Juma, menggambar tas itu di buku hariannya. Seratus tahun lalu.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Nara",
-      "text": "Bu Maren juga bilang tas ini peninggalan kurir lama bernama Sahdan. Kakek Bapak pernah ketemu langsung sama dia?",
+      "text": "Hah? Serius, Pak? Bu Maren tadi cuma bilang ini tas pinjaman peninggalan kurir lama... namanya Sahdan, kalau nggak salah. Kakek Bapak pernah ketemu dia langsung?",
       "next": "n5"
     },
     "choice_0": {
       "speaker": "Juma",
-      "text": "Bacalah dengan cermat. Tinta yang berumur seratus tahun tidak suka dibaca terburu-buru. Ambil waktumu.",
+      "text": "Bacalah. Jangan menyimpulkan lebih banyak daripada yang tertulis di halamannya. Tinta tua tidak suka ditebak-tebak.",
       "action": "DELIVER_BREAD_A"
     },
     "choice_1": {
       "speaker": "Juma",
-      "text": "Kakek menulis: Sahdan selalu bertanya siapa orang di pos berikutnya yang paling lama tidak menerima kabar. Buka bukunya di bangku sana; periksa sendiri dengan matamu.",
+      "text": "Kakek menulis satu kalimat: setiap singgah, Sahdan selalu bertanya siapa di pos berikutnya yang paling lama tidak menerima kabar. Bukunya ada di bangku batu itu. Periksa sendiri.",
       "action": "DELIVER_BREAD_B"
     },
     "n5": {
       "speaker": "Juma",
-      "text": "Tahun Simpul 401. Malam sebelum lentera-lentera padam. Sahdan singgah di kaki menara ini membawa kabar yang tidak dicatat di papan resmi. Aku bukan saksi hidupnya—hanya catatan kakek yang tertinggal. Buku itu terbuka di atas bangku batu di sebelahmu.",
+      "text": "Tahun Simpul 401. Malam sebelum jaringan padam. Aku tidak melihatnya sendiri—jangan campurkan kesaksian mata dengan catatan warisan. Yang kumiliki hanya buku harian kakek di atas bangku batu sebelahmu.",
       "choices": [
         {
-          "text": "“Terima kasih, Pak. Aku akan baca catatannya pelan-pelan.”",
+          "text": "“Aku periksa bukunya pelan-pelan ya, Pak.”",
           "next": "choice_0"
         },
         {
-          "text": "“Apa yang paling sering Bapak ingat dari cerita kakek tentang Sahdan?”",
+          "text": "“Apa yang ditulis Kakek Bapak soal Sahdan malam itu?”",
           "next": "choice_1"
         }
       ]

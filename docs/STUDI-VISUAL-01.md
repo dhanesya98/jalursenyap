@@ -29,7 +29,7 @@ Tampilan halaman pos dan Nara diperiksa melalui browser Chrome desktop. ImageGen
 - `index.html`: perjalanan lengkap dengan pos dan Nara baru.
 - `atlas.html`: katalog, termasuk model Nara baru.
 - `assets/models/character-nara.glb`: ekspor statis model baru.
-- `assets/world/asharim-distance-v5.png`: panorama asli.
+- `assets/world/asharim-distance-v5.webp`: panorama asli.
 - `assets/world/asharim-distance-v5-prompt.json`: prompt dan sumber panorama.
 - `data/atelier-backdrop.js`: data URI hasil build agar texture tidak memerlukan fetch atau CORS dari berkas lokal.
 

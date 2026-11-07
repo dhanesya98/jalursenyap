@@ -6,49 +6,49 @@
   "nodes": {
     "n0": {
       "speaker": "Kesa",
-      "text": "Berhenti di garis palang. Dua ikat perbekalan untuk pos saudara? Perlihatkan surat jalannya. (Kesa mencocokkan cap lilin pos dengan lembar prosedur di mejanya, lalu menghela napas panjang.) Surat jalanmu terbit kemarin pagi. Instruksi penutupan total jalur timur baru turun subuh tadi.",
+      "text": "Berhenti di garis pemeriksaan. Dua ikat perbekalan dari Pos Batu Biru? Serahkan surat jalannya. (Kesa memeriksa cap pos, lalu memejamkan mata sebentar.) Surat jalan ini sah, tertanggal kemarin. Tapi... instruksi pembekuan jalur timur baru saja turun dari Benteng subuh tadi.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Tapi pos di seberang sana lagi nampung orang-orang yang kehabisan bekal, Kak Kesa! Masa perbekalan gandum sama garam ditahan cuma gara-gara instruksi yang baru turun subuh?",
+      "text": "Loh—kok dibekukan mendadak, Kak Kesa? Ini isinya cuma roti kering, garam, sama kain buat orang-orang yang ketahan di pos saudara! Bukan barang dagangan, apalagi alat penyetel.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Kesa",
-      "text": "Peraturan karantina jalur nomor empat belas: semua lalu lintas logistik dibekukan demi kestabilan umum. Aku sudah kirim permohonan dispensasi ke kantor cabang, tapi belum ada balasan. Demi kuota penahanan, satu ikat harus disita di sini untuk pengujian; satu ikat lagi boleh kaubawa pulang. Aku tidak bisa mencatat keduanya telah sampai ke pos tujuan.",
+      "text": "Pasal empat belas ketertiban jalur, demi kepentingan bersama: seluruh pergerakan logistik di dekat sektor Simpul Sembilan dihentikan sementara. Aku sudah mengirim permohonan pengecualian sejak pagi, tapi belum dijawab. Sesuai kuota pemeriksaan, satu ikat wajib ditahan di gudang gerbang; satu ikat lagi harus kaubawa kembali.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Terus orang-orang yang nunggu di pos saudara... mereka dibiarin nggak tahu apa-apa soal nasib makanan ini?",
+      "text": "Demi kepentingan bersama apanya kalau yang di seberang sana malah kelaparan? Terus mereka nggak dikasih kabar sama sekali?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Kesa",
-      "text": "(Suara Kesa merendah, menatap Nara dengan gurat lelah.) Surat keluargaku sendiri pernah tertahan berbulan-bulan di pos pemeriksaan seperti ini, Nara. Peraturan Dewan itu tebal sekali soal apa yang harus ditahan, tapi nyaris tak pernah menyebut sepatah kata pun tentang orang-orang yang menunggu di ujung jalan.",
+      "text": "(Suara formal Kesa mendadak retak; ia menoleh ke arah antrean pelintas dengan bahu turun.) Kau pikir aku senang menulis tanda sita ini, Nara? Tahun lalu surat dari ibuku sendiri tertahan tiga bulan di meja seperti ini. Di buku peraturan kami, semua kolom angka ada tempatnya... kecuali kolom untuk orang yang menunggu.",
       "next": "n5"
     },
     "choice_0": {
       "speaker": "Kesa",
-      "text": "Baik. Kucatat resmi di lembar berita acara: satu ikat disita untuk inspeksi Dewan, satu ikat dikembalikan karena jalur ditutup. Ini salinan bertanda tanganku. Pembungkusnya agak tergores debu tebing; periksa baik-baik sebelum kaubawa pulang.",
+      "text": "Ini berita acara resminya: satu ikat ditahan untuk pemeriksaan Dewan, satu ikat dikembalikan ke Pos Batu Biru. Aku membubuhkan nama dan nomor petugas jaga milikku sendiri di bawahnya.",
       "action": "DETAIN_RECEIPT"
     },
     "choice_1": {
       "speaker": "Kesa",
-      "text": "Ambil kain pelindungmu dan bungkus rapat-rapat ikat yang tersisa. Aku akan tempelkan tanda segel pemeriksaan di talinya: satu ditahan, satu dikembalikan. Jangan sampai sisa makanan ini rusak kena badai di jalan pulang.",
+      "text": "Bungkus rapat ikat yang tersisa itu dengan kain pelindungmu. Aku sematkan tanda pemeriksaan resmi di talinya: satu ditahan, satu dikembalikan. Jangan sampai pasir badai merusak sisa makanan itu di jalan pulang.",
       "action": "DETAIN_PROTECT"
     },
     "n5": {
       "speaker": "Kesa",
-      "text": "(Angin lembah berhembus kencang, mengangkat tepi taplak meja kerja. Kesa menahan tumpukan berkas dengan telapak tangannya.) Angin badai mulai naik dari timur. Tentukan pilihanmu sekarang: mau kuurus surat bukti penahanannya dulu, atau kauamankan dulu ikatan barangmu?",
+      "text": "(Angin kencang menghantam palang kayu hingga berderak. Kesa menahan lembaran formulirnya.) Badai pasir mulai turun dari punggung bukit. Cepat putuskan: mau kutuliskan tanda bukti penahanannya dulu, atau kauamankan dulu bungkusan sisa itu?",
       "choices": [
         {
-          "text": "“Tuliskan jumlah dan alasan penahanannya dulu secara resmi.”",
+          "text": "“Tuliskan dulu bukti penahanan resminya lengkap dengan nama Kakak.”",
           "next": "choice_0"
         },
         {
-          "text": "“Aku lindungi sisa ikat perbekalan ini dulu dari terpaan angin.”",
+          "text": "“Aku bungkus rapat sisa perbekalan ini dulu sebelum pasirnya makin tebal.”",
           "next": "choice_1"
         }
       ]

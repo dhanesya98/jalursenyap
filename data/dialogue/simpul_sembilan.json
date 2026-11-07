@@ -6,12 +6,12 @@
   "nodes": {
     "n0": {
       "speaker": "Nara",
-      "text": "(Nara menempelkan punggung surat ke lempeng pemeriksaan. Tinta cap menyala keemasan di kegelapan badai. Dari kedalaman batu, sebuah desau bunyi bergetar merayap naik...)",
+      "text": "(Nara mendekatkan punggung surat yang bercap Asharim ke lempeng pemeriksaan batu. Tinta resonansi berpendar kuning tembaga di tengah deru pasir. Batu menara itu diam sejenak, lalu mengembuskan getaran lirih...)",
       "next": "n1"
     },
     "n1": {
       "speaker": "Pantulan jauh",
-      "text": "(tiga napas)...kunci... akhirnya kau... bergerak...",
+      "text": "(tiga napas) ...kau membawa... kunci itu... akhirnya bergerak...",
       "next": "n2"
     },
     "n2": {
@@ -21,27 +21,27 @@
     },
     "n3": {
       "speaker": "Nara",
-      "text": "(Nara tersentak menahan napas) Nama itu... nama yang tadi kuucapkan bersama Bu Maren di atas bantalan cap! Aku menoleh kaget ke belakang, tapi nggak ada siapa-siapa di pelataran ini selain angin.",
+      "text": "(Nara tersentak mundur setengah langkah) Tunggu—kok batu ini tahu namaku?! Eh... maksudku, itu kan bunyi nama yang tadi kuucapkan bareng Bu Maren waktu ngecap punggung surat!",
       "next": "n4"
     },
     "n4": {
       "speaker": "Pantulan jauh",
-      "text": "...jangan bawa kunci ke pusat... sebelum saksinya... genap tiga bangsa...",
+      "text": "...jangan bawa ke pusat... sebelum tiga bangsa... menjadi saksi...",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "(Suara itu perlahan memudar, seperti kalimat yang kehabisan napas di kejauhan lorong batu. Lempeng kembali dingin. Nara buru-buru menarik suratnya; segel lilin di depannya tetap utuh tak tersentuh.)",
+      "text": "(Kalimat itu menggantung dan habis ditelan angin, seakan sisanya sudah kembali tidur di dalam batu. Lempeng pemeriksaan mendingin. Nara memeriksa surat di tangannya: segel lilin di bagian depan masih tertutup rapat.)",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Getaran suaraku sendiri tersimpan di tinta cap dan dipantulkan oleh batu ini... Tapi suara siapa tadi yang membalas dari seberang Garis Surut?",
+      "text": "Jantungku masih deg-degan... Jadi lempeng 009 ini cuma membaca tinta Cap Saksi di punggung surat, terus memantulkan jalur dari seberang Garis Surut. Segel surat masih tertutup, nggak kebuka sama sekali.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Nara",
-      "text": "Ruru tiba-tiba menoleh tajam ke arah bangunan uji kecil di lereng belakang menara. Ada suara ketukan ritmis dari sana. Ayo, kita periksa apa yang ada di dalam bangunan itu.",
+      "text": "Eh, Ruru? Kenapa telingamu ngerucut ke lereng bawah itu? Oh—ada bunyi ketukan berulang dari bangunan uji yang disegel di bawah sana. Ayo, kita turun periksa sebentar.",
       "action": "CONTACT_LETTER"
     }
   }

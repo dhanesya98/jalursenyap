@@ -6,37 +6,37 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "Teduh di jalanmu, Nara. Hirup dulu udaranya sebentar, jangan langsung menyampirkan tali tas. Ruru dari tadi sudah dua kali mondar-mandir di dekat meja bekal, mengendus bungkusan daun. Rupanya dia lebih gelisah berangkat daripada kita.",
+      "text": "Teduh di jalanmu, Nara. Jangan langsung menyampirkan tali tas begitu—tarik napas dulu, habiskan teh di cangkirmu. Di pos ini orang tidak diberangkatkan dengan kerongkongan kering. Lihat, Ruru saja dari tadi sudah dua kali memutari meja bekal, mengendus bungkusan daun.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Air di langkahmu, Bu! Ruru itu kalau mencium aroma roti rempah memang nggak sabaran... tapi tenang, udah kuperingatkan kok. Jangan sampai remahnya kena hidungnya.",
+      "text": "Air di langkahmu, Bu. Habisnya... Ruru kalau nyium bau roti rempah memang suka lupa diri. Tadi hampir aja moncongnya nyundul keranjang—eh, tapi tenang, Bu! Udah kupegangin kok, nggak kena sama sekali. Paling cuma kena uap hangatnya dikit.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Roti itu untuk Juma di kaki Menara Batu Senja. Tas kulit di samping kendi itu... pakailah untuk tugas pertamamu. Jahitannya memang sudah tua dan kusam, tapi kain insulasi di dalamnya masih kedap. Tak ada getaran gema liar yang bisa menembus barang bawaanmu.",
+      "text": "Roti itu untuk Juma di kaki Menara Batu Senja. Dan tas kulit di samping kendi itu... ambillah. Aku meminjamkannya kepadamu untuk tugas pertamamu. Kulit luarnya memang sudah kusam dimakan angin, tapi tenun insulasi di dalamnya masih rapat menjaga apa pun yang dititipkan.",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Beneran, Bu? Maksudku... hari ini aku jalan sendirian? Nggak cuma ngekor di belakang Ibu sambil bawa daftar catatan pos?",
+      "text": "Tunggu—tas yang di sudut itu, Bu? Beneran boleh kupakai? Maksudku... hari ini aku beneran jalan sendiri? Nggak cuma ngikut di belakang Ibu sambil megangin buku catatan?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Siapa lagi kalau bukan kau? Tapi dengarkan baik-baik: kau yang melangkah, kau pula yang mencatat. Kalau roti itu dingin di jalan, katakan dingin. Kalau bungkusnya tergores semak tebing, akui tergores. Di pos ini kita tidak menutup luka dengan perumpamaan manis. Pulanglah membawa kabar yang jujur, sekalipun itu kabar yang berat.",
+      "text": "Kalau bukan kau yang jalan, siapa lagi yang mau mendaki bukit pagi-pagi begini? Tapi ingat satu hal: kaki yang melangkah harus sejalan dengan mulut yang melapor. Kalau rotinya dingin kena angin tebing, katakan dingin. Kalau bungkusnya tergores batu, tunjukkan goresannya. Air yang jernih tidak perlu diberi warna, Nara.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Aku paham, Bu. Waktu kabar tentang kapal Ayah sampai ke Dusun Sela... kami bisa bertahan menunggu setahun lagi cuma gara-gara secarik catatan jujur itu. Aku... ya, aku pengin membawa kabar yang seperti itu buat orang lain.",
+      "text": "Iya, Bu. Aku ingat kok. Waktu kabar kapal Ayah dulu nyampe ke Dusun Sela... Nenek nggak butuh penghiburan yang dibuat-buat, cuma butuh tahu cerita yang sebenarnya. Aku... ya, aku pengin nganter kabar yang kayak gitu juga.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Maren",
-      "text": "Mata air yang jernih selalu mengalir dari tempat yang tenang. Mulai dari yang kecil dulu: goreskan namamu di Buku Tamu Batu di sudut halaman sana, lalu periksa tas dan bekalmu. Jalan panjang di Tanah Sada selalu dimulai dari telapak kakimu sendiri.",
+      "text": "Nah, begitu baru kurir Pos Batu Biru. Sebelum turun ke halaman, pahatkan dulu namamu di Buku Tamu Batu di sudut sana, lalu periksa tas dan bungkusan rotinya di meja bekal. Jangan terburu-buru; bukit itu tidak akan lari ke mana-mana.",
       "action": "MEET_MAREN"
     }
   }

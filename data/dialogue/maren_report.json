@@ -6,44 +6,44 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "Kau kembali lebih lekas dari perkiraanku, Nara. Taruh dulu tasmu di atas meja kayu ini. Duduklah, aku ingin mendengar ceritamu sebelum kita membuka pembungkusnya.",
+      "text": "Masuklah, Nara, tutup tirai pintunya agar pasir tidak ikut menyerbu. Taruh tasmu di meja, basuh mukamu dulu kalau perih. Setelah napasmu tenang, baru ceritakan mengapa satu ikat masih ada di punggungmu.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Bu... aku cuma bisa bawa pulang satu ikat. Ikat yang satunya disita di pos gerbang timur. Ini surat bukti penahanan resmi dari Kak Kesa.",
+      "text": "Maaf, Bu... aku gagal nembus gerbang timur. Satu ikat ditahan di gudang pos pemeriksaan, aku cuma diizinin bawa balik yang satu ini. Ini lembar bukti penahanan yang ditandatangani Kak Kesa.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Maren",
-      "text": "Dan orang-orang yang menunggu di pos saudara?",
+      "text": "Dan orang-orang kita di pos saudara? Apakah ada pesan yang sempat lewat ke seberang?",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aku nggak bisa tembus sampai ke mereka, Bu. Jalurnya ditutup palang besi, dan Kesa sendiri nggak bisa mastiin kapan perintah penahanan itu dicabut.",
+      "text": "Sama sekali nggak bisa lewat, Bu. Palang besinya dikunci rapat. Kesa juga... kelihatannya dia sendiri tertekan sama perintah dari Benteng, tapi tetap nggak berani buka gerbang utama.",
       "next": "n4"
     },
     "choice_0": {
       "speaker": "Maren",
-      "text": "Kita catat jumlahnya: satu kembali, satu ditahan Dewan. Kau pulang membawa kabar yang bisa dipertanggungjawabkan, bukan alasan palsu. Laporanmu jujur, dan aku mempercayaimu sepenuhnya, Nara.",
+      "text": "Satu ikat kembali utuh, satu ikat ditahan dengan bukti tertulis. Kau tidak menutup-nutupi kegagalan, dan kau tidak meninggalkan barang tanpa pertanggungjawaban. Di mataku, Nara, kejujuran seperti ini jauh lebih berat nilainya daripada pengantaran yang mudah.",
       "action": "REPORT_DIRECT"
     },
     "choice_1": {
       "speaker": "Maren",
-      "text": "Takut itu manusiawi, Nara. Tapi menyembunyikan kenyataan hanya akan membuat orang yang lapar menunggu dalam kepalsuan. Terima kasih sudah berani mengatakannya apa adanya. Sekarang kita catat bersama di buku pos.",
+      "text": "Wajar kalau hatimu berat, Nak. Kurir yang tidak sedih saat kirimannya tertahan justru sudah kehilangan pedulinya. Terima kasih karena kau memilih pulang membawa kebenaran, bukan alasan manis.",
       "action": "REPORT_HESITANT"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Tunjukkan padaku kondisi sisa bungkusnya. Di pos ini tidak ada tempat untuk catatan yang hanya mau menyimpan cerita-cerita yang manis.",
+      "text": "Kemarikan ikatan yang tersisa, biar kita periksa bersama. Di pos ini, kejujuran dicatat persis sebagaimana adanya.",
       "choices": [
         {
-          "text": "“Ini kondisi sisa barangnya, Bu. Pengantaranku gagal sebagian.”",
+          "text": "“Ini sisa ikatannya, Bu. Pengantaranku gagal sebagian.”",
           "next": "choice_0"
         },
         {
-          "text": "“Aku sempat takut Ibu bakal kecewa berat... tapi aku harus jujur menceritakan semuanya.”",
+          "text": "“Tadi di jalan aku takut banget mengecewakan Ibu... tapi aku harus lapor apa adanya.”",
           "next": "choice_1"
         }
       ]

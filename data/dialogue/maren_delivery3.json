@@ -6,47 +6,47 @@
   "nodes": {
     "n0": {
       "speaker": "Maren",
-      "text": "(Maren menggeser sebongkah batu bata di dinding dapur pos, lalu mengeluarkan sebuah tabung kulit tua bersegel lilin keras.) Tiga puluh tahun aku menyimpannya di balik dinginnya batu ini, Nara. Tapi malam ini... aku harus berhenti hanya sekadar menyimpannya.",
+      "text": "(Maren mengangkat lempeng batu di balik tungku dapur, lalu mengeluarkan tabung kulit tua dengan surat bersegel lilin pekat.) Tiga puluh tahun benda ini berdiam di balik batu dingin Pos Batu Biru, Nara. Tapi setelah apa yang kita lihat di buku pemeriksaan tadi... waktu diamnya sudah habis.",
       "next": "n1"
     },
     "n1": {
       "speaker": "Maren",
-      "text": "Malam sebelum Hari Senyap, Sahdan menitipkan surat dan tas ini kepada Sarai. Sarai menjaganya, lalu mewariskannya kepada Bahar, lalu Bahar kepada Ilun, dan akhirnya sampai ke tanganku. Empat generasi penjaga pos menyimpan amanah ini tanpa berani membukanya.",
+      "text": "Malam sebelum jaringan terputus, Sahdan menitipkan surat ini bersama tas yang kaupakai itu kepada Sarai. Sarai menjaganya, lalu meneruskannya kepada Bahar, dari Bahar kepada Ilun, hingga jatuh ke tanganku. Empat generasi penjaga pos merawatnya tanpa sekali pun berani merusak segelnya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Nara",
-      "text": "Tapi kenapa nggak diantar dari dulu, Bu? Kenapa harus nunggu sampai tiga puluh tahun?",
+      "text": "Empat generasi? Tunggu... kalau suratnya sepenting itu, kenapa nggak langsung diantar aja dari zaman Bu Sarai dulu, Bu?",
       "next": "n3"
     },
     "n3": {
       "speaker": "Maren",
-      "text": "Karena air bah tak boleh dilepas ke lembah yang warganya belum siap, Nara. Selama tanda bahaya belum muncul di Simpul, kunci ini harus tetap disembunyikan jauh dari jangkauan pusat. Membawanya ke ibukota tanpa alasan yang sahih hanya akan mengundang perebutan kuasa. Dan hari ini... tanda-tanda itu akhirnya genap.",
+      "text": "Karena air di balik bendungan tidak boleh dibuka sebelum waktunya, Nara. Petunjuk luarnya tegas: selama penahanan masih stabil, kunci ini harus dijauhkan dari pusat agar tidak diperebutkan. Baru ketika lentera 009 berdenyut tiga kali tanpa disentuh dan cincinnya retak, surat ini wajib bergerak.",
       "next": "n4"
     },
     "n4": {
       "speaker": "Maren",
-      "text": "Dua puluh tahun lalu... aku nyaris menyerahkan rahasia surat ini ke tangan perwira Dewan karena ketakutan pos kita bakal digusur. Aku berhasil menahannya, tapi rasa bersalah itu masih tersisa di hatiku sampai sekarang.",
+      "text": "Dua puluh tahun silam, waktu patroli Dewan mengancam akan menutup sumur pos ini... tanganku hampir goyah menyerahkan surat ini demi menyelamatkan halaman kita. Aku menahannya, tapi rasa malu karena pernah bimbang itu tidak pernah hilang.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Nara",
-      "text": "Terus... kenapa Ibu malah percaya sama aku? Pengantaran perbekalan ke pos timur tadi aja aku gagal sebagian... makanannya disita di gerbang.",
+      "text": "Tapi, Bu... kenapa sekarang malah Ibu serahin ke aku? Tugas ketigaku ke pos saudara tadi aja gagal sebagian... separuh barangnya ketahan di gerbang.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Maren",
-      "text": "Justru karena itu, Nara. Saat pengantaranmu terhalang, kau tidak mengarang dusta untuk menyelamatkan mukamu sendiri. Kau pulang dan mengatakan siapa yang masih menunggu di seberang palang tol. Surat ini tidak butuh pahlawan bertangan besi; ia butuh seorang pengantar yang berani menatap mata orang lain dan berkata jujur.",
+      "text": "Justru karena caramu pulang dari gerbang itu, Nara. Kau tidak berbohong ketika jalanmu tertutup, dan kau tidak melupakan siapa yang masih menunggu. Surat Penyalaan ini tidak mencari orang yang tak pernah terhalang—ia membutuhkan pembawa yang lidahnya jujur di hadapan saksi.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Maren",
-      "text": "Terimalah Surat Penyalaan ini. Segel di depannya belum boleh dibuka. Begitu nama kita selesai dicap di punggungnya, bawa ia ke lempeng pemeriksaan Simpul 009 di puncak bukit.",
+      "text": "Peganglah Surat Penyalaan ini baik-baik. Segel di bagian mukanya harus tetap tertutup sampai tiga bangsa membubuhkan Cap Saksi. Sekarang, mari kita cap punggungnya di bantalan tinta resonansi pos, lalu ujilah di lempeng Simpul 009.",
       "next": "n8"
     },
     "n8": {
       "speaker": "Nara",
-      "text": "Aku terima surat ini, Bu. Aku belum tahu seberapa jauh jalan di depan sana... tapi kujamin, tas dan surat ini bakal kujaga seperti janjiku.",
+      "text": "Aku... aku terima suratnya, Bu. Tangan aku agak dingin, sih, jujur aja... tapi segel sama tas ini bakal kujaga betul-betul.",
       "action": "RECEIVE_LETTER"
     }
   }

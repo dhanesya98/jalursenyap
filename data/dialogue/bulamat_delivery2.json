@@ -6,64 +6,64 @@
   "nodes": {
     "n0": {
       "speaker": "Bu Lamat",
-      "text": "Pasang baik, kurir muda! Bau pasir basah begini... jangan bilang kau bawa sesuatu yang asin dari arah pesisir?",
+      "text": "Pasang baik, kurir muda! Hahaha, langkah kakimu terdengar dari ujung titian. Jangan bilang kau jauh-jauh menembus kabut lembah cuma mau menumpang minum air sumurku?",
       "next": "n1"
     },
     "n1": {
       "speaker": "Nara",
-      "text": "Layar penuh, Bu Lamat! Ini... kiriman dari Pak Dorin di Rumah Layar. Cuma, Bu... sebelum ditempel ke telinga, lihat dulu ujung cangkangnya. Tadi pas nyeberang ngarai berkabut, sempat kena gesek batu tebing sedikit.",
+      "text": "Layar penuh, Bu Lamat! Ini, aku bawa Kerang Suara dari Pak Dorin. Nggak retak kok, Bu. Cuma, ya... agak lembap dikit kain pembungkusnya kena kabut ngarai. Tadi udah kubungkus dua lapis. Tiga, sih, sebenarnya.",
       "next": "n2"
     },
     "n2": {
       "speaker": "Bu Lamat",
-      "text": "(Bu Lamat terkekeh sambil meraba lekuk cangkang kerang.) Alah, jangankan kerang kapur begini, perahu cadik di Bahtari saja pulang melaut pasti ada lecetnya! Sini, taruh di telapak tanganku. (Bu Lamat mendekatkan kerang ke telinga. Senandung pelan terdengar merdu di antara suara riak air sumur... hingga pada nada terakhir, suaranya tergelincir sumbang.)",
+      "text": "(Bu Lamat tertawa hangat sambil menerima kerang itu.) Alah, namanya juga barang lewat kabut, Nak! Perahu layar kalau takut basah ya lebih baik dikandangkan di dapur! Sini, biar kudengar. (Ia menempelkan kerang ke telinga. Senandung laut mengalir merdu... lalu di nada tinggi terakhir, suaranya terpeleset sumbang.)",
       "next": "n3"
     },
     "n3": {
       "speaker": "Nara",
-      "text": "Aduh... ujungnya sumbang ya, Bu? Apa resonansinya goyah gara-gara kabut lembah tadi?",
+      "text": "Eh—aduh, maaf, Bu! Kok nada terakhirnya meleset gitu? Apa jangan-jangan cangkangnya keguncang pas aku turun tangga tadi, ya?",
       "next": "n4"
     },
     "n4": {
       "speaker": "Bu Lamat",
-      "text": "(Tertawa lepas sampai matanya menyipit) Hahaha! Goyah apanya! Si Dorin itu dari bujangan kalau disuruh nyanyi pas air surut, nada tingginya memang selalu terpeleset seperti kepiting di atas karang licin! Dulu aku suka geregetan dan mengomeli dia. Tapi bertahun-tahun ditinggal di pondok terpencil ini... nada sumbang itulah yang paling kurindukan, Nak.",
+      "text": "(Tertawa lepas sampai menyeka sudut matanya) Hahaha! Keguncang apanya! Itu memang suara si Dorin! Dari zaman giginya masih ompong, kalau nyanyi bagian bait pasang naik, nadanya pasti tergelincir macam belut lepas dari tangguk! Kalau lagunya mulus tanpa cacat, malah curiga aku jangan-jangan itu suara orang lain.",
       "next": "n5"
     },
     "n5": {
       "speaker": "Bu Lamat",
-      "text": "Terima kasih banyak, ya. Orang-orang di pos Dewan mungkin menganggap ini cuma kerang mainan pengisi waktu luang. Tapi buat rumah panggung ini... lagu sumbang ini bikin kursi kosong di beranda terasa ada orangnya lagi.",
+      "text": "Orang-orang Dewan di darat suka mengira yang namanya bukti itu harus cap besi dan kertas kaku. Padahal buat kami orang Bahtari... nada sumbang yang cuma keluarga sendiri yang hafal, itulah tanda kalau anak itu masih hidup dan ingat jalan pulang.",
       "next": "n6"
     },
     "n6": {
       "speaker": "Nara",
-      "text": "Aku paham rasanya nunggu, Bu. Ayahku juga belum pulang dari pesisir Bahtari. Kadang aku takut... takut kalau nanti ketemu lagi, aku udah lupa sama suaranya.",
+      "text": "Enak ya, Bu, masih bisa dengar suaranya. Ayahku juga orang Bahtari... udah lima tahun belum pulang. Kadang aku suka takut sendiri kalau... ya, kalau lama-lama aku lupa suara ketawanya kayak apa.",
       "next": "n7"
     },
     "n7": {
       "speaker": "Bu Lamat",
-      "text": "(Sorot matanya melembut, mengusap punggung tangan Nara.) Suara manusia itu seperti arus bawah laut, Nara. Sekalipun ombak di atas berganti rupa, tarikan arusnya tetap sama. Kau anak Tarun, kan? Wajahmu mirip betul waktu dia pertama kali bawa kapal dagang ke Bahtari—matanya selalu awas menatap cakrawala.",
+      "text": "(Tawanya mereda menjadi senyum lembut, menepuk punggung tangan Nara.) Kau anak si Tarun dari Rumah Layar itu, kan? Dengar, Nak. Ingatan keluarga itu seperti tali sauh di bawah arus: biarpun angin di atas ribut bukan main, talinya tidak putus. Nanti kalau kau ketemu Dorin di Bandar Lada, tagih sendiri cerita ayahmu.",
       "next": "n8"
     },
     "choice_0": {
       "speaker": "Bu Lamat",
-      "text": "Duduklah di sampingku. Sebentar saja, kita dengarkan deburan ombak kecil di dalam kerang ini bersama-sama. Habis itu, Ruru bisa menemanimu memeriksa Sumur Induk di samping balai.",
+      "text": "Sini, duduk di bangku itu. Kita putar sekali lagi senandung sumbangnya biar kabut di luar tahu rumah ini tidak sepi. Habis itu baru kau tengok sumur di sebelah.",
       "action": "DELIVER_SHELL_A"
     },
     "choice_1": {
       "speaker": "Bu Lamat",
-      "text": "Terima kasih, anak baik. Lagunya sudah berlabuh di hatiku. Jangan cemas meninggalkanku sendirian; air mata orang tua kalau bahagia itu nggak bikin asin pipi.",
+      "text": "Pergilah periksa, Nak. Pasang telingamu tajam-tajam. Aku di sini saja sambil memangku kerang ini—rasanya seperti baru kedatangan tamu dari kampung halaman.",
       "action": "DELIVER_SHELL_B"
     },
     "n8": {
       "speaker": "Bu Lamat",
-      "text": "Sebelum kau balik ke Batu Biru, tolong tengok Sumur Induk di sebelah balai sana. Sejak kemarin, ada dengungan aneh yang memantul dari dasarnya. Makin hari makin keras. Tolong sampaikan pada Maren apa yang kaudengar dengan telingamu sendiri.",
+      "text": "Oh iya, sebelum kau balik ke tempat Maren... tolong tengok Sumur Induk di samping balai itu sebentar. Makin hari dengungannya makin rewel, seperti ada orang berbisik dari bawah batu. Coba kau dengar sendiri.",
       "choices": [
         {
-          "text": "“Aku ingin duduk dan mendengarkan sekali lagi bersama Ibu.”",
+          "text": "“Aku temani Ibu dengar lagunya sekali lagi dulu, boleh?”",
           "next": "choice_0"
         },
         {
-          "text": "“Aku akan periksa sumur sekarang dan bawa kabarnya ke Bu Maren.”",
+          "text": "“Aku periksa Sumur Induknya sekarang ya, Bu.”",
           "next": "choice_1"
         }
       ]
