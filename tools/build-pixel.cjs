@@ -4,7 +4,7 @@ const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const root=path.resolve(__dirname,'..');
 function build(){
  const read=f=>fs.readFileSync(path.join(root,f),'utf8');
- let html=read('bab0.html');
+ let html=read('index.html');
  html=html.replace(/<link rel="stylesheet" href="([^"]+)">/g,(_,f)=>`<style>/* ${f} */\n${read(f)}\n</style>`);
  const audio={};for(const name of ['desert_exploration','desert_sanctuary','seashell_lullaby'])audio[name]='data:audio/mpeg;base64,'+fs.readFileSync(path.join(root,'assets/audio/sfx',name+'.mp3')).toString('base64');
  html=html.replace('<script src="src/bab0-pixel-engine.js">','<script>/* embedded audio */\nglobalThis.PIXEL_AUDIO_ASSETS='+JSON.stringify(audio)+';\n</script>\n<script src="src/bab0-pixel-engine.js">');

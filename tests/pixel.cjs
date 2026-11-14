@@ -48,7 +48,7 @@ test('save recovery uses full feet and strips obsolete glide state',()=>{
  const saved=C.validate(old);assert(C.walkable(saved.mapId,saved.player.x,saved.player.y,saved));assert(!('glide' in saved.player));
  const all=at(null);for(const [id,m]of Object.entries(D.MAPS))for(const patrol of m.patrols||[])assert(C.segmentClear(id,...patrol.waypoints,all),id+' patrol');
  assert(Object.values(C.links).flat().every(l=>l.kind==='ladder'));
- for(const file of ['src/bab0-pixel-engine.js','src/gamedev-systems.js','bab0.html'])assert(!/grappl|gliding|btn-hook|cape-meter|KeyF/.test(fs.readFileSync(path.join(root,file),'utf8')),file+' removed controls');
+ for(const file of ['src/bab0-pixel-engine.js','src/gamedev-systems.js','index.html'])assert(!/grappl|gliding|btn-hook|cape-meter|KeyF/.test(fs.readFileSync(path.join(root,file),'utf8')),file+' removed controls');
 });
 test('all eight maps contain swept feet at cliffs and outer boundaries in every direction',()=>{
  const all=at(null),directions=Array.from({length:16},(_,i)=>[Math.cos(i*Math.PI/8),Math.sin(i*Math.PI/8)]);let checked=0;
