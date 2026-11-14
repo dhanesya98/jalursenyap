@@ -1,0 +1,106 @@
+{
+  "project": "Jalur-Senyap-v4 (103 Post-Senyap)",
+  "pipeline": "2D-to-3D Texture Projection & UV Atlas Swatches",
+  "assets": [
+    {
+      "file": "assets/cincin/architecture.webp",
+      "source": "drive:assets/cincin/architecture.png",
+      "role": "3D building material atlas (2x3 swatches: sandstone, blue tile, terracotta, woven linen, carved wood, basalt)",
+      "dimensions": "512x768",
+      "colorSpace": "sRGB",
+      "alpha": false,
+      "sizeKB": 98.9,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/sand-ground.webp",
+      "source": "drive:assets/cincin/sand-ground.png",
+      "role": "Seamless tiled desert terrain ground texture",
+      "dimensions": "512x512",
+      "colorSpace": "sRGB",
+      "alpha": false,
+      "sizeKB": 13.6,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/asharim-bg.webp",
+      "source": "drive:assets/cincin/asharim-bg.webp",
+      "role": "Atmospheric horizon sky & title backdrop",
+      "dimensions": "1024x576",
+      "colorSpace": "sRGB",
+      "alpha": false,
+      "sizeKB": 60.1,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/nilasar-marsiyah.webp",
+      "source": "drive:assets/cincin/nilasar-marsiyah.webp",
+      "role": "NPC 2D turnaround sprite sheet: Marsiyah",
+      "dimensions": "1024x512",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 90.6,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/nilasar-pedagang-asharim.webp",
+      "source": "drive:assets/cincin/nilasar-pedagang-asharim.webp",
+      "role": "NPC 2D turnaround sprite sheet: Pedagang Asharim",
+      "dimensions": "1024x512",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 87.0,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/nilasar-pedagang-bahtari.webp",
+      "source": "drive:assets/cincin/nilasar-pedagang-bahtari.webp",
+      "role": "NPC 2D turnaround sprite sheet: Pedagang Bahtari",
+      "dimensions": "1024x512",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 83.1,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/nilasar-kios.webp",
+      "source": "drive:assets/cincin/nilasar-kios.webp",
+      "role": "2D illustrated kiosk prop for 3D courtyard",
+      "dimensions": "512x340",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 49.4,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/asharim-9.webp",
+      "source": "drive:assets/cincin/asharim-9.webp",
+      "role": "2D illustrated caravan rug/cargo decal",
+      "dimensions": "256x164",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 25.1,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/asharim-10.webp",
+      "source": "drive:assets/cincin/asharim-10.webp",
+      "role": "2D illustrated clay jar & crate prop",
+      "dimensions": "256x228",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 43.0,
+      "technical_checks_passed": true
+    },
+    {
+      "file": "assets/cincin/portrait-maruani.webp",
+      "source": "drive:assets/cincin/portrait-maruani.png",
+      "role": "Dialogue portrait: Maruani",
+      "dimensions": "256x236",
+      "colorSpace": "sRGB",
+      "alpha": true,
+      "sizeKB": 13.1,
+      "technical_checks_passed": true
+    }
+  ]
+}

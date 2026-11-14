@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Jalur Senyap — Buku Seorang Perintis</title>
+  <link rel="stylesheet" href="src/bab0-pixel.css"><link rel="stylesheet" href="src/pixel-ui.css">
+</head>
+<body>
+  <main id="stage">
+    <canvas id="game-canvas" width="1280" height="720" aria-label="Dunia 3/4 Isometric-Top-Down Jalur Senyap"></canvas>
+
+    <!-- Ultra-Clean Single Top Ribbon HUD -->
+    <header id="hud-topbar" class="hidden" aria-label="Status & Navigasi">
+<aside class="status-panel"><div class="era"><span>TAHUN</span><b>103</b><small>Post-Senyap</small></div><div class="status-body"><strong>Nara</strong><small>Perintis Nilasar</small><label>Muatan <meter id="cargo-meter" min="0" max="100" value="100"></meter></label><span id="hud-weather">Angin teduh</span></div></aside>
+<aside class="objective-panel"><p class="eyebrow" id="hud-progress"></p><h2 id="hud-seq-title"></h2><p id="hud-seq-obj"></p><button id="btn-track" class="text-button">Lihat di peta <kbd>M</kbd></button></aside>
+<div class="location-panel"><span class="compass" aria-hidden="true">✦</span><div><strong id="hud-location">Pos Nilasar</strong><small id="hud-terrain">Pasir lembut</small></div></div>
+<nav class="toolbelt" aria-label="Perlengkapan dan menu"><button id="btn-sonar">◉ Ruru <kbd>Q</kbd></button><button id="btn-open-journal">▥ Jurnal <kbd>J</kbd></button><button id="btn-open-map">◇ Peta <kbd>M</kbd></button><button id="btn-open-pause">Ⅱ Jeda <kbd>Esc</kbd></button></nav><span id="save-status">Perjalanan baru</span></header>
+
+    <div id="hud-messages">
+      <div id="hud-toast" role="status" aria-live="polite"></div>
+      <div id="hud-prompt" class="hidden" role="button" tabindex="0"></div>
+    </div>
+
+    <!-- Sleek Visual Novel Dialogue Bar with Branching Choices, Auto, Skip, Backlog & Shell Audio Player -->
+    <section id="vn-overlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="vn-speaker">
+      <div class="vn-card">
+        <div class="vn-portrait-wrap"><img id="vn-portrait" alt="Potret Pembicara"></div>
+        <div class="vn-body">
+          <div>
+            <p class="eyebrow" id="vn-role">POS NILASAR</p>
+            <div class="vn-toolbar">
+              <button id="vn-backlog-btn" type="button">Riwayat [B]</button>
+              <button id="vn-auto-btn" type="button">Otomatis [V]</button>
+              <button id="vn-skip-btn" type="button">Teks terbaca [S]</button>
+            </div>
+          </div>
+          <h3 id="vn-speaker">Bu Marsiyah</h3>
+          <p id="vn-text"></p>
+          <div id="vn-choices" class="vn-choices"></div>
+          <div class="vn-foot">
+            <span id="vn-progress">Dialog Aktif</span>
+            <button id="vn-next" type="button" class="primary">Lanjut [E]</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VN Backlog Modal -->
+    <div id="vn-backlog-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">ARSIP PERCAKAPAN</p>
+            <h2>Riwayat Dialog</h2>
+          </div>
+          <button type="button" data-close-modal>Tutup</button>
+        </div>
+        <div id="vn-backlog-list"></div>
+      </div>
+    </div>
+
+    <!-- Title Screen Overlay -->
+    <section id="title-overlay" class="modal-backdrop title-screen" role="dialog" aria-modal="true" tabindex="-1"><div class="title-copy"><p class="eyebrow">TANAH SADA · CINCIN PERUNGGU</p><h1>Jalur<br><em>Senyap.</em></h1><div class="title-rule"></div><p class="title-quote">Jalan yang kau buka<br>mengubah perjalanan orang lain.</p><p class="title-description">Ikuti Nara dan Ruru melintasi suaka air, badai pasir, dan janji yang belum selesai.</p><div class="title-buttons"><button id="btn-start" class="primary">Mulai perjalanan →</button><button id="btn-continue" class="hidden">Lanjutkan perjalanan</button><button id="btn-title-help" class="text-button">Panduan perintis</button></div><small class="title-edition">BUKU I · DARI NILASAR KE TUJUH PANJI</small></div><div class="title-seal" aria-hidden="true"><span>PERHIMPUNAN</span><b>✦</b><span>PERINTIS NILASAR</span></div></section>
+<!-- Mini-Game Modal (Cargo Balance, Resonance Rings, Balkut Winch Timing) -->
+    <div id="mg-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div><p class="eyebrow">TANTANGAN PERINTIS</p><h2 id="mg-title">Tantangan</h2></div>
+          <button id="challenge-cancel" class="challenge-cancel">Kembali <kbd>Esc</kbd></button>
+        </div>
+        <p id="mg-desc"></p>
+        <div id="mg-body"></div>
+      </div>
+    </div>
+
+    <!-- Full 4-Tab Compendium Journal Modal -->
+    <section id="journal-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1"><div class="book-shell"><aside class="character-page"><p class="eyebrow">PERINTIS KAFILAH</p><h2>Nara <i>&amp; Ruru</i></h2><div class="character-art"><img id="journal-nara" alt="Nara"><img id="journal-ruru" alt="Ruru"></div><blockquote>“Tidak ada yang melangkah sendirian.”</blockquote><p id="journal-status"></p></aside><div class="modal-card book-pages"><div class="modal-header"><div><p class="eyebrow">PERHIMPUNAN PERINTIS NILASAR</p><h2>Buku Jalur</h2></div><button data-close-modal>Tutup</button></div><nav class="folder-tabs" aria-label="Halaman buku"><button class="primary" data-jtab="perjalanan">Tugas</button><button data-jtab="rumor">Catatan &amp; rumor</button><button data-jtab="bangsa">Lima Bangsa</button><button data-jtab="perlengkapan">Perlengkapan</button></nav><div id="jtab-perjalanan" class="j-tab-pane"></div><div id="jtab-rumor" class="j-tab-pane hidden"></div><div id="jtab-bangsa" class="j-tab-pane hidden"></div><div id="jtab-perlengkapan" class="j-tab-pane hidden"></div></div></div></section><!-- Full 2-Tab World Map & Fast-Travel Modal -->
+    <div id="map-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">KARTOGRAFI EKSPEDISI · BAB 0 &amp; BAB 1</p>
+            <h2>Peta Wilayah &amp; Tanah Sada</h2>
+          </div>
+          <div>
+            <button type="button" id="map-mode-local" class="primary">Jalur lokal</button>
+            <button type="button" id="map-mode-world">Tanah Sada (Lima Bangsa)</button>
+            <button type="button" data-close-modal>Tutup</button>
+          </div>
+        </div>
+        <div id="map-pane-local">
+          <p>Perjalanan cepat hanya ke wilayah yang telah dikunjungi dan jalurnya sudah terbuka.</p>
+          <div class="map-spread"><div class="map-art"><canvas id="route-map" width="650" height="470" aria-label="Diagram jalur delapan wilayah"></canvas><p>Hubungan jalur, bukan skala jarak.</p></div><div class="map-grid">
+            <button class="map-node" type="button" data-travel="nilasar"><strong>1. Pos Nilasar</strong><small>BAB 0 · Pendopo Kubah Biru, Pasar Teduh &amp; Bata Tersegel</small></button>
+            <button class="map-node" type="button" data-travel="sumi"><strong>2. Telaga Sumi</strong><small>BAB 0 · Teras Air Pirus, Bu Lamit &amp; Sumur Induk</small></button>
+            <button class="map-node" type="button" data-travel="senja"><strong>3. Menara Senja</strong><small>BAB 0 · Lereng Longsoran, Sonar Ruru &amp; Pak Jumel</small></button>
+            <button class="map-node" type="button" data-travel="gerbang"><strong>4. Gerbang Timur</strong><small>BAB 0 · Pemeriksaan Kesa &amp; Stealth Razia Dewan</small></button>
+            <button class="map-node" type="button" data-travel="simpul"><strong>5. Menara Simpul ke-9</strong><small>BAB 0 · Lempeng Menara, Gema Sahdan &amp; Siluet Bukit</small></button>
+            <button class="map-node" type="button" data-travel="sela"><strong>6. Dusun Sela &amp; Kanal</strong><small>BAB 1 · Rumah Nenek Ima, Alat Tenun &amp; Pos Dagang Kanal</small></button>
+            <button class="map-node" type="button" data-travel="balkut"><strong>7. Perbatasan &amp; Tebing Balkut</strong><small>BAB 1 · Orsuk, Meja Takar Maruani &amp; 3 Kerekan Jembatan</small></button>
+            <button class="map-node" type="button" data-travel="salkara"><strong>8. Padang Salkara (Tujuh Panji)</strong><small>BAB 1 · Dargun, Salgur, Odgar, Api Sidang &amp; Batu Nama</small></button>
+          </div>
+        </div>
+        </div><div id="map-pane-world" class="hidden">
+          <div>
+            <img id="world-atlas-img" alt="Peta Tanah Sada">
+            <div>
+              <div class="j-card"><strong>Asharim</strong><p>Suaka air, batu pasir, garam, pasar teduh Pos Nilasar &amp; Telaga Sumi.</p></div>
+              <div class="j-card"><strong>Cirusia</strong><p>Padang Salkara, 47 tenda felt, Tujuh Panji berkuda, karavan Balkut.</p></div>
+              <div class="j-card"><strong>Tseren</strong><p>Kertas serat, tinta kontrak, benang peredam akustik pada tas Sahdan.</p></div>
+              <div class="j-card"><strong>Bahtari</strong><p>Pelaut keras kepala, tali layar, minyak lentera, lada biru selatan.</p></div>
+              <div class="j-card"><strong>Lulanai</strong><p>Dataran basal, Cincin Perunggu, Penutup Telinga, 99 Menara Simpul.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pause & 3-Slot Atomic Save Modal -->
+    <div id="pause-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1"><div class="modal-card"><div class="modal-header"><div><p class="eyebrow">JEDA DI TEPI JALAN</p><h2>Angin dapat menunggu.</h2></div><button data-close-modal>Kembali</button></div><div class="pause-layout"><div><h3>Simpanan perjalanan</h3><p class="muted">Autosave terpisah dari tiga slot manual.</p><div id="save-slots-box"></div><div class="button-row"><button id="btn-checkpoint">Pijakan aman</button><button id="btn-title">Simpan &amp; ke judul</button></div></div><div class="settings"><h3>Suara &amp; kenyamanan</h3><label>Volume utama<input data-setting="volume" type="range" min="0" max="1" step=".05"></label><label>Musik<input data-setting="music" type="range" min="0" max="1" step=".05"></label><label>Efek suara<input data-setting="effects" type="range" min="0" max="1" step=".05"></label><label>Ukuran teks<select data-setting="textScale"><option value="1">Normal</option><option value="1.2">Besar</option><option value="1.4">Sangat besar</option></select></label><label>Tantangan<select data-setting="puzzleMode"><option value="logic">Papan logika · tanpa batas waktu</option><option value="timing">Irama · ketepatan waktu</option></select></label><label><input data-setting="reducedMotion" type="checkbox"> Kurangi gerakan</label><div class="button-row"><button id="btn-help">Kontrol</button><button id="btn-fullscreen">Layar penuh</button></div></div></div></div></div><!-- Chapter 1 Completion Modal -->
+    <div id="ending-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-card">
+        <p class="eyebrow">BAB 0 &amp; BAB 1 SELESAI · MANDAT EMPAT HARI</p>
+        <h2>Bukti Belum Ditemukan. Jalan Belum Berakhir.</h2>
+        <p>
+          Seluruh 22 babak dan 58 objektif (dari Pos Nilasar hingga Sidang Tujuh Panji dan Monolit Batu Nama di Padang Salkara) telah tuntas. Odgar menunda perang selama empat hari pergantian angin.
+        </p>
+        <button id="btn-ending-explore" type="button" class="primary">Kembali Menjelajahi Dunia</button>
+      </div>
+    </div>
+  <section id="help-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1"><article class="modal-card"><div class="modal-header"><h2>Baca tanah. Jaga janji.</h2><button data-close-modal>Kembali</button></div><div class="control-grid"><p><kbd>WASD / Panah</kbd>Berjalan. Klik tanah untuk mencari jalur.</p><p><kbd>Shift</kbd>Berlari; lereng turun memberi dorongan.</p><p><kbd>Spasi</kbd>Melompat. Pijakan tetap mengikuti jalur tanah.</p><p><kbd>E</kbd>Bicara atau periksa objek.</p><p><kbd>Q</kbd>Ruru membaca pijakan. Jeda 12 detik.</p><p><kbd>J / Tab</kbd>Buku Jalur. Di menu Tab memindah fokus.</p><p><kbd>M / Esc</kbd>Peta / jeda. Esc menutup lapisan teratas.</p></div><p>Gamepad: stik bergerak, A lompat/konfirmasi, X interaksi, Y Ruru, B kembali/jeda, Start jeda. Berlindung saat badai. Papan logika menyediakan petunjuk, urungkan, dan ulangi.</p></article></section><section id="confirm-overlay" class="modal-backdrop hidden" role="dialog" aria-modal="true" tabindex="-1"><article class="modal-card"><h2>Mulai perjalanan baru?</h2><p>Autosave akan diganti. Tiga slot manual tetap tersimpan.</p><div class="button-row"><button data-close-modal>Kembali</button><button id="confirm-new" class="primary">Mulai baru</button></div></article></section><div id="loading" role="status">Membuka buku perjalanan…</div></main>
+
+  <script src="data/pixel-bab0-assets.js"></script>
+  <script src="data/game-data.js"></script>
+  <script src="src/cincin-story.js"></script>
+  <script src="src/cincin-dialogues.js"></script>
+  <script src="data/pixel-ui-assets.js"></script><script src="src/gamedev-systems.js"></script><script src="src/bab0-pixel-data.js"></script>
+  <script src="src/pixel-campaign.js"></script><script src="src/bab0-pixel-engine.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,48 @@
+{
+  "id": "maren_delivery2",
+  "npc": "Marsiyah",
+  "title": "An Entrusted Song for Telaga Sumi",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Rotinya udah nyampe, Bu! Pak Jumel ngomel dikit soal lututnya, tapi langsung disimpan kok rotinya. Eh—terus dia nunjukin buku harian kakeknya. Ada gambar tas ini, persis banget sampai ke paku perunggunya, sama catatan kalau Sahdan balik ke pusat buat nahan gaung...",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Marsiyah",
+      "text": "Duduk dulu. Habiskan air di cawanmu sebelum kata-katamu saling mendahului. Nah. Catatan kakek Jumel itu memang benar adanya, Nara, tapi jangan biarkan teka-teki masa lalu membuat kakimu lupa pada tanah yang kauinjak hari ini. Masih ada orang yang sedang menunggu di seberang lembah.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Marsiyah",
+      "text": "Lihat kerang bergaris biru di atas kain itu. Kiriman dari Tiwano, pelaut Rumah Layar asal Bahtari, untuk istrinya—Bu Lamit—yang menjaga sumur tua di Telaga Sumi.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Kerang Suara? Yang dipakai orang pesisir buat nitip Lagu Titipan itu ya, Bu? Tapi... kok enteng banget? Kalau jatuh dikit aja pecah nggak, sih?",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Marsiyah",
+      "text": "Rongga kapurnya tipis karena harus menyimpan getaran suara manusia. Jangan dibuka di jalan, dan jangan sampai terbentur batu ngarai. Kalau cangkangnya tergores sedikit saja, katakan jujur pada Bu Lamit sebelum ia menempelkannya ke telinga.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Marsiyah",
+      "text": "Kabut putih sudah mulai turun menutup jurang barat. Lewatlah dari titian kayu yang utuh—jangan nekat melompat di tepian licin. Ambil juga Tangga Tali dari persediaan pos kita; pasang di tebing kalau kau butuh jalan memanjat yang aman.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Nara",
+      "text": "Oke. Satu Kerang Suara berisi Lagu Titipan, cangkang utuh, belum ada goresan. Buat Bu Lamit di Telaga Sumi. Aku bungkus kain tebal dulu di tas, terus jalan ngikutin lentera kuning.",
+      "next": "n7"
+    },
+    "n7": {
+      "speaker": "Marsiyah",
+      "text": "Hati-hati di titian barat, Nara. Kalau di Telaga Sumi kau mendengar sumur tuanya berbunyi aneh, dengarkan baik-baik, lalu ceritakan padaku saat cawan sore kita siap.",
+      "action": "ACCEPT_SHELL"
+    }
+  }
+}

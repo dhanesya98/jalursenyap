@@ -1,0 +1,688 @@
+{
+  "lockedAt": "2026-11-11T07:45:20.821Z",
+  "manifest": {
+    "portraits": [
+      {
+        "file": "nara.webp",
+        "size": 86724,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "kesa.webp",
+        "size": 54654,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "ruru.webp",
+        "size": 63956,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "tarun.webp",
+        "size": 61356,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "ima.webp",
+        "size": 53816,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "taluk.webp",
+        "size": 72700,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "sahdan.webp",
+        "size": 77810,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "marsiyah.webp",
+        "size": 69500,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "orsuk.webp",
+        "size": 63498,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "wilanu.webp",
+        "size": 70144,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "dalumi.webp",
+        "size": 79246,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "jumel.webp",
+        "size": 67252,
+        "mtime": "2026-11-09T03:59:48.000Z"
+      },
+      {
+        "file": "tiwano.webp",
+        "size": 64094,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "hemira.webp",
+        "size": 64794,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "wuren.webp",
+        "size": 59278,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "dargun.webp",
+        "size": 56346,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "hurgak.webp",
+        "size": 64870,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "kutlak.webp",
+        "size": 64730,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "salgur.webp",
+        "size": 63508,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "borlan.webp",
+        "size": 66348,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "burgul.webp",
+        "size": 51762,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "odgar.webp",
+        "size": 65868,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "wakil-pantang.webp",
+        "size": 49298,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "wakil-terbuka.webp",
+        "size": 61488,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "wakil-sesal.webp",
+        "size": 57748,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "saryel.webp",
+        "size": 74678,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "azhel.webp",
+        "size": 71498,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "ilyam.webp",
+        "size": 63234,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-asharim.webp",
+        "size": 70002,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-tseren.webp",
+        "size": 78492,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-cirusia.webp",
+        "size": 67354,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-bahtari.webp",
+        "size": 60294,
+        "mtime": "2026-11-09T04:00:02.000Z"
+      },
+      {
+        "file": "perajin-lulanai.webp",
+        "size": 60274,
+        "mtime": "2026-11-09T04:00:02.000Z"
+      },
+      {
+        "file": "bu-lamit.webp",
+        "size": 69624,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      }
+    ],
+    "characters": [
+      {
+        "file": "nara-tpose.webp",
+        "size": 199956,
+        "mtime": "2026-11-09T03:59:48.000Z"
+      },
+      {
+        "file": "marsiyah-tpose.webp",
+        "size": 166578,
+        "mtime": "2026-11-09T03:59:48.000Z"
+      },
+      {
+        "file": "jumel-tpose.webp",
+        "size": 151834,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "kesa-tpose.webp",
+        "size": 128256,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "bu-lamit-tpose.webp",
+        "size": 154472,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "tiwano-tpose.webp",
+        "size": 153304,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "tarun-tpose.webp",
+        "size": 143626,
+        "mtime": "2026-11-09T03:59:50.000Z"
+      },
+      {
+        "file": "ima-tpose.webp",
+        "size": 148862,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "taluk-tpose.webp",
+        "size": 168088,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "orsuk-tpose.webp",
+        "size": 157050,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "sahdan-tpose.webp",
+        "size": 165400,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "wilanu-tpose.webp",
+        "size": 141154,
+        "mtime": "2026-11-09T03:59:52.000Z"
+      },
+      {
+        "file": "dalumi-tpose.webp",
+        "size": 150142,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "hemira-tpose.webp",
+        "size": 149236,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "wuren-tpose.webp",
+        "size": 145110,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "dargun-tpose.webp",
+        "size": 133974,
+        "mtime": "2026-11-09T03:59:54.000Z"
+      },
+      {
+        "file": "hurgak-tpose.webp",
+        "size": 137558,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "kutlak-tpose.webp",
+        "size": 142920,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "salgur-tpose.webp",
+        "size": 148572,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "borlan-tpose.webp",
+        "size": 158450,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "burgul-tpose.webp",
+        "size": 143584,
+        "mtime": "2026-11-09T03:59:56.000Z"
+      },
+      {
+        "file": "odgar-tpose.webp",
+        "size": 167680,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "ruru-tpose.webp",
+        "size": 118764,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "wakil-pantang-tpose.webp",
+        "size": 133268,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "wakil-terbuka-tpose.webp",
+        "size": 144664,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "wakil-sesal-tpose.webp",
+        "size": 145078,
+        "mtime": "2026-11-09T03:59:58.000Z"
+      },
+      {
+        "file": "saryel-tpose.webp",
+        "size": 153522,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "azhel-tpose.webp",
+        "size": 174140,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "ilyam-tpose.webp",
+        "size": 148362,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-asharim-tpose.webp",
+        "size": 162894,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-tseren-tpose.webp",
+        "size": 148370,
+        "mtime": "2026-11-09T04:00:00.000Z"
+      },
+      {
+        "file": "pedagang-cirusia-tpose.webp",
+        "size": 150802,
+        "mtime": "2026-11-09T04:00:02.000Z"
+      },
+      {
+        "file": "pedagang-bahtari-tpose.webp",
+        "size": 160208,
+        "mtime": "2026-11-09T04:00:02.000Z"
+      },
+      {
+        "file": "perajin-lulanai-tpose.webp",
+        "size": 134708,
+        "mtime": "2026-11-09T04:00:02.000Z"
+      }
+    ],
+    "world": [
+      {
+        "file": "peta-lembah.svg",
+        "size": 6270,
+        "mtime": "2026-11-11T00:24:58.000Z"
+      },
+      {
+        "file": "prompts.json",
+        "size": 4060,
+        "mtime": "2026-11-10T03:17:14.370Z"
+      },
+      {
+        "file": "asharim-distance-v5-prompt.json",
+        "size": 1589,
+        "mtime": "2026-11-07T05:00:40.000Z"
+      },
+      {
+        "file": "lembah-pasir.webp",
+        "size": 395098,
+        "mtime": "2026-11-09T04:00:02.000Z"
+      },
+      {
+        "file": "telaga-sumi.webp",
+        "size": 358976,
+        "mtime": "2026-11-09T04:00:04.000Z"
+      },
+      {
+        "file": "simpul-sembilan.webp",
+        "size": 233844,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      },
+      {
+        "file": "asharim-distance-v5.webp",
+        "size": 92898,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "PETA TANAH SADA.png",
+        "size": 11300271,
+        "mtime": "2026-11-12T07:13:22.000Z"
+      },
+      {
+        "file": "peta-tanah-sada.webp",
+        "size": 741930,
+        "mtime": "2026-11-12T07:13:22.000Z"
+      },
+      {
+        "file": "nations\\prompts-dan-sumber.json",
+        "size": 14487,
+        "mtime": "2026-11-07T04:45:26.000Z"
+      },
+      {
+        "file": "nations\\asharim-concept-v1.webp",
+        "size": 288034,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "nations\\tseren-concept-v1.webp",
+        "size": 256250,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "nations\\cirusia-concept-v1.webp",
+        "size": 290820,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "nations\\bahtari-concept-v1.webp",
+        "size": 292386,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "nations\\lulanai-concept-v1.webp",
+        "size": 262994,
+        "mtime": "2026-11-11T00:23:54.000Z"
+      },
+      {
+        "file": "landscapes\\01-asharim-lembah-pasir.webp",
+        "size": 395098,
+        "mtime": "2026-11-09T04:00:03.275Z"
+      },
+      {
+        "file": "landscapes\\03-tseren-pegunungan-silin.webp",
+        "size": 287228,
+        "mtime": "2026-11-09T04:00:03.516Z"
+      },
+      {
+        "file": "landscapes\\02-cirusia-padang-salkara.webp",
+        "size": 275212,
+        "mtime": "2026-11-09T04:00:03.752Z"
+      },
+      {
+        "file": "landscapes\\04-bahtari-kepulauan-lamuna.webp",
+        "size": 366454,
+        "mtime": "2026-11-09T04:00:04.004Z"
+      },
+      {
+        "file": "landscapes\\05-lulanai-dataran-basalt.webp",
+        "size": 259764,
+        "mtime": "2026-11-09T04:00:04.251Z"
+      },
+      {
+        "file": "landscapes\\01-asharim-pos-nilasar.webp",
+        "size": 317016,
+        "mtime": "2026-11-09T04:00:04.493Z"
+      },
+      {
+        "file": "landscapes\\01-asharim-telaga-sumi.webp",
+        "size": 358976,
+        "mtime": "2026-11-09T04:00:04.764Z"
+      },
+      {
+        "file": "landscapes\\04-bahtari-bandar-lada.webp",
+        "size": 338894,
+        "mtime": "2026-11-09T04:00:05.028Z"
+      },
+      {
+        "file": "landscapes\\05-lulanai-lulan-tua.webp",
+        "size": 295122,
+        "mtime": "2026-11-09T04:00:05.267Z"
+      },
+      {
+        "file": "landscapes\\06-dewan-tetua-benteng-tata.webp",
+        "size": 368608,
+        "mtime": "2026-11-09T04:00:05.527Z"
+      },
+      {
+        "file": "landscapes\\07-menara-keseratus.webp",
+        "size": 260928,
+        "mtime": "2026-11-09T04:00:05.760Z"
+      },
+      {
+        "file": "landscapes\\01-asharim-dusun-sela.webp",
+        "size": 305198,
+        "mtime": "2026-11-09T04:00:06.001Z"
+      },
+      {
+        "file": "landscapes\\14-simpul-sembilan.webp",
+        "size": 233844,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      },
+      {
+        "file": "landscapes\\16-batu-tepi.webp",
+        "size": 266668,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      },
+      {
+        "file": "landscapes\\17-desa-kertas-awan.webp",
+        "size": 271922,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      },
+      {
+        "file": "landscapes\\18-gudang-naskah.webp",
+        "size": 293216,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      },
+      {
+        "file": "landscapes\\19-menara-pusat.webp",
+        "size": 262720,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      },
+      {
+        "file": "landscapes\\20-gerbang-surut.webp",
+        "size": 253326,
+        "mtime": "2026-11-09T04:00:06.000Z"
+      }
+    ],
+    "kits": [
+      {
+        "file": "kit-lima-bangsa\\asharim-bangunan.webp",
+        "size": 1939854,
+        "mtime": "2026-11-09T04:42:38.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\asharim-fisik-busana.webp",
+        "size": 1635272,
+        "mtime": "2026-11-09T04:42:38.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\bahtari-bangunan.webp",
+        "size": 1767036,
+        "mtime": "2026-11-09T04:42:46.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\bahtari-fisik-busana.webp",
+        "size": 1127532,
+        "mtime": "2026-11-09T04:42:46.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\cirusia-bangunan.webp",
+        "size": 1704830,
+        "mtime": "2026-11-09T04:42:42.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\cirusia-fisik-busana.webp",
+        "size": 1599368,
+        "mtime": "2026-11-09T04:42:44.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\lulanai-bangunan.webp",
+        "size": 1877228,
+        "mtime": "2026-11-09T04:42:48.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\lulanai-fisik-busana.webp",
+        "size": 1482196,
+        "mtime": "2026-11-09T04:42:48.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\tseren-bangunan.webp",
+        "size": 1849922,
+        "mtime": "2026-11-09T04:42:40.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\tseren-fisik-busana.webp",
+        "size": 1027408,
+        "mtime": "2026-11-09T04:42:42.000Z"
+      },
+      {
+        "file": "kit-lima-bangsa\\PREVIEW.webp",
+        "size": 731154,
+        "mtime": "2026-11-09T04:42:52.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\01-anatomi-dasar.webp",
+        "size": 1567680,
+        "mtime": "2026-11-09T04:53:30.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\02-adaptasi-lima-wilayah.webp",
+        "size": 1543038,
+        "mtime": "2026-11-09T04:53:30.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\03-menara-pusat.webp",
+        "size": 2079278,
+        "mtime": "2026-11-09T04:53:32.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\04-menara-sembilan.webp",
+        "size": 2100344,
+        "mtime": "2026-11-09T04:53:32.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\05-menara-keseratus.webp",
+        "size": 1907962,
+        "mtime": "2026-11-09T04:53:34.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\06-menara-redup.webp",
+        "size": 1855742,
+        "mtime": "2026-11-09T04:53:36.000Z"
+      },
+      {
+        "file": "kit-menara-simpul\\PREVIEW.webp",
+        "size": 515872,
+        "mtime": "2026-11-09T04:53:38.000Z"
+      },
+      {
+        "file": "interior\\01-interior-pos-nilasar.webp",
+        "size": 2202266,
+        "mtime": "2026-11-09T05:12:14.000Z"
+      },
+      {
+        "file": "interior\\02-interior-rumah-nara.webp",
+        "size": 2315886,
+        "mtime": "2026-11-09T05:12:16.000Z"
+      },
+      {
+        "file": "interior\\03-interior-kabin-bahtari.webp",
+        "size": 2181698,
+        "mtime": "2026-11-09T05:12:16.000Z"
+      },
+      {
+        "file": "interior\\04-interior-tenda-balkut.webp",
+        "size": 2019814,
+        "mtime": "2026-11-09T05:12:18.000Z"
+      },
+      {
+        "file": "interior\\05-interior-bengkel-lulanai.webp",
+        "size": 2432198,
+        "mtime": "2026-11-09T05:12:20.000Z"
+      },
+      {
+        "file": "interior\\06-interior-arsip-tseren.webp",
+        "size": 2007522,
+        "mtime": "2026-11-09T05:12:20.000Z"
+      },
+      {
+        "file": "interior\\PREVIEW.webp",
+        "size": 823444,
+        "mtime": "2026-11-09T05:12:34.000Z"
+      },
+      {
+        "file": "elemen\\07-pohon-bahtari.webp",
+        "size": 1791580,
+        "mtime": "2026-11-09T05:12:22.000Z"
+      },
+      {
+        "file": "elemen\\08-bebatuan-basalt.webp",
+        "size": 1469388,
+        "mtime": "2026-11-09T05:12:22.000Z"
+      },
+      {
+        "file": "elemen\\09-kios-asharim.webp",
+        "size": 1953486,
+        "mtime": "2026-11-09T05:12:24.000Z"
+      },
+      {
+        "file": "elemen\\10-jembatan-tseren.webp",
+        "size": 1003492,
+        "mtime": "2026-11-09T05:12:24.000Z"
+      },
+      {
+        "file": "elemen\\11-perahu-bahtari.webp",
+        "size": 1325994,
+        "mtime": "2026-11-09T05:12:26.000Z"
+      },
+      {
+        "file": "elemen\\12-tenda-balkut.webp",
+        "size": 1608840,
+        "mtime": "2026-11-09T05:12:28.000Z"
+      },
+      {
+        "file": "elemen\\13-pintu-lulanai.webp",
+        "size": 1402792,
+        "mtime": "2026-11-09T05:12:28.000Z"
+      },
+      {
+        "file": "elemen\\14-lampu-asharim.webp",
+        "size": 1316940,
+        "mtime": "2026-11-09T05:12:30.000Z"
+      },
+      {
+        "file": "elemen\\PREVIEW.webp",
+        "size": 198178,
+        "mtime": "2026-11-09T05:12:34.000Z"
+      }
+    ]
+  }
+}

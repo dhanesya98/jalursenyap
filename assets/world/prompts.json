@@ -1,0 +1,28 @@
+{
+  "generator": "Built-in ImageGen",
+  "date": "2026-11-04",
+  "assets": [
+    {
+      "file": "lembah-pasir.webp",
+      "generator": "Built-in ImageGen",
+      "source": "C:/Users/user/.codex/generated_images/01a1a530-a410-7202-a1fb-35126430fd73/exec-7b329f13-5fbb-4a69-bc72-0081e63a3901.webp",
+      "promptSummary": "Wide fantasy desert courier landscape for The Silent Route. Nara and Ruru overlooking Asharim caravanserai and distant ancient relay towers; sepia ink lines, muted sand and turquoise, gouache planes and warm lanterns. No text or UI.",
+      "note": "Descriptive production summary; the exact original prompt is not preserved in this manifest.",
+      "intent": "Title illustration and environmental atlas entry, not a gameplay screenshot."
+    },
+    {
+      "file": "telaga-sumi.webp",
+      "prompt": "Use case: stylized-concept. Asset type: wide 16:9 environmental game illustration, The Silent Route fantasy courier world. Telaga Sumi oasis in the Asharim desert during a misty day. Fine sepia ink contour lines, delicate cross-hatching, broad flat gouache color planes with subtle airbrush atmosphere and paper texture, spacious Moebius-like landscape with warmth of Ghibli everyday detail. Layered blue-grey mist softens enormous pale sandstone escarpments, muted teal pool reflects a few palm silhouettes. One small woven cloth yurt on the shore has a tiny warm yellow lantern, a folded textile and ceramic water jug. A narrow stone footpath leads toward the tent, a short old rope bridge glimpsed in the distance. Quiet, tender, mysterious, vast empty space and human scale. Muted palette #CBD3D6 #9AA7AD #7F8E96 #5B6A73 with restrained teal #2E8B8B and single lantern accent #F2C46B. Landscape illustration filling whole frame, not a game screenshot, no UI, no text, no labels, no watermark, no photorealism, no glossy 3D, no dominant close-up character.",
+      "source": "C:/Users/user/.codex/generated_images/01a1a547-419a-7541-ba67-c1dd32219a57/exec-6ad81563-b6cb-471f-9014-0bf13f2e2ae8.webp",
+      "intent": "Original world illustration for Telaga Sumi chapter and world atlas.",
+      "review": "Inspected generated output: mist, oasis, cloth tent, lantern, fine ink and muted palette present; no text."
+    },
+    {
+      "file": "simpul-sembilan.webp",
+      "prompt": "Use case: stylized-concept. Asset type: wide 16:9 environmental illustration for the fantasy courier game The Silent Route. Simpul Sembilan, an ancient Warjian relay ruin on a high desert escarpment during a sandstorm. A tall weathered moss-grey monolith with fractured circular bronze rings, subtle abstract non-linguistic ancient grooves, a small golden lantern-like crystal on an open stone altar at its base. Horizontal terracotta sand sweeps across the foreground under a heavy slate-grey sky, layered silhouettes of remote ruined relay towers disappear into dust. In the lower third a tiny young androgynous courier wearing a cream sail-cape, terracotta scarf and leather mailbag climbs a marked rocky ledge using a taut rope anchored in a golden ring; cape blows sideways. Companion a tiny fennec with a warm lantern tail waits on the ledge. Fine sepia ink outlines, sparse cross-hatching, broad flat gouache shapes, atmospheric paper texture and subtle airbrush, Moebius sense of vast quiet scale, Ghibli emotional warmth only in lantern accents. Restrained palette #4A4A57 #34343F #8A5A45 #C79A6B #6F7A68 with small yellow #F2C46B focal glow. Threatening weather but nonviolent, adventurous. No weapons, no combat, no futuristic machines, no words, no UI, no logos, no watermark, no photorealism, no glossy 3D, no closeup character.",
+      "source": "C:/Users/user/.codex/generated_images/01a1a547-419a-7541-ba67-c1dd32219a57/exec-46a2f523-f31b-43e9-8c68-ad27bb82a218.webp",
+      "intent": "Original world illustration for Simpul Sembilan chapter and world atlas.",
+      "review": "Inspected generated output: Warjian relay ruin, slate storm, sand, courier using rope, Ruru and golden crystal present; no text."
+    }
+  ]
+}

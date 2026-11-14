@@ -1,0 +1,23 @@
+{
+  "id": "bridge_sign",
+  "npc": "Nara",
+  "title": "A Footbridge in the Mist",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Titian kayu tebal membentang di atas jurang ngarai. Papannya kuat dan tali pengamannya kencang. Di tiang jembatan ada cap stempel pemeriksaan dari pos Batu Biru (Nilasar).",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kabutnya tebal banget sampai seberang tebing nggak kelihatan. Tapi lentera pos di ujung jembatan masih berpendar kuning hangat. Ruru diam di dekat kakiku, matanya awas ngeliatin kabut.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Kita nyeberang jalan kaki santai aja, Ruru. Kerang Suara di tas udah kubungkus kain lembut biar aman. Kalau pandangan mendadak buntu kena kabut, tinggal tekan [Q] biar Ruru ngendus arah jalan.",
+      "action": "CHECK_CROSSING"
+    }
+  }
+}

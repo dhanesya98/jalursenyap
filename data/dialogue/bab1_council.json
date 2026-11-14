@@ -1,0 +1,28 @@
+{
+  "id": "bab1_council",
+  "npc": "Orsuk",
+  "title": "Chapter 1 · Seven Banners Council",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Orsuk",
+      "text": "Tiga Panji Tua dipimpin Dargun masih mengungkit tuduhan Bahtari membakar pos Tepi Salkara. Tiga Panji Muda menuntut jalur dagang dibuka.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Satu panji lagi?",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Orsuk",
+      "text": "Odgar dari Panji Kadum menahan suara. Tiga, tiga, satu. Mereka membutuhkan bukti tentang pos lama; kedatangan seorang kurir belum cukup.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Aku tak akan menyebut tuduhan itu kebenaran sebelum memeriksanya.",
+      "action": "HEAR_COUNCIL"
+    }
+  }
+}

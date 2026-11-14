@@ -1,0 +1,43 @@
+{
+  "id": "epilogue",
+  "npc": "Nara",
+  "title": "Chapter 0 Complete & Chapter 1 Opening: Dusun Sela",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Dari patok jalan ini, lentera kuning Pos Nilasar masih kelihatan kecil di kejauhan... Padahal tadi pagi aku cuma mikir gimana caranya biar roti rempah Pak Jumel nggak penyok di jalan.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Sekarang Lagu Titipan sumbang Pak Tiwano udah nyampe ke Bu Lamit. Sisa bekal yang disita di gerbang udah tercatat rapi. Dan di dalam tas ini... ada Surat Penyalaan yang harus kubawa melintasi bangsa-bangsa.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Ima",
+      "text": "(Di ambang jalan Dusun Sela, Nenek Ima sudah menunggu sambil memegang lentera kecil dan mangkuk sup hangat.) Makan dulu. Soal itu nanti. Ada hal yang lebih baik kau dengar dari batu daripada dari mulutku. Mulutku sudah terlalu lama diam, Nara. Ia lupa caranya.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Nek? Nenek nungguin aku sampai ke batas dusun? Eh—tunggu, benda melengkung dari perunggu pudar di lipatan kain Nenek itu apa? Kok bentuknya mirip cincin di bangunan uji tadi?",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Ima",
+      "text": "(Ima cepat-cepat menutup kembali Penutup Telinga Perunggu itu dengan ujung selendangnya, matanya waspada menatap jalan gelap.) Jangan sebut keras-keras. Sejak kecil aku selalu menyuruhmu diam kalau kau mendengar bisikan dari batu atau sumur. Orang di luar sana masih percaya takhayul Bising menular dan tuduhan Penelan Suara... keluarga ibumu lari ke Dusun Sela bukan supaya kau membuka luka itu lagi.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Orsuk",
+      "text": "(Dari sisi pos perbatasan, seorang pengawal karavan berjubah kempa Panji Balkut melangkah mendekat sambil menepuk debu dari bahunya.) Jadi kau kurir bercap Marsiyah yang dibicarakan para pedagang di Telaga Sumi? Aku Orsuk dari Panji Balkut. Karavan kami tertahan bea jalur dan kebuntuan sidang Tujuh Panji di Padang Salkara.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Nara",
+      "text": "Aku belum ngerti semua urusan seratus tahun lalu, sih. Tapi nggak apa-apa. Aku pegang pesan Nenek Ima baik-baik, dan bersama Kak Orsuk kita mulai langkah Bab 1 menuju Padang Salkara... supaya tak ada lagi orang yang menunggu sendirian.",
+      "action": "FINISH_CHAPTER"
+    }
+  }
+}

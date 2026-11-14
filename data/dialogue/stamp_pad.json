@@ -1,0 +1,38 @@
+{
+  "id": "stamp_pad",
+  "npc": "Marsiyah",
+  "title": "Asharim Witness Seal",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Marsiyah",
+      "text": "Bentangkan punggung surat itu di dekat bantalan tembaga ini, Nara. Tinta gaung menyimpan bunyi suara orang yang menyerahkan dan orang yang menerima pada saat cap ditekan. Ucapkan namamu dengan jelas.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Nara. Pembawa surat.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Marsiyah",
+      "text": "Marsiyah. Penyaksi serah-terima atas nama Pos Nilasar dan Majelis Sumur.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Marsiyah",
+      "text": "(Marsiyah menekan cap perunggu Asharim ke punggung surat. Tinta berpendar hangat sesaat ketika merekam suara mereka berdua, lalu mengering tenang. Segel lilin di bagian depan surat tetap tertutup rapat.)",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Tinta capnya tadi sempat nyala dikit waktu kita ngomong... Berarti satu Cap Saksi udah sah di punggung surat. Tinggal dua bangsa lagi nanti di perjalanan berikutnya.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Marsiyah",
+      "text": "Benar. Nanti di puncak Menara Simpul 009, tempelkan bagian punggung yang bercap ini ke lempeng pemeriksaan batu. Jangan sekali-kali mencoba membuka segel depannya.",
+      "action": "STAMP_LETTER"
+    }
+  }
+}

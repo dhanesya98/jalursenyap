@@ -1,0 +1,33 @@
+{
+  "id": "well",
+  "npc": "Nara",
+  "title": "A Sound in the Main Well",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Air sumurnya tenang banget, bening sampai kelihatan dasar batu. Tapi pas timba ditarik ke atas... ada dengungan gaung aneh dari sela batu dinding. Kayak ada orang berbisik, tapi putus-putus dan terus mengulang suku kata yang sama.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kucoba manggil pelan ke dalam sumur... yang balik bukan gema suaraku, tapi potongan bisikan tadi lagi. Ruru sampai memiringkan kepalanya, telinganya tegak ke arah lubang air yang basah.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Di bibir sumurnya cuma ada ukiran tanda pasang surut air sama guratan pemeriksaan warga lama. Nggak ada alat buatan Dewan Tetua atau Batu Gaung baru yang ditempel. Berarti bunyinya beneran naik dari Urat Sumi di bawah sana.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Bu Lamit",
+      "text": "Dulu bunyinya cuma sayup-sayup seperti deru angin di kulit kerang kosong, Nak. Tapi sebulan ini, kalau malam tiba, getarannya sampai bikin cangkir tembaga di meja berdenting. Warga sini mulai takut nimba air sendirian.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Aku bakal catat bunyi yang kudengar ini sama cerita Ibu secara terpisah di Buku Jalur. Kita belum tahu apa yang bikin Urat Sumi bergejolak, tapi Bu Marsiyah harus dengar kabar ini secepatnya.",
+      "action": "INSPECT_WELL"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "kesa_tol",
+  "npc": "Kesa",
+  "title": "The Tebing Utara Lock",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Kesa",
+      "text": "Nara? Kau balik lagi di tengah angin sekencang ini? Tadi sore lentera pos Marsiyah memberi isyarat ke menara jaga. Dia menuntut salinan arsip penahanan... sekaligus bertanya apakah kami di gerbang ini tuli terhadap dengung dari arah Menara Simpul Sembilan.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Bukannya nakut-nakutin, Kak Kesa, tapi lentera 009 emang udah berdenyut tiga kali, terus Sumur Induk di Telaga Sumi juga bunyi terus. Kalau aku nggak diizinin naik memeriksa menara malam ini... gimana kita bisa tahu seberapa parah retakannya?",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Kesa",
+      "text": "(Kesa menatap buku peraturan yang tertutup pasir di mejanya, lalu menggenggam kunci perunggu di sakunya.) Waktu aku dilantik jadi prajurit tetua, sumpahku adalah menjaga keselamatan lintasan. Bukan menutup mata sambil menunggu tebing runtuh menimpa orang.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Kesa",
+      "text": "Palang gerbang utama tetap tidak bisa kubuka—panglima tetua dari pos atas bisa melihatnya langsung. Tapi pengunci pintu lintas Tebing Utara ada di bawah wewenangku.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Kesa",
+      "text": "(Kesa memutar pasak pengunci di dinding batu hingga palang samping bergeser membuka.) Ini jalur resmi. Surat jalannya aku yang tanda tangani. Kalau nanti ada yang tanya, bilang saja kau diundang. (Suaranya merendah pelan) Dan kalau ada yang tanya aku, bilang saja aku... juga penasaran.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Kak Kesa... makasih banyak! Sungguh. Begitu aku turun dari Menara Simpul 009 nanti, kuceritakan apa yang kulihat di atas sana.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Kesa",
+      "text": "Bawa turun catatan yang nyata, Nara—bukan sekadar desas-desus. Dan awas pijakanmu kalau lewat Tebing Utara; angin badai di sana tidak kenal ampun.",
+      "action": "OPEN_NORTH_PATH"
+    }
+  }
+}

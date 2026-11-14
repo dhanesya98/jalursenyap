@@ -1,0 +1,72 @@
+JALUR SENYAP — BACA INI SEBELUM MELANJUTKAN PIXEL
+Tanggal: 2026-11-14
+
+Tujuan pengguna: pengalaman Cincin Perunggu dipulihkan ke pixel isometric,
+transisi/progres diperbaiki, UI lebih terasa seperti game, changelog terjaga.
+Baca docs/CHANGELOG-PIXEL.txt untuk hasil, pengujian, dan batas pekerjaan.
+
+ENTRY POINT
+- bab0.html = sumber antarmuka pixel, sumber JS/CSS eksternal.
+- MAIN-PIXEL.cmd = membuka paket offline di browser default.
+- Bab0-TopDown-Pixel/Jalur-Senyap-Complete-Pixel.html = HASIL BUILD.
+- index.html = Cincin Perunggu 3D; bukan entry pixel.
+
+PETA KODE
+- src/cincin-story.js: cerita + STORY.order untuk kedua renderer.
+- src/cincin-campaign.js: adaptor quest 3D; kini membaca STORY.order.
+- src/cincin-dialogues.js: graf dialog kanonis, sengaja tidak diubah.
+- src/bab0-pixel-data.js: 8 peta, 58 target, collision, exit, patrol, NPC.
+- src/pixel-campaign.js: aturan murni tanpa DOM: progres ID, gerbang cerita,
+  spawn aman, BFS click path, medan/tambatan, schema 4, migrasi dan recovery.
+- src/bab0-pixel-engine.js: state runtime terpisah; loop, canvas, modal,
+  input, audio, dialog, UI puzzle, journal, dan save/load integration.
+- src/gamedev-systems.js: PuzzleEngine/solver lama yang dipakai kembali.
+- src/pixel-ui.css: tema dan layout baru di atas src/bab0-pixel.css.
+- data/pixel-bab0-assets.js: pixel world/sprite lama.
+- data/pixel-ui-assets.js: potret dan peta asli dalam data URI untuk offline.
+- assets/audio/sfx/{desert_exploration,desert_sanctuary,seashell_lullaby}.mp3
+  dipakai oleh sumber; dibenamkan otomatis saat build paket.
+
+INVARIAN YANG HARUS DIJAGA
+1. completed adalah prefix berurutan daftar objective IDs, bukan indeks bebas.
+2. Akhir urutan cp-19-2 → cp-21-0 → cp-20-0. Cincin cp-7-2; bound cp-9-0.
+3. Penyelesaian puzzle terikat ID + challenge instance; jangan pakai callback
+   tertunda tanpa pengecekan satu kali. Dialog menyelesaikan hanya action CP yang cocok.
+4. Jangan membuka akses wilayah hanya karena pemain klik kartu jurnal/peta.
+5. Pintu masuk berada di luar semua trigger exit + margin. Uji kedua arah.
+6. Simpanan dimuat ke candidate dan divalidasi dahulu; baru Object.assign.
+7. Jangan menghapus prefix v3, simpanan 3D, atau menimpa slot manual via autosave.
+8. Perubahan HTML/CSS/JS harus dibangun kembali agar paket offline tetap sama.
+
+PERINTAH DARI ROOT PROYEK
+node tests/pixel.cjs
+node tools/build-pixel.cjs
+node tests/pixel-bundle.cjs
+node tests/cincin.cjs
+node tests/skills-redesign.cjs
+Atau npm run test:pixel (menjalankan tiga perintah pixel di atas).
+Untuk bermain sumber: npm run dev, buka http://127.0.0.1:4173/bab0.html.
+Untuk offline: buka paket HTML setelah diekstrak. Simpanan browser mengikuti
+origin/path dan profil browser; file:// dan localhost tidak berbagi storage.
+
+QA MANUAL BERIKUTNYA
+- Mainkan dari awal sampai mandat empat hari tanpa debug jump.
+- Uji kontrol sentuh/gamepad nyata, audio, text scale 1.4, dan reduced motion.
+- Periksa rasa lereng/glide, keseimbangan drain muatan, dan ritme patroli.
+- Uji import slot v3 milik pemain dengan salinan cadangan; tetap pertahankan
+  simpanan lama. Akhir urutan yang lama terbalik sengaja diselaraskan.
+- Jika menambah aset, pertahankan pixel dan identitas asli Tanah Sada.
+
+SKILLS YANG DITERAPKAN (REPOSITORI DARI PENGGUNA)
+https://github.com/gamedev-skills/awesome-gamedev-agent-skills
+skills/disciplines/level-design/SKILL.md
+skills/disciplines/dialogue-systems/SKILL.md
+skills/disciplines/save-systems/SKILL.md
+skills/disciplines/game-ui-ux/SKILL.md
+skills/genres/puzzle/SKILL.md
+Prinsip: baca arsitektur engine yang ada, pisahkan aturan/state dari tampilan,
+validasi graf dialog, puzzle deterministik/undo/solver, recovery save, feedback
+tujuan, hierarki visual, dan kontrol menu. Tidak ada instalasi skill global.
+
+Jangan menganggap tes DOM tiruan sebagai uji visual atau playtest perangkat.
+Jangan menyatakan semua detail 3D identik; lihat batas adaptasi di changelog.

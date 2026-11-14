@@ -1,0 +1,33 @@
+{
+  "id": "orsuk_bab1",
+  "npc": "Orsuk",
+  "title": "Chapter 1 — The Balkut Caravan & the Road to Salkara",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Orsuk",
+      "text": "Dengar, aku tak pandai bicara halus. Aku Orsuk dari Panji Balkut, di bawah pimpinan Salgur, si Tali Panjang. Karavan darat kami butuh lada biru dari Bahtari dan Garam Batu Batangan dari Asharim untuk mengawetkan daging di padang, ditambah kertas kontrak dari Tseren.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Terus kenapa karavan Kak Orsuk masih tertahan di perbatasan Dusun Sela? Karena iuran jalur Dewan Tetua juga?",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Orsuk",
+      "text": "Iuran jalur itu satu soal. Soal yang lebih pelik ada di Perkemahan Tujuh Panji. Sidang api kami buntu tiga lawan tiga: tiga Panji Tua yang dipimpin Dargun, si Bara dari Panji Gorkan, masih mengungkit tuduhan seratus tahun lalu bahwa Bahtari membakar pos Tepi Salkara. Sedangkan tiga Panji Muda menolak bea yang mencekik perdagangan. Satu suara penentu ada di tangan Odgar, si Batu Nama dari Panji Kadum.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Berarti kalau aku mau minta Cap Saksi kedua dari Cirusia, kita harus cari bukti apa yang sebenarnya terjadi di Tepi Salkara dulu?",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Orsuk",
+      "text": "Bohonglah di depan api, kalau berani. Titipan dari Balai Cawan sudah kau bawa. Lewati gerbang kain merah ini, antarkan ke meja perbekalan Balkut, lalu dengarkan sidang. Jangan menjanjikan jawaban sebelum punya bukti.",
+      "action": "JOIN_BALKUT"
+    }
+  }
+}

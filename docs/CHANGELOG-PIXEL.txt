@@ -1,0 +1,95 @@
+JALUR SENYAP — CHANGELOG PIXEL
+2026-11-14 · Buku Seorang Perintis · save schema 4
+
+LINGKUP
+Menerapkan audit perbandingan Pixel Lengkap dengan Cincin Perunggu 3D.
+Canvas 2D, perspektif isometrik lukis, aset pixel, dan dialog kanonis dipertahankan.
+Ini adaptasi mekanik 3D ke peta pixel; bukan penggantian dengan renderer 3D baru.
+
+TRANSISI & CERITA
+- Urutan tunggal STORY.order: 0–19, 21 (Batu Nama), 20 (Sidang Api).
+  Konsumen 3D dan pixel membaca urutan yang sama; isi cerita tidak ditulis ulang.
+- 22 babak / 58 objektif memakai ID stabil. Penyelesaian hanya menerima ID aktif.
+- Cincin baru didapat setelah cp-7-2; ikatan pada Nara setelah cp-9-0.
+- Tantangan diselesaikan sebelum dialog hasil; callback puzzle sekali pakai.
+- Negosiasi memakai pilihan dialog kanonis. Klaim palsu dalam sidang kembali
+  ke pilihan, bukan otomatis menang melalui skor negosiasi tambahan.
+- Narasi pembuka Nilasar dikembalikan. Posisi node dialog, riwayat, dan teks
+  yang sudah dibaca disimpan. Skip hanya mempercepat teks yang pernah dibaca.
+- Titik masuk mencari tanah aman di luar radius pintu + margin 18 px.
+  Exit harus diaktifkan dari luar area pemicu; 14 arah transisi diuji.
+- Simpul dibuka setelah cp-8-0, Sela setelah cp-11-2, Balkut cp-14-2,
+  Salkara cp-18-2. Jembatan Balkut mengubah gambar dan batas jalan.
+- Pilihan babak yang dulu bisa memundurkan/melompati cerita dihapus.
+  Fast travel hanya tersedia ke wilayah yang sudah ditemukan dan terbuka.
+
+PENGALAMAN BERMAIN
+- Gerak keyboard dan klik tanah dengan pencarian jalur; collision tetap aktif.
+- Kecepatan pasir/batu/lereng, dorongan lari menurun, lompat dan melayang
+  memakai daya jubah yang pulih di tanah.
+- Tangga tali Menara Senja (E), tambatan kait Balkut dan Simpul (F), animasi
+  perjalanan ke ujung tambatan dan garis tali.
+- Angin mendorong gerak dan mengurangi kondisi muatan pada rangkaian pengiriman;
+  berlari meningkatkan kerusakan. Berteduh memulihkan kondisi muatan.
+- Ruru mengikuti, menuntun, merapat saat badai, memindai target dekat, dan
+  membutuhkan jeda 12 detik. Tujuan berlabel sonar benar-benar memerlukan scan.
+- Patroli memakai sudut pandang + penghalang garis pandang. Peti Gerbang Timur
+  memiliki gambar, collision, dan fungsi perlindungan yang sesuai.
+- Puzzle cincin dan tambatan memakai PuzzleEngine lama: papan logika, petunjuk,
+  urungkan, ulangi; mode irama tetap tersedia. Muatan mulai 120/180 kg,
+  tiap jenis bekal minimal satu, sehingga perlu benar-benar diseimbangkan.
+- Interaksi opsional Nilasar dan rumor dicatat; juru air memulihkan bekal.
+- Musik eksplorasi/suaka dan lagu Kerang Suara memakai aset audio yang sudah
+  ada. Tambahan angin/langkah sintetis, pengaturan gain, dan ducking dialog.
+
+UI / UX
+- Judul, HUD status, tujuan aktif, toolbelt, dialog berpotret, Buku Jalur,
+  peta hubungan wilayah, atlas asli, menu jeda, dan tiga slot manual baru.
+- Bahasa visual asli: kain hijau gelap, perkamen, perunggu, pirus, tab buku;
+  referensi pengguna dipakai untuk hierarki/nuansa, bukan disalin sebagai aset.
+- Jurnal tidak membocorkan catatan babak mendatang. Isi Lima Bangsa memakai
+  schema description/economy/custom/contract yang benar.
+- Potret karakter/atlas asli dibundel kembali; tidak diperlukan aset AI baru.
+  Dargun dan Salgur kini memakai identitas potret masing-masing.
+- Modal ditumpuk dengan fokus dan inert; Escape menutup lapisan teratas.
+- Ukuran teks, reduced motion, kontrol sentuh, dan pemetaan gamepad ditambahkan.
+  Rasio dunia 16:9 dipertahankan agar gambar tidak diregangkan.
+
+SIMPANAN & BUILD
+- Prefix baru jalur_senyap_pixel_v4. Autosave terpisah dari slot manual 0–2.
+- Validasi dilakukan sebelum state hidup diganti. Primary rusak mencoba .bak.
+  Simpanan utama tidak dihapus sebelum setItem pengganti berhasil.
+- Import otomatis prefix pixel v3; prefix lama tidak ditulis ulang.
+  Progres lama menjelang penutup bisa mengulang Batu Nama/sidang agar urutan
+  kanonis konsisten. Simpanan yang sudah all_complete tetap selesai.
+- Paket HTML offline memuat semua script, CSS, gambar, dan tiga lagu.
+- tools/build-pixel.cjs menjadi satu-satunya pembuat paket. Jangan mengedit
+  Jalur-Senyap-Complete-Pixel.html secara manual.
+- npm run test:pixel dan npm run build:pixel ditambahkan; perintah 3D tetap ada.
+
+VALIDASI
+- 11 kelompok regresi pixel lulus: 58 interaksi sampai akhir, ID ganda, reward,
+  14 kedatangan selama 120 frame, akses/collision/path semua target, recovery,
+  migrasi, save per node, pilihan sidang salah, undo, 1.000 konfigurasi puzzle
+  yang mencakup 43 state terjangkau, serta gerak/jubah/angin/tambatan.
+- tests/cincin.cjs lulus: 58 objektif 3D, save/load, 22 catatan, ring, navigasi.
+- tests/skills-redesign.cjs: seluruh 9 kelompok lulus.
+- tests/pixel-bundle.cjs: 9 script + 2 stylesheet sama dengan sumber,
+  3 audio tertanam, syntax valid, ID HTML unik, tanpa dependensi eksternal.
+- Browser: judul, pembuka, gerak klik menuju Marsiyah, dialog, simpan lalu
+  kembali ke judul dan melanjutkan node yang sama, jurnal, Lima Bangsa, peta,
+  jeda; layout 1280×720, 390×844, dan 844×390 diperiksa.
+
+BATAS VERIFIKASI / PEKERJAAN LANJUT
+- Simulasi 58 objektif menggunakan DOM tiruan; bukan rekaman permainan manual
+  penuh. Browser smoke test melengkapi simulasi, tidak menggantikannya.
+- Gamepad fisik, perangkat sentuh fisik, dan penilaian audio dengan pendengaran
+  belum diuji. Pemetaan dan jalur kode tersedia; perlu playtest perangkat nyata.
+- Ketinggian diadaptasi sebagai data lereng/gerak dan animasi pada peta lukis.
+  Rotasi kamera 3D tidak dibawa ke komposisi pixel tetap ini.
+- Dargun/Salgur memakai potret berskala pada dunia; sprite berjalan khusus
+  dapat menjadi pekerjaan seni berikutnya. Jangan kembali menyamakan mereka
+  dengan Orsuk/Jumel.
+- Menara Simpul memakai sisi menara pada gambar Gerbang yang sama dengan
+  versi pixel lama; penggambaran map khusus dapat diperkaya berikutnya.
+- Plot setelah mandat empat hari belum menjadi konten baru dalam pembaruan ini.

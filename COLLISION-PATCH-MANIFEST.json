@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-14",
+  "release": "ui-layout-revision-4-cumulative",
+  "saveVersion": 4,
+  "validation": {
+    "uiLayoutCases": 108,
+    "uiLayoutFailures": 0,
+    "collisionRegressionInheritedFromV3": true,
+    "regressionGroups": 23,
+    "wasdRoutes": 27,
+    "wasdDirectionSpeedCombinations": 108,
+    "questTargets": 58,
+    "exits": 14,
+    "edgeSweeps": 124176,
+    "bundleSourceVerified": true,
+    "browserSmoke": "real WASD across 8 maps, both Senja bridges, reported Senja/Balkut/Salkara/Simpul points and Simpul stairs"
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.txt",
+      "bytes": 5891,
+      "before": null,
+      "after": "b39a5e6236684a16e258ce9d8151c14237f6196f172bdfebac9792e967fb7e24"
+    },
+    {
+      "path": "bab0.html",
+      "bytes": 13599,
+      "before": "2f8c570833411e09230251743dcdb43f553100effd879889a4f1b64f1374b672",
+      "after": "2f8c570833411e09230251743dcdb43f553100effd879889a4f1b64f1374b672"
+    },
+    {
+      "path": "src/pixel-ui.css",
+      "bytes": 30258,
+      "before": "bd193ebb124d95c34e11025308946b1ef2d29aa727a5f37b21beb475ccb86776",
+      "after": "bd193ebb124d95c34e11025308946b1ef2d29aa727a5f37b21beb475ccb86776"
+    },
+    {
+      "path": "docs/UI-AUDIT-v4.md",
+      "bytes": 2044,
+      "before": "bf44815641bcbbaac951c3deb310a28b6c702aff2ea42e7e29aa8cd65770dd91",
+      "after": "bf44815641bcbbaac951c3deb310a28b6c702aff2ea42e7e29aa8cd65770dd91"
+    },
+    {
+      "path": "INSTALL-UI-v4.txt",
+      "bytes": 677,
+      "before": "e2c9ea35acc7e73f2db47bb7bdf933101b40a690c1c8fbc327c9689765eaaf14",
+      "after": "e2c9ea35acc7e73f2db47bb7bdf933101b40a690c1c8fbc327c9689765eaaf14"
+    },
+    {
+      "path": "src/bab0-pixel-data.js",
+      "bytes": 60583,
+      "before": "ccdc55174471aff2d439aa81f0cb6f9120f769da1e5bbbcd0df11cf39383cfc7",
+      "after": "ccdc55174471aff2d439aa81f0cb6f9120f769da1e5bbbcd0df11cf39383cfc7"
+    },
+    {
+      "path": "src/bab0-pixel-engine.js",
+      "bytes": 49097,
+      "before": "773c66868cb9654e93126b20b8692b3e99f3d40dee804988f7dc2b60b8927118",
+      "after": "773c66868cb9654e93126b20b8692b3e99f3d40dee804988f7dc2b60b8927118"
+    },
+    {
+      "path": "src/pixel-campaign.js",
+      "bytes": 17693,
+      "before": "83a4f1ed1600d2a7bee7000d3d7cf2e9cfb5aae42f02b413940c40db4e9b956f",
+      "after": "83a4f1ed1600d2a7bee7000d3d7cf2e9cfb5aae42f02b413940c40db4e9b956f"
+    },
+    {
+      "path": "src/gamedev-systems.js",
+      "bytes": 34452,
+      "before": "390c2678e32a6432b77cf4e93b7139a78cd8b846bd8533b3f3e7faf63f2609c6",
+      "after": "390c2678e32a6432b77cf4e93b7139a78cd8b846bd8533b3f3e7faf63f2609c6"
+    },
+    {
+      "path": "tests/pixel.cjs",
+      "bytes": 22501,
+      "before": "493b14770f762c4ddb21d06e50330cdd6d3cd4cfd558366671717c56efb68278",
+      "after": "493b14770f762c4ddb21d06e50330cdd6d3cd4cfd558366671717c56efb68278"
+    },
+    {
+      "path": "tests/wasd-routes.json",
+      "bytes": 7961,
+      "before": "26796cf5f753351698040cfb8d006d4a19d96f292899366af103e82e24618c7a",
+      "after": "26796cf5f753351698040cfb8d006d4a19d96f292899366af103e82e24618c7a"
+    },
+    {
+      "path": "docs/WASD-AUDIT-v3.md",
+      "bytes": 3099,
+      "before": "ee39be16543fe066d61c759e4bd76354e578919f410e8956159f3e91f31b280b",
+      "after": "ee39be16543fe066d61c759e4bd76354e578919f410e8956159f3e91f31b280b"
+    },
+    {
+      "path": "Bab0-TopDown-Pixel/Jalur-Senyap-Complete-Pixel.html",
+      "bytes": 20721325,
+      "before": "1adb26b7ed428aa9b80acb82d6cfd8fe4e66dc6b557456a398b00077c0834b76",
+      "after": "1adb26b7ed428aa9b80acb82d6cfd8fe4e66dc6b557456a398b00077c0834b76"
+    },
+    {
+      "path": "docs/COLLISION-ISOMETRIC.md",
+      "bytes": 5053,
+      "before": "f847e399ae0e0deb27d7eb929bf264a1698b1fc6ee9f16982bfb386221d15c3e",
+      "after": "f847e399ae0e0deb27d7eb929bf264a1698b1fc6ee9f16982bfb386221d15c3e"
+    },
+    {
+      "path": "INSTALL-COLLISION.txt",
+      "bytes": 3189,
+      "before": "0f650f502326e81f316878ba351c55bdfc9b5aca382b7490c02e4400ace76fc1",
+      "after": "0f650f502326e81f316878ba351c55bdfc9b5aca382b7490c02e4400ace76fc1"
+    }
+  ]
+}

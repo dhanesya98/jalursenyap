@@ -1,0 +1,22 @@
+JALUR SENYAP — EXPANSION
+Built-in ImageGen, 13 November 2026.
+
+Cakupan: Maruani, 5 atlas isometrik, 5 atlas top-down tiga-perempat, 5 background jauh, 5 foreground transparan untuk parallax, kit UI lima bangsa. 3D ditunda sesuai permintaan.
+
+IDENTITAS BANGSA
+Asharim: sandstone, keramik biru kusam, kain terakota, air dan kurma.
+Cirusia: felt krem, kulit, anyaman, panji merah tua, stepa.
+Tseren: struktur kayu, kertas serat, batu tebing, sage dan kabut.
+Bahtari: rumah panggung, atap lengkung, tali, dermaga, teal kusam.
+Lulanai: basalt, perunggu berpatina, linen, lingkar resonansi.
+
+PENGGUNAAN
+Environment PNG adalah source atlas ilustrasi dengan modul terpisah, belum merupakan autotile engine-ready. Potong region tiap objek secara manual di sprite editor; margin dan ukuran objek tidak mengikuti grid piksel seragam. Ukuran modul dan perspektif adalah pendekatan visual, bukan jaminan 2:1 matematis. Top-down memakai sudut tiga-perempat; bukan denah ortografik murni. Lantai belum diuji seamless; untuk produksi perlu penyesuaian tepi, snapping, variasi sudut, collision dan occlusion sesuai engine.
+
+Background dan foreground merupakan dua file berbeda per bangsa. Pasang far di belakang world, foreground di depan; gunakan gerak relatif misalnya 0.15 dan 0.8 terhadap kamera sebagai titik awal. Sesuaikan ukuran kedua layer dengan viewport 16:9. Layer tidak seamless untuk infinite scrolling. Untuk isometrik/top-down, far adalah backdrop/vista di luar area berjalan, bukan lantai navigasi. Untuk 2,5D dapat digunakan pada quad/billboard; tidak mengandung mesh atau depth map.
+
+UI: bentuk depan datar, ruang isi kosong agar teks/lokalisasi ditambahkan engine. Source atlas perlu region slicing dan pengaturan nine-slice manual. Warna hover, pressed, disabled dan focus belum merupakan aset terpisah; aplikasikan tint/outline pada runtime sesuai kebutuhan aksesibilitas.
+
+Maruani adalah usulan desain berbasis story bible Cincin Perunggu: pemuda Lulanai, pakaian penjelajah dan sepasang garpu tala perunggu. Bukan sprite animasi, rig, atau model 3D.
+
+Semua berkas final diperiksa dapat didekode. Kanal alpha pada PNG transparan dipertahankan; pratinjau galeri memakai latar terang. Prompt persis, referensi dan checksum tersedia.

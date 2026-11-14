@@ -1,0 +1,38 @@
+{
+  "id": "test_stone",
+  "npc": "Nara",
+  "title": "A Local Trace in the Test Stone",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Jejak pada batu uji",
+      "text": "(tiga napas) ...pemeriksaan cabang uji... tahun lima puluh delapan...",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Jejak pada batu uji",
+      "text": "...tujuh cabang Menara Simpul Redup menarik beban... tanpa penyetelan akhir...",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Jejak pada batu uji",
+      "text": "...gaung balik... terus menekan Bejana Batu di bawah pulau Gerbang Surut...",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Halo? Siapa itu? Eh—nggak nyaut. Suaranya cuma ngulang-ngulang dari awal lagi.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "(Batu bersegi itu kembali mengulang potongan kalimat pertamanya dengan jeda yang persis sama. Ruru duduk diam di samping kaki Nara, telinganya bergerak mengikuti irama ketukan batu.)",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Beda banget sama suara di lempeng 009 atas tadi. Yang ini nggak nyebut namaku sama sekali—cuma rekaman pemeriksaan lokal dari tahun lima puluh delapan yang tertinggal di batu. Coba kuperiksa meja arsip di pojok ruangan ini, siapa tahu ada catatan pembandingnya.",
+      "action": "HEAR_TEST_TRACE"
+    }
+  }
+}

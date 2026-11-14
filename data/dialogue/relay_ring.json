@@ -1,0 +1,23 @@
+{
+  "id": "relay_ring",
+  "npc": "Nara",
+  "title": "The Second Sign",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Retakan batu membelah ukiran angka di cincin penanda luar. Ada serpihan debu batu halus tercecer di bawahnya... retakannya baru dan makin menganga.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kucocokkan gambar di Buku Jalur sama retakan di depan mataku. Dua tanda bahaya beneran ada di Menara Simpul 009 ini! Ruru sempat mengendus lempeng di tengah pilar, terus buru-buru mundur sambil mendengus.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Langkah berikutnya: pemeriksaan gaung pakai punggung surat. Aku bakal tempelkan sisi bertinta cap ke lempeng batu ini tanpa memutar cincin atau membuka segel depannya.",
+      "action": "INSPECT_RING"
+    }
+  }
+}

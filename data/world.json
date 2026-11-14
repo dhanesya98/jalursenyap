@@ -1,0 +1,765 @@
+{
+  "name": "Lembah Pasir",
+  "bounds": 340,
+  "hub": [
+    0,
+    0,
+    35
+  ],
+  "landmarks": [
+    {
+      "id": "hub",
+      "name": "Pos Nilasar",
+      "position": [
+        0,
+        0,
+        35
+      ],
+      "icon": "checkpoint",
+      "description": "An Asharim water sanctuary, locally called Batu Biru, caught between the Old Posts and the Trade Posts' route dues. Beneath Marsiyah's canopy, four generations of keepers have guarded the Rekindling Letter.",
+      "labelOffset": [
+        10,
+        23
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "Menara Senja",
+      "position": [
+        68,
+        22,
+        -115
+      ],
+      "icon": "compass",
+      "description": "Jumel waits for wind from the north and bread from the south. His grandfather's journal records Sahdan's visits in the weeks before the Night of Three Breaths.",
+      "labelOffset": [
+        -118,
+        14
+      ]
+    },
+    {
+      "id": "oasis",
+      "name": "Telaga Sumi",
+      "position": [
+        -126,
+        2,
+        77
+      ],
+      "icon": "shell",
+      "description": "The stepped Urat Sumi canals and Balai Cawan, where Bu Lamit awaits Tiwano's entrusted song from Bandar Lada. The old wells echo past voices more loudly each year.",
+      "labelOffset": [
+        -116,
+        31
+      ]
+    },
+    {
+      "id": "toll",
+      "name": "Gerbang Dewan Tetua",
+      "position": [
+        70,
+        3,
+        -10
+      ],
+      "icon": "seal",
+      "description": "A Council of Elders checkpoint overseeing the eastern route, collecting dues, and inspecting mail. Here Kesa is torn between orders to detain messages and his conscience.",
+      "labelOffset": [
+        10,
+        23
+      ]
+    },
+    {
+      "id": "relay",
+      "name": "Menara Simpul Sembilan",
+      "position": [
+        145,
+        27,
+        -85
+      ],
+      "icon": "lantern",
+      "description": "Point 009 on the Ebb Line. Three untuned lantern pulses and a cracked marker ring reveal growing instability in the Stone Vessel. Nearby, a year 58 test building holds an architect's warning about the load on the Dim Relay Towers.",
+      "labelOffset": [
+        14,
+        12
+      ]
+    },
+    {
+      "id": "view",
+      "name": "Punggung Angin",
+      "position": [
+        150,
+        16,
+        5
+      ],
+      "icon": "map",
+      "description": "From here, the lantern at Pos Nilasar looks like a star that chose to remain on earth.",
+      "labelOffset": [
+        10,
+        23
+      ]
+    },
+    {
+      "id": "testhouse",
+      "name": "Test Building",
+      "position": [
+        130,
+        27,
+        -106
+      ],
+      "icon": "checkpoint",
+      "description": "An old inspection building from year 58 behind complex 009, connected to the Echo Roots.",
+      "labelOffset": [
+        -128,
+        -18
+      ]
+    },
+    {
+      "id": "departure",
+      "name": "Dusun Sela & the Salkara Threshold",
+      "position": [
+        208,
+        24,
+        -134
+      ],
+      "icon": "compass",
+      "description": "The gate of Dusun Sela across the eastern valley, home to Nenek Ima and the meeting point for Orsuk's caravan to Padang Salkara in Chapter 1.",
+      "labelOffset": [
+        14,
+        -12
+      ],
+      "mapName": "Dusun Sela"
+    },
+    {
+      "id": "cawan",
+      "name": "Balai Cawan",
+      "position": [
+        -127,
+        2,
+        53
+      ],
+      "icon": "checkpoint",
+      "description": "Water, salt, and news meet on the northern veranda of Telaga Sumi.",
+      "labelOffset": [
+        12,
+        -12
+      ]
+    },
+    {
+      "id": "salkara",
+      "name": "Seven Banners Camp",
+      "position": [
+        248,
+        18,
+        -278
+      ],
+      "icon": "compass",
+      "description": "A Cirusian confederation camp in Padang Salkara. The council remains divided 3–3–1; a promise before the fire grants the right to return with evidence.",
+      "labelOffset": [
+        -185,
+        -14
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "maren",
+      "name": "Marsiyah",
+      "title": "Head of Pos Nilasar",
+      "position": [
+        0,
+        0,
+        31
+      ]
+    },
+    {
+      "id": "juma",
+      "name": "Jumel",
+      "title": "Keeper of Menara Senja",
+      "position": [
+        68,
+        22,
+        -115
+      ]
+    },
+    {
+      "id": "bulamat",
+      "name": "Bu Lamit",
+      "title": "Elder of Telaga Sumi",
+      "position": [
+        -126,
+        2,
+        77
+      ]
+    },
+    {
+      "id": "kesa",
+      "name": "Kesa",
+      "title": "Council of Elders Soldier",
+      "position": [
+        65,
+        3,
+        -9
+      ]
+    },
+    {
+      "id": "pedagang",
+      "name": "Pedagang Jalan",
+      "title": "Representative of the cross-border caravan",
+      "position": [
+        -127,
+        2,
+        53
+      ]
+    },
+    {
+      "id": "ima",
+      "name": "Nenek Ima",
+      "title": "Nara's family in Dusun Sela (Chapter 1)",
+      "position": [
+        235,
+        24,
+        -150
+      ]
+    },
+    {
+      "id": "orsuk",
+      "name": "Orsuk",
+      "title": "Guard of Cirusia's Balkut Banner (Chapter 1)",
+      "position": [
+        244,
+        24,
+        -135
+      ]
+    }
+  ],
+  "routes": {
+    "north": {
+      "name": "Tower Road",
+      "surface": "rock",
+      "width": 5,
+      "points": [
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          0,
+          0,
+          -2
+        ],
+        [
+          -23,
+          2,
+          -32
+        ],
+        [
+          23,
+          6,
+          -58
+        ],
+        [
+          -20,
+          11,
+          -85
+        ],
+        [
+          8,
+          16,
+          -112
+        ],
+        [
+          38,
+          19,
+          -118
+        ],
+        [
+          68,
+          22,
+          -115
+        ]
+      ]
+    },
+    "west": {
+      "name": "Lake Road",
+      "surface": "sand",
+      "width": 5,
+      "points": [
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          -28,
+          0,
+          49
+        ],
+        [
+          -46,
+          1,
+          54
+        ],
+        [
+          -56,
+          3,
+          43
+        ],
+        [
+          -88,
+          5,
+          43
+        ],
+        [
+          -108,
+          3,
+          57
+        ],
+        [
+          -121,
+          2,
+          65
+        ],
+        [
+          -122,
+          2,
+          77
+        ],
+        [
+          -126,
+          2,
+          77
+        ]
+      ]
+    },
+    "safe": {
+      "name": "Jalur Lentera",
+      "surface": "rock",
+      "width": 5,
+      "points": [
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          35,
+          0,
+          40
+        ],
+        [
+          65,
+          2,
+          65
+        ],
+        [
+          105,
+          4,
+          60
+        ],
+        [
+          140,
+          9,
+          30
+        ],
+        [
+          170,
+          14,
+          -5
+        ],
+        [
+          172,
+          19,
+          -45
+        ],
+        [
+          162,
+          24,
+          -66
+        ],
+        [
+          145,
+          27,
+          -85
+        ]
+      ]
+    },
+    "fast": {
+      "name": "Tebing Utara",
+      "surface": "rock",
+      "width": 3.5,
+      "points": [
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          35,
+          0,
+          5
+        ],
+        [
+          57,
+          3,
+          -23
+        ],
+        [
+          75,
+          8,
+          -40
+        ],
+        [
+          102,
+          16,
+          -62
+        ],
+        [
+          126,
+          23,
+          -76
+        ],
+        [
+          145,
+          27,
+          -85
+        ]
+      ]
+    },
+    "direct": {
+      "name": "Council Route",
+      "surface": "sand",
+      "width": 5,
+      "points": [
+        [
+          35,
+          0,
+          5
+        ],
+        [
+          70,
+          3,
+          -10
+        ],
+        [
+          108,
+          15,
+          -45
+        ],
+        [
+          145,
+          27,
+          -85
+        ]
+      ]
+    },
+    "toll": {
+      "name": "Eastern Gate Road",
+      "surface": "rock",
+      "width": 5,
+      "points": [
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          35,
+          0,
+          5
+        ],
+        [
+          56,
+          3,
+          -9
+        ],
+        [
+          65,
+          3,
+          -9
+        ]
+      ]
+    },
+    "village": {
+      "name": "Dusun Sela Road",
+      "surface": "rock",
+      "width": 4.2,
+      "points": [
+        [
+          68,
+          22,
+          -115
+        ],
+        [
+          86,
+          23,
+          -124
+        ],
+        [
+          112,
+          25,
+          -124
+        ],
+        [
+          144,
+          25,
+          -124
+        ],
+        [
+          176,
+          24,
+          -129
+        ],
+        [
+          208,
+          24,
+          -134
+        ],
+        [
+          222,
+          24,
+          -139
+        ],
+        [
+          235,
+          24,
+          -150
+        ]
+      ]
+    },
+    "salkara": {
+      "name": "Balkut Banner Road",
+      "surface": "rock",
+      "width": 4.2,
+      "points": [
+        [
+          244,
+          24,
+          -135
+        ],
+        [
+          254,
+          23,
+          -158
+        ],
+        [
+          256,
+          22,
+          -185
+        ],
+        [
+          252,
+          21,
+          -210
+        ],
+        [
+          250,
+          20,
+          -228
+        ],
+        [
+          249,
+          19,
+          -252
+        ],
+        [
+          248,
+          18,
+          -278
+        ]
+      ]
+    }
+  },
+  "anchors": [],
+  "ladders": [
+    {
+      "id": "ladder-west",
+      "name": "Ravine Ladder",
+      "bottom": [
+        -49,
+        0,
+        62
+      ],
+      "top": [
+        -55,
+        3,
+        47
+      ],
+      "description": "A way back from the ravine floor. Once installed, it belongs to every courier."
+    },
+    {
+      "id": "ladder-east",
+      "name": "Tebing Utara Ladder",
+      "bottom": [
+        96,
+        12,
+        -48
+      ],
+      "top": [
+        114,
+        20,
+        -68
+      ],
+      "description": "A shortcut across the ridge, avoiding the exposed eastern side."
+    }
+  ],
+  "ledges": [
+    {
+      "id": "ledge-north",
+      "name": "Lantern-marked ledge",
+      "bottom": [
+        18,
+        4,
+        -48
+      ],
+      "top": [
+        24,
+        6,
+        -58
+      ]
+    }
+  ],
+  "discoveries": [
+    {
+      "id": "oldpost",
+      "name": "The Forgotten Post",
+      "position": [
+        -29,
+        5,
+        -80
+      ],
+      "text": "The Couriers' Guild seal is still visible in the stone. This route once connected strangers."
+    },
+    {
+      "id": "view",
+      "name": "Punggung Angin",
+      "position": [
+        150,
+        16,
+        5
+      ],
+      "text": "Three distant lanterns: the post, the lake, and the tower. The world feels a little closer."
+    },
+    {
+      "id": "lulanai",
+      "name": "Year 58 Test Building",
+      "position": [
+        134,
+        27,
+        -96
+      ],
+      "text": "The test stone mentions a year 58 inspection of the load on seven Dim Relay Towers. A nearby plate confirms the year; the architect's identity remains unknown.",
+      "manual": true
+    },
+    {
+      "id": "batu-nama",
+      "name": "Post Stone Guestbook",
+      "position": [
+        -8,
+        0,
+        39
+      ],
+      "text": "Guests write their names in the post's stone as a record of couriers and merchants passing through. Old Posts protect its confidentiality; Trade Posts give copies to the Council of Elders for reduced route dues."
+    },
+    {
+      "id": "ajaran-tata",
+      "name": "Doctrine of Order Notice",
+      "position": [
+        60,
+        3,
+        -9
+      ],
+      "text": "“Order governs. The elders keep the roads.” The Council officially claims that the Lulanai broke the Covenant of Connection and failed to maintain the network. The people's bitter reply: the elders never leave their chairs."
+    }
+  ],
+  "year": 100,
+  "bridges": [
+    {
+      "id": "west-bridge",
+      "from": [
+        -56,
+        3,
+        43
+      ],
+      "to": [
+        -88,
+        5,
+        43
+      ],
+      "width": 3
+    }
+  ],
+  "pads": [
+    {
+      "x": 62,
+      "z": -12,
+      "y": 3,
+      "radius": 15,
+      "falloff": 10
+    },
+    {
+      "x": -29,
+      "z": -75,
+      "y": 5,
+      "radius": 13,
+      "falloff": 10
+    },
+    {
+      "x": 150,
+      "z": 5,
+      "y": 16,
+      "radius": 12,
+      "falloff": 10
+    },
+    {
+      "x": 68,
+      "z": -120,
+      "y": 22,
+      "radius": 18,
+      "falloff": 12
+    },
+    {
+      "x": 138,
+      "z": -95,
+      "y": 27,
+      "radius": 24,
+      "falloff": 14
+    },
+    {
+      "x": 232,
+      "z": -142,
+      "y": 24,
+      "radius": 28,
+      "falloff": 16
+    },
+    {
+      "x": 250,
+      "z": -228,
+      "y": 20,
+      "radius": 10,
+      "falloff": 8
+    },
+    {
+      "x": 248,
+      "z": -275,
+      "y": 18,
+      "radius": 28,
+      "falloff": 18
+    }
+  ],
+  "waterRings": [
+    {
+      "x": -142,
+      "z": 77,
+      "inner": 5.8,
+      "outer": 8.8,
+      "bridgeWidth": 1.7
+    },
+    {
+      "x": -142,
+      "z": 77,
+      "inner": 11.3,
+      "outer": 14,
+      "bridgeWidth": 1.7
+    }
+  ]
+}

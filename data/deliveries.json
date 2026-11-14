@@ -1,0 +1,90 @@
+[
+  {
+    "id": "delivery_1",
+    "title": "Spiced Bread for Menara Senja",
+    "stage": 1,
+    "sender": "Marsiyah (Pos Nilasar / Batu Biru)",
+    "recipient": "Jumel",
+    "item": "Spiced Bread",
+    "itemIcon": "🍞",
+    "location": "Menara Senja",
+    "targetPosition": [
+      68,
+      22,
+      -115
+    ],
+    "day_condition": "hangat",
+    "weight": 1,
+    "fragile": false,
+    "moistureSensitive": true,
+    "summary": "Marsiyah lent you an old padded satchel before your first assignment. Deliver warm spiced bread to Jumel at Menara Senja and hear the story in his grandfather's journal.",
+    "hint": "Follow the winding stone path north. Sprint on safe ground, jump, and open your Glider Cape on the way down. Press E to climb lantern-marked ledges.",
+    "icon": "bread"
+  },
+  {
+    "id": "delivery_2",
+    "title": "An Entrusted Song for Telaga Sumi",
+    "stage": 2,
+    "sender": "Tiwano (Bahtari House of Sails), via Pos Nilasar",
+    "recipient": "Bu Lamit",
+    "item": "Voice Shell",
+    "itemIcon": "🐚",
+    "location": "Telaga Sumi (Balai Cawan)",
+    "targetPosition": [
+      -126,
+      2,
+      77
+    ],
+    "day_condition": "kabut",
+    "weight": 1.1,
+    "fragile": true,
+    "moistureSensitive": false,
+    "summary": "Carry Tiwano's family song to his wife, Bu Lamit, at Telaga Sumi without altering it or concealing its condition. Its imperfect notes preserve a human presence.",
+    "hint": "Follow the lanterns west and walk across the footbridge. Press Q for Ruru's help; press E to inspect or install ladders.",
+    "icon": "shell"
+  },
+  {
+    "id": "delivery_3",
+    "title": "Supplies for the Sister Post",
+    "stage": 3,
+    "sender": "Marsiyah",
+    "recipient": "Sister post to the east",
+    "item": "Two bundles of supplies",
+    "icon": "bag",
+    "itemIcon": "🎒",
+    "location": "Eastern Council Gate",
+    "targetPosition": [
+      65,
+      3,
+      -9
+    ],
+    "day_condition": "kabut",
+    "weight": 1.65,
+    "fragile": false,
+    "moistureSensitive": true,
+    "summary": "Record two bundles of supplies and a travel permit, then check access to the sister post. Report the cargo's condition honestly.",
+    "hint": "Read the Council gate notice and meet Kesa."
+  },
+  {
+    "id": "letter_mission",
+    "title": "The Rekindling Letter's Mandate",
+    "stage": 4,
+    "sender": "Marsiyah, fourth-generation keeper of the letter",
+    "recipient": "Inspection 009 · keep carrying the letter",
+    "item": "Rekindling Letter",
+    "icon": "letter",
+    "itemIcon": "📜",
+    "location": "Menara Simpul Sembilan",
+    "targetPosition": [
+      145,
+      27,
+      -85
+    ],
+    "day_condition": "berat",
+    "weight": 1,
+    "fragile": true,
+    "moistureSensitive": true,
+    "summary": "Check both warning signs and press the back of the stamped letter against the plate. Keep the letter sealed.",
+    "hint": "Confirm Marsiyah's instructions and meet Kesa before crossing the storm to 009."
+  }
+]

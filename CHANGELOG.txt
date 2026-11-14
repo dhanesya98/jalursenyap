@@ -1,0 +1,137 @@
+JALUR SENYAP — CHANGELOG KUMULATIF SAMPAI v4
+Tanggal: 14 November 2026
+
+ZIP v4 mencakup seluruh perbaikan collision sampai v3 dan perapian UI v4.
+
+1. SISTEM COLLISION DAN GERAKAN
+
+- Area yang boleh diinjak mengikuti polygon tanah, lantai jembatan, tangga,
+  dan landing.
+- Area di luar polygon tersebut diblokir, termasuk jurang, air, dan batas map.
+- Objek padat memakai polygon penghalang terpisah.
+- Pemeriksaan memakai seluruh tapak kaki karakter berbentuk elips berukuran
+  7 x 4 piksel, bukan hanya titik tengah karakter.
+- Gerakan dipecah menjadi langkah maksimal 2 piksel, sehingga sprint atau
+  frame lambat tidak langsung melompati penghalang.
+- Pemeriksaan sepanjang lintasan menggunakan supercover DDA untuk menangkap
+  celah kecil di sudut collider.
+- Gerakan yang menyentuh sisi miring diarahkan mengikuti kontur collider.
+  Ini mengurangi sensasi tersangkut akibat pembatas berbentuk tangga piksel.
+- Sambungan polygon yang saling bertumpuk diperlakukan sebagai satu permukaan,
+  supaya batas internalnya tidak menjadi dinding tak terlihat.
+- Gerakan keyboard, jalur klik, spawn, pemulihan posisi save, dan Ruru
+  menggunakan dasar collision yang sama.
+- Simulasi gerak berjalan pada 120 langkah fisika per detik.
+
+2. PERBAIKAN PER MAP
+
+Pos Nilasar
+- Kontur halaman, tangga kuil, tangga selatan/timur, dan jembatan barat
+  disesuaikan. Sumur serta objek sekitarnya menjadi penghalang.
+
+Telaga Sumi
+- Air telaga diblokir. Jalur mengitari telaga, tiga jembatan bertangga,
+  serta akses timur diperiksa sambungannya.
+
+Menara Senja
+- Collider dibuat per objek; lantai dua jembatan, tangga, landing, bebatuan,
+  pohon, altar, dan dinding menara dipisahkan. Rincian ada pada bagian 3.
+
+Gerbang Timur
+- Jalur miring menuju gerbang mengikuti ruang terbuka di antara bangunan
+  dan objek. Area bangunan serta tepian jalur diblokir.
+
+Menara Simpul ke-9
+- Platform bawah dipisahkan dari dinding platform atas. Akses naik melalui
+  tangga timur. Lantai di sekitar pilar barat dibuka.
+
+Dusun Sela
+- Kanal diblokir. Lantai jembatan utara/selatan dan sambungannya ke daratan
+  diperiksa, termasuk dua tangga di area tengah.
+
+Tebing Balkut
+- Bentuk dek dan pangkal jembatan diperbaiki. Mesin tambat dan kaki pilar
+  menjadi penghalang terpisah. Jalur tangga tebing diperiksa dua arah.
+
+Padang Salkara
+- Area tanah dekat tenda kecil dibuka. Tenda, api, peti, tiang, dan batu
+  tetap menjadi penghalang. Tangga masuk serta jalur mengitari area sidang
+  diperiksa.
+
+3. RINCIAN KHUSUS MENARA SENJA
+
+Menara Senja sekarang memiliki 17 penghalang bernama dan 12 permukaan jalan.
+
+Perbaikan bertahap:
+- Memisahkan lantai jembatan dari tali/pagar jembatan.
+- Membentuk collider bebatuan, pohon, reruntuhan, altar, dan menara
+  secara individual.
+- Memperbaiki landing di kedua ujung jembatan bawah.
+- Memperbaiki titik nyangkut yang dilaporkan di ujung barat jembatan bawah.
+- Meruncingkan ujung collider tali utara: sebelumnya karakter bisa keluar
+  dengan A, tetapi tertahan ketika kembali dengan D.
+- Memperbaiki sambungan atas tangga bawah yang tersendat ketika dituruni.
+- Menghapus pintasan tangga tali lurus yang melewati tebing. Perjalanan
+  kini mengikuti tangga batu pada gambar.
+- Memperhalus grid pencarian jalur Senja menjadi 4 piksel.
+
+4. PLATFORM BERBEDA TINGGI
+
+- Di Simpul, karakter tidak lagi bisa langsung berjalan dari platform bawah
+  menembus sisi dinding platform atas.
+- Ujung bawah tangga Simpul diperbaiki karena sebelumnya tersendat pada
+  arah naik maupun turun tertentu.
+- Sambungan tangga diperluas hanya pada bagian pijakan dan landing
+  yang diperlukan.
+- Lompat tidak menonaktifkan collision, sehingga tidak bisa dipakai untuk
+  melewati dinding atau jurang.
+
+5. FITUR PERJALANAN DAN SAVE
+
+- Gliding dan grappling hook dihapus, termasuk binding serta petunjuk terkait.
+- Lompat biasa dan puzzle jembatan tetap tersedia.
+- Jembatan Balkut tetap mengikuti syarat progres cerita.
+- Jalur klik memeriksa sambungan dan sudut sebelum dilalui.
+- Ruru mengikuti jalur tanah dan mencari ulang rute ketika terhalang.
+- Posisi spawn serta beberapa marker diperbaiki agar berada pada pijakan
+  yang sesuai.
+- Format save tetap versi 4. Posisi save yang tidak aman dipindahkan ke
+  pijakan aman; data gliding lama dibuang.
+- Urutan quest, dialog, hadiah, dan aturan puzzle dipertahankan.
+
+6. HASIL PENGUJIAN COLLISION v3
+
+- 23 kelompok regresi lulus.
+- 27 rute, masing-masing diuji maju/balik dan berjalan/sprint:
+  total 108 kombinasi.
+- 124.176 pemeriksaan gerakan keluar di tepian delapan map.
+- Pemeriksaan akses 58 target quest dan 14 pintu/transisi.
+- Pengujian menekan arah ke dinding/jurang sambil sprint dan melompat.
+- Uji tombol WASD langsung di browser pada seluruh delapan map.
+
+Angka tersebut mencakup kasus dan lintasan yang diuji, bukan klaim bahwa
+setiap kemungkinan posisi karakter sudah dicoba manual.
+
+7. PERAPIAN ANTARMUKA v4
+
+- Panel HUD mendapat ruang tersendiri agar tidak bertumpuk.
+- Ukuran judul tujuan, judul menu, nama pembicara, dan teks dialog diperkecil.
+- HUD disembunyikan ketika menu atau percakapan aktif.
+- Notifikasi dan petunjuk interaksi ditumpuk mengikuti tinggi teks.
+- Tombol kembali puzzle dipindahkan ke header yang tertata.
+- Tab, kolom, dan panel panjang menyesuaikan layar serta dapat digulir.
+- 108 kombinasi pengujian layout lulus.
+
+V4 membawa seluruh collision v3; perubahan v4 sendiri berfokus pada HTML/CSS
+dan pembangunan ulang bundle. Pengujian collision v3 tidak diklaim dijalankan
+ulang untuk perubahan CSS ini.
+
+REFERENSI DALAM ZIP
+
+- INSTALL-UI-v4.txt: petunjuk pemasangan patch kumulatif.
+- docs/COLLISION-ISOMETRIC.md: dasar implementasi collision.
+- docs/WASD-AUDIT-v3.md: cakupan rute dan hasil pengujian WASD.
+- docs/UI-AUDIT-v4.md: rincian perubahan dan pengujian antarmuka.
+- COLLISION-PATCH-MANIFEST.json: daftar file dan hash verifikasi.
+
+Semua patch dibuat di salinan kerja. File asli di drive G tidak diubah.

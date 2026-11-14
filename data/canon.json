@@ -1,0 +1,238 @@
+{
+  "year": 100,
+  "worldName": "Tanah Sada",
+  "source": "docs/STORY-BIBLE.md",
+  "revision": "2026-11-09",
+  "nara": {
+    "age": 17,
+    "birth": 83,
+    "home": "Dusun Sela",
+    "grandmother": "Ima",
+    "mother": "Nadiyah (deceased; descended from Lulanai on her mother's side, whose family fled persecution after Telan)",
+    "father": "Tarun",
+    "fatherOrigin": "Bahtari (House of Sails)",
+    "fatherDeparture": 95,
+    "sensitivity": "Echo sensitivity is a learned skill: Nadiyah secretly taught Nara to listen to stones. Others can learn it too. It hears residual voices in physical media, cannot reveal the entire past or detect lies, and does not control the gate. Ima concealed it out of fear of the contagious-Noise and Voice-Swallower accusations.",
+    "motivation": "So no one has to wait alone."
+  },
+  "keyFigures": {
+    "nadiyah": "Nadiyah (Nara's mother and Nenek Ima's daughter; deceased)",
+    "mairuma": "Mairuma (leader of the Lulanai Abstainers)",
+    "lunaia": "Lunaia (leader of the Lulanai Remorseful faction; descendant of Dalumi)",
+    "ruania": "Ruania (leader of the Lulanai Open faction; from the settlement protected by Hemira)",
+    "lisen": "Lisen (leader of Tseren's Harmonist school)",
+    "wanuri": "Wanuri (chief merchant of the Bahtari Trading Houses)",
+    "yazhir": "Yazhir (Lulanai miner trapped in Lulan Tua basalt mine ~410 Pra-Telan; first recorded echo; perished with two excavators)",
+    "ilumara": "Ilumara (stone reader who opposed the concealment of the origin mine by Lulanai founders ~405 Pra-Telan)"
+  },
+  "nations": [
+    {
+      "id": "asharim",
+      "name": "Asharim",
+      "region": "Lembah Pasir & Sabuk Dua Sungai (Remuz & Zamer)",
+      "place": "Telaga Sumi · Pos Nilasar (Batu Biru) · Menara Senja · Dusun Sela",
+      "role": "Konfederasi suaka air dan penjaga persinggahan",
+      "contract": "Pakta Sumur Terbuka (Hukum Air): Mata air adalah suaka netral, bukan milik satu marga pun. Bersama kaum Lulanai, mereka membangun saluran Urat Sumi dan Sabuk Remuz-Zamer di sepanjang sungai Remuz dan Zamer. Pelapisan terowongan Urat Sumi dikerjakan Lulanai tanpa pungutan imbalan di masa kemarau sebagai penebusan rahasia atas tragedi tambang asal.",
+      "politics": "Setiap pos besar adalah kota-pos swatantra yang dipimpin oleh seorang Kepala Pos dan Majelis Sumur. Pos-pos Tua mempertahankan suaka netral bagi kurir dan pedagang kecil serta menolak prajurit Dewan di dekat sumur. Pos-pos Dagang yang pragmatis bekerja sama dengan Dewan Tetua, menyerahkan catatan Buku Tamu Batu demi subsidi pangan dan penurunan bea jalan.",
+      "economy": "Batangan garam batu (diukur dalam satuan Garis), rempah gurun, kain tenun, cadangan air, perbekalan kurir dan karavan (kendi kulit, tali sauh, kain penahan debu), serta roti rempah; pasar transit netral dan pusat pertukaran ilmu.",
+      "greeting": "Motto: Air tidak bertanya nama.",
+      "description": "Penjaga mata air gurun dan pos persinggahan di sekitar Urat Sumi dan Balai Cawan. Melalui adat Tiga Cawan, setiap pos menjadi perpustakaan lisan serta tempat bertukar pengetahuan dan budaya. Semboyan mereka: Air tidak bertanya nama.",
+      "custom": "Tiga Cawan: air untuk navigasi rute, garam untuk perbekalan dan barter, kabar untuk pengetahuan dan kisah perjalanan. Air malam diletakkan di ambang pintu, dan Buku Tamu Batu tempat para musafir mengukir nama mereka.",
+      "trust": "Menghormati keramahtamahan: membalas kebaikan dengan budi, menampung mereka yang membutuhkan suaka, tetap mengantar kabar menembus badai gurun, dan melapor dengan jujur apa adanya.",
+      "history": "Warisan Sejarah (Tahun Telan): Kesenyapan menelan dunia karena manusia terlalu bergantung pada suara-suara jauh dan melupakan makna kehadiran yang nyata.",
+      "blindspot": "Cenderung meremehkan manfaat nyata jaringan Echoes dan menghakimi bangsa yang bergantung pada kabar jarak jauh, terutama bangsa Bahtari.",
+      "tension": "Pos-pos Tua menolak keras tentara Dewan di dekat mata air. Pos-pos Dagang diam-diam melaporkan kurir yang melintas dan menyerahkan Buku Tamu Batu kepada Dewan demi potongan bea jalan.",
+      "phenomenon": "Sumur-sumur di Telaga Sumi memantulkan gema suara dari waktu dan tempat yang jauh, semakin nyaring bergetar dari tahun ke tahun.",
+      "palette": [
+        "#3D6E8F",
+        "#C86A3C"
+      ],
+      "alt": "Halaman pelataran pos Asharim berkubah cawan pirus, tempat tuan rumah menyuguhkan mangkuk air kepada seorang kurir.",
+      "image": "assets/world/nations/asharim-concept-v1.webp"
+    },
+    {
+      "id": "tseren",
+      "name": "Tseren",
+      "region": "Pegunungan Silin (Kabut Lirih)",
+      "place": "Desa Kertas Awan · Paviliun Tebing · Gudang Naskah Rahasia",
+      "role": "Birokrasi arsip dan penjaga catatan",
+      "contract": "Kanon Aksara: Sengketa antar-lembah berkabut melahirkan Rumah Naskah. Segala kesepakatan bersandar pada bukti tertulis, kamus ukuran lintas batas, dan pelestarian teks naskah sumber asli.",
+      "politics": "Rumah Naskah menjaga arsip dan pengesahan. Aliran Murni, termasuk Wuren, menolak mengubah naskah bersegel. Aliran Selaras pimpinan Lisen menyunting arsip demi ketertiban: kewajiban pemberitahuan dalam bahaya pada Ikrar Sambung diubah menjadi izin atau hak veto Dewan, dan perbedaan pendapat Dalumi dihapus. Naskah asli disimpan karena menghancurkan tulisan dianggap tabu.",
+      "economy": "Kertas serat rami tahan air dan kelembapan, tinta mineral berlapis, kain tenun wol, buku panduan ukuran dan pengobatan, serta benang peredam gema yang dipakai pada tas Sahdan dan Surat Penyalaan. Kertas biasa tidak selalu kedap air.",
+      "greeting": "Motto: Tinta tidak pernah lupa.",
+      "description": "Pengesah dokumen lintas batas dan pembuat bahan naskah di Pegunungan Silin (Kabut Lirih). Penanggalan mereka menghitung Tahun Simpul: TS 1 = 400 Pra-Telan; Tahun Telan = TS 401; Tahun 100 Telan = TS 501. Label Pra-Telan menandakan penulisan atau penandaan pasca-Telan. Label itu belum membuktikan isinya palsu; medium, catatan penyalinan, dan naskah sumber harus dibandingkan.",
+      "custom": "Dua Pembacaan: penerima membaca isi surat, sementara kurir membacakan catatan serah-terima dan menyatakan kondisi fisik naskah tanpa merusak segel. Tinta Kelahiran dicatat dan disimpan di arsip desa.",
+      "trust": "Mengantarkan surat tanpa mengubah sepatah kata pun, dan berani bersuara bila suatu dokumen tampak palsu atau tidak konsisten.",
+      "history": "Warisan Sejarah (Tahun Tinta Kering): Jaringan Echoes runtuh akibat penyalahgunaan pengetahuan dan kegagalan teknis yang tidak disengaja.",
+      "blindspot": "Terlalu mengandalkan bukti tertulis sekalipun salinan naskah selama satu abad telah mengalami penyalinan berulang dan sebagian arsip telah disunting oleh Aliran Selaras.",
+      "tension": "Aliran Murni (termasuk Wuren) berjuang menjaga naskah sumber asli. Aliran Selaras (Lisen) menyunting arsip resmi demi stabilitas politik tetapi mengunci naskah asli, termasuk naskah asli Ikrar Sambung.",
+      "phenomenon": "Tinta formula khusus menampakkan tulisan yang telah terhapus atau jejak gema samar di atas lembaran perkamen.",
+      "palette": [
+        "#EDE6D3",
+        "#8FA68A"
+      ],
+      "alt": "Bengkel perajin kertas Tseren dan gudang arsip di antara pegunungan berkabut dan jembatan gantung tali.",
+      "image": "assets/world/nations/tseren-concept-v1.webp"
+    },
+    {
+      "id": "cirusia",
+      "name": "Cirusia",
+      "region": "Padang Salkara",
+      "place": "Perkemahan Tujuh Panji · Jalur Padang · Tepi Salkara",
+      "role": "Konfederasi Tujuh Panji dan penjaga janji",
+      "contract": "Sumpah Api Tujuh Panji: Tujuh marga penggembala mengakhiri perang padang lewat Sumpah Api Tujuh Panji dengan membagi tanggung jawab wilayah dan menetapkan Hukum Janji Api di hadapan tiga saksi mata.",
+      "politics": "Federasi suku-militer nomaden yang diperintah lewat sidang terbuka tujuh pemimpin panji. Mengalami kebuntuan tiga lawan tiga dengan satu suara penentu: tiga Panji Tua, tiga Panji Muda, dan Panji Kadum sebagai penengah.",
+      "economy": "Ternak padang rumput, kuda beban, kain wol dan laken kempa, kulit unta, daging kering, tali tambang panjang, serta jasa pengawalan karavan pedagang lintas batas wilayah.",
+      "greeting": "Motto: Bohonglah di depan api, kalau berani.",
+      "description": "Tulang punggung keamanan karavan darat dan logistik di Tanah Sada. Hukum Janji Api mengutamakan kata-kata yang diucapkan di hadapan tiga saksi. Panji Kadum merawat sumpah dan prasasti nama para pengelana. Padang Salkara mengambil namanya dari Salka, marga leluhur Panji Dolgak.",
+      "custom": "Janji di Depan Api: janji penting diucapkan di depan perapian besar dan disaksikan tiga saksi mata, pantang dituliskan. Nama di Batu: dicatat pada monumen batu oleh Panji Kadum. Memanggil Angin: upacara melepas karavan yang berangkat melintasi padang.",
+      "trust": "Menepati janji lisan tanpa catatan tertulis dan berani bersaksi secara jujur di hadapan Majelis Tujuh Panji.",
+      "history": "Warisan Sejarah (Tahun Tuduhan): Bangsa Bahtari dituduh mengkhianati mereka, memadamkan Echoes, dan membakar karavan Cirusia demi menutupi kesalahan mereka.",
+      "blindspot": "Kebencian warisan kepada bangsa Bahtari sebagian menutupi rasa bersalah leluhur Panji Gorkan atas kebakaran perapian dapur yang merembet diterbangkan badai di Tepi Salkara.",
+      "tension": "Tiga Panji Tua mempertahankan tuduhan masa lalu dan adat Muka Api. Tiga Panji Muda (termasuk Panji Balkut tempat Orsuk bernaung) membutuhkan garam, lada, dan perdagangan terbuka. Panji Kadum menahan suaranya menanti bukti nyata yang didukung kesaksian terpercaya.",
+      "phenomenon": "Batu-batu penanda padang rumput kerap mengulangi nama-nama dan potongan suara para pengelana masa lalu saat angin malam berhembus.",
+      "tujuhPanji": [
+        {
+          "name": "Panji Gorkan",
+          "clan": "Pemimpin: Dargun, si Bara (laki-laki, ±62 tahun)",
+          "symbol": "Spiral merah pada dasar hitam",
+          "role": "Sidang api dan jadwal karavan; penjaga api dan perunding",
+          "politics": "Panji Tua; mewarisi rahasia kecelakaan api dapur lama"
+        },
+        {
+          "name": "Panji Dolgak",
+          "clan": "Pemimpin: Hurgak, si Tanduk Besi (perempuan, ±50 tahun)",
+          "symbol": "Sepasang tanduk perunggu",
+          "role": "Pengawalan garda depan; penunggang tangguh dan perisai kempa",
+          "politics": "Panji Tua; mewarisi trauma kehilangan para pengawal lama"
+        },
+        {
+          "name": "Panji Sarbuk",
+          "clan": "Pemimpin: Kutlak, si Angin Debu (laki-laki, ±58 tahun)",
+          "symbol": "Tiga gelombang kuning",
+          "role": "Pengintaian dan pembukaan jalur; pembaca arah angin dan rumput gurun",
+          "politics": "Panji Tua; sangat curiga terhadap pihak luar"
+        },
+        {
+          "name": "Panji Balkut",
+          "clan": "Pemimpin: Salgur, si Tali Panjang (perempuan, ±38 tahun)",
+          "symbol": "Simpul tali terakota",
+          "role": "Kargo lintas batas, ahli tali-temali, titian darurat, gerobak, dan penghubung kurir",
+          "politics": "Panji Muda; berpikiran pragmatis; panji tempat Orsuk bernaung"
+        },
+        {
+          "name": "Panji Tumran",
+          "clan": "Pemimpin: Borlan, si Roda Kempa (laki-laki, ±45 tahun)",
+          "symbol": "Roda bersulam putih",
+          "role": "Tenda dan logistik; pendirian perkemahan, pengolahan wol, dan pengawetan ransum",
+          "politics": "Panji Muda; membutuhkan pasokan rempah dan garam Bahtari"
+        },
+        {
+          "name": "Panji Ulmar",
+          "clan": "Pemimpin: Burgul, si Bintang Rendah (perempuan, ±30 tahun)",
+          "symbol": "Bintang putih di atas biru gelap",
+          "role": "Rute malam dan tapal batas; navigasi bintang cakrawala",
+          "politics": "Panji Muda; menolak bea jalur yang menghambat perniagaan"
+        },
+        {
+          "name": "Panji Kadum",
+          "clan": "Pemimpin: Odgar, si Batu Nama (laki-laki, ±75 tahun)",
+          "symbol": "Monolit abu-abu",
+          "role": "Nama-nama yang gugur dan pengesahan sumpah; pemelihara rantai ingatan lisan",
+          "politics": "Penengah netral dan pemegang suara penentu (suara ke-7)"
+        }
+      ],
+      "palette": [
+        "#A8452F",
+        "#D9B45A"
+      ],
+      "alt": "Perkemahan Tujuh Panji di padang savana Cirusia, dengan sumpah yang diucapkan di depan perapian dan tiga saksi mata.",
+      "image": "assets/world/nations/cirusia-concept-v1.webp"
+    },
+    {
+      "id": "bahtari",
+      "name": "Bahtari",
+      "region": "Kepulauan Lamuna & Jaringan Sungai-Laut",
+      "place": "Bandar Lada · Menara Simpul Keseratus (Gerbang Surut) · 12 Titik Serah Muatan",
+      "role": "Bangsa bandar, pelaut, dan penjaga lagu",
+      "contract": "Hukum Sauh dan Lagu: Pulau-pulau yang dipisahkan oleh arus deras disatukan oleh kewajiban berbagi risiko pelayaran dan merawat keluarga pelaut yang ditinggalkan berlayar.",
+      "politics": "Persaingan antara Rumah Dagang yang dipimpin Wanuri dan kaum Rumah Layar. Pihak serikat menguasai gudang lada biru, dermaga labuh, dan modal Kontrak Sauh, bekerja sama dengan Dewan, serta mengenakan bunga atas Utang Kabar. Pihak Rumah Layar terdiri atas para nakhoda, keluarga pelaut, dan Pembawa Lagu Titipan seperti Tiwano dan Tarun.",
+      "economy": "Lada biru, pengawet makanan bersama garam; garam laut kristal, ikan asin, kain celup indigo laut, tali sabut kapal, kayu perahu, dan transportasi muara-pesisir.",
+      "greeting": "Motto: Pasang selalu kembali.",
+      "description": "Pelaut, saudagar bahari, Pembawa Lagu Titipan, dan pembawa muatan muara di Kepulauan Lamuna. Lagu keluarga membawa ketidaksempurnaan nada manusiawi yang dikenali oleh kerabat penerima, bukan sekadar kunci mekanis biasa.",
+      "custom": "Lagu Titipan: nyanyian rekaman keluarga yang dibawa oleh pelaut atau kurir, pantang diubah nadanya. Kerang Suara: kerang laut purba berpori penyimpan getaran lagu atau pesan penting. Tradisi ini dijaga oleh para Pembawa Lagu. Kerang itu warisan Zaman Echoes yang terbatas jumlahnya; tidak ada yang bisa membuat yang baru.",
+      "trust": "Membawa pesan pulang ke rumah dengan setia, termasuk nyanyian yang mengandung nada sumbang atau tidak sempurna. Sebagai tuan rumah Gerbang Surut, Bahtari tidak memberi Cap Saksi Surat Penyalaan; Nama Baik dan kesaksian pelabuhannya tetap penting.",
+      "history": "Warisan Sejarah (Tahun Terputus): Dewan Tetua dituduh menarik keuntungan besar dari Hari Senyap dan sengaja memonopoli rute perdagangan.",
+      "blindspot": "Lupa bahwa rumah-rumah dagang besar mereka dahulu pernah menjual kabar kilat dan menumpuk kekayaan melalui spekulasi informasi pada Zaman Kabar Dusta.",
+      "tension": "Rumah Dagang Wanuri bekerja sama dengan Dewan demi izin sandar eksklusif dan menjerat pelaut mandiri dalam jeratan Utang Kabar. Kaum Rumah Layar menentang pungutan bea jalur dan melindungi keluarga pelaut dari penyitaan kapal.",
+      "phenomenon": "Kerang Suara tua kerap bernyanyi sendiri di malam hening, memantulkan penggalan nada nyanyian dari kapal-kapal masa lalu.",
+      "palette": [
+        "#2E8B8B",
+        "#E07B39"
+      ],
+      "alt": "Pelabuhan rempah Bahtari dengan rumah panggung kayu garam, kapal layar bercadik, dan keluarga yang menerima Kerang Suara titipan.",
+      "image": "assets/world/nations/bahtari-concept-v1.webp"
+    },
+    {
+      "id": "lulanai",
+      "name": "Lulanai",
+      "region": "Lulan Tua (Dataran Tinggi Basalt Poros Tengah)",
+      "place": "Menara Simpul Pusat · Rumah Jejak · Menara Simpul Lama",
+      "role": "Bangsa asli para arsitek dan pembangun negara",
+      "contract": "Ikatan Arsitek: Bermula dari penemuan sifat rekam batu di tambang basalt Lulan Tua (~410 Pra-Telan) yang dikubur para pendiri. Lulanai membangun jaringan 100 Menara Simpul bersama bangsa setempat antara 400–250 Pra-Telan. Pada 120 Pra-Telan, Ikrar Sambung mengikat Lulanai sebagai pemegang teknik dan kunci dengan Dewan Tetua sebagai pemegang jalur, iuran, dan pos. Keputusan besar diambil bersama; dalam bahaya, pihak yang bertindak wajib memberi tahu mitranya.",
+      "politics": "Diaspora tiga faksi tanpa pemerintahan pusat. Kaum Pantang pimpinan Mairuma menolak keras penyalaan kembali menara. Kaum Terbuka pimpinan Ruania menuntut pembagian pengetahuan dan pemulihan Echoes secara terbuka; arsitek Hemira berasal dari faksi ini dan menjual catatan tak lengkap pada Tahun 52 demi melindungi para penyintas. Kaum Sesal pimpinan Lunaia menolak pemutusan sepihak yang dilakukan Wilanu pada Hari Senyap, sejalan dengan keberatan tertulis Dalumi.",
+      "economy": "Hampir tidak ada perdagangan terbuka. Mereka menempa perkakas arsitek dan Cincin Arsitek perunggu, memperbaiki batu gaung yang retak, dan bertukar pengetahuan melalui rute tersembunyi bersama kurir dan saudagar terpercaya.",
+      "greeting": "Motto: Dengar dan resapi.",
+      "description": "Pembangun peradaban lima bangsa: saluran Urat Sumi bersama Asharim, arsip kedap lembap bersama Tseren, monolit padang rumput bersama Cirusia, serta pemecah ombak dan Bejana Batu bersama Bahtari. Mereka merancang 100 Menara Simpul. Pada Malam Tiga Napas, Wilanu memutus jaringan tanpa memberi tahu Dewan Tetua, melanggar kewajiban dalam Ikrar Sambung. Para penyintas menghadapi Perkara Pemutusan dan tuduhan membawa Bising menular serta Penelan Suara.",
+      "custom": "Tiga Napas Hening: sebelum berbicara kepada orang asing, mereka diam selama tiga napas (kebiasaan hening dari tambang asal). Penutup Telinga Perunggu: dipakai penderita Bising untuk meredam getaran gaung di telinga, yang kelak dituduh menyebarkannya. Tanda & Syarat Wajah: pesan bersyarat adalah jawaban teknik Lulanai atas kesalahan pertama di tambang basalt: pesan yang membawa syarat dan waktunya sendiri.",
+      "trust": "Mendengarkan sebelum menghakimi dan memulihkan kepercayaan bangsa lain. Sebagai perancang jaringan, Lulanai tidak memberi Cap Saksi Surat Penyalaan. Roh Wilanu menjawab pola kunci setelah tiga serah-terima sah; jawaban teknik lama tetap diperiksa bersama penjaga hidup.",
+      "history": "Warisan Sejarah (Malam Tiga Napas): Hari Senyap adalah pengorbanan yang disengaja demi menghentikan gelombang gema liar dan menyelamatkan dunia dari kehancuran pikiran.",
+      "blindspot": "Titik buta mereka berakar dari para pendiri: pendiri sadar mengubur tragedi tambang asal dan menyusun cerita bersih, sedangkan keturunan mewarisi ketidaktahuan itu. Di masa pasca-Telan, mereka membangun jaringan tanpa pengaman sosial (karena menyertakan Syarat Wajah ke jaringan menuntut penjelasan sebabnya), lalu mengulangi pola penutupan para pendiri dengan melanggar Ikrar Sambung melalui keputusan sepihak.",
+      "tension": "Pertikaian batin antara Mairuma, Lunaia, dan Ruania; perselisihan roh Wilanu dan Dalumi atas Ikrar Sambung; serta luka pembelotan Hemira di Tahun 52 demi menyelamatkan permukiman penyintas dari tekanan Dewan.",
+      "phenomenon": "Batu-batu menara di reruntuhan Lulan Tua berdengung pelan dengan sendirinya tanpa pernah disentuh tangan manusia.",
+      "palette": [
+        "#6F7A68",
+        "#A6805A"
+      ],
+      "alt": "Seorang arsitek Lulanai sedang memperbaiki batu di antara reruntuhan Menara Simpul dan cincin-cincin perunggu tua.",
+      "image": "assets/world/nations/lulanai-concept-v1.webp"
+    }
+  ],
+  "letter": {
+    "name": "Rekindling Letter",
+    "requiredNations": 3,
+    "custody": [
+      "Saryel",
+      "Azhel",
+      "Ilyam",
+      "Marsiyah"
+    ],
+    "stamps": [
+      "asharim",
+      "cirusia",
+      "tseren"
+    ],
+    "outerInstruction": "Keep the key away from the center while the containment route is stable. Inspect test ring 009. If three untuned pulses coincide with a cracked ring, carry the letter through cross-nation witnesses to the central Rumah Jejak to prepare the release.",
+    "witnessRule": "Asharim, Cirusia and Tseren witness the handovers. Lulanai designed the network and Bahtari hosts the gate, so neither grants a Witness Seal. Seals record a mandate, not social reputation or proof of truth."
+  },
+  "demo": {
+    "chapter": 1,
+    "title": "Chapters 0–1 — Pos Nilasar to the Seven Banners Council",
+    "region": "Lembah Pasir, Dusun Sela & Padang Salkara",
+    "nextRegion": "Batu Tepi Salkara & Pegunungan Silin",
+    "fullNetworkReleased": false,
+    "implementedChapters": [
+      0,
+      1
+    ]
+  },
+  "origin": {
+    "year": -410,
+    "location": "Tambang basalt Lulan Tua (bawah Menara Simpul Pusat)",
+    "victim": "Yazhir (terkurung; gugur bersama dua penggali karena para pendiri sengaja diam sejak awal)",
+    "dissent": "Ilumara (pembaca batu penentang penutupan tambang)",
+    "concealment": "Para pendiri sengaja diam sejak awal menutupi kejadian demi persekutuan dan nama baik; tiga orang gugur; tambang ditutup rapat dan Menara Simpul Pusat dibangun di atasnya (400 Pra-Telan). Melahirkan aturan internal Syarat Wajah.",
+    "compensation": "Pelapisan Urat Sumi Asharim secara cuma-cuma di masa kemarau sebagai penebus rasa bersalah diam-diam (dasar kepercayaan panjang Asharim).",
+    "blindspot": "Pendiri sadar, keturunan buta. Penyintas masa kini mewarisi cerita bersih bahwa Lulanai menemukan sifat rekam batu."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "take_bag",
+  "npc": "Nara",
+  "title": "A Borrowed Satchel and Bread",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Wah... kulit luarnya tebal banget, tapi pas kumasukin tangan ke dalam, kain pelapis benang peredamnya adem dan rapat. Ada tiga paku perunggu di sudut bawahnya. Coba kusampirkan... pas di bahu!",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Marsiyah",
+      "text": "Sahdan meninggalkan tas itu di Pos Nilasar berminggu-minggu sebelum jaringan diputus, sebelum ia berangkat kembali ke pusat. Saryel menjaganya lebih dulu, lalu mewariskannya kepada Azhel, dari Azhel ke Ilyam, dan dari Ilyam ke tanganku. Hari ini biarlah ia kembali berjalan bersamamu.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Roti rempahnya masih hangat banget. Kubungkus dua lapis daun—eh, tiga lapis sama kain tenunnya—terus kutaruh di sekat tengah biar nggak penyok. Namanya tertulis jelas: untuk Pak Jumel.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Marsiyah",
+      "text": "Ikuti jalan batu yang menanjak ke utara. Jangan memotong lereng pasir kalau pijakanmu belum mantap. Begitu sampai di papan penanda punggung bukit, kubah menaranya sudah tampak.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Nara",
+      "text": "Siap, Bu! Aku berangkat sekarang sebelum rotinya keburu dingin. Ayo, Ruru!",
+      "action": "ACCEPT_BREAD"
+    }
+  }
+}

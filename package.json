@@ -1,0 +1,13 @@
+{
+  "name": "the-silent-route",
+  "version": "6.0.0",
+  "private": true,
+  "description": "Offline 2D pixel top-down courier adventure — Buku I (Bab 0–1)",
+  "scripts": {
+    "build": "node tools/build-pixel.cjs",
+    "test": "node tests/pixel.cjs && node tools/build-pixel.cjs && node tests/pixel-bundle.cjs",
+    "dev": "node tools/serve.cjs",
+    "build:pixel": "node tools/build-pixel.cjs",
+    "test:pixel": "node tests/pixel.cjs && node tools/build-pixel.cjs && node tests/pixel-bundle.cjs"
+  }
+}

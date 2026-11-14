@@ -1,0 +1,46 @@
+{
+  "hangat": {
+    "id": "hangat",
+    "name": "Warm Day",
+    "fog": 15061676,
+    "near": 90,
+    "far": 340,
+    "sky": 16777215,
+    "sun": 16770746,
+    "power": 1.25,
+    "ambient": 0.85
+  },
+  "kabut": {
+    "id": "kabut",
+    "name": "Foggy Day",
+    "fog": 12965074,
+    "near": 24,
+    "far": 155,
+    "sky": 13359317,
+    "sun": 14148319,
+    "power": 0.65,
+    "ambient": 0.8
+  },
+  "berat": {
+    "id": "berat",
+    "name": "Heavy Weather",
+    "fog": 8811882,
+    "near": 20,
+    "far": 125,
+    "sky": 7960445,
+    "sun": 13214083,
+    "power": 0.48,
+    "ambient": 0.7
+  },
+  "malam": {
+    "id": "malam",
+    "name": "Quiet Night",
+    "fog": 2042442,
+    "near": 35,
+    "far": 210,
+    "sky": 3096422,
+    "sun": 15909995,
+    "power": 0.55,
+    "ambient": 0.62
+  }
+}

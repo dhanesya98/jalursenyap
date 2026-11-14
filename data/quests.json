@@ -1,0 +1,1057 @@
+{
+  "chapter": 0,
+  "targetMinutes": [
+    40,
+    60
+  ],
+  "steps": [
+    {
+      "id": "welcome",
+      "stage": 0,
+      "status": "ready",
+      "weather": "hangat",
+      "target": "maren",
+      "name": "Meet Marsiyah at the pavilion",
+      "hint": "Ruru is waiting in the courtyard. Approach Marsiyah and press E.",
+      "dialogue": "maren_intro",
+      "actions": [
+        "MEET_MAREN"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "register",
+      "stage": 0,
+      "status": "ready",
+      "weather": "hangat",
+      "target": "guestbook",
+      "name": "Write your name in the Stone Guestbook",
+      "hint": "The blue stone beside the courtyard records the names of passing couriers.",
+      "dialogue": "guestbook",
+      "actions": [
+        "REGISTER_NAME"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "take_bag",
+      "stage": 0,
+      "status": "ready",
+      "weather": "hangat",
+      "target": "supply",
+      "name": "Collect the borrowed satchel and bread",
+      "hint": "Check the satchel's stitching and the package on the supply table before leaving.",
+      "dialogue": "take_bag",
+      "actions": [
+        "ACCEPT_BREAD"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "bread_route",
+      "stage": 0,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "ridge_sign",
+      "name": "Read the sign toward the tower",
+      "hint": "Follow the stone path north. Press M to open the region map.",
+      "dialogue": "ridge_sign",
+      "actions": [
+        "READ_RIDGE"
+      ],
+      "route": "north",
+      "reverse": false
+    },
+    {
+      "id": "bread_handoff",
+      "stage": 0,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "juma",
+      "name": "Deliver the bread to Jumel",
+      "hint": "Use the stone footholds on the slope. Jumel waits at the foot of the tower.",
+      "dialogue": "juma_delivery1",
+      "actions": [
+        "DELIVER_BREAD_A",
+        "DELIVER_BREAD_B"
+      ],
+      "route": "north",
+      "reverse": false
+    },
+    {
+      "id": "juma_ledger",
+      "stage": 1,
+      "status": "return",
+      "weather": "hangat",
+      "target": "juma_book",
+      "name": "Examine the satchel drawing in Jumel's grandfather's journal",
+      "hint": "The journal lies open on the bench near Jumel. Examine the source of his story.",
+      "dialogue": "juma_book",
+      "actions": [
+        "READ_LEDGER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "return_bread",
+      "stage": 1,
+      "status": "return",
+      "weather": "hangat",
+      "target": "maren",
+      "name": "Return and report your meeting with Jumel",
+      "hint": "Return to the post. Your Glider Cape helps you descend to lower ground.",
+      "dialogue": "maren_delivery2",
+      "actions": [
+        "ACCEPT_SHELL"
+      ],
+      "route": "north",
+      "reverse": true
+    },
+    {
+      "id": "shell_crossing",
+      "stage": 1,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "bridge_sign",
+      "name": "Inspect the footbridge at the ravine's edge",
+      "hint": "Follow the lanterns west. The footbridge still connects both sides of the ravine.",
+      "dialogue": "bridge_sign",
+      "actions": [
+        "CHECK_CROSSING"
+      ],
+      "route": "west",
+      "reverse": false
+    },
+    {
+      "id": "shell_handoff",
+      "stage": 1,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "bulamat",
+      "name": "Carry the entrusted song to Bu Lamit",
+      "hint": "Walk across the footbridge. Describe the shell's condition when you hand it over.",
+      "dialogue": "bulamat_delivery2",
+      "actions": [
+        "DELIVER_SHELL_A",
+        "DELIVER_SHELL_B"
+      ],
+      "route": "west",
+      "reverse": false
+    },
+    {
+      "id": "well",
+      "stage": 2,
+      "status": "return",
+      "weather": "kabut",
+      "target": "well",
+      "name": "Listen to and inspect the Main Well",
+      "hint": "Bu Lamit asked you to record changes in the sound from the well near the hall.",
+      "dialogue": "well",
+      "actions": [
+        "INSPECT_WELL"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "return_shell",
+      "stage": 2,
+      "status": "return",
+      "weather": "kabut",
+      "target": "maren",
+      "name": "Report on Telaga Sumi",
+      "hint": "Bring Marsiyah news of the song and the well.",
+      "dialogue": "maren_supplies",
+      "actions": [
+        "ACCEPT_SUPPLIES"
+      ],
+      "route": "west",
+      "reverse": true
+    },
+    {
+      "id": "supplies_check",
+      "stage": 2,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "supply",
+      "name": "Count and wrap the sister post's supplies",
+      "hint": "Two bundles of supplies and one travel permit. Record their initial condition at the supply table.",
+      "dialogue": "supplies_check",
+      "actions": [
+        "PACK_SUPPLIES"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "toll_notice",
+      "stage": 2,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "toll_notice",
+      "name": "Read the eastern gate's inspection notice",
+      "hint": "Follow the eastern road. Check why it is closed before speaking to the guard.",
+      "dialogue": "toll_notice",
+      "actions": [
+        "READ_TOLL_NOTICE"
+      ],
+      "route": "toll",
+      "reverse": false
+    },
+    {
+      "id": "detention",
+      "stage": 2,
+      "status": "travel",
+      "weather": "kabut",
+      "target": "kesa",
+      "name": "Request permission to continue the delivery",
+      "hint": "Show Kesa your travel permit. The delivery destination is beyond the gate.",
+      "dialogue": "kesa_detention",
+      "actions": [
+        "DETAIN_RECEIPT",
+        "DETAIN_PROTECT"
+      ],
+      "route": "toll",
+      "reverse": false
+    },
+    {
+      "id": "recover_cargo",
+      "stage": 2,
+      "status": "return",
+      "weather": "berat",
+      "target": "cargo",
+      "name": "Recover the remaining cargo and inspection receipt",
+      "hint": "The inspection table is beside the gate. Check what you can still take home.",
+      "dialogue": "recover_cargo",
+      "actions": [
+        "RECOVER_CARGO"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "report",
+      "stage": 2,
+      "status": "return",
+      "weather": "berat",
+      "target": "maren",
+      "name": "Report the partial delivery failure to Marsiyah",
+      "hint": "Bring the remaining supplies and detention receipt back to the post.",
+      "dialogue": "maren_report",
+      "actions": [
+        "REPORT_DIRECT",
+        "REPORT_HESITANT"
+      ],
+      "route": "toll",
+      "reverse": true
+    },
+    {
+      "id": "warnings",
+      "stage": 3,
+      "status": "return",
+      "weather": "berat",
+      "target": "inspection_book",
+      "name": "Compare the warning signs in the inspection book",
+      "hint": "Marsiyah placed inspection record 009 on the kitchen table. Compare it with the news from the well.",
+      "dialogue": "inspection_book",
+      "actions": [
+        "CHECK_WARNINGS"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "letter",
+      "stage": 3,
+      "status": "return",
+      "weather": "berat",
+      "target": "maren",
+      "name": "Hear Marsiyah's mandate and accept the letter",
+      "hint": "All warning signs are present. Marsiyah is ready to pass on a trust kept for four generations.",
+      "dialogue": "maren_delivery3",
+      "actions": [
+        "RECEIVE_LETTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "stamp",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "stamp_pad",
+      "name": "Record the bearer and witness names on the seal",
+      "hint": "At the stamping table, speak your name with Marsiyah. The letter remains sealed.",
+      "dialogue": "stamp_pad",
+      "actions": [
+        "STAMP_LETTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "farewell",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "maren",
+      "name": "Confirm the inspection instructions before leaving",
+      "hint": "Confirm how to use plate 009 and where to go after the inspection.",
+      "dialogue": "maren_farewell",
+      "actions": [
+        "DEPART"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "kesa_open",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "kesa",
+      "name": "Meet Kesa at the closed gate",
+      "hint": "Kesa has seen what happened to your cargo. Explain your inspection mandate.",
+      "dialogue": "kesa_tol",
+      "actions": [
+        "OPEN_NORTH_PATH"
+      ],
+      "route": "toll",
+      "reverse": false
+    },
+    {
+      "id": "storm_shelter",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "storm_shelter",
+      "name": "Check your supplies at the storm-route shelter",
+      "hint": "Choose Jalur Lentera or Tebing Utara on the map. Stop at the shelter marker on your route.",
+      "dialogue": "storm_shelter",
+      "actions": [
+        "SHELTER_LETTER"
+      ],
+      "route": "chosen",
+      "reverse": false
+    },
+    {
+      "id": "relay_pulses",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "relay_lantern",
+      "name": "Observe lantern 009's pulses",
+      "hint": "At the foot of the tower, inspect the lantern without touching the Architect Ring.",
+      "dialogue": "relay_lantern",
+      "actions": [
+        "OBSERVE_PULSES"
+      ],
+      "route": "chosen",
+      "reverse": false
+    },
+    {
+      "id": "relay_ring",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "relay_ring",
+      "name": "Compare the cracked ring with the test diagram",
+      "hint": "Inspect the marker ring beside the plate. Both warning signs are required.",
+      "dialogue": "relay_ring",
+      "actions": [
+        "INSPECT_RING"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "relay_contact",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "altar",
+      "name": "Press the back of the letter against plate 009",
+      "hint": "Keep the letter sealed. Use the side bearing the Asharim seal.",
+      "dialogue": "simpul_sembilan",
+      "actions": [
+        "CONTACT_LETTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "test_entry",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "test_door",
+      "name": "Follow Ruru to the test building behind the tower",
+      "hint": "A different sound comes from the small building. Inspect its door cover.",
+      "dialogue": "test_door",
+      "actions": [
+        "INSPECT_TEST_DOOR"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "test_echo",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "test_stone",
+      "name": "Listen to the residual sound in the test stone",
+      "hint": "The sound comes from inside the building, separate from plate 009.",
+      "dialogue": "test_stone",
+      "actions": [
+        "HEAR_TEST_TRACE"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "test_record",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "test_record",
+      "name": "Compare the trace with the inspection record",
+      "hint": "Inspect the plate beside the stone. Separate proven facts from what remains unknown.",
+      "dialogue": "test_record",
+      "actions": [
+        "COMPARE_RECORD"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "epilogue",
+      "stage": 3,
+      "status": "travel",
+      "weather": "berat",
+      "target": "departure",
+      "name": "Enter Dusun Sela and meet Nenek Ima with Ruru",
+      "hint": "Follow the eastern ridge to Dusun Sela's gate to begin Chapter 1 with Nenek Ima and Orsuk.",
+      "dialogue": "epilogue",
+      "actions": [
+        "FINISH_CHAPTER"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "sela_ima",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "ima",
+      "name": "Return to Nenek Ima's veranda",
+      "hint": "Follow the stone road into Dusun Sela. Ima's house faces the palm garden on the village's eastern side.",
+      "dialogue": "ima_bab1",
+      "actions": [
+        "HEAR_IMA"
+      ],
+      "route": null,
+      "reverse": false,
+      "waypoints": [
+        [
+          208,
+          24,
+          -134
+        ],
+        [
+          222,
+          24,
+          -139
+        ],
+        [
+          235,
+          24,
+          -150
+        ]
+      ]
+    },
+    {
+      "id": "sela_senja",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "juma",
+      "name": "Deliver Ima's provisions to Jumel",
+      "hint": "Retrace the ridge to the Menara Senja courtyard.",
+      "dialogue": "bab1_senja",
+      "actions": [
+        "DELIVER_IMA"
+      ],
+      "route": "village",
+      "reverse": true
+    },
+    {
+      "id": "sela_register",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "guestbook",
+      "name": "Collect a copy of the Stone Guestbook",
+      "hint": "Descend the tower road to Pos Nilasar. Guest records must retain a clear source.",
+      "dialogue": "bab1_register",
+      "actions": [
+        "TAKE_REGISTER"
+      ],
+      "route": "north",
+      "reverse": true
+    },
+    {
+      "id": "sumi_ledger",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "cawan_ledger",
+      "name": "Carry the records to Balai Cawan",
+      "hint": "Cross the footbridge and head to the northern veranda of Telaga Sumi.",
+      "dialogue": "bab1_cawan",
+      "actions": [
+        "DELIVER_REGISTER"
+      ],
+      "route": "west",
+      "reverse": false
+    },
+    {
+      "id": "sumi_trade",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "cawan_manifest",
+      "name": "Check the merchant's claims",
+      "hint": "Compare the seal and price records at the next table. State your doubts without changing the message.",
+      "dialogue": "bab1_trade",
+      "actions": [
+        "QUESTION_PRICE",
+        "PASS_PRICE"
+      ],
+      "route": null,
+      "reverse": false
+    },
+    {
+      "id": "sela_orsuk",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "orsuk",
+      "name": "Meet Orsuk at Dusun Sela's gate",
+      "hint": "Return via Pos Nilasar and Menara Senja to Dusun Sela. Earth-red cloth marks the Balkut caravan.",
+      "dialogue": "orsuk_bab1",
+      "actions": [
+        "JOIN_BALKUT"
+      ],
+      "route": null,
+      "reverse": false,
+      "waypoints": [
+        [
+          -121,
+          2,
+          65
+        ],
+        [
+          -108,
+          3,
+          57
+        ],
+        [
+          -88,
+          5,
+          43
+        ],
+        [
+          -56,
+          3,
+          43
+        ],
+        [
+          -46,
+          1,
+          54
+        ],
+        [
+          -28,
+          0,
+          49
+        ],
+        [
+          0,
+          0,
+          35
+        ],
+        [
+          0,
+          0,
+          -2
+        ],
+        [
+          -23,
+          2,
+          -32
+        ],
+        [
+          23,
+          6,
+          -58
+        ],
+        [
+          -20,
+          11,
+          -85
+        ],
+        [
+          8,
+          16,
+          -112
+        ],
+        [
+          38,
+          19,
+          -118
+        ],
+        [
+          68,
+          22,
+          -115
+        ],
+        [
+          86,
+          23,
+          -124
+        ],
+        [
+          112,
+          25,
+          -124
+        ],
+        [
+          144,
+          25,
+          -124
+        ],
+        [
+          176,
+          24,
+          -129
+        ],
+        [
+          208,
+          24,
+          -134
+        ],
+        [
+          226,
+          24,
+          -134
+        ],
+        [
+          244,
+          24,
+          -135
+        ]
+      ]
+    },
+    {
+      "id": "salkara_cargo",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "salkara_supply",
+      "name": "Deliver the goods to the Balkut caravan",
+      "hint": "Follow the cloth banners north across the savanna to Padang Salkara. Check the cargo beside the trail before the council circle.",
+      "dialogue": "bab1_cargo",
+      "actions": [
+        "DELIVER_CARAVAN"
+      ],
+      "route": "salkara",
+      "reverse": false
+    },
+    {
+      "id": "salkara_council",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "seven_banners",
+      "name": "Listen to the Seven Banners Council",
+      "hint": "Seven banners gather around one fire in Padang Salkara. Hear why they are withholding their decision.",
+      "dialogue": "bab1_council",
+      "actions": [
+        "HEAR_COUNCIL"
+      ],
+      "route": "salkara",
+      "reverse": false
+    },
+    {
+      "id": "salkara_promise",
+      "chapter": 1,
+      "stage": 4,
+      "status": "travel",
+      "weather": "hangat",
+      "target": "salkara_promise",
+      "name": "Carry a promise to return with evidence",
+      "hint": "Record the promise west of the fire circle. The Cirusian seal awaits verifiable testimony.",
+      "dialogue": "bab1_promise",
+      "actions": [
+        "KEEP_PROMISE"
+      ],
+      "route": null,
+      "reverse": false
+    }
+  ],
+  "objects": [
+    {
+      "id": "guestbook",
+      "name": "Stone Guestbook",
+      "position": [
+        -8,
+        0,
+        39
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "ridge_sign",
+      "name": "Tower Road Sign",
+      "position": [
+        -21,
+        0,
+        -32
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "juma_book",
+      "name": "Jumel's grandfather's journal",
+      "position": [
+        75,
+        22,
+        -115
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "bridge_sign",
+      "name": "Footbridge sign",
+      "position": [
+        -54,
+        0,
+        43
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "well",
+      "name": "Main Well",
+      "position": [
+        -142,
+        2,
+        77
+      ],
+      "kind": "well"
+    },
+    {
+      "id": "toll_notice",
+      "name": "Inspection notice",
+      "position": [
+        56,
+        3,
+        -9
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "cargo",
+      "name": "Inspection cargo table",
+      "position": [
+        63,
+        3,
+        -15
+      ],
+      "kind": "cargo"
+    },
+    {
+      "id": "inspection_book",
+      "name": "Marsiyah's inspection book",
+      "position": [
+        8.5,
+        0,
+        33.5
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "stamp_pad",
+      "name": "Echo-ink pad",
+      "position": [
+        8.5,
+        0,
+        27.5
+      ],
+      "kind": "stamp"
+    },
+    {
+      "id": "storm_safe",
+      "name": "Jalur Lentera Shelter",
+      "position": [
+        140,
+        0,
+        30
+      ],
+      "kind": "shelter"
+    },
+    {
+      "id": "storm_fast",
+      "name": "Tebing Utara Alcove",
+      "position": [
+        80,
+        0,
+        -39
+      ],
+      "kind": "shelter"
+    },
+    {
+      "id": "relay_lantern",
+      "name": "Test lantern 009",
+      "position": [
+        139,
+        0,
+        -76
+      ],
+      "kind": "lantern"
+    },
+    {
+      "id": "relay_ring",
+      "name": "Cracked marker ring",
+      "position": [
+        141,
+        0,
+        -89
+      ],
+      "kind": "ring"
+    },
+    {
+      "id": "test_door",
+      "name": "Test building door",
+      "position": [
+        130,
+        0,
+        -99
+      ],
+      "kind": "door"
+    },
+    {
+      "id": "test_stone",
+      "name": "Test stone",
+      "position": [
+        130,
+        0,
+        -103
+      ],
+      "kind": "stone"
+    },
+    {
+      "id": "test_record",
+      "name": "Old inspection plate",
+      "position": [
+        133.5,
+        0,
+        -103
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "departure",
+      "name": "Dusun Sela Threshold (Chapter 1)",
+      "position": [
+        208,
+        0,
+        -134
+      ],
+      "kind": "sign"
+    },
+    {
+      "id": "cawan_ledger",
+      "name": "Stone Guestbook Copy",
+      "position": [
+        -133,
+        2,
+        53
+      ],
+      "kind": "book"
+    },
+    {
+      "id": "cawan_manifest",
+      "name": "Cross-route merchant cargo",
+      "position": [
+        -122,
+        2,
+        53
+      ],
+      "kind": "cargo"
+    },
+    {
+      "id": "salkara_supply",
+      "name": "Balkut caravan supplies",
+      "position": [
+        250,
+        20,
+        -228
+      ],
+      "kind": "cargo"
+    },
+    {
+      "id": "seven_banners",
+      "name": "Seven Banners Council Circle",
+      "position": [
+        248,
+        18,
+        -278
+      ],
+      "kind": "council"
+    },
+    {
+      "id": "salkara_promise",
+      "name": "Promise before the fire",
+      "position": [
+        243.5,
+        18,
+        -278
+      ],
+      "kind": "book"
+    }
+  ],
+  "notes": {
+    "READ_LEDGER": {
+      "kind": "Testimony",
+      "text": "The satchel drawing in Jumel's grandfather's journal matches the borrowed satchel's stitching. Sahdan's story was passed down through records; Jumel did not witness the Silent Day."
+    },
+    "DELIVER_SHELL_A": {
+      "kind": "Witnessed",
+      "text": "Bu Lamit recognized Tiwano's entrusted song, including its off-key final note. I stayed to listen with her."
+    },
+    "DELIVER_SHELL_B": {
+      "kind": "Witnessed",
+      "text": "Tiwano's entrusted song reached Bu Lamit. I asked for directions to the well after handing it over."
+    },
+    "INSPECT_WELL": {
+      "kind": "Witnessed",
+      "text": "The Main Well repeats fragments of old voices. Bu Lamit says they are growing louder. Their source and cause remain unknown."
+    },
+    "READ_TOLL_NOTICE": {
+      "kind": "Document",
+      "text": "The Council notice closes the eastern crossing because of disturbances. Inspection orders are also holding up deliveries between posts."
+    },
+    "DETAIN_RECEIPT": {
+      "kind": "Witnessed",
+      "text": "One of two supply bundles was detained. I asked Kesa to record the amount and reason before recovering the rest."
+    },
+    "DETAIN_PROTECT": {
+      "kind": "Witnessed",
+      "text": "One of two supply bundles was detained. I protected the returned bundle first; Kesa included an inspection receipt."
+    },
+    "RECOVER_CARGO": {
+      "kind": "Document",
+      "text": "I brought home one remaining supply bundle and the inspection receipt. The sister post has not received its delivery."
+    },
+    "REPORT_DIRECT": {
+      "kind": "Handover",
+      "text": "I reported the detention and the remaining cargo's condition directly. Marsiyah recorded a partial failure and accepted the remaining supplies."
+    },
+    "REPORT_HESITANT": {
+      "kind": "Handover",
+      "text": "I admitted my fear of disappointing Marsiyah, then honestly explained the detention and damage. She accepted my report and the remaining supplies."
+    },
+    "CHECK_WARNINGS": {
+      "kind": "Document",
+      "text": "Marsiyah's inspection notes describe three untuned pulses and a cracked ring at 009. News from the Main Well strengthens the case for further inspection."
+    },
+    "STAMP_LETTER": {
+      "kind": "Handover",
+      "text": "The Asharim Witness Seal records Nara as bearer and Marsiyah as witness. Their names were spoken over the echo-ink pad. The letter remains sealed."
+    },
+    "OPEN_NORTH_PATH": {
+      "kind": "Witnessed",
+      "text": "Kesa unlocked Tebing Utara. The official gate remains closed. Jalur Lentera offers a more sheltered detour."
+    },
+    "OBSERVE_PULSES": {
+      "kind": "Witnessed",
+      "text": "Lantern 009 pulsed three times without anyone tuning its ring."
+    },
+    "INSPECT_RING": {
+      "kind": "Witnessed",
+      "text": "The cracked marker ring matches the outer instructions' diagram. Both warning signs at 009 have been inspected firsthand."
+    },
+    "CONTACT_LETTER": {
+      "kind": "Witnessed",
+      "text": "Pressing the letter's back to the plate triggered a brief reflection that spoke Nara's name. The name is stored in the seal's ink. The letter remains sealed; the public network has not awakened."
+    },
+    "HEAR_TEST_TRACE": {
+      "kind": "Witnessed",
+      "text": "The stone in the test building repeats a warning about seven Dim Relay Tower branches and incomplete tuning. This trace does not answer questions or speak my name."
+    },
+    "COMPARE_RECORD": {
+      "kind": "Unanswered",
+      "text": "The year 58 plate matches the year heard in the test stone. The architect's identity and the Council branches' present condition remain unknown."
+    },
+    "FINISH_CHAPTER": {
+      "kind": "Mandate",
+      "text": "Chapter 0's inspection is complete, and Chapter 1 begins in Dusun Sela. Nenek Ima revealed inherited Lulanai Bronze Ear Covers, and Orsuk invited me to Padang Salkara."
+    },
+    "HEAR_IMA": {
+      "kind": "Family testimony",
+      "text": "Ima's parents' Bronze Ear Covers dampen Noise. The family concealed its Lulanai origins because of persecution, not because Nara was chosen."
+    },
+    "DELIVER_IMA": {
+      "kind": "Delivery",
+      "text": "Ima's provisions reached Jumel in the Menara Senja courtyard."
+    },
+    "TAKE_REGISTER": {
+      "kind": "Document",
+      "text": "The Stone Guestbook copy travels with its source and destination recorded. Guest records do not grant permission to open every delivery."
+    },
+    "DELIVER_REGISTER": {
+      "kind": "Testimony at Balai Cawan",
+      "text": "The exchange of water, salt, and news sustains the routes. Trade Posts give the Council copies of guest records for reduced dues."
+    },
+    "QUESTION_PRICE": {
+      "kind": "The sixth rule",
+      "text": "Nara passed on the cargo without changing the message, while noting that the price claim lacked a comparison."
+    },
+    "PASS_PRICE": {
+      "kind": "The sixth rule",
+      "text": "Nara passed on the price claim unchanged. Its source is recorded; its truth remains unverified."
+    },
+    "JOIN_BALKUT": {
+      "kind": "Journey",
+      "text": "Orsuk connected Nara with the Balkut Banner's overland caravan."
+    },
+    "DELIVER_CARAVAN": {
+      "kind": "Supplies",
+      "text": "Bahtari blue pepper, Asharim salt, and Tseren paper sustain the caravan together."
+    },
+    "HEAR_COUNCIL": {
+      "kind": "The 3–3–1 council",
+      "text": "The Old and Young Banners remain divided. The Kadum Banner withholds its vote pending evidence; the Cirusian seal has not been granted."
+    },
+    "KEEP_PROMISE": {
+      "kind": "A promise across nations",
+      "text": "Nara earned the right to return with evidence to the Seven Banners Council. The Salkara Edge Stone investigation continues in Chapter 2."
+    }
+  }
+}

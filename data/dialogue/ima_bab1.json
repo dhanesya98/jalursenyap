@@ -1,0 +1,33 @@
+{
+  "id": "ima_bab1",
+  "npc": "Ima",
+  "title": "Chapter 1 — Bronze Ear Covers in Dusun Sela",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Ima",
+      "text": "Makan dulu. Soal itu nanti. *(mengaduk sup, tidak menatap)* Ada hal yang lebih baik kau dengar dari batu daripada dari mulutku. Mulutku sudah terlalu lama diam, Nara. Ia lupa caranya.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Nek... waktu di Menara Simpul 009 tadi, lempeng batunya manggil namaku dari tinta cap. Terus di bangunan uji sama di Sumur Induk Telaga Sumi, aku dengar sisa suara lama. Itu sebabnya dulu Nenek selalu nyuruh aku tutup mulut kalau dengar batu mendengung, kan?",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Ima",
+      "text": "(Ima membuka kotak kayu kecil di pangkuannya, memperlihatkan sepasang Penutup Telinga Perunggu yang sudah pudar.) Ini milik orang tuaku. Orang tuaku selamat dari Malam Tiga Napas. Dulu para arsitek Lulanai memakainya untuk meredam Bising setelah menyetel batu gaung. Tapi sesudah Tahun Telan, benda ini dituduh menyebarkan penyakit Bising menular, dan orang-orang kita dipanggil Penelan Suara.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Ima",
+      "text": "Keluarga ibumu membuang nama lama dan hidup sebagai orang Asharim di Dusun Sela supaya tidak diusir. Kepekaan Echoes yang kaumiliki itu bukan kutukan, Nara, dan bukan pula hak istimewa. Tapi di luar sana, orang yang ketakutan gampang mencari kambing hitam. Kalau kau tetap mau membawa surat itu ke Padang Salkara bersama Orsuk, belajarlah mendengar dulu sebelum bicara.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Ima",
+      "text": "Sebelum berangkat jauh, bawakan bekal ini kepada Jumel. Setelah itu ambil salinan Buku Tamu Batu di Nilasar dan lewatlah Balai Cawan. Jalan panjang dimulai dari kabar yang bisa dipertanggungjawabkan.",
+      "action": "HEAR_IMA"
+    }
+  }
+}

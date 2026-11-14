@@ -1,0 +1,23 @@
+{
+  "id": "relay_lantern",
+  "npc": "Nara",
+  "title": "The First Sign",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Lentera kuno di puncak pilar ini meredup pelan... lalu mendadak berdenyut terang. Satu. Dua. Tiga denyut berturut-turut! Nggak ada siapa pun di dekat sini yang menyentuh cincin arsitek.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Pola denyutnya persis seperti yang digambar Bu Marsiyah di buku catatan pos: tiga denyut tanpa penyetelan. Getaran di bawah lantai batu ini terasa sampai ke telapak kakiku.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Sekarang aku harus periksa tanda bahaya kedua di cincin penanda retak. Nyala lentera ini sendiri belum cukup buat menyimpulkan apa pun.",
+      "action": "OBSERVE_PULSES"
+    }
+  }
+}

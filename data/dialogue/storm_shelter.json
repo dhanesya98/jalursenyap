@@ -1,0 +1,23 @@
+{
+  "id": "storm_shelter",
+  "npc": "Nara",
+  "title": "A Moment in the Storm",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Fiuh... aku merapat ke balik ceruk dinding batu. Pasirnya beterbangan tajam banget kena pipi. Ruru nempel erat ke samping tas, bulunya ikutan bergetar kena deru angin badai.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kuperiksa gesper tas: talinya masih kencang dan kulitnya rapat. Punggung surat aman di lapisan terdalam, cap lilinnya nggak lecet sama sekali. Kurapikan kain pembungkusnya biar debu nggak masuk.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Dari celah batu ini, pilar cahaya lentera Menara Simpul 009 kelihatan menjulang di atas bukit pasir. Anginnya masih kencang, jadi jangan paksakan lompat melayang sembarangan. Kita jalan pas hembusannya agak reda ya, Ruru.",
+      "action": "SHELTER_LETTER"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ridge_sign",
+  "npc": "Nara",
+  "title": "Reading the Terrain",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Panah kayunya udah agak lapuk, tapi arahnya jelas: jalan batu meliuk ke atas bukit. Ada jejak kaki orang motong lereng pasir langsung... tapi pasirnya gembur banget, bikin kaki amblas.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Ruru udah duluan nangkring di atas batu pipih sambil noleh ke aku. Enaknya jalan santai ngikutin kelokan, atau langsung naik ke tebing batu berpenerangan ya? Dekati tebing terus tekan [E] kalau mau manjat cepat.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Kata Bu Marsiyah, Jubah Layar ini berguna pas turun: loncat dari bibir tebing, terus tahan [Spasi] di udara buat melayang pelan. Tapi kalau nanjak begini, ya tetap harus cari pijakan kaki sendiri.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Nah, kubah biru Menara Senja udah kelihatan di puncak sana! Rotinya masih hangat kuku di tas. Ayo, jangan sampai keburu dingin sebelum sampai ke Pak Jumel.",
+      "action": "READ_RIDGE"
+    }
+  }
+}

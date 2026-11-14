@@ -1,0 +1,23 @@
+{
+  "id": "bab1_cawan",
+  "npc": "Bu Lamit",
+  "title": "Chapter 1 · Water, Salt, and News",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Bu Lamit",
+      "text": "Letakkan salinan itu di meja serambi. Air untuk tamu, garam untuk bekal, kabar untuk yang menunggu. Kanal di bawah kakimu menghubungkan sumur dengan kebun, seperti kurir menghubungkan keluarga.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Suara di sumur makin keras.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Bu Lamit",
+      "text": "Iya. Dan pedagang makin sedikit. Beberapa Pos Dagang menyerahkan catatan tamu demi iuran yang lebih ringan. Dengarkan mereka, tetapi tetap periksa apa yang kau bawa.",
+      "action": "DELIVER_REGISTER"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "supplies_check",
+  "npc": "Nara",
+  "title": "Recording the Initial Condition",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Dua ikat perbekalan udah rapi di atas meja. Kain karungnya tebal bertanda cap Pos Nilasar. Surat jalannya utuh, ditujukan untuk pos saudara di timur. Pengikat talinya kencang, nggak ada yang kendor.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kucatat jumlahnya di Buku Jalur: dua ikat makanan dan garam. Surat jalan ini cuma nyebut barang dan pos tujuan, sama sekali nggak memuat daftar nama pengembara seperti di Buku Tamu Batu.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Kain cadangan kutaruh paling atas di dalam tas biar gampang ditarik kalau nanti kena terpaan pasir badai. Ruru sempat ngendus karung garam, langsung bersin-bersin, terus buru-buru nungguin di ambang pintu.",
+      "action": "PACK_SUPPLIES"
+    }
+  }
+}

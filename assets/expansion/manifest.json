@@ -1,0 +1,186 @@
+[
+  {
+    "file": "characters/maruani-turnaround.png",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "d2d58c2d0b6c57f355a8a3773965bf2ba95107ad55e28ef18a5296a83b10c024"
+  },
+  {
+    "file": "portraits/maruani.png",
+    "width": 1312,
+    "height": 1199,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "382c61451c33b4181b6f7457beb3232e650ad6b81c97ab0ad46756ac6565a76f"
+  },
+  {
+    "file": "environment/isometric/asharim-iso.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "d91fd0193b22b149b49ce90f04773dab3f695ffcb459ef612292661a41d51fac"
+  },
+  {
+    "file": "environment/topdown/asharim-topdown.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "d1f2c73023993bbab1818e24495cfda3d18b6575841941c8d3d402ae7fd873da"
+  },
+  {
+    "file": "backgrounds/asharim-far.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "transparent": false,
+    "sha256": "b20f236768654860c78aac9270c3959c2379d9b4f5c408bbd0bb58fcb8699c42"
+  },
+  {
+    "file": "parallax/asharim-foreground.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "fed98b7e73dfb9140d94866f6c2ad7bba594e69d7b9a7247d0c94e42bc423de1"
+  },
+  {
+    "file": "environment/isometric/cirusia-iso.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "62c818db5223b1a629711cf73b38d2a362d4c1740994a6052a8c791110f86050"
+  },
+  {
+    "file": "environment/topdown/cirusia-topdown.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "35166290a42a36af4ff032d499e3b6ecf9455fab07c3f6ba354ef5c5b03327cb"
+  },
+  {
+    "file": "backgrounds/cirusia-far.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "transparent": false,
+    "sha256": "f7783b5008f32740f1446f0dbf1bc30f1ad293f744347b24697bcb2970dd9420"
+  },
+  {
+    "file": "parallax/cirusia-foreground.png",
+    "width": 1674,
+    "height": 940,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "6eaafec654075a2e8087b4fe5b0820518e44498e434d84a6e2453abe72e6e348"
+  },
+  {
+    "file": "environment/isometric/tseren-iso.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "00e454675fa6b20234415f932ad4bb39afd5cc0190284957ae16c4935225f0ac"
+  },
+  {
+    "file": "environment/topdown/tseren-topdown.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "efceccf0a6bf996d29831d4d0affd5d7b16c3ccd239b135eecfd3bf554eaecb1"
+  },
+  {
+    "file": "backgrounds/tseren-far.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "transparent": false,
+    "sha256": "8e28b5bb4915a47bbeb708724518caebe289e6c257373fe85a4a153b4564f994"
+  },
+  {
+    "file": "parallax/tseren-foreground.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "17a5509578413e9730e3ef34255e3bf8261555f3b0d8d208597236c520210dc3"
+  },
+  {
+    "file": "environment/isometric/bahtari-iso.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "61b7c71dfe3dd6ee410d38d15c9c68a8d0e0cfa2cc84cbffe8bb5b1b4aae597e"
+  },
+  {
+    "file": "environment/topdown/bahtari-topdown.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "eb3deb046ec3cb9b144d05995f7caf6d2df23089adfccaec668275a95beeadbb"
+  },
+  {
+    "file": "backgrounds/bahtari-far.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "transparent": false,
+    "sha256": "ab21dd4b0943f830dacf0a7d8e0989dbeaca33c893cc95133b6102c1314eefe4"
+  },
+  {
+    "file": "parallax/bahtari-foreground.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "8b242639b8de5ece9caf9bca8f48b5d108f46291498d09d3e2aaaef840a3edd8"
+  },
+  {
+    "file": "environment/isometric/lulanai-iso.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "81ed46079478cdbcbc652811546b7cc29d14d9f38c4b12f44c6aef0312dbc46e"
+  },
+  {
+    "file": "environment/topdown/lulanai-topdown.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "7489f9b27b1a24f85e4cedc092b5d5a4a6132d94e654d22c90fc4834c31240ca"
+  },
+  {
+    "file": "backgrounds/lulanai-far.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "transparent": false,
+    "sha256": "dfcffca2a590e7b71088bbaeba2197d1f79e625e6da2bf0c4fc638439917fc5e"
+  },
+  {
+    "file": "parallax/lulanai-foreground.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "c8938f8c8838e6521c5266e67f07181cb37d08b8d566352e579324289592f7bb"
+  },
+  {
+    "file": "ui/ui-lima-bangsa.png",
+    "width": 1752,
+    "height": 897,
+    "mode": "RGBA",
+    "transparent": true,
+    "sha256": "31b475b0c136a75ba86da1213e85b376fd8806d724911d23d70d25ec914bf615"
+  }
+]

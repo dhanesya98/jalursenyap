@@ -1,0 +1,18 @@
+{
+  "id": "bab1_senja",
+  "npc": "Jumel",
+  "title": "Chapter 1 · Menara Senja Courtyard",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Jumel",
+      "text": "Bekal dari Ima? Taruh di bangku, terima kasih. Menara Senja ini rumah para penjaga di kaki 009. Yang berdengung tadi bukan loncengku.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku akan mencatat bedanya. Sesudah ini aku mengambil salinan buku tamu dan membawanya ke Balai Cawan.",
+      "action": "DELIVER_IMA"
+    }
+  }
+}

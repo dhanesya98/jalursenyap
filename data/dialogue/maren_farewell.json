@@ -1,0 +1,43 @@
+{
+  "id": "maren_farewell",
+  "npc": "Marsiyah",
+  "title": "Before Leaving the Post",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Bu Marsiyah... instruksinya udah kucatat semua. Di Menara Simpul 009 nanti aku periksa tiga denyut lentera dan retakan cincinnya, tempelkan punggung surat yang bercap ke lempeng tanpa membuka segel, lalu periksa bangunan uji di belakang menara sebelum lanjut ke Dusun Sela.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Marsiyah",
+      "text": "Bagus, Nara. Pegang urutan itu baik-baik—jangan mencampuradukkan apa yang tampak di menara dengan apa yang terdengar di bangunan uji. Mulai malam ini, Pos Nilasar tidak lagi bisa menahan Surat Penyalaan di balik dinding dapur.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Berarti habis dari Menara Simpul 009 aku langsung jalan bawa surat ini keluar lembah, Bu? Tapi... gimana sama sisa perbekalan pos saudara yang tadi masih disita di gerbang Dewan Tetua?",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Marsiyah",
+      "text": "Urusan gerbang timur biar menjadi bagianku besok pagi. Dengan tanda bukti resmi dari Kesa yang kaubawa pulang tadi, Majelis Sumur punya dasar untuk menuntut pembebasan bekal itu. Kau sudah menjaga bagianmu dengan jujur.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Marsiyah",
+      "text": "Setelah pemeriksaan 009 selesai, arahkan langkahmu ke Dusun Sela. Singgahlah menemui Nenek Ima dan Orsuk, lalu cari saksi kedua di Cirusia. Saksi ketiga harus kaudatangi di Tseren. Ingat: jangan pernah membuka segelnya sendiri di jalan.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Iya, Bu. Aku pamit berangkat sekarang. Makasih udah minjemin tas ini... eh, dan udah sabar ngajarin aku dari pagi. Jaga kesehatan ya, Bu Marsiyah.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Marsiyah",
+      "text": "Berangkatlah dengan hati yang tenang, Nara. Kapan pun kakimu lelah di negeri orang, ingatlah bahwa di Batu Biru selalu ada cawan air yang menunggu kepulanganmu.",
+      "action": "DEPART"
+    }
+  }
+}

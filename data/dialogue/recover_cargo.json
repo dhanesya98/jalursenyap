@@ -1,0 +1,28 @@
+{
+  "id": "recover_cargo",
+  "npc": "Nara",
+  "title": "Remaining Cargo at the Inspection Table",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Cuma satu ikat yang boleh kuambil balik. Ikat satunya lagi dipindahin sama prajurit tetua ke dalam gudang pos gerbang. Kucocokkan nomor segelnya sama tanda bukti yang ditulis Kak Kesa.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Kukencangkan lagi tali pengikatnya, kubungkus rapat pakai kain cadangan, terus kuselipkan lembar bukti penahanan di kantong kering dalam tas. Tugas ke pos saudara memang belum berhasil... tapi kabarnya nggak boleh hilang.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Kesa",
+      "text": "Sampaikan semuanya apa adanya pada Marsiyah, Nara. Jangan bilang barangnya hilang dirampok atau tercecer di pasir. Katakan Dewan Tetua yang menahannya, dan aku yang bertanda tangan jika ia menuntut pertanggungjawaban.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Pasti kusampaikan, Kak. Ayo, Ruru... kita bawa pulang apa yang masih bisa kita selamatkan.",
+      "action": "RECOVER_CARGO"
+    }
+  }
+}

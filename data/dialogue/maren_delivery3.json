@@ -1,0 +1,53 @@
+{
+  "id": "maren_delivery3",
+  "npc": "Marsiyah",
+  "title": "A Trust Kept for Four Generations",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Marsiyah",
+      "text": "(Marsiyah mengangkat lempeng batu di balik tungku dapur, lalu mengeluarkan tabung kulit tua dengan surat bersegel lilin pekat.) Tiga puluh tahun benda ini berdiam di balik batu dingin Pos Nilasar, Nara. Tapi setelah apa yang kita lihat di buku pemeriksaan tadi... waktu diamnya sudah habis.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Marsiyah",
+      "text": "Berminggu-minggu sebelum jaringan terputus, Sahdan menitipkan surat ini bersama tas yang kaupakai itu kepada Saryel sebelum ia kembali ke pusat. Saryel menjaganya, lalu meneruskannya kepada Azhel, dari Azhel kepada Ilyam, hingga jatuh ke tanganku. Empat generasi penjaga pos merawatnya tanpa sekali pun berani merusak segelnya.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Empat generasi? Tunggu... kalau suratnya sepenting itu, kenapa nggak langsung diantar aja dari zaman Bu Saryel dulu, Bu?",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Marsiyah",
+      "text": "Karena beban gaung di dalam Bejana Batu tidak boleh dibuka sebelum waktunya, Nara. Petunjuk luarnya tegas: selama penahanan masih stabil, kunci ini harus dijauhkan dari pusat agar tidak diperebutkan. Baru ketika lentera 009 berdenyut tiga kali tanpa disentuh dan cincinnya retak, surat ini wajib bergerak.",
+      "next": "n4"
+    },
+    "n4": {
+      "speaker": "Marsiyah",
+      "text": "Dua puluh tahun silam, pada tahun 80, waktu pemeriksaan rutin Dewan Tetua menekan pos ini untuk mencari dokumen Lulanai yang tak bertanda Dewan... tanganku hampir goyah menyerahkan surat ini demi menyelamatkan halaman kita. Aku menahannya, tapi rasa malu karena pernah bimbang itu tidak pernah hilang.",
+      "next": "n5"
+    },
+    "n5": {
+      "speaker": "Nara",
+      "text": "Tapi, Bu... kenapa sekarang malah Ibu serahin ke aku? Tugas ketigaku ke pos saudara tadi aja gagal sebagian... separuh barangnya ketahan di gerbang.",
+      "next": "n6"
+    },
+    "n6": {
+      "speaker": "Marsiyah",
+      "text": "Justru karena caramu pulang dari gerbang itu, Nara. Kau tidak berbohong ketika jalanmu tertutup, dan kau tidak melupakan siapa yang masih menunggu. Surat Penyalaan ini tidak mencari orang yang tak pernah terhalang—ia membutuhkan pembawa yang lidahnya jujur di hadapan saksi.",
+      "next": "n7"
+    },
+    "n7": {
+      "speaker": "Marsiyah",
+      "text": "Peganglah Surat Penyalaan ini baik-baik. Segelnya menunggu serah-terima sah dari Asharim, Cirusia, dan Tseren. Lulanai merancang jaringan, sedangkan Bahtari menjaga tempat gerbangnya; keduanya tidak menjadi pemberi cap. Sekarang mari kita catat namamu dan namaku di punggung surat, lalu ujilah di lempeng Menara Simpul 009.",
+      "next": "n8"
+    },
+    "n8": {
+      "speaker": "Nara",
+      "text": "Aku... aku terima suratnya, Bu. Tangan aku agak dingin, sih, jujur aja... tapi segel sama tas ini bakal kujaga betul-betul.",
+      "action": "RECEIVE_LETTER"
+    }
+  }
+}

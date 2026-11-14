@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "created": "2026-11-04",
+  "portraitStyle": "Fine sepia ink, muted gouache and cream paper backgrounds",
+  "portraits": [
+    {
+      "id": "nara",
+      "file": "portraits/nara.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2964475,
+      "sha256": "5119ca47f7439ee44dbf85c294fd18c80714b1d15b2f7af729c722d6f8e75c79",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    },
+    {
+      "id": "marsiyah",
+      "file": "portraits/marsiyah.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3019673,
+      "sha256": "cb55e1e3d2050b47284bbcbc86d7d850fc50b7cb21558a7a81a269f28e65e42d",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    },
+    {
+      "id": "juma",
+      "file": "portraits/juma.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3114205,
+      "sha256": "22871cf6be00e7d1b57ccf4eaf7ffe8c503772a42b1e9555150822f5ab229cfe",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    },
+    {
+      "id": "bulamiyah",
+      "file": "portraits/bulamiyah.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3151117,
+      "sha256": "25764edc44ce22d28c07b036e1a6903d0464538e44d67fba9b5336eef0435ce4",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    },
+    {
+      "id": "kesa",
+      "file": "portraits/kesa.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3006621,
+      "sha256": "0e3c91c0b59ea9d4a12bdb2c806f35a67fabffa21b1ed26a873afec863ae8a72",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    },
+    {
+      "id": "pedagang",
+      "file": "portraits/pedagang.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3487323,
+      "sha256": "9f1947e43fcb6ed0fe30ab7cda6b5a8454147d7ea5a5cc5e4c2d54d968bfef96",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    },
+    {
+      "id": "ruru",
+      "file": "portraits/ruru.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2614284,
+      "sha256": "3d9079edce919547ad1b1a33557aed833dc940c55cd441ec620c45f27dd03ff5",
+      "source": "OpenAI built-in ImageGen, created for this project"
+    }
+  ],
+  "icons": [
+    {
+      "id": "bag",
+      "file": "icons/bag.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "bread",
+      "file": "icons/bread.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "shell",
+      "file": "icons/shell.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "letter",
+      "file": "icons/letter.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "grapple",
+      "file": "icons/grapple.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "ladder",
+      "file": "icons/ladder.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "cape",
+      "file": "icons/cape.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "compass",
+      "file": "icons/compass.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "map",
+      "file": "icons/map.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "journal",
+      "file": "icons/journal.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "checkpoint",
+      "file": "icons/checkpoint.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "sun",
+      "file": "icons/sun.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "fog",
+      "file": "icons/fog.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "storm",
+      "file": "icons/storm.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "ruru",
+      "file": "icons/ruru.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "rock",
+      "file": "icons/rock.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "sand",
+      "file": "icons/sand.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "cliff",
+      "file": "icons/cliff.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "seal",
+      "file": "icons/seal.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "close",
+      "file": "icons/close.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "pause",
+      "file": "icons/pause.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "volume",
+      "file": "icons/volume.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "moon",
+      "file": "icons/moon.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    },
+    {
+      "id": "save",
+      "file": "icons/save.svg",
+      "viewBox": "0 0 24 24",
+      "source": "Original project-authored SVG, editable source"
+    }
+  ]
+}

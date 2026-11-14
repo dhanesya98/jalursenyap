@@ -1,0 +1,32 @@
+{
+  "id": "bab1_trade",
+  "npc": "Pedagang Jalan",
+  "title": "Chapter 1 · The Price of News",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Pedagang Jalan",
+      "text": "Titipkan daftar harga ini ke Balkut bersama catatan perbekalan. Tertulis bahwa harga lada biru akan naik dua kali lipat.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Cap pedagangnya ada, tetapi tanggal pembandingnya kosong. Ini kabar pasti atau perkiraan?",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Pedagang Jalan",
+      "text": "Kabar dari jalur selatan. Aku belum melihat catatan pelabuhannya.",
+      "choices": [
+        {
+          "text": "Teruskan isi pesan, sertakan keraguanku atas sumber harga.",
+          "action": "QUESTION_PRICE"
+        },
+        {
+          "text": "Teruskan apa adanya dan catat asal klaimnya.",
+          "action": "PASS_PRICE"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bab1_promise",
+  "npc": "Orsuk",
+  "title": "Chapter 1 · The Right to Return",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Orsuk",
+      "text": "Bawa janji ini: kau boleh kembali ke sidang dengan bukti yang bisa diperiksa bersama. Mulailah dari Batu Tepi Salkara, lalu bandingkan dengan catatan lain.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku tidak menjanjikan jawaban yang menyenangkan. Aku berjanji membawa apa yang benar-benar kutemukan.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Orsuk",
+      "text": "Itu cukup untuk langkah pertama. Cap Cirusia menunggu kesaksian, bukan keturunan.",
+      "action": "KEEP_PROMISE"
+    }
+  }
+}

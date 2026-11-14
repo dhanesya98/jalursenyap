@@ -1,0 +1,28 @@
+{
+  "id": "guestbook",
+  "npc": "Nara",
+  "title": "Stone Guestbook",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Batu birunya penuh banget sama guratan nama. Ada yang dipahat rapi, ada juga yang hurufnya udah tipis... pasti sering diraba jempol keluarga yang nyari kabar.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "(Mengambil jarum gores, lalu mengukir pelan: Nara, Dusun Sela. Tugas pertama—eh, maksudku, pengantaran pertama: roti rempah ke Menara Senja.)",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Marsiyah",
+      "text": "Batu itu adalah saksi bagi keluarga yang menunggu di rumah, Nara. Di pos tua ini, daftar nama pelintas dijaga sebagai amanah tamu, bukan disetorkan ke meja Dewan Tetua demi subsidi pangan dan keringanan iuran jalur.",
+      "next": "n3"
+    },
+    "n3": {
+      "speaker": "Nara",
+      "text": "Oke, namaku udah masuk di batu sekarang. Agak miring dikit sih huruf terakhirnya, tapi terbaca jelas kok. Ayo, Ruru, kita ambil tas di meja bekal!",
+      "action": "REGISTER_NAME"
+    }
+  }
+}

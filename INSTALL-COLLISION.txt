@@ -1,0 +1,53 @@
+PATCH COLLISION ISOMETRIC — REVISI MENARA SENJA — 14 November 2026
+
+1. Tutup game dan buat cadangan folder Jalur-Senyap-v4.
+2. Ekstrak isi ZIP ini langsung ke folder Jalur-Senyap-v4 yang sudah ada.
+   Gabungkan folder src, tests, docs dan Bab0-TopDown-Pixel; ganti file yang sama.
+   Jangan menghapus aset atau file lain dari proyek lama.
+3. Jalankan MAIN-PIXEL.cmd seperti biasa, atau buka:
+   Bab0-TopDown-Pixel/Jalur-Senyap-Complete-Pixel.html
+   Bundle tersebut sudah dibangun ulang dan bisa dimainkan offline.
+4. Jika memakai server lokal, muat ulang halaman dengan Ctrl+F5.
+
+PERUBAHAN
+- Collision delapan area mengikuti polygon permukaan tanah, tangga dan jembatan.
+- Seluruh tapak kaki harus berada di jalur. Air, jurang, atap, bangunan dan
+  tepian map menahan karakter, termasuk saat sprint dan melompat.
+- Gerakan dipecah menjadi langkah kecil agar tidak menembus batas saat frame lambat.
+- Jalur klik, spawn, pemulihan save dan pergerakan memakai collision yang sama.
+- Ruru mengikuti jalur tanah dan tidak memotong sudut melalui jurang/air.
+- Gliding, grappling hook, tombol F/Kait, meter jubah dan petunjuknya dihapus.
+- Lompat biasa dan puzzle jembatan tetap tersedia. Pintasan tangga Menara Senja yang menembus tebing dihapus; gunakan tangga batu pada gambar.
+- Beberapa marker quest/NPC dipindahkan ke lantai atau landing yang sesuai gambar.
+
+SAVE
+Format save tetap versi 4. Save lama tetap dapat dimuat; posisi di penghalang
+dipindahkan ke pijakan aman dan nilai gliding lama dibuang saat pemuatan.
+
+PENGEMBANGAN
+npm test
+F2 menampilkan/menyembunyikan overlay collision saat game berjalan.
+Hijau = permukaan jalur, merah = penghalang; garis putih = tapak kaki Nara.
+Overlay tidak aktif secara default.
+
+ZIP ini berisi patch file yang berubah dan bundle offline, bukan seluruh aset proyek.
+File asli di drive G: tidak diubah oleh proses pembuatan patch ini.
+
+REVISI MENARA SENJA
+Collider dibuat terpisah per objek (17 penghalang, 12 permukaan jalan).
+Gerakan di tepi miring mengikuti arah collider, bukan hanya sumbu kotak.
+Kedua jembatan diuji dengan WASD dua arah tanpa jalur klik.
+Patch ini kumulatif: dapat menggantikan ZIP collision sebelumnya.
+
+
+REVISI TITIK LAPORAN
+- Ujung barat jembatan bawah Senja: sambungan landing dan ujung tali diperbaiki.
+- Balkut: bentuk lantai papan, pangkal jembatan, kaki pilar dan mesin tambat dipisahkan.
+- Salkara: akses tanah dekat tenda kecil dibuka; tenda, api, peti dan tiang tetap solid.
+- Simpul: platform bawah terpisah dari dinding platform atas; akses melalui tangga timur. Lantai dekat pilar barat dibuka.
+- Validasi: 21 kelompok regresi (20 suite penuh + 1 regresi titik laporan), 124080 sapuan tepian, 58 target, 14 pintu, dan input WASD nyata pada browser.
+
+REVISI 3 — AUDIT WASD SELURUH MAP
+Tiga sambungan tambahan diperbaiki: landing atas tangga bawah Senja, ujung tali jembatan bawah Senja, dan landing bawah tangga Simpul.
+23 kelompok regresi lulus; 27 rute diuji dua arah pada jalan/sprint (108 kombinasi), 124176 sapuan tepian. Uji tombol langsung juga dilakukan di kedelapan map.
+Lihat docs/WASD-AUDIT-v3.md untuk cakupan dan hasil. Patch kumulatif ini menggantikan ZIP v2; gliding/grappling tetap dihapus.

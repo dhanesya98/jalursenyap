@@ -1,0 +1,18 @@
+{
+  "id": "bab1_register",
+  "npc": "Marsiyah",
+  "title": "Chapter 1 · Records Changing Hands",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Marsiyah",
+      "text": "Ini salinan yang diminta Balai Cawan. Yang asli tetap di pos. Catat siapa menerima salinan ini, Nara. Ada Pos Dagang yang menukar catatan tamu dengan keringanan iuran.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Aku bawa salinannya, dan akan mencatat penerimanya.",
+      "action": "TAKE_REGISTER"
+    }
+  }
+}

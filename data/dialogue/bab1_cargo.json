@@ -1,0 +1,23 @@
+{
+  "id": "bab1_cargo",
+  "npc": "Orsuk",
+  "title": "Chapter 1 · Balkut Supplies",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Orsuk",
+      "text": "Letakkan titipan di sini. Lada biru mengawetkan daging kami, garam menjaga persediaan, kertas Tseren menjaga perjanjian. Orang padang juga hidup dari negeri lain.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Catatan harga ini belum punya pembanding dari pelabuhan. Asal kabarnya tercatat di Buku Jalur.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Orsuk",
+      "text": "Baik. Daftarnya diterima; harga belum kami anggap pasti. Sekarang dengarkan sidang.",
+      "action": "DELIVER_CARAVAN"
+    }
+  }
+}

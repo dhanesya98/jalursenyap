@@ -1,0 +1,28 @@
+{
+  "id": "pedagang_rumor",
+  "npc": "Pedagang Jalan",
+  "title": "Night of Three Cups & News of the Roads",
+  "node": "start",
+  "nodes": {
+    "start": {
+      "speaker": "Pedagang Jalan",
+      "text": "Sini, merapat sedikit ke bawah tenda, kurir kecil—jangan berdiri menantang angin begitu, nanti pasir masuk ke kerongkonganmu. Dalam adat Tiga Cawan Asharim, cawan air untuk arah jalan, cawan garam untuk perbekalan, dan cawan kabar untuk bertukar cerita.",
+      "next": "n0"
+    },
+    "n0": {
+      "speaker": "Pedagang Jalan",
+      "text": "Kau pakai tas kulit tua dari Pos Nilasar rupanya. Dengar, kalau orang-orang kafilah sedang berkumpul jauh dari telinga prajurit tetua Dewan Tetua, ceritanya selalu sama: seratus Menara Simpul itu dulu bukan rusak sendiri dimakan karat. Para arsitek Lulanai memutusnya secara sepihak tanpa tanda Dewan dalam Ikrar Sambung. Tentu saja aku belum lahir waktu itu—ini kabar warisan di sepanjang api kemah.",
+      "next": "nara_1"
+    },
+    "nara_1": {
+      "speaker": "Nara",
+      "text": "Makasih tehnya, Pak. Tapi... kalau Dewan Tetua makin sering narik iuran jalur pakai Keping Tata dan nahan barang kayak sekarang, pos-pos Asharim di lembah ini masa diam aja?",
+      "next": "pedagang_2"
+    },
+    "pedagang_2": {
+      "speaker": "Pedagang Jalan",
+      "text": "Air kalau dibendung ya pecah jadi dua aliran, Nak. Kubu Pos Tua seperti Marsiyah lebih memilih makan roti kering dan barter pakai Garam Batu Batangan daripada membiarkan prajurit tetua menyentuh Buku Tamu Batu. Tapi Kubu Pos Dagang di jalur besar? Mereka mulai menyetorkan salinan nama pelintas demi subsidi gandum dan keringanan iuran jalur. Di plakat gerbang sih tertulis 'Tata mengelola. Yang tua menjaga jalan', tapi rakyat di pasar selalu berbisik balik: yang tua tak pernah turun dari kursinya.",
+      "action": "RECORD_RUMOR"
+    }
+  }
+}

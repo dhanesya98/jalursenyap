@@ -1,0 +1,23 @@
+{
+  "id": "test_door",
+  "npc": "Nara",
+  "title": "The Closed Test Building",
+  "node": "n0",
+  "nodes": {
+    "n0": {
+      "speaker": "Nara",
+      "text": "Pintu kayu kecil ini terganjal batu reruntuhan. Di kusennya masih ada sisa pita segel Dewan Tetua yang sobek mengering, bertuliskan angka tahun lima puluh delapan. Salah satu engsel perunggunya jebol keluar.",
+      "next": "n1"
+    },
+    "n1": {
+      "speaker": "Nara",
+      "text": "Bunyi ketukan yang keluar dari celah pintu ini beda sama pantulan di lempeng 009 tadi. Yang ini suaranya kaku, mekanis, dan berulang tiap beberapa detik seperti lonceng rusak.",
+      "next": "n2"
+    },
+    "n2": {
+      "speaker": "Nara",
+      "text": "Kuintip celah pintunya tanpa mengeluarkan surat. Di dalam ruangan gelap itu ada sebuah batu uji segi delapan yang menyala redup... dari sanalah sumber bunyinya.",
+      "action": "INSPECT_TEST_DOOR"
+    }
+  }
+}
