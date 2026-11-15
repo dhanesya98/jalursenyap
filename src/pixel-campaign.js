@@ -2,7 +2,7 @@
    Design references: gamedev-skills level-design, dialogue-systems, save-systems, puzzle. */
 (function(root) {
   'use strict';
-  const D=root.BAB0_DATA, S=root.STORY;
+  const D=root.BAB0_DATA, S=root.STORY, R=root.RPGSystem;
   const order=S.order || [...Array(20).keys(),21,20];
   const objectives=order.flatMap(seqIndex=>S.steps[seqIndex].items.map((itemLabel,itemIndex)=>{
     const st=S.steps[seqIndex],id=`cp-${seqIndex}-${itemIndex}`;
@@ -17,13 +17,24 @@
     player:{x:640,y:590,dir:'up',walkTime:0,moving:false,targetX:null,targetY:null,z:0,vz:0},
     discovered:['nilasar'],rumors:[],poiSeen:[],introSeen:false,dialogue:null,backlog:[],seenLines:[],
     cargo:100,elapsed:0,settings:{volume:.55,music:.7,effects:.55,reducedMotion:false,textScale:1,puzzleMode:'logic'},
-    lastSafe:{mapId:'nilasar',x:640,y:590}});
+    lastSafe:{mapId:'nilasar',x:640,y:590},
+    rpg:R?R.initialRpgState():null});
   const current=s=>objectives[s.completed.length]||null;
   const done=(s,id)=>s.completed.includes(id);
   function complete(s,id) {
     const o=current(s);if(!o||o.id!==id)return false;
     s.completed.push(id);s.foundFlags[id]=true;s.dialogue=null;
     if(o.last&&!s.rumors.includes(o.note))s.rumors.push(o.note);
+    if(R){
+      if(!s.rpg)s.rpg=R.initialRpgState();
+      R.grantXp(s.rpg,o.last?30:15);
+      for(const item of Object.values(R.ITEMS)){
+        if(item.unlockObjective===id)R.unlockItem(s.rpg,item.id);
+      }
+      if(id==='cp-15-2')s.rpg.consumables.garam_mineral=(s.rpg.consumables.garam_mineral||0)+2;
+      if(o.type==='stealth')s.rpg.choiceFlags['stealth_'+id]=true;
+      if(o.minigame==='negotiate_kesa'||o.minigame==='council_odgar'||o.minigame==='confront_dargun')s.rpg.choiceFlags['negosiasi_'+id]=true;
+    }
     return true;
   }
   const hasRing=s=>done(s,'cp-7-2'),bound=s=>done(s,'cp-9-0');
@@ -32,9 +43,10 @@
     if(map==='sela')return done(s,'cp-11-2');
     if(map==='balkut')return done(s,'cp-14-2');
     if(map==='salkara')return done(s,'cp-18-2');
+    if(map==='tepisalkara')return done(s,'cp-23-2');
     return !!D.MAPS[map];
   }
-  function gateHint(map) {return ({simpul:'Temukan cincin dan temui Kesa untuk membuka jalur menara.',sela:'Laporkan perjalanan kepada Marsiyah dan siapkan rute timur.',balkut:'Periksa jalur dan daftar pelintas di kanal terlebih dahulu.',salkara:'Amankan ketiga tambatan untuk menurunkan jembatan Balkut.'})[map]||'Jalur belum terbuka.';}
+  function gateHint(map) {return ({simpul:'Temukan cincin dan temui Kesa untuk membuka jalur menara.',sela:'Laporkan perjalanan kepada Marsiyah dan siapkan rute timur.',balkut:'Periksa jalur dan daftar pelintas di kanal terlebih dahulu.',salkara:'Amankan ketiga tambatan untuk menurunkan jembatan Balkut.',tepisalkara:'Ungkap sabotase minyak lentera di perkemahan Salkara terlebih dahulu.'})[map]||'Jalur belum terbuka.';}
   const rect=(r,x,y)=>x>=r[0]*12.8&&x<=r[2]*12.8&&y>=r[1]*7.2&&y<=r[3]*7.2;
   // The same native-pixel ground mask serves manual motion, paths, spawns and saves.
   const WIDTH=1280, HEIGHT=720, collisionCache=new Map();
@@ -182,9 +194,10 @@
     if(map==='balkut'&&x>540)return {name:'Tebing Balkut',speed:.82,height:clamp((620-y)*.2,0,80)};
     if(map==='simpul')return {name:'Basal menara',speed:1.06,height:clamp((620-y)*.1,0,40)};
     if(map==='sumi'||map==='sela')return {name:'Pijakan batu',speed:1.02,height:0};
+    if(map==='tepisalkara')return {name:'Batu pesisir berangin',speed:.96,height:0};
     return {name:'Pasir lembut',speed:.88,height:0};
   }
-  const shelters={nilasar:[[35,25,65,46],[18,44,37,58],[78,46,94,66]],gerbang:[[34,36,56,58]],simpul:[[58,54,69,70]],senja:[[42,36,64,52]],sela:[[32,28,55,45]],balkut:[[10,45,35,65]],sumi:[[60,32,78,55]],salkara:[[32,27,48,44]]};
+  const shelters={nilasar:[[35,25,65,46],[18,44,37,58],[78,46,94,66]],gerbang:[[34,36,56,58]],simpul:[[58,54,69,70]],senja:[[42,36,64,52]],sela:[[32,28,55,45]],balkut:[[10,45,35,65]],sumi:[[60,32,78,55]],salkara:[[32,27,48,44]],tepisalkara:[[12,20,38,44]]};
   const sheltered=(map,x,y)=>(shelters[map]||[]).some(r=>rect(r,x,y));
   const links={}; // Senja uses the visible stairs; no straight-line cliff shortcut.
   function path(map,start,end,s) {
@@ -248,7 +261,9 @@
     const result=clone(d),sp=safeSpawn(d.mapId,[d.player.x,d.player.y],d);
     Object.assign(result.player,{x:sp[0],y:sp[1],z:0,vz:0,targetX:null,targetY:null});
     delete result.player.glide;
-    result.lastSafe={mapId:d.mapId,x:sp[0],y:sp[1]};return result;
+    result.lastSafe={mapId:d.mapId,x:sp[0],y:sp[1]};
+    if(R)result.rpg=R.validateRpg(d.rpg);
+    return result;
   }
   function migrate(old) {
     if(old?.version===4)return validate(old);

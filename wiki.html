@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Ensiklopedia &amp; Atlas Tanah Sada — Jalur Senyap</title>
+  <link rel="icon" type="image/png" href="assets/pixel-bab0/favicon-jalur-senyap.png">
+  <style>
+    @font-face{font-family:'Cinzel';src:url('assets/fonts/cinzel-bold-latin.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+    @font-face{font-family:'Cormorant Garamond';src:url('assets/fonts/cormorant-500-latin.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+    @font-face{font-family:'Cormorant Garamond';src:url('assets/fonts/cormorant-italic-600-latin.woff2') format('woff2');font-weight:600;font-style:italic;font-display:swap}
+
+    :root{
+      --ink:#211b13;
+      --ink-soft:#544636;
+      --ink-faint:#7a6852;
+      --paper:#efe3c7;
+      --paper-light:#f7eed9;
+      --paper-deep:#e3d2ab;
+      --obsidian:#181410;
+      --obsidian-2:#251e16;
+      --bronze:#b67c33;
+      --bronze-bright:#dfb05f;
+      --rule:rgba(92,68,38,.24);
+      --shadow:0 12px 32px rgba(24,18,12,.14);
+      --serif:'Cormorant Garamond',Georgia,serif;
+      --display:'Cinzel',Georgia,serif;
+      --sans:system-ui,-apple-system,'Segoe UI',sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%,rgba(223,176,95,.16),transparent 45%),
+        radial-gradient(circle at 80% 10%,rgba(46,139,139,.08),transparent 40%),
+        var(--paper);
+      font-family:var(--serif);
+      font-size:19px;
+      line-height:1.62;
+    }
+
+    img{max-width:100%;display:block}
+    a{color:#7c4d18}
+
+    /* Hero Masthead */
+    .wiki-hero{
+      position:relative;
+      overflow:hidden;
+      background:var(--obsidian);
+      color:#f6ebd2;
+      border-bottom:3px solid var(--bronze);
+    }
+    .wiki-hero-bg{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28;filter:saturate(.85);
+    }
+    .wiki-hero-vignette{
+      position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(20,16,12,.72) 0%,rgba(20,16,12,.82) 60%,var(--obsidian) 100%);
+    }
+    .wiki-hero-inner{
+      position:relative;z-index:2;
+      max-width:1240px;margin:0 auto;padding:28px 24px 32px;
+      display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;
+    }
+    .hero-brand{display:flex;align-items:center;gap:20px;flex:1;min-width:280px}
+    .hero-logo{width:170px;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.65))}
+    .eyebrow{
+      margin:0 0 4px;font-family:var(--display);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-bright);
+    }
+    .hero-copy h1{
+      margin:0;font-family:var(--display);font-size:clamp(24px,3.2vw,36px);line-height:1.18;color:#fff6e2;
+    }
+    .hero-sub{margin:8px 0 0;color:#ded1b4;font-style:italic;font-size:19px;max-width:650px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;
+      border:1px solid rgba(223,176,95,.45);background:rgba(37,30,22,.88);color:#f9ecd1;
+      font-family:var(--sans);font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;
+      transition:transform .14s ease,border-color .14s ease,background .14s ease;
+    }
+    .btn:hover{transform:translateY(-1px);border-color:var(--bronze-bright);background:#33281d}
+    .btn.primary{background:var(--bronze);border-color:var(--bronze-bright);color:#fffaf0}
+    .btn.primary:hover{background:#c5883b}
+
+    /* Sticky Toolbar */
+    .toolbar{
+      position:sticky;top:0;z-index:40;
+      background:rgba(24,20,16,.96);
+      border-bottom:1px solid rgba(223,176,95,.32);
+      backdrop-filter:blur(8px);
+      padding:12px 20px;
+      box-shadow:0 8px 24px rgba(0,0,0,.22);
+    }
+    .toolbar-inner{
+      max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+    }
+    .search-box{
+      flex:1;min-width:240px;max-width:440px;position:relative;
+    }
+    .search-box input{
+      width:100%;padding:9px 36px 9px 14px;border-radius:8px;
+      border:1px solid rgba(223,176,95,.42);background:#251e16;color:#fff7e4;
+      font-family:var(--sans);font-size:14px;
+    }
+    .search-box input::placeholder{color:#a89677}
+    .search-clear{
+      position:absolute;right:8px;top:50%;transform:translateY(-50%);
+      border:none;background:transparent;color:#d2bc93;font-size:16px;cursor:pointer;padding:2px 6px;
+    }
+    .spoiler-toggle{
+      display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:13px;color:#ead9b7;cursor:pointer;
+      padding:7px 12px;border-radius:8px;border:1px solid rgba(223,176,95,.3);background:rgba(255,255,255,.04);
+    }
+    .tabs{
+      max-width:1240px;margin:10px auto 0;display:flex;flex-wrap:wrap;gap:6px;
+    }
+    .tab-btn{
+      padding:6px 12px;border-radius:999px;border:1px solid rgba(223,176,95,.26);
+      background:transparent;color:#d6c5a3;font-family:var(--sans);font-size:12px;font-weight:600;cursor:pointer;
+    }
+    .tab-btn:hover{border-color:var(--bronze-bright);color:#fff6e2}
+    .tab-btn.active{background:var(--bronze);border-color:var(--bronze-bright);color:#fffaf0}
+
+    /* Main Container */
+    .container{max-width:1240px;margin:0 auto;padding:28px 20px 72px}
+    .wiki-section{
+      margin-bottom:36px;padding:28px;border-radius:14px;
+      background:var(--paper-light);border:1px solid var(--rule);box-shadow:var(--shadow);
+    }
+    .wiki-section.hidden{display:none}
+    .section-head{
+      display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;
+      border-bottom:2px solid var(--rule);padding-bottom:12px;margin-bottom:20px;
+    }
+    .section-head h2{
+      margin:0;font-family:var(--display);font-size:clamp(21px,2.4vw,28px);color:#2d2011;
+    }
+    .section-tag{
+      font-family:var(--sans);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+      color:#7c4d18;background:rgba(182,124,51,.14);padding:4px 10px;border-radius:999px;border:1px solid rgba(182,124,51,.28);
+    }
+    h3{font-family:var(--display);font-size:20px;color:#382613;margin:22px 0 10px}
+    h4{font-family:var(--display);font-size:16px;color:#4a3319;margin:14px 0 6px}
+    p{margin:0 0 12px}
+    ul,ol{margin:0 0 14px;padding-left:22px}
+    li{margin-bottom:6px}
+    blockquote{
+      margin:14px 0;padding:12px 18px;border-left:4px solid var(--bronze);
+      background:rgba(182,124,51,.09);font-style:italic;border-radius:0 8px 8px 0;
+    }
+
+    /* Grid & Cards */
+    .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+    .card{
+      background:#fbf4e4;border:1px solid var(--rule);border-radius:10px;padding:16px;
+      display:flex;flex-direction:column;gap:8px;
+    }
+    .card.hidden{display:none}
+    .card-accent{border-top:4px solid var(--accent,var(--bronze))}
+    .card-media{
+      width:100%;height:170px;object-fit:cover;border-radius:8px;border:1px solid var(--rule);cursor:zoom-in;
+      background:#1d1711;
+    }
+    .badge-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+    .pill{
+      display:inline-block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.04em;
+      padding:3px 9px;border-radius:999px;background:var(--paper-deep);color:var(--ink-soft);border:1px solid var(--rule);
+    }
+    .pill.spoiler{background:#5d261c;color:#ffeae4;border-color:#8f3a2a}
+
+    /* Tables */
+    .table-wrap{overflow-x:auto;margin:12px 0 18px;border:1px solid var(--rule);border-radius:10px;background:#fbf4e4}
+    table{width:100%;border-collapse:collapse;font-size:17px}
+    th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+    th{
+      font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+      background:#e9d8b3;color:#332413;
+    }
+    tr:last-child td{border-bottom:none}
+    tr.hidden{display:none}
+
+    /* Atlas Map Feature */
+    .atlas-frame{
+      background:var(--obsidian-2);padding:14px;border-radius:12px;border:2px solid var(--bronze);
+      margin-bottom:20px;text-align:center;
+    }
+    .atlas-frame img{
+      width:100%;max-height:580px;object-fit:contain;margin:0 auto;border-radius:6px;cursor:zoom-in;
+    }
+    .atlas-caption{margin:10px 0 0;color:#dfd1b6;font-size:15px;font-family:var(--sans)}
+
+    /* Character Cards */
+    .char-card{
+      flex-direction:row;align-items:flex-start;gap:14px;
+    }
+    .char-portrait{
+      width:88px;height:88px;object-fit:cover;object-position:top center;flex-shrink:0;
+      border-radius:10px;border:2px solid var(--bronze);background:#251d14;cursor:zoom-in;
+    }
+    .char-body{flex:1;min-width:0}
+    .char-body h4{margin-top:0;font-size:18px}
+    .char-quote{
+      margin-top:6px;padding:7px 10px;border-left:3px solid var(--bronze);
+      background:rgba(182,124,51,.08);font-style:italic;font-size:16px;
+    }
+
+    /* Relic feature box */
+    .relic-box{
+      display:flex;flex-wrap:wrap;gap:18px;align-items:center;
+      background:#fbf4e4;border:1px solid var(--rule);border-radius:10px;padding:16px;margin:14px 0;
+    }
+    .relic-box img{width:130px;height:130px;object-fit:contain;background:#1e1812;border-radius:8px;padding:8px;border:1px solid var(--bronze)}
+    .relic-box > div{flex:1;min-width:240px}
+
+    /* Spoiler Guard */
+    body.hide-spoilers .spoiler-block{display:none !important}
+    .spoiler-banner{
+      display:none;margin-bottom:20px;padding:14px 18px;border-radius:10px;
+      background:#362418;color:#faecd2;border:1px solid var(--bronze-bright);font-family:var(--sans);font-size:13px;
+    }
+    body.hide-spoilers .spoiler-banner{display:block}
+
+    /* Lightbox */
+    .lightbox{
+      position:fixed;inset:0;z-index:100;background:rgba(12,10,8,.92);
+      display:none;align-items:center;justify-content:center;flex-direction:column;padding:24px;
+    }
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:94vw;max-height:82vh;border-radius:8px;border:2px solid var(--bronze)}
+    .lightbox p{color:#f5ebd4;margin:12px 0 0;font-family:var(--sans);font-size:14px;text-align:center}
+    .lightbox button{
+      position:fixed;top:16px;right:20px;padding:8px 14px;border-radius:8px;
+      border:1px solid var(--bronze-bright);background:#251e16;color:#fff;font-family:var(--sans);cursor:pointer;
+    }
+
+    .empty-state{
+      display:none;text-align:center;padding:36px 20px;border-radius:12px;
+      background:var(--paper-light);border:1px dashed var(--bronze);
+    }
+    .empty-state.shown{display:block}
+
+    .wiki-footer{
+      text-align:center;color:var(--ink-faint);font-family:var(--sans);font-size:13px;margin-top:24px;
+    }
+
+    @media(max-width:640px){
+      .wiki-section{padding:18px 14px}
+      .char-card{flex-direction:column}
+      .char-portrait{width:76px;height:76px}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="wiki-hero">
+    <img class="wiki-hero-bg" src="assets/pixel-bab0/title-cover.jpg" alt="" aria-hidden="true">
+    <div class="wiki-hero-vignette" aria-hidden="true"></div>
+    <div class="wiki-hero-inner">
+      <div class="hero-brand">
+        <img class="hero-logo" src="assets/pixel-bab0/logo-jalur-senyap.png" alt="Jalur Senyap">
+        <div class="hero-copy">
+          <p class="eyebrow">ARSIP KANON · ERA TAHUN KE-103 POST-SENYAP</p>
+          <h1>Ensiklopedia &amp; Atlas Tanah Sada</h1>
+          <p class="hero-sub">Kumpulan lengkap sejarah, peta wilayah, budaya Lima Bangsa, rahasia Perunggu Gaung &amp; Echoes, profil tokoh, alur Bab 0–5, hingga glosarium resmi.</p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="index.html">← Mainkan Game (Official)</a>
+        <a class="btn" href="#section-glosarium">Glosarium A–Z</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Navigasi Ensiklopedia">
+    <div class="toolbar-inner">
+      <div class="search-box">
+        <input id="wiki-search" type="search" placeholder="Cari tokoh, bangsa, kota, istilah, atau tahun..." aria-label="Cari di ensiklopedia">
+        <button id="search-clear" class="search-clear" type="button" title="Bersihkan pencarian" aria-label="Bersihkan pencarian">×</button>
+      </div>
+      <label class="spoiler-toggle">
+        <input id="spoiler-toggle" type="checkbox">
+        <span>Mode Aman (Sembunyikan Spoiler Bab 2–5)</span>
+      </label>
+    </div>
+    <div class="tabs" id="wiki-tabs">
+      <button class="tab-btn active" data-cat="all" type="button">Semua Topik</button>
+      <button class="tab-btn" data-cat="premis" type="button">Premis &amp; Konsep</button>
+      <button class="tab-btn" data-cat="atlas" type="button">Atlas &amp; Wilayah</button>
+      <button class="tab-btn" data-cat="sejarah" type="button">Sejarah &amp; Kronologi</button>
+      <button class="tab-btn" data-cat="sistem" type="button">Echoes &amp; Perunggu</button>
+      <button class="tab-btn" data-cat="bangsa" type="button">Lima Bangsa &amp; Dewan</button>
+      <button class="tab-btn" data-cat="tokoh" type="button">Tokoh Kunci</button>
+      <button class="tab-btn" data-cat="cerita" type="button">Alur Bab 0–5 &amp; Ending</button>
+      <button class="tab-btn" data-cat="glosarium" type="button">Glosarium &amp; Penamaan</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="spoiler-banner">
+      <strong>Mode Aman Bab 0–1 Aktif:</strong> Bagian cerita <em>Bab 2 – Bab 5</em>, daftar <em>Ending</em>, dan rahasia terdalam akhir cerita sedang disembunyikan. Matikan centang di atas kapan saja untuk membaca seluruh kanon.
+    </div>
+
+    <div id="empty-state" class="empty-state">
+      <h3>Tidak ada entri yang cocok</h3>
+      <p>Coba kata kunci lain (misalnya: <em>Nara</em>, <em>Lulanai</em>, <em>Salkara</em>, <em>Bejana Batu</em>, atau <em>Tahun 103</em>).</p>
+    </div>
+
+    <!-- 1. PREMIS & INTI DUNIA -->
+    <section id="section-premis" class="wiki-section" data-cat="premis">
+      <div class="section-head">
+        <h2>1. Inti Cerita &amp; Pilar Dunia</h2>
+        <span class="section-tag">Fondasi Dunia</span>
+      </div>
+      <blockquote>
+        “Seratus tiga tahun setelah <strong>Hari Senyap</strong> membungkam seluruh benua, seorang perintis kafilah muda bernama <strong>Nara</strong> menerima sebuah <strong>Cincin Perunggu</strong> kuno yang diam-diam menyetrum jarinya—membawanya ke tengah perebutan kekuasaan antara Dewan Tetua yang memonopoli jalur, serbuan klan berkuda utara yang kelaparan, dan seorang penyintas Lulanai bernama <strong>Maruani</strong> yang ingin menundukkan kelima bangsa di bawah kekuatan getaran purba.”
+      </blockquote>
+      <div class="grid-3">
+        <article class="card" data-search="krisis jalur agresi cirusia perang tujuh musim bahtari asharim garam">
+          <h4>1. Lapis Luar · Krisis Jalur &amp; Agresi Cirusia</h4>
+          <p>Kehancuran hubungan dagang antara <strong>Cirusia</strong> dan <strong>Bahtari</strong> sejak <em>Perang Tujuh Musim</em> membuat Cirusia kehabisan lada biru pengawet daging, memicu blokade dan serbuan ke pos-pos garam <strong>Asharim</strong>.</p>
+        </article>
+        <article class="card" data-search="monopoli dewan tetua benteng tata menara simpul redup keping tata bejana batu">
+          <h4>2. Lapis Tengah · Monopoli Dewan Tetua</h4>
+          <p><strong>Dewan Tetua</strong> di Benteng Tata menguasai tujuh <em>Menara Simpul Redup</em>, menarik pajak gerbang serta mata uang <em>Keping Tata</em>, sementara <strong>Bejana Batu</strong> di bawah laut perlahan retak karena pemakaian paksa.</p>
+        </article>
+        <article class="card" data-search="rahasia darah lulanai cincin perunggu nara maruani nada pengikat">
+          <h4>3. Lapis Terdalam · Darah Lulanai &amp; Cincin Perunggu</h4>
+          <p>Pertarungan prinsip antara <strong>Nara</strong> (keturunan Lulanai yang tak tahu asal-usul darahnya) dan <strong>Maruani</strong> (arsitek diaspora Lulanai yang hendak memaksa seluruh bangsa berlutut dengan <em>Nada Pengikat</em>).</p>
+        </article>
+      </div>
+      <h3>Sepuluh Prinsip Kreatif Tanah Sada</h3>
+      <ol>
+        <li>Perjalanan dan perintisan jalur tetap menjadi pengalaman utama.</li>
+        <li>Pengantaran logistik, kontrak dagang, dan bukti lintas bangsa menjadi cara utama mengenal dunia.</li>
+        <li><em>Echoes</em> dan metalurgi <em>Perunggu Gaung</em> adalah satu-satunya sistem fantasi; tidak ada sihir lain.</li>
+        <li>Dunia tetap berjalan dan punya persoalannya sendiri, bahkan ketika Nara tidak berada di sana.</li>
+        <li>Dewan Tetua bukan antagonis satu dimensi; mereka punya dasar hukum (<em>Ikrar Sambung</em>) dan ketakutan nyata.</li>
+        <li>Lulanai bukan bangsa sempurna; mereka menyimpan kesalahan asal teknis yang pernah disembunyikan.</li>
+        <li>Tidak semua misteri harus bersangkut-paut dengan Nara.</li>
+        <li>Tidak semua keanehan (seperti asal-usul <strong>Ruru</strong>) harus dijelaskan sampai tuntas.</li>
+        <li>Keajaiban <em>Echoes</em> tidak menyelesaikan masalah sosial atau ekonomi dengan sendirinya.</li>
+        <li>Perintis jalur dan kafilah tetap penting, bahkan setelah jaringan menara dibuka kembali.</li>
+      </ol>
+    </section>
+
+    <!-- 2. ATLAS & WILAYAH -->
+    <section id="section-atlas" class="wiki-section" data-cat="atlas">
+      <div class="section-head">
+        <h2>2. Atlas Tanah Sada &amp; Peta Wilayah</h2>
+        <span class="section-tag">Geografi &amp; Lanskap</span>
+      </div>
+      <div class="atlas-frame">
+        <img src="assets/world/peta-tanah-sada.webp" alt="Peta Lengkap Benua Tanah Sada" class="zoomable">
+        <p class="atlas-caption">Klik peta untuk memperbesar. Sebaran 5 wilayah bangsa: Asharim (Barat), Cirusia (Utara), Tseren (Timur), Bahtari (Selatan), Lulan Tua (Pusat), dan Benteng Tata (Barat Daya).</p>
+      </div>
+      <div class="grid-3">
+        <article class="card" data-search="pos nilasar batu biru asharim marsiyah suaka air bab 0">
+          <img class="card-media zoomable" src="assets/world/landscapes/01-asharim-pos-nilasar.webp" alt="Pos Nilasar">
+          <h4>Pos Nilasar (Batu Biru)</h4>
+          <div class="badge-row"><span class="pill">Asharim · Barat</span><span class="pill">Bab 0</span></div>
+          <p>Pos singgah tua berkubah biru pimpinan <strong>Marsiyah</strong> dari Kubu Pos Tua. Pusat karavan garam sebelum badai memutus Gerbang Timur.</p>
+        </article>
+        <article class="card" data-search="telaga sumi urat sumi bu lamit balai cawan asharim bab 0">
+          <img class="card-media zoomable" src="assets/world/landscapes/01-asharim-telaga-sumi.webp" alt="Telaga Sumi">
+          <h4>Telaga Sumi &amp; Terowongan Urat Sumi</h4>
+          <div class="badge-row"><span class="pill">Asharim · Barat</span><span class="pill">Bab 0</span></div>
+          <p>Kompleks teras air pirus tempat saluran bawah tanah buatan Lulanai mulai beriak aneh akibat tekanan Bejana Batu.</p>
+        </article>
+        <article class="card" data-search="menara simpul 9 sembilan senja jumel sahdan bab 0">
+          <img class="card-media zoomable" src="assets/world/landscapes/14-simpul-sembilan.webp" alt="Menara Simpul ke-9">
+          <h4>Menara Senja &amp; Menara Simpul ke-9</h4>
+          <div class="badge-row"><span class="pill">Asharim Utara</span><span class="pill">Bab 0</span></div>
+          <p>Menara penyambung tua tempat lentera batu memancarkan tiga denyut tanda bahaya dan Cincin Perunggu terkunci pada nadi Nara.</p>
+        </article>
+        <article class="card" data-search="dusun sela balai cawan nenek ima alat tenun kanal bab 1">
+          <img class="card-media zoomable" src="assets/world/landscapes/01-asharim-dusun-sela.webp" alt="Dusun Sela">
+          <h4>Dusun Sela &amp; Kanal Balai Cawan</h4>
+          <div class="badge-row"><span class="pill">Asharim Timur</span><span class="pill">Bab 1</span></div>
+          <p>Kampung halaman Nara yang sesak oleh pengungsi penambang garam; tempat Nenek Ima menyimpan rahasia Penutup Telinga Perunggu.</p>
+        </article>
+        <article class="card" data-search="padang salkara tujuh panji kemah felt odgar dargun salgur bab 1">
+          <img class="card-media zoomable" src="assets/world/landscapes/02-cirusia-padang-salkara.webp" alt="Padang Salkara">
+          <h4>Padang Salkara (47 Tenda Kempa)</h4>
+          <div class="badge-row"><span class="pill">Cirusia · Utara</span><span class="pill">Bab 1</span></div>
+          <p>Jantung perkemahan konfederasi berkuda <strong>Tujuh Panji</strong> mengelilingi api sidang dan monolit <em>Batu Nama</em>.</p>
+        </article>
+        <article class="card" data-search="tepi salkara pesisir dapur karavan bahtari dargun bab 1 bab 2">
+          <img class="card-media zoomable" src="assets/pixel-bab0/bg-tepisalkara.jpg" alt="Tepi Salkara">
+          <h4>Reruntuhan Pesisir Tepi Salkara</h4>
+          <div class="badge-row"><span class="pill">Cirusia Pesisir</span><span class="pill">Penutup Bab 1</span></div>
+          <p>Teluk terlarang tempat batu pesisir masih mengulang teriakan dan nyanyian malam kebakaran 107 tahun silam.</p>
+        </article>
+        <article class="card spoiler-block" data-search="pegunungan silin kabut lirih desa kertas awan rumah naskah tseren bab 2">
+          <img class="card-media zoomable" src="assets/world/landscapes/03-tseren-pegunungan-silin.webp" alt="Pegunungan Silin">
+          <h4>Pegunungan Silin &amp; Rumah Naskah</h4>
+          <div class="badge-row"><span class="pill">Tseren · Timur</span><span class="pill spoiler">Bab 2</span></div>
+          <p>Pegunungan berkabut dengan jembatan tali dan arsip kertas serat tempat keaslian naskah <em>Ikrar Sambung</em> tersimpan.</p>
+        </article>
+        <article class="card spoiler-block" data-search="bandar lada kepulauan lamuna bahtari tarun tiwano bab 3">
+          <img class="card-media zoomable" src="assets/world/landscapes/04-bahtari-bandar-lada.webp" alt="Bandar Lada">
+          <h4>Kepulauan Lamuna &amp; Bandar Lada</h4>
+          <div class="badge-row"><span class="pill">Bahtari · Selatan</span><span class="pill spoiler">Bab 3</span></div>
+          <p>Bandar maritim ramai tempat rempah lada biru, garam laut, dan jeratan kontrak <em>Utang Kabar</em> menahan para pelaut.</p>
+        </article>
+        <article class="card spoiler-block" data-search="lulan tua kaldera basalt menara simpul 1 pusat lulanai bab 4">
+          <img class="card-media zoomable" src="assets/world/landscapes/05-lulanai-lulan-tua.webp" alt="Lulan Tua">
+          <h4>Kaldera Lulan Tua &amp; Menara Simpul ke-1</h4>
+          <div class="badge-row"><span class="pill">Lulanai · Pusat</span><span class="pill spoiler">Bab 4A</span></div>
+          <p>Tanah leluhur arsitek Lulanai berbatu basalt sunyi, menyimpan separuh kode kedua (<em>Nada Penyegel</em>) dan tiga faksi penyintas.</p>
+        </article>
+        <article class="card spoiler-block" data-search="benteng tata dewan tetua taluk barat daya bab 4b">
+          <img class="card-media zoomable" src="assets/world/landscapes/06-dewan-tetua-benteng-tata.webp" alt="Benteng Tata">
+          <h4>Benteng Tata</h4>
+          <div class="badge-row"><span class="pill">Semenanjung Barat Daya</span><span class="pill spoiler">Bab 4B</span></div>
+          <p>Markas Dewan Tetua yang mengunci muara sungai kembar Asharim serta pintu barat selat Bahtari.</p>
+        </article>
+        <article class="card spoiler-block" data-search="menara simpul 99 gerbang surut bejana batu bahtari bab 5">
+          <img class="card-media zoomable" src="assets/world/landscapes/20-gerbang-surut.webp" alt="Gerbang Surut Menara 99">
+          <h4>Menara Simpul ke-99 &amp; Gerbang Surut</h4>
+          <div class="badge-row"><span class="pill">Samudra Selatan</span><span class="pill spoiler">Bab 5</span></div>
+          <p>Pulau suci di atas ruang batu bawah laut <strong>Bejana Batu</strong> tempat seluruh gema liar Hari Senyap dialirkan dan dikunci.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. SEJARAH & KRONOLOGI -->
+    <section id="section-sejarah" class="wiki-section" data-cat="sejarah">
+      <div class="section-head">
+        <h2>3. Penanggalan, Asal Mula &amp; Kronologi Sejarah</h2>
+        <span class="section-tag">~512 Pra-Senyap — Thn 103 Post-Senyap</span>
+      </div>
+      <div class="grid-2">
+        <article class="card" data-search="penanggalan musim terang musim dingin tahun simpul ts hari senyap">
+          <h4>Aturan Musim &amp; Sistem Penanggalan</h4>
+          <ul>
+            <li><strong>1 Tahun = 2 Musim:</strong> <em>Musim Terang</em> (kering/panas) dan <em>Musim Dingin</em> (hujan/badai/beku). Karena itu <em>Perang Tujuh Musim</em> berlangsung sekitar <strong>3,5 tahun</strong>.</li>
+            <li><strong>Pra-Senyap:</strong> Era sebelum pemutusan jaringan. Penamaan ini baru dipakai sesudah tragedi; naskah asli sebelum Hari Senyap tak mengenalnya.</li>
+            <li><strong>Hari Senyap (Tahun 0):</strong> Malam pemutusan serentak <strong>99 Menara Simpul</strong>.</li>
+            <li><strong>Post-Senyap:</strong> Cerita utama game dimulai pada <strong>Tahun ke-103 Post-Senyap</strong> (107 tahun sejak awal <em>Kabar Tujuh Musim</em>).</li>
+            <li><strong>Tahun Simpul (TS) Tseren:</strong> TS 1 sama dengan <strong>397 Pra-Senyap</strong>; Hari Senyap jatuh pada <strong>TS 398</strong>.</li>
+          </ul>
+        </article>
+        <article class="card" data-search="tiga lapisan sejarah kejadian warisan kendali">
+          <h4>Tiga Lapisan Kebenaran Sejarah</h4>
+          <ul>
+            <li><strong>Kejadian (Fakta Nyata):</strong> Sekitar 512–397 Pra-Senyap, Lulanai menyembunyikan cacat <em>Beban Gaung</em> demi kontrak pangan. Pada Tahun 0, mereka memutus 99 menara secara sepihak agar <em>Echoes Liar</em> berhenti.</li>
+            <li><strong>Warisan (Ingatan Rakyat):</strong> Cirusia mewarisi amarah atas Bahtari; Lulanai difitnah pembawa <em>Bising Menular</em>; keluarga Nenek Ima bersembunyi di Dusun Sela.</li>
+            <li><strong>Kendali (Versi Penguasa):</strong> <em>Ajaran Tata</em> menyebut Lulanai melanggar hukum <em>Perkara Pemutusan</em> lewat arsip yang diam-diam disunting.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Asal Mula Echoes &amp; Kesalahan Asal Lulanai (5W1H)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Unsur</th><th>Rincian Kanon</th></tr></thead>
+          <tbody>
+            <tr data-search="apa batu gaung perunggu gaung 99 menara"><td><strong>Apa</strong></td><td>Penemuan sifat akustik <strong>Batu Gaung</strong> vulkanik, penciptaan metalurgi <strong>Perunggu Gaung</strong>, dan pembangunan jaringan <strong>99 Menara Simpul</strong> sebagai pertukaran teknologi dengan pangan.</td></tr>
+            <tr data-search="siapa ikatan arsitek lulanai 5 arsitek"><td><strong>Siapa</strong></td><td><strong>Ikatan Arsitek Lulanai</strong>, puncaknya melahirkan <strong>5 Arsitek Pembangun Peradaban</strong>.</td></tr>
+            <tr data-search="di mana lulan tua kaldera"><td><strong>Di Mana</strong></td><td>Dataran tinggi kaldera <strong>Lulan Tua</strong> (pusat Tanah Sada), kaya tembaga-timah-basalt namun tandus dan miskin pangan.</td></tr>
+            <tr data-search="kapan 512 397 243 pra-senyap"><td><strong>Kapan</strong></td><td>~<strong>512 Pra-Senyap</strong> (awal Batu Gaung), <strong>397 Pra-Senyap / TS 1</strong> (Menara ke-1), hingga <strong>243 Pra-Senyap</strong> (99 menara selesai).</td></tr>
+            <tr data-search="mengapa pangan kertas minyak lentera"><td><strong>Mengapa</strong></td><td>Agar tidak kelaparan di kaldera batu, Lulanai membangun infrastruktur air, arsip, pelabuhan, &amp; menara komunikasi—ditukar pasokan pangan, kertas, dan minyak dari empat bangsa lain.</td></tr>
+            <tr data-search="bagaimana beban gaung bising rahasia"><td><strong>Bagaimana Konfliknya</strong></td><td>Jaringan punya batas <em>Beban Gaung</em>; bila jenuh akan melepaskan <em>Bising</em> perusak pendengaran. Agar nilai tukar menara tak jatuh, para pendiri Lulanai <strong>menyembunyikan bahaya Bising</strong> dan melarang ekspor Perunggu Gaung.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Linimasa Lengkap Sejarah Tanah Sada</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Tahun</th><th>Era &amp; Peristiwa</th></tr></thead>
+          <tbody>
+            <tr data-search="512 pra-senyap batu gaung perunggu gaung"><td><strong>~512 Pra-Senyap</strong></td><td>Awal pemanfaatan <em>Batu Gaung</em> &amp; penciptaan <em>Perunggu Gaung</em> di Lulan Tua.</td></tr>
+            <tr data-search="487 453 432 418 lahir bangsa"><td><strong>487–418 Pra-Senyap</strong></td><td>Lahirnya empat peradaban lain: Bahtari (~487–436), Asharim (~453), Tseren (~432), Cirusia (~418).</td></tr>
+            <tr data-search="397 pra-senyap ts 1 menara pertama"><td><strong>397 Pra-Senyap (TS 1)</strong></td><td><strong>Menara Simpul ke-1</strong> berdiri; dimulainya <em>Zaman Pembukaan Jalur</em>.</td></tr>
+            <tr data-search="243 pra-senyap zaman echoes 99 menara"><td><strong>243 Pra-Senyap</strong></td><td>Seluruh <strong>99 Menara Simpul</strong> rampung (*Zaman Echoes*).</td></tr>
+            <tr data-search="124 pra-senyap dewan tetua ikrar sambung"><td><strong>124 Pra-Senyap</strong></td><td><strong>Dewan Tetua</strong> didirikan oleh perwakilan 5 bangsa di Benteng Tata lewat <em>Ikrar Sambung</em>.</td></tr>
+            <tr data-search="43 pra-senyap kabar palsu"><td><strong>43 Pra-Senyap</strong></td><td><em>Zaman Kabar Palsu</em>: spekulan menyuap petugas menara untuk memanipulasi harga pasar.</td></tr>
+            <tr data-search="4 pra-senyap tepisalkara perang tujuh musim"><td><strong>4 Pra-Senyap</strong></td><td>Kebakaran gudang Panji Gorkan &amp; karamnya kapal Bahtari di Tepi Salkara memicu <em>Kabar Tujuh Musim</em> lalu <strong>Perang Tujuh Musim</strong> (~3,5 tahun).</td></tr>
+            <tr data-search="0 hari senyap malam tiga napas wilanu sahdan 37"><td><strong>Tahun 0 (TS 398)</strong></td><td><strong>Hari Senyap (*Malam Tiga Napas*):</strong> Wilanu menempa <strong>Cincin Perunggu</strong>, Sahdan membawanya keluar lalu kembali jadi jangkar, <strong>5 Arsitek Agung gugur</strong> memutus 99 menara, dan <strong>37 arsitek muda</strong> cacat oleh <em>Bising</em>.</td></tr>
+            <tr data-search="1 35 post-senyap perkara pemutusan penelan suara"><td><strong>1–35 Post-Senyap</strong></td><td>Komunikasi menara padam. Dewan Tetua menghapus kursi Lulanai, menuntut lewat <em>Perkara Pemutusan</em>, dan menyebar stigma <em>Bising Menular</em>.</td></tr>
+            <tr data-search="36 53 post-senyap lisen aliran selaras"><td><strong>36–53 Post-Senyap</strong></td><td>Persekusi penyintas Lulanai; <em>Aliran Selaras</em> di Tseren menyunting salinan sejarah demi keabsahan Dewan.</td></tr>
+            <tr data-search="54 58 post-senyap hemira tujuh menara redup"><td><strong>54 &amp; 58 Post-Senyap</strong></td><td>Arsitek <strong>Hemira</strong> menjual catatan tak lengkap (Thn 54). Dewan menyalakan <strong>7 Menara Simpul Redup</strong> (Thn 58) yang perlahan meretakkan Bejana Batu; Hemira merekam peringatan dekat 009.</td></tr>
+            <tr data-search="72 86 97 post-senyap marsiyah nara tarun"><td><strong>72, 86, 97 Post-Senyap</strong></td><td><strong>Marsiyah</strong> jadi penjaga ke-4 cincin (Thn 72); <strong>Nara lahir</strong> dari Tarun &amp; Nadiyah di Dusun Sela (Thn 86); <strong>Tarun</strong> tertahan kontrak di Bandar Lada (Thn 97).</td></tr>
+            <tr data-search="101 103 post-senyap sekarang salkara simpul 9"><td><strong>101–103 Post-Senyap</strong></td><td>Bejana Batu menekan padang Cirusia hingga sumur membeku lebih awal; pajak garam naik; Menara 009 memancarkan tiga denyut tanda bahaya—petualangan <strong>Nara &amp; Ruru</strong> dimulai.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. SISTEM LOW-FANTASY -->
+    <section id="section-sistem" class="wiki-section" data-cat="sistem">
+      <div class="section-head">
+        <h2>4. Rahasia Perunggu Gaung, Echoes &amp; Cincin Perunggu</h2>
+        <span class="section-tag">Sistem Low-Fantasy</span>
+      </div>
+      <div class="relic-box" data-search="penutup telinga perunggu cincin perunggu sada-bronze tempa nada">
+        <img src="assets/props/penutup-telinga-perunggu.png" alt="Penutup Telinga Perunggu Lulanai" class="zoomable">
+        <div>
+          <h4>Logam Perunggu Gaung (*Sada-Bronze*) &amp; Kunci Nadi</h4>
+          <p>Paduan tembaga vulkanik, timah hitam, kuarsa-basalt, dan bubuk murni <strong>Batu Gaung</strong> yang dilebur sambil mengikuti frekuensi suara arsitek (<em>Tempa Nada</em>). Menjadi bahan <strong>Cincin Arsitek</strong>, <strong>Garpu Tala</strong>, <strong>Penutup Telinga Perunggu</strong>, dan <strong>Cincin Perunggu</strong>.</p>
+          <p><strong>Aturan Kunci Nadi:</strong> Cincin Perunggu hanya menyetrum darah keturunan Lulanai. Begitu diaktifkan di Menara Simpul ke-9 oleh Nara, cincin <strong>terkunci permanen pada satu detak nadi tersebut</strong>—bila direbut paksa oleh orang lain termasuk Maruani, cincin kembali mati.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <article class="card" data-search="nada pengikat rambatan echoes garis surut">
+          <h4>Kemampuan Akustik: *Nada Pengikat* &amp; Rambatan</h4>
+          <p>Arsitek berpendengaran utuh dengan alat Perunggu Gaung sanggup memancarkan getaran terfokus melalui batu dan tanah: mendeteksi langkah kuda dari jauh, meretakkan tebing lapuk, membuka pintu basalt tanpa engsel, serta mengguncang keseimbangan cairan telinga lawan hingga berlutut.</p>
+          <p>Suara <em>Echoes</em> tidak diam di satu titik—ia merambat dan bisa <strong>bocor</strong> melewati jaringan bawah tanah <strong>Garis Surut</strong> (dari Menara 1 → 9 → 99) saat tekanan Bejana Batu meningkat.</p>
+        </article>
+        <article class="card" data-search="sembilan hukum echoes aturan">
+          <h4>Sembilan Hukum *Echoes*</h4>
+          <ol>
+            <li>Tidak bisa membedakan pesan benar atau dusta.</li>
+            <li>Wajib memakai medium fisik (Batu Gaung, Perunggu Gaung, tinta gaung, kerang).</li>
+            <li>Memudar seiring waktu kecuali distabilkan aliran atau jangkar.</li>
+            <li>Harus disetel berkala agar <em>Beban Gaung</em> tak jenuh.</li>
+            <li>Tak dapat memindahkan benda/manusia—perintis &amp; kafilah tetap mutlak perlu.</li>
+            <li>Terganggu cuaca ekstrem &amp; pemakaian paksa tanpa peredam.</li>
+            <li>Menuntut biaya, keahlian, dan risiko <em>Bising</em>.</li>
+            <li>Selalu meninggalkan jejak sisa pada mediumnya.</li>
+            <li>Hanya dapat dilepas di <strong>Gerbang Surut</strong> memakai kunci lengkap (<span class="spoiler-block"><strong>Cincin Perunggu + Nada Penyegel</strong></span><span style="opacity:.7"> · kunci resonansi lengkap</span>).</li>
+          </ol>
+        </article>
+      </div>
+
+      <h3>Tujuh Menara Simpul Redup &amp; Gejala Tekanan Tahun 103 (*Retak Besar*)</h3>
+      <p>Karena Dewan Tetua sejak Tahun 58 mengoperasikan 7 menara memakai perunggu tiruan tanpa peredam asli, beban balik terus menggerogoti Bejana Batu di bawah laut dan menimbulkan gejala ganjil di enam kawasan:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Kawasan</th><th>Gejala Tekanan Tahun ke-103 Post-Senyap</th></tr></thead>
+          <tbody>
+            <tr data-search="menara simpul 9 denyut kuning cincin retak"><td><strong>Menara Simpul ke-9</strong></td><td>Tiga denyut lentera kuning pekat tanpa penyetelan; cincin perunggu raksasa retak.</td></tr>
+            <tr data-search="telaga sumi riak konsentris urat sumi"><td><strong>Telaga Sumi</strong></td><td>Air sumur beriak melingkar tanpa angin; dengung rendah &amp; bisikan dari terowongan <em>Urat Sumi</em>.</td></tr>
+            <tr data-search="padang salkara batu nama tepi salkara sumur beku"><td><strong>Padang &amp; Tepi Salkara</strong></td><td>Monolit <em>Batu Nama</em> dan batu pesisir mengulang suara kebakaran 107 tahun lalu; sumur membeku lebih awal.</td></tr>
+            <tr data-search="silin tinta gaung naskah"><td><strong>Pegunungan Silin</strong></td><td>Tinta gaung pada naskah arsip memperlihatkan tulisan lama yang pernah dihapus.</td></tr>
+            <tr data-search="lamuna kerang suara"><td><strong>Kepulauan Lamuna</strong></td><td>Kerang suara tua bergetar dan bernyanyi sendiri tanpa disentuh.</td></tr>
+            <tr class="spoiler-block" data-search="lulan tua menara 1"><td><strong>Lulan Tua</strong></td><td>Menara Simpul ke-1 berdengung sendiri di balik kabut kaldera.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. LIMA BANGSA & TUJUH PANJI & DEWAN TETUA -->
+    <section id="section-bangsa" class="wiki-section" data-cat="bangsa">
+      <div class="section-head">
+        <h2>5. Lima Bangsa, Tujuh Panji &amp; Dewan Tetua</h2>
+        <span class="section-tag">Peradaban &amp; Politik</span>
+      </div>
+      <div class="grid-2">
+        <article class="card card-accent" style="--accent:#3D6E8F" data-search="asharim pos nilasar telaga sumi garam malam tiga cawan hukum air">
+          <img class="card-media zoomable" src="assets/world/nations/asharim-concept-v1.webp" alt="Konsep Visual Bangsa Asharim">
+          <h4>Bangsa Asharim · Barat (~453 Pra-Senyap)</h4>
+          <p class="eyebrow" style="color:#3D6E8F">“Air tidak bertanya nama.”</p>
+          <p><strong>Wilayah &amp; Peran:</strong> Lembah Pasir, Telaga Sumi, Pos Nilasar, Menara Senja, Dusun Sela. Penguasa jalur transit darat &amp; tambang <strong>Garam Batu Batangan</strong> (satuan <em>Garis</em>).</p>
+          <p><strong>Kepercayaan &amp; Adat:</strong> Menyembah nilai <em>Sang Mata Air</em> dengan <strong>Pakta Sumur Terbuka</strong> (mata air zona damai mutlak). Tamu disambut lewat adat <strong>Malam Tiga Cawan</strong> (Air untuk kabar rute, Garam untuk pasar, Kabar untuk cerita) serta <em>Buku Tamu Batu</em>.</p>
+          <p><strong>Perpecahan:</strong> <em>Kubu Pos Tua</em> (Marsiyah, netral) vs <em>Kubu Pos Dagang</em> (menyerahkan daftar tamu ke Dewan Tetua demi keringanan pajak).</p>
+        </article>
+
+        <article class="card card-accent" style="--accent:#A8452F" data-search="cirusia salkara tepisalkara tujuh panji janji api odgar dargun salgur orsuk">
+          <img class="card-media zoomable" src="assets/world/nations/cirusia-concept-v1.webp" alt="Konsep Visual Bangsa Cirusia">
+          <h4>Bangsa Cirusia · Utara (~418 Pra-Senyap)</h4>
+          <p class="eyebrow" style="color:#A8452F">“Bohonglah di depan api, kalau berani.”</p>
+          <p><strong>Wilayah &amp; Peran:</strong> Padang Salkara (47 tenda kempa) &amp; teluk Tepi Salkara. Konfederasi 7 klan nomaden berkuda pemasok ternak, wol, kain kempa, dan pengawalan karavan berat.</p>
+          <p><strong>Kepercayaan &amp; Adat:</strong> Sumpah lisan di bawah <strong>Hukum Janji Api</strong> dan tiga saksi mata—pantang menulis janji adat. Mengukir nama gugur di monolit <strong>Batu Nama</strong> dan melepas kafilah lewat upacara <em>Memanggil Angin</em>.</p>
+          <p><strong>Titik Buta Sejarah:</strong> Menyimpan amarah atas <em>Kabar Tujuh Musim</em> demi menutupi rasa malu <em>Adat Muka Api</em> atas kelalaian Panji Gorkan 107 tahun lalu.</p>
+        </article>
+
+        <article class="card card-accent" style="--accent:#2E8B8B" data-search="bahtari lamuna bandar lada bagan arus lagu titipan kerang suara utang kabar">
+          <img class="card-media zoomable" src="assets/world/nations/bahtari-concept-v1.webp" alt="Konsep Visual Bangsa Bahtari">
+          <h4>Bangsa Bahtari · Selatan (~487–436 Pra-Senyap)</h4>
+          <p class="eyebrow" style="color:#2E8B8B">“Pasang selalu kembali.”</p>
+          <p><strong>Wilayah &amp; Peran:</strong> Kepulauan Lamuna &amp; Bandar Lada. Pelaut samudra, penemu peta 3D <em>Bagan Arus</em>, pemasok <strong>Lada Biru Tebing</strong>, garam laut, serta <strong>Minyak Ikan Palung</strong> untuk lentera seluruh benua.</p>
+          <p><strong>Kepercayaan &amp; Adat:</strong> Menghormati <em>Sang Pasang</em> lewat <strong>Lagu Titipan</strong>, <strong>Kerang Suara</strong>, dan profesi <em>Pembawa Lagu</em>.</p>
+          <p><strong>Perpecahan:</strong> <em>Rumah Dagang</em> (pemilik modal yang menjerat pelaut lewat <strong>Utang Kabar</strong> &amp; <strong>Kontrak Sauh</strong>) vs <em>Rumah Layar</em> (serikat nakhoda &amp; penyelam).</p>
+        </article>
+
+        <article class="card card-accent" style="--accent:#6F876A" data-search="tseren silin desa kertas awan kanon aksara wuren lisen cakar tebing jubah layar">
+          <img class="card-media zoomable" src="assets/world/nations/tseren-concept-v1.webp" alt="Konsep Visual Bangsa Tseren">
+          <h4>Bangsa Tseren · Timur (~432 Pra-Senyap)</h4>
+          <p class="eyebrow" style="color:#6F876A">“Tinta tak pernah lupa.”</p>
+          <p><strong>Wilayah &amp; Peran:</strong> Pegunungan Silin (*Kabut Lirih*), Desa Kertas Awan, dan Rumah Naskah. Produsen kertas serat tahan lembap, tinta mineral, benang peredam gaung, <strong>Jubah Layar</strong>, &amp; <strong>Cakar Tebing</strong>.</p>
+          <p><strong>Kepercayaan &amp; Adat:</strong> Menjunjung <strong>Kanon Aksara</strong> (pantang memusnahkan satu huruf pun), adat <em>Dua Pembacaan</em> saat serah-terima, serta <em>Tinta Kelahiran</em>.</p>
+          <p><strong>Perpecahan:</strong> <em>Aliran Murni</em> (menjaga naskah asli apa adanya) vs <em>Aliran Selaras</em> (menyunting arsip sejarah demi stabilitas bersama Dewan Tetua).</p>
+        </article>
+
+        <article class="card card-accent" style="--accent:#8A6843" data-search="lulanai lulan tua tiga kaum pantang terbuka sesal tiga napas hening">
+          <img class="card-media zoomable" src="assets/world/nations/lulanai-concept-v1.webp" alt="Konsep Visual Bangsa Lulanai">
+          <h4>Bangsa Lulanai · Pusat (~512 Pra-Senyap)</h4>
+          <p class="eyebrow" style="color:#8A6843">“Dengar dan resapi.”</p>
+          <p><strong>Wilayah &amp; Sejarah:</strong> Kaldera basalt Lulan Tua. Pemahat dan ahli metalurgi pembangun peradaban 99 Menara Simpul yang diburu setelah Hari Senyap akibat tuduhan <em>Perkara Pemutusan</em> &amp; fitnah <em>Penelan Suara</em>.</p>
+          <p><strong>Adat &amp; Penyintas:</strong> Jeda <strong>Tiga Napas Hening</strong>, pesan tersembunyi (<em>Tanda</em>) di batu, dan <em>Penutup Telinga Perunggu</em>.</p>
+          <p class="spoiler-block"><strong>Tiga Faksi Tersembunyi:</strong> <em>Kaum Pantang</em> (Mairuma), <em>Kaum Terbuka</em> (Ruania), dan <em>Kaum Sesal</em> (Lunaia).</p>
+        </article>
+
+        <article class="card card-accent" style="--accent:#5A4933" data-search="dewan tetua ajaran tata taluk keping tata etika perintis aturan keenam">
+          <h4>Dewan Tetua, Mata Uang &amp; Etika Perintis</h4>
+          <p>Didirikan tahun <strong>124 Pra-Senyap</strong> di Benteng Tata lewat <em>Ikrar Sambung</em> oleh 5 bangsa—lalu menghapus kursi Lulanai pasca-Hari Senyap. Dipimpin <strong>Yang Tetua (Taluk)</strong> di bawah slogan <em>“Yang tua menjaga jalan.”</em></p>
+          <p><strong>Ekonomi Jalanan:</strong> <em>Keping Tata</em> (koin Dewan untuk pajak gerbang, nilainya merosot), <em>Garam Batu Batangan</em> (standar bebas), &amp; barter strategis lintas bangsa.</p>
+          <p><strong>Aturan Keenam Perintis:</strong> Pembawa kabar terikat kejujuran rute—dan berhak memperingatkan penerima bila meragukan keaslian kontrak yang dibawanya.</p>
+        </article>
+      </div>
+
+      <h3>Susunan Tujuh Panji Cirusia</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Panji</th><th>Pemimpin</th><th>Lambang &amp; Peran</th><th>Sikap Politik</th></tr></thead>
+          <tbody>
+            <tr data-search="gorkan dargun panji tua"><td><strong>Panji Gorkan</strong></td><td><strong>Dargun, si Bara</strong> (±62)</td><td>Spiral merah pada hitam; jadwal sidang &amp; api</td><td>Panji Tua · mewarisi rahasia Tepi Salkara</td></tr>
+            <tr data-search="dolgak hurgak panji tua"><td><strong>Panji Dolgak</strong></td><td><strong>Hurgak, si Tanduk Besi</strong> (±50)</td><td>Sepasang tanduk perunggu; kavaleri berat</td><td>Panji Tua · menekan perbatasan selatan</td></tr>
+            <tr data-search="sarbuk kutlak panji tua"><td><strong>Panji Sarbuk</strong></td><td><strong>Kutlak, si Angin Debu</strong> (±58)</td><td>Tiga gelombang kuning; pengintai jalur</td><td>Panji Tua · curiga kepada pihak luar</td></tr>
+            <tr data-search="balkut salgur orsuk panji muda"><td><strong>Panji Balkut</strong></td><td><strong>Salgur, si Tali Panjang</strong> (±38)</td><td>Simpul tali terakota; kargo &amp; jembatan (panji Orsuk)</td><td>Panji Muda · pragmatis &amp; mendukung dagang</td></tr>
+            <tr data-search="tumran borlan panji muda"><td><strong>Panji Tumran</strong></td><td><strong>Borlan, si Roda Kempa</strong> (±45)</td><td>Roda bersulam putih; kemah, wol, pengawetan</td><td>Panji Muda · amat butuh garam &amp; lada biru</td></tr>
+            <tr data-search="ulmar burgul panji muda"><td><strong>Panji Ulmar</strong></td><td><strong>Burgul, si Bintang Rendah</strong> (±30)</td><td>Bintang putih pada biru gelap; navigasi malam</td><td>Panji Muda · menolak penutupan jalur</td></tr>
+            <tr data-search="kadum odgar batu nama penengah"><td><strong>Panji Kadum</strong></td><td><strong>Odgar, si Batu Nama</strong> (±75)</td><td>Monolit abu-abu; pengesah sumpah &amp; daftar gugur</td><td>Penengah (Suara ke-7) · penentu akhir sidang</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. TOKOH KUNCI -->
+    <section id="section-tokoh" class="wiki-section" data-cat="tokoh">
+      <div class="section-head">
+        <h2>6. Galeri &amp; Profil Tokoh Kunci</h2>
+        <span class="section-tag">Karakter Tanah Sada</span>
+      </div>
+      <div class="grid-2" id="character-grid">
+        <article class="card char-card" data-search="nara perintis asharim dusu sela tarun nadiyah lulanai ruru">
+          <img class="char-portrait zoomable" src="assets/portraits/nara.webp" alt="Nara">
+          <div class="char-body">
+            <h4>Nara (17 tahun · Lahir 86 Post-Senyap)</h4>
+            <p class="pill">Protagonis · Perintis Kafilah Dusun Sela</p>
+            <p>Putri nakhoda Bahtari (<strong>Tarun</strong>) dan mendiang <strong>Nadiyah</strong>. Menabung garam demi mencari ayahnya ke selatan tanpa tahu darah Lulanai mengalir di nadinya.</p>
+            <p class="char-quote">“Tasnya aman kok, Bu. Cuma tadi waktu di tebing, cincin ini kayak... nyetrum lagi.”</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="ruru satwa gurun sonar">
+          <img class="char-portrait zoomable" src="assets/portraits/ruru.webp" alt="Ruru">
+          <div class="char-body">
+            <h4>Ruru</h4>
+            <p class="pill">Satwa Gurun Pendamping</p>
+            <p>Hewan kecil berpendengaran tajam yang peka terhadap rongga pasir hisap, kemiringan lereng, dan getaran batu gaung.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="marsiyah pos nilasar asharim saryel azhel ilyam">
+          <img class="char-portrait zoomable" src="assets/portraits/marsiyah.webp" alt="Marsiyah">
+          <div class="char-body">
+            <h4>Marsiyah</h4>
+            <p class="pill">Kepala Pos Nilasar · Penjaga Cincin ke-4 (sejak Thn 72)</p>
+            <p>Meneruskan rantai penjaga <em>Saryel → Azhel → Ilyam → Marsiyah</em> selama 31 tahun. Menguji jari Nara dengan Cincin Perunggu sebelum razia Dewan tiba.</p>
+            <p class="char-quote">“Air tidak bertanya nama, Nara. Tapi caramu menyembunyikan jari sudah menjawab semuanya.”</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="sahdan perintis agung menara pusat hari senyap">
+          <img class="char-portrait zoomable" src="assets/portraits/sahdan.webp" alt="Sahdan">
+          <div class="char-body">
+            <h4>Sahdan</h4>
+            <p class="pill">Perintis Agung Era Hari Senyap</p>
+            <p>Bukan orang Lulanai, namun dipercaya 5 Arsitek Agung menyelamatkan Cincin Perunggu ke Pos Nilasar lalu kembali menjadi jangkar di Menara ke-1.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="maruani antagonis lulanai nada pengikat nadiyah">
+          <img class="char-portrait zoomable" src="assets/portraits/maruani.webp" alt="Maruani">
+          <div class="char-body">
+            <h4>Maruani</h4>
+            <p class="pill">Antagonis Utama · Arsitek Diaspora Lulanai</p>
+            <p>Berpendengaran utuh dan membawa garpu tala Perunggu Gaung asli. Tak bisa merampas cincin secara paksa dari nadi Nara, sehingga membujuk lewat rahasia kebenaran sejarah <span class="spoiler-block">dan penyebab wafatnya Nadiyah</span>.</p>
+            <p class="char-quote">“Dan kau—darah para arsitek—memilih merangkak di debu mereka?”</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="nenek ima dusun sela lulanai penutup telinga">
+          <img class="char-portrait zoomable" src="assets/portraits/ima.webp" alt="Nenek Ima">
+          <div class="char-body">
+            <h4>Nenek Ima</h4>
+            <p class="pill">Penyintas Lulanai di Dusun Sela</p>
+            <p>Menyamar sebagai penenun Asharim untuk melindungi cucunya. Menyimpan <em>Penutup Telinga Perunggu</em> berukuran kecil di bawah lantai alat tenun.</p>
+            <p class="char-quote">“Makan dulu. Ada hal yang lebih baik kau dengar dari batu daripada dari mulutku, Nara.”</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="orsuk balkut cirusia pengawal salkara">
+          <img class="char-portrait zoomable" src="assets/portraits/orsuk.webp" alt="Orsuk">
+          <div class="char-body">
+            <h4>Orsuk</h4>
+            <p class="pill">Kepala Pengawal Panji Balkut (Cirusia)</p>
+            <p>Rekanan paling tangguh Nara di Padang dan Tepi Salkara. Lugas, jujur, dan bersikeras menjaga jalur garam tetap damai.</p>
+            <p class="char-quote">“Kita bawa bukti dari Tepi Salkara dulu. Bohonglah di depan api, kalau berani.”</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="kesa prajurit tetua gerbang timur">
+          <img class="char-portrait zoomable" src="assets/portraits/kesa.webp" alt="Kesa">
+          <div class="char-body">
+            <h4>Kesa</h4>
+            <p class="pill">Komandan Muda Gerbang Timur</p>
+            <p>Perwira Dewan Tetua yang mulai goyah melihat kebijakan mencekik pedagang dan diam-diam membukakan gerbang utara bagi Nara.</p>
+            <p class="char-quote">“Ini jalur utara. Surat jalannya aku yang tanda tangani.”</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="odgar kadum cirusia batu nama">
+          <img class="char-portrait zoomable" src="assets/portraits/odgar.webp" alt="Odgar">
+          <div class="char-body">
+            <h4>Odgar, si Batu Nama</h4>
+            <p class="pill">Pemimpin Panji Kadum (Suara ke-7)</p>
+            <p>Tetua pengukir nama gugur di Batu Nama dan pemegang suara penentu gencatan senjata di Sidang Tujuh Panji.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="dargun gorkan salgur hurgak kutlak borlan burgul">
+          <img class="char-portrait zoomable" src="assets/portraits/dargun.webp" alt="Dargun">
+          <div class="char-body">
+            <h4>Dargun (Panji Gorkan) &amp; Para Ketua Panji</h4>
+            <p class="pill">Dargun · Salgur · Hurgak · Kutlak · Borlan · Burgul</p>
+            <p>Enam suara yang terbelah 3 lawan 3 di Padang Salkara hingga bukti Tepi Salkara membongkar rahasia lama Panji Gorkan.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="bu lamit telaga sumi tiwano">
+          <img class="char-portrait zoomable" src="assets/portraits/bu-lamit.webp" alt="Bu Lamit">
+          <div class="char-body">
+            <h4>Bu Lamit &amp; Jumel</h4>
+            <p class="pill">Penjaga Telaga Sumi &amp; Menara Senja</p>
+            <p><strong>Bu Lamit</strong> memantau saluran Urat Sumi sambil menunggu kabar suaminya (<strong>Tiwano</strong>); <strong>Pak Jumel</strong> mewarisi catatan kakeknya soal sosok Sahdan.</p>
+          </div>
+        </article>
+
+        <article class="card char-card spoiler-block" data-search="taluk yang tetua dewan tata benteng tata bab 3 bab 4">
+          <img class="char-portrait zoomable" src="assets/portraits/taluk.webp" alt="Taluk">
+          <div class="char-body">
+            <h4>Taluk — Yang Tetua</h4>
+            <p class="pill spoiler">Pemimpin Tertinggi Dewan Tetua (Bab 3–5)</p>
+            <p>Berdarah campuran Asharim–Bahtari. Terobsesi menjaga ketertiban agar <em>Perang Tujuh Musim</em> tak terulang, meski lewat monopoli.</p>
+            <p class="char-quote">“Seumur hidupku aku menjaga agar jeritan Perang Tujuh Musim tak terulang. Yang tua menjaga jalan.”</p>
+          </div>
+        </article>
+
+        <article class="card char-card spoiler-block" data-search="tarun tiwano bahtari bandar lada utang kabar bab 3">
+          <img class="char-portrait zoomable" src="assets/portraits/tarun.webp" alt="Tarun">
+          <div class="char-body">
+            <h4>Tarun &amp; Tiwano</h4>
+            <p class="pill spoiler">Pelaut Rumah Layar Bahtari (Bab 3–5)</p>
+            <p>Ayah Nara (<strong>Tarun</strong>) ternyata terjebak <em>Utang Kabar</em> di Bandar Lada demi mencari keluarga awak kapalnya; <strong>Tiwano</strong> membantu memulangkannya.</p>
+          </div>
+        </article>
+
+        <article class="card char-card spoiler-block" data-search="wuren lisen wilanu dalumi hemira tseren lulanai bab 2 bab 4">
+          <img class="char-portrait zoomable" src="assets/portraits/wuren.webp" alt="Wuren">
+          <div class="char-body">
+            <h4>Wuren, Wilanu, Dalumi &amp; Hemira</h4>
+            <p class="pill spoiler">Arsip Tseren &amp; Arsitek Lulanai (Bab 2 &amp; 4)</p>
+            <p><strong>Wuren</strong> mengungkap suntingan naskah <em>Ikrar Sambung</em>; rekaman <strong>Wilanu, Dalumi, &amp; Hemira</strong> menyingkap kebenaran teknis Hari Senyap dan 7 menara redup.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. ALUR CERITA BAB 0 - 5 & ENDINGS -->
+    <section id="section-cerita" class="wiki-section" data-cat="cerita">
+      <div class="section-head">
+        <h2>7. Alur Cerita Bab 0 – Bab 5 &amp; Tiga Akhir Cerita</h2>
+        <span class="section-tag">Kronik Perjalanan</span>
+      </div>
+      <div class="grid-2">
+        <article class="card" data-search="bab 0 pos nilasar telaga sumi menara senja gerbang timur simpul 9">
+          <h4>Bab 0 · Pos Nilasar &amp; Cincin yang Menyengat</h4>
+          <p>Pos Nilasar terhimpit blokade garam &amp; razia Kesa. Di tengah riak aneh Telaga Sumi dan badai pasir besar, Menara Simpul ke-9 memancarkan tiga denyut tanda bahaya. Marsiyah menguji dan menyerahkan Cincin Perunggu kepada Nara, yang kemudian terkunci pada detak nadinya saat memeriksa Simpul 009—diawasi dari bukit oleh <strong>Maruani</strong>.</p>
+        </article>
+        <article class="card" data-search="bab 1 dusun sela balkut padang salkara tepisalkara dargun odgar gencatan senjata">
+          <h4>Bab 1 · Dusun Sela, Padang Salkara &amp; Tepi Salkara</h4>
+          <p>Pulang ke Dusun Sela, Nara mengetahui rahasia <em>Penutup Telinga Perunggu</em> dari Nenek Ima. Bersama pengawal Panji Balkut <strong>Orsuk</strong>, Nara membujuk tujuh ketua panji di Padang Salkara, membongkar sabotase minyak suruhan Maruani, lalu menyelidiki reruntuhan pesisir <strong>Tepi Salkara</strong> hingga <strong>Dargun</strong> mengakui kelalaian Panji Gorkan 107 tahun silam dan <strong>Odgar</strong> mengesahkan gencatan senjata.</p>
+        </article>
+        <article class="card spoiler-block" data-search="bab 2 pegunungan silin arsip tseren wuren lisen ikrar sambung hemira">
+          <h4>Bab 2 · Arsip Terkunci Tseren <span class="pill spoiler">Bab 2</span></h4>
+          <p>Menembus jurang Silin bersama <strong>Wuren</strong>, Nara membuktikan bahwa naskah <em>Perkara Pemutusan</em> diubah oleh <em>Aliran Selaras</em> (kewajiban “memberi tahu” diubah menjadi “meminta izin”), serta menemukan catatan <strong>Hemira</strong> mengenai peta Menara Simpul ke-1 dan ancaman 7 Menara Redup.</p>
+        </article>
+        <article class="card spoiler-block" data-search="bab 3 bandar lada tarun tiwano utang kabar taluk retak besar">
+          <h4>Bab 3 · Bandar Lada, Utang Kabar &amp; Reuni <span class="pill spoiler">Bab 3</span></h4>
+          <p>Usai menyaksikan pratinjau lonjakan gaung di lereng selatan, Nara bertemu kembali dengan ayahnya <strong>Tarun</strong> yang tertahan kontrak <em>Utang Kabar</em>. Pengakuan Cirusia meredakan ketegangan dengan Bahtari; Nara menolak tawaran suaka bersyarat Taluk dan berlayar menuju Lulan Tua.</p>
+        </article>
+        <article class="card spoiler-block" data-search="bab 4 lulan tua nada penyegel maruani benteng tata pengorbanan">
+          <h4>Bab 4A &amp; 4B · Lulan Tua &amp; Benteng Tata <span class="pill spoiler">Bab 4</span></h4>
+          <p>Di Menara Simpul ke-1, ketiga kaum Lulanai memberi izin menyatukan <strong>Nada Penyegel</strong> ke dalam cincin. Nara menolak ajakan paksa Maruani meski diungkap penyebab wafatnya Nadiyah. Di pelataran Benteng Tata bersama <strong>Kesa</strong> sebagai pengawal utusan sah, bukti arsip memaksa <strong>Taluk</strong> menyepakati penghentian 7 Menara Redup dan membuka jalan ke Menara ke-99.</p>
+        </article>
+        <article class="card spoiler-block" data-search="bab 5 menara simpul 99 gerbang surut bejana batu akhir cerita">
+          <h4>Bab 5 · Menara Simpul ke-99 &amp; Gerbang Surut <span class="pill spoiler">Bab 5</span></h4>
+          <p>Di ruang bawah laut Bejana Batu, upaya terakhir Maruani memaksakan <em>Nada Pengikat</em> digagalkan oleh Nara dan para saksi lintas bangsa. Kini Nara menentukan sendiri cara melepaskan seluruh gema dunia di Gerbang Surut.</p>
+        </article>
+      </div>
+
+      <div class="spoiler-block">
+        <h3>Perbandingan Tiga Akhir Cerita (*Endings*)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Pihak / Dampak</th><th>1. Terbuka (Tanpa Penjaga)</th><th>2. Terkendali (Dewan Tetua)</th><th>3. Terverifikasi (Lintas Bangsa · Balanced)</th></tr></thead>
+            <tbody>
+              <tr data-search="ending terbuka terkendali terverifikasi dampak"><td><strong>Mekanisme &amp; Harga</strong></td><td>Seluruh beban Bejana dilepas sekaligus; kepekaan Nara utuh, tetapi beberapa menara rapuh retak &amp; melukai warga.</td><td>Dewan melepaskan bertahap dan lambat; fisik benua aman, namun monopoli bertahan dan Taluk menebus utang Tarun.</td><td>Nara menyelaraskan pelepasan aman secara manual—mengorbankan kepekaan <em>Echoes</em> Nara secara permanen (pendengaran biasa utuh).</td></tr>
+              <tr data-search="ending lulanai ima"><td><strong>Lulanai &amp; Nenek Ima</strong></td><td>Keluar dari persembunyian, tetapi stigma warga masih tersisa.</td><td><em>Ajaran Tata</em> tetap menyalahkan Lulanai; Ima tetap menyamar.</td><td>Suntingan arsip diakui resmi; Lulanai dilibatkan lagi; Ima mulai bicara terbuka.</td></tr>
+              <tr data-search="ending dewan cirusia bahtari tarun"><td><strong>Bangsa &amp; Keluarga</strong></td><td>Monopoli Dewan runtuh; spekulasi kabar hidup lagi.</td><td>Dewan berkuasa penuh dengan jalur dagang diawasi ketat.</td><td><em>Ikrar Sambung</em> diperbarui untuk 5 bangsa; Tarun pulang bersama Nara ke Dusun Sela.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PENAMAAN & GLOSARIUM -->
+    <section id="section-glosarium" class="wiki-section" data-cat="glosarium">
+      <div class="section-head">
+        <h2>8. Aturan Penamaan &amp; Glosarium Kanon Lengkap</h2>
+        <span class="section-tag" id="glossary-count">48 Istilah</span>
+      </div>
+      <div class="grid-2">
+        <article class="card" data-search="aturan penamaan tiga lapisan angka organik">
+          <h4>Prinsip Penamaan &amp; Angka Organik</h4>
+          <ul>
+            <li><strong>Nama Berlapis:</strong> Setiap tempat memiliki nama lokal, nama resmi, dan julukan sehari-hari (contoh: <em>Pos Nilasar / Batu Biru</em>, <em>Pegunungan Silin / Kabut Lirih</em>).</li>
+            <li><strong>Angka Non-Bulat Realistis:</strong> 99 Menara Simpul, Tahun 103 Post-Senyap, 37 arsitek muda, 47 tenda kempa, 512/397/243/124/43/4 Pra-Senyap.</li>
+          </ul>
+        </article>
+        <article class="card" data-search="bunyi nama bangsa akar kata rekaan nilasar gorkan dolgak">
+          <h4>Akar Kata &amp; Nuansa Bunyi Bangsa</h4>
+          <p><strong>Asharim:</strong> vokal a-i-u-e, akhiran -an/-am/-iyah (Marsiyah, Sahdan). <strong>Cirusia:</strong> konsonan keras &amp; harmoni vokal a-o-u (Dargun, Orsuk, Odgar). <strong>Tseren:</strong> ringkas &amp; tertib (Wuren, Lisen). <strong>Bahtari:</strong> terbuka &amp; musikal (Tarun, Tiwano). <strong>Lulanai:</strong> vokal mengalir panjang (Wilanu, Hemira, Maruani).</p>
+        </article>
+      </div>
+
+      <h3>Kamus Istilah Tanah Sada (A–Z)</h3>
+      <div class="table-wrap">
+        <table id="glossary-table">
+          <thead><tr><th>Istilah</th><th>Penjelasan</th></tr></thead>
+          <tbody id="glossary-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <p class="wiki-footer">Ensiklopedia Kanon <strong>Jalur Senyap (The Silent Route)</strong> · Era Tahun ke-103 Post-Senyap · Tanah Sada.</p>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Perbesar Gambar">
+    <button id="lightbox-close" type="button">Tutup [Esc]</button>
+    <img id="lightbox-img" alt="">
+    <p id="lightbox-cap"></p>
+  </div>
+
+  <script>
+    (function(){
+      'use strict';
+
+      const GLOSSARY=[
+        ['Adat Muka Api','Adat Cirusia di mana mengakui kelalaian api yang merugikan panji lain dianggap aib berat.'],
+        ['Ajaran Tata','Ajaran resmi Dewan Tetua (“Tata mengelola”; “Yang tua menjaga jalan”).'],
+        ['Akar Jalur Gaung','Sambungan getaran bawah tanah yang menghubungkan 99 Menara Simpul.'],
+        ['Aliran Murni / Selaras','Dua faksi arsip Tseren: penjaga keaslian naskah (Wuren) vs penyunting arsip demi stabilitas Dewan (Lisen).'],
+        ['Bagan Arus','Peta 3D asli Bahtari dari bambu apung, tulang ikan, dan kulit ikan pari sebelum mengenal kertas Tseren.'],
+        ['Balai Cawan','Pusat kegiatan adat Malam Tiga Cawan di kawasan sumur dan kanal Asharim.'],
+        ['Batu Gaung','Batu vulkanik berpori akustik di Lulan Tua yang menyimpan dan memantulkan getaran suara.'],
+        ['Beban Gaung','Batas muatan jaringan menara; jika dilampaui akan memicu Echoes Liar dan Bising.'],
+        ['Bejana Batu','Ruang batu penahan Echoes di bawah pulau Menara Simpul ke-99.'],
+        ['Benteng Tata','Markas Dewan Tetua di semenanjung barat daya.'],
+        ['Bising','Kerusakan saraf pendengaran permanen akibat paparan beban Echoes tanpa peredam.'],
+        ['Bising Menular','Stigma fitnah pasca-Hari Senyap bahwa pemakai Penutup Telinga Perunggu menyebarkan wabah.'],
+        ['Buku Tamu Batu','Adat Asharim: tamu menuliskan nama di batu pos sebagai catatan perjalanan kafilah.'],
+        ['Cakar Tebing (Tali Sambar)','Alat panjat cakar besi tiga mata dan tali serat ulet khas perintis Tseren.'],
+        ['Cincin Perunggu','Kunci resonansi kecil yang ditempa Wilanu dari pahat 5 Arsitek Agung; terkunci pada nadi pembawa berdarah Lulanai.'],
+        ['Dewan Tetua','Badan pengelola jalur bentukan 124 Pra-Senyap di bawah Ikrar Sambung yang kini memonopoli 7 Menara Simpul Redup.'],
+        ['Dua Pembacaan','Adat Tseren: penerima membaca isi kontrak, pembawa membacakan catatan serah-terima fisik barang.'],
+        ['Echoes','Fenomena serta jaringan bunyi-ingatan yang merambat lewat Batu Gaung dan Perunggu Gaung.'],
+        ['Garam Batu Batangan','Mata uang komoditas standar pasar bebas (satuan Garis).'],
+        ['Garis Surut','Jalur bawah tanah penyalur kelebihan gelombang dari Menara Simpul ke-1 melewati ke-9 menuju Bejana Batu.'],
+        ['Gaung Arsitek','Teknik arsitek Lulanai membentuk atau meretakkan batu gaung dengan alat perunggu; berisiko meninggalkan Bising.'],
+        ['Gerbang Surut','Pintu pelepas di Menara Simpul ke-99, tepat di atas Bejana Batu.'],
+        ['Hari Senyap (Tahun 0)','The Night of the Ashen Hush (Malam Tiga Napas): malam pemutusan serentak 99 Menara Simpul.'],
+        ['Hukum Air (Pakta Sumur Terbuka)','Hukum Asharim bahwa mata air dan pos persinggahan adalah zona netral bagi semua pengelana.'],
+        ['Hukum Janji Api','Hukum Cirusia: sumpah penting diucapkan di depan api dan tiga saksi mata tanpa tulisan.'],
+        ['Ikrar Sambung','Perjanjian kemitraan 124 Pra-Senyap antara Lulanai dan Dewan Tetua.'],
+        ['Kabar Tujuh Musim','Berita terdistorsi tentang kebakaran Tepi Salkara (4 Pra-Senyap) yang memicu Perang Tujuh Musim (~3,5 tahun).'],
+        ['Kanon Aksara','Fondasi Tseren: kata harus dijaga di atas kertas serat tahan lembap dan pantang dimusnahkan.'],
+        ['Kaum Pantang / Terbuka / Sesal','Tiga faksi penyintas Lulanai: menolak penyalaan ulang / menuntut ilmu dibagikan / menuntut bangsa lain dilibatkan.'],
+        ['Keping Tata','Koin logam resmi Dewan Tetua yang nilainya terus merosot.'],
+        ['Kerang Suara','Kerang tua warisan zaman Echoes di Bahtari yang masih menyimpan potongan lagu.'],
+        ['Kontrak Sauh & Utang Kabar','Jerat kontrak modal pelayaran Rumah Dagang dan biaya verifikasi Menara Simpul Redup di Bahtari.'],
+        ['Lagu Titipan','Adat Bahtari menitipkan lagu keluarga kepada pelaut atau perintis tanpa boleh diubah.'],
+        ['Lulan Tua','Kaldera basalt pusat Lulanai, tempat berdirinya Menara Simpul ke-1.'],
+        ['Malam Tiga Cawan','Adat pos Asharim (Cawan Air/kabar rute, Garam/pasar, Kabar/kisah & tugas).'],
+        ['Menara Simpul','99 menara penyimpan dan penerus Echoes (Pusat/ke-1, ke-9 di Asharim, ke-99 di Bahtari).'],
+        ['Menara Simpul Redup','Tujuh menara yang dioperasikan paksa Dewan Tetua dengan teknik cacat sejak Tahun 58 Post-Senyap.'],
+        ['Musim Terang & Musim Dingin','Pembagian 2 musim dalam 1 tahun di Tanah Sada.'],
+        ['Nada Pengikat','Teknik low-fantasy Lulanai mengarahkan frekuensi akustik lewat batu/tanah menggunakan Perunggu Gaung.'],
+        ['Nada Penyegel','Separuh kode kedua pembuka Gerbang Surut yang tersimpan di inti Menara Simpul ke-1.'],
+        ['Penelan Suara','Takhayul rakyat pasca-Hari Senyap terhadap keturunan Lulanai.'],
+        ['Penutup Telinga Perunggu','Alat peredam gaung milik penyintas Lulanai.'],
+        ['Perintis Kafilah (Pathfinder)','Penjelajah garis depan yang membuka rute ekstrem bagi rombongan karavan dagang.'],
+        ['Perkara Pemutusan','Tuduhan hukum Dewan Tetua terhadap Lulanai atas pemutusan sepihak pada Hari Senyap.'],
+        ['Perunggu Gaung (Sada-Bronze)','Logam paduan tembaga-timah-bubuk Batu Gaung yang ditempa dengan teknik Tempa Nada.'],
+        ['Pra-Senyap & Post-Senyap','Penanggalan resmi sebelum dan sesudah Hari Senyap (Tahun 0).'],
+        ['Retak Besar','Bencana pecahnya Bejana Batu yang memuntahkan Echoes Liar serentak ke seluruh benua.'],
+        ['Tahun Simpul (TS)','Penanggalan Tseren; TS 1 setara 397 Pra-Senyap, Hari Senyap jatuh pada TS 398.'],
+        ['Tanah Sada','Nama benua dan dunia cerita Jalur Senyap.'],
+        ['Tanda','Adat Lulanai meninggalkan pesan bersyarat pada batu tanpa diucapkan sembarangan.'],
+        ['Yang Tetua','Gelar pemimpin tertinggi Dewan Tetua (saat ini dijabat Taluk).']
+      ];
+
+      const gBody=document.getElementById('glossary-body');
+      const gCount=document.getElementById('glossary-count');
+      gCount.textContent=GLOSSARY.length+' Istilah';
+      GLOSSARY.forEach(([term,desc])=>{
+        const tr=document.createElement('tr');
+        tr.dataset.search=(term+' '+desc).toLowerCase();
+        tr.innerHTML=`<td><strong>${term}</strong></td><td>${desc}</td>`;
+        gBody.appendChild(tr);
+      });
+
+      const searchInput=document.getElementById('wiki-search');
+      const clearBtn=document.getElementById('search-clear');
+      const spoilerToggle=document.getElementById('spoiler-toggle');
+      const tabs=document.querySelectorAll('.tab-btn');
+      const sections=document.querySelectorAll('.wiki-section');
+      const emptyState=document.getElementById('empty-state');
+      let activeCat='all';
+
+      function applyFilter(){
+        const q=(searchInput.value||'').trim().toLowerCase();
+        let visibleSections=0;
+        sections.forEach(sec=>{
+          const catOk=activeCat==='all'||sec.dataset.cat===activeCat;
+          if(!catOk){sec.classList.add('hidden');return;}
+
+          const cards=sec.querySelectorAll('.card,.relic-box');
+          const rows=sec.querySelectorAll('tbody tr');
+          if(!q){
+            cards.forEach(el=>el.classList.remove('hidden'));
+            rows.forEach(el=>el.classList.remove('hidden'));
+            sec.classList.remove('hidden');
+            visibleSections++;
+            return;
+          }
+
+          let hits=0;
+          cards.forEach(el=>{
+            const ok=(el.dataset.search+' '+el.textContent).toLowerCase().includes(q);
+            el.classList.toggle('hidden',!ok);
+            if(ok)hits++;
+          });
+          rows.forEach(el=>{
+            const ok=(el.dataset.search+' '+el.textContent).toLowerCase().includes(q);
+            el.classList.toggle('hidden',!ok);
+            if(ok)hits++;
+          });
+          const wholeOk=sec.textContent.toLowerCase().includes(q);
+          const show=hits>0||(cards.length===0&&rows.length===0&&wholeOk);
+          sec.classList.toggle('hidden',!show);
+          if(show)visibleSections++;
+        });
+        emptyState.classList.toggle('shown',visibleSections===0);
+      }
+
+      tabs.forEach(b=>b.addEventListener('click',()=>{
+        activeCat=b.dataset.cat;
+        tabs.forEach(x=>x.classList.toggle('active',x===b));
+        applyFilter();
+        if(activeCat!=='all'){
+          const target=document.getElementById('section-'+activeCat);
+          target?.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      }));
+
+      searchInput.addEventListener('input',applyFilter);
+      clearBtn.addEventListener('click',()=>{searchInput.value='';applyFilter();searchInput.focus();});
+      spoilerToggle.addEventListener('change',()=>{
+        document.body.classList.toggle('hide-spoilers',spoilerToggle.checked);
+      });
+
+      // Lightbox zoom for atlas, nation art, and portraits
+      const lb=document.getElementById('lightbox');
+      const lbImg=document.getElementById('lightbox-img');
+      const lbCap=document.getElementById('lightbox-cap');
+      function closeLb(){lb.classList.remove('open');}
+      document.querySelectorAll('.zoomable').forEach(img=>{
+        img.addEventListener('click',()=>{
+          lbImg.src=img.src;
+          lbCap.textContent=img.alt||'';
+          lb.classList.add('open');
+        });
+      });
+      document.getElementById('lightbox-close').addEventListener('click',closeLb);
+      lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+      window.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+    })();
+  </script>
+</body>
+</html>

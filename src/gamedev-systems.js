@@ -810,12 +810,12 @@
         moves: 0,
         rngState: rng.snapshot()
       };
-      // Generate backwards from solved state [0,0,0] so it is 100% guaranteed solvable!
-      const scrambleMoves = [0, 1, 2, 0, 1];
+      // Generate backwards from solved state [0,0,0] so it is 100% guaranteed solvable in 3 moves!
+      const scrambleMoves = [0, 1, 1];
       for (const m of scrambleMoves) {
         state.rings = PuzzleEngine.stepRings(state.rings, m);
       }
-      if (state.rings.every(r => r === 0)) state.rings = [3, 2, 3];
+      if (state.rings.every(r => r === 0)) state.rings = [1, 3, 2];
       return state;
     }
 
@@ -829,11 +829,12 @@
 
     // Family 2: Balkut Winch Counterweight ('bridge')
     // 3 Counterweight Pins [p0, p1, p2] in values 0..2. Goal: all equal to 2 (balanced lock).
-    static createBridgeBoard(seed = 209) {
+    static createBridgeBoard(seed = 209, variant = '') {
       const rng = new SplitMix64(seed);
+      const pins = variant === 'winch_2' ? [0, 2, 1] : variant === 'winch_3' ? [2, 1, 0] : [1, 0, 1];
       return {
         kind: 'bridge',
-        pins: [1, 0, 1],
+        pins,
         moves: 0,
         rngState: rng.snapshot()
       };
@@ -847,10 +848,128 @@
       return p;
     }
 
+    // Family 3: Woven Pattern / Rope Knot ('loom')
+    // 4-cell 2x2 grid [c0, c1, c2, c3] in 0..1. Goal: all equal to 1 (taut/locked).
+    static createLoomBoard(seed = 307, variant = 'loom_ima') {
+      const rng = new SplitMix64(seed);
+      const cells = variant === 'caravan_knot' ? [0, 1, 0, 1] : [0, 0, 0, 1];
+      return {
+        kind: 'loom',
+        variant,
+        cells,
+        moves: 0,
+        rngState: rng.snapshot()
+      };
+    }
+
+    static stepLoom(cells, moveIdx) {
+      const c = cells.slice();
+      if (moveIdx === 0) { c[0] ^= 1; c[1] ^= 1; }
+      else if (moveIdx === 1) { c[1] ^= 1; c[3] ^= 1; }
+      else if (moveIdx === 2) { c[0] ^= 1; c[2] ^= 1; c[3] ^= 1; }
+      else if (moveIdx === 3) { c[2] ^= 1; c[3] ^= 1; }
+      return c;
+    }
+
+    // Family 4: Canal Sluice / Cliff Tension Distribution ('sluice')
+    // 3 chambers [l0, l1, l2] in 0..4 summing to 6. Goal: [2, 2, 2].
+    static createSluiceBoard(seed = 409, variant = 'canal_sluice') {
+      const rng = new SplitMix64(seed);
+      const levels = variant === 'cliff_anchor' ? [4, 2, 0] : [0, 4, 2];
+      return {
+        kind: 'sluice',
+        variant,
+        levels,
+        moves: 0,
+        rngState: rng.snapshot()
+      };
+    }
+
+    static stepSluice(levels, moveIdx) {
+      const l = levels.slice();
+      if (moveIdx === 0 && l[0] > 0 && l[1] < 4) { l[0] -= 1; l[1] += 1; }
+      else if (moveIdx === 1 && l[1] > 0 && l[2] < 4) { l[1] -= 1; l[2] += 1; }
+      else if (moveIdx === 2 && l[2] > 0 && l[0] < 4) { l[2] -= 1; l[0] += 1; }
+      else if (moveIdx === 3) { const tmp = l[0]; l[0] = l[2]; l[2] = tmp; }
+      return l;
+    }
+
+    // Family 5: Batu Nama Monolith Harmonic Seal ('monolith')
+    // 4 carved glyphs [g0, g1, g2, g3] in 0..2. Goal: all equal to 0 (aligned).
+    static createMonolithBoard(seed = 521) {
+      const rng = new SplitMix64(seed);
+      return {
+        kind: 'monolith',
+        glyphs: [1, 2, 1, 2],
+        moves: 0,
+        rngState: rng.snapshot()
+      };
+    }
+
+    static stepMonolith(glyphs, moveIdx) {
+      const g = glyphs.slice();
+      if (moveIdx === 0) { g[0] = (g[0] + 1) % 3; g[1] = (g[1] + 1) % 3; }
+      else if (moveIdx === 1) { g[1] = (g[1] + 1) % 3; g[2] = (g[2] + 1) % 3; }
+      else if (moveIdx === 2) { g[2] = (g[2] + 1) % 3; g[3] = (g[3] + 1) % 3; }
+      else if (moveIdx === 3) { g[0] = (g[0] + 1) % 3; g[1] = (g[1] + 1) % 3; g[3] = (g[3] + 1) % 3; }
+      return g;
+    }
+
+    // Family 6: Sabotage Oil-Valve Seal ('valve')
+    // 4 valves [v0, v1, v2, v3] in 0..2. Goal: all equal to 2 (sealed). All 81 states reachable.
+    static createValveBoard(seed = 613) {
+      const rng = new SplitMix64(seed);
+      return {
+        kind: 'valve',
+        valves: [0, 1, 0, 2],
+        moves: 0,
+        rngState: rng.snapshot()
+      };
+    }
+
+    static stepValve(valves, moveIdx) {
+      const v = valves.slice();
+      if (moveIdx === 0) { v[0] = (v[0] + 1) % 3; v[1] = (v[1] + 1) % 3; }
+      else if (moveIdx === 1) { v[1] = (v[1] + 1) % 3; v[2] = (v[2] + 1) % 3; }
+      else if (moveIdx === 2) { v[2] = (v[2] + 1) % 3; v[3] = (v[3] + 1) % 3; }
+      else if (moveIdx === 3) { v[0] = (v[0] + 1) % 3; v[2] = (v[2] + 1) % 3; v[3] = (v[3] + 1) % 3; }
+      return v;
+    }
+
+    // Family 7: Investigative Evidence Deduction ('evidence')
+    // 3 clue slots [s0, s1, s2] in 0..2 matching target hypothesis per variant.
+    static createEvidenceBoard(seed = 701, variant = 'kitchen_blueprint') {
+      const rng = new SplitMix64(seed);
+      const target = variant === 'wind_chronicle' ? [1, 2, 1] : [1, 1, 2];
+      return {
+        kind: 'evidence',
+        variant,
+        slots: [0, 0, 0],
+        target,
+        moves: 0,
+        rngState: rng.snapshot()
+      };
+    }
+
+    static stepEvidence(slots, moveIdx) {
+      const s = slots.slice();
+      if (moveIdx >= 0 && moveIdx < s.length) s[moveIdx] = (s[moveIdx] + 1) % 3;
+      return s;
+    }
+
+    static moveCount(kind) {
+      return (kind === 'loom' || kind === 'sluice' || kind === 'monolith' || kind === 'valve') ? 4 : 3;
+    }
+
     static isSolved(state) {
       if (!state) return false;
       if (state.kind === 'tune') return state.rings.every(v => v === 0);
       if (state.kind === 'bridge') return state.pins.every(v => v === 2);
+      if (state.kind === 'loom') return state.cells.every(v => v === 1);
+      if (state.kind === 'sluice') return state.levels.every(v => v === 2);
+      if (state.kind === 'monolith') return state.glyphs.every(v => v === 0);
+      if (state.kind === 'valve') return state.valves.every(v => v === 2);
+      if (state.kind === 'evidence') return state.slots.every((v, idx) => v === state.target[idx]);
       return false;
     }
 
@@ -861,6 +980,16 @@
         next.rings = PuzzleEngine.stepRings(next.rings, moveIdx);
       } else if (next.kind === 'bridge') {
         next.pins = PuzzleEngine.stepPins(next.pins, moveIdx);
+      } else if (next.kind === 'loom') {
+        next.cells = PuzzleEngine.stepLoom(next.cells, moveIdx);
+      } else if (next.kind === 'sluice') {
+        next.levels = PuzzleEngine.stepSluice(next.levels, moveIdx);
+      } else if (next.kind === 'monolith') {
+        next.glyphs = PuzzleEngine.stepMonolith(next.glyphs, moveIdx);
+      } else if (next.kind === 'valve') {
+        next.valves = PuzzleEngine.stepValve(next.valves, moveIdx);
+      } else if (next.kind === 'evidence') {
+        next.slots = PuzzleEngine.stepEvidence(next.slots, moveIdx);
       }
       const solved = PuzzleEngine.isSolved(next);
       return {
@@ -874,18 +1003,24 @@
 
     static hashState(state) {
       if (state.kind === 'tune') return `tune:${state.rings.join(',')}`;
+      if (state.kind === 'loom') return `loom:${state.cells.join(',')}`;
+      if (state.kind === 'sluice') return `sluice:${state.levels.join(',')}`;
+      if (state.kind === 'monolith') return `monolith:${state.glyphs.join(',')}`;
+      if (state.kind === 'valve') return `valve:${state.valves.join(',')}`;
+      if (state.kind === 'evidence') return `evidence:${state.variant}:${state.slots.join(',')}`;
       return `bridge:${state.pins.join(',')}`;
     }
 
     // BFS Solver that returns shortest move sequence [m0, m1, ...]
     static solveBFS(startState) {
       if (PuzzleEngine.isSolved(startState)) return [];
+      const nMoves = PuzzleEngine.moveCount(startState.kind);
       const queue = [{ state: startState, path: [] }];
       const visited = new Set([PuzzleEngine.hashState(startState)]);
       while (queue.length > 0) {
         const { state, path } = queue.shift();
-        if (path.length >= 10) continue;
-        for (let m = 0; m < 3; m++) {
+        if (path.length >= 12) continue;
+        for (let m = 0; m < nMoves; m++) {
           const { state: next } = PuzzleEngine.applyMove(state, m);
           const h = PuzzleEngine.hashState(next);
           if (visited.has(h)) continue;

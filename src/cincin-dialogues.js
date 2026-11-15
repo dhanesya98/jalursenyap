@@ -539,8 +539,145 @@ const D={
     retry:{speaker:'Orsuk',text:'Tahan lidahmu, Nara! Kita belum punya satu pun bukti sah dari reruntuhan pantai Tepi Salkara. Berbohong di depan api sama saja mengakhiri nyawa kita berdua. Coba sampaikan tawaran yang jujur!',next:'n0'},
     n1:{speaker:'Odgar',text:'(Odgar memandangi wajah Nara dan para pemimpin panji dalam hening yang berat, lalu menancapkan tongkat penandanya ke tanah.) Baik. Garam dari Pos Tua Asharim diterima sebagai niat baik. Genderang perang kutahan selama empat hari pergantian angin.',next:'n2'},
     n2:{speaker:'Odgar',text:'Jika kau dan Orsuk mampu kembali dari reruntuhan terlarang di pesisir Tepi Salkara membawa bukti sah atas apa yang terjadi pada malam seratus tujuh tahun lalu, jalur padang dibuka. Bila tidak—ketujuh panji akan bergerak ke selatan.',next:'n3'},
-    n3:{speaker:'Orsuk',text:'Empat hari pergantian angin... Itu cukup untuk menembus pesisir utara, Nara. Ayo bersiap.',next:'n4'},
-    n4:{speaker:'Nara',text:'(Saat Nara menatap jalan utara menuju Tepi Salkara, Cincin Perunggu di balik jubahnya kembali menyengat hangat ujung jarinya—tanda bahwa Maruani pun sedang bergerak ke arah yang sama.) Bab 1 belum usai... dan Menara Pertama tetap menanti.',action:'CP_20_0'}
+    n3:{speaker:'Orsuk',text:'Empat hari pergantian angin... Sebelum kita menembus lereng utara ke Tepi Salkara, suara empat pemimpin panji lain di lingkaran tenda masih bergejolak. Kalau kita tidak mendengar mereka lebih dulu, ada pihak yang siap memicu kerusuhan dari dalam kamp.',next:'n4'},
+    n4:{speaker:'Nara',text:'(Ruru mengibaskan ekor pelan ke arah tenda-tenda di pinggir lingkaran, lalu menunjuk bayangan seorang juru takar yang tadi menghilang.) Baik, Kak Orsuk. Kita temui Hurgak, Kutlak, Borlan, dan Burgul dulu, lalu bersihkan sabotase sebelum berangkat ke pesisir!',action:'CP_20_0'}
+   }
+  }
+ },
+
+ 'cp-22-0':{
+  hint:'Temui Hurgak (Panji Dolgak) di tenda utara sebelah kiri [E].',
+  dialogue:{
+   id:'cp-22-0',npc:'Hurgak',title:'Suara Empat Panji Lainnya',node:'n0',
+   nodes:{
+    n0:{speaker:'Hurgak',text:'Kau berani melangkah mendekat ke tenda besi Dolgak setelah bicara di depan api? Penunggang kudaku masih lapar, anak Asharim. Mengapa aku harus menahan tombak selama empat hari?',choices:[{text:'“Kami membawa garam murni sekarang, dan jika Tepi Salkara membuktikan kebenarannya, pasokan lada biru serta garam takkan lagi dipotong pajak perang.”',next:'n1'},{text:'“Odgar sudah memutuskan, jadi kalian wajib patuh tanpa banyak tanya.”',next:'n1_alt'}]},
+    n1_alt:{speaker:'Hurgak',text:'Hmph! Dolgak tidak tunduk hanya karena perintah lisan—tetapi Orsuk menjaminmu dengan nyawa Balkut. Itu saja yang membuatku mau mendengarkan.',next:'n2'},
+    n1:{speaker:'Hurgak',text:'(Rahang Hurgak mengeras, lalu perlahan mengendur.) Garam bersih tanpa upeti ganda... Kalau kau benar berani turun ke reruntuhan pesisir Tepi Salkara bersama Orsuk, pasukan berkuda Dolgak akan menahan diri sampai hari keempat.',next:'n2'},
+    n2:{speaker:'Ruru',text:'(Ruru mengendus pelana di sebelah tenda Hurgak lalu bersin kecil—mencium bekas abu kayu yang tidak biasa.)',next:'n3'},
+    n3:{speaker:'Nara',text:'Satu panji sudah mau menahan diri empat hari. Sekarang giliran Kutlak dari Panji Sarbuk di sebelah timur lingkaran.',action:'CP_22_0'}
+   }
+  }
+ },
+ 'cp-22-1':{
+  hint:'Temui Kutlak (Panji Sarbuk) di sisi timur laut api sidang [E].',
+  dialogue:{
+   id:'cp-22-1',npc:'Kutlak',title:'Suara Empat Panji Lainnya',node:'n0',
+   nodes:{
+    n0:{speaker:'Kutlak',text:'Kabar burung dari selatan bilang pasukan Asharim diam-diam menumpuk tombak di Balai Cawan, bahkan seorang juru takar asing membisikkan daftar pos garam kepada pengawalku. Apa jawabanmu?',choices:[{text:'“Buku Tamu Batu di Balai Cawan dipegang pengintai Dewan, bukan pedagang garam. Juru takar itu sengaja memancing perang kalian!”',next:'n1'},{text:'“Kami cuma tukang antar garam, urusan berita bukan tanggungan kami.”',next:'retry'}]},
+    retry:{speaker:'Orsuk',text:'Jangan lepas tangan, Nara! Jika Kutlak percaya pos Asharim bersiap menyerang, ia akan mendorong Panji Tua membatalkan gencatan malam ini. Ceritakan apa yang kau lihat di Balai Cawan!',next:'n0'},
+    n1:{speaker:'Kutlak',text:'Jadi si juru takar bermulut manis itu bukan utusan dagangmu...? Sial. Penjaga Sarbuk memang melihat ia berkeliling membawa botol minyak kecil di dekat gerobak belakang.',next:'n2'},
+    n2:{speaker:'Nara',text:'Minyak kecil? Di saat semua karavan kehabisan lentera? Terima kasih, Kutlak—kami akan melacak jejak orang itu sebelum malam turun.',action:'CP_22_1'}
+   }
+  }
+ },
+ 'cp-22-2':{
+  hint:'Temui Borlan (Panji Tumran) di tenda tenggara [E].',
+  dialogue:seq('Borlan','Suara Empat Panji Lainnya',[
+   ['Borlan','Roda pedati Tumran butuh jalur terbuka, Nara. Tapi sejak sore tadi dua pengawal tak dikenal berdiri di celah tenda selatan sambil menawari kusir kami bayaran untuk membelokkan kereta garam menjauh dari gudang utama.'],
+   ['Orsuk','Bukan orang kita, Borlan. Itu pasti orang suruhan Maruani. Kalau cadangan garam di selatan sampai disabotase malam ini, alasan Panji Tua untuk menyerang besok pagi bakal tak terbendung.'],
+   ['Nara','Ruru, ingat arah bau minyak yang kau cium tadi? Sebelum ke pantai utara, kita harus periksa sudut tenda selatan juga. Sekarang dengarkan Burgul terlebih dahulu.']
+  ],'CP_22_2')
+ },
+ 'cp-22-3':{
+  hint:'Temui Burgul (Panji Ulmar) di tenda barat daya [E] untuk membaca angin dan membuka jalur Tepi Salkara.',
+  dialogue:seq('Burgul','Suara Empat Panji Lainnya',[
+   ['Burgul','Angin barat laut berputar menuju pesisir malam ini. Empat hari pergantian angin tidak cukup bila kalian tersesat di tebing pantai. Akan kutandai jalan setapak utara di belakang tenda kuning-merah untuk kalian lalui.'],
+   ['Orsuk','Terima kasih, Burgul. Begitu kami membersihkan gangguan di dekat peti garam selatan, aku dan Nara akan langsung naik ke reruntuhan Tepi Salkara.'],
+   ['Nara','(Burgul mengangguk khidmat, sementara Ruru menarik-narik ujung jubah Nara ke arah tumpukan peti di sudut barat daya.) Lihat, Kak Orsuk! Ruru mencium bau minyak di peti selatan!']
+  ],'CP_22_3')
+ },
+
+ 'cp-23-0':{
+  hint:'Pergi ke tepi barat daya perkemahan, pindai dengan Ruru [Q], lalu periksa peti garam berminyak [E].',
+  dialogue:seq('Nara','Jejak Sabotase di Perkemahan',[
+   ['Ruru','(Telinga Ruru menegak tajam; pindai pirusnya menyorot genangan minyak lentera Bahtari yang merembes di bawah tumpukan karung garam kering.)'],
+   ['Orsuk','Demi leluhur Salkara... Ini minyak bakar murni yang dicampur serbuk bara halus! Jika tersulut api dapur malam ini, seluruh tenda di lingkar selatan akan meledak dan Asharim akan dituduh melanggar gencatan!'],
+   ['Nara','Dan lihat bekas tuas di sisi timur lapangan sana—katup lentera cadangan sengaja disetel agar terus menetes. Ayo ke sana sebelum penyusupnya membakarnya!']
+  ],'CP_23_0')
+ },
+ 'cp-23-1':{
+  hint:'Selesaikan penguncian katup lentera sabotase di sisi tenggara perkemahan [E].',
+  dialogue:seq('Nara','Katup Lentera Tersegel',[
+   ['Nara','Katup terkunci rapat! Tetesan minyaknya berhenti—tidak ada lagi umpan api yang mengarah ke gudang tenda.'],
+   ['Orsuk','(Suara langkah tergesa terdengar dari balik tenda timur!) Itu dia orang suruhan si juru takar perunggu! Jangan biarkan dia lari ke jalan setapak utara membawa kabar palsu!']
+  ],'CP_23_1')
+ },
+ 'cp-23-2':{
+  hint:'Kejar dan hentikan penyusup malam di sudut tenggara kemah [E]!',
+  dialogue:{
+   id:'cp-23-2',npc:'Orsuk',title:'Penyusup Malam & Janji Orsuk',node:'n0',
+   nodes:{
+    n0:{speaker:'Penyusup',text:'Cih—kalian menemukan katupnya?! Tuan Maruani bilang pengawal Padang Salkara cukup bodoh untuk membakar diri mereka sendiri begitu minyaknya tersulut! Kalian tidak akan sempat sampai ke pantai utara!',choices:[{text:'“Katakan siapa yang memerintahmu atau berhadapan dengan pengawal tujuh panji di sini!”',next:'n1'},{text:'“Pihak kalian selalu bermain dari balik bayang-bayang. Apa untungnya membuat Asharim dan Cirusia saling membantai?”',next:'n1'}]},
+    n1:{speaker:'Penyusup',text:'Orang-orang dunia luar takkan pernah mengerti mengapa jalur tua harus direbut kembali... (Penyusup itu melempar kepulan debu lalu kabur menuruni lereng luar kemah dengan tergesa.)',next:'n2'},
+    n2:{speaker:'Orsuk',text:'Biarkan dia lari—orang-orang Borlan dan Salgur sudah melihat siapa yang benar-benar berusaha membakar garam mereka malam ini. (Orsuk menghela napas panjang, lalu melepas seuntai jimat kulit berpiling perunggu kecil dari sabuknya.)',next:'n3'},
+    n3:{speaker:'Orsuk',text:'Nara... dari Balai Cawan hingga malam ini, aku tahu kau bukan sekadar perintis biasa. Saat cincin di sakumu menyala samar di depan Batu Nama, Ruru hampir tidak mau lepas dari sisimu. Aku tidak bertanya rahasiamu—karena aku tahu hatimu berpihak pada nyawa orang-orang biasa.',next:'n4'},
+    n4:{speaker:'Ruru',text:'(Ruru melompat pelan ke lutut Nara lalu menggesekkan kepalanya ke tangan Orsuk, seolah ikut berjanji menjaga perjalanan utara.)',next:'n5'},
+    n5:{speaker:'Nara',text:'Terima kasih, Kak Orsuk. Kau dan Ruru membuat jalan ini terasa tidak sendirian. Jalur timur-laut menuju Reruntuhan Pesisir Tepi Salkara kini terbuka. Ayo kita temukan kebenaran malam seratus tujuh tahun silam!',action:'CP_23_2'}
+   }
+  }
+ },
+
+ 'cp-24-0':{
+  hint:'Masuki Tepi Salkara (jalan timur-laut Padang Salkara). Pindai Batu Pesisir Bernyanyi kiri dengan Ruru [Q], lalu tekan [E].',
+  dialogue:seq('Nara','Batu Pesisir Bernyanyi',[
+   ['Ruru','(Di hadapan batu pesisir berukir spiral itu, pindai Ruru bergetar lembut; dari rongga basalt basah terdengar pantulan suara Echoes berusia lebih dari satu abad...)'],
+   ['Gema Masa Lalu','“...aduk tungkunya lebih cepat sebelum angin laut naik—tutup guci minyak di pojok dapur! Ya Dewa, angin barat meledakkan bara ke tirai tenda—tolong!!”'],
+   ['Orsuk','(Suara Orsuk tercekat.) Itu bukan teriakan pasukan perang... Itu suara juru masak yang menyanyikan lagu dapur, disusul kepanikan angin kencang! Tidak ada satu pun suara langkah serbuan kapal pelaut di rekaman batu ini.'],
+   ['Nara','Berarti jawabannya ada tepat di reruntuhan dapur tua sebelah barat kita. Ayo periksa tungku dan temboknya!']
+  ],'CP_24_0')
+ },
+ 'cp-24-1':{
+  hint:'Masuk ke reruntuhan dapur di sisi barat laut, dekati tungku hitam [E], dan susun rekonstruksi denah dapur!',
+  dialogue:seq('Nara','Denah Dapur Pos Karavan',[
+   ['Nara','Lihat jelaga di dinding dan letak guci minyaknya, Kak Orsuk! Semua retakan panas mengarah keluar dari tungku dapur sebelah timur ruangan—persis ke arah tembok tipis menuju kemah, sementara pintu selatan ke pantai masih utuh!'],
+   ['Orsuk','Api tidak datang dari pantai atau obor penyerang luar... Bara dapur pos karavan Panji Gorkan sendiri yang melahap persediaan minyak di dalam ruangan, lalu menyambar tenda! Tinggal satu keping bukti lagi—arah angin laut dan kapan kapal Bahtari karam malam itu. Ayo ke dermaga sinyal di sebelah timur!']
+  ],'CP_24_1')
+ },
+ 'cp-24-2':{
+  hint:'Berjalanlah ke dermaga sinyal batu di tepi timur laut (waspadai pusaran angin badai), lalu cocokkan arah angin & jam kapal [E]!',
+  dialogue:seq('Orsuk','Arah Angin & Jam Kapal',[
+   ['Orsuk','Baling-baling perunggu di ujung dermaga macet mengarah ke darat barat-laut—dan kayu lambung kapal Bahtari di teluk bawah terpelintir karam dua jam sebelum puncak pasang yang menandai waktu kebakaran di Batu Nama!'],
+   ['Nara','Artinya para pelaut Bahtari sudah tersapu badai ke karang sebelum api dapur menyambar tenda Gorkan. Tidak pernah ada pembakaran disengaja oleh bangsa selatan!']
+  ],'CP_24_2')
+ },
+
+ 'cp-25-0':{
+  hint:'Dekati Batu Pesisir Timur dan tekan [E] untuk menenangkan gelombang getaran yang dikirim Maruani dari kejauhan!',
+  dialogue:{
+   id:'cp-25-0',npc:'Maruani',title:'Sapaan Perunggu dari Jauh',node:'n0',
+   nodes:{
+    n0:{speaker:'Nara',text:'(Getaran dingin menyambar seluruh tulang telapak Nara lewat Cincin Perunggu—suara serak berwibawa Maruani bergema lirih di udara batu pesisir tanpa wujud fisik di dekat mereka.)',next:'n1'},
+    n1:{speaker:'Maruani',text:'“Jadi kau benar-benar ingin membersihkan nama orang-orang luar itu, sepupuku? Bahkan setelah apa yang Dewan lakukan pada ibumu dan seluruh Lulanai? Jika kebenaran dapur tua ini membuka gencatan senjata, keempat bangsa akan bersekutu—dan kita tetap harus mengemis di celah batu!”',next:'n2'},
+    n2:{speaker:'Nara',text:'(Orsuk mencengkeram bahu Nara dengan mantap, sementara Ruru memeluk lutut Nara dan menatap garang ke batu berpendar itu.) Aku tidak akan membiarkan dendammu membakar rakyat Dusun Sela maupun tenda-tenda Cirusia, Maruani. Ibuku memilih menyembunyikanku agar aku hidup—bukan agar aku membalas dengan darah orang tak bersalah!',next:'n3'},
+    n3:{speaker:'Maruani',text:'“Jalanmu ke Menara Pertama tetap harus melewati diriku, Nara. Nikmati gencatan senjatamu yang rapuh selama empat hari ini—sebelum gunung utara mengujimu.” (Dengung dingin di batu itu pun padam sepenuhnya.)',action:'CP_25_0'}
+   }
+  }
+ },
+ 'cp-25-1':{
+  hint:'Hadapkan seluruh bukti gabungan kepada Dargun yang menunggu di pelataran tengah Tepi Salkara [E]!',
+  dialogue:{
+   id:'cp-25-1',npc:'Dargun',title:'Pengakuan di Tebing Kesaksian',node:'n0',
+   nodes:{
+    n0:{speaker:'Dargun',text:'Kalian memanggilku dan saksi Panji Ulmar ke tebing terkutuk ini. Katakan cepat di hadapan batu-batu tua: mengapa Panji Gorkan harus menghentikan tombaknya?',choices:[{text:'“Gema batu merekam nyanyian masak—api bermula dari tungku & guci minyak di dapur pos Gorkan yang ditiup angin darat, dua jam setelah kapal Bahtari karam!”',next:'n1'},{text:'“Karena si penyusup malam Maruani mengaku sendiri bahwa dia yang membakar pos ini 107 tahun lalu.”',next:'retry'}]},
+    retry:{speaker:'Orsuk',text:'Jangan mencampuradukkan pengacau hari ini dengan peristiwa 107 tahun silam, Nara! Tunjukkan tiga bukti lapangan yang benar-benar kita periksa tadi: gema nyanyian dapur, denah tungku & minyak, dan jam karam kapal Bahtari!',next:'n0'},
+    n1:{speaker:'Dargun',text:'(Wajah tua Dargun membeku mendengar gema nyanyian dapur berpadu denah tungku dan baling angin dermaga. Jemarinya terlepas dari gagang tombak.) ...Kakek buyutku memang mencatat malam itu dapur pos kekurangan air padam saat badai selatan datang.',next:'n2'},
+    n2:{speaker:'Dargun',text:'Mereka terlalu malu mengaku kelalaian penjaga dapur sendiri menghanguskan persediaan musim dingin ketujuh panji... jadi kemarahan diarahkan pada bangkai kapal Bahtari yang terdampar di karang bawah. (Dargun menunduk dalam.) Demi abu nenek moyangku—kudengar sendiri kebenarannya hari ini.',next:'n3'},
+    n3:{speaker:'Utusan Ulmar',text:'Kami saksi mata dari Panji Ulmar mendengar pengakuan jujur Panji Gorkan. Ayo kembali ke Padang Salkara sebelum angin keempat berakhir—Odgar menunggu kita di Api Sidang!',action:'CP_25_1'}
+   }
+  }
+ },
+
+ 'cp-26-0':{
+  hint:'Kembali ke Padang Salkara (lewat tangga barat daya Tepi Salkara), lalu maju ke hadapan Odgar di Api Sidang [E]!',
+  dialogue:{
+   id:'cp-26-0',npc:'Odgar',title:'Meterai Gencatan Senjata Salkara',node:'n0',
+   nodes:{
+    n0:{speaker:'Odgar',text:'Keempat hari pergantian angin hampir purna. Dargun berdiri menunduk di sampingmu, Orsuk mengangkat segel pos Balkut, dan saksi Ulmar membawa gulungan denah dari Tepi Salkara. Di depan Ketujuh Panji—apa ikrar yang kau bawa pulang untuk rakyatmu dan rakyat kami?',choices:[{text:'“Bukan balas dendam maupun pajak buta: kami bawa pengakuan kebenaran Tepi Salkara, perdagangan garam–lada yang adil, dan jalan damai menuju selatan serta utara.”',next:'n1'},{text:'“Kami hanya menuntut janji pembukaan jalan ke gunung utara bagi urusan pribadi kami.”',next:'retry'}]},
+    retry:{speaker:'Odgar',text:'Perjalanan seorang perintis tidak pernah hanya milik dirinya sendiri. Tujuh Panji mempertaruhkan hidup rakyatnya hari ini. Sampaikan ikrar yang mencakup kedua bangsa di depan api.',next:'n0'},
+    n1:{speaker:'Odgar',text:'(Odgar memahat guratan melingkar baru pada Batu Nama, suaranya mantap menggema melampaui 47 tenda kempa.) Dengan kesaksian Dargun dari Gorkan, Salgur dari Balkut, serta seluruh tujuh panji: perang di perbatasan Salkara RESMI DIHENTIKAN!',next:'n2'},
+    n2:{speaker:'Odgar',text:'Terimalah Mandat Kesaksian Cirusia ini, Nara dari Nilasar. Bawa ia ke pelabuhan Bahtari untuk menebus rekonsiliasi lama—dan bila kau melangkah ke Pegunungan Silin mencari arsip tua, ketujuh panji kini menjadi penjamin jalanmu.',next:'n3'},
+    n3:{speaker:'Orsuk',text:'Kita berhasil melakukannya, Nara... Dusun Sela aman, karavan garam mulai melintas, dan nama Cirusia kini punya kehormatan yang jujur.',next:'n4'},
+    n4:{speaker:'Nara',text:'(Ruru melompat ceria menyentuh keping Mandat Kesaksian Cirusia di tangan Nara. Sementara di balik jubahnya, Cincin Perunggu tetap berdenyut tenang—menanti perjalanan menuju Pegunungan Silin, Bandar Lada, hingga Menara Simpul ke-1.) Bab 1 telah tuntas dengan terhormat.',action:'CP_26_0'}
    }
   }
  }

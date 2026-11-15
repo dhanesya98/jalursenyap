@@ -704,5 +704,26 @@
         327
       ]
     ]
+  },
+  {
+    "map": "tepisalkara",
+    "name": "Tepi Salkara dermaga & dapur",
+    "points": [
+      [310, 515],
+      [445, 425],
+      [560, 320],
+      [420, 250],
+      [300, 232]
+    ]
+  },
+  {
+    "map": "tepisalkara",
+    "name": "Tepi Salkara batu timur ke dermaga",
+    "points": [
+      [560, 320],
+      [750, 290],
+      [920, 290],
+      [1080, 290]
+    ]
   }
 ]

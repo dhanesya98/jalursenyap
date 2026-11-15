@@ -15,7 +15,7 @@
   const px = p => Math.round((p / 100) * WORLD_W);
   const py = p => Math.round((p / 100) * WORLD_H);
 
-  // Map each of the 10 canonical `STORY.steps[i].scene` IDs to our 8 dense painted pixel maps
+  // Map each of the 11 canonical `STORY.steps[i].scene` IDs to our 9 dense painted pixel maps
   const SCENE_TO_MAP = {
     nilasar: 'nilasar',
     sumi:    'sumi',
@@ -26,7 +26,8 @@
     canal:   'sela',
     border:  'balkut',
     cliff:   'balkut',
-    camp:    'salkara'
+    camp:    'salkara',
+    coast:   'tepisalkara'
   };
 
   // Exact world coordinates (in 1280x720 space) for every single one of the 58 canonical sub-objectives (`cp-0-0` .. `cp-21-0`)!
@@ -96,26 +97,26 @@
 
     // Seq 13: Di bawah alat tenun (sela)
     'cp-13-0': { map: 'sela', x: 512, y: 254, label: 'Palang Pintu Kayu Rumah Ima [E]' },
-    'cp-13-1': { map: 'sela', x: 620, y: 280, label: 'Buka Kotak di Bawah Alat Tenun [E]' },
+    'cp-13-1': { map: 'sela', x: 620, y: 280, label: 'Buka Kotak di Bawah Alat Tenun [E]', minigame: 'loom_ima' },
     'cp-13-2': { map: 'sela', x: 545, y: 271, npc: 'ima' },
 
     // Seq 14: Daftar nama di tepi kanal (canal -> sela right half)
-    'cp-14-0': { map: 'sela', x: 896, y: 108, label: 'Lintasi Jembatan Kanal [E]', stealth: true },
+    'cp-14-0': { map: 'sela', x: 896, y: 108, label: 'Lintasi Jembatan Kanal [E]', stealth: true, minigame: 'canal_sluice' },
     'cp-14-1': { map: 'sela', x: 1114, y: 407, label: 'Periksa Buku Daftar Pelintas [E]', stealth: true },
     'cp-14-2': { map: 'sela', x: 895, y: 605, label: 'Ambil Jalur Tanpa Pengintai [E]', stealth: true },
 
     // Seq 15: Garam untuk karavan Balkut (border -> balkut)
     'cp-15-0': { map: 'balkut', x: 310, y: 506, label: 'Periksa Garam Batangan [E]' },
-    'cp-15-1': { map: 'balkut', x: 208, y: 494, label: 'Periksa Tali Tambat Pedati [E]' },
+    'cp-15-1': { map: 'balkut', x: 208, y: 494, label: 'Periksa Tali Tambat Pedati [E]', minigame: 'caravan_knot' },
     'cp-15-2': { map: 'balkut', x: 443, y: 438, npc: 'orsuk' },
 
     // Seq 16: Sapaan melalui meja batu (border -> balkut)
     'cp-16-0': { map: 'balkut', x: 369, y: 485, npc: 'maruani', minigame: 'resonance_takar' },
 
     // Seq 17: Jalan di atas blokade (cliff -> balkut upper path)
-    'cp-17-0': { map: 'balkut', x: 752, y: 597, label: 'Periksa Pijakan Lereng Tebing [E]', sonar: true },
-    'cp-17-1': { map: 'balkut', x: 706, y: 448, label: 'Periksa Batu Tambatan [E]' },
-    'cp-17-2': { map: 'balkut', x: 681, y: 355, label: 'Capai Puncak Celah Balkut [E]' },
+    'cp-17-0': { map: 'balkut', x: 752, y: 597, label: 'Periksa Pijakan Lereng Tebing [E]', sonar: true, stealth: true },
+    'cp-17-1': { map: 'balkut', x: 706, y: 448, label: 'Periksa Batu Tambatan [E]', stealth: true, minigame: 'cliff_anchor' },
+    'cp-17-2': { map: 'balkut', x: 681, y: 355, label: 'Capai Puncak Celah Balkut [E]', stealth: true },
 
     // Seq 18: Turunkan jembatan tambat (cliff -> balkut winches)
     'cp-18-0': { map: 'balkut', x: 720, y: 298, label: 'Kerekan Tambatan Kiri [E]', minigame: 'winch_1' },
@@ -123,7 +124,7 @@
     'cp-18-2': { map: 'balkut', x: 815, y: 308, label: 'Kerekan Tambatan Kanan [E]', minigame: 'winch_3' },
 
     // Seq 19: Suara di sekitar Sidang Api (camp -> salkara)
-    'cp-19-0': { map: 'salkara', x: 717, y: 274, npc: 'dargun' },
+    'cp-19-0': { map: 'salkara', x: 717, y: 306, npc: 'dargun' },
     'cp-19-1': { map: 'salkara', x: 870, y: 374, npc: 'salgur' },
     'cp-19-2': { map: 'salkara', x: 538, y: 374, npc: 'odgar' },
 
@@ -131,7 +132,30 @@
     'cp-20-0': { map: 'salkara', x: 704, y: 403, label: 'Maju ke Api Sidang Tujuh Panji [E]', minigame: 'council_odgar' },
 
     // Seq 21: Dengung Batu Nama (camp -> salkara)
-    'cp-21-0': { map: 'salkara', x: 333, y: 223, label: 'Selaraskan Monolit Batu Nama [E]', minigame: 'resonance_batunama' }
+    'cp-21-0': { map: 'salkara', x: 333, y: 223, label: 'Selaraskan Monolit Batu Nama [E]', minigame: 'resonance_batunama' },
+
+    // Seq 22: Suara empat panji lainnya (camp -> salkara)
+    'cp-22-0': { map: 'salkara', x: 628, y: 264, npc: 'hurgak' },
+    'cp-22-1': { map: 'salkara', x: 812, y: 310, npc: 'kutlak' },
+    'cp-22-2': { map: 'salkara', x: 848, y: 445, npc: 'borlan' },
+    'cp-22-3': { map: 'salkara', x: 534, y: 448, npc: 'burgul' },
+
+    // Seq 23: Jejak sabotase di perkemahan (camp -> salkara)
+    'cp-23-0': { map: 'salkara', x: 465, y: 588, label: 'Periksa Peti Garam Berminyak [E]', sonar: true, stealth: true },
+    'cp-23-1': { map: 'salkara', x: 748, y: 598, label: 'Kunci Ulang Katup Lentera Sabotase [E]', minigame: 'sabotage_valve' },
+    'cp-23-2': { map: 'salkara', x: 935, y: 505, label: 'Hadapi Penyusup & Kuatkan Janji Orsuk [E]' },
+
+    // Seq 24: Gema seratus tujuh tahun (coast -> tepisalkara)
+    'cp-24-0': { map: 'tepisalkara', x: 585, y: 225, label: 'Dengarkan Batu Pesisir Bernyanyi [E]', sonar: true },
+    'cp-24-1': { map: 'tepisalkara', x: 295, y: 232, label: 'Cocokkan Denah Tungku Dapur Pos Karavan [E]', minigame: 'kitchen_blueprint' },
+    'cp-24-2': { map: 'tepisalkara', x: 1085, y: 292, label: 'Telusuri Arah Angin & Bangkai Kapal Bahtari [E]', minigame: 'wind_chronicle' },
+
+    // Seq 25: Gema Maruani & pengakuan Dargun (coast -> tepisalkara)
+    'cp-25-0': { map: 'tepisalkara', x: 775, y: 272, label: 'Selaraskan Batu Pesisir Timur dari Gema Maruani [E]', minigame: 'coastal_resonance' },
+    'cp-25-1': { map: 'tepisalkara', x: 685, y: 315, npc: 'dargun-pesisir', minigame: 'confront_dargun' },
+
+    // Seq 26: Meterai gencatan senjata Salkara (camp -> salkara)
+    'cp-26-0': { map: 'salkara', x: 595, y: 374, label: 'Serahkan Mandat Bukti ke Api Sidang Odgar [E]' }
   };
 
   // Equipment Compendium (from original journal)
@@ -328,16 +352,16 @@
           "id": "pedagang-garam",
           "name": "Pedagang Garam",
           "sprite": "npc-pedagang-asharim",
-          "x": 435,
-          "y": 382,
+          "x": 459,
+          "y": 434,
           "poiText": "Garam batangan masih bisa ditimbang. Keping Tata berubah nilai, tetapi karavan tetap butuh bekal yang dapat dipercaya."
         },
         {
           "id": "juru-air",
           "name": "Juru Air Nilasar",
           "sprite": "npc-wilanu",
-          "x": 717,
-          "y": 439,
+          "x": 770,
+          "y": 468,
           "poiText": "Air tidak bertanya nama. Di dalam patok pos, pertengkaran harus berhenti. Isi wadah secukupnya; rombongan berikutnya juga perlu minum."
         }
       ],
@@ -534,6 +558,9 @@
           "hasShellSong": true
         }
       ],
+      "hazards": [
+        { "id": "sumi-sand-drift", "kind": "slick", "name": "Rembesan Pasir Sumi", "x": 415, "y": 515, "r": 36 }
+      ],
       "exits": [
         {
           "x": 1203,
@@ -583,6 +610,9 @@
       "x": 737,
       "y": 319
     }
+  ],
+  "hazards": [
+    { "id": "senja-ridge-gust", "kind": "wind_gust", "name": "Hembusan Lereng Senja", "x": 652, "y": 364, "r": 38, "period": 5.8, "activeFrom": 0.62, "push": [-16, 10], "damage": 2, "clearedOnce": "cp-3-2" }
   ],
   "exits": [
     {
@@ -1728,9 +1758,9 @@
           [432,524],
           [390,553],
           [378,609],
-          [333,645],
-          [329,683],
-          [300,708],
+          [336,645],
+          [306,668],
+          [282,708],
           [61,708]
         ]
       ],
@@ -1744,11 +1774,10 @@
           [385,638]
         ],
         [
-          [253,586],
-          [290,590],
-          [300,615],
-          [283,627],
-          [254,614]
+          [271,596],
+          [294,596],
+          [296,624],
+          [271,625]
         ],
         [
           [343,377],
@@ -1799,6 +1828,9 @@
           "visionAngle": 0.48
         }
       ],
+      "hazards": [
+        { "id": "gerbang-dust-squall", "kind": "wind_gust", "name": "Debu Gerbang Timur", "x": 436, "y": 436, "r": 40, "period": 6.0, "activeFrom": 0.60, "push": [-18, 8], "damage": 2 }
+      ],
       "exits": [
         {
           "x": 102,
@@ -1817,9 +1849,9 @@
           "label": "Menara Simpul ke-9"
         },
         {
-          "x": 358,
-          "y": 655,
-          "r": 46,
+          "x": 342,
+          "y": 602,
+          "r": 44,
           "to": "sela",
           "spawn": [346,590],
           "label": "Jalur Dusun Sela (Bab 1)"
@@ -2146,6 +2178,9 @@
     ]
   ],
   "npcs": [],
+  "hazards": [
+    { "id": "simpul-resonant-hum", "kind": "resonance_field", "name": "Denyut Menara Simpul 009", "x": 892, "y": 364, "r": 44, "period": 5.2, "activeFrom": 0.58, "push": [14, 12], "damage": 2, "clearedOnce": "cp-9-0" }
+  ],
   "exits": [
     {
       "x": 800,
@@ -2153,8 +2188,8 @@
       "r": 34,
       "to": "gerbang",
       "spawn": [
-        512,
-        374
+        495,
+        405
       ],
       "label": "Kembali ke Gerbang Timur"
     }
@@ -2344,7 +2379,26 @@
           "speed": 68,
           "visionDist": 125,
           "visionAngle": 0.46
+        },
+        {
+          "id": "canal-dock-guard",
+          "name": "Penjaga Dermaga Sela",
+          "sprite": "npc-dargun",
+          "waypoints": [
+            [1085,220],
+            [1085,340]
+          ],
+          "speed": 60,
+          "visionDist": 115,
+          "visionAngle": 0.44
         }
+      ],
+      "coverRects": [[73,44,76,48],[80,22,83,26]],
+      "hazards": [
+        { "id": "sela-sluice-north", "kind": "sluice_surge", "name": "Luapan Pintu Kanal Utara", "x": 962, "y": 108, "r": 42, "period": 6.2, "activeFrom": 0.58, "push": [22, 6], "clearedOnce": "cp-14-0" },
+        { "id": "sela-sluice-south", "kind": "sluice_surge", "name": "Arus Pintu Kanal Selatan", "x": 824, "y": 605, "r": 42, "period": 6.2, "activeFrom": 0.52, "push": [-20, 4], "clearedOnce": "cp-14-0" },
+        { "id": "sela-moss-slick", "kind": "slick", "name": "Papan Lumut Licin", "x": 762, "y": 236, "r": 36 },
+        { "id": "sela-east-slick", "kind": "slick", "name": "Tepian Batu Basah", "x": 1052, "y": 292, "r": 38 }
       ],
       "exits": [
         {
@@ -2937,10 +2991,29 @@
       "y": 485
     }
   ],
+  "patrols": [
+    {
+      "id": "balkut-lookout",
+      "name": "Pengintai Blokade Tebing",
+      "sprite": "npc-hurgak",
+      "waypoints": [
+        [690,405],
+        [750,355]
+      ],
+      "speed": 56,
+      "visionDist": 116,
+      "visionAngle": 0.42
+    }
+  ],
+  "hazards": [
+    { "id": "balkut-gust-low", "kind": "wind_gust", "name": "Hembusan Angin Celah", "x": 736, "y": 518, "r": 50, "period": 5.5, "activeFrom": 0.56, "push": [-24, 12], "damage": 3 },
+    { "id": "balkut-gust-high", "kind": "wind_gust", "name": "Terpaan Angin Tebing", "x": 712, "y": 392, "r": 46, "period": 5.8, "activeFrom": 0.58, "push": [-22, 10], "damage": 3 },
+    { "id": "balkut-rockfall", "kind": "rock_slide", "name": "Guguran Kerikil Tebing", "x": 686, "y": 488, "r": 36, "period": 6.8, "activeFrom": 0.68, "push": [-10, 14], "damage": 4, "clearedOnce": "cp-17-1" }
+  ],
   "exits": [
     {
-      "x": 128,
-      "y": 626,
+      "x": 116,
+      "y": 604,
       "r": 44,
       "to": "sela",
       "spawn": [
@@ -2950,13 +3023,13 @@
       "label": "Kanal & Dusun Sela (Selatan)"
     },
     {
-      "x": 1178,
-      "y": 101,
-      "r": 52,
+      "x": 945,
+      "y": 224,
+      "r": 44,
       "to": "salkara",
       "spawn": [
-        320,
-        642
+        368,
+        616
       ],
       "label": "Seberangi Jembatan ke Padang Salkara"
     }
@@ -2967,8 +3040,8 @@
   "subtitle": "BAB 1 · Perkemahan 47 Tenda, Api Sidang & Monolit Batu Nama",
   "bg": "bg-salkara",
   "spawn": [
-    320,
-    642
+    368,
+    616
   ],
   "walkPolygons": [
     [
@@ -3906,7 +3979,7 @@
       "name": "Dargun (Panji Tua)",
       "sprite": "npc-dargun",
       "x": 717,
-      "y": 274
+      "y": 306
     },
     {
       "id": "salgur",
@@ -3928,7 +4001,7 @@
       "name": "Kutlak (Panji Sarbuk)",
       "sprite": "npc-kutlak",
       "x": 812,
-      "y": 286,
+      "y": 310,
       "poiText": "Angin debu membawa banyak kabar palsu dari selatan. Kami menunggu apa yang dikatakan Batu Nama."
     },
     {
@@ -3943,7 +4016,7 @@
       "id": "burgul",
       "name": "Burgul (Panji Ulmar)",
       "sprite": "npc-burgul",
-      "x": 578,
+      "x": 534,
       "y": 448,
       "poiText": "Bintang rendah di atas Salkara belum bergeser. Empat hari adalah waktu yang adil bagi perintis untuk mencari bukti."
     },
@@ -3955,17 +4028,128 @@
       "y": 374
     }
   ],
+  "hazards": [
+    { "id": "salkara-eddy-west", "kind": "ember_eddy", "name": "Pusaran Debu Bara", "x": 452, "y": 515, "r": 44, "period": 5.4, "activeFrom": 0.5, "push": [18, -14], "damage": 2 },
+    { "id": "salkara-eddy-east", "kind": "ember_eddy", "name": "Pusaran Angin Tenda", "x": 786, "y": 525, "r": 44, "period": 6.0, "activeFrom": 0.54, "push": [-18, -12], "damage": 2 },
+    { "id": "salkara-monolith-wave", "kind": "resonance_field", "name": "Gelombang Dengung Batu Nama", "x": 408, "y": 275, "r": 48, "period": 4.8, "activeFrom": 0.55, "push": [16, 12], "damage": 2, "clearedOnce": "cp-21-0" }
+  ],
+  "patrols": [
+    {
+      "id": "salkara-saboteur",
+      "encId": "penyusup_maruani",
+      "name": "Penyusup Malam Sabotase",
+      "sprite": "npc-maruani",
+      "waypoints": [[500, 520], [620, 490]],
+      "speed": 58,
+      "visionRange": 135,
+      "visionFovDeg": 76
+    }
+  ],
   "exits": [
     {
-      "x": 267,
-      "y": 685,
-      "r": 52,
+      "x": 296,
+      "y": 584,
+      "r": 44,
       "to": "balkut",
       "spawn": [
-        1100,
-        171
+        858,
+        267
       ],
       "label": "Tebing Jembatan Balkut (Selatan)"
+    },
+    {
+      "x": 948,
+      "y": 360,
+      "r": 44,
+      "to": "tepisalkara",
+      "spawn": [
+        310,
+        515
+      ],
+      "label": "Reruntuhan Tepi Salkara (Utara)"
+    }
+  ]
+},
+"tepisalkara": {
+  "name": "Tepi Salkara · Reruntuhan Pesisir",
+  "subtitle": "BAB 1 FINALE · Bekas Pos Karavan 107 Tahun Lalu, Batu Bernyanyi & Dermaga Sinyal",
+  "bg": "bg-tepisalkara",
+  "spawn": [310, 515],
+  "walkPolygons": [
+    [
+      [60, 698], [45, 665], [160, 568], [295, 470], [420, 395],
+      [405, 290], [405, 195], [440, 145], [505, 75], [555, 35],
+      [740, 35], [715, 75], [815, 120], [885, 190], [925, 245],
+      [925, 345], [880, 370], [715, 370], [630, 398], [520, 468],
+      [395, 558], [315, 615], [250, 655], [190, 698]
+    ],
+    [
+      [108, 120], [398, 120], [435, 195], [435, 300], [395, 370], [108, 370]
+    ],
+    [
+      [905, 260], [1172, 260], [1172, 322], [905, 322]
+    ]
+  ],
+  "blockPolygons": [
+    [[248, 115], [344, 115], [344, 205], [248, 205]],
+    [[95, 75], [395, 75], [395, 138], [250, 138], [250, 152], [95, 152]],
+    [[88, 120], [132, 120], [132, 360], [88, 360]],
+    [[95, 300], [220, 340], [220, 385], [95, 385]],
+    [[315, 298], [412, 298], [412, 385], [315, 385]],
+    [[556, 140], [620, 140], [620, 200], [556, 200]],
+    [[734, 175], [806, 175], [806, 248], [734, 248]],
+    [[1118, 246], [1176, 246], [1176, 292], [1118, 292]]
+  ],
+  "npcs": [
+    {
+      "id": "orsuk-pesisir",
+      "name": "Orsuk (Kepala Pengawal Balkut)",
+      "sprite": "npc-orsuk",
+      "x": 495,
+      "y": 295,
+      "poiText": "Suara laut di balik batu pesisir ini pernah ditakuti orang Cirusia selama seratus tujuh tahun. Mari kita ungkap isi sebenarnya bersama-sama."
+    },
+    {
+      "id": "dargun-pesisir",
+      "name": "Dargun (Panji Gorkan)",
+      "sprite": "npc-dargun",
+      "x": 685,
+      "y": 315,
+      "poiText": "Jika kau memang membawa bukti dari dapur tua dan dermaga ini, buktikan di depan mataku sendiri."
+    },
+    {
+      "id": "utusan-ulmar",
+      "name": "Utusan Panji Ulmar",
+      "sprite": "npc-burgul",
+      "x": 790,
+      "y": 335,
+      "poiText": "Ketujuh panji mengirim saksi ke tebing ini. Apa pun yang terungkap di sini akan dibawa pulang kepada Odgar."
+    }
+  ],
+  "patrols": [
+    {
+      "id": "tepi-gorkan-scout",
+      "encId": "pengawal_gorkan_pesisir",
+      "name": "Pengintai Panji Gorkan",
+      "sprite": "npc-hurgak",
+      "waypoints": [[490, 225], [695, 265]],
+      "speed": 56,
+      "visionRange": 135,
+      "visionFovDeg": 76
+    }
+  ],
+  "hazards": [
+    { "id": "tepi-sea-gust", "kind": "wind_gust", "name": "Angin Badai Tepi Salkara", "x": 965, "y": 290, "r": 42, "period": 5.2, "activeFrom": 0.56, "push": [-18, 0], "damage": 2 },
+    { "id": "tepi-echo-wave", "kind": "resonance_field", "name": "Gelombang Gema Batu Pesisir", "x": 610, "y": 325, "r": 42, "period": 5.6, "activeFrom": 0.58, "push": [0, 16], "damage": 2, "clearedOnce": "cp-25-0" }
+  ],
+  "exits": [
+    {
+      "x": 215,
+      "y": 595,
+      "r": 44,
+      "to": "salkara",
+      "spawn": [860, 355],
+      "label": "Padang Salkara (Selatan)"
     }
   ]
 }

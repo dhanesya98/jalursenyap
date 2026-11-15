@@ -6,8 +6,10 @@ function build(){
  const read=f=>fs.readFileSync(path.join(root,f),'utf8');
  let html=read('index.html');
  html=html.replace(/<link rel="stylesheet" href="([^"]+)">/g,(_,f)=>`<style>/* ${f} */\n${read(f)}\n</style>`);
+ html=html.replace('href="wiki.html"','href="../wiki.html"');
  const audio={};for(const name of ['desert_exploration','desert_sanctuary','seashell_lullaby'])audio[name]='data:audio/mpeg;base64,'+fs.readFileSync(path.join(root,'assets/audio/sfx',name+'.mp3')).toString('base64');
- html=html.replace('<script src="src/bab0-pixel-engine.js">','<script>/* embedded audio */\nglobalThis.PIXEL_AUDIO_ASSETS='+JSON.stringify(audio)+';\n</script>\n<script src="src/bab0-pixel-engine.js">');
+ html=html.replace('<script src="src/bab0-pixel-engine.js">','<script>/* embedded audio + dev flag */\nglobalThis.PIXEL_AUDIO_ASSETS='+JSON.stringify(audio)+';\nglobalThis.JALUR_DEV_MODE=true;\n</script>\n<script src="src/bab0-pixel-engine.js">');
+ html=html.replace('<script src="src/bab0-pixel-engine.js"></script>','<script src="src/bab0-pixel-engine.js"></script>\n  <script src="src/dev-tools.js"></script>');
  html=html.replace(/<script src="([^"]+)"><\/script>/g,(_,f)=>`<script>/* ${f} */\n${read(f).replace(/<\/script/gi,'<\\/script')}\n</script>`);
  if(/<(?:script|link)\b[^>]*(?:src|href)=/.test(html))throw Error('External code dependency remains');
  const out=path.join(root,'Bab0-TopDown-Pixel','Jalur-Senyap-Complete-Pixel.html');fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,html);
