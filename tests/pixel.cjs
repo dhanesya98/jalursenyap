@@ -479,13 +479,14 @@ test('Bab 1 Finale: Tepi Salkara hazards, sentinel boss, Dargun truth gate & cle
 
 // Verify Official Mode vs Dev Mode separation in an async check after boot() completes
 function mockEnv(dev){
- const st=new Map(),els=new Map(),winListeners={},docListeners={};
- function mkEl(){const cls=new Set();return {children:[],style:{setProperty(){}},dataset:{},textContent:'',innerHTML:'',value:'',isConnected:true,tagName:'BUTTON',classList:{add:k=>cls.add(k),remove:k=>cls.delete(k),contains:k=>cls.has(k),toggle:(k,on)=>on?cls.add(k):cls.delete(k)},setAttribute(){},removeAttribute(){},addEventListener(){},getClientRects:()=>[{}],closest:()=>null,focus(){d.activeElement=this;},append(...xs){this.children.push(...xs);},replaceChildren(){this.children=[];},querySelectorAll:()=>[],querySelector(){return this.children[0]||null;},click(){this.onclick?.();}};}
+ const st=new Map(),els=new Map(),winListeners={},docListeners={};let rafFn=null,drawCalls=0;
+ const ctx2d=new Proxy({createRadialGradient:()=>({addColorStop(){}}),createLinearGradient:()=>({addColorStop(){}})},{get(t,k){if(k in t)return t[k];return ()=>{drawCalls++;};},set(){return true;}});
+ function mkEl(){const cls=new Set();return {children:[],style:{setProperty(){}},dataset:{},textContent:'',innerHTML:'',value:'',isConnected:true,tagName:'BUTTON',classList:{add:k=>cls.add(k),remove:k=>cls.delete(k),contains:k=>cls.has(k),toggle:(k,on)=>on?cls.add(k):cls.delete(k)},setAttribute(){},removeAttribute(){},addEventListener(){},getContext:()=>ctx2d,getClientRects:()=>[{}],closest:()=>null,focus(){d.activeElement=this;},append(...xs){this.children.push(...xs);},replaceChildren(){this.children=[];},querySelectorAll:()=>[],querySelector(){return this.children[0]||null;},click(){this.onclick?.();}};}
  const d={readyState:'complete',hidden:false,activeElement:null,head:mkEl(),body:mkEl(),documentElement:mkEl(),addEventListener:(k,fn)=>docListeners[k]=fn,querySelector:()=>null,querySelectorAll:()=>[],createElement:mkEl,getElementById(id){if(!els.has(id))els.set(id,mkEl());return els.get(id);}};
- const c=vm.createContext({console,Date,Math,performance:{now:()=>0},document:d,navigator:{},localStorage:{getItem:k=>st.get(k)||null,setItem:(k,v)=>st.set(k,v)},setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,requestAnimationFrame(){},URLSearchParams,location:{search:'?collision'},addEventListener:(k,fn)=>winListeners[k]=fn,...(dev?{JALUR_DEV_MODE:true}:{})});
+ const c=vm.createContext({console,Date,Math,performance:{now:()=>0},document:d,navigator:{},localStorage:{getItem:k=>st.get(k)||null,setItem:(k,v)=>st.set(k,v)},setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},requestAnimationFrame(fn){rafFn=fn;},URLSearchParams,location:{search:'?collision'},addEventListener:(k,fn)=>winListeners[k]=fn,...(dev?{JALUR_DEV_MODE:true}:{})});
  c.globalThis=c;c.window=c;
  for(const f of ['data/game-data.js','src/cincin-story.js','src/cincin-dialogues.js','src/gamedev-systems.js','src/bab0-pixel-data.js','src/rpg-system.js','src/pixel-campaign.js','src/bab0-pixel-engine.js','src/dev-tools.js'])vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c,{filename:f});
- return {c,winListeners,els};
+ return {c,winListeners,els,stepFrame:t=>{if(rafFn)rafFn(t);},getDrawCalls:()=>drawCalls};
 }
 
 (async()=>{
@@ -494,6 +495,12 @@ function mockEnv(dev){
  await Promise.resolve();await Promise.resolve();await Promise.resolve();
 
  assert.equal(typeof off.winListeners.keydown,'function','Official keydown listener must bind');
+ off.stepFrame(16.6);
+ assert(off.getDrawCalls()>0,'Canvas render loop must draw frames cleanly without throwing');
+ off.c.BAB0_ENGINE.begin();
+ const beforeDraw=off.getDrawCalls();
+ off.stepFrame(33.3);
+ assert(off.getDrawCalls()>beforeDraw,'In-game canvas frame loop must continue drawing after begin()');
  assert.equal(off.c.BAB0_ENGINE.runtime.debugCollision,false,'?collision query must stay disabled in official index.html');
  assert(!off.c.JALUR_DEV_TOOLS,'dev-tools must self-disable without JALUR_DEV_MODE');
  off.c.BAB0_ENGINE.runtime.started=true;
