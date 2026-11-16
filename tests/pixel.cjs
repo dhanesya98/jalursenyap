@@ -169,25 +169,27 @@ test('audio-design skill: quadratic slider-to-gain dB curve, multi-bus SFX bank 
 });
 
 test('RPG Bab 0 balance: hits-to-kill (2-4 regular, 25-60 boss) and hits-to-survive (5-8)',()=>{
- // Mid-variance (0.5) and no crit (0.9) for deterministic expected-hit checks
+ // Mid-variance (0.5) and no crit (0.9) for deterministic expected-hit checks along linear unlocks
  const dmg=(atk,def)=>R.calculateDamage(atk,def,{varianceRoll:0.5,critRoll:0.9}).damage;
  assert(dmg(10,1000)>=1); // Ratio defense never grants 0-damage immunity
- // Lv 2 Nara with Tongkat (+3 ATK) + Rompi (+6 HP, +2 DEF) vs Bandit Gurun (HP 28, ATK 9, DEF 4)
- const rpg2=R.initialRpgState();R.grantXp(rpg2,R.XP_THRESHOLDS[2]);R.unlockItem(rpg2,'gear_tongkat_perintis');R.equipItem(rpg2,'gear_tongkat_perintis');
+ // Lv 2 Nara with Rompi + Tongkat vs Bandit Gurun (HP 28, ATK 11, DEF 4)
+ const rpg2=R.initialRpgState();R.grantXp(rpg2,R.XP_THRESHOLDS[2]);R.unlockItem(rpg2,'gear_tongkat_perintis');
  const s2=R.getDerivedStats(rpg2),b=R.ENCOUNTERS.bandit_gurun;
  const htkBandit=Math.ceil(b.maxHp/dmg(s2.ketangkasan,b.def));
  const htsBandit=Math.ceil(s2.ketahanan/dmg(b.atk,s2.pertahanan));
  assert(htkBandit>=2&&htkBandit<=4,'Bandit HTK='+htkBandit);
  assert(htsBandit>=5&&htsBandit<=8,'Bandit HTS='+htsBandit);
- // Lv 3 Nara vs Pengintai Dewan (HP 36, ATK 11, DEF 6)
- const rpg3=R.initialRpgState();R.grantXp(rpg3,R.XP_THRESHOLDS[3]);R.unlockItem(rpg3,'gear_tongkat_perintis');R.equipItem(rpg3,'gear_tongkat_perintis');
+ // Lv 3 Nara (+ Kompas) vs Pengintai Dewan (HP 36, ATK 12, DEF 6)
+ const rpg3=R.initialRpgState();R.grantXp(rpg3,R.XP_THRESHOLDS[3]);
+ for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari'])R.unlockItem(rpg3,id);
  const s3=R.getDerivedStats(rpg3),p=R.ENCOUNTERS.pengintai_dewan;
  const htkScout=Math.ceil(p.maxHp/dmg(s3.ketangkasan,p.def));
  const htsScout=Math.ceil(s3.ketahanan/dmg(p.atk,s3.pertahanan));
  assert(htkScout>=2&&htkScout<=4,'Scout HTK='+htkScout);
  assert(htsScout>=5&&htsScout<=8,'Scout HTS='+htsScout);
- // Lv 4 Nara vs Kapten Blokade Boss (HP 340, ATK 14, DEF 12) -> 25-60 actions
- const rpg4=R.initialRpgState();R.grantXp(rpg4,R.XP_THRESHOLDS[4]);R.unlockItem(rpg4,'gear_kompas_bahtari');R.equipItem(rpg4,'gear_kompas_bahtari');
+ // Lv 4 Nara (+ Sabuk + Jubah) vs Kapten Blokade Boss (HP 340, ATK 18, DEF 12) -> 25-60 actions
+ const rpg4=R.initialRpgState();R.grantXp(rpg4,R.XP_THRESHOLDS[4]);
+ for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim'])R.unlockItem(rpg4,id);
  const s4=R.getDerivedStats(rpg4),boss=R.ENCOUNTERS.kapten_blokade;
  const htkBoss=Math.ceil(boss.maxHp/dmg(s4.ketangkasan,boss.def));
  const htsBoss=Math.ceil(s4.ketahanan/dmg(boss.atk,s4.pertahanan));
@@ -195,23 +197,26 @@ test('RPG Bab 0 balance: hits-to-kill (2-4 regular, 25-60 boss) and hits-to-surv
  assert(htsBoss>=5&&htsBoss<=8,'Boss HTS='+htsBoss);
 });
 
-test('RPG equip/unequip restores exact base stats with zero free heal and Bab 0 spoiler guard',()=>{
+test('RPG linear passive unlock stacks cleanly without free heal, equip slots, or spoilers + 16 visual icons',()=>{
+ const assetsCtx={window:{},globalThis:{}};assetsCtx.window=assetsCtx;assetsCtx.globalThis=assetsCtx;
+ vm.runInNewContext(fs.readFileSync(path.join(root,'data/pixel-bab0-assets.js'),'utf8'),assetsCtx);
  const rpg=R.initialRpgState();
- R.unequipItem(rpg,'gear_rompi_kulit');
- const base=R.getBaseStats(rpg.level);
- assert.deepEqual(R.getDerivedStats(rpg),base);
- rpg.hp=20; // Damaged Nara
+ assert.equal(R.unequipItem(rpg,'gear_rompi_kulit'),false,'Passive linear items are not manually unequipped');
+ const expectedStart=R.getBaseStats(1);expectedStart.ketahanan+=4;expectedStart.pertahanan+=2;
+ assert.deepEqual(R.getDerivedStats(rpg),expectedStart);
+ rpg.hp=20; // Damaged Nara must never get free HP when finding items
  for(const item of Object.values(R.ITEMS)){
+  assert.equal(item.slot,null,'Linear progression items have no equip slots: '+item.id);
+  const hpBefore=rpg.hp;
   R.unlockItem(rpg,item.id);
-  if(item.slot&&item.category!=='mystery'){
-   const hpBefore=rpg.hp;
-   assert(R.equipItem(rpg,item.id));
-   assert.equal(rpg.hp,Math.min(hpBefore,R.getDerivedStats(rpg).ketahanan),'No free heal on equip '+item.id);
-   assert(R.unequipItem(rpg,item.id));
-   assert.deepEqual(R.getDerivedStats(rpg),base,'Exact stat restore after '+item.id);
-   assert.equal(rpg.hp,Math.min(hpBefore,base.ketahanan),'No free heal on unequip '+item.id);
-  }
+  assert.equal(rpg.hp,Math.min(hpBefore,R.getDerivedStats(rpg).ketahanan),'No free heal on unlock '+item.id);
+  assert(fs.existsSync(path.join(root,'assets/items',item.id+'.png')),'Missing PNG icon for '+item.id);
+  assert(assetsCtx.PIXEL_BAB0_ASSETS['item-'+item.id]?.startsWith('data:image/png;base64,'),'Missing embedded icon asset for '+item.id);
   assert(!/lulanai|nada pengikat/i.test(item.name+item.feature),'Spoiler in item '+item.id);
+ }
+ for(const c of Object.values(R.CONSUMABLES)){
+  assert(fs.existsSync(path.join(root,'assets/items',c.id+'.png')),'Missing PNG icon for consumable '+c.id);
+  assert(assetsCtx.PIXEL_BAB0_ASSETS['item-'+c.id]?.startsWith('data:image/png;base64,'),'Missing embedded icon asset for '+c.id);
  }
  // Cincin Perunggu has 0 combat modifiers in Bab 0
  assert.equal(R.ITEMS.artefak_cincin_perunggu.modifiers.length,0);
@@ -254,12 +259,23 @@ test('tactical combat: Baca Celah buff, Siasat Ruru stun/cooldown, Negosiasi & p
  assert.equal(E.state.rpg.encounterResults.pengintai_dewan,'negotiated');
  assert(E.runtime.clearedPatrols.includes('guard-1'));
  assert(!E.runtime.patrols.some(p=>p.id==='guard-1'));
- // Field sentinels spawn at walkable coordinates on designated maps and clear on victory
+ // Field sentinels spawn at walkable coordinates and auto-trigger combat when stepping on red ring
  reset();
  E.switchMap('senja');
  assert.equal(E.runtime.sentinels.length,1);
  const sen=E.runtime.sentinels[0];
  assert(C.walkable('senja',sen.x,sen.y,E.state));
+ E.runtime.encounter=null;E.runtime.encounterGrace=0;
+ Object.assign(E.state.player,{x:sen.x+38,y:sen.y});
+ E.tick(0.05);
+ assert.equal(E.runtime.encounter,null,'Outside red ring must not auto-trigger combat');
+ Object.assign(E.state.player,{x:sen.x+10,y:sen.y});
+ E.tick(0.05);
+ assert.equal(E.runtime.encounter?.id,sen.encId,'Stepping inside red ring must auto-trigger sentinel combat');
+ E.retreatEncounter();
+ assert.equal(E.runtime.encounter,null);
+ E.tick(0.05);
+ assert.equal(E.runtime.encounter,null,'Grace period prevents instant re-aggro on retreat');
  E.openEncounter(sen.encId,{kind:'sentinel',id:sen.id,name:sen.name});
  E.runtime.encounter.hp=1;
  assert(E.combatAction('attack'));
@@ -349,18 +365,17 @@ test('Bab 1 travel obstacles, stealth patrol awareness telegraphing & GameFeel s
 
 test('RPG Bab 1 balance, gear, garam_mineral drop & save roundtrip',()=>{
  const dmg=(atk,def,mult=1)=>R.calculateDamage(atk,def,{varianceRoll:0.5,critRoll:0.9,actionMult:mult}).damage;
- // Lv 5 Nara (Sela/Balkut gear) vs prajurit_tebing_balkut
+ // Lv 5 Nara (all Bab 0 + Sela/Balkut linear items) vs prajurit_tebing_balkut
  const rpg5=R.initialRpgState();R.grantXp(rpg5,R.XP_THRESHOLDS[5]);
- R.unlockItem(rpg5,'gear_selendang_sela');R.equipItem(rpg5,'gear_selendang_sela');
- R.unlockItem(rpg5,'gear_tali_balkut');R.equipItem(rpg5,'gear_tali_balkut');
+ for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim','gear_selendang_sela','gear_tali_balkut'])R.unlockItem(rpg5,id);
  const s5=R.getDerivedStats(rpg5),pb=R.ENCOUNTERS.prajurit_tebing_balkut;
  const htkPb=Math.ceil(pb.maxHp/dmg(s5.ketangkasan,pb.def));
  const htsPb=Math.ceil(s5.ketahanan/dmg(pb.atk,s5.pertahanan));
  assert(htkPb>=2&&htkPb<=4,'Prajurit Balkut HTK='+htkPb);
  assert(htsPb>=5&&htsPb<=8,'Prajurit Balkut HTS='+htsPb);
- // Lv 6 Nara (full Bab 1 gear) vs penjaga_sidang_salkara & juara_tujuh_panji boss
+ // Lv 6 Nara (full Bab 1 Salkara linear gear) vs penjaga_sidang_salkara & juara_tujuh_panji boss
  const rpg6=R.initialRpgState();R.grantXp(rpg6,R.XP_THRESHOLDS[6]);
- for(const id of ['gear_selendang_sela','gear_tali_balkut','gear_lencana_salkara']){R.unlockItem(rpg6,id);R.equipItem(rpg6,id);}
+ for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim','gear_selendang_sela','gear_tali_balkut','gear_lencana_salkara']){R.unlockItem(rpg6,id);}
  const s6=R.getDerivedStats(rpg6),ps=R.ENCOUNTERS.penjaga_sidang_salkara,jb=R.ENCOUNTERS.juara_tujuh_panji;
  const htkPs=Math.ceil(ps.maxHp/dmg(s6.ketangkasan,ps.def));
  const htsPs=Math.ceil(s6.ketahanan/dmg(ps.atk,s6.pertahanan));
@@ -467,10 +482,10 @@ test('Bab 1 Finale: Tepi Salkara hazards, sentinel boss, Dargun truth gate & cle
  reset(at('cp-24-0'));E.switchMap('tepisalkara');
  assert.equal(E.runtime.sentinels[0].encId,'bayangan_tepi_salkara');
  assert(C.walkable('tepisalkara',E.runtime.sentinels[0].x,E.runtime.sentinels[0].y,E.state));
- // RPG finale encounters balance check (Lv 6 w/ kalung_tujuh_panji)
+ // RPG finale encounters balance check (Lv 6 linear passive items through cp-23-2)
  const dmg=(atk,def)=>R.calculateDamage(atk,def,{varianceRoll:0.5,critRoll:0.9}).damage;
  const rpg6=R.initialRpgState();R.grantXp(rpg6,R.XP_THRESHOLDS[6]);
- for(const id of ['gear_selendang_sela','gear_kalung_tujuh_panji','gear_lencana_salkara']){R.unlockItem(rpg6,id);R.equipItem(rpg6,id);}
+ for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim','gear_selendang_sela','gear_tali_balkut','gear_lencana_salkara','gear_kalung_tujuh_panji'])R.unlockItem(rpg6,id);
  const s6=R.getDerivedStats(rpg6),boss=R.ENCOUNTERS.bayangan_tepi_salkara,scout=R.ENCOUNTERS.pengawal_gorkan_pesisir;
  const htkBoss=Math.ceil(boss.maxHp/dmg(s6.ketangkasan,boss.def));
  const htsBoss=Math.ceil(s6.ketahanan/dmg(boss.atk,s6.pertahanan));

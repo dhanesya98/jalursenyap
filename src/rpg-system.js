@@ -47,12 +47,12 @@
       id: 'gear_rompi_kulit',
       name: 'Rompi Kulit Kafilah',
       category: 'equipment',
-      tier: 'Common',
-      slot: 'perlengkapan',
+      tier: 'Bekal Awal',
+      slot: null,
       unlockObjective: null,
-      feature: 'Pelindung standar perintis lembah pasir.',
+      feature: 'Pelindung standar perintis lembah pasir. Aktif otomatis sepanjang perjalanan.',
       modifiers: [
-        { stat: 'ketahanan', amount: 6 },
+        { stat: 'ketahanan', amount: 4 },
         { stat: 'pertahanan', amount: 2 }
       ]
     },
@@ -60,8 +60,8 @@
       id: 'gear_tongkat_perintis',
       name: 'Tongkat Ukur Perintis',
       category: 'equipment',
-      tier: 'Common',
-      slot: 'bekal',
+      tier: 'Aktif Otomatis',
+      slot: null,
       unlockObjective: 'cp-1-2',
       feature: 'Tongkat kayu keras untuk menguji kepadatan pasir dan menangkis sergapan.',
       modifiers: [
@@ -73,41 +73,41 @@
       id: 'gear_kompas_bahtari',
       name: 'Kompas Arus Bahtari',
       category: 'equipment',
-      tier: 'Uncommon',
-      slot: 'bekal',
+      tier: 'Aktif Otomatis',
+      slot: null,
       unlockObjective: 'cp-3-2',
       feature: 'Kompas kuningan penunjuk arah angin dan pembacaan niat lawan bicara.',
       modifiers: [
-        { stat: 'ketangkasan', amount: 4 },
-        { stat: 'kepekaan', amount: 5 }
+        { stat: 'ketangkasan', amount: 2 },
+        { stat: 'kepekaan', amount: 3 }
       ]
     },
     gear_jubah_asharim: {
       id: 'gear_jubah_asharim',
       name: 'Jubah Tenun Asharim',
       category: 'equipment',
-      tier: 'Uncommon',
-      slot: 'perlengkapan',
+      tier: 'Aktif Otomatis',
+      slot: null,
       unlockObjective: 'cp-6-2',
       feature: 'Tenun berlapis penahan badai pasir Nilasar dan pelindung benturan.',
       modifiers: [
-        { stat: 'ketahanan', amount: 10 },
-        { stat: 'pertahanan', amount: 4 },
-        { stat: 'kepekaan', amount: 3 }
+        { stat: 'ketahanan', amount: 5 },
+        { stat: 'pertahanan', amount: 2 },
+        { stat: 'kepekaan', amount: 2 }
       ]
     },
     gear_sabuk_garam: {
       id: 'gear_sabuk_garam',
       name: 'Sabuk Penimbang Garam',
       category: 'equipment',
-      tier: 'Rare',
-      slot: 'bekal',
+      tier: 'Aktif Otomatis',
+      slot: null,
       unlockObjective: 'cp-4-2',
       feature: 'Sabuk kulit berbandul timbangan pasar yang menjaga kuda-kuda tetap kokoh.',
       modifiers: [
-        { stat: 'ketahanan', amount: 8 },
-        { stat: 'ketangkasan', amount: 5 },
-        { stat: 'pertahanan', amount: 3 }
+        { stat: 'ketahanan', amount: 4 },
+        { stat: 'ketangkasan', amount: 2 },
+        { stat: 'pertahanan', amount: 2 }
       ]
     },
     artefak_cincin_perunggu: {
@@ -115,7 +115,7 @@
       name: 'Cincin Perunggu',
       category: 'mystery',
       tier: 'Artefak Misteri',
-      slot: 'artefak',
+      slot: null,
       unlockObjective: 'cp-7-2',
       feature: 'Cincin perunggu kusam tanpa permata. Terkadang memberi sengatan halus di jari Nara.',
       modifiers: []
@@ -124,71 +124,71 @@
       id: 'gear_selendang_sela',
       name: 'Selendang Tenun Sela',
       category: 'equipment',
-      tier: 'Rare',
-      slot: 'perlengkapan',
+      tier: 'Aktif Otomatis',
+      slot: null,
       unlockObjective: 'cp-13-2',
       feature: 'Selendang serat kanal buatan Nenek Ima yang melindungi pundak dari angin dingin dan hantaman.',
       modifiers: [
-        { stat: 'ketahanan', amount: 12 },
-        { stat: 'pertahanan', amount: 5 },
-        { stat: 'kepekaan', amount: 4 }
+        { stat: 'ketahanan', amount: 5 },
+        { stat: 'pertahanan', amount: 2 },
+        { stat: 'kepekaan', amount: 2 }
       ]
     },
     gear_tali_balkut: {
       id: 'gear_tali_balkut',
       name: 'Tambang Panjat Balkut',
       category: 'equipment',
-      tier: 'Rare',
-      slot: 'bekal',
+      tier: 'Aktif Otomatis',
+      slot: null,
       unlockObjective: 'cp-15-2',
       feature: 'Tambang rami berbobot perunggu pemberian Orsuk untuk menyeimbangkan pijakan tebing dan serangan balas.',
       modifiers: [
         { stat: 'ketahanan', amount: 4 },
-        { stat: 'ketangkasan', amount: 7 },
-        { stat: 'pertahanan', amount: 4 }
+        { stat: 'ketangkasan', amount: 3 },
+        { stat: 'pertahanan', amount: 2 }
       ]
     },
     gear_lencana_salkara: {
       id: 'gear_lencana_salkara',
       name: 'Meterai Penengah Salkara',
       category: 'equipment',
-      tier: 'Epic',
-      slot: 'artefak',
+      tier: 'Pusaka Bab 1',
+      slot: null,
       unlockObjective: 'cp-20-0',
       feature: 'Lencana mandataris Tujuh Panji. Memberi wibawa penuh dalam sidang dan benturan keras di Padang Salkara.',
       modifiers: [
-        { stat: 'ketangkasan', amount: 6 },
-        { stat: 'pertahanan', amount: 6 },
-        { stat: 'kepekaan', amount: 8 }
+        { stat: 'ketangkasan', amount: 3 },
+        { stat: 'pertahanan', amount: 2 },
+        { stat: 'kepekaan', amount: 3 }
       ]
     },
     gear_kalung_tujuh_panji: {
       id: 'gear_kalung_tujuh_panji',
       name: 'Jimat Sumpah Tujuh Panji',
       category: 'equipment',
-      tier: 'Rare',
-      slot: 'bekal',
+      tier: 'Pusaka Bab 1',
+      slot: null,
       unlockObjective: 'cp-23-2',
       feature: 'Anyaman kulit dan piringan perunggu pemberian Orsuk setelah menggagalkan sabotase minyak di Salkara.',
       modifiers: [
-        { stat: 'ketahanan', amount: 8 },
-        { stat: 'ketangkasan', amount: 7 },
-        { stat: 'kepekaan', amount: 6 }
+        { stat: 'ketahanan', amount: 5 },
+        { stat: 'ketangkasan', amount: 3 },
+        { stat: 'kepekaan', amount: 3 }
       ]
     },
     gear_mandat_cirusia: {
       id: 'gear_mandat_cirusia',
       name: 'Mandat Kesaksian Cirusia',
       category: 'equipment',
-      tier: 'Epic',
-      slot: 'artefak',
+      tier: 'Pusaka Akhir',
+      slot: null,
       unlockObjective: 'cp-26-0',
       feature: 'Lempeng batu bertanda gencatan senjata resmi dari Odgar. Membuka jalan menuju pegunungan utara pada babak berikutnya.',
       modifiers: [
-        { stat: 'ketahanan', amount: 10 },
-        { stat: 'ketangkasan', amount: 9 },
-        { stat: 'pertahanan', amount: 7 },
-        { stat: 'kepekaan', amount: 10 }
+        { stat: 'ketahanan', amount: 6 },
+        { stat: 'ketangkasan', amount: 3 },
+        { stat: 'pertahanan', amount: 3 },
+        { stat: 'kepekaan', amount: 4 }
       ]
     }
   };
@@ -269,7 +269,7 @@
       tier: 'regular',
       sprite: 'npc-hurgak',
       maxHp: 64,
-      atk: 21,
+      atk: 24,
       def: 10,
       negotiateKepekaan: 16,
       xpReward: 52,
@@ -299,7 +299,7 @@
       tier: 'boss',
       sprite: 'npc-salgur',
       maxHp: 520,
-      atk: 35,
+      atk: 34,
       def: 16,
       negotiateKepekaan: 22,
       xpReward: 95,
@@ -346,7 +346,7 @@
       sprite: 'npc-maruani',
       portrait: 'portrait-maruani',
       maxHp: 560,
-      atk: 42,
+      atk: 39,
       def: 15,
       negotiateKepekaan: 26,
       xpReward: 120,
@@ -361,7 +361,7 @@
       tier: 'boss',
       sprite: 'npc-salgur',
       maxHp: 340,
-      atk: 14,
+      atk: 18,
       def: 12,
       negotiateKepekaan: 18,
       xpReward: 60,
@@ -399,23 +399,27 @@
   }
 
   function initialRpgState() {
+    const startItems = ['gear_rompi_kulit'];
     const base = getBaseStats(1);
+    const modifiers = buildModifiersFromUnlocked(startItems);
+    const bonusHp = modifiers.filter(m => m.stat === 'ketahanan').reduce((s, m) => s + m.amount, 0);
     return {
       level: 1,
       xp: 0,
-      hp: base.ketahanan,
-      equipped: { perlengkapan: 'gear_rompi_kulit', bekal: null, artefak: null },
-      modifiers: buildModifiersFromEquipped({ perlengkapan: 'gear_rompi_kulit', bekal: null, artefak: null }),
-      unlockedItems: ['gear_rompi_kulit'],
+      hp: base.ketahanan + bonusHp,
+      equipped: {},
+      modifiers,
+      unlockedItems: startItems,
       consumables: { garam_mineral: 0, teh_gurun: 2, roti_nilasar: 2 },
       choiceFlags: {},
       encounterResults: {}
     };
   }
 
-  function buildModifiersFromEquipped(equipped) {
+  // Linear passive progression: every unlocked item stays active without slot juggling.
+  function buildModifiersFromUnlocked(unlockedItems) {
     const mods = [];
-    for (const itemId of Object.values(equipped || {})) {
+    for (const itemId of unlockedItems || []) {
       const item = ITEMS[itemId];
       if (!item || !item.modifiers?.length) continue;
       for (const m of item.modifiers) {
@@ -440,30 +444,14 @@
     return maxHp;
   }
 
-  // Remove modifiers by source_id without leaking or healing HP.
-  function unequipItem(rpg, itemId) {
-    const item = ITEMS[itemId];
-    if (!item || !item.slot) return false;
-    if (rpg.equipped[item.slot] !== itemId) return false;
-    rpg.equipped[item.slot] = null;
-    rpg.modifiers = (rpg.modifiers || []).filter(m => m.source_id !== itemId);
-    clampHpToMax(rpg);
-    return true;
+  // Legacy compatibility: passive items cannot be unequipped and activate on unlock.
+  function unequipItem() {
+    return false;
   }
 
   function equipItem(rpg, itemId) {
-    const item = ITEMS[itemId];
-    if (!item || !item.slot) return false;
-    if (!rpg.unlockedItems.includes(itemId)) return false;
-    const prevId = rpg.equipped[item.slot];
-    if (prevId === itemId) return true;
-    if (prevId) unequipItem(rpg, prevId);
-    rpg.equipped[item.slot] = itemId;
-    rpg.modifiers = (rpg.modifiers || []).filter(m => m.source_id !== itemId);
-    for (const m of item.modifiers || []) {
-      rpg.modifiers.push({ source_id: item.id, stat: m.stat, amount: m.amount, label: item.name });
-    }
-    // Keep absolute HP clamped to newMaxHp so equip/unequip never grants free heal.
+    if (!rpg || !ITEMS[itemId] || !rpg.unlockedItems?.includes(itemId)) return false;
+    rpg.modifiers = buildModifiersFromUnlocked(rpg.unlockedItems);
     clampHpToMax(rpg);
     return true;
   }
@@ -488,9 +476,8 @@
     if (!ITEMS[itemId]) return false;
     if (!rpg.unlockedItems.includes(itemId)) {
       rpg.unlockedItems.push(itemId);
-      if (itemId === 'artefak_cincin_perunggu') {
-        rpg.equipped.artefak = itemId;
-      }
+      rpg.modifiers = buildModifiersFromUnlocked(rpg.unlockedItems);
+      clampHpToMax(rpg);
       return true;
     }
     return false;
@@ -541,7 +528,7 @@
       level: lv,
       xp: Math.max(0, Math.round(Number(rpg.xp) || 0)),
       hp: Math.max(1, Math.round(Number(rpg.hp) || getBaseStats(lv).ketahanan)),
-      equipped: { perlengkapan: null, bekal: null, artefak: null },
+      equipped: {},
       modifiers: [],
       unlockedItems: Array.isArray(rpg.unlockedItems) ? rpg.unlockedItems.filter(id => !!ITEMS[id]) : ['gear_rompi_kulit'],
       consumables: {
@@ -553,13 +540,7 @@
       encounterResults: rpg.encounterResults && typeof rpg.encounterResults === 'object' ? { ...rpg.encounterResults } : {}
     };
     if (!out.unlockedItems.includes('gear_rompi_kulit')) out.unlockedItems.unshift('gear_rompi_kulit');
-    for (const slot of ['perlengkapan', 'bekal', 'artefak']) {
-      const id = rpg.equipped?.[slot];
-      if (id && ITEMS[id]?.slot === slot && out.unlockedItems.includes(id)) {
-        out.equipped[slot] = id;
-      }
-    }
-    out.modifiers = buildModifiersFromEquipped(out.equipped);
+    out.modifiers = buildModifiersFromUnlocked(out.unlockedItems);
     clampHpToMax(out);
     return out;
   }

@@ -11,13 +11,13 @@
    guide:0,exitArmed:false,interactOnArrival:false,interactTarget:null,patrols:[],clearedPatrols:[],sentinels:[],encounter:null,encounterGrace:0,hazardCooldown:0,feel,ruru:{x:610,y:600,dir:'up'},flight:null,auto:false,skip:false,
    autoTime:0,dialogue:null,challenge:null,saveTime:0,hudTime:0,footTime:0,previousButtons:[],focus:null};
  const MAP_SENTINELS={
-  senja:[{id:'sentinel-senja',encId:'bandit_gurun',name:'Perampok Jalur Gurun',sprite:'npc-kutlak',x:480,y:400}],
-  gerbang:[{id:'sentinel-gerbang',encId:'pengintai_dewan',name:'Pengintai Razia Dewan',sprite:'npc-kesa',x:360,y:440}],
-  simpul:[{id:'sentinel-simpul',encId:'pengintai_dewan',name:'Pengintai Jalur Simpul',sprite:'npc-kesa',x:960,y:400}],
-  sela:[{id:'sentinel-sela',encId:'penghadang_sela',name:'Pengutip Cukai Kanal Sela',sprite:'npc-dargun',x:760,y:200}],
+  senja:[{id:'sentinel-senja',encId:'bandit_gurun',name:'Perampok Jalur Gurun',sprite:'npc-kutlak',x:336,y:384}],
+  gerbang:[{id:'sentinel-gerbang',encId:'pengintai_dewan',name:'Pengintai Razia Dewan',sprite:'npc-kesa',x:384,y:424}],
+  simpul:[{id:'sentinel-simpul',encId:'pengintai_dewan',name:'Pengintai Jalur Simpul',sprite:'npc-kesa',x:944,y:392}],
+  sela:[{id:'sentinel-sela',encId:'penghadang_sela',name:'Pengutip Cukai Kanal Sela',sprite:'npc-dargun',x:712,y:288}],
   balkut:[{id:'sentinel-balkut',encId:'prajurit_tebing_balkut',name:'Penjaga Tebing Balkut',sprite:'npc-hurgak',x:640,y:320}],
-  salkara:[{id:'sentinel-salkara',encId:'juara_tujuh_panji',name:'Juara Tujuh Panji',sprite:'npc-salgur',x:360,y:280}],
-  tepisalkara:[{id:'sentinel-tepisalkara',encId:'bayangan_tepi_salkara',name:'Utusan Gema Pesisir',sprite:'npc-maruani',x:905,y:285}]
+  salkara:[{id:'sentinel-salkara',encId:'juara_tujuh_panji',name:'Juara Tujuh Panji',sprite:'npc-salgur',x:320,y:304}],
+  tepisalkara:[{id:'sentinel-tepisalkara',encId:'bayangan_tepi_salkara',name:'Utusan Gema Pesisir',sprite:'npc-maruani',x:904,y:264}]
  };
  const top=()=>runtime.stack.at(-1)?.id||null;
  const DEV_MODE=!!root.JALUR_DEV_MODE;
@@ -392,16 +392,15 @@
   $('jtab-rumor').innerHTML=`<h3>Suara dan tempat yang ditemukan</h3>${state.rumors.length?state.rumors.map(r=>`<p class="j-card">${esc(r)}</p>`).join(''):'<p>Catatan akan terisi saat Nara memeriksa jalur dan mendengar kesaksian.</p>'}<h3>Jejak perjalanan · ${state.discovered.length} / 9</h3><p>${state.discovered.map(id=>esc(MAPS[id].name)).join(' · ')}</p><h3>Kepercayaan &amp; Pilihan Jalur</h3><p>${C.done(state,'cp-26-0')?'Gencatan senjata Salkara disahkan bersama Mandat Kesaksian Cirusia.':C.done(state,'cp-18-2')?'Karavan Balkut dapat melintas melalui jembatan yang kau buka.':C.done(state,'cp-6-2')?'Marsiyah menerima laporan jujur dari Gerbang Timur.':'Kepercayaan tumbuh lewat perjalanan yang benar-benar kau jalani.'}</p>`;
   const visibleNations=root.GAME_DATA.canon.nations.filter(n=>!/lulanai/i.test(n.name));
   $('jtab-bangsa').innerHTML=visibleNations.map(n=>`<article class="nation-entry"><p class="eyebrow">${esc(n.region)}</p><h3>${esc(n.name)}</h3><p><i>${esc(n.greeting)}</i></p><p>${esc(n.description)}</p><details><summary>Adat, ekonomi, dan kesepakatan</summary><p>${esc(n.custom)}</p><p>${esc(n.economy)}</p><p>${esc(n.contract)}</p><p>${esc(n.politics)}</p></details></article>`).join('');
+  const itemIcon=id=>sprites['item-'+id]?.src||root.PIXEL_BAB0_ASSETS?.['item-'+id]||`assets/items/${id}.png`;
   const gearCards=(R?Object.values(R.ITEMS).filter(it=>rpg.unlockedItems.includes(it.id)):[]).map(it=>{
-   const isEq=it.slot&&rpg.equipped[it.slot]===it.id;
-   const tierCls=it.tier==='Epic'?'epic':it.tier==='Rare'?'rare':it.tier==='Uncommon'?'uncommon':it.category==='mystery'?'mystery':'';
-   const modsText=it.modifiers?.length?it.modifiers.map(m=>`+${m.amount} ${m.stat[0].toUpperCase()+m.stat.slice(1)}`).join(' · '):(it.category==='mystery'?'Terkunci · Peninggalan tanpa stat tempur':'Membuka fitur perintis');
-   const btn=it.slot&&it.category!=='mystery'?`<div class="button-row"><button type="button" data-eq-action="${isEq?'unequip':'equip'}" data-item-id="${it.id}" class="${isEq?'':'primary'}">${isEq?'Lepas':'Pasang'}</button></div>`:'';
-   return `<article class="gear-card ${isEq?'equipped':''}"><div class="gear-head"><h3>${esc(it.name)}</h3><span class="gear-tier ${tierCls}">${esc(it.tier)}</span></div><p>${esc(it.feature)}</p><div class="gear-mods">${esc(modsText)}</div>${btn}</article>`;
+   const tierCls=it.category==='mystery'?'mystery':it.modifiers?.length?'uncommon':'';
+   const badgeText=it.category==='mystery'?'Artefak Misteri':it.modifiers?.length?'Aktif Otomatis':it.tier;
+   const modsText=it.modifiers?.length?it.modifiers.map(m=>`+${m.amount} ${m.stat[0].toUpperCase()+m.stat.slice(1)}`).join(' · '):(it.category==='mystery'?'Peninggalan misterius tanpa stat tempur':'Aktif otomatis sebagai alat perintis');
+   return `<article class="gear-card ${it.category==='mystery'?'':'equipped'}"><div class="gear-head"><div class="gear-title-row"><img class="gear-icon" src="${esc(itemIcon(it.id))}" alt=""><h3>${esc(it.name)}</h3></div><span class="gear-tier ${tierCls}">${esc(badgeText)}</span></div><p>${esc(it.feature)}</p><div class="gear-mods">${esc(modsText)}</div></article>`;
   }).join('');
-  const consCards=R?Object.values(R.CONSUMABLES).map(c=>{const qty=rpg.consumables[c.id]||0;return `<article class="gear-card"><div class="gear-head"><h3>${esc(c.name)}</h3><span class="gear-tier">Sisa ${qty}</span></div><p>${esc(c.desc)}</p><div class="button-row"><button type="button" data-use-cons="${c.id}" ${qty<=0||rpg.hp>=dStats.ketahanan?'disabled':''}>Pakai</button></div></article>`;}).join(''):'';
-  $('jtab-perlengkapan').innerHTML=`<div class="gear-grid">${gearCards}${consCards}</div>`+(C.done(state,'cp-1-2')?'<div class="button-row"><button id="journal-shell">Putar / jeda Kerang Suara</button></div>':'');
-  $('jtab-perlengkapan').querySelectorAll('[data-eq-action]').forEach(b=>b.onclick=()=>{if(b.dataset.eqAction==='equip')equipItem(b.dataset.itemId);else unequipItem(b.dataset.itemId);});
+  const consCards=R?Object.values(R.CONSUMABLES).map(c=>{const qty=rpg.consumables[c.id]||0;return `<article class="gear-card"><div class="gear-head"><div class="gear-title-row"><img class="gear-icon" src="${esc(itemIcon(c.id))}" alt=""><h3>${esc(c.name)}</h3></div><span class="gear-tier">Sisa ${qty}</span></div><p>${esc(c.desc)}</p><div class="button-row"><button type="button" data-use-cons="${c.id}" ${qty<=0||rpg.hp>=dStats.ketahanan?'disabled':''}>Pakai</button></div></article>`;}).join(''):'';
+  $('jtab-perlengkapan').innerHTML=`<p class="muted" style="margin:0 0 10px">Seluruh perlengkapan &amp; pusaka yang kau temukan langsung aktif otomatis sepanjang perjalanan.</p><div class="gear-grid">${gearCards}${consCards}</div>`+(C.done(state,'cp-1-2')?'<div class="button-row"><button id="journal-shell">Putar / jeda Kerang Suara</button></div>':'');
   $('jtab-perlengkapan').querySelectorAll('[data-use-cons]').forEach(b=>b.onclick=()=>{const healed=R.useConsumable(rpg,b.dataset.useCons);if(healed>0){SFX.waterRefill();refreshMeters();renderJournal();saveToSlot(null,true);toast(`Pulih +${healed} Ketahanan.`);}});
   $('journal-shell')?.addEventListener('click',shellSong);
  }
@@ -488,6 +487,18 @@
     else patrol.awareness=Math.max(0,(patrol.awareness||0)-dt*.65);
    }else patrol.awareness=0;
   }
+  if(!top()&&!runtime.flight&&runtime.encounterGrace<=0){
+   for(const s of runtime.sentinels||[]){
+    const dx=p.x-s.x,dy=p.y-s.y;
+    if((dx*dx)/(28*28)+(dy*dy)/(14*14)<=1){
+     runtime.path=[];runtime.keys={};runtime.interactOnArrival=false;runtime.interactTarget=null;
+     runtime.encounterGrace=2.5;feel.addTrauma(.22);SFX.stealthAlert();
+     openEncounter(s.encId,{kind:'sentinel',id:s.id,name:s.name});
+     toast(s.name+' menghadang jalanmu!');
+     return;
+    }
+   }
+  }
   const r=runtime.ruru;let target=[p.x-24,p.y+12];if(runtime.guide>0&&o?.map===state.mapId){const dist=Math.hypot(o.x-p.x,o.y-p.y);if(dist>1){const q=[p.x+(o.x-p.x)/dist*45,p.y+(o.y-p.y)/dist*45];if(C.walkable(state.mapId,...q,state))target=q;}}else if(storm())target=[p.x-12,p.y+7];
   // Ruru uses the same ground boundaries; following must not cut over water or cliff corners.
   if(!C.walkable(state.mapId,...target,state))target=[p.x,p.y];
@@ -541,7 +552,7 @@
   const actors=[];for(const n of m.npcs||[])actors.push({x:n.x,y:n.y,sp:sprites[n.sprite],w:46,h:54,name:n.name,target:o?.npc===n.id});for(const g of runtime.patrols)actors.push({x:g.x,y:g.y,sp:sprites[g.sprite],w:46,h:54});for(const s of runtime.sentinels||[])actors.push({x:s.x,y:s.y,sp:sprites[s.sprite],w:46,h:54,name:s.name,sentinel:true});
   if(state.mapId==='simpul'&&o?.seqIndex===10)actors.push({x:1125,y:410,sp:sprites['npc-maruani'],w:40,h:56,name:'Siluet di bukit'});
   const r=runtime.ruru;actors.push({x:r.x,y:r.y,sp:sprites['ruru-'+r.dir],w:32,h:32,bob:p.moving?Math.abs(Math.sin(t*6))*3:0});actors.push({x:p.x,y:p.y,sp:sprites['nara-'+p.dir],w:46,h:50,bob:p.z+(p.moving?Math.abs(Math.sin(p.walkTime*4))*3:0),player:true});
-  actors.sort((a,b)=>a.y-b.y);for(const a of actors){ctx.fillStyle='#211c174d';ctx.beginPath();ctx.ellipse(a.x+5,a.y,15,6,-.3,0,Math.PI*2);ctx.fill();if(a.sentinel){ctx.strokeStyle='#d9623b';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(a.x,a.y-1,20+Math.sin(t*3.2)*2,9,0,0,Math.PI*2);ctx.stroke();}if(a.sp)ctx.drawImage(a.sp,Math.round(a.x-a.w/2),Math.round(a.y-a.h+4-(a.bob||0)),a.w,a.h);if(a.target){const ty=a.y-a.h-10+Math.sin(t*3.5)*3;const ng=ctx.createRadialGradient(a.x,a.y-4,2,a.x,a.y-4,28);ng.addColorStop(0,'rgba(94,231,255,0.45)');ng.addColorStop(1,'rgba(56,189,248,0)');ctx.fillStyle=ng;ctx.beginPath();ctx.ellipse(a.x,a.y-2,28,13,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#7deeff';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(a.x,a.y-1,20+Math.sin(t*3)*2,9,0,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#7deeff';ctx.strokeStyle='#132b36';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(a.x,ty);ctx.lineTo(a.x-7,ty-10);ctx.lineTo(a.x+7,ty-10);ctx.closePath();ctx.fill();ctx.stroke();}if(a.name&&Math.hypot(a.x-p.x,a.y-p.y)<160)worldLabels.push({cls:'npc-label',text:a.name,x:a.x,y:a.y+8});}
+  actors.sort((a,b)=>a.y-b.y);for(const a of actors){ctx.fillStyle='#211c174d';ctx.beginPath();ctx.ellipse(a.x+5,a.y,15,6,-.3,0,Math.PI*2);ctx.fill();if(a.sentinel){const pulse=Math.sin(t*3.6);ctx.fillStyle='rgba(217,72,54,.22)';ctx.beginPath();ctx.ellipse(a.x,a.y-1,28+pulse*1.5,14+pulse*.75,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#e05338';ctx.lineWidth=2.2;ctx.beginPath();ctx.ellipse(a.x,a.y-1,28+pulse*1.5,14+pulse*.75,0,0,Math.PI*2);ctx.stroke();}if(a.sp)ctx.drawImage(a.sp,Math.round(a.x-a.w/2),Math.round(a.y-a.h+4-(a.bob||0)),a.w,a.h);if(a.target){const ty=a.y-a.h-10+Math.sin(t*3.5)*3;const ng=ctx.createRadialGradient(a.x,a.y-4,2,a.x,a.y-4,28);ng.addColorStop(0,'rgba(94,231,255,0.45)');ng.addColorStop(1,'rgba(56,189,248,0)');ctx.fillStyle=ng;ctx.beginPath();ctx.ellipse(a.x,a.y-2,28,13,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#7deeff';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(a.x,a.y-1,20+Math.sin(t*3)*2,9,0,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#7deeff';ctx.strokeStyle='#132b36';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(a.x,ty);ctx.lineTo(a.x-7,ty-10);ctx.lineTo(a.x+7,ty-10);ctx.closePath();ctx.fill();ctx.stroke();}if(a.name&&Math.hypot(a.x-p.x,a.y-p.y)<160)worldLabels.push({cls:'npc-label',text:a.name,x:a.x,y:a.y+8});}
   const wl=$('world-labels');if(wl&&canvas.getBoundingClientRect){const rc=canvas.getBoundingClientRect();const key=Math.round(rc.left)+','+Math.round(rc.top)+','+Math.round(rc.width)+','+Math.round(rc.height)+'|'+worldLabels.map(l=>`${l.cls}:${l.text}@${Math.round(l.x)},${Math.round(l.y)}`).join(';');if(wl.dataset.key!==key){wl.dataset.key=key;wl.replaceChildren();for(const l of worldLabels){const el=document.createElement('span');el.className=l.cls;el.textContent=l.text;el.style.left=(rc.left+(l.x/1280)*rc.width)+'px';el.style.top=(rc.top+(l.y/720)*rc.height)+'px';wl.append(el);}}}
   if(o?.map===state.mapId&&!o.npc){const pulse=Math.sin(t*3.5),og=ctx.createRadialGradient(o.x,o.y-4,2,o.x,o.y-4,38+pulse*4);og.addColorStop(0,'rgba(125,238,255,0.62)');og.addColorStop(0.55,'rgba(56,189,248,0.28)');og.addColorStop(1,'rgba(56,189,248,0)');ctx.fillStyle=og;ctx.beginPath();ctx.ellipse(o.x,o.y-2,38+pulse*4,18+pulse*2,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#5ee7ff';ctx.lineWidth=2.5;ctx.beginPath();ctx.ellipse(o.x,o.y,21+pulse*3,10+pulse*1.2,0,0,Math.PI*2);ctx.stroke();ctx.strokeStyle='#e0faff';ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(o.x,o.y,13+pulse*1.5,6+pulse*.7,0,0,Math.PI*2);ctx.stroke();const dy=o.y-24+pulse*3;ctx.fillStyle='#7deeff';ctx.strokeStyle='#132b36';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(o.x,dy-8);ctx.lineTo(o.x+7,dy);ctx.lineTo(o.x,dy+8);ctx.lineTo(o.x-7,dy);ctx.closePath();ctx.fill();ctx.stroke();}
   if(runtime.flight){ctx.strokeStyle='#dec187';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.x,p.y-p.z-28);ctx.lineTo(...runtime.flight.to);ctx.stroke();}
@@ -728,10 +739,11 @@
   push('encounter-overlay');renderEncounter();
  }
  function retreatEncounter(){
-  const enc=runtime.encounter,patrol=enc?.source?.kind==='patrol'&&!enc.done;
+  const enc=runtime.encounter,patrol=enc?.source?.kind==='patrol'&&!enc.done,sentinel=enc?.source?.kind==='sentinel'&&!enc.done;
   runtime.encounter=null;pop();
   runtime.encounterGrace=2.5;
   if(patrol){checkpoint();toast('Mundur dari pengintai ke pijakan aman.');}
+  else if(sentinel)toast('Mundur dari '+enc.tmpl.name+'. Keluar dari lingkaran merahnya agar tidak terhadang lagi.');
  }
  function finishEnemyTurn(){
   const enc=runtime.encounter;if(!enc||enc.done)return;

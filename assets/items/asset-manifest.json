@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "project": "Jalur Senyap v4",
+  "art_direction": "Crisp 2D dark-inked pixel-art icons (64x64 RGBA transparent), warm brass/leather/sandstone/muted-teal palette matching prop-lantern.webp",
+  "assets": [
+    {
+      "id": "item-alat_lentera_ruru",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/alat_lentera_ruru.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-alat_tas_peredam",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/alat_tas_peredam.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-artefak_cincin_perunggu",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/artefak_cincin_perunggu.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-garam_mineral",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/garam_mineral.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_jubah_asharim",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_jubah_asharim.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_kalung_tujuh_panji",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_kalung_tujuh_panji.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_kompas_bahtari",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_kompas_bahtari.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_lencana_salkara",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_lencana_salkara.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_mandat_cirusia",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_mandat_cirusia.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_rompi_kulit",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_rompi_kulit.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_sabuk_garam",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_sabuk_garam.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_selendang_sela",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_selendang_sela.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_tali_balkut",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_tali_balkut.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-gear_tongkat_perintis",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/gear_tongkat_perintis.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-roti_nilasar",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/roti_nilasar.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    },
+    {
+      "id": "item-teh_gurun",
+      "role": "linear passive inventory / consumable icon",
+      "path": "assets/items/teh_gurun.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "nearest"
+      },
+      "source": {
+        "kind": "generated-and-normalized",
+        "tool": "Antigravity image-generator + Pillow 13.0 chroma-key/despill normalization",
+        "created_at": "2026-11-16"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "technical_checks_passed": true
+      }
+    }
+  ]
+}
