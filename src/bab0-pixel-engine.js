@@ -598,7 +598,7 @@
   // Restore optional social interactions from the 3D Nilasar courtyard.
   MAPS.nilasar.npcs.push({id:'perintis-istirahat',name:'Perintis yang beristirahat',sprite:'npc-pedagang-bahtari',x:900,y:430,poiText:'Jalan ke utara belum aman setelah longsoran. Satu pijakan yang diperiksa bisa menyelamatkan seluruh pedati.'},{id:'pedati',name:'Pedati kafilah',sprite:'prop-cargo',x:830,y:500,poiText:'Tali tambat aus di bagian yang bergesekan dengan kayu. Muatan diikat rendah agar tidak mudah terguling di lereng.'});
   
-  $('journal-nara').src=portrait('Nara');$('journal-ruru').src=portrait('Ruru');if($('title-bg'))$('title-bg').src=sprites['title-cover']?.src||root.PIXEL_BAB0_ASSETS?.['title-cover']||'assets/pixel-bab0/title-cover.jpg';
+  $('journal-nara').src=portrait('Nara');$('journal-ruru').src=portrait('Ruru');if($('title-bg'))$('title-bg').src=sprites['title-cover']?.src||root.PIXEL_BAB0_ASSETS?.['title-cover']||'assets/pixel-bab0/title-cover.webp';
   const finalLogo=sprites['game-logo']?.src||logoUri;for(const lid of ['loading-logo','title-logo','pause-logo','ending-logo']){if($(lid))$(lid).src=finalLogo;}
   if(sprites['world-atlas'])$('world-atlas-img').src=sprites['world-atlas'].src;bind();runtime.stack=[{id:'title-overlay'}];syncStack();enterMapRuntime();syncHUD();applySettings();$('loading').classList.add('hidden');
   if(safeStorage(C.PREFIX+'_auto')||safeStorage(C.PREFIX+'_auto.bak')||safeStorage(C.LEGACY))$('btn-continue').classList.remove('hidden');focusables()[0]?.focus();
