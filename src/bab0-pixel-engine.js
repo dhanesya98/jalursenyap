@@ -593,6 +593,7 @@
   const logoUri=root.PIXEL_BAB0_ASSETS?.['game-logo']||'assets/pixel-bab0/logo-jalur-senyap.png';
   const favUri=root.PIXEL_BAB0_ASSETS?.['game-favicon']||'assets/pixel-bab0/favicon-jalur-senyap.png';
   for(const lid of ['loading-logo','title-logo','pause-logo','ending-logo']){if($(lid))$(lid).src=logoUri;}
+  if($('title-bg'))$('title-bg').src=root.PIXEL_BAB0_ASSETS?.['title-cover']||'assets/pixel-bab0/title-cover.webp';
   if(document.head){let ic=document.querySelector('link[rel="icon"]');if(!ic){ic=document.createElement('link');ic.rel='icon';ic.type='image/png';document.head.append(ic);}ic.href=favUri;}
   await assets();runtime.debugCollision=DEV_MODE&&new URLSearchParams(root.location?.search||'').has('collision');
   // Restore optional social interactions from the 3D Nilasar courtyard.
