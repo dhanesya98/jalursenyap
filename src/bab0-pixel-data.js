@@ -4159,6 +4159,28 @@
   MAPS.senja.walkPolygons = MAPS.senja.walkSurfaces.map(surface => surface.polygon);
   MAPS.senja.blockPolygons = MAPS.senja.collisionObjects.map(object => object.polygon);
   MAPS.nilasar.exits.find(exit => exit.to === 'senja').spawn = [609,620];
+  const TITLE_SLIDES = [
+    { file: '07-telaga-sumi.webp', title: 'Telaga Sumi', region: 'Suaka Air Nilasar' },
+    { file: '06-pos-nilasar.webp', title: 'Pos Nilasar', region: 'Gerbang Perintis Timur' },
+    { file: '01-lembah-pasir.webp', title: 'Lembah Pasir', region: 'Nadi Kafilah Karavan' },
+    { file: '13-menara-senja.webp', title: 'Menara Senja', region: 'Pos Gema Punggungan' },
+    { file: '12-dusun-sela.webp', title: 'Dusun Sela', region: 'Terusan Penenun Tua' },
+    { file: '14-simpul-sembilan.webp', title: 'Simpul Sembilan', region: 'Punggungan Garpu Tala' },
+    { file: '03-padang-salkara.webp', title: 'Padang Salkara', region: 'Tujuh Panji Salkara' },
+    { file: '16-batu-tepi.webp', title: 'Batu Tepi', region: 'Tepi Laut Salkara' },
+    { file: '02-pegunungan-silin.webp', title: 'Pegunungan Silin', region: 'Jalur Lintas Awan' },
+    { file: '04-kepulauan-lamuna.webp', title: 'Kepulauan Lamuna', region: 'Bandar Kayu & Layar' },
+    { file: '05-dataran-basalt.webp', title: 'Dataran Basalt', region: 'Tangga Batu Hitam' },
+    { file: '08-bandar-lada.webp', title: 'Bandar Lada', region: 'Dermaga Rempah Barat' },
+    { file: '09-lulan-tua.webp', title: 'Lulan Tua', region: 'Reruntuhan Kota Kanal' },
+    { file: '10-benteng-tata.webp', title: 'Benteng Tata', region: 'Gerbang Perbatasan' },
+    { file: '11-menara-keseratus.webp', title: 'Menara Keseratus', region: 'Cakrawala Cincin Perunggu' },
+    { file: '15-balai-cawan.webp', title: 'Balai Cawan', region: 'Ruang Sidang Timur' },
+    { file: '17-desa-kertas-awan.webp', title: 'Desa Kertas Awan', region: 'Lembah Angin Tinggi' },
+    { file: '18-gudang-naskah.webp', title: 'Gudang Naskah', region: 'Arsip Tinta & Stempel' },
+    { file: '19-menara-pusat.webp', title: 'Menara Pusat', region: 'Jantung Jaringan Gema' },
+    { file: '20-gerbang-surut.webp', title: 'Gerbang Surut', region: 'Batas Lautan Senja' }
+  ];
   root.BAB0_DATA = {
     WORLD_W,
     WORLD_H,
@@ -4166,6 +4188,7 @@
     STEP_TARGETS,
     EQUIPMENT,
     NEGOTIATIONS,
+    TITLE_SLIDES,
     MAPS
   };
 })(globalThis);

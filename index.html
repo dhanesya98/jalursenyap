@@ -67,9 +67,13 @@
 
     <!-- Title Screen Overlay -->
     <section id="title-overlay" class="modal-backdrop title-screen" role="dialog" aria-modal="true" tabindex="-1">
-      <img id="title-bg" class="title-bg" alt="" aria-hidden="true">
+      <div id="title-parallax-bg" class="title-parallax-bg" aria-hidden="true">
+        <img id="title-bg" class="title-bg is-active" alt="" aria-hidden="true">
+        <img id="title-bg-next" class="title-bg" alt="" aria-hidden="true">
+      </div>
+      <div id="title-parallax-atmos" class="title-parallax-atmos" aria-hidden="true"></div>
       <div class="title-vignette" aria-hidden="true"></div>
-      <div class="title-copy">
+      <div id="title-copy" class="title-copy">
         <p class="title-super">TANAH SADA · KISAH CINCIN PERUNGGU</p>
         <h1 class="title-masthead"><img id="title-logo" class="title-logo" alt="Jalur Senyap"></h1>
         <div class="title-ornament" aria-hidden="true">
@@ -91,7 +95,15 @@
         </div>
         <small class="title-edition">BUKU I · EKSPEDISI NILASAR — SALKARA</small>
       </div>
-      <div class="title-seal" aria-hidden="true">
+      <div id="title-slide-hud" class="title-slide-hud" aria-label="Galeri lanskap Tanah Sada">
+        <button id="title-slide-prev" type="button" class="title-slide-btn" aria-label="Pemandangan sebelumnya">‹</button>
+        <div class="title-slide-meta">
+          <strong id="title-slide-title">Telaga Sumi</strong>
+          <small id="title-slide-region">Suaka Air Nilasar · 1/20</small>
+        </div>
+        <button id="title-slide-next" type="button" class="title-slide-btn" aria-label="Pemandangan berikutnya">›</button>
+      </div>
+      <div id="title-seal" class="title-seal" aria-hidden="true">
         <span>PERHIMPUNAN</span>
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
           <circle cx="12" cy="12" r="9.5"></circle>
