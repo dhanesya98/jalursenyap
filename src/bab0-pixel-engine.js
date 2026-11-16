@@ -324,7 +324,7 @@
   return {title:v==='coastal_resonance'?'Redam Gema Maruani':'Selaraskan Perunggu',desc:'Arahkan ketiga takik ke atas. Setiap putaran menggerakkan dua cincin; amati hubungan di antaranya.',moves:['Luar + tengah','Tengah + dalam','Luar + dalam ↶']};
  }
  function startChallenge(o){
-  const kind=o.minigame==='cargo_balance'?'cargo':(o.minigame==='loom_ima'||o.minigame==='caravan_knot')?'loom':(o.minigame==='canal_sluice'||o.minigame==='cliff_anchor')?'sluice':o.minigame==='resonance_batunama'?'monolith':o.minigame==='sabotage_valve'?'valve':(o.minigame==='kitchen_blueprint'||o.minigame==='wind_chronicle')?'evidence':o.minigame.startsWith('winch_')?'bridge':'tune';
+  const kind=o.minigame==='cargo_balance'?'cargo':(o.minigame==='loom_ima'||o.minigame==='caravan_knot')?'loom':(o.minigame==='canal_sluice'||o.minigame==='cliff_anchor')?'sluice':o.minigame==='resonance_batunama'?'monolith':o.minigame==='sabotage_valve'?'valve':(o.minigame==='kitchen_blueprint'||o.minigame==='wind_chronicle')?'evidence':String(o.minigame||'').startsWith('winch_')?'bridge':'tune';
   const board=kind==='cargo'?null:createBoardFor(o.minigame);
   const par=board?P.solveBFS(board)?.length||null:null;
   runtime.challenge={id:o.id,minigame:o.minigame,kind,mode:kind==='evidence'?'logic':state.settings.puzzleMode,done:false,phase:.1,direction:1,locks:0,
@@ -367,11 +367,12 @@
    boardHtml=`<div class="puzzle-board">${values.map(v=>`<div class="dial">${bridge?['0','I','II'][v]:['↑','→','↓','←'][v]}</div>`).join('')}</div>`;
   }
   const parNote=ch.par?` (optimal ${ch.par} langkah)`:'';
-  body.innerHTML=`${boardHtml}<div class="puzzle-moves ${meta.moves.length===4?'cols-4':''}">${meta.moves.map((label,i)=>`<button data-move="${i}">${i+1}. ${label}</button>`).join('')}</div><div class="button-row"><button id="puzzle-undo" ${ch.undo.length?'':'disabled'}>Urungkan · Z</button><button id="puzzle-reset">Ulangi</button><button id="puzzle-hint">Petunjuk</button></div><p class="muted">${ch.board.moves} langkah${parNote} · tanpa batas waktu</p>`;
+  body.innerHTML=`${boardHtml}<div class="puzzle-moves ${meta.moves.length===4?'cols-4':''}">${meta.moves.map((label,i)=>`<button data-move="${i}">${i+1}. ${label}</button>`).join('')}</div><div class="button-row"><button id="puzzle-undo" ${ch.undo.length?'':'disabled'}>Urungkan · Z</button><button id="puzzle-reset">Ulangi</button><button id="puzzle-hint">Petunjuk</button><button id="puzzle-skip">Lewati (Cerita)</button></div><p class="muted">${ch.board.moves} langkah${parNote} · tanpa batas waktu</p>`;
   body.querySelectorAll('[data-move]').forEach(b=>b.onclick=()=>puzzleMove(Number(b.dataset.move)));
   $('puzzle-undo').onclick=()=>{if(ch.undo.length){ch.board=ch.undo.pop();SFX.uiClose();}renderChallenge();};
   $('puzzle-reset').onclick=()=>{ch.board=createBoardFor(ch.minigame);ch.par=P.solveBFS(ch.board)?.length||null;ch.undo=[];SFX.uiClick();renderChallenge();};
   $('puzzle-hint').onclick=()=>{SFX.puzzleHint();const hint=P.solveBFS(ch.board);body.querySelectorAll('[data-move]').forEach(b=>b.classList.toggle('hinted',Number(b.dataset.move)===hint?.[0]));toast(hint?.length?'Coba langkah '+(hint[0]+1)+' ('+meta.moves[hint[0]]+').':'Semua penanda sudah selaras.');};
+  $('puzzle-skip').onclick=()=>puzzleWin(ch);
   restoreFocus();
  }
  function puzzleMove(i){const ch=runtime.challenge;if(!ch||ch.done||ch.kind==='cargo'||top()!=='mg-overlay')return;if(i<0||i>=P.moveCount(ch.board.kind))return;ch.undo.push(C.clone(ch.board));ch.board=P.applyMove(ch.board,i).state;SFX.puzzleMove(i);if(P.isSolved(ch.board))puzzleWin(ch);else renderChallenge();}
@@ -553,7 +554,7 @@
   function action(code){if(code==='F2'){if(DEV_MODE)runtime.debugCollision=!runtime.debugCollision;return;}if(code==='Escape'){back();return;}if(top()==='mg-overlay'){if(code==='Space'||code==='KeyE')timingHit();if(/^Digit[1-4]$/.test(code))puzzleMove(Number(code.slice(-1))-1);if(code==='KeyZ')$('puzzle-undo')?.click();return;}
   if(top()==='encounter-overlay'){if(/^Digit[1-5]$/.test(code)){const idx=Number(code.slice(-1))-1;$('enc-actions')?.querySelectorAll('button')?.[idx]?.click();}return;}
   if(top()==='vn-overlay'){const btns=Array.from($('vn-choices').querySelectorAll('button'));if(['ArrowUp','KeyW','ArrowLeft','KeyA','ArrowDown','KeyS','ArrowRight','KeyD'].includes(code)){if(btns.length){const up=['ArrowUp','KeyW','ArrowLeft','KeyA'].includes(code),i=btns.indexOf(document.activeElement);btns[(i+(up?-1:1)+btns.length)%btns.length]?.focus();}}if(code==='KeyE'||code==='Space'){if(btns.length&&btns.includes(document.activeElement))document.activeElement.click();else advanceVN();}if(code==='KeyB')openBacklog();if(code==='KeyV'){runtime.auto=!runtime.auto;runtime.skip=false;renderVN();}if(code==='KeyT'){runtime.skip=!runtime.skip;runtime.auto=false;renderVN();}return;}
-  if(top())return;if(code==='KeyE')interact();else if(code==='Space')jump();else if(code==='KeyQ')scan();else if(code==='KeyK')openEncounter();else if(code==='KeyM')openMap();else if(code==='KeyJ'||code==='Tab'){renderJournal();push('journal-overlay');}}
+  if(top())return;if(code==='KeyE')interact();else if(code==='Space')jump();else if(code==='KeyQ')scan();else if(code==='KeyM')openMap();else if(code==='KeyJ'||code==='Tab'){renderJournal();push('journal-overlay');}}
  function openBacklog(){$('vn-backlog-list').innerHTML=state.backlog.map(b=>`<article class="j-card"><strong>${esc(b.speaker)}</strong><p>${esc(b.text)}</p></article>`).join('');push('vn-backlog-overlay');}
  function pollGamepad(){if(!hasDOM||!navigator.getGamepads||!document.hasFocus())return;const pad=Array.from(navigator.getGamepads()).find(Boolean);if(!pad)return;
   const pressed=pad.buttons.map(b=>b.pressed);const edge=i=>pressed[i]&&!runtime.previousButtons[i];
@@ -639,7 +640,7 @@
     if(!runtime.path.length&&Math.hypot(x-state.player.x,y-state.player.y)>16)toast('Pijakan itu belum dapat dicapai. Coba jalur yang terbuka.');});
   const on=(id,fn)=>$(id)?.addEventListener('click',fn);
   on('btn-start',()=>{if(safeStorage(C.PREFIX+'_auto'))push('confirm-overlay');else begin();});on('confirm-new',begin);on('btn-continue',()=>loadFromSlot());on('btn-title-help',()=>push('help-overlay'));on('btn-help',()=>push('help-overlay'));
-  on('btn-open-journal',()=>{renderJournal();push('journal-overlay');});on('btn-open-map',openMap);on('btn-track',openMap);on('btn-open-encounter',()=>openEncounter());on('btn-open-pause',()=>{renderSlots();push('pause-overlay');});on('btn-sonar',scan);on('hud-prompt',interact);
+  on('btn-open-journal',()=>{renderJournal();push('journal-overlay');});on('btn-open-map',openMap);on('btn-track',openMap);on('btn-open-pause',()=>{renderSlots();push('pause-overlay');});on('btn-sonar',scan);on('hud-prompt',interact);
   on('btn-checkpoint',()=>{closeAll();runtime.dialogue=null;state.dialogue=null;checkpoint();});on('btn-title',()=>{const saved=saveToSlot(null,true);runtime.dialogue=null;runtime.challenge=null;runtime.auto=false;runtime.skip=false;runtime.interactOnArrival=false;runtime.interactTarget=null;closeAll();runtime.started=false;$('hud-topbar').classList.add('hidden');$('title-overlay').classList.remove('hidden');runtime.stack=[{id:'title-overlay'}];$('btn-continue').classList.toggle('hidden',!(saved||safeStorage(C.PREFIX+'_auto')||safeStorage(C.PREFIX+'_auto.bak')||safeStorage(C.LEGACY)));syncStack();focusables()[0]?.focus();});
   on('vn-next',advanceVN);on('vn-backlog-btn',openBacklog);on('vn-auto-btn',()=>{runtime.auto=!runtime.auto;runtime.skip=false;renderVN();});on('vn-skip-btn',()=>{runtime.skip=!runtime.skip;runtime.auto=false;renderVN();});
   on('challenge-cancel',cancelChallenge);on('btn-ending-explore',pop);on('btn-fullscreen',()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>toast('Layar penuh belum tersedia.'));else document.exitFullscreen?.();});

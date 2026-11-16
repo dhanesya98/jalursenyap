@@ -5,7 +5,7 @@ for(const [,f,code]of html.matchAll(/<script>\/\* ([^*]+\.js) \*\/\n([\s\S]*?)<\
 assert.equal(count,11);assert(!/<(?:script|link)\b[^>]*(?:src|href)=/.test(html));assert.equal((html.match(/data:audio\/mpeg;base64,/g)||[]).length,3);
 assert(html.includes('globalThis.JALUR_DEV_MODE=true;'),'Dev bundle must enable JALUR_DEV_MODE');
 const officialHtml=fs.readFileSync(path.join(root,'index.html'),'utf8');
-assert(!/JALUR_DEV_MODE|dev-tools\.js/.test(officialHtml),'Official index.html must stay clean of dev mode');
+assert(!/JALUR_DEV_MODE|dev-tools\.js|btn-open-encounter/.test(officialHtml),'Official index.html must stay clean of dev mode and manual encounter button');
 for(const [,f,code]of html.matchAll(/<style>\/\* ([^*]+\.css) \*\/\n([\s\S]*?)<\/style>/g))assert.equal(normalized(code),normalized(fs.readFileSync(path.join(root,f),'utf8')),f);
 const ids=[...html.matchAll(/\bid="([^"<>]+)"/g)].map(x=>x[1]); // Script templates can repeat IDs; inspect markup separately.
 const markup=html.slice(0,html.indexOf('<script>'));

@@ -35,7 +35,7 @@
     // Seq 0: Bekal seorang perintis (nilasar)
     'cp-0-0': { map: 'nilasar', x: 640, y: 238, npc: 'marsiyah' },
     'cp-0-1': { map: 'nilasar', x: 474, y: 353, label: 'Ambil Tas Peredam Tseren [E]' },
-    'cp-0-2': { map: 'nilasar', x: 832, y: 367, label: 'Uji Tali Tambat & Timbang Bekal [E]', minigame: 'cargo_balance' },
+    'cp-0-2': { map: 'nilasar', x: 832, y: 367, label: 'Uji Tali Tambat & Timbang Bekal [E]' },
 
     // Seq 1: Air yang bergetar (sumi)
     'cp-1-0': { map: 'sumi', x: 620, y: 514, label: 'Periksa Riak Sumur Induk [E]', minigame: 'resonance_tune' },
@@ -101,27 +101,27 @@
     'cp-13-2': { map: 'sela', x: 545, y: 271, npc: 'ima' },
 
     // Seq 14: Daftar nama di tepi kanal (canal -> sela right half)
-    'cp-14-0': { map: 'sela', x: 896, y: 108, label: 'Lintasi Jembatan Kanal [E]', stealth: true, minigame: 'canal_sluice' },
+    'cp-14-0': { map: 'sela', x: 896, y: 108, label: 'Lintasi Jembatan Kanal [E]', stealth: true },
     'cp-14-1': { map: 'sela', x: 1114, y: 407, label: 'Periksa Buku Daftar Pelintas [E]', stealth: true },
     'cp-14-2': { map: 'sela', x: 895, y: 605, label: 'Ambil Jalur Tanpa Pengintai [E]', stealth: true },
 
     // Seq 15: Garam untuk karavan Balkut (border -> balkut)
     'cp-15-0': { map: 'balkut', x: 310, y: 506, label: 'Periksa Garam Batangan [E]' },
-    'cp-15-1': { map: 'balkut', x: 208, y: 494, label: 'Periksa Tali Tambat Pedati [E]', minigame: 'caravan_knot' },
+    'cp-15-1': { map: 'balkut', x: 208, y: 494, label: 'Periksa Tali Tambat Pedati [E]' },
     'cp-15-2': { map: 'balkut', x: 443, y: 438, npc: 'orsuk' },
 
     // Seq 16: Sapaan melalui meja batu (border -> balkut)
-    'cp-16-0': { map: 'balkut', x: 369, y: 485, npc: 'maruani', minigame: 'resonance_takar' },
+    'cp-16-0': { map: 'balkut', x: 369, y: 485, npc: 'maruani' },
 
     // Seq 17: Jalan di atas blokade (cliff -> balkut upper path)
     'cp-17-0': { map: 'balkut', x: 752, y: 597, label: 'Periksa Pijakan Lereng Tebing [E]', sonar: true, stealth: true },
-    'cp-17-1': { map: 'balkut', x: 706, y: 448, label: 'Periksa Batu Tambatan [E]', stealth: true, minigame: 'cliff_anchor' },
+    'cp-17-1': { map: 'balkut', x: 706, y: 448, label: 'Periksa Batu Tambatan [E]', stealth: true },
     'cp-17-2': { map: 'balkut', x: 681, y: 355, label: 'Capai Puncak Celah Balkut [E]', stealth: true },
 
     // Seq 18: Turunkan jembatan tambat (cliff -> balkut winches)
-    'cp-18-0': { map: 'balkut', x: 720, y: 298, label: 'Kerekan Tambatan Kiri [E]', minigame: 'winch_1' },
+    'cp-18-0': { map: 'balkut', x: 720, y: 298, label: 'Kerekan Tambatan Kiri [E]' },
     'cp-18-1': { map: 'balkut', x: 764, y: 315, label: 'Kerekan Utama Tengah [E]', minigame: 'winch_2' },
-    'cp-18-2': { map: 'balkut', x: 815, y: 308, label: 'Kerekan Tambatan Kanan [E]', minigame: 'winch_3' },
+    'cp-18-2': { map: 'balkut', x: 815, y: 308, label: 'Kerekan Tambatan Kanan [E]' },
 
     // Seq 19: Suara di sekitar Sidang Api (camp -> salkara)
     'cp-19-0': { map: 'salkara', x: 717, y: 306, npc: 'dargun' },
@@ -142,16 +142,16 @@
 
     // Seq 23: Jejak sabotase di perkemahan (camp -> salkara)
     'cp-23-0': { map: 'salkara', x: 465, y: 588, label: 'Periksa Peti Garam Berminyak [E]', sonar: true, stealth: true },
-    'cp-23-1': { map: 'salkara', x: 748, y: 598, label: 'Kunci Ulang Katup Lentera Sabotase [E]', minigame: 'sabotage_valve' },
+    'cp-23-1': { map: 'salkara', x: 748, y: 598, label: 'Kunci Ulang Katup Lentera Sabotase [E]' },
     'cp-23-2': { map: 'salkara', x: 935, y: 505, label: 'Hadapi Penyusup & Kuatkan Janji Orsuk [E]' },
 
     // Seq 24: Gema seratus tujuh tahun (coast -> tepisalkara)
     'cp-24-0': { map: 'tepisalkara', x: 585, y: 225, label: 'Dengarkan Batu Pesisir Bernyanyi [E]', sonar: true },
-    'cp-24-1': { map: 'tepisalkara', x: 295, y: 232, label: 'Cocokkan Denah Tungku Dapur Pos Karavan [E]', minigame: 'kitchen_blueprint' },
+    'cp-24-1': { map: 'tepisalkara', x: 295, y: 232, label: 'Cocokkan Denah Tungku Dapur Pos Karavan [E]' },
     'cp-24-2': { map: 'tepisalkara', x: 1085, y: 292, label: 'Telusuri Arah Angin & Bangkai Kapal Bahtari [E]', minigame: 'wind_chronicle' },
 
     // Seq 25: Gema Maruani & pengakuan Dargun (coast -> tepisalkara)
-    'cp-25-0': { map: 'tepisalkara', x: 775, y: 272, label: 'Selaraskan Batu Pesisir Timur dari Gema Maruani [E]', minigame: 'coastal_resonance' },
+    'cp-25-0': { map: 'tepisalkara', x: 775, y: 272, label: 'Selaraskan Batu Pesisir Timur dari Gema Maruani [E]' },
     'cp-25-1': { map: 'tepisalkara', x: 685, y: 315, npc: 'dargun-pesisir', minigame: 'confront_dargun' },
 
     // Seq 26: Meterai gencatan senjata Salkara (camp -> salkara)

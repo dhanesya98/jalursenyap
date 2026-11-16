@@ -450,7 +450,7 @@ body.reduce-motion .title-bg{transition:none}
 <aside class="status-panel"><div class="era"><span>TINGKAT</span><b id="hud-level-num">1</b><meter id="xp-meter" min="0" max="60" value="0"></meter><small id="hud-xp-text">0/60 XP</small></div><div class="status-body"><strong>Nara</strong><small id="hud-rpg-level">Perintis Nilasar · Thn 103</small><label>Ketahanan <meter id="hp-meter" min="0" max="46" value="46"></meter></label><label>Muatan <meter id="cargo-meter" min="0" max="100" value="100"></meter></label><span id="hud-weather">Angin teduh</span></div></aside>
 <aside class="objective-panel"><p class="eyebrow" id="hud-progress"></p><h2 id="hud-seq-title"></h2><p id="hud-seq-obj"></p><button id="btn-track" class="text-button">Lihat di peta <kbd>M</kbd></button></aside>
 <div class="location-panel"><span class="compass" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><polygon points="12,5 14.5,12 12,19 9.5,12" fill="currentColor" opacity=".25"></polygon><polygon points="12,5 14,12 12,12" fill="currentColor"></polygon></svg></span><div><strong id="hud-location">Pos Nilasar</strong><small id="hud-terrain">Pasir lembut</small></div></div>
-<nav class="toolbelt" aria-label="Perlengkapan dan menu"><button id="btn-sonar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M5 12a7 7 0 0 1 14 0"></path><path d="M2 12a10 10 0 0 1 20 0"></path></svg> Ruru <kbd>Q</kbd></button><button id="btn-open-journal"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 0-3 3V4z"></path><path d="M18 4h2v16h-2"></path></svg> Jurnal <kbd>J</kbd></button><button id="btn-open-map"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"></polygon></svg> Peta <kbd>M</kbd></button><button id="btn-open-encounter"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"></path></svg> Taktik <kbd>K</kbd></button><button id="btn-open-pause"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Jeda <kbd>Esc</kbd></button></nav><span id="save-status">Perjalanan baru</span></header>
+<nav class="toolbelt" aria-label="Perlengkapan dan menu"><button id="btn-sonar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M5 12a7 7 0 0 1 14 0"></path><path d="M2 12a10 10 0 0 1 20 0"></path></svg> Ruru <kbd>Q</kbd></button><button id="btn-open-journal"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 0-3 3V4z"></path><path d="M18 4h2v16h-2"></path></svg> Jurnal <kbd>J</kbd></button><button id="btn-open-map"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"></polygon></svg> Peta <kbd>M</kbd></button><button id="btn-open-pause"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Jeda <kbd>Esc</kbd></button></nav><span id="save-status">Perjalanan baru</span></header>
 
     <div id="hud-messages">
       <div id="hud-toast" role="status" aria-live="polite"></div>
@@ -2601,7 +2601,7 @@ window.PIXEL_UI_ASSETS={"portrait-nara":"data:image/webp;base64,UklGRvgxAABXRUJQ
     // Seq 0: Bekal seorang perintis (nilasar)
     'cp-0-0': { map: 'nilasar', x: 640, y: 238, npc: 'marsiyah' },
     'cp-0-1': { map: 'nilasar', x: 474, y: 353, label: 'Ambil Tas Peredam Tseren [E]' },
-    'cp-0-2': { map: 'nilasar', x: 832, y: 367, label: 'Uji Tali Tambat & Timbang Bekal [E]', minigame: 'cargo_balance' },
+    'cp-0-2': { map: 'nilasar', x: 832, y: 367, label: 'Uji Tali Tambat & Timbang Bekal [E]' },
 
     // Seq 1: Air yang bergetar (sumi)
     'cp-1-0': { map: 'sumi', x: 620, y: 514, label: 'Periksa Riak Sumur Induk [E]', minigame: 'resonance_tune' },
@@ -2667,27 +2667,27 @@ window.PIXEL_UI_ASSETS={"portrait-nara":"data:image/webp;base64,UklGRvgxAABXRUJQ
     'cp-13-2': { map: 'sela', x: 545, y: 271, npc: 'ima' },
 
     // Seq 14: Daftar nama di tepi kanal (canal -> sela right half)
-    'cp-14-0': { map: 'sela', x: 896, y: 108, label: 'Lintasi Jembatan Kanal [E]', stealth: true, minigame: 'canal_sluice' },
+    'cp-14-0': { map: 'sela', x: 896, y: 108, label: 'Lintasi Jembatan Kanal [E]', stealth: true },
     'cp-14-1': { map: 'sela', x: 1114, y: 407, label: 'Periksa Buku Daftar Pelintas [E]', stealth: true },
     'cp-14-2': { map: 'sela', x: 895, y: 605, label: 'Ambil Jalur Tanpa Pengintai [E]', stealth: true },
 
     // Seq 15: Garam untuk karavan Balkut (border -> balkut)
     'cp-15-0': { map: 'balkut', x: 310, y: 506, label: 'Periksa Garam Batangan [E]' },
-    'cp-15-1': { map: 'balkut', x: 208, y: 494, label: 'Periksa Tali Tambat Pedati [E]', minigame: 'caravan_knot' },
+    'cp-15-1': { map: 'balkut', x: 208, y: 494, label: 'Periksa Tali Tambat Pedati [E]' },
     'cp-15-2': { map: 'balkut', x: 443, y: 438, npc: 'orsuk' },
 
     // Seq 16: Sapaan melalui meja batu (border -> balkut)
-    'cp-16-0': { map: 'balkut', x: 369, y: 485, npc: 'maruani', minigame: 'resonance_takar' },
+    'cp-16-0': { map: 'balkut', x: 369, y: 485, npc: 'maruani' },
 
     // Seq 17: Jalan di atas blokade (cliff -> balkut upper path)
     'cp-17-0': { map: 'balkut', x: 752, y: 597, label: 'Periksa Pijakan Lereng Tebing [E]', sonar: true, stealth: true },
-    'cp-17-1': { map: 'balkut', x: 706, y: 448, label: 'Periksa Batu Tambatan [E]', stealth: true, minigame: 'cliff_anchor' },
+    'cp-17-1': { map: 'balkut', x: 706, y: 448, label: 'Periksa Batu Tambatan [E]', stealth: true },
     'cp-17-2': { map: 'balkut', x: 681, y: 355, label: 'Capai Puncak Celah Balkut [E]', stealth: true },
 
     // Seq 18: Turunkan jembatan tambat (cliff -> balkut winches)
-    'cp-18-0': { map: 'balkut', x: 720, y: 298, label: 'Kerekan Tambatan Kiri [E]', minigame: 'winch_1' },
+    'cp-18-0': { map: 'balkut', x: 720, y: 298, label: 'Kerekan Tambatan Kiri [E]' },
     'cp-18-1': { map: 'balkut', x: 764, y: 315, label: 'Kerekan Utama Tengah [E]', minigame: 'winch_2' },
-    'cp-18-2': { map: 'balkut', x: 815, y: 308, label: 'Kerekan Tambatan Kanan [E]', minigame: 'winch_3' },
+    'cp-18-2': { map: 'balkut', x: 815, y: 308, label: 'Kerekan Tambatan Kanan [E]' },
 
     // Seq 19: Suara di sekitar Sidang Api (camp -> salkara)
     'cp-19-0': { map: 'salkara', x: 717, y: 306, npc: 'dargun' },
@@ -2708,16 +2708,16 @@ window.PIXEL_UI_ASSETS={"portrait-nara":"data:image/webp;base64,UklGRvgxAABXRUJQ
 
     // Seq 23: Jejak sabotase di perkemahan (camp -> salkara)
     'cp-23-0': { map: 'salkara', x: 465, y: 588, label: 'Periksa Peti Garam Berminyak [E]', sonar: true, stealth: true },
-    'cp-23-1': { map: 'salkara', x: 748, y: 598, label: 'Kunci Ulang Katup Lentera Sabotase [E]', minigame: 'sabotage_valve' },
+    'cp-23-1': { map: 'salkara', x: 748, y: 598, label: 'Kunci Ulang Katup Lentera Sabotase [E]' },
     'cp-23-2': { map: 'salkara', x: 935, y: 505, label: 'Hadapi Penyusup & Kuatkan Janji Orsuk [E]' },
 
     // Seq 24: Gema seratus tujuh tahun (coast -> tepisalkara)
     'cp-24-0': { map: 'tepisalkara', x: 585, y: 225, label: 'Dengarkan Batu Pesisir Bernyanyi [E]', sonar: true },
-    'cp-24-1': { map: 'tepisalkara', x: 295, y: 232, label: 'Cocokkan Denah Tungku Dapur Pos Karavan [E]', minigame: 'kitchen_blueprint' },
+    'cp-24-1': { map: 'tepisalkara', x: 295, y: 232, label: 'Cocokkan Denah Tungku Dapur Pos Karavan [E]' },
     'cp-24-2': { map: 'tepisalkara', x: 1085, y: 292, label: 'Telusuri Arah Angin & Bangkai Kapal Bahtari [E]', minigame: 'wind_chronicle' },
 
     // Seq 25: Gema Maruani & pengakuan Dargun (coast -> tepisalkara)
-    'cp-25-0': { map: 'tepisalkara', x: 775, y: 272, label: 'Selaraskan Batu Pesisir Timur dari Gema Maruani [E]', minigame: 'coastal_resonance' },
+    'cp-25-0': { map: 'tepisalkara', x: 775, y: 272, label: 'Selaraskan Batu Pesisir Timur dari Gema Maruani [E]' },
     'cp-25-1': { map: 'tepisalkara', x: 685, y: 315, npc: 'dargun-pesisir', minigame: 'confront_dargun' },
 
     // Seq 26: Meterai gencatan senjata Salkara (camp -> salkara)
@@ -7986,7 +7986,7 @@ globalThis.JALUR_DEV_MODE=true;
   return {title:v==='coastal_resonance'?'Redam Gema Maruani':'Selaraskan Perunggu',desc:'Arahkan ketiga takik ke atas. Setiap putaran menggerakkan dua cincin; amati hubungan di antaranya.',moves:['Luar + tengah','Tengah + dalam','Luar + dalam ↶']};
  }
  function startChallenge(o){
-  const kind=o.minigame==='cargo_balance'?'cargo':(o.minigame==='loom_ima'||o.minigame==='caravan_knot')?'loom':(o.minigame==='canal_sluice'||o.minigame==='cliff_anchor')?'sluice':o.minigame==='resonance_batunama'?'monolith':o.minigame==='sabotage_valve'?'valve':(o.minigame==='kitchen_blueprint'||o.minigame==='wind_chronicle')?'evidence':o.minigame.startsWith('winch_')?'bridge':'tune';
+  const kind=o.minigame==='cargo_balance'?'cargo':(o.minigame==='loom_ima'||o.minigame==='caravan_knot')?'loom':(o.minigame==='canal_sluice'||o.minigame==='cliff_anchor')?'sluice':o.minigame==='resonance_batunama'?'monolith':o.minigame==='sabotage_valve'?'valve':(o.minigame==='kitchen_blueprint'||o.minigame==='wind_chronicle')?'evidence':String(o.minigame||'').startsWith('winch_')?'bridge':'tune';
   const board=kind==='cargo'?null:createBoardFor(o.minigame);
   const par=board?P.solveBFS(board)?.length||null:null;
   runtime.challenge={id:o.id,minigame:o.minigame,kind,mode:kind==='evidence'?'logic':state.settings.puzzleMode,done:false,phase:.1,direction:1,locks:0,
@@ -8029,11 +8029,12 @@ globalThis.JALUR_DEV_MODE=true;
    boardHtml=`<div class="puzzle-board">${values.map(v=>`<div class="dial">${bridge?['0','I','II'][v]:['↑','→','↓','←'][v]}</div>`).join('')}</div>`;
   }
   const parNote=ch.par?` (optimal ${ch.par} langkah)`:'';
-  body.innerHTML=`${boardHtml}<div class="puzzle-moves ${meta.moves.length===4?'cols-4':''}">${meta.moves.map((label,i)=>`<button data-move="${i}">${i+1}. ${label}</button>`).join('')}</div><div class="button-row"><button id="puzzle-undo" ${ch.undo.length?'':'disabled'}>Urungkan · Z</button><button id="puzzle-reset">Ulangi</button><button id="puzzle-hint">Petunjuk</button></div><p class="muted">${ch.board.moves} langkah${parNote} · tanpa batas waktu</p>`;
+  body.innerHTML=`${boardHtml}<div class="puzzle-moves ${meta.moves.length===4?'cols-4':''}">${meta.moves.map((label,i)=>`<button data-move="${i}">${i+1}. ${label}</button>`).join('')}</div><div class="button-row"><button id="puzzle-undo" ${ch.undo.length?'':'disabled'}>Urungkan · Z</button><button id="puzzle-reset">Ulangi</button><button id="puzzle-hint">Petunjuk</button><button id="puzzle-skip">Lewati (Cerita)</button></div><p class="muted">${ch.board.moves} langkah${parNote} · tanpa batas waktu</p>`;
   body.querySelectorAll('[data-move]').forEach(b=>b.onclick=()=>puzzleMove(Number(b.dataset.move)));
   $('puzzle-undo').onclick=()=>{if(ch.undo.length){ch.board=ch.undo.pop();SFX.uiClose();}renderChallenge();};
   $('puzzle-reset').onclick=()=>{ch.board=createBoardFor(ch.minigame);ch.par=P.solveBFS(ch.board)?.length||null;ch.undo=[];SFX.uiClick();renderChallenge();};
   $('puzzle-hint').onclick=()=>{SFX.puzzleHint();const hint=P.solveBFS(ch.board);body.querySelectorAll('[data-move]').forEach(b=>b.classList.toggle('hinted',Number(b.dataset.move)===hint?.[0]));toast(hint?.length?'Coba langkah '+(hint[0]+1)+' ('+meta.moves[hint[0]]+').':'Semua penanda sudah selaras.');};
+  $('puzzle-skip').onclick=()=>puzzleWin(ch);
   restoreFocus();
  }
  function puzzleMove(i){const ch=runtime.challenge;if(!ch||ch.done||ch.kind==='cargo'||top()!=='mg-overlay')return;if(i<0||i>=P.moveCount(ch.board.kind))return;ch.undo.push(C.clone(ch.board));ch.board=P.applyMove(ch.board,i).state;SFX.puzzleMove(i);if(P.isSolved(ch.board))puzzleWin(ch);else renderChallenge();}
@@ -8215,7 +8216,7 @@ globalThis.JALUR_DEV_MODE=true;
   function action(code){if(code==='F2'){if(DEV_MODE)runtime.debugCollision=!runtime.debugCollision;return;}if(code==='Escape'){back();return;}if(top()==='mg-overlay'){if(code==='Space'||code==='KeyE')timingHit();if(/^Digit[1-4]$/.test(code))puzzleMove(Number(code.slice(-1))-1);if(code==='KeyZ')$('puzzle-undo')?.click();return;}
   if(top()==='encounter-overlay'){if(/^Digit[1-5]$/.test(code)){const idx=Number(code.slice(-1))-1;$('enc-actions')?.querySelectorAll('button')?.[idx]?.click();}return;}
   if(top()==='vn-overlay'){const btns=Array.from($('vn-choices').querySelectorAll('button'));if(['ArrowUp','KeyW','ArrowLeft','KeyA','ArrowDown','KeyS','ArrowRight','KeyD'].includes(code)){if(btns.length){const up=['ArrowUp','KeyW','ArrowLeft','KeyA'].includes(code),i=btns.indexOf(document.activeElement);btns[(i+(up?-1:1)+btns.length)%btns.length]?.focus();}}if(code==='KeyE'||code==='Space'){if(btns.length&&btns.includes(document.activeElement))document.activeElement.click();else advanceVN();}if(code==='KeyB')openBacklog();if(code==='KeyV'){runtime.auto=!runtime.auto;runtime.skip=false;renderVN();}if(code==='KeyT'){runtime.skip=!runtime.skip;runtime.auto=false;renderVN();}return;}
-  if(top())return;if(code==='KeyE')interact();else if(code==='Space')jump();else if(code==='KeyQ')scan();else if(code==='KeyK')openEncounter();else if(code==='KeyM')openMap();else if(code==='KeyJ'||code==='Tab'){renderJournal();push('journal-overlay');}}
+  if(top())return;if(code==='KeyE')interact();else if(code==='Space')jump();else if(code==='KeyQ')scan();else if(code==='KeyM')openMap();else if(code==='KeyJ'||code==='Tab'){renderJournal();push('journal-overlay');}}
  function openBacklog(){$('vn-backlog-list').innerHTML=state.backlog.map(b=>`<article class="j-card"><strong>${esc(b.speaker)}</strong><p>${esc(b.text)}</p></article>`).join('');push('vn-backlog-overlay');}
  function pollGamepad(){if(!hasDOM||!navigator.getGamepads||!document.hasFocus())return;const pad=Array.from(navigator.getGamepads()).find(Boolean);if(!pad)return;
   const pressed=pad.buttons.map(b=>b.pressed);const edge=i=>pressed[i]&&!runtime.previousButtons[i];
@@ -8301,7 +8302,7 @@ globalThis.JALUR_DEV_MODE=true;
     if(!runtime.path.length&&Math.hypot(x-state.player.x,y-state.player.y)>16)toast('Pijakan itu belum dapat dicapai. Coba jalur yang terbuka.');});
   const on=(id,fn)=>$(id)?.addEventListener('click',fn);
   on('btn-start',()=>{if(safeStorage(C.PREFIX+'_auto'))push('confirm-overlay');else begin();});on('confirm-new',begin);on('btn-continue',()=>loadFromSlot());on('btn-title-help',()=>push('help-overlay'));on('btn-help',()=>push('help-overlay'));
-  on('btn-open-journal',()=>{renderJournal();push('journal-overlay');});on('btn-open-map',openMap);on('btn-track',openMap);on('btn-open-encounter',()=>openEncounter());on('btn-open-pause',()=>{renderSlots();push('pause-overlay');});on('btn-sonar',scan);on('hud-prompt',interact);
+  on('btn-open-journal',()=>{renderJournal();push('journal-overlay');});on('btn-open-map',openMap);on('btn-track',openMap);on('btn-open-pause',()=>{renderSlots();push('pause-overlay');});on('btn-sonar',scan);on('hud-prompt',interact);
   on('btn-checkpoint',()=>{closeAll();runtime.dialogue=null;state.dialogue=null;checkpoint();});on('btn-title',()=>{const saved=saveToSlot(null,true);runtime.dialogue=null;runtime.challenge=null;runtime.auto=false;runtime.skip=false;runtime.interactOnArrival=false;runtime.interactTarget=null;closeAll();runtime.started=false;$('hud-topbar').classList.add('hidden');$('title-overlay').classList.remove('hidden');runtime.stack=[{id:'title-overlay'}];$('btn-continue').classList.toggle('hidden',!(saved||safeStorage(C.PREFIX+'_auto')||safeStorage(C.PREFIX+'_auto.bak')||safeStorage(C.LEGACY)));syncStack();focusables()[0]?.focus();});
   on('vn-next',advanceVN);on('vn-backlog-btn',openBacklog);on('vn-auto-btn',()=>{runtime.auto=!runtime.auto;runtime.skip=false;renderVN();});on('vn-skip-btn',()=>{runtime.skip=!runtime.skip;runtime.auto=false;renderVN();});
   on('challenge-cancel',cancelChallenge);on('btn-ending-explore',pop);on('btn-fullscreen',()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>toast('Layar penuh belum tersedia.'));else document.exitFullscreen?.();});
