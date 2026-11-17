@@ -240,10 +240,11 @@
  }
  const idle={marsiyah:'Air tidak bertanya nama. Beristirahatlah, lalu lanjutkan jalan yang sudah kau periksa.',bulamat:'Dengarkan airnya, Nara. Kerang ini masih menyimpan lagu orang yang kita tunggu.',jumel:'Lihat pijakanmu sebelum melihat cakrawala.',kesa:'Jaga ucapan dan muatanmu. Perintah di gerbang belum berubah.',ima:'Jangan membawa kegaduhan ke rumah, Nara. Dengarkan baik-baik apa yang kau temukan.',orsuk:'Kafilah membutuhkan jalan, bukan janji yang tak dapat dilalui.',maruani:'Batu menyimpan lebih banyak daripada yang diceritakan orang.',odgar:'Di depan api, bedakan apa yang kau lihat dan apa yang kau duga.',dargun:'Buktikan dulu di Tepi Salkara jika kau berani menantang ingatan Panji Gorkan.',salgur:'Kami berdiri di belakang utusan yang jujur, selama perkemahan tetap tenang.',hurgak:'Panji Dolgak menjaga besi dan kuda—jangan beri penyusup alasan menyalakan api.',kutlak:'Catat siapa yang datang dan pergi di tenda belakang.',borlan:'Roda pedati butuh kedamaian yang nyata, bukan janji kosong.',burgul:'Ikuti angin laut menuju tebing batu bernyanyi di utara.'};
  function scan(){if(!runtime.started||top())return;if(runtime.scanCooldown>0){toast(`Ruru sedang beristirahat · ${Math.ceil(runtime.scanCooldown)} detik`);return;}
-  runtime.scan=1.4;runtime.scanCooldown=4;runtime.guide=8;SFX.sonar();const o=cur();
+  const unlocked=state.rpg?.unlockedItems||[],hasLantern=unlocked.includes('alat_lentera_ruru'),hasRingItem=unlocked.includes('artefak_cincin_perunggu');
+  runtime.scan=1.4;runtime.scanCooldown=hasLantern?2.5:4;runtime.guide=hasRingItem?14:8;SFX.sonar();const o=cur();
   if(!o){toast('Ruru mendengar angin di perkemahan. Janji berikutnya masih menanti.');return;}
   if(o.map!==state.mapId){toast('Ruru menunjukkan jalur ke '+MAPS[o.map].name);return;}
-  const range=state.rpg?.unlockedItems?.includes('alat_lentera_ruru')?220:170;
+  const range=hasLantern?220:170;
   if(Math.hypot(state.player.x-o.x,state.player.y-o.y)<range){const first=!state.foundFlags['sonar_'+o.id];state.foundFlags['sonar_'+o.id]=true;if(first&&R&&state.rpg)R.grantXp(state.rpg,10);SFX.sonarReveal();saveToSlot(null,true);toast('Pijakan terbaca · '+o.itemLabel);}else toast('Ikuti arah pirus. Dekati pijakan lalu pindai lagi.');
  }
  function startDialogue(id,node){const entry=DB[id];if(!entry?.dialogue){toast('Catatan percakapan belum tersedia.');return;}
@@ -394,12 +395,12 @@
   $('jtab-bangsa').innerHTML=visibleNations.map(n=>`<article class="nation-entry"><p class="eyebrow">${esc(n.region)}</p><h3>${esc(n.name)}</h3><p><i>${esc(n.greeting)}</i></p><p>${esc(n.description)}</p><details><summary>Adat, ekonomi, dan kesepakatan</summary><p>${esc(n.custom)}</p><p>${esc(n.economy)}</p><p>${esc(n.contract)}</p><p>${esc(n.politics)}</p></details></article>`).join('');
   const itemIcon=id=>sprites['item-'+id]?.src||root.PIXEL_BAB0_ASSETS?.['item-'+id]||`assets/items/${id}.png`;
   const gearCards=(R?Object.values(R.ITEMS).filter(it=>rpg.unlockedItems.includes(it.id)):[]).map(it=>{
-   const tierCls=it.category==='mystery'?'mystery':it.modifiers?.length?'uncommon':'';
-   const badgeText=it.category==='mystery'?'Artefak Misteri':it.modifiers?.length?'Aktif Otomatis':it.tier;
-   const modsText=it.modifiers?.length?it.modifiers.map(m=>`+${m.amount} ${m.stat[0].toUpperCase()+m.stat.slice(1)}`).join(' · '):(it.category==='mystery'?'Peninggalan misterius tanpa stat tempur':'Aktif otomatis sebagai alat perintis');
-   return `<article class="gear-card ${it.category==='mystery'?'':'equipped'}"><div class="gear-head"><div class="gear-title-row"><img class="gear-icon" src="${esc(itemIcon(it.id))}" alt=""><h3>${esc(it.name)}</h3></div><span class="gear-tier ${tierCls}">${esc(badgeText)}</span></div><p>${esc(it.feature)}</p><div class="gear-mods">${esc(modsText)}</div></article>`;
+   const tierCls=it.tier?.includes('Bab 1')?'rare':it.category==='mystery'?'mystery':'uncommon';
+   const statStr=it.modifiers?.length?it.modifiers.map(m=>`+${m.amount} ${m.stat[0].toUpperCase()+m.stat.slice(1)}`).join(' · '):'Efek aktif di dunia & konfrontasi';
+   const originHtml=it.origin?`<div class="gear-origin" style="font-size:11px;opacity:.82;margin-top:2px">Asal Bangsa: ${esc(it.origin)}</div>`:'';
+   return `<article class="gear-card equipped"><div class="gear-head"><div class="gear-title-row"><img class="gear-icon" src="${esc(itemIcon(it.id))}" alt=""><div><h3>${esc(it.name)}</h3>${originHtml}</div></div><span class="gear-tier ${tierCls}">${esc(it.tier)}</span></div><p>${esc(it.feature)}</p><div class="gear-mods">Aktif Otomatis · ${esc(statStr)}</div></article>`;
   }).join('');
-  const consCards=R?Object.values(R.CONSUMABLES).map(c=>{const qty=rpg.consumables[c.id]||0;return `<article class="gear-card"><div class="gear-head"><div class="gear-title-row"><img class="gear-icon" src="${esc(itemIcon(c.id))}" alt=""><h3>${esc(c.name)}</h3></div><span class="gear-tier">Sisa ${qty}</span></div><p>${esc(c.desc)}</p><div class="button-row"><button type="button" data-use-cons="${c.id}" ${qty<=0||rpg.hp>=dStats.ketahanan?'disabled':''}>Pakai</button></div></article>`;}).join(''):'';
+  const consCards=R?Object.values(R.CONSUMABLES).map(c=>{const qty=rpg.consumables[c.id]||0;const originHtml=c.origin?`<div class="gear-origin" style="font-size:11px;opacity:.82;margin-top:2px">Asal Bangsa: ${esc(c.origin)}</div>`:'';return `<article class="gear-card"><div class="gear-head"><div class="gear-title-row"><img class="gear-icon" src="${esc(itemIcon(c.id))}" alt=""><div><h3>${esc(c.name)}</h3>${originHtml}</div></div><span class="gear-tier">Sisa ${qty}</span></div><p>${esc(c.desc)}</p><div class="button-row"><button type="button" data-use-cons="${c.id}" ${qty<=0||rpg.hp>=dStats.ketahanan?'disabled':''}>Pakai</button></div></article>`;}).join(''):'';
   $('jtab-perlengkapan').innerHTML=`<p class="muted" style="margin:0 0 10px">Seluruh perlengkapan &amp; pusaka yang kau temukan langsung aktif otomatis sepanjang perjalanan.</p><div class="gear-grid">${gearCards}${consCards}</div>`+(C.done(state,'cp-1-2')?'<div class="button-row"><button id="journal-shell">Putar / jeda Kerang Suara</button></div>':'');
   $('jtab-perlengkapan').querySelectorAll('[data-use-cons]').forEach(b=>b.onclick=()=>{const healed=R.useConsumable(rpg,b.dataset.useCons);if(healed>0){SFX.waterRefill();refreshMeters();renderJournal();saveToSlot(null,true);toast(`Pulih +${healed} Ketahanan.`);}});
   $('journal-shell')?.addEventListener('click',shellSong);
@@ -452,14 +453,16 @@
   if(top()==='vn-overlay'&&runtime.dialogue){const v=runtime.dialogue,n=v.graph.nodes[v.node];if(!n.choices?.length&&(runtime.auto||(runtime.skip&&v.wasRead))){runtime.autoTime+=dt;const wait=runtime.skip&&v.wasRead?.18:Math.max(2.5,n.text.length*.045);if(runtime.autoTime>wait)advanceVN();}}
   if(!runtime.started||top())return;
   state.elapsed+=dt;runtime.scanCooldown=Math.max(0,runtime.scanCooldown-dt);runtime.scan=Math.max(0,runtime.scan-dt);runtime.guide=Math.max(0,runtime.guide-dt);runtime.encounterGrace=Math.max(0,(runtime.encounterGrace||0)-dt);runtime.hazardCooldown=Math.max(0,(runtime.hazardCooldown||0)-dt);
-  const p=state.player,o=cur();const previous=[p.x,p.y],terr=C.terrain(state.mapId,p.x,p.y),safe=C.sheltered(state.mapId,p.x,p.y);
+  const p=state.player,o=cur(),unlocked=state.rpg?.unlockedItems||[],hasTas=unlocked.includes('alat_tas_peredam'),hasSelendang=unlocked.includes('gear_selendang_sela'),hasLencana=unlocked.includes('gear_lencana_salkara');
+  const previous=[p.x,p.y],terr=C.terrain(state.mapId,p.x,p.y),safe=C.sheltered(state.mapId,p.x,p.y);
   let hazardSpeed=1,hazardPush=[0,0],activeHazards=[];
   for(const h of MAPS[state.mapId].hazards||[]){
    const hs=hazardState(h);if(!hs.active)continue;
    if(Math.hypot(p.x-h.x,p.y-h.y)<h.r&&p.z<4&&!safe){
     activeHazards.push(h);
-    hazardSpeed=Math.min(hazardSpeed,h.kind==='slick'?.76:h.kind==='rock_slide'?.72:.8);
-    if(h.push){const scale=runtime.path.length?.32:1;hazardPush[0]+=h.push[0]*scale;hazardPush[1]+=h.push[1]*scale;}
+    const slow=h.kind==='slick'?.76:h.kind==='rock_slide'?.72:.8;
+    hazardSpeed=Math.min(hazardSpeed,hasSelendang?Math.min(1,slow+(1-slow)*.5):slow);
+    if(h.push){const scale=(runtime.path.length?.32:1)*(hasSelendang?.5:1);hazardPush[0]+=h.push[0]*scale;hazardPush[1]+=h.push[1]*scale;}
    }
   }
   if(runtime.flight){const f=runtime.flight;f.t=Math.min(1,f.t+dt/f.duration);p.x=f.start[0]+(f.to[0]-f.start[0])*f.t;p.y=f.start[1]+(f.to[1]-f.start[1])*f.t;p.z=Math.sin(f.t*Math.PI)*7;if(f.t===1){p.z=0;runtime.flight=null;}}
@@ -473,8 +476,8 @@
    const downhill=dy>0&&terr.height>10;const speed=(sprint?240:170)*terr.speed*(downhill&&sprint?1.22:1)*(storm()&&!safe?.82:1)*hazardSpeed;
    const distance=Math.min(speed*dt,pathDistance);move(dx*distance,dy*distance);
    if(hazardPush[0]||hazardPush[1])move(hazardPush[0]*dt,hazardPush[1]*dt);
-   if(activeHazards.length&&!runtime.path.length){const hit=activeHazards.find(h=>h.damage>0);if(hit&&runtime.hazardCooldown<=0){runtime.hazardCooldown=1.65;feel.addTrauma(.22);SFX.hit();if(state.rpg){const drop=Math.min(hit.damage,Math.max(0,state.rpg.hp-5));if(drop>0)state.rpg.hp-=drop;refreshMeters();}toast(hit.name+' menerpa! Lompat [Spasi] atau tunggu reda.');}}
-   if(windy()&&!safe){if(!runtime.path.length)move((9+Math.sin(runtime.time*1.7)*7)*dt*(storm()?1:.4),1.7*dt);if(o?.seqIndex>=4&&o.seqIndex<=8)state.cargo=Math.max(0,state.cargo-dt*(sprint?1.5:.35)*(storm()?1:.5));}
+   if(activeHazards.length&&!runtime.path.length){const hit=activeHazards.find(h=>h.damage>0);if(hit&&runtime.hazardCooldown<=0){runtime.hazardCooldown=1.65;feel.addTrauma(.22);SFX.hit();if(state.rpg){const rawDmg=hasSelendang?Math.min(1,hit.damage):hit.damage;const drop=Math.min(rawDmg,Math.max(0,state.rpg.hp-5));if(drop>0)state.rpg.hp-=drop;refreshMeters();}toast(hit.name+' menerpa! Lompat [Spasi] atau tunggu reda.');}}
+   if(windy()&&!safe){const windMul=hasTas?.55:1;if(!runtime.path.length)move((9+Math.sin(runtime.time*1.7)*7)*dt*(storm()?1:.4)*windMul,1.7*dt*windMul);if(o?.seqIndex>=4&&o.seqIndex<=8)state.cargo=Math.max(0,state.cargo-dt*(sprint?1.5:.35)*(storm()?1:.5)*(hasTas?.45:1));}
    if(safe)state.cargo=Math.min(100,state.cargo+dt*3);
    if(state.cargo===0){SFX.stealthAlert();feel.addTrauma(.24);checkpoint();toast('Muatan perlu diikat ulang. Kembali ke pijakan aman.');return;}
   }
@@ -483,7 +486,7 @@
   if(runtime.exitArmed&&!runtime.flight)for(const ex of m.exits){if(Math.hypot(p.x-ex.x,p.y-ex.y)<ex.r){if(!C.access(state,ex.to)){runtime.exitArmed=false;runtime.path=[];toast(C.gateHint(ex.to));}else switchMap(ex.to,ex.spawn);return;}}
   for(const patrol of runtime.patrols){const target=patrol.waypoints[patrol.wp],dx=target[0]-patrol.x,dy=target[1]-patrol.y,dist=Math.hypot(dx,dy);if(dist<5)patrol.wp=(patrol.wp+1)%patrol.waypoints.length;else{patrol.x+=dx/dist*patrol.speed*dt;patrol.y+=dy/dist*patrol.speed*dt;patrol.angle=Math.atan2(dy,dx);}
    if(o?.stealth&&o.map===state.mapId&&runtime.encounterGrace<=0){const d=Math.hypot(p.x-patrol.x,p.y-patrol.y),a=Math.atan2(p.y-patrol.y,p.x-patrol.x)-patrol.angle,diff=Math.abs(Math.atan2(Math.sin(a),Math.cos(a)));const spotted=!safe&&d<patrol.visionDist&&diff<patrol.visionAngle&&C.lineClear(state.mapId,[patrol.x,patrol.y],[p.x,p.y]);
-    if(spotted){const prevA=patrol.awareness||0;patrol.awareness=Math.min(1,prevA+dt*(runtime.keys.ShiftLeft||runtime.keys.ShiftRight?1.4:.92));if(prevA<.35&&patrol.awareness>=.35)toast('Awas! '+patrol.name+' menoleh ke arahmu!');if(patrol.awareness>=1){patrol.awareness=0;feel.addTrauma(.28);SFX.stealthAlert();runtime.encounterGrace=2.5;openEncounter(state.mapId==='sela'?'penghadang_sela':'pengintai_dewan',{kind:'patrol',id:patrol.id,name:patrol.name});toast('Terlihat pengintai! Hadapi atau tawarkan negosiasi.');return;}}
+    if(spotted){const prevA=patrol.awareness||0;patrol.awareness=Math.min(1,prevA+dt*(runtime.keys.ShiftLeft||runtime.keys.ShiftRight?1.4:.92)*(hasLencana?.7:1));if(prevA<.35&&patrol.awareness>=.35)toast('Awas! '+patrol.name+' menoleh ke arahmu!');if(patrol.awareness>=1){patrol.awareness=0;feel.addTrauma(.28);SFX.stealthAlert();runtime.encounterGrace=2.5;openEncounter(state.mapId==='sela'?'penghadang_sela':'pengintai_dewan',{kind:'patrol',id:patrol.id,name:patrol.name});toast('Terlihat pengintai! Hadapi atau tawarkan negosiasi.');return;}}
     else patrol.awareness=Math.max(0,(patrol.awareness||0)-dt*.65);
    }else patrol.awareness=0;
   }
@@ -735,7 +738,7 @@
   const fallback=R.DEFAULT_MAP_ENCOUNTERS?.[state.mapId]||'bandit_gurun';
   const id=forcedId||(state.mapId==='gerbang'||state.mapId==='simpul'?(C.done(state,'cp-5-2')?'kapten_blokade':'pengintai_dewan'):fallback);
   const tmpl=R.ENCOUNTERS[id]||R.ENCOUNTERS.bandit_gurun;
-  runtime.encounter={id:tmpl.id,tmpl,hp:tmpl.maxHp,round:1,stunned:0,guarded:false,enemyBraced:false,focusBuff:false,negDiscount:0,ruruCd:0,busy:false,done:false,source,log:[`${tmpl.name} menghadang jalur (${tmpl.region}).`]};
+  runtime.encounter={id:tmpl.id,tmpl,hp:tmpl.maxHp,round:1,stunned:0,guarded:false,enemyBraced:false,focusBuff:false,negDiscount:C.bound(state)?2:0,ruruCd:0,busy:false,done:false,source,log:[`${tmpl.name} menghadang jalur (${tmpl.region}).`]};
   push('encounter-overlay');renderEncounter();
  }
  function retreatEncounter(){
@@ -815,10 +818,12 @@
    nextEnemy();return true;
   }
   if(kind==='guard'){
-   enc.guarded=true;enc.focusBuff=true;enc.negDiscount=Math.min(4,enc.negDiscount+2);
-   enc.log.push('Nara membaca gerak lawan: benturan ditahan 55%, serangan berikut menguat, peluang negosiasi terbuka.');
+   enc.guarded=true;enc.focusBuff=true;enc.negDiscount=Math.min(C.bound(state)?6:4,enc.negDiscount+2);
+   const ringHeal=C.bound(state)?Math.max(0,Math.min(d.ketahanan,rpg.hp+3)-rpg.hp):0;
+   if(ringHeal>0)rpg.hp+=ringHeal;
+   enc.log.push(`Nara membaca gerak lawan: benturan ditahan 55%, serangan berikut menguat, peluang negosiasi terbuka${ringHeal>0?` (+${ringHeal} HP detak cincin)`:''}.`);
    SFX.guard();
-   triggerEncAnim({stageId:'enc-ally-visual',animCls:'anim-guard',popId:'enc-ally-pop',popText:'Siaga + Celah',popKind:'guard'});
+   triggerEncAnim({stageId:'enc-ally-visual',animCls:'anim-guard',popId:'enc-ally-pop',popText:ringHeal>0?`Siaga +${ringHeal} HP`:'Siaga + Celah',popKind:'guard'});
    nextEnemy();return true;
   }
   if(kind==='ruru'){
@@ -843,7 +848,7 @@
    refreshMeters();saveToSlot(null,true);renderEncounter();return true;
   }
   if(kind==='heal'){
-   const itemId=(rpg.consumables.garam_mineral||0)>0?'garam_mineral':(rpg.consumables.teh_gurun||0)>0?'teh_gurun':(rpg.consumables.roti_nilasar||0)>0?'roti_nilasar':null;
+   const itemId=(rpg.consumables.garam_mineral||0)>0?'garam_mineral':(rpg.consumables.roti_nilasar||0)>0?'roti_nilasar':null;
    if(!itemId||rpg.hp>=d.ketahanan)return false;
    const healed=R.useConsumable(rpg,itemId);
    const label=R.CONSUMABLES?.[itemId]?.name||itemId;
@@ -907,14 +912,14 @@
    b.disabled=!!(disabled||enc.busy);b.onclick=fn;act.append(b);
   };
   addBtn('[1] Serang',enc.focusBuff?'Celah terbuka · 1.45x + crit':enc.enemyBraced?'Tameng lawan · 0.65x':'Serangan cepat Nara','primary',false,()=>combatAction('attack'));
-  addBtn('[2] Baca Celah','Tahan 55% · perkuat pukulan','',false,()=>combatAction('guard'));
+  addBtn('[2] Baca Celah',C.bound(state)?'Tahan 55% · Celah · +3 HP':'Tahan 55% · perkuat pukulan','',false,()=>combatAction('guard'));
   const hasPeluit=rpg.unlockedItems.includes('alat_lentera_ruru');
   addBtn('[3] Siasat Ruru',enc.ruruCd>0?`Menunggu ${enc.ruruCd} giliran`:(hasPeluit?'Peluit 1.45x + Alihkan 1x':'Ganggu 1.2x + Alihkan 1x'),'',enc.ruruCd>0,()=>combatAction('ruru'));
   const reqKep=Math.max(6,e.negotiateKepekaan-enc.negDiscount);
   addBtn('[4] Negosiasi',`Butuh Kepekaan ${reqKep} (milik ${d.kepekaan})`,'',d.kepekaan<reqKep,()=>combatAction('negotiate'));
-  const garamQty=rpg.consumables.garam_mineral||0,tehQty=rpg.consumables.teh_gurun||0,rotiQty=rpg.consumables.roti_nilasar||0;
-  const healSub=garamQty>0?`Garam Balkut (${garamQty}) · +24 HP`:tehQty>0?`Teh Gurun (${tehQty}) · +18 HP`:rotiQty>0?`Roti Nilasar (${rotiQty}) · +12 HP`:'Bekal habis';
-  addBtn('[5] Pulih Napas',healSub,'',(garamQty+tehQty+rotiQty)<=0||rpg.hp>=d.ketahanan,()=>combatAction('heal'));
+  const garamQty=rpg.consumables.garam_mineral||0,rotiQty=rpg.consumables.roti_nilasar||0;
+  const healSub=garamQty>0?`Garam Balkut (${garamQty}) · +24 HP`:rotiQty>0?`Roti Nilasar (${rotiQty}) · +12 HP`:'Bekal habis';
+  addBtn('[5] Pulih Napas',healSub,'',(garamQty+rotiQty)<=0||rpg.hp>=d.ketahanan,()=>combatAction('heal'));
  }
  root.BAB0_ENGINE={state,runtime,ALL_OBJECTIVES:OBJECTIVES,SFX,sliderToGain,linearToDb,updateAudio,unlockAudio,switchMap,advanceObjective:finish,triggerSonar:scan,saveToSlot,loadFromSlot,
   interact,startChallenge,puzzleWin,puzzleMove,timingHit,startDialogue,advanceVN,tick,nearby,jump,nearLink,useLink,begin,equipItem,unequipItem,openEncounter,combatAction,retreatEncounter,

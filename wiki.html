@@ -201,6 +201,10 @@
       width:88px;height:88px;object-fit:cover;object-position:top center;flex-shrink:0;
       border-radius:10px;border:2px solid var(--bronze);background:#251d14;cursor:zoom-in;
     }
+    .item-portrait{
+      width:72px;height:72px;object-fit:contain;image-rendering:pixelated;flex-shrink:0;
+      border-radius:10px;border:2px solid var(--bronze);background:#1e1812;padding:6px;cursor:zoom-in;
+    }
     .char-body{flex:1;min-width:0}
     .char-body h4{margin-top:0;font-size:18px}
     .char-quote{
@@ -265,7 +269,7 @@
         <div class="hero-copy">
           <p class="eyebrow">ARSIP KANON · ERA TAHUN KE-103 POST-SENYAP</p>
           <h1>Ensiklopedia &amp; Atlas Tanah Sada</h1>
-          <p class="hero-sub">Kumpulan lengkap sejarah, peta wilayah, budaya Lima Bangsa, rahasia Perunggu Gaung &amp; Echoes, profil tokoh, alur Bab 0–5, hingga glosarium resmi.</p>
+          <p class="hero-sub">Kumpulan lengkap sejarah, peta wilayah, budaya Lima Bangsa, perlengkapan &amp; pusaka lintas bangsa, rahasia Perunggu Gaung &amp; Echoes, profil tokoh, alur Bab 0–5, hingga glosarium resmi.</p>
         </div>
       </div>
       <div class="hero-actions">
@@ -293,6 +297,7 @@
       <button class="tab-btn" data-cat="sejarah" type="button">Sejarah &amp; Kronologi</button>
       <button class="tab-btn" data-cat="sistem" type="button">Echoes &amp; Perunggu</button>
       <button class="tab-btn" data-cat="bangsa" type="button">Lima Bangsa &amp; Dewan</button>
+      <button class="tab-btn" data-cat="pusaka" type="button">Perlengkapan &amp; Pusaka</button>
       <button class="tab-btn" data-cat="tokoh" type="button">Tokoh Kunci</button>
       <button class="tab-btn" data-cat="cerita" type="button">Alur Bab 0–5 &amp; Ending</button>
       <button class="tab-btn" data-cat="glosarium" type="button">Glosarium &amp; Penamaan</button>
@@ -358,11 +363,11 @@
         <p class="atlas-caption">Klik peta untuk memperbesar. Sebaran 5 wilayah bangsa: Asharim (Barat), Cirusia (Utara), Tseren (Timur), Bahtari (Selatan), Lulan Tua (Pusat), dan Benteng Tata (Barat Daya).</p>
       </div>
       <div class="grid-3">
-        <article class="card" data-search="pos nilasar batu biru asharim marsiyah suaka air bab 0">
+        <article class="card" data-search="pos nilasar batu biru asharim marsiyah suaka air roti hangat tas peredam bab 0">
           <img class="card-media zoomable" src="assets/world/landscapes/01-asharim-pos-nilasar.webp" alt="Pos Nilasar">
           <h4>Pos Nilasar (Batu Biru)</h4>
           <div class="badge-row"><span class="pill">Asharim · Barat</span><span class="pill">Bab 0</span></div>
-          <p>Pos singgah tua berkubah biru pimpinan <strong>Marsiyah</strong> dari Kubu Pos Tua. Pusat karavan garam sebelum badai memutus Gerbang Timur.</p>
+          <p>Pos singgah tua berkubah biru pimpinan <strong>Marsiyah</strong> dari Kubu Pos Tua. Pusat karavan garam, tempat menyimpan <strong>Tas Peredam Tseren</strong> Sahdan &amp; <strong>Cincin Perunggu</strong>, serta dapur pembagi <strong>Roti Hangat Nilasar</strong>.</p>
         </article>
         <article class="card" data-search="telaga sumi urat sumi bu lamit balai cawan asharim bab 0">
           <img class="card-media zoomable" src="assets/world/landscapes/01-asharim-telaga-sumi.webp" alt="Telaga Sumi">
@@ -370,23 +375,23 @@
           <div class="badge-row"><span class="pill">Asharim · Barat</span><span class="pill">Bab 0</span></div>
           <p>Kompleks teras air pirus tempat saluran bawah tanah buatan Lulanai mulai beriak aneh akibat tekanan Bejana Batu.</p>
         </article>
-        <article class="card" data-search="menara simpul 9 sembilan senja jumel sahdan bab 0">
+        <article class="card" data-search="menara simpul 9 sembilan senja jumel sahdan lentera angin peluit ruru bab 0">
           <img class="card-media zoomable" src="assets/world/landscapes/14-simpul-sembilan.webp" alt="Menara Simpul ke-9">
           <h4>Menara Senja &amp; Menara Simpul ke-9</h4>
           <div class="badge-row"><span class="pill">Asharim Utara</span><span class="pill">Bab 0</span></div>
-          <p>Menara penyambung tua tempat lentera batu memancarkan tiga denyut tanda bahaya dan Cincin Perunggu terkunci pada nadi Nara.</p>
+          <p>Pos pengamat tempat <strong>Lentera Angin &amp; Peluit Ruru</strong> dikalibrasi, catatan Ban Jumel mengungkap jejak <strong>Tas Peredam</strong> Sahdan, serta Menara ke-9 mengunci <strong>Cincin Perunggu</strong> pada nadi Nara.</p>
         </article>
-        <article class="card" data-search="dusun sela balai cawan nenek ima alat tenun kanal bab 1">
+        <article class="card" data-search="dusun sela balai cawan nenek ima alat tenun selendang tenun sela kanal bab 1">
           <img class="card-media zoomable" src="assets/world/landscapes/01-asharim-dusun-sela.webp" alt="Dusun Sela">
           <h4>Dusun Sela &amp; Kanal Balai Cawan</h4>
           <div class="badge-row"><span class="pill">Asharim Timur</span><span class="pill">Bab 1</span></div>
-          <p>Kampung halaman Nara yang sesak oleh pengungsi penambang garam; tempat Nenek Ima menyimpan rahasia Penutup Telinga Perunggu.</p>
+          <p>Kampung halaman Nara yang sesak pengungsi garam; tempat Nenek Ima menyimpan rahasia Penutup Telinga Perunggu dan menenun <strong>Selendang Tenun Sela</strong> penahan arus kanal.</p>
         </article>
-        <article class="card" data-search="padang salkara tujuh panji kemah felt odgar dargun salgur bab 1">
+        <article class="card" data-search="padang salkara tujuh panji kemah felt odgar dargun salgur meterai penengah salkara kapsul garam balkut bab 1">
           <img class="card-media zoomable" src="assets/world/landscapes/02-cirusia-padang-salkara.webp" alt="Padang Salkara">
           <h4>Padang Salkara (47 Tenda Kempa)</h4>
           <div class="badge-row"><span class="pill">Cirusia · Utara</span><span class="pill">Bab 1</span></div>
-          <p>Jantung perkemahan konfederasi berkuda <strong>Tujuh Panji</strong> mengelilingi api sidang dan monolit <em>Batu Nama</em>.</p>
+          <p>Jantung perkemahan konfederasi berkuda <strong>Tujuh Panji</strong> mengelilingi api sidang dan monolit <em>Batu Nama</em>; tempat pembagian ransum <strong>Kapsul Garam Balkut</strong> dan pengesahan <strong>Meterai Penengah Salkara</strong>.</p>
         </article>
         <article class="card" data-search="tepi salkara pesisir dapur karavan bahtari dargun bab 1 bab 2">
           <img class="card-media zoomable" src="assets/pixel-bab0/bg-tepisalkara.jpg" alt="Tepi Salkara">
@@ -553,48 +558,52 @@
         <span class="section-tag">Peradaban &amp; Politik</span>
       </div>
       <div class="grid-2">
-        <article class="card card-accent" style="--accent:#3D6E8F" data-search="asharim pos nilasar telaga sumi garam malam tiga cawan hukum air">
+        <article class="card card-accent" style="--accent:#3D6E8F" data-search="asharim pos nilasar telaga sumi garam malam tiga cawan hukum air roti hangat selendang tenun sela rompi kulit">
           <img class="card-media zoomable" src="assets/world/nations/asharim-concept-v1.webp" alt="Konsep Visual Bangsa Asharim">
           <h4>Bangsa Asharim · Barat (~453 Pra-Senyap)</h4>
           <p class="eyebrow" style="color:#3D6E8F">“Air tidak bertanya nama.”</p>
           <p><strong>Wilayah &amp; Peran:</strong> Lembah Pasir, Telaga Sumi, Pos Nilasar, Menara Senja, Dusun Sela. Penguasa jalur transit darat &amp; tambang <strong>Garam Batu Batangan</strong> (satuan <em>Garis</em>).</p>
           <p><strong>Kepercayaan &amp; Adat:</strong> Menyembah nilai <em>Sang Mata Air</em> dengan <strong>Pakta Sumur Terbuka</strong> (mata air zona damai mutlak). Tamu disambut lewat adat <strong>Malam Tiga Cawan</strong> (Air untuk kabar rute, Garam untuk pasar, Kabar untuk cerita) serta <em>Buku Tamu Batu</em>.</p>
+          <p><strong>Kerajinan &amp; Perlengkapan Jalur:</strong> Memasok gandum gurun panggang (<strong>Roti Hangat Nilasar</strong>), kain tenun badai Dusun Sela (<strong>Selendang Tenun Sela</strong>), garam tambang campuran tebing (<strong>Kapsul Garam Balkut</strong>), serta kulit samak gurun untuk <strong>Rompi Kulit Kafilah</strong>.</p>
           <p><strong>Perpecahan:</strong> <em>Kubu Pos Tua</em> (Marsiyah, netral) vs <em>Kubu Pos Dagang</em> (menyerahkan daftar tamu ke Dewan Tetua demi keringanan pajak).</p>
         </article>
 
-        <article class="card card-accent" style="--accent:#A8452F" data-search="cirusia salkara tepisalkara tujuh panji janji api odgar dargun salgur orsuk">
+        <article class="card card-accent" style="--accent:#A8452F" data-search="cirusia salkara tepisalkara tujuh panji janji api odgar dargun salgur orsuk meterai penengah kapsul garam rompi kulit">
           <img class="card-media zoomable" src="assets/world/nations/cirusia-concept-v1.webp" alt="Konsep Visual Bangsa Cirusia">
           <h4>Bangsa Cirusia · Utara (~418 Pra-Senyap)</h4>
           <p class="eyebrow" style="color:#A8452F">“Bohonglah di depan api, kalau berani.”</p>
           <p><strong>Wilayah &amp; Peran:</strong> Padang Salkara (47 tenda kempa) &amp; teluk Tepi Salkara. Konfederasi 7 klan nomaden berkuda pemasok ternak, wol, kain kempa, dan pengawalan karavan berat.</p>
           <p><strong>Kepercayaan &amp; Adat:</strong> Sumpah lisan di bawah <strong>Hukum Janji Api</strong> dan tiga saksi mata—pantang menulis janji adat. Mengukir nama gugur di monolit <strong>Batu Nama</strong> dan melepas kafilah lewat upacara <em>Memanggil Angin</em>.</p>
+          <p><strong>Kerajinan &amp; Mandat Jalur:</strong> Jahitan kulit lapis tiga pelindung angin padang (mengilhami <strong>Rompi Kulit Kafilah</strong>), ransum karavan tebing <strong>Kapsul Garam Balkut</strong> milik Panji Balkut, serta <strong>Meterai Penengah Salkara</strong> berukir monolit Panji Kadum yang menahan patroli di jalur sengketa.</p>
           <p><strong>Titik Buta Sejarah:</strong> Menyimpan amarah atas <em>Kabar Tujuh Musim</em> demi menutupi rasa malu <em>Adat Muka Api</em> atas kelalaian Panji Gorkan 107 tahun lalu.</p>
         </article>
 
-        <article class="card card-accent" style="--accent:#2E8B8B" data-search="bahtari lamuna bandar lada bagan arus lagu titipan kerang suara utang kabar">
+        <article class="card card-accent" style="--accent:#2E8B8B" data-search="bahtari lamuna bandar lada bagan arus lagu titipan kerang suara utang kabar lentera angin minyak ikan palung">
           <img class="card-media zoomable" src="assets/world/nations/bahtari-concept-v1.webp" alt="Konsep Visual Bangsa Bahtari">
           <h4>Bangsa Bahtari · Selatan (~487–436 Pra-Senyap)</h4>
           <p class="eyebrow" style="color:#2E8B8B">“Pasang selalu kembali.”</p>
           <p><strong>Wilayah &amp; Peran:</strong> Kepulauan Lamuna &amp; Bandar Lada. Pelaut samudra, penemu peta 3D <em>Bagan Arus</em>, pemasok <strong>Lada Biru Tebing</strong>, garam laut, serta <strong>Minyak Ikan Palung</strong> untuk lentera seluruh benua.</p>
           <p><strong>Kepercayaan &amp; Adat:</strong> Menghormati <em>Sang Pasang</em> lewat <strong>Lagu Titipan</strong>, <strong>Kerang Suara</strong>, dan profesi <em>Pembawa Lagu</em>.</p>
+          <p><strong>Kaitan Perlengkapan:</strong> <strong>Minyak Ikan Palung Bahtari</strong> tidak mudah menguap di gurun Asharim dan menjadi bahan bakar utama <strong>Lentera Angin &amp; Peluit Ruru</strong> yang disita Kesa di Gerbang Timur dan disabotase di Salkara.</p>
           <p><strong>Perpecahan:</strong> <em>Rumah Dagang</em> (pemilik modal yang menjerat pelaut lewat <strong>Utang Kabar</strong> &amp; <strong>Kontrak Sauh</strong>) vs <em>Rumah Layar</em> (serikat nakhoda &amp; penyelam).</p>
         </article>
 
-        <article class="card card-accent" style="--accent:#6F876A" data-search="tseren silin desa kertas awan kanon aksara wuren lisen cakar tebing jubah layar">
+        <article class="card card-accent" style="--accent:#6F876A" data-search="tseren silin desa kertas awan kanon aksara wuren lisen cakar tebing jubah layar tas peredam tseren">
           <img class="card-media zoomable" src="assets/world/nations/tseren-concept-v1.webp" alt="Konsep Visual Bangsa Tseren">
           <h4>Bangsa Tseren · Timur (~432 Pra-Senyap)</h4>
           <p class="eyebrow" style="color:#6F876A">“Tinta tak pernah lupa.”</p>
-          <p><strong>Wilayah &amp; Peran:</strong> Pegunungan Silin (*Kabut Lirih*), Desa Kertas Awan, dan Rumah Naskah. Produsen kertas serat tahan lembap, tinta mineral, benang peredam gaung, <strong>Jubah Layar</strong>, &amp; <strong>Cakar Tebing</strong>.</p>
+          <p><strong>Wilayah &amp; Peran:</strong> Pegunungan Silin (*Kabut Lirih*), Desa Kertas Awan, dan Rumah Naskah. Produsen kertas serat tahan lembap, tinta mineral, <strong>benang peredam gaung</strong>, <strong>Jubah Layar</strong>, &amp; <strong>Cakar Tebing</strong>.</p>
           <p><strong>Kepercayaan &amp; Adat:</strong> Menjunjung <strong>Kanon Aksara</strong> (pantang memusnahkan satu huruf pun), adat <em>Dua Pembacaan</em> saat serah-terima, serta <em>Tinta Kelahiran</em>.</p>
+          <p><strong>Kaitan Perlengkapan:</strong> Benang tenun peredam gaung khas Silin melapisi bagian dalam <strong>Tas Peredam Tseren</strong> yang dipakai Sahdan—dan kelak Nara—untuk membungkam gema <em>Cincin Perunggu</em> serta menahan badai pasir.</p>
           <p><strong>Perpecahan:</strong> <em>Aliran Murni</em> (menjaga naskah asli apa adanya) vs <em>Aliran Selaras</em> (menyunting arsip sejarah demi stabilitas bersama Dewan Tetua).</p>
         </article>
 
-        <article class="card card-accent" style="--accent:#8A6843" data-search="lulanai lulan tua tiga kaum pantang terbuka sesal tiga napas hening">
+        <article class="card card-accent" style="--accent:#8A6843" data-search="lulanai lulan tua tiga kaum pantang terbuka sesal tiga napas hening cincin perunggu selendang tenun sela">
           <img class="card-media zoomable" src="assets/world/nations/lulanai-concept-v1.webp" alt="Konsep Visual Bangsa Lulanai">
           <h4>Bangsa Lulanai · Pusat (~512 Pra-Senyap)</h4>
           <p class="eyebrow" style="color:#8A6843">“Dengar dan resapi.”</p>
           <p><strong>Wilayah &amp; Sejarah:</strong> Kaldera basalt Lulan Tua. Pemahat dan ahli metalurgi pembangun peradaban 99 Menara Simpul yang diburu setelah Hari Senyap akibat tuduhan <em>Perkara Pemutusan</em> &amp; fitnah <em>Penelan Suara</em>.</p>
-          <p><strong>Adat &amp; Penyintas:</strong> Jeda <strong>Tiga Napas Hening</strong>, pesan tersembunyi (<em>Tanda</em>) di batu, dan <em>Penutup Telinga Perunggu</em>.</p>
+          <p><strong>Adat &amp; Warisan Benda:</strong> Jeda <strong>Tiga Napas Hening</strong>, pesan <em>Tanda</em> di batu, <strong>Penutup Telinga Perunggu</strong>, <strong>Cincin Perunggu</strong> tempaan Wilanu, serta motif serat pelindung penyintas yang disamarkan Nenek Ima ke dalam <strong>Selendang Tenun Sela</strong>.</p>
           <p class="spoiler-block"><strong>Tiga Faksi Tersembunyi:</strong> <em>Kaum Pantang</em> (Mairuma), <em>Kaum Terbuka</em> (Ruania), dan <em>Kaum Sesal</em> (Lunaia).</p>
         </article>
 
@@ -620,6 +629,96 @@
             <tr data-search="kadum odgar batu nama penengah"><td><strong>Panji Kadum</strong></td><td><strong>Odgar, si Batu Nama</strong> (±75)</td><td>Monolit abu-abu; pengesah sumpah &amp; daftar gugur</td><td>Penengah (Suara ke-7) · penentu akhir sidang</td></tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <!-- 5B. PERLENGKAPAN, PUSAKA & BEKAL LINTAS BANGSA -->
+    <section id="section-pusaka" class="wiki-section" data-cat="pusaka">
+      <div class="section-head">
+        <h2>5B. Perlengkapan, Pusaka &amp; Bekal Lintas Bangsa (Bab 0–1)</h2>
+        <span class="section-tag">8 Item Kanon Aktif</span>
+      </div>
+      <p>Seluruh perlengkapan di Tanah Sada memadukan keahlian kelima bangsa dan langsung <strong>aktif otomatis</strong> begitu diperoleh Nara sesuai alur bab—memengaruhi cara bertahan di badai pasir, pindai medan Ruru, bahaya alam, patroli musuh, hingga konfrontasi taktis.</p>
+      <div class="grid-2">
+        <article class="card char-card" data-search="rompi kulit kafilah asharim cirusia dusun sela bekal awal">
+          <img class="item-portrait zoomable" src="assets/items/gear_rompi_kulit.png" alt="Rompi Kulit Kafilah">
+          <div class="char-body">
+            <h4>Rompi Kulit Kafilah</h4>
+            <div class="badge-row"><span class="pill">Asharim × Cirusia</span><span class="pill">Bekal Awal</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Kulit samak gurun Dusun Sela yang mengikuti jahitan pelindung lapis tiga penunggang perintis Cirusia—pelindung harian Nara menempuh jalur tebing.</p>
+            <p><strong>Efek Gameplay:</strong> Menambah +5 Ketahanan, +2 Ketangkasan, dan +2 Pertahanan secara permanen.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="tas peredam tseren sahdan marsiyah silin lulanai badai pasir bab 0">
+          <img class="item-portrait zoomable" src="assets/items/alat_tas_peredam.png" alt="Tas Peredam Tseren">
+          <div class="char-body">
+            <h4>Tas Peredam Tseren</h4>
+            <div class="badge-row"><span class="pill">Tseren × Lulanai</span><span class="pill">Rilis Bab 0 · Pos Nilasar</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Tas bergesper kuningan peninggalan <strong>Sahdan</strong> (tercatat di buku harian Ban Jumel) berlapiskan <strong>benang peredam gaung Tseren</strong> dari Silin untuk membungkam getaran benda <em>Perunggu Gaung</em> Lulanai.</p>
+            <p><strong>Efek Gameplay:</strong> Memangkas dorongan angin luar ruangan 45% dan memperlambat susut muatan akibat badai pasir hingga 55% lebih awet.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="lentera angin peluit ruru bahtari asharim minyak ikan palung menara senja bab 0">
+          <img class="item-portrait zoomable" src="assets/items/alat_lentera_ruru.png" alt="Lentera Angin dan Peluit Ruru">
+          <div class="char-body">
+            <h4>Lentera Angin &amp; Peluit Ruru</h4>
+            <div class="badge-row"><span class="pill">Bahtari × Asharim</span><span class="pill">Rilis Bab 0 · Menara Senja</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Menyala memakai <strong>Minyak Ikan Palung Bahtari</strong> yang tidak cepat menguap di terik Asharim, dipadu peluit batu berfrekuensi tinggi yang dikalibrasi untuk Ruru di lereng Menara Senja.</p>
+            <p><strong>Efek Gameplay:</strong> Memperluas radar <code>[Q]</code> Ruru (170 → 220 px), mempercepat jeda pindai (4 → 2,5 dtk), dan memperkuat <em>Siasat Ruru</em> di combat (1.45x).</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="cincin perunggu lulanai wilanu marsiyah simpul 9 kunci nadi bab 0">
+          <img class="item-portrait zoomable" src="assets/items/artefak_cincin_perunggu.png" alt="Cincin Perunggu">
+          <div class="char-body">
+            <h4>Cincin Perunggu</h4>
+            <div class="badge-row"><span class="pill">Lulanai · 5 Arsitek Agung</span><span class="pill">Rilis Bab 0 · Kunci Cerita</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Ditempa <strong>Wilanu</strong> dari pahat 5 Arsitek Agung; diuji Marsiyah pada tangan Nara dan terkunci permanen pada detak nadinya di kaki Menara Simpul ke-9.</p>
+            <p><strong>Efek Gameplay:</strong> Membuka gerbang Simpul ke-9 dan menggandakan durasi garis penuntun <code>[Q]</code> (8 → 14 dtk). Usai terikat nadi, meringankan Negosiasi (-2) dan memulihkan +3 HP tiap memilih <em>Baca Celah</em>.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="selendang tenun sela nenek ima asharim lulanai dusun sela kanal bab 1">
+          <img class="item-portrait zoomable" src="assets/items/gear_selendang_sela.png" alt="Selendang Tenun Sela">
+          <div class="char-body">
+            <h4>Selendang Tenun Sela</h4>
+            <div class="badge-row"><span class="pill">Asharim (Sela) × Lulanai</span><span class="pill">Rilis Bab 1 · Dusun Sela</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Tenunan <strong>Nenek Ima</strong> setelah membuka rahasia lantai alat tenun—corak gurunnya menyamarkan pola serat penyintas Lulanai sebagai pelindung perintis di kanal timur hingga tebing Salkara.</p>
+            <p><strong>Efek Gameplay:</strong> Memangkas dorongan rintangan alam Bab 1 hingga 50%, membatasi damage jebakan maksimal 1 HP, serta menambah +10 Ketahanan, +5 Ketangkasan, +5 Pertahanan, dan +4 Kepekaan.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="meterai penengah salkara cirusia panji kadum odgar orsuk sidang tujuh panji bab 1">
+          <img class="item-portrait zoomable" src="assets/items/gear_lencana_salkara.png" alt="Meterai Penengah Salkara">
+          <div class="char-body">
+            <h4>Meterai Penengah Salkara</h4>
+            <div class="badge-row"><span class="pill">Cirusia · Panji Kadum</span><span class="pill">Rilis Bab 1 · Padang Salkara</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Lencana berukir monolit Panji Kadum yang disahkan <strong>Odgar</strong> di depan api Sidang Tujuh Panji dengan penjaminan Orsuk sebagai mandat gencatan senjata 4 hari menuju Tepi Salkara.</p>
+            <p><strong>Efek Gameplay:</strong> Memperlambat kewaspadaan patroli musuh sebesar 30% saat memergoki Nara serta menambah +7 Ketangkasan, +4 Pertahanan, dan +6 Kepekaan.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="roti hangat nilasar asharim bekal bab 0 pemulihan">
+          <img class="item-portrait zoomable" src="assets/items/roti_nilasar.png" alt="Roti Hangat Nilasar">
+          <div class="char-body">
+            <h4>Roti Hangat Nilasar</h4>
+            <div class="badge-row"><span class="pill">Asharim · Pos Nilasar</span><span class="pill">Bekal Bab 0</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Roti gandum gurun berempah ringan dari dapur suaka Pos Nilasar—simbol adat keramahan <em>Air tidak bertanya nama</em> di tengah blokade lada selatan.</p>
+            <p><strong>Efek Gameplay:</strong> Memulihkan +12 Ketahanan (HP) saat bertarung atau melalui jurnal perlengkapan.</p>
+          </div>
+        </article>
+
+        <article class="card char-card" data-search="kapsul garam balkut asharim cirusia orsuk bekal bab 1">
+          <img class="item-portrait zoomable" src="assets/items/garam_mineral.png" alt="Kapsul Garam Balkut">
+          <div class="char-body">
+            <h4>Kapsul Garam Balkut</h4>
+            <div class="badge-row"><span class="pill">Asharim × Cirusia</span><span class="pill">Bekal Bab 1</span></div>
+            <p><strong>Asal &amp; Cerita:</strong> Campuran <strong>Garam Batu Batangan Asharim</strong> dan ransum lemak-rempah <strong>Panji Balkut</strong> untuk menahan dehidrasi tebing Remuz–Zamer hingga Padang Salkara.</p>
+            <p><strong>Efek Gameplay:</strong> Memulihkan +24 Ketahanan (HP) untuk menopang pertarungan berat di wilayah Bab 1.</p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -772,13 +871,13 @@
         <span class="section-tag">Kronik Perjalanan</span>
       </div>
       <div class="grid-2">
-        <article class="card" data-search="bab 0 pos nilasar telaga sumi menara senja gerbang timur simpul 9">
+        <article class="card" data-search="bab 0 pos nilasar telaga sumi menara senja gerbang timur simpul 9 tas peredam lentera roti">
           <h4>Bab 0 · Pos Nilasar &amp; Cincin yang Menyengat</h4>
-          <p>Pos Nilasar terhimpit blokade garam &amp; razia Kesa. Di tengah riak aneh Telaga Sumi dan badai pasir besar, Menara Simpul ke-9 memancarkan tiga denyut tanda bahaya. Marsiyah menguji dan menyerahkan Cincin Perunggu kepada Nara, yang kemudian terkunci pada detak nadinya saat memeriksa Simpul 009—diawasi dari bukit oleh <strong>Maruani</strong>.</p>
+          <p>Pos Nilasar terhimpit blokade garam &amp; razia Kesa. Memakai <strong>Rompi Kulit Kafilah</strong> dengan bekal <strong>Tas Peredam Tseren</strong> dan <strong>Roti Hangat Nilasar</strong>, Nara memeriksa riak aneh Telaga Sumi dan mengalibrasi <strong>Lentera Angin &amp; Peluit Ruru</strong> di Menara Senja. Di tengah badai pasir besar, Menara Simpul ke-9 memancarkan tiga denyut tanda bahaya; Marsiyah menguji lalu menyerahkan <strong>Cincin Perunggu</strong> yang kemudian terkunci pada detak nadi Nara di Simpul 009—diawasi dari bukit oleh <strong>Maruani</strong>.</p>
         </article>
-        <article class="card" data-search="bab 1 dusun sela balkut padang salkara tepisalkara dargun odgar gencatan senjata">
+        <article class="card" data-search="bab 1 dusun sela balkut padang salkara tepisalkara dargun odgar gencatan senjata selendang kapsul garam meterai penengah">
           <h4>Bab 1 · Dusun Sela, Padang Salkara &amp; Tepi Salkara</h4>
-          <p>Pulang ke Dusun Sela, Nara mengetahui rahasia <em>Penutup Telinga Perunggu</em> dari Nenek Ima. Bersama pengawal Panji Balkut <strong>Orsuk</strong>, Nara membujuk tujuh ketua panji di Padang Salkara, membongkar sabotase minyak suruhan Maruani, lalu menyelidiki reruntuhan pesisir <strong>Tepi Salkara</strong> hingga <strong>Dargun</strong> mengakui kelalaian Panji Gorkan 107 tahun silam dan <strong>Odgar</strong> mengesahkan gencatan senjata.</p>
+          <p>Pulang ke Dusun Sela, Nara mengetahui rahasia <em>Penutup Telinga Perunggu</em> dari Nenek Ima dan dibekali <strong>Selendang Tenun Sela</strong> penahan arus kanal &amp; angin tebing. Bersama pengawal Panji Balkut <strong>Orsuk</strong> (dan bekal <strong>Kapsul Garam Balkut</strong>), Nara membujuk tujuh ketua panji di Padang Salkara hingga memperoleh <strong>Meterai Penengah Salkara</strong> dari <strong>Odgar</strong>, membongkar sabotase minyak Bahtari suruhan Maruani, lalu menyelidiki pesisir <strong>Tepi Salkara</strong> hingga <strong>Dargun</strong> mengakui kelalaian Panji Gorkan dan gencatan senjata disahkan.</p>
         </article>
         <article class="card spoiler-block" data-search="bab 2 pegunungan silin arsip tseren wuren lisen ikrar sambung hemira">
           <h4>Bab 2 · Arsip Terkunci Tseren <span class="pill spoiler">Bab 2</span></h4>
@@ -870,7 +969,7 @@
         ['Bising Menular','Stigma fitnah pasca-Hari Senyap bahwa pemakai Penutup Telinga Perunggu menyebarkan wabah.'],
         ['Buku Tamu Batu','Adat Asharim: tamu menuliskan nama di batu pos sebagai catatan perjalanan kafilah.'],
         ['Cakar Tebing (Tali Sambar)','Alat panjat cakar besi tiga mata dan tali serat ulet khas perintis Tseren.'],
-        ['Cincin Perunggu','Kunci resonansi kecil yang ditempa Wilanu dari pahat 5 Arsitek Agung; terkunci pada nadi pembawa berdarah Lulanai.'],
+        ['Cincin Perunggu','Kunci resonansi kecil tempaan Wilanu dari pahat 5 Arsitek Agung; terkunci pada nadi pembawa berdarah Lulanai di Simpul 009, memperpanjang penuntun Ruru [Q], meringankan Negosiasi (-2), dan memulihkan +3 HP saat Baca Celah.'],
         ['Dewan Tetua','Badan pengelola jalur bentukan 124 Pra-Senyap di bawah Ikrar Sambung yang kini memonopoli 7 Menara Simpul Redup.'],
         ['Dua Pembacaan','Adat Tseren: penerima membaca isi kontrak, pembawa membacakan catatan serah-terima fisik barang.'],
         ['Echoes','Fenomena serta jaringan bunyi-ingatan yang merambat lewat Batu Gaung dan Perunggu Gaung.'],
@@ -884,15 +983,18 @@
         ['Ikrar Sambung','Perjanjian kemitraan 124 Pra-Senyap antara Lulanai dan Dewan Tetua.'],
         ['Kabar Tujuh Musim','Berita terdistorsi tentang kebakaran Tepi Salkara (4 Pra-Senyap) yang memicu Perang Tujuh Musim (~3,5 tahun).'],
         ['Kanon Aksara','Fondasi Tseren: kata harus dijaga di atas kertas serat tahan lembap dan pantang dimusnahkan.'],
+        ['Kapsul Garam Balkut','Bekal Bab 1 racikan garam batu Asharim dan ransum Panji Balkut Cirusia (+24 HP) untuk menembus tebing utara.'],
         ['Kaum Pantang / Terbuka / Sesal','Tiga faksi penyintas Lulanai: menolak penyalaan ulang / menuntut ilmu dibagikan / menuntut bangsa lain dilibatkan.'],
         ['Keping Tata','Koin logam resmi Dewan Tetua yang nilainya terus merosot.'],
         ['Kerang Suara','Kerang tua warisan zaman Echoes di Bahtari yang masih menyimpan potongan lagu.'],
         ['Kontrak Sauh & Utang Kabar','Jerat kontrak modal pelayaran Rumah Dagang dan biaya verifikasi Menara Simpul Redup di Bahtari.'],
         ['Lagu Titipan','Adat Bahtari menitipkan lagu keluarga kepada pelaut atau perintis tanpa boleh diubah.'],
+        ['Lentera Angin & Peluit Ruru','Lentera minyak ikan palung Bahtari dan peluit tebing dari Menara Senja; memperluas radar [Q] (220 px), jeda 2,5 detik, dan memperkuat Siasat Ruru (1.45x).'],
         ['Lulan Tua','Kaldera basalt pusat Lulanai, tempat berdirinya Menara Simpul ke-1.'],
         ['Malam Tiga Cawan','Adat pos Asharim (Cawan Air/kabar rute, Garam/pasar, Kabar/kisah & tugas).'],
         ['Menara Simpul','99 menara penyimpan dan penerus Echoes (Pusat/ke-1, ke-9 di Asharim, ke-99 di Bahtari).'],
         ['Menara Simpul Redup','Tujuh menara yang dioperasikan paksa Dewan Tetua dengan teknik cacat sejak Tahun 58 Post-Senyap.'],
+        ['Meterai Penengah Salkara','Lencana mandat Sidang Tujuh Panji berukir monolit Panji Kadum dari Odgar; meredam kewaspadaan patroli 30% dan memperkuat ketangkasan tempur.'],
         ['Musim Terang & Musim Dingin','Pembagian 2 musim dalam 1 tahun di Tanah Sada.'],
         ['Nada Pengikat','Teknik low-fantasy Lulanai mengarahkan frekuensi akustik lewat batu/tanah menggunakan Perunggu Gaung.'],
         ['Nada Penyegel','Separuh kode kedua pembuka Gerbang Surut yang tersimpan di inti Menara Simpul ke-1.'],
@@ -903,9 +1005,13 @@
         ['Perunggu Gaung (Sada-Bronze)','Logam paduan tembaga-timah-bubuk Batu Gaung yang ditempa dengan teknik Tempa Nada.'],
         ['Pra-Senyap & Post-Senyap','Penanggalan resmi sebelum dan sesudah Hari Senyap (Tahun 0).'],
         ['Retak Besar','Bencana pecahnya Bejana Batu yang memuntahkan Echoes Liar serentak ke seluruh benua.'],
+        ['Rompi Kulit Kafilah','Pelindung awal perintis Dusun Sela dari kulit samak Asharim dan jahitan lapis tiga Cirusia.'],
+        ['Roti Hangat Nilasar','Bekal gandum panggang berempah dari dapur suaka Pos Nilasar (+12 HP) pada Bab 0.'],
+        ['Selendang Tenun Sela','Selendang tenun karya Nenek Ima di Dusun Sela dengan pola penyintas Lulanai; memangkas rintangan alam Bab 1 hingga 50% (maks 1 HP).'],
         ['Tahun Simpul (TS)','Penanggalan Tseren; TS 1 setara 397 Pra-Senyap, Hari Senyap jatuh pada TS 398.'],
         ['Tanah Sada','Nama benua dan dunia cerita Jalur Senyap.'],
         ['Tanda','Adat Lulanai meninggalkan pesan bersyarat pada batu tanpa diucapkan sembarangan.'],
+        ['Tas Peredam Tseren','Tas kulit Sahdan berlapis benang peredam gaung asal Silin (Tseren); meredam dorongan angin 45% dan susut muatan badai pasir hingga 55%.'],
         ['Yang Tetua','Gelar pemimpin tertinggi Dewan Tetua (saat ini dijabat Taluk).']
       ];
 

@@ -16,11 +16,22 @@ test('all 71 targets reachable from safe spawn with actual progression gates',()
 test('click paths obey obstacles; traversal anchors land on navigable ground',()=>{const s=at(null);for(const [id,m]of Object.entries(D.MAPS)){const sp=C.safeSpawn(id,null,s);for(const o of C.objectives.filter(o=>o.map===id)){const route=C.path(id,sp,[o.x,o.y],s);if(!route.length&&Math.hypot(sp[0]-o.x,sp[1]-o.y)<82)continue;assert(route.length,id+' '+o.id);assert(route.every(p=>C.walkable(id,...p,s)));assert(Math.hypot(route.at(-1)[0]-o.x,route.at(-1)[1]-o.y)<82);}}for(const [id,links]of Object.entries(C.links))for(const l of links)for(const p of [l.from,l.to])assert(C.walkable(id,...p,s),l.id+' '+p);});
 test('schema validation, corruption recovery, slots, migration and failure atomicity',()=>{storage.clear();let s=at('cp-2-0');C.save(store,C.PREFIX+'_slot_0',s);C.complete(s,'cp-2-0');C.save(store,C.PREFIX+'_slot_0',s);storage.set(C.PREFIX+'_slot_0','{broken');let r=C.load(store,C.PREFIX+'_slot_0');assert(r.recovered);assert.equal(r.data.completed.length,6);const invalid=C.snapshot(s);invalid.completed.reverse();assert.throws(()=>C.validate(invalid));const newer=C.snapshot(s);newer.version=99;assert.throws(()=>C.validate(newer));const before=JSON.stringify(E.state);storage.clear();storage.set(C.PREFIX+'_slot_1',JSON.stringify(invalid));assert(!E.loadFromSlot(1));assert.equal(JSON.stringify(E.state),before);const old={objIndex:57,mapId:'salkara',px:350,py:480,foundFlags:{},discoveries:[]};const migrated=C.migrate(old);assert.equal(C.current(migrated).id,'cp-21-0');old.foundFlags.all_complete=true;assert.equal(C.migrate(old).completed.length,58);old.objIndex=-1;assert.throws(()=>C.migrate(old));storage.clear();C.save(store,C.PREFIX+'_slot_0',s);const untouched=storage.get(C.PREFIX+'_slot_0');C.save(store,C.PREFIX+'_auto',C.initial());assert.equal(storage.get(C.PREFIX+'_slot_0'),untouched);assert.throws(()=>C.save({getItem:()=>null,setItem(){throw Error('quota');}},'x',s));});
 function pathToAction(graph,start,action){const q=[[start,[]]],seen=new Set();for(let i=0;i<q.length;i++){const [id,route]=q[i];if(seen.has(id))continue;seen.add(id);const n=graph.nodes[id];assert(n,'missing node '+id);if(n.action===action)return route;if(n.next)q.push([n.next,[...route,{next:true}]]);for(const [j,ch]of (n.choices||[]).entries())q.push([ch.next,[...route,{choice:j}]]);}throw Error('No reachable terminal action '+action);}
-test('71 complete runtime interactions: puzzle -> choices -> one completion; save/reload at every node',()=>{reset();for(const o of C.objectives){assert.equal(C.current(E.state).id,o.id);assert(E.switchMap(o.map,[o.x,o.y]));Object.assign(E.state.player,{x:o.x,y:o.y});if(o.sonar){E.interact();assert(!E.runtime.dialogue);E.runtime.scanCooldown=0;E.triggerSonar();assert(E.state.foundFlags['sonar_'+o.id]);}E.interact();const puzzle=o.minigame&&!['negotiate_kesa','council_odgar','confront_dargun'].includes(o.minigame);if(puzzle){assert(E.runtime.challenge);assert(!E.runtime.dialogue);const ch=E.runtime.challenge;if(ch.kind==='cargo'){assert.notEqual(ch.counts[0]*45+ch.counts[1]*30+ch.counts[2]*15,180);ch.counts=[2,2,2];E.puzzleWin(ch);}else{const moves=P.solveBFS(ch.board);assert(moves?.length,o.id+' BFS');for(const move of moves)E.puzzleMove(move);}assert(!E.puzzleWin(ch));assert.equal(C.current(E.state).id,o.id);}assert(E.runtime.dialogue,o.id);const graph=DB[o.id].dialogue,route=pathToAction(graph,E.runtime.dialogue.node,'CP_'+o.id.slice(3).replaceAll('-','_'));for(const step of route){assert(E.saveToSlot(2,true));const loaded=C.load(store,C.PREFIX+'_slot_2');assert.equal(loaded.data.dialogue.node,E.runtime.dialogue.node);if(step.next)E.advanceVN();else elements.get('vn-choices').children[step.choice].onclick();}E.advanceVN();assert.equal(E.state.completed.length,o.index+1,o.id);assert(!E.advanceObjective(o.id));}assert.equal(E.state.rumors.length,27);assert(C.bound(E.state));assert.equal(E.state.rpg.unlockedItems.includes('gear_mandat_cirusia'),true);assert.equal(E.runtime.stack.at(-1).id,'ending-modal');});
+test('71 complete runtime interactions: puzzle -> choices -> one completion; save/reload at every node',()=>{reset();for(const o of C.objectives){assert.equal(C.current(E.state).id,o.id);assert(E.switchMap(o.map,[o.x,o.y]));Object.assign(E.state.player,{x:o.x,y:o.y});if(o.sonar){E.interact();assert(!E.runtime.dialogue);E.runtime.scanCooldown=0;E.triggerSonar();assert(E.state.foundFlags['sonar_'+o.id]);}E.interact();const puzzle=o.minigame&&!['negotiate_kesa','council_odgar','confront_dargun'].includes(o.minigame);if(puzzle){assert(E.runtime.challenge);assert(!E.runtime.dialogue);const ch=E.runtime.challenge;if(ch.kind==='cargo'){assert.notEqual(ch.counts[0]*45+ch.counts[1]*30+ch.counts[2]*15,180);ch.counts=[2,2,2];E.puzzleWin(ch);}else{const moves=P.solveBFS(ch.board);assert(moves?.length,o.id+' BFS');for(const move of moves)E.puzzleMove(move);}assert(!E.puzzleWin(ch));assert.equal(C.current(E.state).id,o.id);}assert(E.runtime.dialogue,o.id);const graph=DB[o.id].dialogue,route=pathToAction(graph,E.runtime.dialogue.node,'CP_'+o.id.slice(3).replaceAll('-','_'));for(const step of route){assert(E.saveToSlot(2,true));const loaded=C.load(store,C.PREFIX+'_slot_2');assert.equal(loaded.data.dialogue.node,E.runtime.dialogue.node);if(step.next)E.advanceVN();else elements.get('vn-choices').children[step.choice].onclick();}E.advanceVN();assert.equal(E.state.completed.length,o.index+1,o.id);assert(!E.advanceObjective(o.id));}assert.equal(E.state.rumors.length,27);assert(C.bound(E.state));assert.equal(E.state.rpg.unlockedItems.includes('gear_lencana_salkara'),true);assert.equal(E.runtime.stack.at(-1).id,'ending-modal');});
 test('timing double-click, cancel/reopen and stale callback cannot advance another objective',()=>{reset(at('cp-18-1'));E.state.settings.puzzleMode='timing';E.startChallenge(C.current(E.state));const first=E.runtime.challenge;first.phase=.5;E.timingHit();E.timingHit();assert.equal(E.state.completed.length,first.id==='cp-18-1'?C.objectives.findIndex(o=>o.id===first.id):0);assert(E.runtime.dialogue);assert(!E.puzzleWin(first));E.runtime.stack=[];E.startChallenge(C.current(E.state));const second=E.runtime.challenge;assert(!E.puzzleWin(first));assert.equal(E.runtime.challenge,second);});
 test('1,000 reachable puzzle configurations solve without mutating their input',()=>{const states=new Set();for(let seed=0;seed<1000;seed++){let b=seed%2?P.createBridgeBoard(seed):P.createTuneBoard(seed),rng=seed+1;for(let i=0;i<1+seed%13;i++){rng=(Math.imul(rng,1664525)+1013904223)>>>0;b=P.applyMove(b,rng%3).state;}states.add(P.hashState(b));const before=JSON.stringify(b),moves=P.solveBFS(b);assert(moves);let next=b;for(const m of moves)next=P.applyMove(next,m).state;assert(P.isSolved(next));assert.equal(JSON.stringify(b),before);}assert.equal(states.size,43);});
 test('council rejects the false claim; puzzle undo restores the actual prior board',()=>{reset(at('cp-20-0'));E.startDialogue('cp-20-0');elements.get('vn-choices').children[1].onclick();assert.equal(E.runtime.dialogue.node,'retry');E.advanceVN();assert.equal(E.runtime.dialogue.node,'n0');assert.equal(C.current(E.state).id,'cp-20-0');reset(at('cp-1-0'));E.startChallenge(C.current(E.state));const before=JSON.stringify(E.runtime.challenge.board);E.puzzleMove(0);elements.get('puzzle-undo').onclick();assert.equal(JSON.stringify(E.runtime.challenge.board),before);});
-test('jump, slopes, storm shelter, Ruru cooldown and ladder',()=>{reset();E.jump();let max=0;E.runtime.keys.Space=true;for(let i=0;i<60;i++){E.tick(1/60);max=Math.max(max,E.state.player.z);}assert(max>20);assert.equal(E.state.player.z,0);assert(!('glide' in E.state.player));assert(C.terrain('senja',600,350).height>C.terrain('senja',600,600).height);reset(at('cp-6-0'));Object.assign(E.state.player,{x:950,y:440});E.state.cargo=80;E.tick(.1);assert(E.state.cargo<80);Object.assign(E.state.player,{x:500,y:250});const cargo=E.state.cargo;E.tick(.1);assert(E.state.cargo>cargo);E.triggerSonar();assert.equal(E.runtime.scanCooldown,4);E.triggerSonar();assert.equal(E.runtime.scanCooldown,4);for(const [map,links]of Object.entries(C.links)){reset(at(null));E.switchMap(map,links[0].from);Object.assign(E.state.player,{x:links[0].from[0],y:links[0].from[1]});E.useLink(links[0].kind);assert(E.runtime.flight);for(let i=0;i<140;i++)E.tick(1/60);assert(!E.runtime.flight);assert(Math.hypot(E.state.player.x-links[0].to[0],E.state.player.y-links[0].to[1])<1);}});
+test('jump, slopes, storm shelter, Ruru cooldown and ladder',()=>{reset();E.jump();let max=0;E.runtime.keys.Space=true;for(let i=0;i<60;i++){E.tick(1/60);max=Math.max(max,E.state.player.z);}assert(max>20);assert.equal(E.state.player.z,0);assert(!('glide' in E.state.player));assert(C.terrain('senja',600,350).height>C.terrain('senja',600,600).height);
+ // Base cooldown 4s without lantern, then 2.5s with Lentera Ruru + 55% storm protection with Tas Peredam
+ E.triggerSonar();assert.equal(E.runtime.scanCooldown,4);assert.equal(E.runtime.guide,8);
+ reset(at('cp-6-0'));Object.assign(E.state.player,{x:950,y:440});E.state.cargo=80;E.tick(.1);const cargoLossWithTas=80-E.state.cargo;assert(cargoLossWithTas>0&&cargoLossWithTas<0.06,'Tas Peredam cuts storm drain');Object.assign(E.state.player,{x:500,y:250});const cargo=E.state.cargo;E.tick(.1);assert(E.state.cargo>cargo);E.triggerSonar();assert.equal(E.runtime.scanCooldown,2.5);E.triggerSonar();assert.equal(E.runtime.scanCooldown,2.5);
+ // Ring doubles guide duration & grants bound combat resonance after cp-9-0
+ reset(at('cp-9-0'));E.triggerSonar();assert.equal(E.runtime.guide,14);
+ reset(at('cp-10-0'));E.state.rpg.hp=20;E.openEncounter('pengintai_dewan');assert.equal(E.runtime.encounter.negDiscount,2);E.combatAction('guard');assert(E.runtime.encounter.log.some(l=>l.includes('+3 HP detak cincin')));E.retreatEncounter();
+ // Selendang Sela caps hazard damage at 1 HP & Meterai Salkara slows patrol awareness
+ reset(at('cp-17-0'));E.switchMap('balkut',[736,518]);E.runtime.patrols=[];E.state.rpg.hp=20;E.runtime.time=4.0;E.runtime.hazardCooldown=0;E.tick(0.05);assert.equal(E.state.rpg.hp,19,'Selendang Sela reduces 2 hazard dmg to 1');
+ reset(at('cp-17-0'));E.runtime.encounter=null;E.runtime.encounterGrace=0;E.switchMap('balkut',[690,405]);Object.assign(E.state.player,{x:720,y:380});E.tick(0.2);const awNoSeal=E.runtime.patrols[0].awareness;
+ reset(at('cp-17-0'));E.runtime.encounter=null;E.runtime.encounterGrace=0;R.unlockItem(E.state.rpg,'gear_lencana_salkara');E.switchMap('balkut',[690,405]);Object.assign(E.state.player,{x:720,y:380});E.tick(0.2);const awWithSeal=E.runtime.patrols[0].awareness;assert(awNoSeal>0&&awWithSeal>0&&awWithSeal<awNoSeal,'Meterai Salkara slows patrol awareness');
+ for(const [map,links]of Object.entries(C.links)){reset(at(null));E.switchMap(map,links[0].from);Object.assign(E.state.player,{x:links[0].from[0],y:links[0].from[1]});E.useLink(links[0].kind);assert(E.runtime.flight);for(let i=0;i<140;i++)E.tick(1/60);assert(!E.runtime.flight);assert(Math.hypot(E.state.player.x-links[0].to[0],E.state.player.y-links[0].to[1])<1);}});
 test('ground contours block water, walls and gaps; jump cannot bypass collision',()=>{
  const blocked=[['nilasar',645,453],['nilasar',450,600],['sumi',616,409],['sumi',535,455],['senja',440,510],['gerbang',460,590],['simpul',1010,385],['sela',895,400],['sela',1060,400],['balkut',965,340],['balkut',340,435],['salkara',722,423],['salkara',600,650]];
  for(const [map,x,y] of blocked){assert(!C.walkable(map,x,y,at(null)),map+' obstacle');assert(!C.walkable(map,x,y,at(null),true),map+' airborne bypass');}
@@ -169,27 +180,25 @@ test('audio-design skill: quadratic slider-to-gain dB curve, multi-bus SFX bank 
 });
 
 test('RPG Bab 0 balance: hits-to-kill (2-4 regular, 25-60 boss) and hits-to-survive (5-8)',()=>{
- // Mid-variance (0.5) and no crit (0.9) for deterministic expected-hit checks along linear unlocks
+ // Mid-variance (0.5) and no crit (0.9) for deterministic expected-hit checks along chapter item unlocks
  const dmg=(atk,def)=>R.calculateDamage(atk,def,{varianceRoll:0.5,critRoll:0.9}).damage;
  assert(dmg(10,1000)>=1); // Ratio defense never grants 0-damage immunity
- // Lv 2 Nara with Rompi + Tongkat vs Bandit Gurun (HP 28, ATK 11, DEF 4)
- const rpg2=R.initialRpgState();R.grantXp(rpg2,R.XP_THRESHOLDS[2]);R.unlockItem(rpg2,'gear_tongkat_perintis');
+ // Lv 2 Nara with Rompi vs Bandit Gurun (HP 28, ATK 12, DEF 4)
+ const rpg2=R.initialRpgState();R.grantXp(rpg2,R.XP_THRESHOLDS[2]);
  const s2=R.getDerivedStats(rpg2),b=R.ENCOUNTERS.bandit_gurun;
  const htkBandit=Math.ceil(b.maxHp/dmg(s2.ketangkasan,b.def));
  const htsBandit=Math.ceil(s2.ketahanan/dmg(b.atk,s2.pertahanan));
  assert(htkBandit>=2&&htkBandit<=4,'Bandit HTK='+htkBandit);
  assert(htsBandit>=5&&htsBandit<=8,'Bandit HTS='+htsBandit);
- // Lv 3 Nara (+ Kompas) vs Pengintai Dewan (HP 36, ATK 12, DEF 6)
+ // Lv 3 Nara vs Pengintai Dewan (HP 36, ATK 14, DEF 6)
  const rpg3=R.initialRpgState();R.grantXp(rpg3,R.XP_THRESHOLDS[3]);
- for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari'])R.unlockItem(rpg3,id);
  const s3=R.getDerivedStats(rpg3),p=R.ENCOUNTERS.pengintai_dewan;
  const htkScout=Math.ceil(p.maxHp/dmg(s3.ketangkasan,p.def));
  const htsScout=Math.ceil(s3.ketahanan/dmg(p.atk,s3.pertahanan));
  assert(htkScout>=2&&htkScout<=4,'Scout HTK='+htkScout);
  assert(htsScout>=5&&htsScout<=8,'Scout HTS='+htsScout);
- // Lv 4 Nara (+ Sabuk + Jubah) vs Kapten Blokade Boss (HP 340, ATK 18, DEF 12) -> 25-60 actions
+ // Lv 4 Nara vs Kapten Blokade Boss (HP 340, ATK 16, DEF 12) -> 25-60 actions
  const rpg4=R.initialRpgState();R.grantXp(rpg4,R.XP_THRESHOLDS[4]);
- for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim'])R.unlockItem(rpg4,id);
  const s4=R.getDerivedStats(rpg4),boss=R.ENCOUNTERS.kapten_blokade;
  const htkBoss=Math.ceil(boss.maxHp/dmg(s4.ketangkasan,boss.def));
  const htsBoss=Math.ceil(s4.ketahanan/dmg(boss.atk,s4.pertahanan));
@@ -197,12 +206,14 @@ test('RPG Bab 0 balance: hits-to-kill (2-4 regular, 25-60 boss) and hits-to-surv
  assert(htsBoss>=5&&htsBoss<=8,'Boss HTS='+htsBoss);
 });
 
-test('RPG linear passive unlock stacks cleanly without free heal, equip slots, or spoilers + 16 visual icons',()=>{
+test('RPG chapter-paced 8 items: linear passive unlock, zero free heal, spoiler guard + 8 icons',()=>{
  const assetsCtx={window:{},globalThis:{}};assetsCtx.window=assetsCtx;assetsCtx.globalThis=assetsCtx;
  vm.runInNewContext(fs.readFileSync(path.join(root,'data/pixel-bab0-assets.js'),'utf8'),assetsCtx);
+ assert.equal(Object.keys(R.ITEMS).length,6,'6 core gameplay items');
+ assert.equal(Object.keys(R.CONSUMABLES).length,2,'2 chapter healing consumables');
  const rpg=R.initialRpgState();
  assert.equal(R.unequipItem(rpg,'gear_rompi_kulit'),false,'Passive linear items are not manually unequipped');
- const expectedStart=R.getBaseStats(1);expectedStart.ketahanan+=4;expectedStart.pertahanan+=2;
+ const expectedStart=R.getBaseStats(1);expectedStart.ketahanan+=5;expectedStart.ketangkasan+=2;expectedStart.pertahanan+=2;
  assert.deepEqual(R.getDerivedStats(rpg),expectedStart);
  rpg.hp=20; // Damaged Nara must never get free HP when finding items
  for(const item of Object.values(R.ITEMS)){
@@ -365,17 +376,17 @@ test('Bab 1 travel obstacles, stealth patrol awareness telegraphing & GameFeel s
 
 test('RPG Bab 1 balance, gear, garam_mineral drop & save roundtrip',()=>{
  const dmg=(atk,def,mult=1)=>R.calculateDamage(atk,def,{varianceRoll:0.5,critRoll:0.9,actionMult:mult}).damage;
- // Lv 5 Nara (all Bab 0 + Sela/Balkut linear items) vs prajurit_tebing_balkut
+ // Lv 5 Nara (all Bab 0 + Selendang Sela) vs prajurit_tebing_balkut
  const rpg5=R.initialRpgState();R.grantXp(rpg5,R.XP_THRESHOLDS[5]);
- for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim','gear_selendang_sela','gear_tali_balkut'])R.unlockItem(rpg5,id);
+ R.unlockItem(rpg5,'gear_selendang_sela');
  const s5=R.getDerivedStats(rpg5),pb=R.ENCOUNTERS.prajurit_tebing_balkut;
  const htkPb=Math.ceil(pb.maxHp/dmg(s5.ketangkasan,pb.def));
  const htsPb=Math.ceil(s5.ketahanan/dmg(pb.atk,s5.pertahanan));
  assert(htkPb>=2&&htkPb<=4,'Prajurit Balkut HTK='+htkPb);
  assert(htsPb>=5&&htsPb<=8,'Prajurit Balkut HTS='+htsPb);
- // Lv 6 Nara (full Bab 1 Salkara linear gear) vs penjaga_sidang_salkara & juara_tujuh_panji boss
+ // Lv 6 Nara (+ Meterai Salkara) vs penjaga_sidang_salkara & juara_tujuh_panji boss
  const rpg6=R.initialRpgState();R.grantXp(rpg6,R.XP_THRESHOLDS[6]);
- for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim','gear_selendang_sela','gear_tali_balkut','gear_lencana_salkara']){R.unlockItem(rpg6,id);}
+ for(const id of ['gear_selendang_sela','gear_lencana_salkara']){R.unlockItem(rpg6,id);}
  const s6=R.getDerivedStats(rpg6),ps=R.ENCOUNTERS.penjaga_sidang_salkara,jb=R.ENCOUNTERS.juara_tujuh_panji;
  const htkPs=Math.ceil(ps.maxHp/dmg(s6.ketangkasan,ps.def));
  const htsPs=Math.ceil(s6.ketahanan/dmg(ps.atk,s6.pertahanan));
@@ -392,7 +403,7 @@ test('RPG Bab 1 balance, gear, garam_mineral drop & save roundtrip',()=>{
  assert.equal(rpg6.consumables.garam_mineral,1);
  const s15=at('cp-15-2');C.complete(s15,'cp-15-2');
  assert(s15.rpg.consumables.garam_mineral>=2);
- assert(s15.rpg.unlockedItems.includes('gear_tali_balkut'));
+ assert(s15.rpg.unlockedItems.includes('gear_selendang_sela'));
  const roundtrip=C.validate(JSON.parse(JSON.stringify(s15)));
  assert.equal(roundtrip.rpg.consumables.garam_mineral,s15.rpg.consumables.garam_mineral);
 });
@@ -423,7 +434,7 @@ test('Enemy intent telegraphing, heavy-parry counter, brace break & Bab 1 sentin
  assert.equal(R.getEnemyIntent(E.runtime.encounter).type,'heavy');
  assert(E.combatAction('guard')); // blocks heavy strike -> Tangkis Balasan shaves 2 CD (down to 0)
  assert.equal(E.runtime.encounter.ruruCd,0);
- assert.equal(E.runtime.encounter.negDiscount,3);
+ assert.equal(E.runtime.encounter.negDiscount,5); // 2 from bound Cincin Perunggu + 3 heavy-parry counter
  // Victory grants enemy drop
  E.runtime.encounter.hp=1;
  const garamBefore=E.state.rpg.consumables.garam_mineral||0;
@@ -482,10 +493,10 @@ test('Bab 1 Finale: Tepi Salkara hazards, sentinel boss, Dargun truth gate & cle
  reset(at('cp-24-0'));E.switchMap('tepisalkara');
  assert.equal(E.runtime.sentinels[0].encId,'bayangan_tepi_salkara');
  assert(C.walkable('tepisalkara',E.runtime.sentinels[0].x,E.runtime.sentinels[0].y,E.state));
- // RPG finale encounters balance check (Lv 6 linear passive items through cp-23-2)
+ // RPG finale encounters balance check (Lv 6 Selendang Sela + Meterai Salkara)
  const dmg=(atk,def)=>R.calculateDamage(atk,def,{varianceRoll:0.5,critRoll:0.9}).damage;
  const rpg6=R.initialRpgState();R.grantXp(rpg6,R.XP_THRESHOLDS[6]);
- for(const id of ['gear_tongkat_perintis','gear_kompas_bahtari','gear_sabuk_garam','gear_jubah_asharim','gear_selendang_sela','gear_tali_balkut','gear_lencana_salkara','gear_kalung_tujuh_panji'])R.unlockItem(rpg6,id);
+ for(const id of ['gear_selendang_sela','gear_lencana_salkara'])R.unlockItem(rpg6,id);
  const s6=R.getDerivedStats(rpg6),boss=R.ENCOUNTERS.bayangan_tepi_salkara,scout=R.ENCOUNTERS.pengawal_gorkan_pesisir;
  const htkBoss=Math.ceil(boss.maxHp/dmg(s6.ketangkasan,boss.def));
  const htsBoss=Math.ceil(s6.ketahanan/dmg(boss.atk,s6.pertahanan));
@@ -549,7 +560,7 @@ function mockEnv(dev){
  assert(dev.c.JALUR_DEV_TOOLS.solveActivePuzzle());
  assert(!dev.c.BAB0_ENGINE.runtime.challenge);
  dev.c.JALUR_DEV_TOOLS.unlockAllGear();
- assert(dev.c.BAB0_ENGINE.state.rpg.unlockedItems.includes('gear_mandat_cirusia'));
+ assert(dev.c.BAB0_ENGINE.state.rpg.unlockedItems.includes('gear_lencana_salkara'));
  assert(dev.c.JALUR_DEV_TOOLS.launchEncounter('bayangan_tepi_salkara'));
  assert(dev.c.BAB0_ENGINE.runtime.encounter);
  assert(dev.c.JALUR_DEV_TOOLS.winActiveEncounter());

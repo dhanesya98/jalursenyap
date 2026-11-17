@@ -23,180 +23,90 @@
   const XP_THRESHOLDS = { 1: 0, 2: 60, 3: 150, 4: 270, 5: 420, 6: 600 };
 
   const ITEMS = {
+    gear_rompi_kulit: {
+      id: 'gear_rompi_kulit',
+      name: 'Rompi Kulit Kafilah',
+      origin: 'Asharim × Cirusia',
+      category: 'equipment',
+      tier: 'Bekal Awal',
+      slot: null,
+      unlockObjective: null,
+      feature: 'Pelindung awal perintis Dusun Sela dari kulit samak gurun Asharim dan jahitan lapis tiga ala penunggang Cirusia. Aktif otomatis sepanjang perjalanan.',
+      modifiers: [
+        { stat: 'ketahanan', amount: 5 },
+        { stat: 'ketangkasan', amount: 2 },
+        { stat: 'pertahanan', amount: 2 }
+      ]
+    },
     alat_tas_peredam: {
       id: 'alat_tas_peredam',
       name: 'Tas Peredam Tseren',
+      origin: 'Pegunungan Silin · Tseren',
       category: 'tool',
-      tier: 'Alat Perintis',
+      tier: 'Rilis Bab 0',
       slot: null,
       unlockObjective: 'cp-0-2',
-      feature: 'Menjaga muatan tetap teduh saat badai dan meredam getaran barang bawaan.',
+      feature: 'Tas perintis tua dari gudang Pos Nilasar berlapis benang peredam gaung asal Pegunungan Silin (Tseren). Memangkas dorongan & susut muatan badai pasir hingga 55% lebih awet.',
       modifiers: []
     },
     alat_lentera_ruru: {
       id: 'alat_lentera_ruru',
       name: 'Lentera Angin & Peluit Ruru',
+      origin: 'Bahtari × Asharim',
       category: 'tool',
-      tier: 'Alat Perintis',
+      tier: 'Rilis Bab 0',
       slot: null,
       unlockObjective: 'cp-2-2',
-      feature: 'Memangkas jeda pindai Ruru menjadi 4 detik dan membuka taktik pengalihan di konfrontasi.',
+      feature: 'Berbahan bakar minyak ikan palung Bahtari yang tahan badai pasir Asharim, dipadu peluit tebing untuk Ruru. Memperluas radar [Q] (170 → 220 px), jeda pindai 2,5 detik, dan Siasat Ruru (1.45x).',
       modifiers: []
-    },
-    gear_rompi_kulit: {
-      id: 'gear_rompi_kulit',
-      name: 'Rompi Kulit Kafilah',
-      category: 'equipment',
-      tier: 'Bekal Awal',
-      slot: null,
-      unlockObjective: null,
-      feature: 'Pelindung standar perintis lembah pasir. Aktif otomatis sepanjang perjalanan.',
-      modifiers: [
-        { stat: 'ketahanan', amount: 4 },
-        { stat: 'pertahanan', amount: 2 }
-      ]
-    },
-    gear_tongkat_perintis: {
-      id: 'gear_tongkat_perintis',
-      name: 'Tongkat Ukur Perintis',
-      category: 'equipment',
-      tier: 'Aktif Otomatis',
-      slot: null,
-      unlockObjective: 'cp-1-2',
-      feature: 'Tongkat kayu keras untuk menguji kepadatan pasir dan menangkis sergapan.',
-      modifiers: [
-        { stat: 'ketangkasan', amount: 3 },
-        { stat: 'kepekaan', amount: 2 }
-      ]
-    },
-    gear_kompas_bahtari: {
-      id: 'gear_kompas_bahtari',
-      name: 'Kompas Arus Bahtari',
-      category: 'equipment',
-      tier: 'Aktif Otomatis',
-      slot: null,
-      unlockObjective: 'cp-3-2',
-      feature: 'Kompas kuningan penunjuk arah angin dan pembacaan niat lawan bicara.',
-      modifiers: [
-        { stat: 'ketangkasan', amount: 2 },
-        { stat: 'kepekaan', amount: 3 }
-      ]
-    },
-    gear_jubah_asharim: {
-      id: 'gear_jubah_asharim',
-      name: 'Jubah Tenun Asharim',
-      category: 'equipment',
-      tier: 'Aktif Otomatis',
-      slot: null,
-      unlockObjective: 'cp-6-2',
-      feature: 'Tenun berlapis penahan badai pasir Nilasar dan pelindung benturan.',
-      modifiers: [
-        { stat: 'ketahanan', amount: 5 },
-        { stat: 'pertahanan', amount: 2 },
-        { stat: 'kepekaan', amount: 2 }
-      ]
-    },
-    gear_sabuk_garam: {
-      id: 'gear_sabuk_garam',
-      name: 'Sabuk Penimbang Garam',
-      category: 'equipment',
-      tier: 'Aktif Otomatis',
-      slot: null,
-      unlockObjective: 'cp-4-2',
-      feature: 'Sabuk kulit berbandul timbangan pasar yang menjaga kuda-kuda tetap kokoh.',
-      modifiers: [
-        { stat: 'ketahanan', amount: 4 },
-        { stat: 'ketangkasan', amount: 2 },
-        { stat: 'pertahanan', amount: 2 }
-      ]
     },
     artefak_cincin_perunggu: {
       id: 'artefak_cincin_perunggu',
       name: 'Cincin Perunggu',
+      origin: 'Pusaka Kuno · Pra-Senyap',
       category: 'mystery',
-      tier: 'Artefak Misteri',
+      tier: 'Rilis Bab 0',
       slot: null,
       unlockObjective: 'cp-7-2',
-      feature: 'Cincin perunggu kusam tanpa permata. Terkadang memberi sengatan halus di jari Nara.',
+      feature: 'Cincin Perunggu Gaung kuno peninggalan masa Pra-Senyap yang dipercayakan Marsiyah di Pos Nilasar. Membuka Simpul Sembilan & menggandakan durasi penuntun [Q]. Setelah terikat nadi di Simpul, Baca Celah memulihkan +3 HP & meringankan negosiasi (-2).',
       modifiers: []
     },
     gear_selendang_sela: {
       id: 'gear_selendang_sela',
       name: 'Selendang Tenun Sela',
+      origin: 'Dusun Sela · Asharim',
       category: 'equipment',
-      tier: 'Aktif Otomatis',
+      tier: 'Rilis Bab 1',
       slot: null,
       unlockObjective: 'cp-13-2',
-      feature: 'Selendang serat kanal buatan Nenek Ima yang melindungi pundak dari angin dingin dan hantaman.',
+      feature: 'Tenunan tangan Nenek Ima khas Dusun Sela dengan pola serat pelindung rahasia keluarga. Memangkas dorongan rintangan alam Bab 1 (-50%, maks 1 HP) dan memperkuat ketahanan fisik.',
       modifiers: [
-        { stat: 'ketahanan', amount: 5 },
-        { stat: 'pertahanan', amount: 2 },
-        { stat: 'kepekaan', amount: 2 }
-      ]
-    },
-    gear_tali_balkut: {
-      id: 'gear_tali_balkut',
-      name: 'Tambang Panjat Balkut',
-      category: 'equipment',
-      tier: 'Aktif Otomatis',
-      slot: null,
-      unlockObjective: 'cp-15-2',
-      feature: 'Tambang rami berbobot perunggu pemberian Orsuk untuk menyeimbangkan pijakan tebing dan serangan balas.',
-      modifiers: [
-        { stat: 'ketahanan', amount: 4 },
-        { stat: 'ketangkasan', amount: 3 },
-        { stat: 'pertahanan', amount: 2 }
+        { stat: 'ketahanan', amount: 10 },
+        { stat: 'ketangkasan', amount: 5 },
+        { stat: 'pertahanan', amount: 5 },
+        { stat: 'kepekaan', amount: 4 }
       ]
     },
     gear_lencana_salkara: {
       id: 'gear_lencana_salkara',
       name: 'Meterai Penengah Salkara',
+      origin: 'Cirusia (Panji Kadum)',
       category: 'equipment',
-      tier: 'Pusaka Bab 1',
+      tier: 'Rilis Bab 1',
       slot: null,
       unlockObjective: 'cp-20-0',
-      feature: 'Lencana mandataris Tujuh Panji. Memberi wibawa penuh dalam sidang dan benturan keras di Padang Salkara.',
+      feature: 'Mandat sah Sidang Tujuh Panji berukir monolit Panji Kadum di bawah Hukum Janji Api Odgar. Membuat pengintai ragu (kesadaran patroli -30%) serta menambah wibawa tempur penuh.',
       modifiers: [
-        { stat: 'ketangkasan', amount: 3 },
-        { stat: 'pertahanan', amount: 2 },
-        { stat: 'kepekaan', amount: 3 }
-      ]
-    },
-    gear_kalung_tujuh_panji: {
-      id: 'gear_kalung_tujuh_panji',
-      name: 'Jimat Sumpah Tujuh Panji',
-      category: 'equipment',
-      tier: 'Pusaka Bab 1',
-      slot: null,
-      unlockObjective: 'cp-23-2',
-      feature: 'Anyaman kulit dan piringan perunggu pemberian Orsuk setelah menggagalkan sabotase minyak di Salkara.',
-      modifiers: [
-        { stat: 'ketahanan', amount: 5 },
-        { stat: 'ketangkasan', amount: 3 },
-        { stat: 'kepekaan', amount: 3 }
-      ]
-    },
-    gear_mandat_cirusia: {
-      id: 'gear_mandat_cirusia',
-      name: 'Mandat Kesaksian Cirusia',
-      category: 'equipment',
-      tier: 'Pusaka Akhir',
-      slot: null,
-      unlockObjective: 'cp-26-0',
-      feature: 'Lempeng batu bertanda gencatan senjata resmi dari Odgar. Membuka jalan menuju pegunungan utara pada babak berikutnya.',
-      modifiers: [
-        { stat: 'ketahanan', amount: 6 },
-        { stat: 'ketangkasan', amount: 3 },
-        { stat: 'pertahanan', amount: 3 },
-        { stat: 'kepekaan', amount: 4 }
+        { stat: 'ketangkasan', amount: 7 },
+        { stat: 'pertahanan', amount: 4 },
+        { stat: 'kepekaan', amount: 6 }
       ]
     }
   };
 
   const CONSUMABLES = {
-    garam_mineral: { id: 'garam_mineral', name: 'Kapsul Garam Balkut', heal: 24, desc: 'Memulihkan 24 Ketahanan saat menempuh tebing & medan berat.' },
-    teh_gurun: { id: 'teh_gurun', name: 'Teh Daun Gurun', heal: 18, desc: 'Memulihkan 18 Ketahanan.' },
-    roti_nilasar: { id: 'roti_nilasar', name: 'Roti Hangat Nilasar', heal: 12, desc: 'Memulihkan 12 Ketahanan.' }
+    roti_nilasar: { id: 'roti_nilasar', origin: 'Asharim', name: 'Roti Hangat Nilasar', heal: 12, desc: 'Bekal Bab 0 dari dapur suaka Pos Nilasar (gandum gurun & rempah jalur). Memulihkan 12 Ketahanan.' },
+    garam_mineral: { id: 'garam_mineral', origin: 'Asharim × Cirusia', name: 'Kapsul Garam Balkut', heal: 24, desc: 'Bekal Bab 1 racikan garam batu Asharim dan ransum karavan Panji Balkut Cirusia. Memulihkan 24 Ketahanan.' }
   };
 
   // Regional enemy bands in Bab 0-1 (no full auto-scaling).
@@ -208,7 +118,7 @@
       tier: 'regular',
       sprite: 'npc-kutlak',
       maxHp: 28,
-      atk: 11,
+      atk: 12,
       def: 4,
       negotiateKepekaan: 10,
       xpReward: 25,
@@ -224,12 +134,12 @@
       sprite: 'npc-kesa',
       portrait: 'portrait-kesa',
       maxHp: 36,
-      atk: 12,
+      atk: 14,
       def: 6,
       negotiateKepekaan: 12,
       xpReward: 30,
       stealthXp: 40,
-      drop: 'teh_gurun',
+      drop: 'roti_nilasar',
       desc: 'Petugas patroli Benteng Tata yang memeriksa bawaan perintis.'
     },
     penghadang_sela: {
@@ -239,12 +149,12 @@
       tier: 'regular',
       sprite: 'npc-dargun',
       maxHp: 44,
-      atk: 13,
+      atk: 14,
       def: 7,
       negotiateKepekaan: 13,
       xpReward: 38,
       stealthXp: 48,
-      drop: 'teh_gurun',
+      drop: 'roti_nilasar',
       desc: 'Penjaga dermaga rakit yang memungut biaya lewat gelap di tepi saluran.'
     },
     penjaga_cirusia: {
@@ -254,7 +164,7 @@
       tier: 'regular',
       sprite: 'npc-hurgak',
       maxHp: 56,
-      atk: 14,
+      atk: 18,
       def: 9,
       negotiateKepekaan: 15,
       xpReward: 46,
@@ -270,7 +180,7 @@
       sprite: 'npc-hurgak',
       maxHp: 64,
       atk: 24,
-      def: 10,
+      def: 9,
       negotiateKepekaan: 16,
       xpReward: 52,
       stealthXp: 64,
@@ -284,7 +194,7 @@
       tier: 'regular',
       sprite: 'npc-borlan',
       maxHp: 68,
-      atk: 32,
+      atk: 29,
       def: 11,
       negotiateKepekaan: 18,
       xpReward: 65,
@@ -299,7 +209,7 @@
       tier: 'boss',
       sprite: 'npc-salgur',
       maxHp: 520,
-      atk: 34,
+      atk: 32,
       def: 16,
       negotiateKepekaan: 22,
       xpReward: 95,
@@ -346,7 +256,7 @@
       sprite: 'npc-maruani',
       portrait: 'portrait-maruani',
       maxHp: 560,
-      atk: 39,
+      atk: 34,
       def: 15,
       negotiateKepekaan: 26,
       xpReward: 120,
@@ -361,12 +271,12 @@
       tier: 'boss',
       sprite: 'npc-salgur',
       maxHp: 340,
-      atk: 18,
+      atk: 16,
       def: 12,
       negotiateKepekaan: 18,
       xpReward: 60,
       stealthXp: 70,
-      drop: 'teh_gurun',
+      drop: 'roti_nilasar',
       desc: 'Barisan penjaga bersenjata tombak tumpul dan tameng kayu di celah pemeriksaan.'
     }
   };
@@ -410,7 +320,7 @@
       equipped: {},
       modifiers,
       unlockedItems: startItems,
-      consumables: { garam_mineral: 0, teh_gurun: 2, roti_nilasar: 2 },
+      consumables: { garam_mineral: 0, roti_nilasar: 2 },
       choiceFlags: {},
       encounterResults: {}
     };
@@ -533,8 +443,7 @@
       unlockedItems: Array.isArray(rpg.unlockedItems) ? rpg.unlockedItems.filter(id => !!ITEMS[id]) : ['gear_rompi_kulit'],
       consumables: {
         garam_mineral: Math.max(0, Math.floor(Number(rpg.consumables?.garam_mineral ?? 0))),
-        teh_gurun: Math.max(0, Math.floor(Number(rpg.consumables?.teh_gurun ?? 2))),
-        roti_nilasar: Math.max(0, Math.floor(Number(rpg.consumables?.roti_nilasar ?? 2)))
+        roti_nilasar: Math.max(0, Math.floor(Number((rpg.consumables?.roti_nilasar ?? 2) + (rpg.consumables?.teh_gurun ?? 0))))
       },
       choiceFlags: rpg.choiceFlags && typeof rpg.choiceFlags === 'object' ? { ...rpg.choiceFlags } : {},
       encounterResults: rpg.encounterResults && typeof rpg.encounterResults === 'object' ? { ...rpg.encounterResults } : {}

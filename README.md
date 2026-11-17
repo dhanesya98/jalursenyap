@@ -115,6 +115,7 @@ npm run build
 
 ## 📁 Berkas Dokumentasi & Kanon
 
-- [`story bible/jalur_senyap_story_bible_rev1311.md`](story%20bible/jalur_senyap_story_bible_rev1311.md): **Story Bible Kanon Terbaru (Era 103 Post-Senyap)** — acuan lengkap sejarah, sistem *Perunggu Gaung*, Lima Bangsa, tokoh, Bab 0–5, tiga *ending*, nada dialog, aturan penamaan, dan glosarium.
+- [`docs/STORY-BIBLE.md`](docs/STORY-BIBLE.md): **Story Bible Kanon Tunggal (Era 103 Post-Senyap)** — acuan terpadu sejarah, sistem *Perunggu Gaung*, Lima Bangsa, perlengkapan lintas bangsa, tokoh, Bab 0–5, tiga *ending*, nada dialog, aturan penamaan, dan glosarium.
+- [`wiki.html`](wiki.html): **Ensiklopedia & Atlas Tanah Sada** — referensi interaktif wilayah, lima bangsa, tokoh, alur cerita, serta pusaka & perlengkapan lintas bangsa.
 - [`docs/PIXEL-HANDOFF.txt`](docs/PIXEL-HANDOFF.txt): Peta arsitektur kode pixel, invarian engine, dan daftar QA manual.
 - [`docs/GAME-DESIGN-ART-DIRECTION.md`](docs/GAME-DESIGN-ART-DIRECTION.md): Panduan desain mekanik dan arahan seni.
