@@ -1,18 +1,18 @@
 # Jalur Senyap (The Silent Route): Story Bible Kanon Tunggal
 
-**Dunia: Tanah Sada · Era: Tahun ke-103 Post-Senyap · Edisi Terpadu Lore, Lima Bangsa, Kafilah, Cincin Perunggu & Perlengkapan Lintas Bangsa**
+**Dunia: Tanah Sada · Era: Tahun ke-103 Post-Senyap · Edisi Terpadu Lore, Enam Bangsa, Kafilah, Cincin Perunggu & Perlengkapan Lintas Bangsa**
 
-Dokumen ini adalah **satu-satunya pegangan cerita dan kanon resmi** untuk semesta *Jalur Senyap (The Silent Route)* di Tanah Sada—menyatukan fondasi sejarah *Point of Origin (5W1H)*, sistem *Perunggu Gaung* dan *Cincin Perunggu*, profil lima bangsa beserta ekosistem kafilah dan perlengkapan khasnya, kronik lengkap Bab 0 hingga Bab 5, tiga akhir cerita (*endings*), serta glosarium baku. Draf lama berbasis kurir surat bersegel telah digantikan sepenuhnya oleh kanon **Perintis Kafilah (*Pathfinders*)** dan era **103 Post-Senyap**.
+Dokumen ini adalah **satu-satunya pegangan cerita dan kanon resmi** untuk semesta *Jalur Senyap (The Silent Route)* di Tanah Sada—menyatukan fondasi sejarah *Point of Origin (5W1H)*, sistem *Perunggu Gaung* dan *Cincin Perunggu*, profil enam bangsa (*termasuk Kerajaan Espyra di Barat serta perpindahan geografis Lulan Tua ke utara jauh*), ekosistem kafilah dan perlengkapan khasnya, kronik lengkap Bab 0 hingga Bab 5, tiga akhir cerita (*endings*), serta glosarium baku. Draf lama berbasis kurir surat bersegel telah digantikan sepenuhnya oleh kanon **Perintis Kafilah (*Pathfinders*)** dan era **103 Post-Senyap**.
 
 ---
 
 ## 1. Inti Cerita & Premis Utama
 
 **Premis Satu Kalimat:**
-Seratus tiga tahun setelah **Hari Senyap** membungkam seluruh benua, seorang perintis kafilah muda bernama **Nara** menerima sebuah **Cincin Perunggu** kuno yang diam-diam menyetrum jarinya—membawanya ke tengah perebutan kekuasaan antara Dewan Tetua yang memonopoli jalur, serbuan klan berkuda utara yang kelaparan, dan seorang penyintas Lulanai bernama **Maruani** yang ingin menundukkan kelima bangsa di bawah kekuatan getaran purba.
+Seratus tiga tahun setelah **Hari Senyap** membungkam seluruh benua, seorang perintis kafilah muda bernama **Nara** menerima sebuah **Cincin Perunggu** kuno yang diam-diam menyetrum jarinya—membawanya ke tengah perebutan kekuasaan antara Dewan Tetua yang memonopoli jalur, bayangan koin emas Kerajaan Espyra di barat, serbuan klan berkuda utara yang kelaparan, dan seorang penyintas Lulanai bernama **Maruani** yang ingin menundukkan seluruh bangsa di bawah kekuatan getaran purba.
 
 **Kondisi Geografis Dasar Dunia:**
-**Benua Tanah Sada terbelah oleh gurun, stepa angin, jurang kabut, dan laut ganas yang membuat kelima bangsa nyaris terisolasi.** Di dunia tanpa sihir teleportasi maupun kendaraan mesin ini, setiap jalur perdagangan yang menembus batas alam adalah urat nadi kelangsungan hidup peradaban.
+**Benua Tanah Sada berskala ringkas dan rapat, terbelah oleh pegunungan kapur, gurun pasir, stepa angin, jurang kabut, selat utara, dan kepulauan selatan yang membuat keenam bangsa bergesekan ketat di jalur darat dan laut.** Di dunia tanpa sihir teleportasi maupun kendaraan mesin ini, setiap jalur perdagangan yang menembus batas alam adalah urat nadi kelangsungan hidup peradaban.
 
 **Tema Utama:**
 Kepercayaan di tengah sejarah yang terbelah. Tanggung jawab pembawa kabar dan perintis jalur. Perdagangan sebagai urat nadi pertukaran ilmu, pangan, budaya, serta perkakas bertahan hidup antarbangsa. Serta harga dari menyembunyikan kebenaran teknis demi stabilitas semu.
@@ -77,10 +77,10 @@ Pemain menemukan perbedaan antarlapisan lewat lingkungan, perlengkapan lintas ba
 
 | Tahun | Peristiwa |
 | :--- | :--- |
-| **~512 Pra-Senyap** | Pemanfaatan awal **Batu Gaung** dan penciptaan metalurgi **Perunggu Gaung** di kaldera **Lulan Tua**. |
-| **487–418 Pra-Senyap** | Lahirnya empat peradaban lain: Bahtari (**487–436**), Asharim (**~453**), Tseren (**~432**), dan Cirusia (**~418**). |
+| **~512 Pra-Senyap** | Pemanfaatan awal **Batu Gaung** dan penciptaan metalurgi **Perunggu Gaung** di benua kecil kaldera **Lulan Tua** (*Far North*). |
+| **487–418 Pra-Senyap** | Lahirnya lima peradaban daratan & kepulauan: Bahtari (**487–436**), Asharim (**~453**), Espyra (**~440**, kerajaan batu barat), Tseren (**~432**), dan Cirusia (**~418**). |
 | **397 Pra-Senyap (TS 1)** | **Menara Simpul ke-1 (Pusat)** berdiri di Lulan Tua; dimulainya *Zaman Pembukaan Jalur*. |
-| **397–243 Pra-Senyap** | Pembangunan 98 menara tambahan beserta terowongan air *Urat Sumi*, bilik arsip Silin, monolit *Batu Nama* Salkara, dan pemecah ombak Bandar Lada. |
+| **397–243 Pra-Senyap** | Pembangunan 98 menara tambahan beserta *Urat Sumi*, bilik arsip Silin, monolit *Batu Nama* Salkara, dan pemecah ombak Bandar Lada. **Kerajaan Espyra** menolak syarat kedaulatan Lulanai sehingga proyek menara ke barat batal (berhenti pada **99 menara**); uji coba paksa *Vespera* memicu trauma *Bising* dan larangan logam Lulanai di Barat. |
 | **243 Pra-Senyap** | Rampungnya seluruh **99 Menara Simpul** (*Zaman Echoes*). |
 | **124 Pra-Senyap** | **Dewan Tetua** didirikan oleh perwakilan kelima bangsa di Benteng Tata di bawah perjanjian **Ikrar Sambung**. |
 | **43 Pra-Senyap** | *Zaman Kabar Palsu*: saudagar spekulan mulai menyuap petugas pos untuk memanipulasi harga lada biru, garam, dan ternak lewat Menara Simpul. |
@@ -149,7 +149,7 @@ Dataran tinggi **Lulan Tua** kaya urat tembaga vulkanik, timah hitam, dan pasir 
 * **Cincin Arsitek:** Cincin perunggu besar di tubuh menara yang mengatur keselarasan dan laju gaung.
 * **Akar Jalur Gaung:** Sambungan getaran bawah tanah yang menghubungkan seluruh 99 menara.
 
-Karena ke-99 Menara Simpul adalah satu jaringan utuh, gelombang *Echoes Liar* tidak bisa dihentikan satu per satu. Pada Hari Senyap, **5 Arsitek Agung** memutus jaringan serentak; sisa gelombang maut dialirkan melalui jalur bawah tanah **Garis Surut**—dari **Menara Simpul ke-1 (Pusat)** melewati **Menara Simpul ke-9**—menuju ruang batu bawah laut **Bejana Batu** di bawah pulau **Menara Simpul ke-99**. Di atas Bejana Batu berdiri **Gerbang Surut** sebagai pintu pelepasnya.
+Karena ke-99 Menara Simpul adalah satu jaringan utuh, gelombang *Echoes Liar* tidak bisa dihentikan satu per satu. Pada Hari Senyap, **5 Arsitek Agung** memutus jaringan serentak; sisa gelombang maut dialirkan lurus dari utara ke selatan melalui jalur bawah tanah **Garis Surut**—dari pulau **Menara Simpul ke-1 (Pusat di Lulan Tua, utara jauh)** menyeberangi dasar selat utara menuju daratan (**Cirusia** → **Menara Simpul ke-9 di Asharim**) hingga bermuara di ruang batu bawah laut **Bejana Batu** di bawah pulau **Menara Simpul ke-99** (Bahtari). Di atas Bejana Batu berdiri **Gerbang Surut** sebagai pintu pelepasnya. **Kerajaan Espyra** berada di luar aliran menara, tetapi berdiri tepat di atas tanah kapur padat yang masih menghantarkan getaran dasar bumi bila frekuensi tinggi dilepaskan.
 
 ### 3.4 *Cincin Perunggu*: Kunci Utama Cerita
 
@@ -175,22 +175,22 @@ Ketujuh menara ini tidak pernah dimaksudkan menjadi jalur permanen dan **harus d
 
 ---
 
-## 4. Lima Bangsa, Dewan Tetua, Ekosistem Kafilah, & Perlengkapan Lintas Bangsa
+## 4. Enam Bangsa, Dewan Tetua, Ekosistem Kafilah, & Perlengkapan Lintas Bangsa
 
-Dunia Tanah Sada digerakkan oleh **Rombongan Kafilah Dagang (*Caravans*)** dan **Perintis Jalur (*Pathfinders*)**—penjelajah garis depan yang membuka jalan di medan ekstrem, menguji tebing atau jembatan pasca-badai, memetakan bahaya, serta memadukan sandang, bekal, dan perkakas buatan kelima bangsa agar manusia bisa melintasi gurun, stepa, jurang kabut, dan samudra.
+Dunia Tanah Sada digerakkan oleh **Rombongan Kafilah Dagang (*Caravans*)** dan **Perintis Jalur (*Pathfinders*)**—penjelajah garis depan yang membuka jalan di medan ekstrem, menguji tebing atau jembatan pasca-badai, memetakan bahaya, serta memadukan sandang, bekal, dan perkakas buatan para bangsa agar manusia bisa melintasi bukit kapur jalan batu, gurun, stepa, jurang kabut, selat utara, dan samudra.
 
-### 4.1 Peta Dunia & Sebaran Menara
+### 4.1 Peta Dunia *(Skala Lebih Ringkas)* & Sebaran Menara
 
-* **Asharim** di barat (Lembah Pasir, Sabuk Sungai Remuz–Zamer, Telaga Sumi, Pos Nilasar / Batu Biru, Menara Senja, Dusun Sela, Menara Simpul ke-9).
-* **Cirusia** di utara (Padang Salkara, Perkemahan Tujuh Panji, teluk Tepi Salkara).
-* **Tseren** di timur (Pegunungan Silin / Kabut Lirih, Desa Kertas Awan, Paviliun Tebing, Rumah Naskah).
-* **Lulanai** di pusat (kaldera dataran tinggi basalt Lulan Tua, Menara Simpul ke-1).
-* **Bahtari** di selatan (Kepulauan Lamuna, Bandar Lada, Menara Simpul ke-99 / Gerbang Surut & Bejana Batu).
-* **Benteng Tata** di semenanjung barat daya (mengunci muara sungai kembar Asharim dan pintu barat selat Bahtari).
-* **Benua Timur** di seberang samudra timur (belum ditelusuri, hanya dicapai nakhoda Bahtari terdahulu).
-* Tiga dari tujuh *Menara Simpul Redup* berada di dekat Benteng Tata (utama), dekat Menara Simpul ke-9 (menjelaskan batu uji Hemira), dan dekat Bandar Lada (pusat *Utang Kabar*). Empat lainnya tersebar di simpul strategis.
+* **Espyra** di **Barat** (dataran tinggi kapur-marmer & bukit zaitun: ibu kota **Rumia** / *Kota Kubah Emas*, benteng perbatasan **Ostavor** / *Gerbang Tembok Tiga*, **Vespera** / *Menara Cermin Barat*, **Amorea**, dan **Korvian**). **Di luar jaringan 99 Menara Simpul.**
+* **Asharim** di **Barat–Tengah** (zona penyangga Lembah Pasir, Sabuk Sungai Remuz–Zamer, Telaga Sumi, Pos Nilasar / Batu Biru, Menara Senja, Dusun Sela, Menara Simpul ke-9—berbatasan langsung di sebelah timur *Ostavor*).
+* **Cirusia** di **Utara Daratan** (Padang Salkara, Perkemahan Tujuh Panji, pesisir & penyeberangan utara Tepi Salkara).
+* **Lulanai** di **Utara Jauh (*Far North*)** — benua kecil / pulau kaldera basalt vulkanik **Lulan Tua** (tempat berdirinya **Menara Simpul ke-1 / Pusat**), terpisah sedikit oleh selat sempit berkarang dari pesisir utara daratan utama Cirusia.
+* **Tseren** di **Timur** (Pegunungan Silin / Kabut Lirih, Desa Kertas Awan, Paviliun Tebing, Rumah Naskah).
+* **Bahtari** di **Selatan** (Kepulauan Lamuna, Bandar Lada, Menara Simpul ke-99 / Gerbang Surut & Bejana Batu).
+* **Benteng Tata (Dewan Tetua)** di **semenanjung muara barat–selatan** (mengunci pertemuan jalur barat menuju *Korvian*, muara sungai kembar Asharim, dan pintu barat laut Bahtari).
+* Tiga dari tujuh *Menara Simpul Redup* berada di dekat Benteng Tata (utama), dekat Menara Simpul ke-9 (menjelaskan batu uji Hemira), dan dekat Bandar Lada (pusat *Utang Kabar*). Empat lainnya tersebar di simpul strategis daratan dan pulau selatan.
 
-### 4.2 Asal-Usul, Profil Lengkap, & Budaya Lima Bangsa
+### 4.2 Asal-Usul, Profil Lengkap, & Budaya Enam Bangsa
 
 #### 1. Bangsa Bahtari (Pelaut Samudra, Nelayan Laut Dalam, & Kartografer — Selatan)
 * **Wilayah & Asal-Usul (~487–436 Pra-Senyap):** Kepulauan Lamuna berupa tebing kapur, karang basah, dan rawa payau yang tak bisa ditanami. Leluhur Bahtari terpaksa turun ke laut lepas hingga batas Benua Timur untuk memburu ikan besar dan rempah. Karena peta arus adalah nyawa di laut berkarang, mereka menciptakan **Bagan Arus**—peta 3D dari bilah bambu apung, tulang ikan besar, dan kulit ikan pari yang diikat urat penyu—sebelum membeli **kertas serat tahan lembap dan tinta mineral Tseren** pada *Zaman Pembukaan Jalur* untuk menyalin *Bagan Arus* menjadi peta pelayaran resmi.
@@ -241,36 +241,53 @@ Dunia Tanah Sada digerakkan oleh **Rombongan Kafilah Dagang (*Caravans*)** dan *
 * **Adat Pos Singgah:** **Dua Pembacaan** (penerima membaca kontrak, pembawa membacakan catatan serah-terima fisik) dan **Tinta Kelahiran**.
 * **Arsitektur, Visual, & Kehidupan Sehari-hari:** Atap bertingkat tipis, lembaran kertas menjuntai, jembatan tali; warna kertas (`#EDE6D3`) & hijau kabut (`#8FA68A`). Minum teh hangat, kain wol, bicara singkat dan tertib.
 
-#### 5. Bangsa Lulanai (Bangsa Arsitek & Penguasa Perunggu Gaung — Pusat)
-* **Wilayah & Asal-Usul (~512 Pra-Senyap):** Terkepung di kaldera basalt tandus **Lulan Tua**, suku-suku pemahat melebur menjadi **Ikatan Arsitek**. Dengan **Perunggu Gaung** dan **Nada Pengikat**, mereka membangun *Urat Sumi*, bilik arsip Silin, monolit Salkara, pemecah ombak Bandar Lada, serta 99 Menara Simpul—tetapi menyembunyikan risiko *Beban Gaung* demi pasokan pangan.
-* **Nilai, Semboyan, & Titik Buta:** *"Dengar dan resapi."* Kepercayaan pada **Batu yang Mengingat**. Mereka memandang Hari Senyap sebagai pengorbanan mulia, namun melupakan dosa asal penyembunyian cacat teknis dan pengingkaran sepihak atas *Ikrar Sambung*.
+#### 5. Bangsa Lulanai (Bangsa Arsitek & Penguasa Perunggu Gaung — Utara Jauh / *Far North*)
+* **Wilayah & Asal-Usul (~512 Pra-Senyap):** Terkepung di **benua kecil kaldera basalt dingin Lulan Tua** di **Utara Jauh (*Far North*)**, terpisah oleh selat sempit berkarang dari daratan utama Cirusia. Karena pertanian maupun ternak mustahil dilakukan di pulau basalt dingin ini, suku-suku pemahat melebur menjadi **Ikatan Arsitek**. Dengan **Perunggu Gaung** dan **Nada Pengikat**, mereka membangun *Urat Sumi*, bilik arsip Silin, monolit Salkara, pemecah ombak Bandar Lada, serta 99 Menara Simpul untuk empat bangsa mitra demi pasokan pangan tetap—tetapi menyembunyikan risiko *Beban Gaung*.
+* **Nilai, Semboyan, & Titik Buta:** *"Dengar dan resapi."* Kepercayaan pada **Batu yang Mengingat**. Mereka memandang Hari Senyap sebagai pengorbanan mulia, namun melupakan dosa asal penyembunyian cacat teknis dan pengingkaran sepihak atas *Ikrar Sambung*, serta ketakutan lama bahwa kemakmuran **Kerajaan Espyra** tanpa Menara Simpul dapat meruntuhkan monopoli pangan Lulan Tua.
 * **Kejatuhan & Tiga Kaum:** Usai 5 Arsitek Agung gugur dan **37 arsitek muda** cacat *Bising*, penyintasnya diburu lewat *Perkara Pemutusan* dan fitnah *Bising Menular* / *Penelan Suara*, lalu menyamar di tengah bangsa lain (termasuk **Nenek Ima** dan **Nadiyah** yang menenun jejak pola leluhur secara samar ke dalam **Selendang Tenun Sela** serta mewariskan **Cincin Perunggu** & **Penutup Telinga Perunggu**). Terpecah menjadi tiga kaum: **Kaum Pantang** (**Mairuma**), **Kaum Terbuka** (**Ruania**), dan **Kaum Sesal** (**Lunaia**).
 * **Adat & Visual:** **Tiga Napas Hening**, **Penutup Telinga Perunggu**, pesan batu bersyarat (**Tanda**); warna lumut (`#6F7A68`) & perunggu pudar (`#A6805A`).
 
+#### 6. Kerajaan Espyra (Kerajaan Jalan Batu, Tembok Tiga Lapis, & Hukum Sipil — Barat)
+* **Wilayah & Asal-Usul (~440 Pra-Senyap):** Dataran tinggi berbatu kapur-marmer, perbukitan zaitun, dan lembah darat di **ujung Barat Tanah Sada** (ibu kota **Rumia** / *Kota Kubah Emas*, benteng timur **Ostavor** / *Gerbang Tembok Tiga*, **Vespera** / *Menara Cermin Barat*, **Amorea** / *Kota Tiang Putih*, dan **Korvian** / *Pos Patok Nol*). Berbeda dengan *Bahtari* (laut) dan *Asharim* (suaka air), Espyra bertumpu sepenuhnya pada **kekuasaan darat, beton-kapur, koin emas, dan hukum sipil tertulis**.
+* **Semboyan & Budaya Politik:** *"Emas menciptakan damai."* Dipimpin Raja dan Senat Hukum di *Forum* marmer **Rumia**, dengan tradisi **diplomasi emas dan intrik istana**—lebih memilih membeli kesetiaan pos dagang, membiayai perpecahan lawan, dan mengikat kontrak tertulis ketimbang perang berdarah di gurun.
+* **Teknologi Non-*Echoes* & Kemandirian:**
+  * **Jalan Raya Batu Lurus (*Jalan Berpatok*) & Pos Kuda Kerajaan:** Menghubungkan seluruh kota Espyra lewat estafet kuda cepat (berhenti mendadak di tapal batas *Ostavor–Asharim*).
+  * **Menara Cermin & Suar Api Bukit (*Menara Suar*):** Jaringan cermin tembaga poles siang hari dan suar api malam hari.
+  * **Komoditas:** Marmer putih, kapur beton bangunan, zirah sisik (*lamellar*) & perisai baja legiun, kaca tiup & cermin optik, minyak zaitun, anggur awetan, kain ungu-marun ningrat, serta **Koin Emas Rumia**.
+* **Mengapa Espyra Menolak Menara Simpul (Bukan Ketinggalan Zaman):**
+  1. **Kedaulatan Hukum:** Pada *Zaman Pembukaan Jalur*, Espyra menolak syarat Lulanai yang melarang audit logam dan menuntut pos arsitek asing berdiri otonom di dalam wilayah kerajaan—negosiasi pecah sebelum menara ke-100 dibangun (itulah sebabnya jaringan berhenti di **99 menara**).
+  2. **Keamanan Rahasia Negara:** Estafet kuda di atas Jalan Batu lebih tertutup ketimbang batu *Echoes* yang meninggalkan jejak (*Hukum Echoes* #8).
+  3. **Trauma *Bising*:** Insinyur di **Vespera** pernah mencoba meniru *Perunggu Gaung* tanpa serbuk *Batu Gaung* murni; percobaan itu gagal dan menulikan para penguji oleh *Bising*, memicu undang-undang pelarangan logam Lulanai di seluruh kota Espyra.
+* **Mengapa Lulanai Menekan Barat & Titik Lemah Espyra:** Keberhasilan **Espyra** membangun kemakmuran cepat tanpa *Echoes* mengancam posisi tawar pangan Lulanai dan kestabilan *Keping Tata* Dewan Tetua. Namun, justru karena **Tembok Tiga Lapis Ostavor**, **Kubah Agung Rumia**, dan **Jalan Batu** mereka berdiri di atas **batu kapur padat**, pondasi Espyra menghantarkan getaran bawah tanah **Nada Pengikat** dengan kuat—celah fisik paling mematikan bila garis keras Lulanai (**Maruani**) memaksa frekuensi jaringan menekan ke barat.
+* **Arsitektur & Palet Visual:** Tembok tiga lapis berselang batu kapur putih dan bata merah tipis (*Konstantinopel*), kubah batu lebar berhias mozaik emas, lengkung marmer; merah porfiri/marun (`#7A1C2E`), emas mozaik (`#D4AF37`), dan kapur marmer pucat (`#DFD7C8`).
+
 ### 4.3 Dewan Tetua, Ekosistem Kafilah, Sistem Tukar, & Etika Jalur
 
-* **Dewan Tetua (124 Pra-Senyap – 103 Post-Senyap):** Dibentuk oleh **5 kursi perwakilan bangsa** di **Benteng Tata** di bawah **Ikrar Sambung** untuk mengatur antrean menara dan perawatan jalan. Pasca-Hari Senyap, kursi Lulanai dihapus permanen dan Dewan berubah menjadi **kasta birokrat-militer tertutup** (*perekrutan internal* keluarga pejabat & prajurit seperti **Kesa**). Pemimpin tertingginya, **Yang Tetua** (kini **Taluk**, berdarah Asharim–Bahtari didikan penuh Benteng Tata), dipilih lewat pemungutan suara tertutup berdasarkan senioritas. Motto: *Tata mengelola*; slogan resmi: *Yang tua menjaga jalan* (dibalas getir oleh rakyat: *Yang tua tak pernah turun dari kursinya*).
+* **Dewan Tetua (124 Pra-Senyap – 103 Post-Senyap):** Dibentuk oleh **5 kursi perwakilan bangsa mitra menara** (Asharim, Cirusia, Tseren, Bahtari, dan Lulanai—sementara **Espyra** di Barat berdiri di luar perjanjian ini) di **Benteng Tata** di bawah **Ikrar Sambung** untuk mengatur antrean menara dan perawatan jalan. Pasca-Hari Senyap, kursi Lulanai dihapus permanen dan Dewan berubah menjadi **kasta birokrat-militer tertutup**. Tekanan dari Barat membuat Dewan makin paranoid menjaga monopoli *7 Menara Redup* agar pos-pos Asharim tidak berpaling ke hukum & emas Espyra. Pemimpin tertingginya, **Yang Tetua** (**Taluk**), dipilih lewat pemungutan suara tertutup berdasarkan senioritas. Motto: *Tata mengelola*; slogan resmi: *Yang tua menjaga jalan* (dibalas getir oleh rakyat: *Yang tua tak pernah turun dari kursinya*).
 * **Sistem Nilai Tukar:**
   1. **Keping Tata:** Koin paduan perunggu-tembaga Dewan Tetua (wajib untuk pajak gerbang & iuran Menara Simpul Redup), nilainya terus merosot.
   2. **Garam Batu Batangan:** Mata uang komoditas standar pasar bebas (satuan *Garis*).
-  3. **Barter Strategis:** Kertas serat Tseren, lada biru & minyak palung Bahtari, kain kempa Cirusia, hak akses air Asharim.
+  3. **Koin Emas Rumia (Espyra):** Mata uang emas berstandar tetap dari Barat yang mulai menggoda *Kubu Pos Dagang* Asharim dan menekan nilai *Keping Tata*.
+  4. **Barter Strategis:** Kertas serat Tseren, lada biru & minyak palung Bahtari, kain kempa Cirusia, hak akses air Asharim, marmer & cermin optik Espyra.
 * **Tipologi Kafilah & Perintis:**
+  * **Espyra:** Konvoi gerobak barang di atas jalan raya batu lurus diiringi pengawal bersisik logam & juru kontrak bersurat segel lilin; bergantung pada perintis darat lokal begitu keluar dari jalan berpatok menuju gurun Asharim.
   * **Cirusia:** Pedati kerbau padang beroda lapis besi; perintis penunggang kuda tunggal berompi kulit lapis tiga & terompet tanduk.
   * **Bahtari:** Perahu muara bertiang miring; perintis pendayung kano cepat dengan tas kulit ikan pari berlapis damar & minyak ikan palung.
   * **Tseren:** Pedagang bertongkat pengukur & ransel bambu; perintis udara dengan **Jubah Layar**, **Cakar Tebing**, dan lapisan peredam gaung.
   * **Asharim:** Kafilah unta/pedati beratap tenun; perintis gurun bertudung lapis, **Rompi Kulit**, dan **Selendang Tenun Sela**.
-  * **Lulanai:** Bergerak senyap sebagai bayangan yang merawat batu dan menjaga pusaka *Perunggu Gaung* secara rahasia.
+  * **Lulanai:** Bergerak senyap sebagai bayangan yang merawat batu dan menjaga pusaka *Perunggu Gaung* secara rahasia dari utara jauh hingga ke pos-pos daratan.
 * **Profesi Jalur & Enam Etika Perintis:** **Pembaca Jejak**, **Penyalin Kabar**, **Penunjuk Jalan**, **Pembawa Lagu**, **Juru Takar Pasar**. Terikat 6 prinsip etika (segel, kejujuran kondisi rute, tak menjanjikan mustahil, laporan rusak jujur, keutuhan kontrak, dan **Aturan Keenam**: hak memperingatkan penerima bila ragu akan keaslian naskah/kabar).
 
 ### 4.4 Hubungan Antarbangsa & Jejak Pertukaran Budaya Lintas Jalur
 
-* **Ketergantungan Ekonomi & Pengetahuan:** Cirusia butuh lada biru & garam Bahtari serta kertas kontrak Tseren; Bahtari butuh daging kering & wol Cirusia serta titik air Asharim; Asharim menjadi pasar transit netral tempat ilmu hitung, irigasi, pengobatan herbal, hingga astronomi navigasi (pembacaan bintang **Panji Ulmar** untuk nakhoda **Bahtari** di atas kertas **Tseren**) saling bertukar.
-* **Kuliner & Keseharian Lintas Jalur:** Gandum Asharim dimasak dengan lada biru Bahtari di kemah Cirusia; teh daun gurun diseduh di paviliun berkabut Tseren; bekal roti gurun dan garam tambang bertukar menjadi **Kapsul Garam Balkut** di perbatasan tebing.
+* **Ketergantungan Ekonomi & Pengetahuan:** Cirusia butuh lada biru & garam Bahtari serta kertas kontrak Tseren; Bahtari butuh daging kering & wol Cirusia serta titik air Asharim; Asharim menjadi pasar transit netral tepat di sebelah timur **Ostavor (Espyra)** tempat koin emas barat, ilmu hitung, pengobatan herbal, hingga navigasi saling berpapasan.
+* **Kuliner & Keseharian Lintas Jalur:** Gandum Asharim dimasak dengan lada biru Bahtari di kemah Cirusia; teh daun gurun diseduh di paviliun berkabut Tseren; minyak zaitun & roti pualam Espyra mulai masuk ke pasar perbatasan Asharim, sementara bekal roti gurun dan garam tambang bertukar menjadi **Kapsul Garam Balkut** di tebing utara.
 * **Ukuran Kepercayaan Lintas Bangsa:**
   * **Asharim:** Adat tamu & kejujuran melaporkan kegagalan (Marsiyah).
   * **Cirusia:** Menepati janji lisan di depan api & membuktikan keaslian lewat **Tepi Salkara** (Odgar & Orsuk).
   * **Tseren:** Menjaga kata asli & berani mengungkap kejanggalan salinan (Wuren).
   * **Bahtari:** Membawa pulang *Lagu Titipan* & mengurai sengketa *Utang Kabar* (Tarun & Rumah Layar).
+  * **Espyra:** Kontrak tertulis sah Senat & kepastian nilai emas di depan hukum (*"Emas menciptakan damai"*).
   * **Lulanai:** Kesediaan mendengar sebelum menghakimi (tanpa cap fisik).
 
 ### 4.5 Warisan Perlengkapan, Pusaka & Bekal Lintas Bangsa (8 Item Kanon Bab 0–1)
@@ -443,15 +460,16 @@ Referensi dipelajari untuk fungsi infrastruktur, ekonomi, dan arsitektur tanpa m
 * **Tseren:** Tiongkok Dinasti Qin (standardisasi aksara, takaran, arsip tahan lembap, birokrasi).
 * **Cirusia:** Jejaring Sogdiana, konfederasi Kipchak, serta prinsip adat lisan *Pashtunwali* dan *Xeer*.
 * **Bahtari:** Kepulauan rempah Nusantara & kontrak pelayaran Venesia (kartografi laut, lada, kontrak modal).
+* **Espyra:** Roma, Byzantium, dan Konstantinopel (hukum sipil tertulis, jalan raya batu lurus berpatok mil, tembok tiga lapis batu-bata, diplomasi emas istana, zirah sisik *lamellar*, & menara suar cahaya).
 * **Dewan Tetua:** Badan pengelola tol dan sensor perdagangan yang bergeser dari layanan publik menjadi monopoli akses.
-* **Lulanai:** Fiksi murni kaldera vulkanik, metalurgi *Perunggu Gaung*, *Echoes*, dan tanggung jawab etika teknis.
+* **Lulanai:** Fiksi murni benua kecil kaldera vulkanik *Far North*, metalurgi *Perunggu Gaung*, *Echoes*, dan tanggung jawab etika teknis.
 
 ## Lampiran B. Log Perombakan & Penyatuan Kanon
 
-Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga dokumen terdahulu (`Story Bible Lama`, `Cincin Perunggu v1`, dan `Story Bible rev1311`) sekaligus menambahkan kanon **8 Item Lintas Bangsa**:
+Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga dokumen terdahulu (`Story Bible Lama`, `Cincin Perunggu v1`, dan `Story Bible rev1311`), menambahkan kanon **8 Item Lintas Bangsa**, sekaligus merampingkan skala peta dunia dengan **Kerajaan Espyra** di Barat serta memindahkan **Lulan Tua** ke utara jauh (*Far North*).
 1. Menghapus bersih premis usang era *100 Telan*, *Surat Penyalaan*, dan *Cap Saksi surat* menjadi kanon **Perintis Kafilah (*Pathfinders*)**, **Tahun ke-103 Post-Senyap**, **99 Menara Simpul**, **Cincin Perunggu (Kunci Nadi & Dua Separuh Kunci)**, dan **Point of Origin 5W1H Kaldera Lulan Tua**.
 2. Mempertahankan detail mendalam *5W1H*, struktur Dewan Tetua, asal-usul *Kabar Tujuh Musim*, daftar 7 Panji Cirusia beserta pemimpinnya, hubungan antarbangsa, dan epilog terverifikasi.
-3. Menyambungkan seluruh **8 item perlengkapan & bekal Bab 0–1** secara langsung dengan komoditas, adat, dan kerajinan kelima bangsa di Tanah Sada.
+3. Menyambungkan seluruh **8 item perlengkapan & bekal Bab 0–1** secara langsung dengan komoditas, adat, dan kerajinan bangsa-bangsa di Tanah Sada, serta menetapkan alasan penolakan menara oleh Espyra dan geografi *Far North* Lulanai.
 
 ## Lampiran C. Contoh Nada Dialog
 
@@ -460,6 +478,7 @@ Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga d
 * **Tseren / Wuren (tegas, ringkas, presisi pasal):** *"Salinan ini memakai label Pra-Senyap. Orang sebelum Hari Senyap tak mengenal kata itu. Tinta tak pernah lupa, Nak."*
 * **Cirusia / Orsuk (lugas, keras, humor hangat):** *"Dargun tak akan mengaku kalau cuma kau yang bertanya. Kita bawa bukti dari Tepi Salkara dulu. Bohonglah di depan api, kalau berani."*
 * **Bahtari / Tiwano (ramai, berirama, kiasan laut):** *"Utang itu seperti tali sauh: makin ditarik, makin dalam nyangkutnya. Tapi tali bisa dipotong asal tahu mana pegangan, mana jerat. Pasang selalu kembali."*
+* **Espyra / Utusan Rumia (tenang, diplomatis, menimbang hukum & harga):** *"Kami tidak butuh menara batumu untuk tahu kapan padang bergolak. Di jalan kami, patok batu tak pernah berbohong, dan emas menciptakan damai jauh lebih cepat daripada janji."*
 * **Lulanai (pelan, jeda tiga napas):** *"Kau membawa... logam yang mengenal nadimu. Duduklah. Dengar dan resapi tiga napas dulu sebelum bicara."*
 * **Maruani (dingin, tajam):** *"Mereka bertengkar memperebutkan sumur dan jalan batu yang bahkan tak mereka tahu siapa pembuatnya. Dan kau—darah para arsitek—memilih merangkak di debu mereka?"*
 * **Dewan Tetua / Taluk (formal, defensif atas stabilitas):** *"Seumur hidupku aku menjaga agar jeritan Perang Tujuh Musim tak terulang. Yang tua menjaga jalan."*
@@ -468,7 +487,7 @@ Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga d
 
 ## Lampiran D. Aturan Penamaan & Angka Dunia
 
-1. **Nama Berlapis:** Tempat dan lembaga memiliki nama lama sesuai bunyi bangsa, nama resmi, serta julukan Indonesia deskriptif (*Pos Nilasar / Batu Biru*, *Pegunungan Silin / Kabut Lirih*).
+1. **Nama Berlapis:** Tempat dan lembaga memiliki nama lama sesuai bunyi bangsa, nama resmi, serta julukan Indonesia deskriptif (*Pos Nilasar / Batu Biru*, *Pegunungan Silin / Kabut Lirih*, *Ostavor / Gerbang Tembok Tiga*, *Rumia / Kota Kubah Emas*).
 2. **Istilah Kuno & Konsisten:** Hindari istilah modern (*katup*, *relay*, *tol*); gunakan padanan konkret (*gerbang*, *menara sambung*, *peredam*, *penyelarasan*, *iuran jalur*). Pakai *Roh* bagi tokoh yang sudah tiada (*Roh Wilanu*), *Suara* untuk tokoh yang nasibnya belum pasti (*Suara Hemira*).
 3. **Angka Organik Non-Bulat:** **99 Menara Simpul**, **Tahun 103 Post-Senyap**, **37 arsitek muda**, **47 tenda kempa**, **512/397/243/124/43/4 Pra-Senyap**.
 
@@ -479,6 +498,7 @@ Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga d
 | **Cirusia** | Stepa Turkik-Mongol | Konsonan keras (k, g, t, b, r, d); harmoni vokal a-o-u; akhir -un/-ar/-ak/-ur/-an/-ul/-uk (`Dargun, Hurgak, Kutlak, Salgur, Borlan, Burgul, Odgar, Orsuk`; 7 Panji: `Gorkan, Dolgak, Sarbuk, Balkut, Tumran, Ulmar, Kadum`). |
 | **Bahtari** | Pesisir Nusantara | Suku kata terbuka; mengalir musikal (`Tarun, Tiwano, Wanuri, Lamuna`). |
 | **Lulanai** | Fiksi, lembut | Vokal mengalir panjang (`ai/ua/ia`); akhir vokal (`Wilanu, Dalumi, Hemira, Maruani, Mairuma, Lunaia, Ruania`). |
+| **Espyra** | Panggilan klasik barat (*Hesper-*) × Roma–Byzantium | Konsonan tegas (`k, v, r, t, s, l, d, m`) + vokal terbuka-klasik (`a, e, o, y`); tempat & kota senafas dengan `Espyra`: `Rumia, Ostavor, Vespera, Amorea, Korvian`; tokoh: `Kassior, Valen, Savelia, Thedor, Kalyra`. |
 
 ## Lampiran E. Glosarium Kanon Lengkap
 
@@ -488,12 +508,13 @@ Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga d
 | **Ajaran Tata** | Ajaran resmi Dewan Tetua (*Tata mengelola*; *Yang tua menjaga jalan*). |
 | **Akar Jalur Gaung** | Sambungan getaran bawah tanah yang menghubungkan 99 Menara Simpul. |
 | **Aliran Murni / Selaras** | Dua faksi arsip Tseren: penjaga keaslian naskah (*Wuren*) vs penyunting arsip demi stabilitas Dewan (*Lisen*). |
+| **Amorea (*Kota Tiang Putih*)** | Kota lembah subur Kerajaan Espyra penghasil zaitun, anggur, gandum dataran tinggi, dan tambang marmer. |
 | **Bagan Arus** | Peta 3D asli Bahtari dari bambu apung, tulang ikan, dan kulit ikan pari sebelum mengenal kertas Tseren. |
 | **Balai Cawan** | Pusat kegiatan adat *Malam Tiga Cawan* di Telaga Sumi dan jaringan kanal Asharim. |
-| **Batu Gaung** | Batu vulkanik berpori akustik di Lulan Tua yang menyimpan dan memantulkan getaran suara. |
+| **Batu Gaung** | Batu vulkanik berpori akustik di Lulan Tua (*Far North*) yang menyimpan dan memantulkan getaran suara. |
 | **Beban Gaung** | Batas muatan jaringan menara; jika dilampaui memicu *Echoes Liar* dan *Bising*. |
 | **Bejana Batu** | Ruang batu penahan *Echoes* di bawah pulau Menara Simpul ke-99. |
-| **Benteng Tata** | Markas Dewan Tetua di semenanjung barat daya. |
+| **Benteng Tata** | Markas Dewan Tetua di semenanjung muara barat–selatan. |
 | **Bising** | Kerusakan saraf pendengaran permanen akibat paparan beban *Echoes* tanpa peredam. |
 | **Bising Menular** | Stigma fitnah pasca-Hari Senyap bahwa pemakai *Penutup Telinga Perunggu* menyebarkan wabah. |
 | **Buku Tamu Batu** | Adat Asharim: tamu menuliskan nama di batu pos sebagai catatan perjalanan kafilah. |
@@ -502,31 +523,37 @@ Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga d
 | **Dewan Tetua** | Badan pengelola jalur bentukan 124 Pra-Senyap di bawah *Ikrar Sambung* yang kini memonopoli 7 Menara Simpul Redup. |
 | **Dua Pembacaan** | Adat Tseren: penerima membaca isi kontrak, pembawa membacakan catatan serah-terima fisik barang. |
 | **Echoes** | Fenomena serta jaringan bunyi-ingatan yang merambat lewat Batu Gaung dan Perunggu Gaung. |
+| **Espyra (*Kerajaan Espyra*)** | Kerajaan jalan batu, tembok tiga lapis, hukum sipil tertulis, dan koin emas di ujung Barat Tanah Sada (*"Emas menciptakan damai"*); menolak jaringan 99 Menara Simpul. |
 | **Garam Batu Batangan** | Mata uang komoditas standar pasar bebas (satuan *Garis*). |
-| **Garis Surut** | Jalur bawah tanah penyalur kelebihan gelombang dari Menara Simpul ke-1 melewati ke-9 menuju Bejana Batu. |
+| **Garis Surut** | Jalur bawah tanah penyalur kelebihan gelombang dari Menara Simpul ke-1 (*Far North*) melewati Cirusia dan Menara ke-9 menuju Bejana Batu. |
 | **Gaung Arsitek** | Teknik arsitek Lulanai membentuk atau meretakkan batu gaung dengan alat perunggu; berisiko meninggalkan *Bising*. |
 | **Gerbang Surut** | Pintu pelepas di Menara Simpul ke-99, tepat di atas Bejana Batu. |
 | **Hari Senyap (Tahun 0)** | *The Night of the Ashen Hush* (*Malam Tiga Napas*): malam pemutusan serentak 99 Menara Simpul. |
 | **Hukum Air (Pakta Sumur Terbuka)** | Hukum Asharim bahwa mata air dan pos persinggahan adalah zona netral bagi semua pengelana. |
 | **Hukum Janji Api** | Hukum Cirusia: sumpah penting diucapkan di depan api dan tiga saksi mata tanpa tulisan. |
 | **Ikrar Sambung** | Perjanjian kemitraan 124 Pra-Senyap antara Lulanai dan Dewan Tetua. |
+| **Jalan Berpatok (*Via Espyra*)** | Jalan raya batu lurus berpatok mil milik Espyra dengan pos ganti kuda kerajaan; terhenti di perbatasan Ostavor–Asharim. |
 | **Kabar Tujuh Musim** | Berita terdistorsi tentang kebakaran Tepi Salkara (4 Pra-Senyap) yang memicu *Perang Tujuh Musim* (~3,5 tahun). |
 | **Kanon Aksara** | Fondasi Tseren: kata harus dijaga di atas kertas serat tahan lembap dan pantang dimusnahkan. |
 | **Kapsul Garam Balkut** | Bekal Bab 1 racikan garam batu Asharim dan ransum karavan Panji Balkut Cirusia (`+24 HP`). |
 | **Kaum Pantang / Terbuka / Sesal** | Tiga faksi penyintas Lulanai: menolak penyalaan ulang / menuntut ilmu dibagikan / menuntut bangsa lain dilibatkan. |
 | **Keping Tata** | Koin logam resmi Dewan Tetua yang nilainya terus merosot. |
 | **Kerang Suara** | Kerang tua warisan zaman *Echoes* di Bahtari yang masih menyimpan potongan lagu. |
+| **Koin Emas Rumia** | Mata uang emas bermutu tetap dari percetakan ibu kota Espyra; menjadi pesaing berat *Keping Tata*. |
 | **Kontrak Sauh & Utang Kabar** | Jerat kontrak modal pelayaran Rumah Dagang dan biaya verifikasi Menara Simpul Redup di Bahtari. |
+| **Korvian (*Pos Patok Nol*)** | Kota bea cukai & penukaran emas selatan-barat Espyra di perbatasan menuju Asharim dan Benteng Tata. |
 | **Lagu Titipan** | Adat Bahtari menitipkan lagu keluarga kepada pelaut atau perintis tanpa boleh diubah. |
 | **Lentera Angin & Peluit Ruru** | Lentera minyak ikan palung Bahtari dan peluit tebing untuk Ruru (radar `[Q]` 220 px, jeda 2,5 dtk, Siasat Ruru 1.45x). |
-| **Lulan Tua** | Kaldera basalt pusat Lulanai, tempat berdirinya Menara Simpul ke-1. |
+| **Lulan Tua** | Benua kecil kaldera basalt di utara jauh (*Far North*), pusat asal Lulanai dan tempat Menara Simpul ke-1. |
 | **Malam Tiga Cawan** | Adat pos Asharim (Cawan Air/kabar rute, Garam/pasar, Kabar/kisah & tugas). |
-| **Menara Simpul** | 99 menara penyimpan dan penerus *Echoes* (Pusat/ke-1, ke-9 di Asharim, ke-99 di Bahtari). |
+| **Menara Simpul** | 99 menara penyimpan dan penerus *Echoes* (Pusat/ke-1 di utara jauh, ke-9 di Asharim, ke-99 di Bahtari). |
 | **Menara Simpul Redup** | Tujuh menara yang dioperasikan paksa Dewan Tetua dengan teknik cacat sejak Tahun 58 Post-Senyap. |
+| **Menara Suar Cermin** | Jaringan menara pengawas batu tinggi di punggung bukit Espyra untuk komunikasi optik cermin tembaga & suar api. |
 | **Meterai Penengah Salkara** | Lencana mandat Sidang Tujuh Panji berukir monolit Panji Kadum dari Odgar; meredam kewaspadaan patroli 30% serta menambah wibawa tempur. |
 | **Musim Terang & Musim Dingin** | Pembagian 2 musim universal dalam 1 tahun di Tanah Sada. |
 | **Nada Pengikat** | Teknik *low-fantasy* Lulanai mengarahkan frekuensi akustik lewat batu dan tanah menggunakan Perunggu Gaung. |
 | **Nada Penyegel** | Separuh kode kedua pembuka Gerbang Surut yang tersimpan di inti Menara Simpul ke-1. |
+| **Ostavor (*Gerbang Tembok Tiga*)** | Kota benteng bertembok rangkap tiga di tapal batas timur Espyra menghadap Lembah Pasir Asharim. |
 | **Penelan Suara** | Takhayul rakyat pasca-Hari Senyap terhadap keturunan Lulanai. |
 | **Penutup Telinga Perunggu** | Alat peredam gaung milik penyintas Lulanai (salah satunya disimpan Nenek Ima di bawah alat tenun). |
 | **Perintis Kafilah (*Pathfinder*)** | Penjelajah garis depan yang membuka rute ekstrem bagi rombongan karavan dagang. |
@@ -536,9 +563,11 @@ Story Bible tunggal ini menggabungkan dan menyelaraskan secara menyeluruh tiga d
 | **Retak Besar** | Bencana pecahnya Bejana Batu yang memuntahkan *Echoes Liar* serentak ke seluruh benua. |
 | **Rompi Kulit Kafilah** | Pelindung dasar perintis Dusun Sela bergaya jahitan lapis tiga penunggang Cirusia. |
 | **Roti Hangat Nilasar** | Bekal gandum gurun berempah khas suaka Pos Nilasar (`+12 HP`). |
+| **Rumia (*Kota Kubah Emas*)** | Ibu kota bertingkat Kerajaan Espyra di perbukitan kapur Barat, tempat kubah mozaik emas dan Senat Hukum berdiri. |
 | **Selendang Tenun Sela** | Tenunan Asharim karya Nenek Ima yang menyelipkan pola pelindung penyintas Lulanai; memangkas rintangan alam Bab 1 hingga 50% (maks 1 HP). |
 | **Tahun Simpul (TS)** | Penanggalan Tseren; TS 1 setara 397 Pra-Senyap, Hari Senyap jatuh pada TS 398. |
 | **Tanah Sada** | Nama benua dan dunia cerita *Jalur Senyap*. |
 | **Tanda** | Adat Lulanai meninggalkan pesan bersyarat pada batu tanpa diucapkan sembarangan. |
 | **Tas Peredam Tseren** | Tas kulit Sahdan berlapis benang peredam gaung Silin; memangkas dorongan angin 45% dan susut muatan badai 55%. |
+| **Vespera (*Menara Cermin Barat*)** | Kota akademi insinyur optik, kaca, dan zirah Espyra—saksi gagalnya uji coba tiruan *Perunggu Gaung* dan trauma *Bising*. |
 | **Yang Tetua** | Gelar pemimpin tertinggi Dewan Tetua (saat ini dijabat Taluk). |
